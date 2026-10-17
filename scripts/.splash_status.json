@@ -1,0 +1,12 @@
+{
+  "model": "isnet-general-use",
+  "startedAt": "2026-10-17T14:05:05",
+  "finished": true,
+  "phase": "done",
+  "version": "16.20.1",
+  "total": 173,
+  "done": 173,
+  "current": null,
+  "errors": [],
+  "updatedAt": "2026-10-17T14:20:03"
+}

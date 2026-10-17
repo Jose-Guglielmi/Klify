@@ -1,0 +1,56 @@
+[package]
+name = "klipy"
+version = "0.1.0"
+authors = ["Jose Guglielmi <lufortgamernw@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# UI (sin router: el MVP no usa rutas)
+dioxus = { version = "0.7.1" }
+# Cliente LCU (League Client Update). Se usará en fase 2.
+# TLS vía rustls en TODAS las plataformas: `__hyper` + `__hyper_rustls` para
+# el REST y `ws_rustls` para el WSS.
+# ¿Por qué NO nativetls? En macOS Security.framework rechaza SIEMPRE el cert
+# autofirmado de Riot con el error -67901 ("The validity period in the
+# certificate exceeds the maximum allowed"): la política de Apple limita a
+# 825 días la validez de certs emitidos después de julio de 2019 y el de Riot
+# dura ~10 años. El handshake TLS falla, irelia hace panic en el `expect` del
+# handshake (ws.rs) y la app queda atascada en Disconnected (verificado en
+# vivo con LCU real). En Windows Schannel no impone esa política, pero por
+# unificación de features de Cargo NO podemos usar nativetls en Windows y
+# rustls en macOS: irelia dispara compile_error! si se mezclan ambas familias.
+# rustls es la ruta correcta en ambos SO: NO aplica la política de 825 días de
+# macOS, e irelia fija el cert autofirmado de Riot como ÚNICA raíz
+# (RootCertStore con un solo cert, sin roots del sistema ni verificador
+# dangerous) en ambas rutas TLS, así que el pinning es idéntico en macOS y
+# Windows.
+# Provider criptográfico: ring. hyper-rustls de irelia activa `ring`, y
+# tungstenite 0.26 activa rustls con `default-features = false` (sin
+# aws_lc_rs), así que aws-lc-sys no entra al grafo y el cross-check hacia
+# windows-msvc sigue siendo posible desde macOS (sin C nativo de aws-lc que
+# necesite headers de Windows).
+# Omitimos `full` para no arrastrar `in_game`.
+irelia = { version = "0.11", default-features = false, features = ["rest", "ws", "ws_rustls", "__hyper", "__hyper_rustls"] }
+# Cliente HTTP para Data Dragon. Se usará en fase 3.
+# `native-tls` en vez del default de reqwest 0.13 (`default-tls = ["rustls"]`,
+# que arrastraría aws-lc-sys vía aws-lc-rs; irelia en rustls usa ring, así que
+# esta es la única vía de entrada de aws-lc-sys y la cerramos). Data Dragon es
+# HTTPS público con CAs estándar (validez < 825 días), así que nativetls no
+# sufre la política de macOS que afecta al cert de Riot (ver el comentario de
+# irelia). Conservamos charset, http2 y system-proxy de los defaults
+# originales.
+reqwest = { version = "0.13", default-features = false, features = ["json", "native-tls", "charset", "http2", "system-proxy"] }
+# Runtime async: puente entre el hilo nativo del websocket de irelia y la
+# señal de Dioxus (canales mpsc), reintentos (sleep/interval) y
+# `spawn_blocking` para las llamadas bloqueantes de irelia.
+tokio = { version = "1", default-features = false, features = ["rt", "sync", "time"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1" }
+
+[features]
+default = ["desktop"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]

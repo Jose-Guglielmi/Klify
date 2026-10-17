@@ -1,0 +1,2771 @@
+/* ==========================================================================
+   KLIFY · Design System CSS (FASE 11b-1)
+   Fuente de verdad: design.md + ui-preview.html (iteración 9).
+   Sin frameworks: variables CSS con TODOS los tokens de marca y clases
+   semánticas + recetas (esquinas cortadas, brackets, slashes, glow, tiles).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1 · TOKENS (design.md)
+   -------------------------------------------------------------------------- */
+:root {
+  /* Superficies (escalera slate fría) */
+  --bg: #0b0e14;
+  --surface: #10141d;
+  --surface-dim: #070a0e;
+  --c-low: #121722;
+  --c-base: #1f2937;
+  --c-high: #2a3648;
+  --c-highest: #354358;
+  --on-surface: #e5e7eb;
+  --on-surface-var: #9aa4b2;
+
+  /* Marca */
+  --primary: #ff0033;
+  --primary-hover: #ff1a4d;
+  --primary-pressed: #cc0029;
+  --primary-bright: #ff3355;
+  --primary-container: #440011;
+  --on-primary-container: #ffd9de;
+
+  /* Apoyo */
+  --silver: #c3cad4;
+  --secondary-container: #2c3848;
+  --on-secondary-container: #e2e8f0;
+  --outline: #8b95a3;
+  --outline-var: #2f3a4a;
+  --error: #ffa198;
+
+  /* Radios: angular total; lg solo modals */
+  --radius-sm: 0;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* Tipografías */
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Ritmo */
+  --unit: 8px;
+  --container-max: 1024px;
+}
+
+/* --------------------------------------------------------------------------
+   2 · BASE
+   -------------------------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--outline);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+}
+
+/* Capas de fondo fijas (RECETA 1 del prototipo) */
+.bg-glow,
+.bg-stripes,
+.bg-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-glow {
+  background: radial-gradient(600px 600px at 6% -4%, rgba(255, 0, 51, 0.06), transparent 70%);
+}
+
+.bg-stripes {
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.012) 0 2px, transparent 2px 14px);
+}
+
+.bg-vignette {
+  background: radial-gradient(120% 90% at 50% 18%, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.42) 100%);
+}
+
+/* Splash ambiental dentro de una vista (perfil / waiting) */
+.bg-splash {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-splash img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  opacity: 0.15;
+  filter: grayscale(1);
+  -webkit-mask-image: radial-gradient(80% 75% at 50% 40%, black 22%, transparent 80%);
+  mask-image: radial-gradient(80% 75% at 50% 40%, black 22%, transparent 80%);
+}
+
+/* Franjas finas sobre zonas con arte */
+.stripes-hdr {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.022) 0 2px, transparent 2px 14px);
+}
+
+/* --------------------------------------------------------------------------
+   3 · TIPOGRAFÍA Y LABELS
+   -------------------------------------------------------------------------- */
+.label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+.label-md {
+  font-size: 14px;
+}
+
+/* Números display: Barlow Condensed italic 700 (datos grandes HUD) */
+.num-display {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Números tabulares: los datos nunca "bailan" */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Separadores HUD ("/" y "·") */
+.hud-sep {
+  color: var(--outline-var);
+  font-weight: 700;
+}
+
+.kda-sep {
+  color: var(--outline-var);
+  font-weight: 700;
+}
+
+/* Colores de texto puntuales */
+.t-on { color: var(--on-surface); }
+.t-dim { color: var(--on-surface-var); }
+.t-silver { color: var(--silver); }
+.t-outline { color: var(--outline); }
+.t-outline-var { color: var(--outline-var); }
+.t-primary { color: var(--primary); }
+.t-bright { color: var(--primary-bright); }
+.t-error { color: var(--error); }
+
+/* Tamaños puntuales para labels y datos */
+.fs-9 { font-size: 9px; }
+.fs-10 { font-size: 10px; }
+.fs-11 { font-size: 11px; }
+.fs-12 { font-size: 12px; }
+.fs-13 { font-size: 13px; }
+.fs-14 { font-size: 14px; }
+
+/* --------------------------------------------------------------------------
+   4 · SHELL: header KLIFY + footer HUD
+   -------------------------------------------------------------------------- */
+.view {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.klify-header {
+  position: relative;
+}
+
+.klify-header-row {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 28px 24px 20px;
+}
+
+.klify-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Slashes de impacto junto al wordmark (líneas de marca) */
+.slash-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.slash-stack i {
+  display: inline-block;
+  transform: skewX(-25deg);
+}
+
+.slash-stack i:nth-child(1) { height: 2px; width: 24px; background: rgba(255, 0, 51, 0.6); }
+.slash-stack i:nth-child(2) { height: 3px; width: 36px; background: var(--primary); }
+.slash-stack i:nth-child(3) { height: 2px; width: 48px; background: rgba(255, 0, 51, 0.4); }
+
+/* Variante XL de la pantalla de espera (espejada, más grande) */
+.slash-stack--xl { gap: 6px; }
+.slash-stack--xl i:nth-child(1) { height: 3px; width: 32px; }
+.slash-stack--xl i:nth-child(2) { height: 4px; width: 56px; }
+.slash-stack--xl i:nth-child(3) { height: 3px; width: 80px; }
+.slash-stack--right { align-items: flex-end; }
+.slash-stack--right i:nth-child(1) { width: 80px; background: rgba(255, 0, 51, 0.4); }
+.slash-stack--right i:nth-child(2) { width: 56px; }
+.slash-stack--right i:nth-child(3) { width: 32px; background: rgba(255, 0, 51, 0.6); }
+
+.klify-wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 44px;
+  color: var(--on-surface);
+}
+
+.klify-wordmark .k {
+  color: var(--primary);
+}
+
+.klify-wordmark--xl {
+  font-size: 96px;
+}
+
+.klify-divider-v {
+  width: 1px;
+  height: 20px;
+  background: var(--outline-var);
+}
+
+.klify-tagline {
+  color: var(--silver);
+}
+
+.klify-header-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Línea roja sesgada bajo el header (línea de impacto) */
+.klify-redline {
+  position: relative;
+  height: 3px;
+  width: 110%;
+  margin-left: -5%;
+  background: var(--primary);
+  transform: skewX(-15deg);
+}
+
+.klify-footer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--container-max);
+  padding: 0 24px;
+}
+
+.klify-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--outline-var);
+  padding: 16px 0;
+}
+
+.main-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--container-max);
+  flex: 1;
+  padding: 0 24px 56px;
+}
+
+/* --------------------------------------------------------------------------
+   5 · RECETAS DE MARCA
+   -------------------------------------------------------------------------- */
+
+/* RECETA 2 · Esquinas cortadas (clip-path; el wrapper aporta el borde 1px) */
+.frame {
+  background: var(--outline-var);
+  padding: 1px;
+}
+
+.cut-tr-bl   { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+.cut-tr-bl-i { clip-path: polygon(0 0, calc(100% - 17px) 0, 100% 17px, 100% 100%, 17px 100%, 0 calc(100% - 17px)); }
+.cut-br      { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%); }
+.cut-br-i    { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 17px), calc(100% - 17px) 100%, 0 100%); }
+.cut-tr      { clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%); }
+.cut-tr-i    { clip-path: polygon(0 0, calc(100% - 13px) 0, 100% 13px, 100% 100%, 0 100%); }
+
+/* Fondos de superficie utilitarios */
+.bg-surface { background: var(--surface); }
+.bg-low { background: var(--c-low); }
+.bg-base { background: var(--c-base); }
+.bg-high { background: var(--c-high); }
+
+/* RECETA 3 · Corner brackets en L (plata; .bracket--red para destacados) */
+.bracket {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.bracket i {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--outline);
+}
+
+.bracket i:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+.bracket i:nth-child(2) { top: 0; right: 0; border-left: 0; border-bottom: 0; }
+.bracket i:nth-child(3) { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+.bracket i:nth-child(4) { bottom: 0; left: 0; border-right: 0; border-top: 0; }
+
+.bracket--red i { border-color: var(--primary); }
+
+/* RECETA 4 · Barra sesgada roja/plata de headers de zona */
+.bar-skew {
+  display: inline-block;
+  height: 3px;
+  background: var(--primary);
+  transform: skewX(-15deg);
+  flex-shrink: 0;
+}
+
+.bar-skew--silver { background: var(--outline); }
+
+/* Encabezado de sección: barra + "// Título" */
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-head .sl {
+  color: var(--primary);
+}
+
+.section-head .sl--silver {
+  color: var(--outline);
+}
+
+/* RECETA 5 · Icon tiles con bisel */
+.tile {
+  position: relative;
+  flex-shrink: 0;
+  background: var(--c-high);
+  border: 1px solid var(--outline-var);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.tile:hover {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 8px rgba(255, 0, 51, 0.35);
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Keystone destacado: anillo rojo + glow (elemento #1 de su zona) */
+.tile--keystone {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 12px rgba(255, 0, 51, 0.25);
+}
+
+/* Glow de marca (solo elemento #1 de cada zona) */
+.glow {
+  box-shadow: 0 0 24px rgba(255, 0, 51, 0.25);
+}
+
+.glow-soft {
+  box-shadow: 0 0 12px rgba(255, 0, 51, 0.2);
+}
+
+/* Fade negro inferior para asentar nombres sobre splash art */
+.fade-champ {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(11, 14, 20, 0.95) 0%,
+    rgba(11, 14, 20, 0.55) 28%,
+    rgba(11, 14, 20, 0) 55%
+  );
+}
+
+/* RECETA 6 · Stats HUD en línea (número + label) */
+.stat-line {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.stats-hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Panel con animación de entrada */
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.panel {
+  animation: fadein 160ms ease;
+}
+
+/* Pulsos y spinner */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+.pulse-soft {
+  animation: pulse-soft 2.2s ease-in-out infinite;
+}
+
+@keyframes dot-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.dot-pulse {
+  display: inline-block;
+  animation: dot-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  border: 2px solid var(--outline-var);
+  border-top-color: var(--primary);
+  animation: spin 0.9s linear infinite;
+}
+
+/* --------------------------------------------------------------------------
+   6 · CHIPS / TAGS
+   -------------------------------------------------------------------------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.chip--active {
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+}
+
+.chip--soft {
+  background: var(--c-high);
+  color: var(--on-surface-var);
+}
+
+/* Paralelogramo de marca: resultado de partida */
+.chip-result {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 5px 14px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+.chip-win { background: var(--secondary-container); color: var(--on-surface); }
+.chip-loss { background: var(--primary-container); color: var(--on-primary-container); }
+
+/* Paralelogramo primary-container: chip de rango */
+.chip-rank {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 16px;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+
+/* Variante gris para "SIN RANK" */
+.chip-rank--empty {
+  background: var(--c-high);
+  color: var(--on-surface-var);
+}
+
+/* --------------------------------------------------------------------------
+   7 · BOTONES
+   -------------------------------------------------------------------------- */
+.btn-primary {
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  transition: background-color 120ms ease;
+}
+
+.btn-primary:hover:not(:disabled) { background: var(--primary-hover); }
+.btn-primary:active:not(:disabled) { background: var(--primary-pressed); }
+.btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* Ghost decorativo (deshabilitado: "próximamente") */
+.btn-ghost {
+  background: transparent;
+  color: var(--on-surface-var);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* Ghost activo */
+.btn-ghost-live {
+  background: transparent;
+  color: var(--on-surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.btn-ghost-live:hover { background: var(--c-high); border-color: var(--on-surface); }
+.btn-ghost-live:active { background: var(--c-highest); }
+
+/* Ghost chico (acciones secundarias de la vista perfil) */
+.btn-ghost-sm {
+  background: transparent;
+  color: var(--on-surface);
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.btn-ghost-sm:hover { background: var(--c-high); border-color: var(--on-surface); }
+.btn-ghost-sm:active { background: var(--c-highest); }
+
+/* --------------------------------------------------------------------------
+   8 · TABS (listas para 11b-2)
+   -------------------------------------------------------------------------- */
+.tab {
+  position: relative;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 19px;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-var);
+  padding: 10px 18px 12px;
+  transition: color 120ms ease;
+}
+
+.tab:hover { color: var(--on-surface); }
+
+.tab--active,
+.tab--active:hover { color: var(--on-surface); }
+
+.tab--active::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 2px;
+  background: var(--primary);
+  transform: skewX(-15deg);
+}
+
+/* --------------------------------------------------------------------------
+   9 · VISTA PERFIL
+   -------------------------------------------------------------------------- */
+.hero-card {
+  position: relative;
+  margin-top: 12px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 48px;
+  color: var(--on-surface);
+}
+
+.hero-tag {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  font-size: 32px;
+  color: var(--primary-bright);
+}
+
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 760px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .klify-wordmark--xl { font-size: 68px; }
+}
+
+/* Card de top champ */
+.champ-card {
+  border: 1px solid var(--outline-var);
+  background: var(--c-base);
+  padding: 16px;
+  transition: border-color 100ms ease;
+  text-align: left;
+  width: 100%;
+}
+
+.champ-card:hover { border-color: var(--primary); }
+
+.champ-card-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.champ-card-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 24px;
+  color: var(--on-surface);
+}
+
+.champ-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--outline-var);
+}
+
+/* Filas del historial */
+.match-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  text-align: left;
+  transition: border-color 120ms ease;
+}
+
+.match-row:nth-child(even) { background: var(--c-low); }
+.match-row:hover { border-color: var(--primary); }
+
+.match-row-champ {
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.match-row-kda {
+  width: 104px;
+  flex-shrink: 0;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--on-surface);
+}
+
+.match-row-cell {
+  width: 70px;
+  flex-shrink: 0;
+}
+
+.cell-value {
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--on-surface);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+/* --------------------------------------------------------------------------
+   10 · VISTA SIN CLIENTE (waiting)
+   -------------------------------------------------------------------------- */
+.waiting-center {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 64px 24px 48px;
+  text-align: center;
+}
+
+.waiting-tagline {
+  letter-spacing: 0.35em;
+  color: var(--on-surface-var);
+  margin-top: 20px;
+}
+
+.waiting-sub {
+  color: var(--outline-var);
+  letter-spacing: 0.3em;
+  margin-top: 8px;
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 860px;
+  margin-top: 48px;
+  align-items: stretch;
+}
+
+.status-card {
+  position: relative;
+  text-align: left;
+}
+
+.status-inner {
+  padding: 16px 20px 8px;
+}
+
+.status-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+.status-ring {
+  position: relative;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 1px solid var(--outline-var);
+}
+
+.status-ring-soft {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 0, 51, 0.5);
+}
+
+.features-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 860px;
+  margin-top: 44px;
+}
+
+@media (min-width: 720px) {
+  .features-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.feature-card {
+  position: relative;
+  text-align: left;
+}
+
+.feature-inner {
+  padding: 16px;
+  height: 100%;
+}
+
+.feature-inner p {
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--on-surface-var);
+}
+
+/* --------------------------------------------------------------------------
+   11 · MODALES (overlay + panel; radius lg solo acá)
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(7, 10, 14, 0.7);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.modal-panel {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  max-height: 86vh;
+  overflow: auto;
+  background: var(--c-high);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.modal-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--on-surface-var);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  transition: border-color 120ms ease, color 120ms ease, background-color 120ms ease;
+}
+
+.modal-x:hover {
+  border-color: var(--primary);
+  color: var(--on-surface);
+  background: var(--c-high);
+}
+
+/* Picker de fondo del perfil */
+.picker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.pick-tile {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 68px;
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+  overflow: hidden;
+}
+
+.pick-tile:hover { border-color: var(--outline); }
+
+.pick-tile--active {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 0, 51, 0.35);
+}
+
+.pick-tile-label {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  padding: 2px 6px;
+  background: rgba(7, 10, 14, 0.85);
+  color: var(--on-surface);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+/* Detalle de partida */
+.detail-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+@media (min-width: 760px) {
+  .team-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.team-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+.team-row-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.build-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.build-row .tile {
+  width: 40px;
+  height: 40px;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--outline-var);
+  margin: 16px 0;
+}
+
+.source-note {
+  margin-top: 16px;
+  color: var(--outline-var);
+}
+
+.text-right { text-align: right; }
+.ml-auto { margin-left: auto; }
+.mt-1 { margin-top: 4px; }
+.mt-2 { margin-top: 8px; }
+.mt-3 { margin-top: 12px; }
+.mt-4 { margin-top: 16px; }
+.mt-6 { margin-top: 24px; }
+.mt-9 { margin-top: 36px; }
+
+/* --------------------------------------------------------------------------
+   12 · CHAMP SELECT (FASE 11b-2a · rediseño según ui-preview.html)
+   -------------------------------------------------------------------------- */
+
+.section-head--cs { margin-top: 32px; }
+.cs-analysis { margin-top: 16px; }
+
+/* Fila de equipo */
+.cs-team {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.cs-card { position: relative; flex-shrink: 0; }
+.cs-card--me { width: 200px; height: 440px; box-shadow: 0 0 24px rgba(255, 0, 51, 0.25); }
+.cs-card--ally { width: 170px; height: 420px; }
+
+.cs-me-border { position: absolute; inset: 0; border: 1px solid var(--primary); }
+
+/* Clip interior (el elemento absolute dentro de mi card) */
+.cs-clip { position: absolute; inset: 1px; overflow: hidden; }
+
+/* Inner genérico de las cards con clip */
+.cs-inner { position: relative; width: 100%; height: 100%; overflow: hidden; }
+
+.cs-fill { position: absolute; inset: 0; }
+
+.cs-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right 22%;
+  transition: filter 200ms ease;
+}
+
+.cs-ally:hover .cs-card-img { filter: brightness(1.1); }
+
+.cs-card-chips {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 10;
+}
+
+.cs-card-foot {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 12px 20px;
+}
+
+.cs-card-foot--ally { padding-bottom: 12px; }
+
+.cs-me-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--primary);
+  z-index: 10;
+}
+
+.cs-name-me {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 30px;
+  color: var(--on-surface);
+}
+
+.cs-name-ally {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1.15;
+  font-size: 20px;
+  color: var(--on-surface);
+}
+
+/* Estados internos (eligiendo / picking / esperando / fallback) */
+.cs-empty {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+
+.cs-gap-16 { gap: 16px; }
+
+.cs-qmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+  font-size: 64px;
+  color: var(--outline-var);
+}
+
+/* Contenedor del análisis */
+.cs-waiting {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* HERO STRIP */
+.cs-hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid var(--outline-var);
+}
+
+.cs-hero-portrait {
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+}
+
+.cs-hero-body { min-width: 0; flex: 1; }
+
+.cs-hero-titlerow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.cs-hero-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 40px;
+  color: var(--on-surface);
+}
+
+.cs-hero-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 12px;
+  margin-top: 8px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* TABS */
+.cs-tabs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 12px;
+  border-bottom: 1px solid var(--outline-var);
+}
+
+/* Panel de tabs: dos columnas en desktop */
+.cs-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px) {
+  .cs-grid2 { grid-template-columns: 1fr 1fr; }
+  .cs-pane--kit {
+    border-bottom: 0;
+    border-right: 1px solid var(--outline-var);
+  }
+}
+
+.cs-pane { padding: 20px; min-width: 0; }
+.cs-pane--kit { border-bottom: 1px solid var(--outline-var); }
+
+/* Filas del Basic Kit */
+.cs-skills { margin-top: 16px; }
+
+.cs-skill-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  cursor: pointer;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-skills .cs-skill-row:first-child { border-top: 0; padding-top: 0; }
+
+.cs-skill-row .tile { width: 48px; height: 48px; }
+
+.cs-skill-key {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid var(--outline-var);
+  border-top: 1px solid var(--outline-var);
+  background: rgba(11, 14, 20, 0.9);
+  padding: 0 4px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 14px;
+  color: var(--on-surface-var);
+  transition: color 120ms ease;
+}
+
+.cs-skill-row--live .tile { border-color: var(--primary); }
+.cs-skill-row--live .cs-skill-key { color: var(--primary); }
+.cs-skill-row--live .cs-skill-name { color: #ffffff; }
+.cs-skill-row--pinned .tile {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6), 0 0 8px rgba(255, 0, 51, 0.35);
+}
+
+.cs-skill-text { min-width: 0; }
+
+.cs-skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--on-surface);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cs-skill-desc {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--on-surface-var);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Ficha de hechizo (Spell Detail) */
+.cs-sheet-head { display: flex; align-items: center; gap: 12px; }
+
+.cs-sheet-key {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--primary);
+}
+
+.cs-sheet-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  font-size: 28px;
+  color: var(--on-surface);
+  margin-top: 4px;
+}
+
+.cs-sheet-desc {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--on-surface);
+}
+
+.cs-sheet-stats {
+  margin-top: 16px;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-stat-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-sheet-stats .cs-stat-row:first-child { border-top: 0; }
+
+/* Prioridad de subida (cuando la fuente abra) */
+.cs-priority-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 30px;
+  color: var(--on-surface);
+}
+
+.cs-priority-row .cs-priority-key:first-of-type {
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+}
+
+.cs-priority-arrow { color: var(--outline-var); font-size: 0.72em; font-weight: 600; }
+
+/* Estados de carga / no disponible */
+.cs-loading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cs-unavailable {
+  border: 1px solid var(--outline-var);
+  background: var(--c-base);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.cs-unavailable-reason {
+  margin: 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--on-surface-var);
+}
+
+.cs-hint { font-size: 13px; line-height: 18px; color: var(--on-surface-var); margin: 0; }
+
+/* PÁGINAS DE RUNAS (panel vertical por árbol) */
+.cs-runes {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .cs-runes { grid-template-columns: 1fr 1fr; }
+  .cs-runes--single { grid-template-columns: 1fr; }
+}
+
+.cs-page {
+  position: relative;
+  border: 1px solid var(--outline-var);
+  background: var(--c-base);
+}
+
+.cs-page--best {
+  border-color: var(--primary);
+  box-shadow: 0 0 24px rgba(255, 0, 51, 0.25);
+}
+
+.cs-page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 20px 16px;
+}
+
+.cs-page-wr-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+}
+
+.cs-page-wr { font-size: 34px; line-height: 1; }
+
+/* Paralelogramo de badge con corte de esquina (del prototipo) */
+.cs-badge {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.cs-badge--best { background: var(--primary-container); color: var(--on-primary-container); }
+
+.cs-page-tree {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-page-tree .tile { width: 36px; height: 36px; }
+
+/* Keystone 64px con anillo rojo */
+.cs-rune-keystone {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 20px;
+  padding: 16px 0;
+}
+
+/* Filas de runas menores */
+.cs-rune-list { margin: 0 20px; }
+
+.cs-rune-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-rune-name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--on-surface);
+}
+
+.cs-rune-row .cs-rune-name { font-size: 14px; }
+
+.cs-rune-desc {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--on-surface-var);
+}
+
+/* Shards con nombre */
+.cs-shards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px;
+  padding: 16px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-shard {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.6);
+  color: var(--on-surface-var);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Acción de la página destacada */
+.cs-page-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 0 20px;
+  padding: 16px 0 20px;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-soon { display: flex; align-items: center; gap: 8px; }
+
+/* --------------------------------------------------------------------------
+   TAB ITEMS + TAB COUNTERS (FASE 11b-2b)
+   Filas HUD: superficie con esquina cortada, tiles 32/44/48px, WR en
+   Barlow italic blanco (rojo solo desfavorable), barras de WR con track.
+   -------------------------------------------------------------------------- */
+
+.cs-items,
+.cs-counters {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+/* COUNTERS: dos columnas 55/45 (prototipo iteración 7) */
+.cs-counters {
+  display: grid;
+  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .cs-counters { grid-template-columns: 1fr; }
+}
+
+.cs-counters-left,
+.cs-counters-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.cs-hint--gap { margin-top: 2px; }
+
+/* Barras de WR (track + fill); rojo solo cuando el matchup es desfavorable */
+.track {
+  flex: 1;
+  height: 5px;
+  min-width: 40px;
+  background: var(--c-high);
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: var(--silver);
+}
+
+.fill--primary {
+  background: var(--primary);
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.35);
+}
+
+/* ---------- VS ENEMIGOS EN VIVO ---------- */
+.cs-enemy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cs-enemy-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  transition: border-color 120ms ease;
+}
+
+.cs-enemy-row:hover { border-color: var(--outline); }
+
+.cs-enemy-row--pending { opacity: 0.55; }
+
+.cs-pending-tile {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--outline-var);
+  background: var(--c-low);
+  color: var(--on-surface-var);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cs-enemy-mid {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-enemy-titlerow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-width: 0;
+}
+
+.cs-enemy-name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--on-surface);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cs-enemy-name--dim { color: var(--on-surface-var); }
+
+.cs-enemy-trackrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cs-enemy-games {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+.cs-enemy-wrcol {
+  flex-shrink: 0;
+  min-width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+
+.cs-enemy-wr { font-size: 20px; }
+
+.cs-enemy-nodata {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+/* ---------- MATCHUPS GENERALES (secundario) ---------- */
+.cs-matchups {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--outline-var);
+}
+
+.cs-matchup-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-matchup-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+.cs-matchup-name {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--on-surface);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cs-matchup-games {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+.cs-matchup-wr { font-size: 15px; }
+
+/* ---------- TAB ITEMS: secciones ---------- */
+.cs-item-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cs-item-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.cs-item-rowlist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BUILD CORE numerado: flecha entre pasos */
+.cs-item-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.cs-item-arrow {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--outline);
+}
+
+.cs-item {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+  transition: border-color 120ms ease;
+}
+
+.cs-item:hover { border-color: var(--outline); }
+
+/* Tile del ítem: TAMAÑO FIJO (el bug de la imagen gigante) */
+.cs-item-tilewrap {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.cs-item-tilewrap .tile {
+  width: 100%;
+  height: 100%;
+}
+
+.cs-item-order {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  z-index: 1;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  border: 2px solid var(--surface-dim);
+}
+
+.cs-item-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cs-item-name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--on-surface);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cs-item-desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--on-surface-var);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cs-item-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.cs-item-wr { font-size: 17px; }
+
+.cs-item-games {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+/* Fallback `#` en tiles sin imagen */
+.cs-tile-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--on-surface-var);
+}
+
+/* ---------- COUNTERS: columna derecha (items vs la comp) ---------- */
+.cs-vscomp-suggested {
+  position: relative;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 14px rgba(255, 0, 51, 0.18);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+}
+
+.cs-vscomp-tag {
+  display: block;
+  width: fit-content;
+  margin: 10px 12px -6px;
+  padding: 2px 8px;
+  transform: skewX(-15deg);
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cs-vsitem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 0 100%);
+}
+
+.cs-vscomp-suggested .cs-vsitem {
+  background: transparent;
+  border: 0;
+}
+
+.cs-vsitem-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cs-vsitem-name {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--on-surface);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cs-vsitem-desc {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--on-surface-var);
+}
+
+.cs-vsitem-wrcol {
+  flex-shrink: 0;
+  min-width: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  text-align: right;
+}
+
+.cs-vsitem-wr { font-size: 18px; }
+
+.cs-vsitem-games {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+.cs-vscomp-note { margin-top: 0; }
+
+.cs-buildprincipal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.source-note { margin-top: 4px; }
+
+/* --------------------------------------------------------------------------
+   MODO VISUAL VS (opción 2, mockup del dueño): mini-franja 5v5 en círculos
+   + split "MI CHAMP vs RIVAL" con rival elegible. Acentos del mockup:
+   aro rival cyan y badge VS dorado (excepciones puntuales a la paleta;
+   fáciles de apagar).
+   -------------------------------------------------------------------------- */
+:root {
+  --rival-accent: #3ec6d8;
+  --vs-gold: #e8c15a;
+}
+
+.vs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  min-width: 0;
+}
+
+/* Switch de modo visual (en el section-head "// Análisis") */
+.vs-mode-switch {
+  margin-left: auto;
+  display: inline-flex;
+  gap: 4px;
+}
+
+.vs-mode-btn {
+  padding: 4px 12px;
+  background: transparent;
+  border: 1px solid var(--outline-var);
+  color: var(--on-surface-var);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.vs-mode-btn:hover { border-color: var(--outline); color: var(--on-surface); }
+
+.vs-mode-btn--on {
+  background: var(--primary-container);
+  border-color: var(--primary);
+  color: var(--on-primary-container);
+}
+
+/* Mini-franja de equipos en vivo */
+.vs-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.vs-strip-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+.vs-strip-label--right { text-align: right; }
+
+.vs-strip-side {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.vs-strip-vs {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--vs-gold);
+  text-transform: uppercase;
+}
+
+.vs-slot {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--outline-var);
+  background: var(--c-low);
+}
+
+.vs-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vs-slot--mine {
+  border-color: var(--primary);
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.35);
+}
+
+.vs-slot--rival { border-color: var(--rival-accent); }
+
+.vs-slot--empty {
+  border-style: dashed;
+}
+
+.vs-slot-q {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--on-surface-var);
+}
+
+/* Split hero: MI CHAMP (rojo) vs RIVAL (cyan) con diagonal */
+.vs-split {
+  position: relative;
+  height: 460px;
+  background: var(--surface-dim);
+  border: 1px solid var(--outline-var);
+  overflow: hidden;
+}
+
+.vs-side {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.vs-side--mine {
+  clip-path: polygon(0 0, 60% 0, 45% 100%, 0 100%);
+  background:
+    linear-gradient(160deg, rgba(255, 0, 51, 0.30), rgba(60, 0, 14, 0.60) 75%),
+    var(--surface-dim);
+}
+
+.vs-side--rival {
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 45% 100%);
+  background:
+    linear-gradient(200deg, rgba(62, 198, 216, 0.22), rgba(8, 38, 50, 0.60) 75%),
+    var(--surface-dim);
+}
+
+.vs-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+  opacity: 0.9;
+}
+
+.vs-art-fallback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 96px;
+  color: var(--c-high);
+}
+
+.vs-watermark {
+  position: absolute;
+  bottom: 4%;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(70px, 11vw, 160px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.08);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.vs-side--mine .vs-watermark { left: 4%; }
+.vs-side--rival .vs-watermark { right: 4%; }
+
+.vs-chip {
+  position: absolute;
+  top: 14px;
+  z-index: 2;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vs-chip--mine { left: 14px; }
+
+.vs-chip--rival { right: 52px; }
+
+.vs-clear {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 13px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.vs-clear:hover { border-color: var(--primary); color: var(--primary-bright); }
+
+.vs-foot {
+  position: absolute;
+  bottom: 14px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vs-foot--mine { left: 16px; align-items: flex-start; }
+
+.vs-foot--rival { right: 16px; align-items: flex-end; text-align: right; }
+
+.vs-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.65);
+}
+
+.vs-center {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.vs-badge {
+  padding: 10px 24px;
+  transform: skewX(-12deg);
+  background: #0a0a0a;
+  border: 2px solid var(--vs-gold);
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.6);
+  color: var(--vs-gold);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 800;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+/* Botón "Elegir rival" centrado en el lado vacío */
+.vs-pick-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* WR del matchup manual */
+.vs-wrline {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--on-surface);
+}
+
+/* Picker de rival */
+.vs-picker {
+  min-width: 420px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vs-picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vs-picker-input {
+  padding: 10px 12px;
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.vs-picker-input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.vs-picker-list {
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vs-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: left;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.vs-picker-row:hover {
+  border-color: var(--outline-var);
+  background: var(--c-low);
+}
+
+.vs-picker-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border: 1px solid var(--outline-var);
+  flex-shrink: 0;
+}
+
+/* Bloque "VS {rival}": tips oficiales + sugerido (modo VS) */
+.vs-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+  min-width: 0;
+}
+
+.vs-info-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vs-info-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .vs-info-cols { grid-template-columns: 1fr; }
+}
+
+.vs-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.vs-tips {
+  margin: 0;
+  padding: 0 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vs-tips li {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--on-surface);
+}
+
+.vs-tips li::marker {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.vs-suggest {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vs-note {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--outline-var);
+  font-size: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   VS · selección de rival desde la franja + bloque de enfrentamiento
+   (estilo counterstats con datos Lolalytics de los counters del rival)
+   -------------------------------------------------------------------------- */
+.vs-slot--btn {
+  cursor: pointer;
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.vs-slot--btn:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 12px rgba(62, 198, 216, 0.5);
+  transform: translateY(-2px);
+}
+
+.vs-slot--selected {
+  border-color: var(--rival-accent);
+  box-shadow: 0 0 14px rgba(62, 198, 216, 0.65);
+}
+
+/* Arte sin fondo (cutout): contain anclado abajo, centrado DENTRO de su
+   mitad (27% / 73% del split). Todos escalan a la MISMA altura (96%); los
+   apaisados (Kayn) se extienden hacia la diagonal y el clip-path del lado
+   los corta — cuerpo consistente, sin enanos ni gigantes */
+.vs-art--cutout {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 27%;
+  right: auto;
+  transform: translateX(-50%);
+  height: 96%;
+  width: auto;
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 1;
+}
+
+.vs-side--rival .vs-art--cutout {
+  left: auto;
+  right: 27%;
+  transform: translateX(50%);
+}
+
+/* Bloque de enfrentamiento */
+.vs-matchup {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%);
+}
+
+.vs-mu-stats {
+  margin-left: auto;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--on-surface-var);
+}
+
+.vs-mu-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .vs-mu-cols { grid-template-columns: 1fr; }
+}
+
+.vs-mu-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.vs-mu-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--outline-var);
+}
+
+.vs-mu-title {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--on-surface);
+}
+
+.vs-mu-title--good { color: var(--on-surface); }
+
+.vs-mu-title--bad { color: var(--primary-bright); }
+
+.vs-mu-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+}
+
+.vs-mu-row--me {
+  background: var(--c-low);
+  border-color: var(--primary);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.vs-mu-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid var(--outline-var);
+}
+
+.vs-mu-icon--fallback {
+  display: grid;
+  place-items: center;
+  color: var(--on-surface-var);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vs-mu-mid {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vs-mu-wrline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vs-mu-wr { font-size: 16px; }
+
+.vs-mu-me {
+  font-size: 9px;
+  padding: 1px 6px;
+}
+
+.vs-mu-right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  text-align: right;
+}
+
+.vs-mu-name {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--on-surface);
+}
+
+.vs-mu-games {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+/* Consejos de JUGADORES (counterstats/MOBAFire) dentro de la col. izquierda */
+.vs-ptip-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--outline-var);
+}
+
+.vs-ptips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vs-ptip {
+  padding: 10px 12px;
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+}
+
+.vs-ptip-text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--on-surface);
+}
+
+.vs-ptip-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.vs-ptip-author {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--primary-bright);
+}
+
+.vs-ptip-role {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--on-surface-var);
+}
+
+/* Tab CONSEJOS: grilla de tarjetas de jugadores a lo ancho */
+.vs-ptips-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+@media (max-width: 1180px) {
+  .vs-ptips-grid { grid-template-columns: 1fr; }
+}
+
+/* Ventanas angostas (o zoom del webview): la franja envuelve, el análisis
+   no arrastra scroll horizontal y el split baja de alto */
+@media (max-width: 1180px) {
+  .vs-strip {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .vs-strip-side { flex: 0 1 auto; }
+
+  .vs-split { height: 360px; }
+
+  .vs-watermark { font-size: clamp(48px, 9vw, 110px); }
+}
+
+.main-container {
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   AJUSTES DE COLOR (convención LoL: MI equipo = azul, ENEMIGO = rojo) y
+   refinamientos del modo VS + cards clásicas con art sin fondo.
+   -------------------------------------------------------------------------- */
+
+/* Split: mi lado azul, el rival rojo */
+.vs-side--mine {
+  background:
+    linear-gradient(160deg, rgba(37, 99, 235, 0.32), rgba(8, 27, 79, 0.62) 75%),
+    var(--surface-dim);
+}
+
+.vs-side--rival {
+  background:
+    linear-gradient(200deg, rgba(255, 0, 51, 0.30), rgba(64, 0, 14, 0.62) 75%),
+    var(--surface-dim);
+}
+
+/* Aros de la franja: azul para mí, rojo para el rival */
+.vs-slot--mine {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.45);
+}
+
+.vs-slot--rival { border-color: var(--primary); }
+
+.vs-slot--btn:hover {
+  border-color: #ff8095;
+  box-shadow: 0 0 12px rgba(255, 0, 51, 0.5);
+}
+
+.vs-slot--selected {
+  border-color: var(--primary-bright);
+  box-shadow: 0 0 16px rgba(255, 0, 51, 0.7);
+}
+
+/* El botón ELEGIR RIVAL centrado en el área visible del lado rival
+   (la diagonal deja su centro visual ~77% del ancho del split) */
+.vs-pick-btn {
+  left: 77%;
+}
+
+/* Cards clásicas con art sin fondo: contain anclado abajo sobre fondo
+   con degradado, como el split */
+.cs-card-img--cutout {
+  object-fit: contain;
+  object-position: 50% 100%;
+  padding-top: 12%;
+}
+
+.cs-card--me .cs-clip,
+.cs-ally {
+  background:
+    linear-gradient(180deg, rgba(42, 54, 72, 0.55), rgba(11, 14, 20, 0.92) 82%),
+    var(--surface);
+}
+
+/* Ventana angosta: slots más compactos */
+@media (max-width: 1180px) {
+  .vs-slot { width: 36px; height: 36px; }
+  .vs-slot-q { font-size: 13px; }
+  .vs-strip { gap: 10px; }
+}
+
+/* Aro de ALIADOS en la franja (mismo equipo = azul, más sutil que el mío) */
+.vs-slot--ally {
+  border-color: #3b82f6;
+}

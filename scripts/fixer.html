@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixer de splasharts — klipy</title>
+<style>
+  :root {
+    --bg: #0a1420; --panel: #0f1e2e; --line: #1e2f42;
+    --gold: #c8aa6e; --gold-dark: #79592c; --text: #ece8e1; --muted: #7d8b99;
+    --green: #3c9b6e; --red: #d14d4d;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    background: radial-gradient(ellipse at top, #10233a 0%, var(--bg) 60%);
+    color: var(--text); font-family: "Segoe UI", system-ui, sans-serif;
+    min-height: 100vh; padding: 20px 24px;
+  }
+  a { color: var(--gold); text-decoration: none; }
+  header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+  h1 { font-size: 19px; letter-spacing: 1px; color: var(--gold); text-transform: uppercase; }
+  .sub { color: var(--muted); font-size: 13px; }
+  /* ---- config ---- */
+  .config {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px; display: grid; gap: 10px; margin-bottom: 14px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .config .full { grid-column: 1 / -1; }
+  label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 4px; }
+  input[type=password], input[type=text], textarea, select {
+    width: 100%; background: #0a1522; color: var(--text);
+    border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font-size: 13px;
+    font-family: inherit;
+  }
+  input:focus, textarea:focus, select:focus { outline: none; border-color: var(--gold-dark); }
+  textarea { resize: vertical; min-height: 56px; }
+  .hint { font-size: 11px; color: var(--muted); margin-top: 4px; }
+  /* ---- selector ---- */
+  .selector {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 14px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px;
+  }
+  .selector select { flex: 1; min-width: 240px; }
+  .chk { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); cursor: pointer; user-select: none; }
+  .queue { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .queue b { color: var(--text); }
+  button {
+    border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--panel); color: var(--text); transition: all .15s;
+  }
+  button:hover:not(:disabled) { border-color: var(--gold); color: var(--gold); }
+  button:disabled { opacity: .45; cursor: not-allowed; }
+  button.primary {
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold));
+    border-color: var(--gold); color: #08121e; font-weight: 600;
+  }
+  button.primary:hover:not(:disabled) { filter: brightness(1.1); color: #08121e; }
+  button.good { border-color: var(--green); color: var(--green); }
+  button.good:hover:not(:disabled) { background: rgba(60,155,110,.12); color: var(--green); border-color: var(--green); }
+  /* ---- paneles ---- */
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px) { .panels { grid-template-columns: 1fr; } }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    overflow: hidden; display: flex; flex-direction: column;
+  }
+  .panel h2 {
+    font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px;
+    padding: 9px 14px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center;
+  }
+  .panel h2 .who { color: var(--gold); font-size: 14px; text-transform: none; letter-spacing: .3px; }
+  .viewer {
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    min-height: 340px; padding: 10px;
+    background:
+      linear-gradient(45deg, #0c1826 25%, transparent 25%, transparent 75%, #0c1826 75%),
+      linear-gradient(45deg, #0c1826 25%, #12283f 25%, #12283f 75%, #0c1826 75%);
+    background-size: 32px 32px; background-position: 0 0, 16px 16px;
+    position: relative;
+  }
+  .viewer img { max-width: 100%; max-height: 60vh; object-fit: contain; display: block; }
+  .placeholder { color: var(--muted); font-size: 13px; text-align: center; padding: 30px; }
+  .alpha {
+    position: absolute; top: 8px; right: 8px; font-size: 11px;
+    background: rgba(8,18,30,.85); border: 1px solid var(--line); border-radius: 4px;
+    padding: 3px 8px; color: var(--muted);
+  }
+  .alpha.ok { color: var(--green); border-color: var(--green); }
+  .alpha.warn { color: var(--red); border-color: var(--red); }
+  .spinner {
+    width: 30px; height: 30px; border: 3px solid var(--gold-dark);
+    border-top-color: var(--gold); border-radius: 50%; animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; padding: 12px 14px; border-top: 1px solid var(--line); }
+  .status {
+    margin-top: 12px; font-size: 13px; color: var(--muted); min-height: 20px;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .status.err { color: var(--red); }
+  .status.ok { color: var(--green); }
+</style>
+</head>
+<body>
+<header>
+  <h1>🛠️ Fixer de splasharts</h1>
+  <span class="sub">regenera los marcados <b style="color:var(--red)">✘ mal</b> con IA generativa ·</span>
+  <a class="sub" href="/">← volver al revisor</a>
+  <span class="sub" id="cost" style="margin-left:auto"></span>
+</header>
+
+<section class="config">
+  <div>
+    <label for="key">OpenRouter API key</label>
+    <input type="password" id="key" placeholder="sk-or-v1-...">
+    <div class="hint">se guarda solo en tu navegador (localStorage) · cada generación consume créditos de tu cuenta</div>
+  </div>
+  <div>
+    <label for="model">Modelo</label>
+    <input type="text" id="model" placeholder="openai/gpt-5.4-image-2">
+    <div class="chk" style="margin-top:8px">
+      <input type="checkbox" id="wantTransparent" checked>
+      <span>pedir fondo transparente (<code>background: transparent</code> + png)</span>
+    </div>
+  </div>
+  <div class="full">
+    <label for="prompt">Prompt para quitar el fondo</label>
+    <textarea id="prompt"></textarea>
+  </div>
+</section>
+
+<section class="selector">
+  <label class="chk"><input type="checkbox" id="onlyBad" checked> solo marcados ✘ mal</label>
+  <select id="champ"></select>
+  <button id="prevBtn" title="Anterior">←</button>
+  <button id="nextBtn" title="Siguiente">→</button>
+  <span class="queue" id="queue"></span>
+</section>
+
+<section class="panels">
+  <div class="panel">
+    <h2>Original <span class="who" id="whoL"></span></h2>
+    <div class="viewer"><img id="origImg" alt=""></div>
+  </div>
+  <div class="panel">
+    <h2>Sin fondo <span class="who" id="whoR"></span></h2>
+    <div class="viewer" id="resViewer">
+      <div class="placeholder" id="resPlaceholder">todavía no generaste nada para este campeón</div>
+      <img id="resImg" alt="" style="display:none">
+      <div class="alpha" id="alphaBadge" style="display:none"></div>
+    </div>
+    <div class="actions">
+      <button class="primary" id="genBtn">✨ Quitar el fondo</button>
+      <button id="regenBtn" disabled>🔄 Regenerar</button>
+      <button class="good" id="saveBtn" disabled>✔ Guardar y marcar bien</button>
+      <button id="dlBtn" disabled>⬇ Descargar</button>
+    </div>
+  </div>
+</section>
+
+<div class="status" id="status"></div>
+
+<script>
+const DEFAULT_MODEL = "openai/gpt-5.4-image-2";
+const DEFAULT_PROMPT =
+  "Remove the background from this League of Legends champion splash art. " +
+  "Keep the character exactly as-is: same pose, colors, details, proportions and lighting. " +
+  "Output ONLY the character on a fully transparent background (PNG with alpha channel). " +
+  "Crisp clean edges, no halo, no residual background, no shadow, do not crop the character.";
+
+const $ = id => document.getElementById(id);
+const keyEl = $("key"), modelEl = $("model"), promptEl = $("prompt");
+let champs = [];     // ["Ahri.png", ...]
+let marks = {};      // {"Ahri": "mal"}
+let current = null;  // id actual
+let resultUrl = null;
+let resultMedia = "image/png";
+let generating = false;
+
+/* ---------- persistencia config ---------- */
+keyEl.value = localStorage.getItem("or_key") || "";
+modelEl.value = localStorage.getItem("or_model") || DEFAULT_MODEL;
+promptEl.value = localStorage.getItem("or_prompt") || DEFAULT_PROMPT;
+keyEl.addEventListener("change", () => localStorage.setItem("or_key", keyEl.value.trim()));
+modelEl.addEventListener("change", () => localStorage.setItem("or_model", modelEl.value.trim()));
+promptEl.addEventListener("change", () => localStorage.setItem("or_prompt", promptEl.value));
+
+function setStatus(msg, cls = "") {
+  const s = $("status");
+  s.textContent = msg || "";
+  s.className = "status " + cls;
+}
+
+/* ---------- cola de campeones ---------- */
+function queueIds() {
+  const onlyBad = $("onlyBad").checked;
+  const ids = champs.map(f => f.replace(/\.png$/i, ""));
+  return onlyBad ? ids.filter(id => marks[id] === "mal") : ids;
+}
+
+function refreshSelect(keepId = true) {
+  const sel = $("champ");
+  const q = queueIds();
+  sel.innerHTML = q.map(id => {
+    const m = marks[id] === "bien" ? " ✔" : marks[id] === "mal" ? " ✘" : "";
+    return `<option value="${id}">${id}${m}</option>`;
+  }).join("");
+  if (keepId && current && q.includes(current)) sel.value = current;
+  else if (q.length) { current = q[0]; sel.value = current; }
+  else current = null;
+  $("queue").innerHTML = q.length
+    ? `<b>${q.length}</b> en la cola`
+    : (champs.length ? "🎉 no queda nada marcado mal — <a href='#' id='seeAll'>ver todos</a>" : "");
+  const seeAll = document.getElementById("seeAll");
+  if (seeAll) seeAll.addEventListener("click", e => { e.preventDefault(); $("onlyBad").checked = false; refreshSelect(); });
+  if (current) loadChamp(current); else clearPanels();
+}
+
+async function init() {
+  const [listRes, marksRes] = await Promise.all([
+    fetch("/api/list").then(r => r.json()),
+    fetch("/api/marks").then(r => r.json())
+  ]);
+  champs = listRes;
+  marks = marksRes;
+  refreshSelect();
+}
+
+function clearPanels() {
+  $("origImg").removeAttribute("src");
+  $("whoL").textContent = $("whoR").textContent = "";
+  hideResult();
+}
+
+function hideResult() {
+  resultUrl = null;
+  $("resImg").style.display = "none";
+  $("resImg").removeAttribute("src");
+  $("resPlaceholder").style.display = "";
+  $("alphaBadge").style.display = "none";
+  $("genBtn").disabled = !current || generating;
+  $("regenBtn").disabled = true;
+  $("saveBtn").disabled = true;
+  $("dlBtn").disabled = true;
+}
+
+function loadChamp(id) {
+  $("origImg").src = `/original/${id}`;
+  $("whoL").textContent = id;
+  $("whoR").textContent = id;
+  hideResult();
+  setStatus(`✔ ${marks[id] === "bien" ? "marcado bien" : marks[id] === "mal" ? "marcado MAL" : "sin marca"}`);
+}
+
+function step(delta) {
+  const q = queueIds();
+  if (!q.length) return;
+  const i = current ? q.indexOf(current) : -1;
+  const next = q[Math.min(q.length - 1, Math.max(0, (i === -1 ? 0 : i + delta)))];
+  current = next;
+  $("champ").value = next;
+  loadChamp(next);
+}
+$("prevBtn").addEventListener("click", () => step(-1));
+$("nextBtn").addEventListener("click", () => step(1));
+$("champ").addEventListener("change", e => { current = e.target.value; loadChamp(current); });
+$("onlyBad").addEventListener("change", () => refreshSelect(false));
+
+/* ---------- generación ---------- */
+function dataUrlFromBlob(blob) {
+  return new Promise((res, rej) => {
+    const fr = new FileReader();
+    fr.onload = () => res(fr.result);
+    fr.onerror = rej;
+    fr.readAsDataURL(blob);
+  });
+}
+
+async function generate() {
+  if (!current || generating) return;
+  const key = keyEl.value.trim();
+  const model = modelEl.value.trim();
+  const prompt = promptEl.value.trim();
+  if (!key) { setStatus("Poné tu API key de OpenRouter arriba.", "err"); return; }
+  if (!model) { setStatus("Elegí un modelo.", "err"); return; }
+
+  generating = true;
+  $("genBtn").disabled = $("regenBtn").disabled = true;
+  $("resPlaceholder").style.display = "none";
+  $("resImg").style.display = "none";
+  $("alphaBadge").style.display = "none";
+  const spin = document.createElement("div");
+  spin.className = "spinner";
+  $("resViewer").appendChild(spin);
+  const t0 = performance.now();
+  setStatus(`generando con ${model} vía /api/v1/images… (puede tardar ~30-90s)`);
+
+  try {
+    const blob = await fetch(`/original/${current}`).then(r => r.blob());
+    const origDataUrl = await dataUrlFromBlob(blob);
+
+    const payload = {
+      model,
+      prompt,
+      input_references: [{ type: "image_url", image_url: { url: origDataUrl } }]
+    };
+    if ($("wantTransparent").checked) {
+      payload.output_format = "png";
+      payload.background = "transparent";
+    }
+
+    const res = await fetch("https://openrouter.ai/api/v1/images", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${key}`,
+        "Content-Type": "application/json",
+        "HTTP-Referer": location.origin,
+        "X-Title": "klipy splash fixer"
+      },
+      body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data?.error?.message || `HTTP ${res.status}`);
+
+    const img0 = data?.data?.[0];
+    if (!img0?.b64_json) throw new Error("La respuesta no incluyó imagen. Contenido: " + JSON.stringify(data).slice(0, 300));
+    const media = img0.media_type || "image/png";
+    showResult(`data:${media};base64,${img0.b64_json}`, media);
+
+    // costo reportado por OpenRouter en usage.cost
+    const secs = ((performance.now() - t0) / 1000).toFixed(0);
+    const cost = data?.usage?.cost;
+    if (typeof cost === "number" && cost > 0) {
+      sessionCost += cost; sessionCount += 1;
+      updateCostDisplay(cost);
+      setStatus(`💰 generó en ${secs}s por $${cost.toFixed(4)} — si salió bien guardalo; si no, regenerá (fallar no cuesta)`);
+    } else {
+      setStatus(`generó en ${secs}s (OpenRouter no informó costo) — si salió bien guardalo`);
+    }
+  } catch (e) {
+    setStatus(`✘ ${e.message} — (las generaciones que fallan no se cobran)`, "err");
+    if (!resultUrl) $("resPlaceholder").style.display = "";
+  } finally {
+    spin.remove();
+    generating = false;
+    $("genBtn").disabled = !current;
+    $("regenBtn").disabled = !resultUrl;
+  }
+}
+
+let sessionCost = 0, sessionCount = 0;
+function updateCostDisplay(lastCost) {
+  const el = $("cost");
+  let html = "💰 ";
+  if (lastCost != null) html += `última <b style="color:var(--gold)">$${lastCost.toFixed(4)}</b> · `;
+  html += `sesión <b style="color:var(--gold)">$${sessionCost.toFixed(4)}</b> <span style="opacity:.7">(${sessionCount} gen${sessionCount === 1 ? "" : "es"})</span>`;
+  el.innerHTML = html;
+}
+
+function showResult(url, media = "image/png") {
+  resultUrl = url;
+  resultMedia = media;
+  const img = $("resImg");
+  img.src = url;
+  img.style.display = "";
+  $("resPlaceholder").style.display = "none";
+  $("regenBtn").disabled = false;
+  $("saveBtn").disabled = false;
+  $("dlBtn").disabled = false;
+
+  // medir cuánta transparencia real trae el PNG
+  img.onload = () => {
+    try {
+      const c = document.createElement("canvas");
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      const ctx = c.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+      const d = ctx.getImageData(0, 0, c.width, c.height).data;
+      let tr = 0;
+      for (let i = 3; i < d.length; i += 4) if (d[i] < 10) tr++;
+      const pct = 100 * tr / (d.length / 4);
+      const b = $("alphaBadge");
+      b.style.display = "";
+      b.textContent = `transparencia: ${pct.toFixed(1)}%`;
+      b.className = "alpha " + (pct < 5 ? "warn" : "ok");
+    } catch (e) { /* canvas bloqueado: ignorar */ }
+  };
+}
+
+$("genBtn").addEventListener("click", generate);
+$("regenBtn").addEventListener("click", generate);
+
+/* ---------- guardar / descargar ---------- */
+$("saveBtn").addEventListener("click", async () => {
+  if (!current || !resultUrl) return;
+  try {
+    const res = await fetch("/api/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: current, dataUrl: resultUrl, mark: "bien" })
+    });
+    const data = await res.json();
+    if (!res.ok || !data.ok) throw new Error(data?.error || `HTTP ${res.status}`);
+    marks = data.marks;
+    setStatus(`✔ ${current} guardado en assets/champs/ y marcado bien`, "ok");
+    refreshSelect();
+    step(1);
+  } catch (e) {
+    setStatus(`✘ no se pudo guardar: ${e.message}`, "err");
+  }
+});
+
+$("dlBtn").addEventListener("click", () => {
+  if (!resultUrl || !current) return;
+  const ext = (resultMedia.split("/")[1] || "png").replace("+xml", "");
+  const a = document.createElement("a");
+  a.href = resultUrl;
+  a.download = `${current}.${ext}`;
+  a.click();
+});
+
+init();
+</script>
+</body>
+</html>
