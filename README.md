@@ -1,4 +1,16 @@
-# Development
+# Klify
+
+Aplicación de escritorio (Rust + Dioxus 0.7) para el champ select de League of Legends.
+
+## Descarga (Windows x64)
+
+1. Descarga [`dist/klipy-windows-x64.zip`](dist/klipy-windows-x64.zip).
+2. Descomprime la carpeta completa (el `.exe` necesita la carpeta `assets/` a su lado).
+3. Ejecuta `Klipy.exe` con el cliente de League of Legends abierto.
+
+Icono de la app: [`assets/icon.png`](assets/icon.png) · [`assets/icon.ico`](assets/icon.ico)
+
+## Development
 
 Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
 
