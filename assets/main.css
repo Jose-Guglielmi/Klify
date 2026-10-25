@@ -291,7 +291,6 @@ img {
   position: relative;
   height: 3px;
   width: 110%;
-  margin-left: -5%;
   background: var(--primary);
   transform: skewX(-15deg);
 }
@@ -328,7 +327,7 @@ img {
 
 /* RECETA 2 · Esquinas cortadas (clip-path; el wrapper aporta el borde 1px) */
 .frame {
-  background: var(--outline-var);
+  background: rgba(0, 0, 0, 0);
   padding: 1px;
 }
 
@@ -341,7 +340,7 @@ img {
 
 /* Fondos de superficie utilitarios */
 .bg-surface { background: var(--surface); }
-.bg-low { background: var(--c-low); }
+.bg-low { background: rgba(0, 0, 0, 0); }
 .bg-base { background: var(--c-base); }
 .bg-high { background: var(--c-high); }
 
@@ -2768,4 +2767,2207 @@ img {
 /* Aro de ALIADOS en la franja (mismo equipo = azul, más sutil que el mío) */
 .vs-slot--ally {
   border-color: #3b82f6;
+}
+
+/* --------------------------------------------------------------------------
+   13 · VS ROW + GUÍA RIVAL (fila 5v5 clickeable + panel "Cómo jugar VS")
+   Fuente visual: ui-preview-sylas.html. cs5-* = fila 5v5 · vg-* = guía rival.
+   Semántica WR: <50% rojo --primary-bright · ≥50% plata --silver (nunca verde).
+   -------------------------------------------------------------------------- */
+
+/* ---------- FILA 5V5 CLICKEABLE (cs5-*) ---------- */
+
+.cs5-scroll {
+  width: 100%;
+  padding-bottom: 6px;
+}
+
+.cs5-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  width: 100%;
+  padding: 4px 0 2px;
+}
+
+/* Los wrappers son los flex items: reparten el ancho equitativamente */
+.cs5-slot {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 236px;
+}
+
+/* Mi card: más ancha y alta, glow de marca */
+.cs5-slot--me {
+  flex: 1.42 1 0;
+  height: 266px;
+  filter: drop-shadow(0 0 24px rgba(255, 0, 51, 0.25));
+}
+
+/* Objetivo actual: glow fijo (drop-shadow sigue las esquinas cortadas) */
+.cs5-slot--target {
+  filter: drop-shadow(0 0 24px rgba(255, 0, 51, 0.25));
+}
+
+/* Marco 1px (RECETA 2 · frame+cut del sistema). Por defecto = ALIADO:
+   borde azul sutil. Esquinas cortadas sup. derecha + inf. izquierda. */
+.cs5-frame {
+  height: 100%;
+  padding: 1px;
+  background: rgba(59, 130, 246, 0.35);
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  transition: box-shadow 120ms ease;
+}
+
+/* Enemigos: borde rojo sutil */
+.cs5-slot--enemy .cs5-frame {
+  background: rgba(255, 0, 51, 0.35);
+}
+
+/* Rival directo / target / yo: marco rojo sólido */
+.cs5-slot--me .cs5-frame,
+.cs5-slot--rival-directo .cs5-frame,
+.cs5-slot--target .cs5-frame {
+  background: var(--primary);
+}
+
+/* Slots sin pick: gris punteado */
+.cs5-slot--empty .cs5-frame {
+  background: transparent;
+  border: 1px dashed var(--c-high);
+  padding: 0;
+}
+
+/* Enemigos clickeables: hover/foco sutil (el target ya tiene su glow fijo) */
+.cs5-slot.is-selectable {
+  cursor: pointer;
+  outline: none;
+}
+
+.cs5-slot.is-selectable:hover .cs5-frame,
+.cs5-slot.is-selectable:focus-visible .cs5-frame {
+  box-shadow: 0 0 8px rgba(255, 0, 51, 0.35);
+}
+
+.cs5-card {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  background: var(--surface-dim);
+  /* Mismo corte que el frame, 1px menor: deja ver el borde del frame */
+  clip-path: polygon(0 0, calc(100% - 11px) 0, 100% 11px, 100% 100%, 11px 100%, 0 calc(100% - 11px));
+}
+
+.cs5-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 14%;
+}
+
+.cs5-art--cutout {
+  object-fit: contain;
+  object-position: center;
+  background: linear-gradient(180deg, var(--c-low), var(--surface-dim));
+}
+
+.cs5-art--empty {
+  display: grid;
+  place-items: center;
+  background: var(--c-low);
+  color: var(--on-surface-var);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.cs5-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 10, 14, 0) 58%, rgba(7, 10, 14, 0.72) 80%, #000 100%);
+}
+
+.cs5-info {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.cs5-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cs5-name--lg { font-size: 17px; }
+.cs5-name--xl { font-size: 21px; }
+
+.cs5-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cs5-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid;
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Azul #3b82f6 hardcodeado como en .vs-slot--mine (aliados) */
+.cs5-pill--blue {
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.45);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.cs5-pill--red {
+  color: var(--primary-bright);
+  border-color: rgba(255, 51, 85, 0.5);
+  background: rgba(255, 0, 51, 0.1);
+}
+
+/* Paralelogramos de marca sobre la card */
+.cs5-chip-rival,
+.cs5-chip-target {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+.cs5-chip-rival {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.cs5-chip-target {
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+}
+
+.cs5-lock {
+  display: inline-flex;
+  color: var(--primary-bright);
+}
+
+.cs5-lock svg {
+  width: 10px;
+  height: 10px;
+}
+
+/* Badge VS dorado (no usar .vs-badge: ese es el badge grande del split) */
+.cs5-vs {
+  align-self: center;
+  flex: none;
+  margin: 0 2px;
+  padding: 6px 9px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--vs-gold);
+  border: 1px solid rgba(232, 193, 90, 0.55);
+  background: rgba(232, 193, 90, 0.06);
+  transform: skewX(-12deg);
+}
+
+.cs5-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+/* La flecha ▸ la trae el texto del RSX: acá NO se duplica con ::before */
+
+/* ---------- PANEL GUÍA RIVAL (vg-*) ---------- */
+
+/* Contenedor raíz de las tabs "Cómo jugar vs" y "Consejos": a diferencia
+   del resto de las tabs (que montan .cs-pane con padding), este panel era
+   un div sin padding y el contenido arrancaba pegado a los bordes. Respiro
+   propio del panel + aire uniforme entre secciones vía gap (los títulos
+   .vg-sec, las listas .vg-weak y la grilla .vg-arch-grid quedan alineados
+   al mismo margen lateral). */
+.vg {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px 32px 32px;
+}
+
+.vg-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 12px;
+}
+
+/* Banner de matchup: degradado rojo tenue sobre surface + borde 1px */
+.vg-matchup {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  padding: 18px 20px;
+  background:
+    linear-gradient(90deg, rgba(255, 0, 51, 0.08), transparent 72%),
+    var(--surface);
+  border: 1px solid var(--outline-var);
+}
+
+.vg-matchup--bad {
+  background:
+    linear-gradient(90deg, rgba(255, 0, 51, 0.12), rgba(255, 0, 51, 0.03) 45%, transparent 72%),
+    var(--surface);
+  border-color: rgba(255, 0, 51, 0.35);
+}
+
+.vg-matchup--good {
+  background: var(--surface);
+}
+
+.vg-matchup-num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  color: var(--primary-bright);
+}
+
+.vg-matchup--bad .vg-matchup-num { color: var(--primary-bright); }
+.vg-matchup--good .vg-matchup-num { color: var(--silver); }
+
+.vg-matchup-meta {
+  font-size: 11px;
+  color: var(--on-surface-var);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Veredicto: SOLO colores; la forma (clip-path, padding, tipo) la aporta
+   .chip-result existente → usar como class="chip-result vg-chip-bad" */
+.vg-chip-bad {
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+}
+
+.vg-chip-neutral {
+  background: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+
+/* Ficha del rival: card --c-low + degradado tenue (el .frame aporta borde) */
+.vg-dossier {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px 20px;
+  background:
+    linear-gradient(120deg, rgba(255, 0, 51, 0.07), transparent 45%),
+    var(--c-low);
+}
+
+.vg-dossier-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.vg-dossier-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+}
+
+/* Stats HUD: separadores border-left 1px, como .hud-item del prototipo */
+.vg-dossier-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px 0;
+  border-top: 1px solid var(--outline-var);
+  padding-top: 14px;
+}
+
+.vg-dossier-stats > * {
+  padding: 0 18px;
+  border-left: 1px solid var(--outline-var);
+}
+
+.vg-dossier-stats > *:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.vg-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.vg-role-tile {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+.vg-role-tile b {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--on-surface);
+  font-variant-numeric: tabular-nums;
+}
+
+.vg-role-tile--gold {
+  border-color: rgba(232, 193, 90, 0.45);
+}
+
+.vg-chip-gold {
+  margin-left: auto;
+  padding: 6px 12px;
+  border: 1px solid rgba(232, 193, 90, 0.55);
+  background: rgba(232, 193, 90, 0.07);
+  color: var(--vs-gold);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+/* Header de sección interno: alias mínimo del patrón .section-head
+   (la barra la aporta .bar-skew y el título un .label con .sl) */
+.vg-sec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vg-sec .sl {
+  color: var(--primary);
+}
+
+/* Lista de debilidades: marcador ✕ en caja paralelogramo */
+.vg-weak {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vg-weak li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--c-low);
+  padding: 12px 16px;
+}
+
+.vg-weak li p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--on-surface-var);
+}
+
+.vg-weak strong {
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+.vg-weak-x {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 0, 51, 0.14);
+  color: var(--primary-bright);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 11px;
+  clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+}
+
+/* Tips por arquetipo */
+.vg-arch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.vg-arch {
+  background: var(--c-low);
+  padding: 16px 18px;
+}
+
+.vg-arch-title {
+  margin: 0 0 10px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--silver);
+}
+
+.vg-arch-title--red { color: var(--primary-bright); }
+.vg-arch-title--cyan { color: var(--rival-accent); }
+
+.vg-arch ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.vg-arch li {
+  position: relative;
+  padding-left: 14px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--on-surface-var);
+}
+
+.vg-arch li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 2px;
+  background: var(--primary);
+  transform: skewX(-15deg);
+}
+
+/* Estado vacío del panel */
+.vg-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  padding: 46px 24px;
+  background: var(--surface-dim);
+  border: 1px dashed var(--c-high);
+  font-size: 13px;
+  color: var(--on-surface-var);
+}
+
+/* ---------- RESPONSIVE ---------- */
+/* La fila cs5 es flex: sigue fiteando al ancho; solo las grillas vg bajan */
+@media (max-width: 900px) {
+  .vg-arch-grid { grid-template-columns: 1fr 1fr; }
+  .vg-chip-gold,
+  .vg-roles { margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .vg { padding: 22px 20px 24px; gap: 14px; }
+  .vg-arch-grid { grid-template-columns: 1fr; }
+}
+
+/* --------------------------------------------------------------------------
+   TAB COUNTERS · BOARD UNIFICADO (ENFRENTAMIENTO + MIS MATCHUPS)
+   Cada board = section-head + dos columnas (vs-mu-cols ya apila <900px).
+   Fila HUD: tile 32 · WR Barlow italic 20 tabular · track/fill 5px ·
+   nombre 14 Inter 600 + "{n} partidas" 11 alineados a la derecha.
+   -------------------------------------------------------------------------- */
+
+.cmb-board {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+
+/* Esquina cortada 8px (mismo corte que .vs-mu-row--me y .vs-ptip) */
+.cmb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--c-low);
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);
+  transition: background-color 120ms ease;
+}
+
+.cmb-row:hover { background: var(--c-base); }
+
+/* ===== MENÚ DE FICHAS (modo manual) ===== */
+/* Vista "mi roster": header de perfil (avatar + nombre + stats), estado
+   offline, buscador, contador de fichas y grilla de cards de campeón en
+   duotono rojo-negro. Fuente visual: ui-preview-perfil.html (aprobado).
+   Solo clases kl- nuevas; reusa los tokens ya definidos en este archivo. */
+
+.kl-menu {
+  /* surface-container-lowest de design.md (#090c11) no existe como token:
+     variable local scopeada, no toca :root */
+  --kl-lowest: #090c11;
+
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px 48px; /* gutter 24px */
+}
+
+/* ---- Header de perfil: avatar + nombre + stats ---- */
+
+.kl-menu-header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+}
+
+/* Línea de impacto skewX bajo el header: segmento rojo + línea slate */
+.kl-menu-header::after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: -12px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0,
+    var(--primary) 72px,
+    var(--outline-var) 72px,
+    var(--outline-var) 100%
+  );
+  transform: skewX(-15deg);
+  pointer-events: none;
+}
+
+/* Avatar 72px duotono: grayscale + tinte rojo multiply */
+.kl-menu-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+  border: 1px solid var(--outline-var);
+  background: linear-gradient(145deg, var(--primary-container), var(--bg) 80%);
+}
+
+.kl-menu-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.1) brightness(0.95);
+}
+
+.kl-menu-avatar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--primary);
+  opacity: 0.24;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Fila de stats tabulares: celdas separadas por divisor de 1px */
+.kl-menu-stats {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+}
+
+.kl-menu-stats > * {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 18px;
+  border-left: 1px solid var(--outline-var);
+}
+
+.kl-menu-stats > *:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+/* Chip "MODO OFFLINE": paralelogramo slate, sin rojo */
+.kl-badge-offline {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  background: var(--c-high);
+  border: 1px solid var(--outline-var);
+  transform: skewX(-15deg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+.kl-badge-offline > span {
+  display: inline-block;
+  transform: skewX(15deg);
+}
+
+/* Buscador: Input Fields del design (lowest + borde 1px + focus rojo/glow) */
+.kl-menu-search {
+  width: 240px;
+  max-width: 100%;
+  padding: 10px 14px;
+  background: var(--kl-lowest, #090c11);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.kl-menu-search::placeholder { color: var(--outline); }
+
+.kl-menu-search:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 0, 51, 0.1);
+}
+
+/* Contador "12/173 FICHAS" */
+.kl-counter {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* ---- Grilla de campeones ---- */
+/* Las cards usan el markup estructural del prototipo: la card es SOLO una
+   columna flex (media 4/5 + meta debajo); el duotono, los badges skew y el
+   nombre viven en la sección "MENÚ: clases estructurales" del final del
+   archivo (.champ-media / .champ-tint / .champ-shade / .tag-skew /
+   .champ-open / .champ-meta / .champ-name). */
+
+.kl-champ-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px 14px;
+}
+
+.kl-champ-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.kl-champ-card:focus-visible {
+  outline: 2px solid var(--outline);
+  outline-offset: -3px;
+}
+
+/* Variante sin ficha: no clicable; el hover estructural la ignora vía :not() */
+.kl-champ-card--locked { cursor: not-allowed; }
+
+/* ---- Botón ghost de salida ---- */
+
+.kl-btn-exit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 11px 26px;
+  background: transparent;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius-sm);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.kl-btn-exit:hover { background: var(--c-high); }
+.kl-btn-exit:active { background: var(--c-highest); }
+
+.kl-btn-exit:focus-visible {
+  outline: 2px solid var(--outline);
+  outline-offset: -4px;
+}
+
+/* ---- Responsive: la grilla colapsa a 3 y luego 2 columnas ---- */
+
+@media (max-width: 720px) {
+  .kl-menu-stats {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--outline-var);
+  }
+
+  .kl-champ-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .kl-menu { padding: 0 16px 40px; }
+  .kl-champ-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ==========================================================================
+   MENÚ: clases estructurales portadas del prototipo (ui-preview-perfil.html)
+   Markup real: src/ui/menu.rs (A · header de perfil, B · zona campeones).
+   Tokens mapeados del prototipo a este archivo:
+   --line → --outline-var · --low → --c-low · --base → --c-base ·
+   --high → --c-high · --muted → --on-surface-var · --txt → --on-surface ·
+   --red → --primary · --display → --font-display · --body → --font-body.
+   ========================================================================== */
+
+/* ---- Label extra chico (complementa .label, no la toca) ---- */
+
+.label-xs {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* ---- RECETA esquina cortada 16px (wrapper borde 1px + interior) ---- */
+
+.cut {
+  --cutsize: 16px;
+  background: var(--outline-var);
+  padding: 1px;
+  clip-path: polygon(0 0, calc(100% - var(--cutsize)) 0, 100% var(--cutsize), 100% 100%, 0 100%);
+}
+
+.cut-in {
+  height: 100%;
+  background: var(--bg);
+  clip-path: polygon(0 0, calc(100% - var(--cutsize)) 0, 100% var(--cutsize), 100% 100%, 0 100%);
+}
+
+/* ---- A · Header de perfil ---- */
+
+.p-head {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 28px;
+  align-items: center;
+  padding: 24px 28px;
+  background: var(--surface);
+}
+
+/* Corner brackets HUD en L: 3 esquinas (top-left, bottom-left, bottom-right) */
+.hud-corners i {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--outline);
+  z-index: 5;
+}
+
+.hud-corners i:nth-child(1) { top: 12px; left: 12px; border-right: 0; border-bottom: 0; }
+.hud-corners i:nth-child(2) { bottom: 12px; left: 12px; border-right: 0; border-top: 0; }
+.hud-corners i:nth-child(3) { bottom: 12px; right: 12px; border-left: 0; border-top: 0; }
+
+/* Avatar 96px duotono + nivel de maestría en paralelogramo */
+.avatar {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  flex: none;
+  overflow: visible;
+}
+
+.avatar-media {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border: 1px solid var(--outline-var);
+  background: linear-gradient(145deg, var(--primary-container), var(--bg) 80%);
+}
+
+.avatar-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.1) brightness(0.95);
+}
+
+.avatar-media .tint {
+  position: absolute;
+  inset: 0;
+  background: var(--primary);
+  opacity: 0.24;
+  mix-blend-mode: multiply;
+}
+
+.lvl {
+  position: absolute;
+  right: -10px;
+  bottom: -8px;
+  transform: skewX(-15deg);
+  background: var(--c-high);
+  border: 1px solid var(--outline);
+  padding: 3px 10px;
+  z-index: 6;
+}
+
+.lvl span {
+  display: inline-block;
+  transform: skewX(15deg);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+/* Identidad: headline (rank o "INVOCADOR") + fila de badges */
+.p-id {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.p-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--on-surface);
+}
+
+.p-badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Badge paralelogramo: contenedor skew + contenido contra-skew en .badge-in */
+.badge {
+  transform: skewX(-15deg);
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+  padding: 7px 16px;
+}
+
+.badge-in {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: skewX(15deg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+.badge strong {
+  color: var(--on-surface);
+  font-weight: 600;
+}
+
+.p-badges .badge { background: var(--c-base); }
+.p-badges .badge strong { font-size: 12px; }
+
+/* Dot de estado "LCU Conectado" (verde del prototipo aprobado) */
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: #86c39c;
+  flex: none;
+}
+
+/* Stats rápidas: celdas con divisor vertical 1px */
+.p-stats {
+  display: flex;
+  align-items: center;
+}
+
+.p-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 4px 22px;
+}
+
+.p-stat + .p-stat {
+  border-left: 1px solid var(--outline-var);
+}
+
+.p-stat .val {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.1;
+  color: var(--silver);
+}
+
+.p-stat.heroic .val {
+  color: var(--on-surface);
+  font-size: 26px;
+}
+
+.p-stat .val.champ {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* ---- Línea de impacto skewX bajo el header ---- */
+
+.impact {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 0 28px;
+}
+
+.impact-red {
+  width: 72px;
+  height: 4px;
+  background: var(--primary);
+  transform: skewX(-15deg);
+  flex: none;
+}
+
+.impact-line {
+  flex: 1;
+  height: 2px;
+  background: var(--outline-var);
+  transform: skewX(-15deg);
+}
+
+.impact-slashes {
+  display: inline-flex;
+  gap: 3px;
+  transform: skewX(-15deg);
+  flex: none;
+}
+
+.impact-slashes i {
+  width: 3px;
+  height: 14px;
+  background: var(--outline);
+}
+
+.impact-slashes i:nth-child(2) { height: 14px; opacity: 0.6; }
+.impact-slashes i:nth-child(3) { height: 9px; opacity: 0.4; }
+
+/* ---- B · Zona campeones ---- */
+
+/* El fondo --c-base pisa el --surface de .cut-in (esta regla va después) */
+.zone-in {
+  padding: 24px;
+  background: var(--bg);
+}
+
+.zone-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.h-sec {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--on-surface);
+}
+
+.h-sec::before {
+  content: "//";
+  display: inline-block;
+  transform: skewX(-15deg);
+  color: var(--outline);
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.h-sec .dim {
+  color: var(--on-surface-var);
+}
+
+.zone-note {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--on-surface-var);
+}
+
+.zone-tools {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* El número de fichas resalta en texto principal (afinación de .kl-counter) */
+.kl-counter b {
+  color: var(--on-surface);
+  font-weight: 700;
+}
+
+/* Estado vacío del grid (sin catálogo / catálogo vacío / sin resultados) */
+.empty {
+  padding: 40px 0 24px;
+  text-align: center;
+}
+
+.empty .label {
+  color: var(--outline);
+}
+
+/* ---- Cards del roster: media duotono 4/5 + badge skew + meta ---- */
+
+.champ-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--outline-var);
+  background: linear-gradient(135deg, var(--primary-container) 0%, var(--bg) 75%);
+}
+
+.champ-media img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 10%;
+  filter: grayscale(1) contrast(1.1) brightness(0.92);
+  transform: scale(1.001);
+  transition: filter 180ms ease, transform 180ms ease, opacity 180ms ease;
+}
+
+/* Fade duotono: lavado rojo multiply + sombra inferior para asentar el tag */
+.champ-tint {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: var(--primary);
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  transition: opacity 180ms ease;
+}
+
+.champ-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(
+    to top,
+    rgba(7, 10, 14, 0.92) 0%,
+    rgba(7, 10, 14, 0.25) 45%,
+    rgba(7, 10, 14, 0) 70%
+  );
+}
+
+/* Badge paralelogramo sobre la media: contenedor skew, texto contra-skew */
+.tag-skew {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 4;
+  transform: skewX(-15deg);
+  background: rgba(7, 10, 14, 0.85);
+  border: 1px solid var(--outline-var);
+  padding: 4px 10px;
+}
+
+.tag-skew span {
+  display: inline-block;
+  transform: skewX(15deg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  white-space: nowrap;
+}
+
+.kl-champ-card--locked .tag-skew span {
+  color: var(--on-surface-var);
+}
+
+/* "VER FICHA →": visible solo al hover de la card con ficha */
+.champ-open {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 4;
+  transform: skewX(-15deg);
+  background: rgba(7, 10, 14, 0.88);
+  border: 1px solid var(--outline);
+  padding: 4px 10px;
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.champ-open span {
+  display: inline-block;
+  transform: skewX(15deg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+/* Corner brackets en L (2px/16px): rojo, SOLO hover de la card con ficha */
+.champ-media::before,
+.champ-media::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--primary);
+  opacity: 0;
+  transition: opacity 150ms ease;
+  pointer-events: none;
+}
+
+.champ-media::before { top: 4px; left: 4px; border-right: 0; border-bottom: 0; }
+.champ-media::after { bottom: 4px; right: 4px; border-left: 0; border-top: 0; }
+
+/* Hover activo: sube el color, escala el arte, brackets + VER FICHA visibles
+   (:not(--locked) evita cualquier feedback en las cards sin ficha) */
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-media img {
+  filter: grayscale(0.15) contrast(1.05) brightness(1);
+  transform: scale(1.06);
+}
+
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-tint {
+  opacity: 0.05;
+}
+
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-media::before,
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-media::after {
+  opacity: 1;
+}
+
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-open {
+  opacity: 1;
+}
+
+/* ---- Meta bajo la media: nombre en Barlow Condensed itálica ---- */
+
+.champ-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.champ-name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  transition: color 150ms ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kl-champ-card:not(.kl-champ-card--locked):hover .champ-name {
+  color: #ffffff;
+}
+
+/* Sin ficha: arte y nombre atenuados, media punteada (el cursor
+   not-allowed ya lo pone .kl-champ-card--locked en su bloque) */
+.kl-champ-card--locked .champ-media {
+  border-style: dashed;
+}
+
+.kl-champ-card--locked .champ-media img {
+  opacity: 0.35;
+}
+
+.kl-champ-card--locked .champ-tint {
+  opacity: 0.08;
+}
+
+.kl-champ-card--locked .champ-name {
+  color: var(--on-surface-var);
+  opacity: 0.6;
+}
+
+/* ---- Responsive del header (la grilla colapsa en las media queries kl) ---- */
+
+@media (max-width: 960px) {
+  .p-head { grid-template-columns: auto 1fr; }
+  .p-stats {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--outline-var);
+    padding-top: 16px;
+    flex-wrap: wrap;
+  }
+  .p-stat:first-child { padding-left: 0; }
+}
+
+/* ==========================================================================
+   ACCIONES LCU + MODAL INVENTARIO DE RUNAS (runes_panel.rs · items_panel.rs)
+   ========================================================================== */
+
+/* ===== ACCIONES LCU: aplicar runas / cargar items ===== */
+/* Estados de resultado del botón de acción. Self-contained: funcionan solos
+   o como override sobre .btn-primary (van después en la cascada). */
+
+/* Estado éxito: container oscuro de marca + borde primary atenuado */
+.cs-apply-ok {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  border: 1px solid rgba(255, 0, 51, 0.45); /* primary suave */
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  cursor: pointer;
+}
+
+/* Estado error: --error-container/--on-error-container NO existen como
+   tokens en :root (como --kl-lowest en el menú, variables locales scopeadas).
+   Borde salmon --error: NUNCA el rojo puro de marca. */
+.cs-apply-err {
+  --error-container: #4c1116; /* container oscuro rojizo (design.md) */
+  --on-error-container: #ffdad6;
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 12px;
+  background: var(--error-container);
+  color: var(--on-error-container);
+  border: 1px solid var(--error);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 11px 24px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Línea de motivo del error: span interior (o span.cs-apply-err suelto) en
+   cuerpo normal, Inter 12px, sin el cromo del botón */
+.cs-apply-err span,
+span.cs-apply-err {
+  background: transparent;
+  border: 0;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--on-error-container);
+}
+
+/* ===== MODAL: inventario de runas ===== */
+/* Spec design.md: backdrop surface-dim 70% + blur 8px · panel
+   surface-container-high (--c-high) radius 8px + esquina cortada 14px ·
+   título Barlow Condensed · acciones Primary (.btn-primary) + Ghost activo
+   (.btn-ghost-live). z-index 200 por encima de .modal-overlay (100). */
+
+.kl-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(7, 10, 14, 0.7); /* --surface-dim al 70% */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.kl-modal {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  padding: 24px;
+  background: var(--c-high);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-lg);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+
+.kl-modal-title {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--on-surface);
+}
+
+.kl-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.kl-modal-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--c-base);
+  border: 1px solid var(--outline-var);
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 120ms ease;
+}
+
+.kl-modal-item:hover { border-color: var(--outline); }
+
+/* Seleccionada: elemento activo de la zona → rojo permitido + glow 20% */
+.kl-modal-item--sel,
+.kl-modal-item--sel:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 12px rgba(255, 0, 51, 0.2);
+}
+
+/* Chip "KLIFY" dentro de la fila: paralelogramo skew + texto contra-skew */
+.kl-modal-item--ours {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  padding: 2px 8px;
+  transform: skewX(-15deg);
+  background: var(--primary-container);
+  color: var(--on-primary-container);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.kl-modal-item--ours span {
+  display: inline-block;
+  transform: skewX(15deg);
+}
+
+/* RIOT / read-only: sin interacción ni feedback de hover */
+.kl-modal-item--ro,
+.kl-modal-item--ro:hover {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--outline-var);
+}
+
+/* Acciones del modal: los botones reusan .btn-primary y .btn-ghost-live */
+.kl-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* ==========================================================================
+   TAB RUNAS · BANDAS HORIZONTALES (runes_panel.rs)
+   Cada página de runas pasa a tarjeta ancha y baja (hasta 4 apiladas):
+   .cs-runes = columna de bandas · .cs-page--banda = la banda (layout flex) ·
+   .cs-page--best sigue destacando ENCIMA de la banda · .cs-page--variante =
+   banda punteada atenuada con badge .cs-badge--variante. Chips semánticos
+   .cs-chip--{rojo,verde,azul,gris} reusan los acentos ya aprobados del
+   archivo: primary de marca, verde #86c39c del .dot, azul #3b82f6 de aliados.
+   ========================================================================== */
+
+/* El contenedor pasa de grid 2-col a una columna de bandas. Esta regla pisa
+   por cascada el display:grid de la sección 12 (mismo selector, después en
+   el archivo); el grid-template-columns del @media 860px y .cs-runes--single
+   quedan sin efecto (grid-template-columns no aplica a flex). El padding de
+   20px de la regla original sigue vigente. */
+.cs-runes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* La banda: superficie y borde idénticos a .cs-page (angular, sin radius),
+   layout horizontal que envuelve cuando no entra */
+.cs-page--banda {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--c-base);
+  border: 1px solid var(--outline-var);
+}
+
+/* --best por encima del estilo banda: compound selector gana por
+   especificidad, sin depender del orden de las clases en el RSX */
+.cs-page--banda.cs-page--best {
+  border-color: var(--primary);
+  box-shadow: 0 0 24px rgba(255, 0, 51, 0.25);
+}
+
+/* Variante: mismo borde base que .cs-page (para que el dash se vea) + fade */
+.cs-page--variante {
+  border-style: dashed;
+  opacity: 0.92;
+}
+
+/* Badge gris de variante: hereda forma/tipo del .cs-badge de la sección 12
+   (como .cs-badge--best pero slate, sin rojo) */
+.cs-badge--variante {
+  background: var(--c-high);
+  color: var(--on-surface-var);
+}
+
+/* Chip semántico chica: pill uppercase bold; el acento lo pone la variante */
+.cs-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border: 1px solid;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Daño / pelea: primary-bright (mismo par que .cs5-pill--red) */
+.cs-chip--rojo {
+  color: var(--primary-bright);
+  border-color: rgba(255, 51, 85, 0.5);
+  background: rgba(255, 0, 51, 0.1);
+}
+
+/* Sosten / aguante: verde aprobado del .dot del header de perfil */
+.cs-chip--verde {
+  color: #86c39c;
+  border-color: rgba(134, 195, 156, 0.45);
+  background: rgba(134, 195, 156, 0.1);
+}
+
+/* Movilidad / poke / util: azul de aliados (.vs-slot--mine) */
+.cs-chip--azul {
+  color: #3b82f6;
+  border-color: rgba(59, 130, 246, 0.45);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+/* Fallback sin categoría: slate del sistema */
+.cs-chip--gris {
+  color: var(--on-surface-var);
+  border-color: var(--outline-var);
+  background: var(--c-high);
+}
+
+/* Segmento de la banda: micro-columna (título + contenido) */
+.cs-banda-seg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+}
+
+/* Micro-label tenue del segmento */
+.cs-banda-seg-titulo {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+/* Divisor vertical entre segmentos (lo centra el align-items de la banda) */
+.cs-banda-divisor {
+  flex-shrink: 0;
+  width: 1px;
+  height: 48px;
+  background: var(--outline-var);
+}
+
+/* Banda angosta: los segmentos envuelven en fila cediendo ancho y el
+   divisor vertical desaparece (el wrap ya lo aporta .cs-page--banda) */
+@media (max-width: 760px) {
+  .cs-banda-seg { flex: 1 1 160px; }
+  .cs-banda-divisor { display: none; }
+}
+
+/* ==========================================================================
+   SIDEBAR DE NAVEGACIÓN (FICHAS · VIVO · PERFIL) + VISTA VIVO
+   Shell en grid: sidebar fija izquierda 208px (sticky, 100vh) que colapsa a
+   64px "solo iconos" en pantallas angostas (corte 860 existente). Item
+   activo estilo HUD: barra izquierda roja sesgada + tinte rojo + texto
+   pleno. Vista VIVO: panel de espera (reusa el patrón .dot del header) y
+   grilla compacta de resultados (los items internos reusan .kl-champ-card /
+   .champ-media ya definidos). .main-container queda centrado por su cuenta
+   dentro de la columna 1fr: esta sección no lo toca.
+   Markup esperado:
+   .klify-shell > .klify-sidebar
+     .klify-sidebar-brand → <span class="k">K</span>LIFY (patrón wordmark)
+     .klify-nav > .klify-nav-item[--activo] >
+       .klify-nav-num · .klify-nav-icon (svg stroke currentColor) ·
+       .klify-nav-text · .klify-nav-live[--on]
+     .klify-nav-footer
+   ========================================================================== */
+
+.klify-shell {
+  display: grid;
+  grid-template-columns: 208px 1fr;
+  min-height: 100vh;
+}
+
+.klify-sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100vh;
+  padding: 20px 12px;
+  background: var(--bg);
+  border-right: 1px solid var(--outline-var);
+}
+
+/* Marca: "K" roja + wordmark, misma tipografía itálica del header en tamaño
+   medio. El colapso esconde el texto con font-size: 0 (cualquier markup
+   alrededor queda reducido a la K roja, que recupera su tamaño). */
+.klify-sidebar-brand {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--on-surface);
+  user-select: none;
+}
+
+.klify-sidebar-brand .k {
+  color: var(--primary);
+}
+
+.klify-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  background: var(--bg);
+}
+
+.klify-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: transparent;
+  color: var(--on-surface-var);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: left;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.klify-nav-item:hover {
+  background: rgba(255, 0, 51, 0.07);
+  color: var(--on-surface);
+}
+
+/* Activo (HUD): barra izquierda roja sesgada + fondo rojo tenue + color pleno */
+.klify-nav-item--activo,
+.klify-nav-item--activo:hover {
+  background: rgba(255, 0, 51, 0.12);
+  color: var(--on-surface);
+}
+
+.klify-nav-item--activo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 3px;
+  height: 60%;
+  background: var(--primary);
+  transform: translateY(-50%) skewX(-15deg);
+}
+
+.klify-nav-num {
+  flex: none;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--outline);
+  font-variant-numeric: tabular-nums;
+}
+
+.klify-nav-item--activo .klify-nav-num {
+  color: var(--primary-bright);
+}
+
+/* Funciona con la clase sobre el propio svg o sobre un wrapper span */
+.klify-nav-icon {
+  flex: none;
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+
+.klify-nav-icon svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.klify-nav-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Puntito de estado del item VIVO: gris apagado; en --on pasa al verde
+   aprobado del .dot del header de perfil, con glow y pulso (keyframes
+   dot-pulse ya definidos en la sección 5) */
+.klify-nav-live {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: var(--outline);
+  opacity: 0.55;
+}
+
+.klify-nav-live--on {
+  background: #86c39c;
+  opacity: 1;
+  box-shadow: 0 0 6px rgba(134, 195, 156, 0.8);
+  animation: dot-pulse 1.6s ease-in-out infinite;
+}
+
+/* Pie chico tenue, estilo label (.klify-footer del header) */
+.klify-nav-footer {
+  padding-top: 14px;
+  border-top: 1px solid var(--outline-var);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+/* ---- Colapso responsive a iconos (64px; mismo corte 860 del sistema) ---- */
+@media (max-width: 860px) {
+  .klify-shell {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .klify-sidebar {
+    align-items: center;
+    padding: 16px 8px;
+    background: var(--bg);
+  }
+
+  /* Queda solo la K roja */
+  .klify-sidebar-brand {
+    font-size: 0;
+  }
+
+  .klify-sidebar-brand .k {
+    font-size: 24px;
+  }
+
+  .klify-nav {
+    width: 100%;
+  }
+
+  .klify-nav-item {
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .klify-nav-text,
+  .klify-nav-num {
+    display: none;
+  }
+
+  /* El pie es texto: en 64px no entra (la barra roja ya marca el activo) */
+  .klify-nav-footer {
+    display: none;
+  }
+}
+
+/* ---- VISTA VIVO ---- */
+
+/* Panel central de espera: el punto de estado reusa el patrón del header de
+   perfil → <span class="dot dot-pulse"></span> junto a un .label */
+.vivo-esperando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+  text-align: center;
+}
+
+/* Grilla compacta de resultados; los items internos reusan .kl-champ-card /
+   .champ-media con afinamientos de tamaño para celdas de ~96px */
+.vivo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 10px;
+}
+
+.vivo-grid .champ-meta {
+  gap: 4px;
+}
+
+.vivo-grid .champ-name {
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   VISTA VIVO 2 COL · BUSCADOR PERFIL · CONTADOR FICHAS
+   Layout de dos columnas para la vista VIVO (panel de estado de cola +
+   buscador de invocadores) que colapsa a una en el corte 860 del sistema.
+   Reusa patrones aprobados del archivo: hover tinte rojo de .klify-nav-item,
+   verde #86c39c del .dot / .klify-nav-live, micro-label de
+   .cs-banda-seg-titulo, look de input .kl-menu-search y contador estilo
+   .kl-counter (.label). El "//" del título de panel lo agrega el ::before
+   (patrón .h-sec): NO escribirlo en el RSX.
+   ========================================================================== */
+
+/* ---- VISTA VIVO: layout de dos columnas ---- */
+
+.vivo-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .vivo-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Panel de estado de cola */
+.vivo-estado-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+}
+
+/* Título del panel: itálica condensada + "//" sesgado (patrón .h-sec) */
+.vivo-estado-titulo {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--on-surface);
+}
+
+.vivo-estado-titulo::before {
+  content: "//";
+  display: inline-block;
+  transform: skewX(-15deg);
+  color: var(--outline);
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.vivo-estado-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Pill de estado: borde 1px + dot; --on pasa al verde aprobado */
+.vivo-chip-estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  background: transparent;
+  border: 1px solid var(--outline-var);
+  border-radius: 9999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+.vivo-chip-estado::before {
+  content: "";
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  background: var(--outline);
+  opacity: 0.55;
+}
+
+.vivo-chip-estado--on {
+  color: #86c39c;
+  border-color: rgba(134, 195, 156, 0.45);
+  background: rgba(134, 195, 156, 0.08);
+}
+
+.vivo-chip-estado--on::before {
+  background: #86c39c;
+  opacity: 1;
+  box-shadow: 0 0 6px rgba(134, 195, 156, 0.8);
+  animation: dot-pulse 1.6s ease-in-out infinite;
+}
+
+/* ---- VISTA VIVO: buscador de invocadores ---- */
+
+.vivo-buscador-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--outline-var);
+}
+
+/* Micro-label del panel (patrón .cs-banda-seg-titulo) */
+.vivo-buscador-titulo {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+.vivo-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+/* Fila de invocador (button): hover tinte rojo suave (.klify-nav-item) */
+.vivo-fila {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  text-align: left;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.vivo-fila:hover {
+  background: rgba(255, 0, 51, 0.07);
+  color: var(--on-surface);
+}
+
+.vivo-fila-retrato {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  object-fit: cover;
+  background: var(--c-low);
+  border: 1px solid var(--outline-var);
+}
+
+/* El img interior no tiene tamaño propio: sin esta regla cada loading art
+   (~1024px) renderiza a tamaño natural y desborda pintándose encima de todo */
+.vivo-fila-retrato img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.vivo-fila-nombre {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+/* Mini-tag de línea (rol) */
+.vivo-fila-lane {
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--outline-var);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+/* El color (verde/rojo) lo pone el RSX; acá solo layout y peso */
+.vivo-fila-wr {
+  flex: none;
+  margin-left: auto;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.vivo-fila-wr--verde { color: #86c39c; }
+.vivo-fila-wr--rojo { color: var(--primary-bright); }
+
+/* ---- PERFIL: buscador arriba ---- */
+
+.perfil-buscador {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  border: 1px solid var(--outline-var);
+}
+
+.perfil-buscador-fila {
+  display: flex;
+  gap: 8px;
+}
+
+/* Look .kl-menu-search estirado a fila (flex:1 pisa el width fijo) */
+.perfil-buscador-input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  background: var(--kl-lowest, #090c11);
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.perfil-buscador-input::placeholder {
+  color: var(--outline);
+}
+
+.perfil-buscador-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 0, 51, 0.1);
+}
+
+/* Card de resultado de búsqueda */
+.perfil-resultado {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--outline-var);
+}
+
+/* ---- MENÚ FICHAS: contador de fichas ---- */
+
+/* Contador "173/173 FICHAS" (patrón .label, números tabulares) */
+.fichas-contador {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.fichas-contador b {
+  color: var(--on-surface);
+  font-weight: 700;
+}
+
+/* ---- Responsive de los paneles nuevos (corte 760 del sistema) ---- */
+
+@media (max-width: 760px) {
+  .vivo-estado-panel { padding: 20px; }
+  .perfil-buscador { padding: 14px 16px; margin-bottom: 14px; }
 }

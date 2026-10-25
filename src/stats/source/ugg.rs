@@ -229,6 +229,8 @@ fn parse_row(row: &Value, label: &str, runes: Option<&RuneCatalog>) -> Result<Ru
         keystone_id: keystone_of(primary_perks, runes),
         perk_ids,
         stat_shards,
+        estilo: None,
+        sintetizada: false,
     })
 }
 

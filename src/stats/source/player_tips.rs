@@ -12,7 +12,10 @@
 //! seguidos por `tip-box__guide-wrap` con el link de guía y el rol del
 //! autor. El parseo es por scanning de strings (sin crate de HTML): si el
 //! sitio cambia, el parser devuelve menos/vacíos y la UI muestra su estado
-//! honesto — nunca un crash.
+//! honesto — nunca un crash. Todo indexado sobre el HTML remoto va por
+//! `get`/`truncate_safe`: un recorte fijo de bytes cayendo adentro de un
+//! char multi-byte (las comillas “” ocupan 3 bytes) hizo panic con exit 101
+//! en producción (2026-10-22, champ select) y acá está el fix con tests.
 
 use std::collections::HashMap;
 use std::sync::{Mutex, OnceLock};
@@ -36,16 +39,25 @@ pub fn decode_entities(input: &str) -> String {
         return input.to_string();
     }
     let mut out = String::with_capacity(input.len());
-    let bytes = input.as_bytes();
     let mut cursor = 0usize;
     while cursor < input.len() {
-        if bytes[cursor] != b'&' {
-            let ch = input[cursor..].chars().next().expect("índice válido");
+        // Input remoto: todo indexado va por `get`, con fallback que no
+        // paniquea jamás (cursor es char boundary por construcción, pero si
+        // algo se rompe, cortamos la decodificación en vez de matar la app).
+        let Some(rest) = input.get(cursor..) else {
+            out.push('\u{FFFD}');
+            break;
+        };
+        if !rest.starts_with('&') {
+            let Some(ch) = rest.chars().next() else {
+                out.push('\u{FFFD}');
+                break;
+            };
             out.push(ch);
             cursor += ch.len_utf8();
             continue;
         }
-        let Some(semicolon) = input[cursor..].find(';').map(|offset| cursor + offset) else {
+        let Some(semicolon) = rest.find(';').map(|offset| cursor + offset) else {
             out.push('&');
             cursor += 1;
             continue;
@@ -56,7 +68,11 @@ pub fn decode_entities(input: &str) -> String {
             cursor += 1;
             continue;
         }
-        let entity = &input[cursor + 1..semicolon];
+        let Some(entity) = input.get(cursor + 1..semicolon) else {
+            out.push('&');
+            cursor += 1;
+            continue;
+        };
         let decoded = match entity {
             "amp" => Some('&'),
             "lt" => Some('<'),
@@ -109,6 +125,11 @@ pub struct PlayerTip {
 /// ruido para la UI).
 pub const MAX_TIPS: usize = 30;
 
+/// Ventana máxima de bytes que se escanea por bloque de tip. Antes se
+/// recortaba con slicing directo (`&html[block_start..block_end]`) y un
+/// límite cayendo adentro de un char multi-byte mataba la app entera.
+const VENTANA_BLOQUE_BYTES: usize = 4000;
+
 /// Extrae los consejos de la página (puro, testeado con fixture real).
 /// Tolerante: bloques sin autor/texto se descartan; sin bloques → vacío.
 #[must_use]
@@ -118,12 +139,23 @@ pub fn parse_player_tips(html: &str) -> Vec<PlayerTip> {
 
     let mut cursor = 0usize;
     while tips.len() < MAX_TIPS {
-        let Some(start) = html[cursor..].find(TIP_MARKER) else {
+        // Input remoto: indexado por `get` con fallback; el directo puede
+        // paniquear si el cursor no es boundary.
+        let Some(rest) = html.get(cursor..) else {
+            break;
+        };
+        let Some(start) = rest.find(TIP_MARKER) else {
             break;
         };
         let block_start = cursor + start;
-        let block_end = (block_start + 4000).min(html.len());
-        let block = &html[block_start..block_end];
+        let Some(tail) = html.get(block_start..) else {
+            break;
+        };
+        // El límite fijo de bytes puede caer adentro de un char multi-byte
+        // (ej. las comillas “” del sitio, 3 bytes): truncate_safe retrocede
+        // al boundary anterior en vez de partir el char. Panic real con
+        // exit 101 en producción (línea 126) — no volver a usar slicing.
+        let block = truncate_safe(tail, VENTANA_BLOQUE_BYTES);
 
         let author = between(block, "<span class='author'>", "</span>")
             .map(|raw| raw.trim().to_string());
@@ -156,12 +188,29 @@ pub fn parse_player_tips(html: &str) -> Vec<PlayerTip> {
     tips
 }
 
+/// Recorta `text` a lo sumo a `max_bytes` **sin partir un char UTF-8**:
+/// si el límite cae adentro de un carácter multi-byte (las comillas
+/// tipográficas “” del sitio ocupan 3 bytes, los acentos 2), retrocede
+/// hasta el boundary anterior. Nunca paniquea, sea cual sea el input.
+#[must_use]
+fn truncate_safe(text: &str, max_bytes: usize) -> &str {
+    if text.len() <= max_bytes {
+        return text;
+    }
+    let mut end = max_bytes;
+    while end > 0 && !text.is_char_boundary(end) {
+        end -= 1;
+    }
+    // Seguro: `end` es boundary (o 0, que siempre lo es).
+    &text[..end]
+}
+
 /// Contenido entre dos marcadores literales (primera ocurrencia de cada
 /// uno, en orden).
 fn between<'a>(html: &'a str, open: &str, close: &str) -> Option<&'a str> {
     let start = html.find(open)? + open.len();
-    let end = start + html[start..].find(close)?;
-    Some(&html[start..end])
+    let end = start + html.get(start..)?.find(close)?;
+    html.get(start..end)
 }
 
 /// Limpia el marcado de links del sitio (`[[champ]]`, `[[item]]` → texto
@@ -176,8 +225,8 @@ fn quoted(raw: &str) -> Option<String> {
     let open = '\u{201C}';
     let close = '\u{201D}';
     let start = raw.find(open)? + open.len_utf8();
-    let end = start + raw[start..].find(close)?;
-    let text = raw[start..end].trim();
+    let end = start + raw.get(start..)?.find(close)?;
+    let text = raw.get(start..end)?.trim();
     (!text.is_empty()).then(|| text.to_string())
 }
 
@@ -325,5 +374,85 @@ mod tests {
         );
         assert_eq!(tips[0].text, "Be careful for Vi's dueling.");
         assert_eq!(tips[0].author_role.as_deref(), Some("Rek'Sai Player"));
+    }
+
+    // ------------------------------------------------------------------
+    // truncate_safe: el fix del crash real (exit 101 en champ select).
+    // ------------------------------------------------------------------
+
+    /// Límite cayendo justo adentro de una comilla tipográfica (3 bytes):
+    /// exactamente el caso de producción. Retrocede al boundary y no
+    /// paniquea.
+    #[test]
+    fn truncate_safe_limite_dentro_de_comilla_tipografica() {
+        // bytes: a(0..1) b(1..2) “(2..5) c(5..6) d(6..7)
+        let texto = "ab\u{201C}cd";
+        assert_eq!(texto.len(), 7);
+
+        assert_eq!(truncate_safe(texto, 3), "ab", "el byte 3 cae adentro de “");
+        assert_eq!(truncate_safe(texto, 4), "ab", "el byte 4 también");
+        assert_eq!(truncate_safe(texto, 5), "ab\u{201C}", "el byte 5 es boundary");
+        assert_eq!(truncate_safe(texto, 6), "ab\u{201C}c");
+        assert_eq!(truncate_safe(texto, 7), texto);
+    }
+
+    /// Con comillas y acentos, cualquier límite de bytes posible devuelve
+    /// un prefijo válido del original (nunca un corte adentro de un char).
+    #[test]
+    fn truncate_safe_no_parte_ningun_char_con_acentos_y_comillas() {
+        let texto = "“Vi’s dueling” — cuidado con á, é, ñ y 説";
+        for max in 0..=texto.len() {
+            let cortado = truncate_safe(texto, max);
+            assert!(cortado.len() <= max, "max {max}: se pasó del límite");
+            assert!(
+                texto.starts_with(cortado),
+                "max {max}: cortó adentro de un char"
+            );
+        }
+    }
+
+    /// Texto más corto que el máximo → se devuelve completo e intacto.
+    #[test]
+    fn truncate_safe_texto_corto_vuelve_completo() {
+        let texto = "“tips” con acentos áé í";
+        assert!(texto.len() < 4000);
+        assert_eq!(truncate_safe(texto, 4000), texto);
+        assert_eq!(truncate_safe("", 4000), "");
+        assert_eq!(truncate_safe("corto", 0), "");
+    }
+
+    /// ASCII puro: todos los índices son boundary, así que el resultado es
+    /// idéntico al slicing directo de antes.
+    #[test]
+    fn truncate_safe_ascii_igual_al_slicing_directo() {
+        let texto = "x".repeat(10_000);
+        for max in [0usize, 1, 999, 4_000, 9_999, 10_000, 20_000] {
+            assert_eq!(
+                truncate_safe(&texto, max),
+                &texto[..max.min(texto.len())],
+                "max {max}"
+            );
+        }
+    }
+
+    /// Réplica exacta del crash de producción: la “ arranca en el byte 3999
+    /// del bloque, así que el límite viejo (`block_start + 4000`) caía
+    /// adentro del char → `&html[..block_end]` paniqueaba y la app entera
+    /// moría con exit 101. Ahora el bloque queda truncado en el boundary
+    /// anterior y el tip incompleto se descarta sin drama.
+    #[test]
+    fn parse_no_paniquea_cuando_la_ventana_corta_un_multibyte() {
+        let prefixo =
+            "<span class='tip-box__tip'><span class='author'>X says</span> ".to_string();
+        let padding = "a".repeat(3999 - prefixo.len());
+        assert_eq!(prefixo.len() + padding.len(), 3999);
+        let html = format!("{prefixo}{padding}\u{201C}tip real\u{201D}</span>");
+        assert!(html.len() > 4000);
+
+        let tips = parse_player_tips(&html); // antes: panic acá
+        assert!(
+            tips.is_empty(),
+            "el bloque truncado antes de la “ no puede parsear un tip"
+        );
     }
 }

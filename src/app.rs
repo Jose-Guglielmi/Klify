@@ -11,14 +11,17 @@ use crate::data_dragon::run_item_loader;
 use crate::data_dragon::run_runes_loader;
 use crate::data_dragon::runes::RuneCatalog;
 use crate::lcu::client::run_lcu_loop;
-use crate::lcu::models::{AppState, MatchContext, SummonerInfo};
+use crate::lcu::models::{AppState, ChampionInfo, MatchContext, SummonerInfo};
 use crate::profile::models::ProfileSummary;
 use crate::profile::run_profile_loop;
 use crate::stats::builder::run_dataset_sync;
 use crate::stats::source::{AnalysisState, RecommendationsState, run_champ_analysis, run_recommender};
 use crate::stats::storage::{data_dir, JsonlStatsStore, MATCHES_FILE_NAME};
 use crate::ui::champ_select::ChampSelectView;
+use crate::ui::menu::MenuView;
 use crate::ui::profile::ProfileView;
+use crate::ui::shell::KlifySidebar;
+use crate::ui::vivo::VivoView;
 use crate::ui::waiting::WaitingView;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
@@ -31,31 +34,101 @@ const FONTS_URL: &str = "https://fonts.googleapis.com/css2?family=Barlow+Condens
 
 /// Vista activa derivada del estado global (pura, testeada abajo):
 ///
-/// - Champ select activo ([`AppState::InChampSelect`]) → [`AppView::ChampSelect`].
-/// - Resto: con perfil cargado → [`AppView::Perfil`], si no
-///   [`AppView::Waiting`] (incluye "cliente conectado, sin champ select y
-///   perfil todavía no cargado").
+/// - Modo manual de ficha (elegida del menú sin cliente) o champ select
+///   activo ([`AppState::InChampSelect`]) → [`AppView::ChampSelect`].
+/// - Resto: navegación explícita del usuario ([`NavVista`]) si la hay; sin
+///   navegación el inicio es SIEMPRE el menú de fichas ([`AppView::Menu`])
+///   y el perfil se visita con un botón.
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum AppView {
-    /// Pantalla de espera (sin cliente o cliente sin champ select y sin
-    /// perfil todavía).
+    /// Pantalla de espera (la derivación ya no la produce: el menú manual
+    /// cubre el caso "sin cliente"; se conserva la vista por si vuelve a
+    /// usarse).
     Waiting,
     /// Perfil del invocador.
     Perfil,
-    /// Champ select en vivo.
+    /// Vista VIVO: espejo de la partida en curso (Live Client Data API),
+    /// se visita desde la sidebar.
+    Vivo,
+    /// Champ select en vivo (o modo manual con ficha elegida).
     ChampSelect,
+    /// Menú manual: búsqueda de campeones + fichas, sin cliente de LoL.
+    Menu,
 }
 
-/// Deriva la vista desde `app_state` + la presencia de perfil.
+/// Destino de navegación explícito del usuario entre el menú de fichas, la
+/// vista VIVO (partida en curso) y el perfil — los tres botones de la
+/// sidebar. En la señal vive como `Option`: `None` = sin navegación
+/// (estado inicial) → la app arranca en el menú.
+#[derive(Clone, Copy, PartialEq, Debug)]
+pub enum NavVista {
+    /// Menú de fichas (inicio de la app).
+    Menu,
+    /// Vista VIVO: espejo de la partida en curso.
+    Vivo,
+    /// Perfil del invocador.
+    Perfil,
+}
+
+/// Deriva la vista desde `app_state` + el flag de modo manual + la
+/// navegación explícita (`nav`).
+///
+/// Prioridad: modo manual → champ select ACTIVO → navegación explícita →
+/// default (menú de fichas, SIEMPRE: `profile_loaded` ya no decide la
+/// vista). Solo el draft real en curso ([`AppState::InChampSelect`]) pisa
+/// la sidebar: cuando arranca el champ select la vista salta sola estés
+/// donde estés, y al cerrarse el draft la navegación vuelve. "Cliente
+/// conectado sin draft" ([`AppState::WaitingForChampSelect`]) navega libre
+/// igual que [`AppState::Disconnected`] — FICHAS / VIVO / PERFIL desde la
+/// sidebar — en vez de encerrar al usuario en la pantalla de espera.
+/// `Waiting` ([`AppView::Waiting`]) sigue sin producirse.
+///
+/// Cuidado con el orden de escrituras: los tres handlers de nav de la
+/// sidebar salen del modo manual ANTES de fijar nav (patrón
+/// `on_exit_manual`, estado base `Disconnected`), así que el
+/// corto-circuito por manual solo retiene la vista mientras la ficha está
+/// abierta sin click de nav. El champ select REAL no pasa por ese escape:
+/// con `manual_mode` falsa los handlers no tocan el estado y el draft
+/// activo pisa igual. Los tests de `derive_view` fijan los post-estados de
+/// esos clicks (manual=false); la secuencia de escrituras vive en los
+/// handlers de `App`, no acá.
 #[must_use]
-pub fn derive_view(state: &AppState, profile_loaded: bool) -> AppView {
+pub fn derive_view(
+    state: &AppState,
+    profile_loaded: bool,
+    manual_mode: bool,
+    nav: &Option<NavVista>,
+) -> AppView {
+    // El modo manual gana siempre: pisa la derivación automática (y la
+    // navegación) hasta que el usuario salga explícitamente del modo — por
+    // el botón VOLVER de la ficha (`on_exit_manual`) o por cualquier click
+    // de nav de la sidebar, que lo bajan antes de fijar la navegación.
+    if manual_mode {
+        return AppView::ChampSelect;
+    }
     match state {
+        // Champ select REAL ACTIVO: la partida pisa la navegación (cuando
+        // arranca el draft, la vista salta sola esté donde esté).
         AppState::InChampSelect(_) => AppView::ChampSelect,
-        AppState::Disconnected | AppState::WaitingForChampSelect => {
-            if profile_loaded {
-                AppView::Perfil
-            } else {
-                AppView::Waiting
+        // Cliente conectado sin draft activo (o desconectado): navegación
+        // libre. Al salir de un champ select se vuelve acá: el usuario
+        // recupera la sidebar en vez de quedar en la pantalla de espera.
+        AppState::WaitingForChampSelect | AppState::Disconnected => {
+            // Sin navegación explícita el inicio es el menú de fichas (el
+            // perfil se visita con su botón). El flag de perfil quedó
+            // fuera de la decisión: solo expresaba "hay cliente", que acá
+            // no cambia nada (se conserva en la firma por los
+            // tests/callers que lo pasan).
+            let _ = profile_loaded;
+            match nav {
+                Some(NavVista::Menu) => AppView::Menu,
+                Some(NavVista::Perfil) => AppView::Perfil,
+                // Vista VIVO: también es un destino de la sidebar; champ
+                // select real y modo manual ya volvieron antes, así que
+                // acá no pisan.
+                Some(NavVista::Vivo) => AppView::Vivo,
+                // Default (sin navegación explícita): SIEMPRE el menú.
+                None => AppView::Menu,
             }
         }
     }
@@ -99,7 +172,21 @@ pub fn derive_view(state: &AppState, profile_loaded: bool) -> AppView {
 ///   ([`crate::profile::client_handle`]) para el modal de detalle.
 #[component]
 pub fn App() -> Element {
-    let app_state: Signal<AppState> = use_signal(|| AppState::Disconnected);
+    let mut app_state: Signal<AppState> = use_signal(|| AppState::Disconnected);
+    // Modo manual de ficha: activo cuando el usuario elige un campeón del
+    // menú (sin cliente de LoL) — la app entra al champ select "a mano" y
+    // sale cuando el usuario lo pide (botón VOLVER de la ficha o un click
+    // de nav de la sidebar: los handlers de nav lo bajan antes de fijar la
+    // nav). Leído en `derive_view` (abajo) y en los handlers de nav para
+    // que App re-renderice al togglear.
+    let mut manual_mode: Signal<bool> = use_signal(|| false);
+    // Navegación explícita entre el menú de fichas, la vista VIVO y el
+    // perfil (los tres botones de la sidebar): `None` = sin navegación →
+    // el inicio SIEMPRE es el menú; el perfil se visita con el botón del
+    // menú (`on_ver_perfil`) y se vuelve con el botón del perfil
+    // (`on_ver_fichas`). Leída en `derive_view` (abajo) para que App
+    // re-renderice al navegar.
+    let mut nav_vista: Signal<Option<NavVista>> = use_signal(|| None);
     let catalog: Signal<Option<ChampionCatalog>> = use_signal(|| None);
     // FASE 7: catálogo de runas de Data Dragon (perkId → RuneDef, árboles).
     // Lo lee `run_recommender` (logs), `RuneRecommendations` (UI, FASE 10)
@@ -189,6 +276,7 @@ pub fn App() -> Element {
                 summoner,
                 platform,
                 crate::lcu::client::LiveMirror { rx: live_rx, in_game },
+                manual_mode,
             )
             .await;
         });
@@ -252,9 +340,72 @@ pub fn App() -> Element {
         }
     });
 
-    // Vista activa (snapshot corto: el guard no cruza el rsx).
-    let view = derive_view(&app_state.read(), profile.read().is_some());
+    // Handlers del modo manual (los consume el menú y el champ select):
+    //
+    // - `on_pick`: el usuario eligió una ficha del menú → entramos al modo
+    //   manual con el champ como pick en curso (mismo estado que usaría el
+    //   cliente real, así toda la cadena recommender/análisis funciona igual).
+    // - `on_exit_manual`: salir del modo → de vuelta a desconectado, lo que
+    //   re-deriva la vista hacia el menú. Es el botón VOLVER de la ficha;
+    //   los handlers de nav de acá abajo reutilizan el mismo patrón para
+    //   dejar que la navegación gane sin tocar el champ select real.
+    let on_pick = EventHandler::new(move |champ: ChampionInfo| {
+        manual_mode.set(true);
+        app_state.set(AppState::InChampSelect(Some(champ)));
+    });
+    let on_exit_manual = EventHandler::new(move |_| {
+        manual_mode.set(false);
+        app_state.set(AppState::Disconnected);
+    });
+
+    // Handlers de navegación (los consume el menú, el perfil y la sidebar):
+    //
+    // - Si el usuario está leyendo una ficha (modo manual), la navegación
+    //   GANA: se sale del modo con el mismo patrón de `on_exit_manual`
+    //   (estado base `Disconnected`) para que `derive_view` derive la vista
+    //   pedida. Un champ select REAL no se corta acá: `manual_mode` es
+    //   falsa, los handlers solo tocan nav y el estado pisa como siempre
+    //   (el draft "agarra solo", ver `in_match`).
+    // - `on_ver_perfil`: botón del menú/sidebar → visitar el perfil.
+    // - `on_ver_fichas`: botón del perfil/sidebar → volver al menú de fichas.
+    // - `on_ir_vivo`: botón de la sidebar → vista VIVO (partida en curso).
+    let on_ver_perfil = EventHandler::new(move |_| {
+        if *manual_mode.read() {
+            manual_mode.set(false);
+            app_state.set(AppState::Disconnected);
+        }
+        nav_vista.set(Some(NavVista::Perfil));
+    });
+    let on_ver_fichas = EventHandler::new(move |_| {
+        if *manual_mode.read() {
+            manual_mode.set(false);
+            app_state.set(AppState::Disconnected);
+        }
+        nav_vista.set(Some(NavVista::Menu));
+    });
+    let on_ir_vivo = EventHandler::new(move |_| {
+        if *manual_mode.read() {
+            manual_mode.set(false);
+            app_state.set(AppState::Disconnected);
+        }
+        nav_vista.set(Some(NavVista::Vivo));
+    });
+
+    // Vista activa (snapshot corto: el guard no cruza el rsx). Se leen
+    // `manual_mode` y `nav_vista` acá para que App re-renderice cuando el
+    // modo o la navegación cambien.
+    let view = derive_view(
+        &app_state.read(),
+        profile.read().is_some(),
+        *manual_mode.read(),
+        &nav_vista.read(),
+    );
     let ddragon_version: Option<String> = catalog.read().as_ref().map(|data| data.version.clone());
+
+    // Sidebar: "en partida" = champ select real (cliente vivo) o modo
+    // manual de ficha. Snapshot corto: el guard no cruza el rsx.
+    let state_snapshot: AppState = app_state.read().clone();
+    let in_match = matches!(state_snapshot, AppState::InChampSelect(_)) || *manual_mode.read();
 
     rsx! {
         document::Link { rel: "icon", href: FAVICON }
@@ -266,43 +417,79 @@ pub fn App() -> Element {
         div { class: "bg-stripes", "aria-hidden": "true" }
         div { class: "bg-vignette", "aria-hidden": "true" }
 
-        {match view {
-            AppView::Waiting => rsx! {
-                WaitingView {
-                    state: app_state,
-                    platform: platform.read().clone(),
-                    feature_version: ddragon_version.clone(),
-                    patch_version: ddragon_version.clone(),
-                    source_served: *sync_served.read(),
-                }
-            },
-            AppView::Perfil => rsx! {
-                ProfileView {
-                    state: app_state,
-                    profile: profile.read().clone().unwrap_or_default(),
-                    summoner: summoner.read().clone(),
-                    platform: platform.read().clone(),
-                    catalog: catalog.read().clone(),
-                    runes: runes.read().clone(),
-                    source_served: *sync_served.read(),
-                }
-            },
-            AppView::ChampSelect => rsx! {
-                ChampSelectView {
-                    state: app_state,
-                    match_context,
-                    catalog,
-                    runes,
-                    items,
-                    recommendations,
-                    analysis: champ_analysis,
-                    patch_version: ddragon_version,
-                    source_served: *sync_served.read(),
-                    retry_runes,
-                    in_game,
-                }
-            },
-        }}
+        // Shell con sidebar fija: FICHAS · VIVO · PERFIL siempre visibles;
+        // la vista activa (derivada) se renderiza al lado.
+        div { class: "klify-shell",
+            KlifySidebar {
+                nav: nav_vista,
+                in_match,
+                on_ver_fichas: on_ver_fichas,
+                on_ir_vivo: on_ir_vivo,
+                on_ver_perfil: on_ver_perfil,
+            }
+
+            {match view {
+                AppView::Waiting => rsx! {
+                    WaitingView {
+                        state: app_state,
+                        platform: platform.read().clone(),
+                        feature_version: ddragon_version.clone(),
+                        patch_version: ddragon_version.clone(),
+                        source_served: *sync_served.read(),
+                    }
+                },
+                AppView::Perfil => rsx! {
+                    ProfileView {
+                        state: app_state,
+                        profile: profile.read().clone().unwrap_or_default(),
+                        summoner: summoner.read().clone(),
+                        platform: platform.read().clone(),
+                        catalog: catalog.read().clone(),
+                        runes: runes.read().clone(),
+                        source_served: *sync_served.read(),
+                        on_ver_fichas,
+                    }
+                },
+                AppView::Vivo => rsx! {
+                    VivoView {
+                        state: app_state,
+                        catalog: catalog,
+                        on_pick: on_pick,
+                    }
+                },
+                AppView::Menu => rsx! {
+                    MenuView {
+                        catalog,
+                        profile,
+                        manual_mode,
+                        app_state,
+                        on_pick,
+                        on_ver_perfil,
+                    }
+                },
+                AppView::ChampSelect => rsx! {
+                    ChampSelectView {
+                        state: app_state,
+                        match_context,
+                        catalog,
+                        runes,
+                        items,
+                        recommendations,
+                        analysis: champ_analysis,
+                        patch_version: ddragon_version,
+                        source_served: *sync_served.read(),
+                        retry_runes,
+                        in_game,
+                        manual: manual_mode(),
+                        // El perfil LCU solo se carga con cliente vivo: lo uso
+                        // como proxy de "cliente conectado" (lee `profile` acá
+                        // para que App re-renderice al conectar/desconectar).
+                        client_connected: profile.read().is_some(),
+                        on_exit_manual,
+                    }
+                },
+            }}
+        }
     }
 }
 
@@ -312,41 +499,269 @@ mod tests {
     use crate::lcu::events::champion_placeholder;
     use crate::ui::shell::sync_label;
 
-    /// Champ select activo gana siempre, con o sin pick.
+    /// Champ select activo gana siempre, con o sin pick (y pisa la
+    /// navegación explícita).
     #[test]
     fn champ_select_activo_es_champ_select() {
         assert_eq!(
-            derive_view(&AppState::InChampSelect(None), false),
+            derive_view(&AppState::InChampSelect(None), false, false, &None),
             AppView::ChampSelect
         );
         assert_eq!(
-            derive_view(&AppState::InChampSelect(Some(champion_placeholder(103))), true),
+            derive_view(
+                &AppState::InChampSelect(Some(champion_placeholder(103))),
+                true,
+                false,
+                &Some(NavVista::Perfil)
+            ),
             AppView::ChampSelect
         );
     }
 
-    /// Sin champ select: perfil cargado → PERFIL.
+    /// El modo manual de ficha pisa cualquier derivación automática (y la
+    /// navegación explícita).
     #[test]
-    fn con_perfil_es_perfil() {
+    fn modo_manual_fuerza_champ_select() {
         assert_eq!(
-            derive_view(&AppState::WaitingForChampSelect, true),
-            AppView::Perfil
+            derive_view(&AppState::Disconnected, false, true, &Some(NavVista::Menu)),
+            AppView::ChampSelect
+        );
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                true,
+                &Some(NavVista::Perfil)
+            ),
+            AppView::ChampSelect
+        );
+    }
+
+    /// Sin champ select y sin navegación: el inicio es SIEMPRE el menú de
+    /// fichas, incluso con perfil cargado (el perfil se visita con botón).
+    #[test]
+    fn con_perfil_y_sin_nav_es_menu() {
+        assert_eq!(
+            derive_view(&AppState::WaitingForChampSelect, true, false, &None),
+            AppView::Menu
         );
         // incluso desconectado en el instante en que el perfil viejo sigue
         // en la señal (el loop lo resetea en su próximo ciclo).
-        assert_eq!(derive_view(&AppState::Disconnected, true), AppView::Perfil);
+        assert_eq!(
+            derive_view(&AppState::Disconnected, true, false, &None),
+            AppView::Menu
+        );
     }
 
-    /// Sin champ select y sin perfil → pantalla de espera.
+    /// Sin champ select y sin perfil → menú manual de fichas (sin cliente
+    /// la app se comporta como si detectara el cliente).
     #[test]
-    fn sin_perfil_es_waiting() {
+    fn sin_perfil_es_menu() {
         assert_eq!(
-            derive_view(&AppState::Disconnected, false),
-            AppView::Waiting
+            derive_view(&AppState::Disconnected, false, false, &None),
+            AppView::Menu
         );
         assert_eq!(
-            derive_view(&AppState::WaitingForChampSelect, false),
-            AppView::Waiting
+            derive_view(&AppState::WaitingForChampSelect, false, false, &None),
+            AppView::Menu
+        );
+    }
+
+    /// Navegación explícita al perfil: con perfil cargado muestra el
+    /// perfil aunque el default sea el menú.
+    #[test]
+    fn nav_perfil_muestra_perfil() {
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Perfil)
+            ),
+            AppView::Perfil
+        );
+    }
+
+    /// Navegación explícita al menú: pisa el default (que ya es menú) y
+    /// vuelve al menú aunque el perfil siga cargado.
+    #[test]
+    fn nav_menu_pisa_default() {
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Menu)
+            ),
+            AppView::Menu
+        );
+    }
+
+    /// Navegación explícita a VIVO desde la sidebar: muestra la vista VIVO
+    /// (con o sin cliente conectado).
+    #[test]
+    fn nav_vivo_muestra_vivo() {
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::Vivo
+        );
+        assert_eq!(
+            derive_view(&AppState::Disconnected, false, false, &Some(NavVista::Vivo)),
+            AppView::Vivo
+        );
+    }
+
+    /// Champ select real y modo manual SIGUEN pisando la navegación a VIVO
+    /// (regresión de la prioridad con la variante nueva de `NavVista`).
+    #[test]
+    fn champ_select_y_manual_pisan_nav_vivo() {
+        // Champ select real, con o sin pick.
+        assert_eq!(
+            derive_view(
+                &AppState::InChampSelect(None),
+                false,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::ChampSelect
+        );
+        assert_eq!(
+            derive_view(
+                &AppState::InChampSelect(Some(champion_placeholder(103))),
+                true,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::ChampSelect
+        );
+        // Modo manual de ficha (sin cliente).
+        assert_eq!(
+            derive_view(&AppState::Disconnected, false, true, &Some(NavVista::Vivo)),
+            AppView::ChampSelect
+        );
+    }
+
+    /// FIX de navegación desde una ficha (modo manual): los tres handlers
+    /// de nav de la sidebar salen del modo con el patrón `on_exit_manual`
+    /// (manual=false + estado base `Disconnected`) antes de fijar nav — la
+    /// escritura vive en los handlers de `App` (no hay infraestructura de
+    /// señales testeable acá), así que este test fija los post-estados que
+    /// esos clicks deben dejar: la misma nav que el modo pisaba ahora
+    /// deriva la vista pedida.
+    #[test]
+    fn post_estado_de_nav_en_modo_manual_deriva_vista_pedida() {
+        // Referencia pre-click: leyendo una ficha, la vista queda fija
+        // aunque ya hubiera nav pedida.
+        assert_eq!(
+            derive_view(
+                &AppState::InChampSelect(Some(champion_placeholder(103))),
+                false,
+                true,
+                &Some(NavVista::Perfil)
+            ),
+            AppView::ChampSelect
+        );
+        // Post-click de los tres handlers: manual pago por el handler y
+        // estado base `Disconnected` → cada nav llega a su vista.
+        for (nav, esperada) in [
+            (NavVista::Menu, AppView::Menu),
+            (NavVista::Perfil, AppView::Perfil),
+            (NavVista::Vivo, AppView::Vivo),
+        ] {
+            assert_eq!(
+                derive_view(&AppState::Disconnected, false, false, &Some(nav)),
+                esperada
+            );
+        }
+    }
+
+    /// FIX navegación libre: con cliente conectado sin draft
+    /// (`WaitingForChampSelect`) la sidebar navega igual que desconectado —
+    /// cada destino llega a su vista en vez de encerrarte en champ select.
+    #[test]
+    fn waiting_deja_navegar() {
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Menu)
+            ),
+            AppView::Menu
+        );
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Perfil)
+            ),
+            AppView::Perfil
+        );
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::Vivo
+        );
+    }
+
+    /// Regresión: el champ select real ACTIVO pisa cualquier navegación —
+    /// la vista salta sola al draft estés donde estés (FICHAS/PERFIL/VIVO).
+    #[test]
+    fn champ_select_activo_pisa_nav() {
+        for nav in [
+            Some(NavVista::Menu),
+            Some(NavVista::Perfil),
+            Some(NavVista::Vivo),
+        ] {
+            assert_eq!(
+                derive_view(
+                    &AppState::InChampSelect(Some(champion_placeholder(103))),
+                    true,
+                    false,
+                    &nav
+                ),
+                AppView::ChampSelect
+            );
+        }
+    }
+
+    /// Secuencia exacta del bug: entrar a un champ select real, salir (el
+    /// cliente queda abierto → `WaitingForChampSelect`) y pedir VIVO en la
+    /// sidebar. La navegación responde: no hay encierro en la pantalla de
+    /// "esperando champ select".
+    #[test]
+    fn al_salir_del_champ_select_vuelve_la_nav() {
+        // Mientras duró el draft, la partida pisó la navegación aunque el
+        // usuario hubiera pedido VIVO.
+        assert_eq!(
+            derive_view(
+                &AppState::InChampSelect(Some(champion_placeholder(103))),
+                true,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::ChampSelect
+        );
+        // Al cerrarse el draft (cliente abierto, sin partida) la MISMA
+        // navegación a VIVO ya responde.
+        assert_eq!(
+            derive_view(
+                &AppState::WaitingForChampSelect,
+                true,
+                false,
+                &Some(NavVista::Vivo)
+            ),
+            AppView::Vivo
         );
     }
 

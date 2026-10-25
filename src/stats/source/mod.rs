@@ -47,6 +47,13 @@
 //! [`items`] (build `ep=build-itemset` + sugerencias vs comp como cruce con
 //! tabla declarativa) y [`skills`] (skill order + summoners, hoy
 //! `Unavailable`: ninguna fuente pública accesible los expone; ver su doc).
+//!
+//! Variantes de estilo: con el catálogo de runas disponible, a las páginas
+//! reales se les completa el chip de estilo ([`estilo_de_keystone`],
+//! conocimiento del juego, no stats) y se les agregan hasta dos páginas
+//! **sintetizadas** ([`expandir_con_variantes`]): el mismo set de la página
+//! más jugada cambiando solo el keystone por otro de su propio árbol, sin
+//! métricas propias (la UI las distingue con `RunePageStats::sintetizada`).
 
 use std::collections::HashMap;
 use std::fmt;
@@ -58,7 +65,7 @@ use serde::{Deserialize, Serialize};
 use tokio::time::sleep;
 
 use crate::data_dragon::models::ChampionCatalog;
-use crate::data_dragon::runes::RuneCatalog;
+use crate::data_dragon::runes::{RuneCatalog, RuneDef};
 use crate::lcu::models::{AppState, MatchContext, Position};
 use crate::stats::aggregation::patch_of;
 
@@ -198,6 +205,14 @@ pub struct RunePageStats {
     /// catálogo marca como keystone; sin catálogo, la primera runa del
     /// árbol principal (ambas fuentes listan las runas en orden de fila).
     pub keystone_id: Option<i64>,
+    /// Chip de estilo según el keystone (conocimiento del juego, no stats):
+    /// `Some("DAÑO EXPLOSIVO")`, etc. `None` = keystone fuera de la tabla
+    /// de [`estilo_de_keystone`] (o página todavía sin procesar).
+    pub estilo: Option<String>,
+    /// `true` = página sintetizada (variante de estilo de
+    /// [`expandir_con_variantes`]): no trae métricas propias —viaja con
+    /// `games`/`wins`/`winrate_pct` en 0 y la UI muestra "—".
+    pub sintetizada: bool,
 }
 
 impl RunePageStats {
@@ -250,6 +265,130 @@ pub(crate) fn keystone_of(primary_perks: &[i64], runes: Option<&RuneCatalog>) ->
         }
     }
     primary_perks.first().copied()
+}
+
+/// Chip de estilo de un keystone (conocimiento del juego, no stats): la
+/// categoría corta que etiqueta a cada página junto a su keystone. Ids
+/// estables de Data Dragon; un id fuera de la tabla (keystone nuevo sin
+/// clasificar, runa menor, 0/ausente) no tiene chip → `None`.
+#[must_use]
+pub fn estilo_de_keystone(id: i64) -> Option<&'static str> {
+    // Clasificación de juego, no de datos: no consulta el catálogo.
+    const ESTILOS_POR_KEYSTONE: &[(i64, &str)] = &[
+        (8112, "DAÑO EXPLOSIVO"),   // Electrocute
+        (8128, "DAÑO ESCALADO"),    // Dark Harvest
+        (9923, "COMBATE CORTO"),    // Hail of Blades
+        (8124, "ROAM/MOVILIDAD"),   // Predator
+        (8005, "COMBATE CORTO"),    // Press the Attack
+        (8010, "PELEA PROLONGADA"), // Conqueror
+        (8008, "DPS PROLONGADO"),   // Lethal Tempo
+        (8021, "SOSTEN DE LINEA"),  // Fleet Footwork
+        (8214, "POKE/SOSTEN"),      // Summon Aery
+        (8229, "POKE"),             // Arcane Comet
+        (8230, "MOVILIDAD"),        // Phase Rush
+        (8369, "DAÑO EXPLOSIVO"),   // First Strike
+        (8360, "UTILIDAD"),         // Unsealed Spellbook
+        (8351, "CONTROL"),          // Glacial Augment
+        (8437, "AGUANTE"),          // Grasp of the Undying
+        (8435, "AGUANTE/SOSTEN"),   // Aftershock
+        (8439, "PROTECCION"),       // Guardian
+    ];
+    ESTILOS_POR_KEYSTONE
+        .iter()
+        .find(|&&(keystone, _)| keystone == id)
+        .map(|&(_, estilo)| estilo)
+}
+
+/// Extiende las páginas reales con **variantes de estilo** (hasta 2): clones
+/// de la página más jugada (índice 0) que cambian únicamente el keystone por
+/// otro de su propio árbol primario. Pura y determinística: orden de
+/// catálogo, sin red ni métricas.
+///
+/// - El chip de estilo ([`estilo_de_keystone`]) se completa para **todas**
+///   las páginas reales a partir de su `keystone_id`.
+/// - Keystones candidatos: fila 0 del árbol primario de la base, excluyendo
+///   el keystone de la base, los de **todas** las páginas reales presentes
+///   (dedupe por id) y los que no tengan estilo en la tabla.
+/// - Orden: primero los de estilo distinto al de la base (diversidad),
+///   después el resto; dentro de cada grupo, orden de catálogo.
+/// - Cada variante: clon de la base con `perk_ids[0]` reemplazado, métricas
+///   en cero (`games`/`wins`/`winrate_pct`), `sintetizada` en `true` y
+///   etiqueta `Variante · {estilo}`; se agregan al final del vec, con las
+///   reales al frente y en su orden original.
+#[must_use]
+pub fn expandir_con_variantes(
+    mut pages: Vec<RunePageStats>,
+    catalog: &RuneCatalog,
+) -> Vec<RunePageStats> {
+    // Chip de estilo de las reales: sale de la tabla pura, no del catálogo.
+    for page in &mut pages {
+        page.estilo = page
+            .keystone_id
+            .and_then(estilo_de_keystone)
+            .map(String::from);
+    }
+
+    // La base es la primera página real (la más jugada de la fuente).
+    let Some(base) = pages.first().cloned() else {
+        return pages;
+    };
+    // Sin keystone conocido (o sin perks donde escribirlo) no hay variante
+    // posible: el reemplazo es sobre `perk_ids[0]`, la fila del keystone.
+    let Some(base_keystone) = base.keystone_id else {
+        return pages;
+    };
+    if base.perk_ids.is_empty() {
+        return pages;
+    }
+    let base_estilo = estilo_de_keystone(base_keystone);
+
+    // Keystones ya presentes en páginas reales: no se repiten como variante.
+    let usados: Vec<i64> = pages.iter().filter_map(|page| page.keystone_id).collect();
+
+    // Árbol primario de la base y su fila 0 (los keystones del árbol).
+    let Some(arbol) = catalog
+        .trees
+        .iter()
+        .find(|tree| i64::from(tree.id) == base.primary_style_id)
+    else {
+        return pages;
+    };
+    let Some(keystones) = arbol.slots.first().map(|slot| &slot.runes) else {
+        return pages;
+    };
+
+    let mut candidatos: Vec<&RuneDef> = keystones
+        .iter()
+        .filter(|rune| {
+            rune.id != base_keystone
+                && !usados.contains(&rune.id)
+                && estilo_de_keystone(rune.id).is_some()
+        })
+        .collect();
+
+    // Diversidad primero: estilo distinto al de la base encabeza; el resto
+    // conserva el orden del catálogo (`sort_by_key` es estable).
+    candidatos.sort_by_key(|rune| estilo_de_keystone(rune.id) == base_estilo);
+
+    for candidato in candidatos.into_iter().take(2) {
+        // Ya filtrado arriba: todo candidato tiene estilo en la tabla.
+        let Some(estilo) = estilo_de_keystone(candidato.id) else {
+            continue;
+        };
+
+        let mut variante = base.clone();
+        variante.perk_ids[0] = candidato.id;
+        variante.keystone_id = Some(candidato.id);
+        variante.estilo = Some(String::from(estilo));
+        variante.sintetizada = true;
+        variante.games = 0;
+        variante.wins = 0;
+        variante.winrate_pct = 0.0;
+        variante.label = format!("Variante · {estilo}");
+        pages.push(variante);
+    }
+
+    pages
 }
 
 /// Lane de Lolalytics para una posición: `UTILITY` → `support`; sin
@@ -450,7 +589,9 @@ pub enum RecommendationsState {
     Ready {
         /// Id del campeón consultado.
         champion_id: i64,
-        /// Páginas normalizadas (Lolalytics primero; U.GG si fue el fallback).
+        /// Páginas normalizadas (Lolalytics primero; U.GG si fue el fallback)
+        /// y, si había catálogo de runas, hasta 2 variantes de estilo
+        /// sintetizadas al final ([`expandir_con_variantes`]).
         pages: Vec<RunePageStats>,
     },
     /// Sin recomendaciones para este campeón (ambas fuentes fallaron).
@@ -596,6 +737,10 @@ pub(crate) fn build_http_client() -> Result<reqwest::Client, reqwest::Error> {
 ///   REINTENTAR; al cambiar, `last_done` se limpia para que el próximo poll
 ///   re-consulte el target vigente (los fallos nunca se cachean, así que
 ///   reintentar es una consulta real).
+/// - Con catálogo de runas disponible, las páginas del estado `Ready` llevan
+///   el chip de estilo ([`estilo_de_keystone`]) y hasta 2 variantes de estilo
+///   sintetizadas ([`expandir_con_variantes`]) al final del vec; sin
+///   catálogo, solo las reales.
 pub async fn run_recommender(
     mut recommendations: Signal<RecommendationsState>,
     app_state: Signal<AppState>,
@@ -698,6 +843,17 @@ pub async fn run_recommender(
                 .await
                 {
                     Ok((source, pages)) => {
+                        // Con catálogo de runas disponible: chip de estilo en
+                        // las reales y hasta 2 variantes de estilo al final.
+                        // Sin catálogo, las reales quedan solas (la feature es
+                        // optativa según disponibilidad). La cache guarda solo
+                        // las reales: la expansión es pura y determinística,
+                        // así un catálogo que llega tarde también produce
+                        // variantes en el próximo cache hit.
+                        let pages = match runes_snapshot.as_ref() {
+                            Some(runes) => expandir_con_variantes(pages, runes),
+                            None => pages,
+                        };
                         log_recommended_pages(
                             &target,
                             source,
@@ -757,17 +913,20 @@ fn log_recommended_pages(
                 None => format!("{id} (sin catálogo)"),
             },
         };
+        let estilo = page.estilo.as_deref().unwrap_or("—");
         eprintln!(
-            "klipy [source]:   · {} [fuente {}] wr {:.2}% en {} partidas · keystone {} · estilos pri {} / sec {} · {} perks + {} shards",
+            "klipy [source]:   · {} [fuente {}] wr {:.2}% en {} partidas · keystone {} · estilo {} · estilos pri {} / sec {} · {} perks + {} shards{}",
             page.label,
             page.source,
             page.winrate_pct,
             page.games,
             keystone,
+            estilo,
             page.primary_style_id,
             page.sub_style_id,
             page.perk_ids.len(),
-            page.stat_shards.len()
+            page.stat_shards.len(),
+            if page.sintetizada { " · variante sintetizada" } else { "" }
         );
     }
 }
@@ -778,7 +937,7 @@ mod tests {
 
     use super::*;
     use crate::data_dragon::models::ChampionEntry;
-    use crate::data_dragon::runes::{RuneDef, RuneTree};
+    use crate::data_dragon::runes::{RuneDef, RuneSlot, RuneTree};
 
     /// Catálogo de runas mínimo: Dominación (8100) con Electrocute (8112,
     /// keystone) y Precisión (8000) con Press the Attack (8005, keystone).
@@ -880,6 +1039,8 @@ mod tests {
             perk_ids: vec![8112],
             stat_shards: vec![5008],
             keystone_id: Some(8112),
+            estilo: None,
+            sintetizada: false,
         };
         insert_pages(&mut cache, key.clone(), vec![page.clone()]);
         assert_eq!(lookup_pages(&cache, &key), Some(vec![page.clone()]));
@@ -971,12 +1132,16 @@ mod tests {
             perk_ids: vec![8008, 8009, 9103, 8014, 8345, 8304],
             stat_shards: vec![5005, 5008, 5001],
             keystone_id: Some(8008),
+            estilo: Some(String::from("DPS PROLONGADO")),
+            sintetizada: false,
         };
 
         let json_text = serde_json::to_string(&page).expect("serializa");
         assert!(json_text.contains("\"source\":\"Lolalytics\""));
         assert!(json_text.contains("\"primaryStyleId\":8000"));
         assert!(json_text.contains("\"winratePct\":51.06"));
+        assert!(json_text.contains("\"estilo\":\"DPS PROLONGADO\""));
+        assert!(json_text.contains("\"sintetizada\":false"));
 
         let back: RunePageStats = serde_json::from_str(&json_text).expect("deserializa");
         assert_eq!(back, page);
@@ -1193,5 +1358,207 @@ mod tests {
         assert_eq!(shard_name(5006), "#5006");
         assert_eq!(shard_name(5009), "#5009");
         assert_eq!(shard_name(9999), "#9999");
+    }
+
+    // -------------------------------------------------------------------------
+    // Variantes de estilo: `estilo_de_keystone` + `expandir_con_variantes`.
+    // -------------------------------------------------------------------------
+
+    /// Runa de fixture con la forma que el catálogo le da a cada entrada.
+    fn runa(id: i64, key: &str, tree_id: i32, slot: usize, keystone: bool) -> RuneDef {
+        RuneDef {
+            id,
+            key: String::from(key),
+            name: String::from(key),
+            icon_path: String::new(),
+            tree_id,
+            slot_index: slot,
+            is_keystone: keystone,
+            short_desc: String::new(),
+        }
+    }
+
+    /// Catálogo con árboles completos (fila 0 = keystones) para las
+    /// variantes: Dominación con sus tres keystones reales (8112, 8128,
+    /// 9923) y Precisión con PTA (8005).
+    fn catalogo_con_arboles() -> RuneCatalog {
+        let dominacion = RuneTree {
+            id: 8100,
+            key: String::from("Domination"),
+            name: String::from("Domination"),
+            icon_path: String::new(),
+            slots: vec![
+                RuneSlot {
+                    runes: vec![
+                        runa(8112, "Electrocute", 8100, 0, true),
+                        runa(8128, "DarkHarvest", 8100, 0, true),
+                        runa(9923, "HailOfBlades", 8100, 0, true),
+                    ],
+                },
+                RuneSlot {
+                    runes: vec![runa(8139, "TasteOfBlood", 8100, 1, false)],
+                },
+            ],
+        };
+        let precision = RuneTree {
+            id: 8000,
+            key: String::from("Precision"),
+            name: String::from("Precision"),
+            icon_path: String::new(),
+            slots: vec![RuneSlot {
+                runes: vec![runa(8005, "PressTheAttack", 8000, 0, true)],
+            }],
+        };
+
+        let mut by_id = HashMap::new();
+        for tree in [&dominacion, &precision] {
+            for slot in &tree.slots {
+                for rune in &slot.runes {
+                    by_id.insert(rune.id, rune.clone());
+                }
+            }
+        }
+
+        RuneCatalog {
+            version: String::from("16.20.1"),
+            trees: vec![dominacion, precision],
+            by_id,
+        }
+    }
+
+    /// Página real de ejemplo: Lolalytics, 6 perks (keystone primero), árbol
+    /// primario de Dominación.
+    fn pagina_real(keystone: i64) -> RunePageStats {
+        RunePageStats {
+            source: SourceKind::Lolalytics,
+            label: String::from("Lolalytics · más jugada"),
+            games: 100,
+            wins: 52,
+            winrate_pct: 52.0,
+            primary_style_id: 8100,
+            sub_style_id: 8000,
+            perk_ids: vec![keystone, 8126, 8139, 8135, 8106, 8138],
+            stat_shards: vec![5008, 5008, 5001],
+            keystone_id: Some(keystone),
+            estilo: None,
+            sintetizada: false,
+        }
+    }
+
+    /// `estilo_de_keystone`: la tabla pura resuelve los ids conocidos y un
+    /// id fuera de ella no tiene chip.
+    #[test]
+    fn estilo_de_keystone_resuelve_la_tabla_y_desconocido_es_none() {
+        assert_eq!(estilo_de_keystone(8112), Some("DAÑO EXPLOSIVO"));
+        assert_eq!(estilo_de_keystone(8010), Some("PELEA PROLONGADA"));
+        assert_eq!(estilo_de_keystone(8437), Some("AGUANTE"));
+        assert_eq!(estilo_de_keystone(9999), None);
+        assert_eq!(estilo_de_keystone(0), None);
+    }
+
+    /// `expandir_con_variantes`: la base 8112 (Dominación) genera 2 variantes
+    /// con keystones del mismo árbol, métricas en cero, el resto del set
+    /// intacto y estilo distinto al de la base.
+    #[test]
+    fn expandir_con_variantes_genera_dos_variantes_de_estilo() {
+        let catalog = catalogo_con_arboles();
+        let base = pagina_real(8112);
+        let pages = expandir_con_variantes(vec![base.clone()], &catalog);
+
+        // 1 real + 2 variantes.
+        assert_eq!(pages.len(), 3);
+
+        // La real sigue al frente, intacta salvo el chip de estilo.
+        let real = &pages[0];
+        assert!(!real.sintetizada);
+        assert_eq!(real.keystone_id, Some(8112));
+        assert_eq!(real.games, 100);
+        assert_eq!(real.estilo.as_deref(), Some("DAÑO EXPLOSIVO"));
+
+        // Variantes en orden de catálogo (ambas con estilo distinto al de la
+        // base, así que el orden del árbol manda): 8128 y 9923.
+        let esperadas = [(8128, "DAÑO ESCALADO"), (9923, "COMBATE CORTO")];
+        for (offset, esperada) in esperadas.iter().enumerate() {
+            let (keystone, estilo) = *esperada;
+            let variante = &pages[1 + offset];
+
+            assert!(variante.sintetizada);
+            assert_eq!(variante.games, 0);
+            assert_eq!(variante.wins, 0);
+            assert_eq!(variante.winrate_pct, 0.0);
+            assert_eq!(variante.label, format!("Variante · {estilo}"));
+            assert_eq!(variante.estilo.as_deref(), Some(estilo));
+            assert_ne!(variante.estilo.as_deref(), real.estilo.as_deref());
+            assert_eq!(variante.keystone_id, Some(keystone));
+            assert_eq!(variante.perk_ids.len(), 6);
+            assert_eq!(variante.perk_ids[0], keystone);
+            // El resto del set viaja igual que la base, y también shards,
+            // estilos y fuente.
+            assert_eq!(variante.perk_ids[1..], base.perk_ids[1..]);
+            assert_eq!(variante.stat_shards, base.stat_shards);
+            assert_eq!(variante.primary_style_id, base.primary_style_id);
+            assert_eq!(variante.sub_style_id, base.sub_style_id);
+            assert_eq!(variante.source, base.source);
+        }
+    }
+
+    /// Dedupe: un keystone ya usado por cualquier página real (8128 en la
+    /// segunda) no sale como variante; la única posible es el restante.
+    #[test]
+    fn expandir_con_variantes_no_repite_keystones_de_las_reales() {
+        let catalog = catalogo_con_arboles();
+        let pages = expandir_con_variantes(
+            vec![pagina_real(8112), pagina_real(8128)],
+            &catalog,
+        );
+
+        // 2 reales + 1 sola variante (9923; 8112 y 8128 están tomados).
+        assert_eq!(pages.len(), 3);
+        assert!(!pages[0].sintetizada && !pages[1].sintetizada);
+        assert_eq!(pages[1].keystone_id, Some(8128));
+        assert_eq!(pages[1].estilo.as_deref(), Some("DAÑO ESCALADO"));
+
+        let variante = &pages[2];
+        assert!(variante.sintetizada);
+        assert_eq!(variante.keystone_id, Some(9923));
+        assert_eq!(variante.estilo.as_deref(), Some("COMBATE CORTO"));
+    }
+
+    /// Sin páginas no hay nada que expandir: vec vacío.
+    #[test]
+    fn expandir_con_variantes_sin_paginas_devuelve_vacio() {
+        let catalog = catalogo_con_arboles();
+        assert!(expandir_con_variantes(Vec::new(), &catalog).is_empty());
+    }
+
+    /// Si el árbol primario de la base no está en el catálogo, no hay
+    /// candidatos: solo las reales, con el chip de estilo igual completado
+    /// (viene de la tabla pura, no del árbol).
+    #[test]
+    fn expandir_con_variantes_sin_arbol_en_el_catalogo_no_genera_variantes() {
+        let catalog = catalogo_con_arboles();
+        let mut base = pagina_real(8112);
+        base.primary_style_id = 8300; // Inspiración: ausente del fixture.
+
+        let pages = expandir_con_variantes(vec![base], &catalog);
+
+        assert_eq!(pages.len(), 1);
+        assert!(!pages[0].sintetizada);
+        assert_eq!(pages[0].estilo.as_deref(), Some("DAÑO EXPLOSIVO"));
+    }
+
+    /// Base sin keystone conocido: no hay dónde anclar la variante, quedan
+    /// solo las reales (sin chip, el id no está en la tabla).
+    #[test]
+    fn expandir_con_variantes_base_sin_keystone_no_genera_variantes() {
+        let catalog = catalogo_con_arboles();
+        let mut base = pagina_real(8112);
+        base.keystone_id = None;
+
+        let pages = expandir_con_variantes(vec![base], &catalog);
+
+        assert_eq!(pages.len(), 1);
+        assert!(!pages[0].sintetizada);
+        assert_eq!(pages[0].estilo, None);
     }
 }

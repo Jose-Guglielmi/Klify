@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLIFY — Champ Select · Sylas vs Akali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   KLIFY · ui-preview — tokens de assets/main.css + design.md
+   Mapeo de componentes Dioxus:
+   AppBackground, AppHeader, ChampSelectTeams, TargetSelect,
+   HeroStrip, MatchupBanner, GuideTabs, CountersPanel,
+   TargetDossier, TargetWeaknesses, TargetArchetypeTips,
+   ArchetypeCards, ConsejosPanel, AppFooter
+   ================================================================ */
+
+/* ---------- Tokens ---------- */
+:root {
+  --bg: #0b0e14; --surface: #10141d; --surface-dim: #070a0e;
+  --c-low: #121722; --c-base: #1f2937; --c-high: #2a3648; --c-highest: #354358;
+  --on-surface: #e5e7eb; --on-surface-var: #9aa4b2;
+  --primary: #ff0033; --primary-hover: #ff1a4d; --primary-pressed: #cc0029; --primary-bright: #ff3355;
+  --primary-container: #440011; --on-primary-container: #ffd9de;
+  --silver: #c3cad4; --secondary-container: #2c3848; --on-secondary-container: #e2e8f0;
+  --outline: #8b95a3; --outline-var: #2f3a4a; --error: #ffa198;
+  --vs-gold: #e8c15a; --rival-accent: #3ec6d8; --ally-blue: #3b82f6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---------- [AppBackground] 3 capas fijas ---------- */
+body {
+  background: var(--bg);
+  color: var(--on-surface);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(900px 520px at 0% 0%, rgba(255,0,51,.06), transparent 60%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 14px);
+}
+body::after {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.5) 100%);
+}
+::selection { background: var(--primary); color: #fff; }
+
+.page { position: relative; z-index: 1; max-width: 1024px; margin: 0 auto; padding: 24px; }
+
+/* ---------- Utilidades de marca ---------- */
+.disp { font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 700; text-transform: uppercase; line-height: .95; letter-spacing: .02em; }
+.frame { background: var(--outline-var); padding: 1px; }
+.f-me, .f-rival, .f-red { background: var(--primary); }
+.f-ally { background: rgba(59,130,246,.35); }
+.f-enemy { background: rgba(255,0,51,.35); }
+.panel { background: var(--surface); }
+.cut-18 { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 18px 100%, 0 calc(100% - 18px)); }
+.cut-12 { clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px)); }
+.cut-10 { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); }
+.cut-8  { clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px)); }
+.good { color: var(--silver); }
+.bad  { color: var(--primary-bright); }
+img { background: var(--c-low); }
+
+@keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.block { margin-top: 28px; animation: fadein .16s ease both; }
+.stack { display: flex; flex-direction: column; gap: 14px; }
+
+/* ---------- Section header: barra roja + "// TÍTULO" ---------- */
+.sec-h { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.sec-h .bar { flex: none; width: 22px; height: 3px; background: var(--primary); transform: skewX(-15deg); }
+.sec-h h2, .sec-h h3 { font: 600 12px 'Inter'; text-transform: uppercase; letter-spacing: .08em; color: var(--on-surface); }
+.sec-h .sl { color: var(--primary); }
+.sec-h .sec-note { margin-left: auto; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--on-surface-var); display: inline-flex; align-items: center; gap: 7px; }
+.sec-h.sub { margin: 26px 0 12px; }
+.live::before { content: ''; width: 6px; height: 6px; background: var(--primary-bright); animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+
+/* ---------- [AppHeader] ---------- */
+.app-header { display: flex; align-items: center; gap: 14px; padding-top: 4px; }
+.wordmark { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 44px; line-height: 1; letter-spacing: .02em; text-transform: uppercase; }
+.wordmark .k { color: var(--primary); }
+.slash-stack { display: flex; align-items: center; gap: 4px; margin-top: 4px; }
+.slash-stack i { width: 4px; height: 14px; background: var(--primary); transform: skewX(-30deg); }
+.slash-stack i:nth-child(2) { height: 19px; opacity: .7; }
+.slash-stack i:nth-child(3) { height: 24px; opacity: .4; }
+.tagline { margin-left: auto; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--on-surface-var); }
+.redline { height: 3px; margin-top: 12px; background: linear-gradient(90deg, var(--primary), rgba(255,0,51,.35) 55%, transparent 100%); transform: skewX(-15deg); transform-origin: left center; }
+
+/* ---------- [ChampSelectTeams] fila 5v5 + badge VS (fit al ancho, sin scroll) ---------- */
+.cs-scroll { padding-bottom: 6px; }
+.cs-row { display: flex; align-items: flex-end; gap: 8px; width: 100%; padding: 4px 0 2px; }
+/* Los wrappers glow son los flex items: reparten el ancho equitativamente */
+.cs-row > * { flex: 1 1 0; min-width: 0; height: 236px; }
+.cs-row > .glow-me { flex: 1.42 1 0; height: 266px; }
+.cs-row > .vs-badge { flex: none; height: auto; }
+.cs-card { position: relative; height: 100%; background: var(--surface-dim); overflow: hidden; }
+.cs-row .frame { height: 100%; }
+.cs-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.cs-fade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,14,0) 42%, rgba(7,10,14,.72) 72%, #000 100%); }
+.cs-card-info { position: absolute; left: 8px; right: 8px; bottom: 8px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.cs-name { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 15px; line-height: 1; text-transform: uppercase; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.85); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cs-name.lg { font-size: 17px; }
+.cs-name.xl { font-size: 21px; }
+.cs-chips { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.pill { display: inline-flex; align-items: center; padding: 1px 6px; border-radius: 999px; border: 1px solid; font-size: 8.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.pill-red  { color: var(--primary-bright); border-color: rgba(255,51,85,.5);  background: rgba(255,0,51,.10); }
+.pill-blue { color: var(--ally-blue);      border-color: rgba(59,130,246,.45); background: rgba(59,130,246,.10); }
+.lock { display: inline-flex; color: var(--primary-bright); }
+.lock svg { width: 10px; height: 10px; }
+.chip-rival { background: var(--primary); color: #fff; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); padding: 2px 7px; font-size: 8px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.glow-me   { filter: drop-shadow(0 0 24px rgba(255,0,51,.25)); }
+.glow-soft { filter: drop-shadow(0 0 16px rgba(255,0,51,.18)); }
+.vs-badge { align-self: center; margin: 0 2px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 17px; line-height: 1; color: var(--vs-gold); border: 1px solid rgba(232,193,90,.55); background: rgba(232,193,90,.06); padding: 6px 9px; transform: skewX(-12deg); }
+
+/* ---------- [TargetSelect] — enemigos clickeables ---------- */
+.cs-slot.is-selectable, .enemy-row.is-selectable { cursor: pointer; outline: none; }
+.cs-slot.is-selectable:hover .frame,
+.cs-slot.is-selectable:focus-visible .frame { box-shadow: 0 0 8px rgba(255,0,51,.35); }
+.enemy-row.is-selectable:hover,
+.enemy-row.is-selectable:focus-visible { box-shadow: inset 0 0 0 1px rgba(255,0,51,.5), 0 0 8px rgba(255,0,51,.35); }
+.cs-slot.is-target { filter: drop-shadow(0 0 22px rgba(255,0,51,.45)); }
+.cs-slot.is-target .frame { background: var(--primary); }
+.cs-slot .chip-target { display: none; }
+.cs-slot.is-target .chip-target { display: inline-block; }
+.hint { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--on-surface-var); }
+.hint::before { content: '▸'; color: var(--primary); }
+
+/* ---------- [HeroStrip] ---------- */
+.hero-strip { display: flex; align-items: center; gap: 24px; padding: 20px; flex-wrap: wrap; }
+.hs-left { display: flex; align-items: center; gap: 16px; }
+.hs-icon { width: 112px; height: 112px; object-fit: cover; display: block; }
+.hero-name { font-size: 40px; }
+.hs-sub { font-size: 13px; color: var(--on-surface-var); margin-top: 3px; }
+.hs-chips { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.role-tile { display: inline-flex; align-items: baseline; gap: 6px; background: var(--c-low); border: 1px solid var(--outline-var); padding: 4px 10px; font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--on-surface-var); }
+.role-tile b { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 16px; line-height: 1; color: var(--on-surface); font-variant-numeric: tabular-nums; }
+.role-tile b.bad { color: var(--primary-bright); }
+.role-tile.gold { border-color: rgba(232,193,90,.45); }
+.hs-hud { margin-left: auto; display: flex; flex-wrap: wrap; }
+.hud-item { display: flex; flex-direction: column; gap: 5px; padding: 0 18px; border-left: 1px solid var(--outline-var); }
+.hud-item:first-child { border-left: none; padding-left: 0; }
+.hud-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-var); }
+.hud-num { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 26px; line-height: 1; color: var(--on-surface); font-variant-numeric: tabular-nums; }
+
+/* ---------- [MatchupBanner] ---------- */
+.matchup-banner { display: flex; align-items: center; gap: 22px; padding: 18px 20px; flex-wrap: wrap; background: linear-gradient(90deg, rgba(255,0,51,.08), rgba(255,0,51,.02) 45%, transparent 72%), var(--surface); }
+.mb-face { display: flex; align-items: center; gap: 10px; }
+.mb-icon { width: 44px; height: 44px; object-fit: cover; display: block; }
+.mb-vs-word { font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 16px; color: var(--vs-gold); transform: skewX(-12deg); }
+.mb-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-var); }
+.mb-label .sl { color: var(--primary); }
+.mb-name { font-size: 26px; margin-top: 3px; }
+.mb-name .gold { color: var(--vs-gold); }
+.mb-wr { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; margin-left: auto; text-align: right; }
+.mb-num { font-size: 54px; color: var(--primary-bright); }
+.mb-meta { font-size: 11px; color: var(--on-surface-var); font-variant-numeric: tabular-nums; }
+.chip-para { background: var(--primary-container); color: var(--on-primary-container); clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); padding: 7px 14px; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.chip-para.neutral { background: var(--secondary-container); color: var(--on-secondary-container); }
+
+/* ---------- [GuideTabs] ---------- */
+.guide-panel { padding: 0 20px 22px; }
+.tabs { display: flex; gap: 6px; margin: 0 -20px 6px; padding: 0 14px; border-bottom: 1px solid var(--outline-var); overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { appearance: none; background: none; border: none; cursor: pointer; position: relative; padding: 14px 10px; font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 600; font-size: 19px; line-height: 1; text-transform: uppercase; letter-spacing: .03em; color: var(--on-surface-var); white-space: nowrap; }
+.tab:hover { color: var(--on-surface); }
+.tab:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.tab.is-active { color: var(--on-surface); }
+.tab.is-active::after { content: ''; position: absolute; left: 8px; right: 8px; bottom: -1px; height: 2px; background: var(--primary); transform: skewX(-15deg); }
+.tab-panel { display: none; }
+.tab-panel.is-active { display: block; animation: fadein .16s ease both; padding-top: 6px; }
+
+/* Panels placeholder (Habilidades / Runas / Items) */
+.placeholder { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; background: var(--surface-dim); padding: 46px 24px; }
+.ghost-row { display: flex; gap: 8px; }
+.ghost { width: 42px; height: 42px; display: grid; place-items: center; background: var(--c-low); border: 1px dashed var(--c-high); color: var(--outline); font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 16px; }
+.ph-title { font: 600 12px 'Inter'; text-transform: uppercase; letter-spacing: .08em; color: var(--on-surface); }
+.ph-title .sl { color: var(--primary); }
+.placeholder p { font-size: 13px; color: var(--on-surface-var); max-width: 440px; }
+.placeholder.mini { padding: 30px 24px; }
+
+/* ---------- [CountersPanel] — vs enemigos en vivo ---------- */
+.enemy-rows { display: flex; flex-direction: column; gap: 8px; }
+.enemy-row { display: flex; align-items: center; gap: 12px; background: var(--c-low); padding: 8px 16px 8px 8px; }
+.enemy-row.hl { box-shadow: inset 0 0 0 1px rgba(255,0,51,.5); }
+.er-icon { width: 48px; height: 48px; object-fit: cover; display: block; }
+.er-id { width: 132px; display: flex; flex-direction: column; gap: 1px; }
+.er-name { font-size: 14px; font-weight: 600; color: var(--on-surface); }
+.er-pos { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-var); }
+.er-tag { margin-left: 2px; background: var(--primary); color: #fff; clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%); padding: 2px 8px; font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.er-bar { flex: 1; height: 5px; background: var(--c-high); }
+.er-bar i { display: block; height: 100%; }
+.er-bar i.b { background: var(--primary-bright); }
+.er-bar i.s { background: var(--silver); }
+.er-games { width: 96px; text-align: right; font-size: 11px; color: var(--on-surface-var); font-variant-numeric: tabular-nums; }
+.er-wr { width: 64px; text-align: right; font-size: 20px; font-variant-numeric: tabular-nums; }
+
+/* ---------- [CountersPanel] — matchups generales ---------- */
+.mu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.mu-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.mu-head::before { content: ''; width: 14px; height: 3px; background: currentColor; transform: skewX(-15deg); }
+.mu-head.good { color: var(--silver); }
+.mu-head.bad { color: var(--primary-bright); }
+.mu-col { display: flex; flex-direction: column; gap: 6px; }
+.mu-row { display: flex; align-items: center; gap: 10px; background: var(--c-low); padding: 6px 12px 6px 6px; }
+.mu-icon { width: 32px; height: 32px; object-fit: cover; display: block; }
+.mu-name { font-size: 13px; font-weight: 600; color: var(--on-surface); }
+.mu-games { margin-left: auto; font-size: 11px; color: var(--on-surface-var); font-variant-numeric: tabular-nums; }
+.mu-wr { width: 56px; text-align: right; font-size: 16px; font-variant-numeric: tabular-nums; }
+
+/* ---------- [TargetDossier] — ficha del enemigo seleccionado ---------- */
+.dossier { display: flex; flex-direction: column; gap: 16px; padding: 18px 20px; background: linear-gradient(120deg, rgba(255,0,51,.07), transparent 45%), var(--c-low); }
+.d-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.d-icon { width: 64px; height: 64px; object-fit: cover; display: block; }
+.d-name { font-size: 24px; }
+.d-sub { font-size: 12px; color: var(--on-surface-var); }
+.chip-gold { margin-left: auto; border: 1px solid rgba(232,193,90,.55); color: var(--vs-gold); background: rgba(232,193,90,.07); clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); padding: 6px 12px; font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.d-stats { display: flex; align-items: center; flex-wrap: wrap; gap: 14px 0; border-top: 1px solid var(--outline-var); padding-top: 14px; }
+.d-roles { display: flex; gap: 8px; margin-left: auto; flex-wrap: wrap; }
+.d-vs { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; border-top: 1px solid var(--outline-var); padding-top: 12px; }
+.d-vs-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-var); }
+.d-vs-num { font-size: 30px; }
+.d-vs-games { margin-left: auto; font-size: 11px; color: var(--on-surface-var); font-variant-numeric: tabular-nums; }
+
+/* ---------- [WeaknessList] ---------- */
+.weak-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.weak-list li { display: flex; align-items: flex-start; gap: 12px; background: var(--c-low); padding: 10px 14px; }
+.wk-x { flex: none; width: 22px; height: 22px; margin-top: 1px; display: grid; place-items: center; background: rgba(255,0,51,.14); color: var(--primary-bright); clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%); font-family: 'Barlow Condensed'; font-style: italic; font-weight: 700; font-size: 11px; }
+.weak-list p { font-size: 13.5px; color: var(--on-surface-var); }
+.weak-list strong, .tip strong, .gen-tip strong, .combo strong { color: var(--on-surface); font-weight: 600; }
+.weak-list .red { color: var(--primary-bright); font-weight: 600; }
+
+/* ---------- [MatchupTips] — con Sylas ---------- */
+.tips-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.tip { display: flex; gap: 14px; align-items: flex-start; background: var(--c-low); padding: 14px 16px; }
+.tip-num { flex: none; font-size: 26px; line-height: 1; color: var(--primary-bright); transform: skewX(-10deg); }
+.tip p { font-size: 13.5px; color: var(--on-surface-var); }
+
+/* ---------- [GeneralTips] — sin importar tu champ ---------- */
+.gen-tips { display: flex; flex-direction: column; gap: 8px; }
+.gen-tip { position: relative; background: var(--c-low); padding: 11px 16px 11px 20px; }
+.gen-tip::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--rival-accent); }
+.gen-tip p { font-size: 13.5px; color: var(--on-surface-var); }
+
+/* ---------- [ArchetypeCards] ---------- */
+.arch-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.arch { background: var(--c-low); padding: 14px; }
+.arch-title { font-size: 18px; margin-bottom: 10px; }
+.arch-title.t-silver { color: var(--silver); }
+.arch-title.t-red { color: var(--primary-bright); }
+.arch-title.t-cyan { color: var(--rival-accent); }
+.arch ul { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.arch li { position: relative; padding-left: 14px; font-size: 12.5px; line-height: 1.45; color: var(--on-surface-var); }
+.arch li::before { content: ''; position: absolute; left: 0; top: 8px; width: 8px; height: 2px; background: var(--primary); transform: skewX(-15deg); }
+
+/* ---------- [ConsejosPanel] ---------- */
+.combo-list { display: flex; flex-direction: column; gap: 8px; }
+.combo { display: flex; gap: 14px; align-items: flex-start; background: var(--c-low); padding: 12px 16px; }
+.combo-num { flex: none; width: 30px; height: 30px; display: grid; place-items: center; font-size: 17px; color: var(--primary-bright); background: rgba(255,0,51,.1); clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%); }
+.combo p { font-size: 13.5px; color: var(--on-surface-var); padding-top: 4px; }
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.plan { position: relative; background: var(--c-low); padding: 14px 16px 14px 20px; }
+.plan::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--primary); }
+.plan h4 { font-size: 18px; color: var(--on-surface); margin-bottom: 6px; }
+.plan p { font-size: 12.5px; color: var(--on-surface-var); }
+
+/* ---------- [AppFooter] ---------- */
+.hud-footer { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--outline-var); margin-top: 36px; padding: 16px 0 8px; font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--on-surface-var); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .tagline { display: none; }
+  .hs-hud { margin-left: 0; width: 100%; justify-content: space-between; border-top: 1px solid var(--outline-var); padding-top: 14px; }
+  .hud-item { padding: 0 12px; }
+  .hud-item:first-child { padding-left: 0; }
+  .mb-wr { margin-left: 0; align-items: flex-start; text-align: left; }
+  .arch-grid, .tips-grid { grid-template-columns: 1fr 1fr; }
+  .mu-grid { grid-template-columns: 1fr; }
+  .chip-gold, .d-vs-games { margin-left: 0; }
+  .d-roles { margin-left: 0; }
+}
+@media (max-width: 560px) {
+  .plan-grid { grid-template-columns: 1fr; }
+  .er-games { display: none; }
+  .mb-num { font-size: 44px; }
+}
+/* Fallback: en pantallas muy angostas la fila 5v5 recupera el scroll horizontal */
+@media (max-width: 640px) {
+  .cs-scroll { overflow-x: auto; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--c-high) var(--surface-dim); }
+  .cs-row { width: max-content; }
+  .cs-row > * { flex: none; width: 148px; }
+  .cs-row > .glow-me { width: 172px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ==================== [AppHeader] ==================== -->
+  <header class="app-header">
+    <div class="wordmark"><span class="k">K</span>LIFY</div>
+    <div class="slash-stack"><i></i><i></i><i></i></div>
+    <div class="tagline">Analiza · Mejora · Domina</div>
+  </header>
+  <div class="redline"></div>
+
+  <!-- ==================== [ChampSelectTeams] ==================== -->
+  <section class="block">
+    <div class="sec-h">
+      <i class="bar"></i>
+      <h2><span class="sl">//</span> CHAMP SELECT</h2>
+      <span class="sec-note">Draft en vivo · Platinum+ · Patch 16.20</span>
+    </div>
+
+    <div class="cs-scroll">
+      <div class="cs-row">
+
+        <!-- Mi equipo (azul; yo = rojo) -->
+        <div class="glow-soft"><div class="frame f-ally cut-18">
+          <div class="cs-card cut-18">
+            <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg" alt="Aatrox" onerror="this.style.opacity='0'">
+            <div class="cs-fade"></div>
+            <div class="cs-card-info">
+              <div class="cs-name">Aatrox</div>
+              <div class="cs-chips"><span class="pill pill-blue">Top</span></div>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="glow-soft"><div class="frame f-ally cut-18">
+          <div class="cs-card cut-18">
+            <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Maokai_0.jpg" alt="Maokai" onerror="this.style.opacity='0'">
+            <div class="cs-fade"></div>
+            <div class="cs-card-info">
+              <div class="cs-name">Maokai</div>
+              <div class="cs-chips"><span class="pill pill-blue">Jgl</span></div>
+            </div>
+          </div>
+        </div></div>
+
+        <!-- MI CARD: SYLAS mid lockeado -->
+        <div class="glow-me"><div class="frame f-me cut-18">
+          <div class="cs-card me cut-18">
+            <img class="cs-art" style="object-position: 100% 22%" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sylas_0.jpg" alt="Sylas" onerror="this.style.opacity='0'">
+            <div class="cs-fade"></div>
+            <div class="cs-card-info">
+              <div class="cs-name xl">Sylas</div>
+              <div class="cs-chips">
+                <span class="pill pill-red">Mid</span>
+                <span class="lock" title="Lockeado">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 1 1 6 0v3H9z"/></svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="glow-soft"><div class="frame f-ally cut-18">
+          <div class="cs-card cut-18">
+            <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ashe_0.jpg" alt="Ashe" onerror="this.style.opacity='0'">
+            <div class="cs-fade"></div>
+            <div class="cs-card-info">
+              <div class="cs-name">Ashe</div>
+              <div class="cs-chips"><span class="pill pill-blue">Bot</span></div>
+            </div>
+          </div>
+        </div></div>
+
+        <div class="glow-soft"><div class="frame f-ally cut-18">
+          <div class="cs-card cut-18">
+            <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lulu_0.jpg" alt="Lulu" onerror="this.style.opacity='0'">
+            <div class="cs-fade"></div>
+            <div class="cs-card-info">
+              <div class="cs-name">Lulu</div>
+              <div class="cs-chips"><span class="pill pill-blue">Sup</span></div>
+            </div>
+          </div>
+        </div></div>
+
+        <!-- Badge VS dorado -->
+        <div class="vs-badge">VS</div>
+
+        <!-- Equipo enemigo (acento rojo) · [TargetSelect]: click = cómo ganarle -->
+        <div class="glow-soft cs-slot is-selectable" data-target="gwen" role="button" tabindex="0" aria-label="Ver cómo ganarle a Gwen">
+          <div class="frame f-enemy cut-18">
+            <div class="cs-card cut-18">
+              <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gwen_0.jpg" alt="Gwen" onerror="this.style.opacity='0'">
+              <div class="cs-fade"></div>
+              <div class="cs-card-info">
+                <div class="cs-name">Gwen</div>
+                <div class="cs-chips"><span class="pill pill-red">Top</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glow-soft cs-slot is-selectable" data-target="viego" role="button" tabindex="0" aria-label="Ver cómo ganarle a Viego">
+          <div class="frame f-enemy cut-18">
+            <div class="cs-card cut-18">
+              <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Viego_0.jpg" alt="Viego" onerror="this.style.opacity='0'">
+              <div class="cs-fade"></div>
+              <div class="cs-card-info">
+                <div class="cs-name">Viego</div>
+                <div class="cs-chips"><span class="pill pill-red">Jgl</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIVAL DIRECTO + OBJETIVO INICIAL: AKALI -->
+        <div class="glow-me cs-slot is-selectable is-target" data-target="akali" role="button" tabindex="0" aria-pressed="true" aria-label="Ver cómo ganarle a Akali">
+          <div class="frame f-me cut-18">
+            <div class="cs-card cut-18">
+              <img class="cs-art" style="object-position: 100% 22%" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akali_0.jpg" alt="Akali" onerror="this.style.opacity='0'">
+              <div class="cs-fade"></div>
+              <div class="cs-card-info">
+                <div class="cs-name lg">Akali</div>
+                <div class="cs-chips">
+                  <span class="chip-rival">Rival directo</span>
+                  <span class="chip-rival chip-target">Objetivo</span>
+                  <span class="pill pill-red">Mid</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glow-soft cs-slot is-selectable" data-target="lucian" role="button" tabindex="0" aria-label="Ver cómo ganarle a Lucian">
+          <div class="frame f-enemy cut-18">
+            <div class="cs-card cut-18">
+              <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lucian_0.jpg" alt="Lucian" onerror="this.style.opacity='0'">
+              <div class="cs-fade"></div>
+              <div class="cs-card-info">
+                <div class="cs-name">Lucian</div>
+                <div class="cs-chips"><span class="pill pill-red">Bot</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glow-soft cs-slot is-selectable" data-target="annie" role="button" tabindex="0" aria-label="Ver cómo ganarle a Annie">
+          <div class="frame f-enemy cut-18">
+            <div class="cs-card cut-18">
+              <img class="cs-art" src="https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Annie_0.jpg" alt="Annie" onerror="this.style.opacity='0'">
+              <div class="cs-fade"></div>
+              <div class="cs-card-info">
+                <div class="cs-name">Annie</div>
+                <div class="cs-chips">
+                  <span class="chip-rival chip-target">Objetivo</span>
+                  <span class="pill pill-red">Sup</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="hint">Click en un enemigo para ver cómo ganarle</p>
+  </section>
+
+  <!-- ==================== [HeroStrip] + [MatchupBanner] ==================== -->
+  <section class="block stack">
+
+    <!-- Hero del champ seleccionado -->
+    <div class="frame cut-18"><div class="panel cut-18 hero-strip">
+      <div class="hs-left">
+        <div class="frame f-red cut-12">
+          <img class="hs-icon cut-12" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Sylas.png" alt="Sylas" onerror="this.style.opacity='0'">
+        </div>
+        <div>
+          <h1 class="disp hero-name">Sylas</h1>
+          <p class="hs-sub">El Usurpador</p>
+          <div class="hs-chips">
+            <span class="role-tile">Mid <b class="bad">43.5%</b></span>
+            <span class="role-tile">Jgl <b class="bad">40.9%</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="hs-hud">
+        <div class="hud-item"><span class="hud-label">WR</span><span class="hud-num bad">49.52%</span></div>
+        <div class="hud-item"><span class="hud-label">PR</span><span class="hud-num">6.70%</span></div>
+        <div class="hud-item"><span class="hud-label">Ban</span><span class="hud-num">16.46%</span></div>
+        <div class="hud-item"><span class="hud-label">Partidas</span><span class="hud-num">48.4M</span></div>
+      </div>
+    </div></div>
+
+    <!-- Banner de matchup (objetivo actual: Akali) -->
+    <div class="frame cut-18"><div class="cut-18 matchup-banner">
+      <div class="mb-face">
+        <div class="frame f-me cut-8"><img class="mb-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Sylas.png" alt="Sylas" onerror="this.style.opacity='0'"></div>
+        <span class="mb-vs-word">VS</span>
+        <div class="frame f-me cut-8"><img class="mb-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Akali.png" alt="Akali" onerror="this.style.opacity='0'"></div>
+      </div>
+      <div>
+        <div class="mb-label"><span class="sl">//</span> Matchup</div>
+        <h2 class="disp mb-name">Mid <span class="gold">vs</span> Akali</h2>
+      </div>
+      <div class="mb-wr">
+        <span class="disp mb-num good">50.4%</span>
+        <span class="mb-meta">12.649 partidas · platinum+ · patch 16.20</span>
+      </div>
+      <span class="chip-para neutral">Matchup parejo</span>
+    </div></div>
+
+  </section>
+
+  <!-- ==================== [GuideTabs] ==================== -->
+  <section class="block">
+    <div class="sec-h">
+      <i class="bar"></i>
+      <h2><span class="sl">//</span> GUÍA DE MATCHUP</h2>
+      <span class="sec-note" id="guide-note">Sylas mid · vs Akali mid</span>
+    </div>
+
+    <div class="frame cut-18"><div class="panel cut-18 guide-panel">
+      <nav class="tabs">
+        <button class="tab" data-tab="hab">Habilidades</button>
+        <button class="tab" data-tab="runas">Runas</button>
+        <button class="tab" data-tab="items">Items</button>
+        <button class="tab" data-tab="counters">Counters</button>
+        <button class="tab is-active" data-tab="vs">Cómo jugar VS</button>
+        <button class="tab" data-tab="consejos">Consejos</button>
+      </nav>
+
+      <div class="tab-panels">
+
+        <!-- Placeholder: Habilidades -->
+        <section id="panel-hab" class="tab-panel">
+          <div class="placeholder cut-18">
+            <div class="ghost-row"><span class="ghost cut-8">Q</span><span class="ghost cut-8">W</span><span class="ghost cut-8">E</span><span class="ghost cut-8">R</span></div>
+            <h3 class="ph-title"><span class="sl">//</span> Panel existente en la app</h3>
+            <p>Este prototipo se concentra en la guía nueva. Q, W, E, R y runas viven en sus tabs reales.</p>
+          </div>
+        </section>
+
+        <!-- Placeholder: Runas -->
+        <section id="panel-runas" class="tab-panel">
+          <div class="placeholder cut-18">
+            <div class="ghost-row"><span class="ghost cut-8">✦</span><span class="ghost cut-8"></span><span class="ghost cut-8"></span><span class="ghost cut-8"></span></div>
+            <h3 class="ph-title"><span class="sl">//</span> Panel existente en la app</h3>
+            <p>Este prototipo se concentra en la guía nueva. Q, W, E, R y runas viven en sus tabs reales.</p>
+          </div>
+        </section>
+
+        <!-- Placeholder: Items -->
+        <section id="panel-items" class="tab-panel">
+          <div class="placeholder cut-18">
+            <div class="ghost-row"><span class="ghost cut-8"></span><span class="ghost cut-8"></span><span class="ghost cut-8"></span><span class="ghost cut-8"></span><span class="ghost cut-8"></span><span class="ghost cut-8"></span></div>
+            <h3 class="ph-title"><span class="sl">//</span> Panel existente en la app</h3>
+            <p>Este prototipo se concentra en la guía nueva. Q, W, E, R y runas viven en sus tabs reales.</p>
+          </div>
+        </section>
+
+        <!-- ==================== [CountersPanel] ==================== -->
+        <section id="panel-counters" class="tab-panel">
+
+          <div class="sec-h sub">
+            <i class="bar"></i>
+            <h3><span class="sl">//</span> VS ENEMIGOS EN VIVO</h3>
+            <span class="sec-note live">WR de Sylas · patch 16.20</span>
+          </div>
+
+          <div class="enemy-rows">
+            <div class="enemy-row cut-10 is-selectable" data-target="gwen" role="button" tabindex="0" aria-label="Ver cómo ganarle a Gwen">
+              <div class="frame f-enemy cut-8"><img class="er-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Gwen.png" alt="Gwen" onerror="this.style.opacity='0'"></div>
+              <div class="er-id"><span class="er-name">Gwen</span><span class="er-pos">Top</span></div>
+              <div class="er-bar"><i class="b" style="width:42.8%"></i></div>
+              <span class="er-games">916 partidas</span>
+              <span class="er-wr disp bad">42.8%</span>
+            </div>
+            <div class="enemy-row cut-10 is-selectable" data-target="viego" role="button" tabindex="0" aria-label="Ver cómo ganarle a Viego">
+              <div class="frame f-enemy cut-8"><img class="er-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Viego.png" alt="Viego" onerror="this.style.opacity='0'"></div>
+              <div class="er-id"><span class="er-name">Viego</span><span class="er-pos">Jgl</span></div>
+              <div class="er-bar"><i class="b" style="width:43%"></i></div>
+              <span class="er-games">321 partidas</span>
+              <span class="er-wr disp bad">43.0%</span>
+            </div>
+            <div class="enemy-row cut-10 hl is-selectable" data-target="akali" role="button" tabindex="0" aria-pressed="true" aria-label="Ver cómo ganarle a Akali">
+              <div class="frame f-me cut-8"><img class="er-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Akali.png" alt="Akali" onerror="this.style.opacity='0'"></div>
+              <div class="er-id"><span class="er-name">Akali</span><span class="er-pos">Mid</span></div>
+              <span class="er-tag">Rival</span>
+              <div class="er-bar"><i class="s" style="width:50.4%"></i></div>
+              <span class="er-games">12.649 partidas</span>
+              <span class="er-wr disp good">50.4%</span>
+            </div>
+            <div class="enemy-row cut-10 is-selectable" data-target="lucian" role="button" tabindex="0" aria-label="Ver cómo ganarle a Lucian">
+              <div class="frame f-enemy cut-8"><img class="er-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png" alt="Lucian" onerror="this.style.opacity='0'"></div>
+              <div class="er-id"><span class="er-name">Lucian</span><span class="er-pos">Bot</span></div>
+              <div class="er-bar"><i class="s" style="width:55.8%"></i></div>
+              <span class="er-games">931 partidas</span>
+              <span class="er-wr disp good">55.8%</span>
+            </div>
+            <div class="enemy-row cut-10 is-selectable" data-target="annie" role="button" tabindex="0" aria-label="Ver cómo ganarle a Annie">
+              <div class="frame f-enemy cut-8"><img class="er-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Annie.png" alt="Annie" onerror="this.style.opacity='0'"></div>
+              <div class="er-id"><span class="er-name">Annie</span><span class="er-pos">Sup</span></div>
+              <div class="er-bar"><i class="b" style="width:49.5%"></i></div>
+              <span class="er-games">2.259 partidas</span>
+              <span class="er-wr disp bad">49.5%</span>
+            </div>
+          </div>
+
+          <div class="sec-h sub">
+            <i class="bar"></i>
+            <h3><span class="sl">//</span> MATCHUPS GENERALES</h3>
+          </div>
+
+          <div class="mu-grid">
+            <div class="mu-col">
+              <div class="mu-head good">Fuerte contra</div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Malphite.png" alt="Malphite" onerror="this.style.opacity='0'"><span class="mu-name">Malphite</span><span class="mu-games">2.095</span><span class="mu-wr disp good">59.3%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/LeeSin.png" alt="Lee Sin" onerror="this.style.opacity='0'"><span class="mu-name">Lee Sin</span><span class="mu-games">207</span><span class="mu-wr disp good">57.0%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Karma.png" alt="Karma" onerror="this.style.opacity='0'"><span class="mu-name">Karma</span><span class="mu-games">255</span><span class="mu-wr disp good">56.1%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Varus.png" alt="Varus" onerror="this.style.opacity='0'"><span class="mu-name">Varus</span><span class="mu-games">390</span><span class="mu-wr disp good">55.9%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Lucian.png" alt="Lucian" onerror="this.style.opacity='0'"><span class="mu-name">Lucian</span><span class="mu-games">931</span><span class="mu-wr disp good">55.8%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Mel.png" alt="Mel" onerror="this.style.opacity='0'"><span class="mu-name">Mel</span><span class="mu-games">3.518</span><span class="mu-wr disp good">54.9%</span></div>
+            </div>
+            <div class="mu-col">
+              <div class="mu-head bad">Débil contra</div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Singed.png" alt="Singed" onerror="this.style.opacity='0'"><span class="mu-name">Singed</span><span class="mu-games">311</span><span class="mu-wr disp bad">38.6%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Heimerdinger.png" alt="Heimerdinger" onerror="this.style.opacity='0'"><span class="mu-name">Heimerdinger</span><span class="mu-games">866</span><span class="mu-wr disp bad">41.5%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Gwen.png" alt="Gwen" onerror="this.style.opacity='0'"><span class="mu-name">Gwen</span><span class="mu-games">916</span><span class="mu-wr disp bad">42.8%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Viego.png" alt="Viego" onerror="this.style.opacity='0'"><span class="mu-name">Viego</span><span class="mu-games">321</span><span class="mu-wr disp bad">43.0%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Illaoi.png" alt="Illaoi" onerror="this.style.opacity='0'"><span class="mu-name">Illaoi</span><span class="mu-games">245</span><span class="mu-wr disp bad">44.1%</span></div>
+              <div class="mu-row cut-8"><img class="mu-icon cut-8" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Quinn.png" alt="Quinn" onerror="this.style.opacity='0'"><span class="mu-name">Quinn</span><span class="mu-games">396</span><span class="mu-wr disp bad">44.2%</span></div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ==================== TAB ESTRELLA: CÓMO JUGAR VS ==================== -->
+        <section id="panel-vs" class="tab-panel is-active">
+
+          <!-- [TargetSelect] zona dinámica: [TargetDossier] + debilidades + tips por arquetipo -->
+          <div id="target-zone">
+
+            <div class="sec-h sub">
+              <i class="bar"></i>
+              <h3><span class="sl">//</span> CÓMO JUGAR VS AKALI</h3>
+            </div>
+
+            <!-- [TargetDossier] — Akali (objetivo inicial) -->
+            <div class="frame cut-18"><div class="cut-18 dossier">
+              <div class="d-head">
+                <div class="frame f-red cut-10"><img class="d-icon cut-10" src="https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Akali.png" alt="Akali" onerror="this.style.opacity='0'"></div>
+                <div>
+                  <h3 class="disp d-name">Akali</h3>
+                  <p class="d-sub">la Asesina Furtiva</p>
+                </div>
+              </div>
+              <div class="d-stats">
+                <div class="hud-item"><span class="hud-label">WR global</span><span class="hud-num good">50.0%</span></div>
+                <div class="hud-item"><span class="hud-label">PR</span><span class="hud-num">7.68%</span></div>
+                <div class="hud-item"><span class="hud-label">Ban</span><span class="hud-num">15.92%</span></div>
+                <div class="d-roles">
+                  <span class="role-tile gold">Mid <b>70.2%</b></span>
+                  <span class="role-tile">Top <b>29.2%</b></span>
+                </div>
+              </div>
+              <div class="d-vs">
+                <span class="d-vs-label">Tu WR con Sylas vs Akali</span>
+                <span class="disp d-vs-num good">50.4%</span>
+                <span class="d-vs-games">12.649 partidas · matchup parejo</span>
+              </div>
+            </div></div>
+
+            <!-- [TargetWeaknesses] -->
+            <div class="sec-h sub">
+              <i class="bar"></i>
+              <h3><span class="sl">//</span> LO MALO DE AKALI</h3>
+            </div>
+            <ul class="weak-list">
+              <li class="cut-10"><span class="wk-x">✕</span><p><strong>Es melé de 125 de rango:</strong> antes del nivel 6 casi no genera kill pressure y pierde los trades cortos.</p></li>
+              <li class="cut-10"><span class="wk-x">✕</span><p><strong>La energía la limita:</strong> si estirás el trade, se queda seca y deja de pelear.</p></li>
+              <li class="cut-10"><span class="wk-x">✕</span><p>Toda su agresión a distancia entra por el shuriken de la E, un proyectil esquivable y bloqueable con escudo mágico.</p></li>
+              <li class="cut-10"><span class="wk-x">✕</span><p>El humo es invisibilidad, no invulnerabilidad: los control wards la revelan y el daño en área la pega igual adentro.</p></li>
+              <li class="cut-10"><span class="wk-x">✕</span><p>Si entra con todo y no mata, se queda sin escapes dentro del equipo rival.</p></li>
+            </ul>
+
+            <!-- [TargetArchetypeTips] -->
+            <div class="sec-h sub">
+              <i class="bar"></i>
+              <h3><span class="sl">//</span> CÓMO GANARLE SEGÚN TU CHAMP</h3>
+            </div>
+            <div class="arch-grid">
+              <div class="arch cut-12">
+                <h4 class="disp arch-title t-silver">Si jugás Rango</h4>
+                <ul>
+                  <li>Esquivá el shuriken de la E, su única entrada a distancia: si no te marca y se tira igual, queda sin escape para castigar.</li>
+                </ul>
+              </div>
+              <div class="arch cut-12">
+                <h4 class="disp arch-title t-silver">Si jugás Tanque</h4>
+                <ul>
+                  <li>Comprate MR temprano y guardá el knockup para interrumpir sus dashes de la E o la R en el aire.</li>
+                </ul>
+              </div>
+              <div class="arch cut-12">
+                <h4 class="disp arch-title t-red">Si jugás Asesino</h4>
+                <ul>
+                  <li>Pegale antes del 6 y forzá peleas con la W en cooldown (16 s al inicio): sin humo no tiene segunda oportunidad.</li>
+                </ul>
+              </div>
+              <div class="arch cut-12">
+                <h4 class="disp arch-title t-cyan">Si jugás con CC</h4>
+                <ul>
+                  <li>No gastes el CC mientras espera en el humo: dejá que entre con la R y encadenale el control al aterrizar.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- [ArchetypeCards] — estáticas: tips del lado de Sylas -->
+          <div class="sec-h sub">
+            <i class="bar"></i>
+            <h3><span class="sl">//</span> GUÍA GENERAL VS ARQUETIPOS</h3>
+          </div>
+          <div class="arch-grid">
+            <div class="arch cut-12">
+              <h4 class="disp arch-title t-silver">Rango</h4>
+              <ul>
+                <li>Doran's Shield + Q desde max rango</li>
+                <li>3 puntos Q para farmear seguro</li>
+                <li>No 1v1 directo, ganá en sidelanes</li>
+                <li>E-flash cuando quemen su escape</li>
+                <li>Trackeá el CD de su skillshot</li>
+              </ul>
+            </div>
+            <div class="arch cut-12">
+              <h4 class="disp arch-title t-silver">Tanques</h4>
+              <ul>
+                <li>Fights largos te favorecen (W escala con HP perdida)</li>
+                <li>No gastes R en daño, guardala para robar su engage</li>
+                <li>Riftmaker si se alarga, Morellonomicon si cura</li>
+                <li>Merc Treads si trae CC</li>
+              </ul>
+            </div>
+            <div class="arch cut-12">
+              <h4 class="disp arch-title t-red">Asesinos</h4>
+              <ul>
+                <li>E2 para peel, no para entrar</li>
+                <li>W DESPUÉS del burst, no como poke</li>
+                <li>Zhonya's tras tu combo</li>
+                <li>Trackeá CDs y summoners</li>
+                <li>Robá su ulti de burst con R</li>
+              </ul>
+            </div>
+            <div class="arch cut-12">
+              <h4 class="disp arch-title t-cyan">Control de masas</h4>
+              <ul>
+                <li>2+ stuns = Merc Treads</li>
+                <li>Banshee's vs CC single-target</li>
+                <li>Nunca E-in sin ver el CC clave gastado</li>
+                <li>Posiciónate detrás del frontline antes de canalizar R</li>
+                <li>Bone Plating + HP plana</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ==================== [ConsejosPanel] ==================== -->
+        <section id="panel-consejos" class="tab-panel">
+
+          <div class="sec-h sub">
+            <i class="bar"></i>
+            <h3><span class="sl">//</span> COMBOS QUE GANAN LANE</h3>
+          </div>
+          <div class="combo-list">
+            <div class="combo cut-10"><span class="combo-num disp">1</span><p><strong>Orden correcto:</strong> E1 → E2 (knock-up) → Q encima del objetivo flotando → W para curarte</p></div>
+            <div class="combo cut-10"><span class="combo-num disp">2</span><p><strong>No uses W como poke a vida llena:</strong> curás casi nada y perdés 12s de CD</p></div>
+            <div class="combo cut-10"><span class="combo-num disp">3</span><p><strong>No canalices R parado en melee:</strong> hacelo desde fog o detrás de tu frontline</p></div>
+            <div class="combo cut-10"><span class="combo-num disp">4</span><p><strong>E-flash:</strong> apretá Flash durante la 2ª E para encadenar desde un ángulo imposible</p></div>
+          </div>
+
+          <div class="sec-h sub">
+            <i class="bar"></i>
+            <h3><span class="sl">//</span> PLAN DE JUEGO</h3>
+          </div>
+          <div class="plan-grid">
+            <div class="plan cut-12">
+              <h4 class="disp">Early</h4>
+              <p>Bully con trades de L3, mantené la wave de tu lado.</p>
+            </div>
+            <div class="plan cut-12">
+              <h4 class="disp">Mid</h4>
+              <p>Split + group solo con R lista, buscá picks.</p>
+            </div>
+            <div class="plan cut-12">
+              <h4 class="disp">Late</h4>
+              <p>Peeleá a tus carries, no te separes nunca.</p>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+    </div></div>
+  </section>
+
+  <!-- ==================== [AppFooter] ==================== -->
+  <footer class="hud-footer">
+    <span>Sync · Lolalytics</span>
+    <span>Patch 16.20 · Klify D0.1</span>
+  </footer>
+
+</div>
+
+<script>
+// [GuideTabs] — navegación entre pestañas del champ select (vanilla, sin deps)
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var panels = Array.prototype.slice.call(document.querySelectorAll('.tab-panel'));
+
+  function activate(id) {
+    tabs.forEach(function (t) { t.classList.toggle('is-active', t.dataset.tab === id); });
+    panels.forEach(function (p) { p.classList.toggle('is-active', p.id === 'panel-' + id); });
+  }
+
+  tabs.forEach(function (btn) {
+    btn.addEventListener('click', function () { activate(btn.dataset.tab); });
+  });
+
+  // Estado inicial: CÓMO JUGAR VS
+  activate('vs');
+})();
+
+// [TargetSelect] — enemigo seleccionable: re-render del dossier (vanilla, sin deps)
+// Datos: design/data/akali.json + design/data/annie.json · WRs del matchup: Lolalytics
+var TARGETS = {
+  akali: {
+    name: "Akali", title: "la Asesina Furtiva", pos: "mid",
+    icon: "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Akali.png",
+    stats: { wr: 50.0, pr: 7.68, br: 15.92 },
+    lanes: [{ role: "Mid", pct: 70.2, main: true }, { role: "Top", pct: 29.2 }],
+    lowPick: false, // PR 7.68% >= 3
+    vs: { wr: 50.4, games: "12.649", note: "matchup parejo" },
+    weaknesses: [
+      "Es melé de 125 de rango: antes del nivel 6 casi no genera kill pressure y pierde los trades cortos.",
+      "La energía la limita: si estirás el trade, se queda seca y deja de pelear.",
+      "Toda su agresión a distancia entra por el shuriken de la E, un proyectil esquivable y bloqueable con escudo mágico.",
+      "El humo es invisibilidad, no invulnerabilidad: los control wards la revelan y el daño en área la pega igual adentro.",
+      "Si entra con todo y no mata, se queda sin escapes dentro del equipo rival."
+    ],
+    arch: {
+      range: ["Esquivá el shuriken de la E, su única entrada a distancia: si no te marca y se tira igual, queda sin escape para castigar."],
+      tanks: ["Comprate MR temprano y guardá el knockup para interrumpir sus dashes de la E o la R en el aire."],
+      assassins: ["Pegale antes del 6 y forzá peleas con la W en cooldown (16 s al inicio): sin humo no tiene segunda oportunidad."],
+      cc: ["No gastes el CC mientras espera en el humo: dejá que entre con la R y encadenale el control al aterrizar."]
+    }
+  },
+  annie: {
+    name: "Annie", title: "la Hija de la Oscuridad", pos: "sup",
+    icon: "https://ddragon.leagueoflegends.com/cdn/16.20.1/img/champion/Annie.png",
+    stats: { wr: 51.86, pr: 1.71, br: 0.62 },
+    lanes: [{ role: "Mid", pct: 80.4, main: true }, { role: "Sup", pct: 13.8 }],
+    lowPick: true, // PR 1.71% < 3
+    vs: { wr: 49.5, games: "2.259", note: "matchup desfavorable" },
+    weaknesses: [
+      "Rango corto: casi todos los magos le pegan desde afuera de su propio alcance y cada amenaza suya exige caminar hacia zona castigable.",
+      "Cero movilidad: sin dash ni blink, un gank del jungla es casi kill garantizada y ella lo sabe, así que se queda atrás.",
+      "El stun se ve venir: cuando la barrera de la pasiva está cargada, jugar atrás unos segundos la saca del juego completo.",
+      "Maná caro early: si la empujás sin parar, se gasta el pool intentando responder y queda sin amenaza.",
+      "Su burst es de una sola tanda: si no mata, queda parada en medio de la lane sin nada para apretar durante varios segundos."
+    ],
+    arch: {
+      range: [
+        "Xerath, Lux, Ziggs: pegale desde fuera de su W y el lane se convierte en una granja que ella no puede cobrar sin morir.",
+        "Cuando la barrera de stun se prenda, pisá un paso atrás por diez segundos: cuidar ese estado no te cuesta nada y la deja inútil.",
+        "Empujala constante: sin movilidad ni maná infinito, cada wave empujada la encierra contra su torre."
+      ],
+      tanks: [
+        "Comprá Resistencia Mágica antes de que parezca necesario: su burst está calibrado contra el que no lo tiene, un Verdant Barrier temprano cambia el matchup.",
+        "Mercury's Treads son las botas acá: el stun decide la pelea, el daño es solo lo que viene después.",
+        "Debajo de Tibbers no retrocedas de golpe: matá al oso cuando pueda, es objetivo válido y vale el tiempo en pelea larga."
+      ],
+      assassins: [
+        "Fizz, Ekko, Zed: esperá que gaste Q y W para empujar y saltale recién ahí; sin combo en mano está descalza y sin escape.",
+        "Guardá tu escape para el arranque, no para farmear: si su stun te agarra, no hay segunda oportunidad.",
+        "Si ya gastó el burst y no te mató, ese es tu all-in: queda parada en medio de la lane sin nada que apretar."
+      ],
+      cc: [
+        "Encadená tu CC encima del arranque de la combo: interrumpirla entre el Flash y Tibbers mata su única ventana de daño.",
+        "Malzahar y Lissandra la convergen: suprimir o volverla inmune a su alrededor invierte la pelea al instante.",
+        "Reservá el CC para después de que use Flash: sin gap closer propio, depende del Flash para llegar y ahí es más frágil que nunca."
+      ]
+    }
+  }
+};
+var EMPTY_NAMES = { gwen: "GWEN", viego: "VIEGO", lucian: "LUCIAN" };
+
+function wrCls(v) { return v >= 50 ? "good" : "bad"; }
+function boldLead(s) {
+  var i = s.indexOf(":");
+  return i > -1 && i < 42 ? "<strong>" + s.slice(0, i) + ":</strong>" + s.slice(i + 1) : s;
+}
+function secH(txt) {
+  return '<div class="sec-h sub"><i class="bar"></i><h3><span class="sl">//</span> ' + txt + '</h3></div>';
+}
+function archCard(title, cls, items) {
+  if (!items || !items.length) return "";
+  return '<div class="arch cut-12"><h4 class="disp arch-title ' + cls + '">' + title + '</h4><ul>' +
+    items.map(function (s) { return "<li>" + s + "</li>"; }).join("") + "</ul></div>";
+}
+function renderTarget(slug) {
+  var t = TARGETS[slug], zone = document.getElementById("target-zone");
+  document.querySelectorAll(".cs-slot").forEach(function (el) {
+    var on = el.dataset.target === slug;
+    el.classList.toggle("is-target", on);
+    el.setAttribute("aria-pressed", String(on));
+  });
+  document.querySelectorAll(".enemy-row").forEach(function (el) {
+    el.classList.toggle("hl", el.dataset.target === slug);
+  });
+  if (!t) { // empty-state para enemigos sin ficha
+    zone.innerHTML = secH("CÓMO JUGAR VS " + (EMPTY_NAMES[slug] || slug.toUpperCase())) +
+      '<div class="placeholder cut-18 mini"><h3 class="ph-title"><span class="sl">//</span> Ficha no disponible en esta demo</h3>' +
+      "<p>Solo Akali y Annie tienen datos cargados en esta prueba.</p></div>";
+    document.getElementById("guide-note").textContent = "Sylas mid · ficha no disponible";
+    return;
+  }
+  var lanes = t.lanes.map(function (l) {
+    return '<span class="role-tile' + (l.main ? " gold" : "") + '">' + l.role + " <b>" + l.pct + "%</b></span>";
+  }).join("");
+  var html = secH("CÓMO JUGAR VS " + t.name.toUpperCase()) +
+    '<div class="frame cut-18"><div class="cut-18 dossier"><div class="d-head">' +
+    '<div class="frame f-red cut-10"><img class="d-icon cut-10" src="' + t.icon + '" alt="' + t.name + '" onerror="this.style.opacity=\'0\'"></div>' +
+    '<div><h3 class="disp d-name">' + t.name + '</h3><p class="d-sub">' + t.title + '</p></div>' +
+    (t.lowPick ? '<span class="chip-gold">Bajo pick = poco practicado</span>' : "") +
+    '</div><div class="d-stats">' +
+    '<div class="hud-item"><span class="hud-label">WR global</span><span class="hud-num ' + wrCls(t.stats.wr) + '">' + t.stats.wr.toFixed(1) + '%</span></div>' +
+    '<div class="hud-item"><span class="hud-label">PR</span><span class="hud-num">' + t.stats.pr + '%</span></div>' +
+    '<div class="hud-item"><span class="hud-label">Ban</span><span class="hud-num">' + t.stats.br + '%</span></div>' +
+    '<div class="d-roles">' + lanes + '</div></div>' +
+    '<div class="d-vs"><span class="d-vs-label">Tu WR con Sylas vs ' + t.name + '</span>' +
+    '<span class="disp d-vs-num ' + wrCls(t.vs.wr) + '">' + t.vs.wr.toFixed(1) + '%</span>' +
+    '<span class="d-vs-games">' + t.vs.games + ' partidas · ' + t.vs.note + '</span></div></div></div>' +
+    secH("LO MALO DE " + t.name.toUpperCase()) +
+    '<ul class="weak-list">' + t.weaknesses.map(function (w) {
+      return '<li class="cut-10"><span class="wk-x">✕</span><p>' + boldLead(w) + '</p></li>';
+    }).join("") + "</ul>" +
+    secH("CÓMO GANARLE SEGÚN TU CHAMP") +
+    '<div class="arch-grid">' +
+    archCard("Si jugás Rango", "t-silver", t.arch.range) +
+    archCard("Si jugás Tanque", "t-silver", t.arch.tanks) +
+    archCard("Si jugás Asesino", "t-red", t.arch.assassins) +
+    archCard("Si jugás con CC", "t-cyan", t.arch.cc) +
+    "</div>";
+  zone.innerHTML = html;
+  document.getElementById("guide-note").textContent = "Sylas mid · vs " + t.name + " " + t.pos;
+}
+// Única entrada pública
+function selectTarget(slug) { renderTarget(slug); }
+
+document.querySelectorAll("[data-target]").forEach(function (el) {
+  el.addEventListener("click", function () { selectTarget(el.dataset.target); });
+  el.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); selectTarget(el.dataset.target); }
+  });
+});
+</script>
+</body>
+</html>

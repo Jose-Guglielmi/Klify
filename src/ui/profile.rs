@@ -16,22 +16,29 @@
 //!   "hace X") que abren el modal de detalle
 //!   ([`crate::ui::match_detail`]); el fetch usa el handle global del
 //!   cliente LCU.
+//! - **Buscador de invocadores** (arriba del perfil propio): input + botón
+//!   que consulta `GET /lol-summoner/v1/summoners?name=` del LCU con el
+//!   handle global del cliente (el nombre viaja percent-encoded a mano,
+//!   sin crate extra). El resultado es una card compacta (icono de Data
+//!   Dragon, Riot ID + `#tag`, nivel); sin resultado → aviso claro.
 //!
 //! Etiquetas honestas: el agregado del hero es "ÚLTIMAS {n} PARTIDAS"
 //! (n = `profile.recent.len()`), no la temporada completa del servidor.
 //!
 //! Toda la derivación de datos para el render es pura y testeada:
 //! [`rank_label`], [`hero_hud`], [`TopChampCard::list`], [`RecentRow::list`],
-//! [`champ_label`], [`champ_icon`] y [`skin_label`].
+//! [`champ_label`], [`champ_icon`], [`skin_label`], [`url_busqueda_summoner`]
+//! y [`ResultadoBusqueda::new`].
 
 use std::time::{SystemTime, UNIX_EPOCH};
 
 use dioxus::prelude::*;
+use irelia::requests::Error as IreliaError;
 
 use crate::data_dragon::models::ChampionCatalog;
 use crate::data_dragon::runes::RuneCatalog;
 use crate::lcu::models::{AppState, SummonerInfo};
-use crate::profile::client_handle::client_handle;
+use crate::profile::client_handle::{client_handle, LcuRestClient};
 use crate::profile::lcu_fetch::fetch_match_detail;
 use crate::profile::models::{MatchSummary, ProfileSummary, RankedInfo};
 use crate::profile::settings::{
@@ -39,13 +46,17 @@ use crate::profile::settings::{
 };
 use crate::ui::format::{
     background_splash_url, format_duration_mmss, format_kda, format_percent, format_queue_name,
-    format_ratio, format_thousands, profile_icon_url, DEFAULT_BACKGROUND_SPLASH,
+    format_ratio, format_thousands, initials, profile_icon_url, DEFAULT_BACKGROUND_SPLASH,
 };
 use crate::ui::match_detail::{champ_icon, champ_label, MatchDetailModal, MatchModalState};
 use crate::ui::shell::{KlifyFooter, KlifyHeader};
 
 /// Campeón del picker de fondo (spec 11b-1: Kayn, 10 skins).
 const PICKER_DD_ID: &str = "Kayn";
+
+/// Endpoint de búsqueda por nombre del LCU (el nombre viaja como query
+/// string percent-encoded).
+const SUMMONER_SEARCH_URI: &str = "/lol-summoner/v1/summoners?name=";
 
 /// Una opción del picker de splash: clave de settings, etiqueta y URL.
 #[derive(Clone, Debug, PartialEq, Eq)]
@@ -263,6 +274,142 @@ pub fn now_ms() -> i64 {
         .unwrap_or(0)
 }
 
+// ---------------------------------------------------------------------------
+// Buscador de invocadores (panel arriba del perfil propio)
+// ---------------------------------------------------------------------------
+
+/// Percent-encoding RFC 3986 para el query string: los unreserved pasan
+/// tal cual y el resto va `%XX` (mismo criterio que `riot_api` y
+/// `translate`; sin crate extra). Puro, testeado.
+#[must_use]
+fn encode_query_value(text: &str) -> String {
+    let mut out = String::with_capacity(text.len());
+    for byte in text.as_bytes() {
+        match byte {
+            b'A'..=b'Z' | b'a'..=b'z' | b'0'..=b'9' | b'-' | b'_' | b'.' | b'~' => {
+                out.push(*byte as char);
+            }
+            _ => out.push_str(&format!("%{byte:02X}")),
+        }
+    }
+    out
+}
+
+/// URI de búsqueda del LCU para un nombre: trim + percent-encoded
+/// (`"PKT MidKing"` → `/lol-summoner/v1/summoners?name=PKT%20MidKing`).
+/// Pura, testeada.
+#[must_use]
+pub fn url_busqueda_summoner(nombre: &str) -> String {
+    format!(
+        "{SUMMONER_SEARCH_URI}{}",
+        encode_query_value(nombre.trim())
+    )
+}
+
+/// Card compacta del invocador encontrado por el buscador, ya resuelta
+/// contra la versión de Data Dragon disponible (pura, testeada).
+#[derive(Clone, Debug, PartialEq)]
+pub struct ResultadoBusqueda {
+    /// Parte del Riot ID antes del `#` (con fallback amable si el payload
+    /// no la trae).
+    pub nombre: String,
+    /// Parte después del `#` (`None` si el payload no la trae).
+    pub tag: Option<String>,
+    /// Nivel legible (`"NV 173"`); `None` si el payload no lo trae.
+    pub nivel: Option<String>,
+    /// URL del icono de perfil (`None` sin versión o sin id → la UI
+    /// muestra [`Self::iniciales`]).
+    pub icono: Option<String>,
+    /// Iniciales para el tile de fallback.
+    pub iniciales: String,
+}
+
+impl ResultadoBusqueda {
+    /// Resuelve la card desde el payload del LCU y la versión del
+    /// catálogo (pura, testeada).
+    #[must_use]
+    pub fn new(info: &SummonerInfo, version: Option<&str>) -> Self {
+        let nombre = info
+            .game_name
+            .as_deref()
+            .map(str::trim)
+            .filter(|nombre| !nombre.is_empty())
+            .unwrap_or("Invocador")
+            .to_string();
+        let tag = info
+            .tag_line
+            .as_deref()
+            .map(str::trim)
+            .filter(|tag| !tag.is_empty())
+            .map(str::to_string);
+        Self {
+            iniciales: initials(&nombre),
+            nombre,
+            tag,
+            nivel: info.summoner_level.map(|nivel| format!("NV {nivel}")),
+            icono: profile_icon_url(version, info.profile_icon_id),
+        }
+    }
+}
+
+/// GET del invocador por nombre exacto al LCU. `Ok(None)` = no existe
+/// (404); `Err` = el cliente falló (el caller arma el mensaje).
+async fn fetch_summoner_by_name(
+    client: &LcuRestClient,
+    nombre: &str,
+) -> Result<Option<SummonerInfo>, IreliaError> {
+    let uri = url_busqueda_summoner(nombre);
+    match client.get::<SummonerInfo>(&uri).await {
+        Ok(info) => Ok(Some(info)),
+        Err(IreliaError::Request(status)) if status.as_u16() == 404 => Ok(None),
+        Err(error) => Err(error),
+    }
+}
+
+/// Búsqueda on-demand con el handle global del LCU y publicación del
+/// resultado (o del aviso). Función libre (no closure): los handlers
+/// `onclick`/`onkeydown` son `Fn` y comparten la misma lógica. Sin
+/// nombre → aviso sin pegarle al LCU; búsqueda ya en curso → no-op.
+fn spawn_summoner_search(
+    mut resultado: Signal<Option<SummonerInfo>>,
+    mut error: Signal<Option<String>>,
+    mut buscando: Signal<bool>,
+    nombre: String,
+) {
+    let nombre = nombre.trim().to_string();
+    if nombre.is_empty() {
+        resultado.set(None);
+        error.set(Some(String::from("Escribí un nombre para buscar.")));
+        return;
+    }
+    if buscando() {
+        return;
+    }
+
+    resultado.set(None);
+    error.set(None);
+    buscando.set(true);
+    spawn(async move {
+        let Some(client) = client_handle() else {
+            buscando.set(false);
+            error.set(Some(String::from("Cliente no conectado")));
+            return;
+        };
+        match fetch_summoner_by_name(&client, &nombre).await {
+            Ok(Some(info)) => resultado.set(Some(info)),
+            Ok(None) => {
+                error.set(Some(String::from(
+                    "No encontré ese invocador en este cliente.",
+                )));
+            }
+            Err(err) => {
+                error.set(Some(format!("La búsqueda falló: {err}")));
+            }
+        }
+        buscando.set(false);
+    });
+}
+
 /// Carga las skins de Kayn para el picker (spawn del modal). Usa la versión
 /// del catálogo si está; si no, la más reciente de `versions.json`.
 async fn load_picker_skins(catalog_version: Option<String>) -> Result<Vec<SkinOption>, String> {
@@ -355,6 +502,9 @@ pub fn ProfileView(
     catalog: Option<ChampionCatalog>,
     runes: Option<RuneCatalog>,
     source_served: bool,
+    /// Click en "VER FICHAS DE CAMPEONES": vuelve al menú de fichas
+    /// (la app ahora inicia ahí y el Perfil se visita desde él).
+    on_ver_fichas: EventHandler<()>,
 ) -> Element {
     // Clave de splash del fondo (settings). Empieza en el default: sin
     // flash aunque el archivo tarde en leerse.
@@ -379,6 +529,14 @@ pub fn ProfileView(
     // Modal de detalle de partida.
     let mut match_modal: Signal<MatchModalState> = use_signal(|| MatchModalState::Closed);
 
+    // Buscador de invocadores (panel arriba del perfil propio). Solo
+    // `busqueda` se muta acá (oninput); el resto lo muta
+    // `spawn_summoner_search` con sus propias copias.
+    let mut busqueda: Signal<String> = use_signal(String::new);
+    let resultado: Signal<Option<SummonerInfo>> = use_signal(|| None);
+    let buscando: Signal<bool> = use_signal(|| false);
+    let error: Signal<Option<String>> = use_signal(|| None);
+
     // Snapshots cortos: los guards no cruzan la construcción del rsx.
     let background_url = background_splash_url(Some(&*background_key.read()));
     let version = catalog.as_ref().map(|data| data.version.clone());
@@ -390,6 +548,13 @@ pub fn ProfileView(
     let hero = hero_hud(&profile);
     let cards = TopChampCard::list(&profile, catalog.as_ref());
     let rows = RecentRow::list(&profile, catalog.as_ref(), now_ms());
+
+    // Snapshot del resultado del buscador (liviano; evita guards en el
+    // rsx y la card se resuelve igual que las de top champs).
+    let buscado_card = resultado
+        .read()
+        .clone()
+        .map(|info| ResultadoBusqueda::new(&info, version.as_deref()));
 
     let game_name = summoner
         .as_ref()
@@ -420,6 +585,86 @@ pub fn ProfileView(
             KlifyHeader { state }
 
             main { class: "main-container",
+
+                // ===== BUSCADOR DE INVOCADORES (arriba del perfil propio) =====
+                section { class: "perfil-buscador",
+                    div { class: "section-head",
+                        span { class: "bar-skew", "style": "width: 32px;" }
+                        span { class: "label label-md",
+                            span { class: "sl", "//" }
+                            " Buscar invocador"
+                        }
+                        span { class: "label fs-10 t-outline-var ml-auto", "Cliente LCU" }
+                    }
+
+                    div { class: "perfil-buscador-fila",
+                        input {
+                            class: "perfil-buscador-input",
+                            "type": "text",
+                            value: busqueda(),
+                            placeholder: "Nombre de invocador…",
+                            autocomplete: "off",
+                            oninput: move |event: Event<FormData>| busqueda.set(event.value()),
+                            onkeydown: move |event: Event<KeyboardData>| {
+                                if event.key() == Key::Enter {
+                                    let nombre = busqueda.read().clone();
+                                    spawn_summoner_search(resultado, error, buscando, nombre);
+                                }
+                            },
+                        }
+                        button { class: "btn-primary", type: "button",
+                            disabled: buscando(),
+                            onclick: move |_| {
+                                let nombre = busqueda.read().clone();
+                                spawn_summoner_search(resultado, error, buscando, nombre);
+                            },
+                            if buscando() { "BUSCANDO…" } else { "BUSCAR" }
+                        }
+                    }
+
+                    {match error.read().clone() {
+                        Some(mensaje) => rsx! {
+                            p { class: "label fs-9 t-error", "style": "margin-top: 8px;", "{mensaje}" }
+                        },
+                        None => rsx! {},
+                    }}
+
+                    {match buscado_card {
+                        Some(card) => rsx! {
+                            div { class: "perfil-resultado",
+                                div { class: "tile", "style": "width: 48px; height: 48px; flex-shrink: 0;",
+                                    {match &card.icono {
+                                        Some(url) => rsx! { img { src: "{url}", alt: "{card.nombre}" } },
+                                        None => rsx! {
+                                            span { class: "num-display t-outline-var",
+                                                "style": "display: flex; align-items: center; justify-content: center; height: 100%; font-size: 18px;",
+                                                "{card.iniciales}"
+                                            }
+                                        },
+                                    }}
+                                }
+                                div { "style": "min-width: 0; flex: 1;",
+                                    div { "style": "display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px;",
+                                        span {
+                                            "style": "font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--on-surface);",
+                                            "{card.nombre}"
+                                        }
+                                        if let Some(tag) = &card.tag {
+                                            span { class: "hero-tag", "#{tag}" }
+                                        }
+                                    }
+                                }
+                                if let Some(nivel) = &card.nivel {
+                                    span { class: "chip chip--soft", "{nivel}" }
+                                }
+                            }
+                        },
+                        None => rsx! {},
+                    }}
+                }
+
+                // Separador: buscador → perfil propio.
+                hr { class: "divider" }
 
                 // CAMBIAR FONDO · arriba a la derecha
                 div { "style": "display: flex; justify-content: flex-end; padding-top: 20px;",
@@ -500,6 +745,12 @@ pub fn ProfileView(
                         span { class: "label label-md",
                             span { class: "sl", "//" }
                             " Top Champs"
+                        }
+                        // Volver al menú de fichas (inicio de la app).
+                        button { class: "btn-primary", type: "button",
+                            "style": "margin-left: 16px; padding: 8px 18px; font-size: 13px;",
+                            onclick: move |_| on_ver_fichas.call(()),
+                            "VER FICHAS DE CAMPEONES"
                         }
                         span { class: "label fs-10 t-outline-var ml-auto",
                             "{recent_span_label(&profile)}"
@@ -920,5 +1171,73 @@ mod tests {
     #[test]
     fn now_ms_es_de_epoch() {
         assert!(now_ms() > 1_600_000_000_000);
+    }
+
+    /// URI de búsqueda del LCU: trim + percent-encoding manual (espacios,
+    /// `%` y no-ASCII); vacío → query vacío.
+    #[test]
+    fn url_de_busqueda_summoner() {
+        assert_eq!(
+            url_busqueda_summoner("PKT MidKing"),
+            "/lol-summoner/v1/summoners?name=PKT%20MidKing"
+        );
+        // `%` se codifica para no romper el query string.
+        assert_eq!(
+            url_busqueda_summoner("100%real"),
+            "/lol-summoner/v1/summoners?name=100%25real"
+        );
+        // No-ASCII (UTF-8 byte a byte) y trim de los bordes.
+        assert_eq!(
+            url_busqueda_summoner("  feña  "),
+            "/lol-summoner/v1/summoners?name=fe%C3%B1a"
+        );
+        assert_eq!(
+            url_busqueda_summoner("   "),
+            "/lol-summoner/v1/summoners?name="
+        );
+    }
+
+    /// Card del resultado del buscador: nombre + `#tag`, `NV` + nivel,
+    /// icono con la versión del catálogo e iniciales cuando no hay
+    /// versión; sin tag ni nivel → `None`.
+    #[test]
+    fn card_del_resultado_del_buscador() {
+        let info: SummonerInfo = serde_json::from_value(json!({
+            "puuid": "abc-123",
+            "gameName": "PKT MidKing",
+            "tagLine": "Akali",
+            "profileIconId": 588,
+            "summonerLevel": 173
+        }))
+        .expect("summoner parsea");
+
+        let card = ResultadoBusqueda::new(&info, Some("16.20.1"));
+        assert_eq!(card.nombre, "PKT MidKing");
+        assert_eq!(card.tag.as_deref(), Some("Akali"));
+        assert_eq!(card.nivel.as_deref(), Some("NV 173"));
+        assert_eq!(
+            card.icono.as_deref(),
+            Some("https://ddragon.leagueoflegends.com/cdn/16.20.1/img/profileicon/588.png")
+        );
+        assert_eq!(card.iniciales, "PM");
+
+        // Sin versión disponible: sin icono y con iniciales de fallback.
+        let sin_version = ResultadoBusqueda::new(&info, None);
+        assert_eq!(sin_version.icono, None);
+        assert_eq!(sin_version.iniciales, "PM");
+
+        // Sin tag ni nivel (payload mínimo): campos en `None`.
+        let minimo: SummonerInfo =
+            serde_json::from_value(json!({ "gameName": "solo" })).expect("mínimo parsea");
+        let card_min = ResultadoBusqueda::new(&minimo, Some("16.20.1"));
+        assert_eq!(card_min.nombre, "solo");
+        assert_eq!(card_min.tag, None);
+        assert_eq!(card_min.nivel, None);
+
+        // Encoding del query: nombre con espacio viaja bien formado.
+        assert_eq!(
+            url_busqueda_summoner(&card_min.nombre),
+            "/lol-summoner/v1/summoners?name=solo"
+        );
     }
 }

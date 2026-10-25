@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Klify · Ficha de campeón · AHRI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS KLIFY (design.md) ============ */
+  :root{
+    --bg:#0b0e14;
+    --surface:#10141d;
+    --lowest:#090c11;
+    --low:#121722;
+    --base:#1f2937;
+    --high:#2a3648;
+    --highest:#354358;
+    --txt:#e5e7eb;
+    --muted:#9aa4b2;
+    --silver:#c3cad4;
+    --outline:#8b95a3;
+    --line:#2f3a4a;
+    --red:#ff0033;
+    --red-container:#440011;
+    --on-red-container:#ffd9de;
+    --error:#ffa198;
+    --display:"Barlow Condensed",sans-serif;
+    --body:"Inter",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg)}
+  body{
+    font-family:var(--body);color:var(--txt);
+    font-size:15px;line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    padding:40px 0 0;
+  }
+  ::selection{background:var(--red-container);color:var(--on-red-container)}
+
+  /* Fondo de app: glow tenue + micro-stripes */
+  .bg-glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(640px 520px at 8% -6%,rgba(255,0,51,.055),transparent 70%)}
+  .bg-stripes{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:repeating-linear-gradient(135deg,rgba(255,255,255,.012) 0 2px,transparent 2px 14px)}
+
+  .container{position:relative;z-index:1;max-width:1024px;margin:0 auto;padding:0 24px}
+
+  /* ============ TIPOS ============ */
+  .label{font-family:var(--body);font-weight:600;font-size:12px;line-height:1.4;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .label-md{font-size:14px}
+  .label-xs{font-size:10px;letter-spacing:.1em}
+  .tnum{font-variant-numeric:tabular-nums}
+  .display{font-family:var(--display);font-style:italic;font-weight:700;
+    text-transform:uppercase;letter-spacing:-.01em}
+
+  /* Header de zona: "//" líneas de impacto */
+  .h-sec{font-family:var(--display);font-style:italic;font-weight:600;
+    font-size:22px;line-height:1.2;text-transform:uppercase;color:var(--txt)}
+  .h-sec::before{content:"//";display:inline-block;transform:skewX(-15deg);
+    color:var(--outline);margin-right:10px;font-weight:700}
+  .h-sec .dim{color:var(--muted)}
+
+  /* ============ BREADCRUMB ============ */
+  .breadcrumb{display:flex;align-items:center;gap:10px;margin:8px 0 16px;
+    font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+  .breadcrumb a{color:var(--muted);text-decoration:none}
+  .breadcrumb a:hover{color:var(--txt)}
+  .breadcrumb .sep{color:var(--line);font-size:13px}
+  .breadcrumb .here{color:var(--txt)}
+
+  /* ============ HERO ============ */
+  .hero-frame{position:relative;filter:drop-shadow(0 0 22px rgba(255,0,51,.22))}
+  .hero-border{background:var(--line);
+    clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,0 100%);padding:1px}
+  .hero{position:relative;background:var(--surface);overflow:hidden;
+    clip-path:polygon(0 0,calc(100% - 17px) 0,100% 17px,100% 100%,0 100%);
+    display:grid;grid-template-columns:320px 1fr auto;align-items:stretch;min-height:256px}
+
+  /* Duotono protagonista: grayscale + #ff0033 multiply ~38% + degradado negro 55% */
+  .duo{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--high),var(--low))}
+  .duo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;
+    filter:grayscale(1) contrast(1.1)}
+  .duo .tint{position:absolute;inset:0;background:var(--red);opacity:.38;mix-blend-mode:multiply}
+  .duo .fade{position:absolute;inset:0;
+    background:linear-gradient(to top,rgba(11,14,20,.95) 0%,rgba(11,14,20,0) 55%)}
+
+  .hero-id{display:flex;flex-direction:column;justify-content:center;gap:12px;padding:32px 24px}
+  .chips{display:flex;gap:8px}
+  .chip{display:inline-flex;align-items:center;border-radius:9999px;padding:4px 14px;
+    background:var(--high);color:var(--muted);font-weight:600;font-size:12px;
+    letter-spacing:.08em;text-transform:uppercase}
+  .hero-name{font-size:64px;line-height:1.0;color:var(--txt)}
+  .hero-sub{font-size:14px}
+
+  .hero-metrics{display:flex;align-items:center;padding:32px 32px 32px 24px;gap:24px}
+  .metric{display:flex;flex-direction:column;gap:4px;min-width:78px}
+  .metric + .metric{border-left:1px solid var(--line);padding-left:24px}
+  .metric .val{font-weight:600;font-size:28px;line-height:1.1;color:var(--silver)}
+  .metric.heroic .val{color:var(--txt);font-size:30px}
+
+  /* Corner brackets HUD (plata en reposo); la esquina cortada actúa de 4º vértice */
+  .hud-corners i{position:absolute;width:16px;height:16px;border:2px solid var(--outline);z-index:5}
+  .hud-corners i:nth-child(1){top:12px;left:12px;border-right:0;border-bottom:0}
+  .hud-corners i:nth-child(2){bottom:12px;left:12px;border-right:0;border-top:0}
+  .hud-corners i:nth-child(3){bottom:12px;right:12px;border-left:0;border-top:0}
+
+  /* ============ TABS ============ */
+  .tabs{display:flex;gap:4px;margin-top:32px;border-bottom:1px solid var(--line)}
+  .tab{appearance:none;background:none;border:0;cursor:pointer;position:relative;
+    font-family:var(--display);font-style:italic;font-weight:600;font-size:19px;
+    letter-spacing:.05em;text-transform:uppercase;color:var(--muted);
+    padding:12px 18px 14px;transition:color 120ms ease}
+  .tab:hover{color:var(--txt)}
+  .tab.active{color:var(--txt)}
+  .tab.active::after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;
+    height:2px;background:var(--red)}
+
+  .tab-panel{display:none;padding-top:24px}
+  .tab-panel.active{display:block}
+  .tab-panel[hidden]{display:none}
+
+  /* ============ PANELES ============ */
+  .panel{background:var(--surface);border:1px solid var(--line);padding:24px}
+  .card{background:var(--base);border:1px solid var(--line)}
+
+  .stack{display:flex;flex-direction:column;gap:24px}
+  .cols-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+
+  /* ---- HABILIDADES ---- */
+  .stats-grid{display:grid;grid-template-columns:repeat(5,1fr);margin-bottom:8px}
+  .stat{padding:16px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+  .stat + .stat{border-left:1px solid var(--line)}
+  .stat .val{font-weight:600;font-size:26px;line-height:1.1;color:var(--txt)}
+
+  .abilities{display:flex;flex-direction:column;gap:8px}
+  .ability{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:center;padding:12px 16px;
+    transition:border-color 120ms ease}
+  .ability:hover{border-color:var(--outline)}
+  .abil-icon{width:56px;height:56px;flex-shrink:0;position:relative;
+    background:linear-gradient(145deg,var(--highest),var(--low));
+    border:1px solid var(--line);box-shadow:inset 0 0 0 1px rgba(0,0,0,.55);
+    display:flex;align-items:center;justify-content:center}
+  .abil-icon span{font-family:var(--display);font-style:italic;font-weight:700;
+    font-size:26px;color:var(--txt);text-transform:uppercase}
+  .abil-icon .key{position:absolute;right:-1px;bottom:-1px;background:var(--lowest);
+    border:1px solid var(--line);color:var(--muted);font-family:var(--body);
+    font-style:normal;font-weight:600;font-size:9px;letter-spacing:.08em;padding:1px 4px}
+  .abil-name{font-family:var(--display);font-style:italic;font-weight:600;font-size:22px;
+    line-height:1.15;text-transform:uppercase;color:var(--txt)}
+  .abil-data{margin-top:2px;color:var(--muted);font-size:13px}
+  .abil-data b{color:var(--silver);font-weight:600}
+  .abil-data .dot{color:var(--line);margin:0 8px}
+
+  /* ---- BUILD ---- */
+  .rune-card{position:relative;padding:20px;border:1px solid var(--red);
+    box-shadow:0 0 12px rgba(255,0,51,.2)}
+  .badge-pick{position:absolute;top:0;right:20px;transform:skewX(-15deg);
+    background:var(--red-container);color:var(--on-red-container);
+    font-weight:600;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    padding:5px 14px}
+  .badge-pick > span{display:inline-block;transform:skewX(15deg)}
+  .keystones{display:flex;gap:12px;align-items:flex-start}
+  .keystone{width:48px;display:flex;flex-direction:column;gap:6px;align-items:center}
+  .keystone .sq{width:48px;height:48px;background:linear-gradient(145deg,var(--highest),var(--low));
+    border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-style:italic;font-weight:700;font-size:20px;color:var(--muted)}
+  .keystone.heroic .sq{box-shadow:0 0 0 2px var(--red);color:var(--txt)}
+  .keystone .nm{font-size:9px;font-weight:600;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--muted);text-align:center;line-height:1.3}
+  .wr-block{text-align:right;margin-left:auto}
+  .wr-block .val{font-weight:600;font-size:26px;line-height:1.1;color:var(--txt)}
+  .rune-rows{margin-top:16px;border-top:1px solid var(--line)}
+  .rune-row{display:grid;grid-template-columns:28px 1fr auto;gap:12px;align-items:center;
+    padding:10px 0;border-bottom:1px solid var(--line)}
+  .rune-row:last-child{border-bottom:0;padding-bottom:0}
+  .rune-ic{width:28px;height:28px;background:linear-gradient(145deg,var(--high),var(--lowest));
+    border:1px solid var(--line)}
+  .rune-nm{font-weight:600;font-size:13px;color:var(--txt)}
+  .rune-stats{color:var(--muted);font-size:12px}
+
+  .items-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+  .item{display:flex;flex-direction:column;gap:6px;align-items:center}
+  .item .sq{position:relative;width:100%;aspect-ratio:1;
+    background:linear-gradient(145deg,var(--high),var(--lowest));
+    border:1px solid var(--line);box-shadow:inset 0 0 0 1px rgba(0,0,0,.5)}
+  .item .n{position:absolute;top:-1px;left:-1px;background:var(--lowest);
+    border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:9px;
+    line-height:1;padding:3px 4px}
+  .item .nm{font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--muted);text-align:center;line-height:1.35}
+
+  .skill-order{display:flex;align-items:flex-start;gap:6px;flex-wrap:wrap}
+  .so-step{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .so-step .sq{width:36px;height:36px;background:linear-gradient(145deg,var(--highest),var(--low));
+    border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+    font-family:var(--display);font-style:italic;font-weight:700;font-size:18px;color:var(--txt)}
+  .so-step .lv{font-size:9px;font-weight:600;letter-spacing:.08em;color:var(--muted)}
+  .so-arrow{color:var(--line);font-weight:600;font-size:13px;line-height:36px}
+
+  /* ---- COUNTERS ---- */
+  .counter-list{display:flex;flex-direction:column}
+  .counter-row{display:grid;grid-template-columns:48px 1fr auto;column-gap:14px;
+    align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+  .counter-row:last-child{border-bottom:0;padding-bottom:0}
+  .portrait{width:48px;height:48px;grid-row:1 / span 2;
+    background:linear-gradient(150deg,var(--high),var(--lowest));position:relative;overflow:hidden}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;
+    filter:grayscale(1) contrast(1.1);display:block}
+  .portrait .tint{position:absolute;inset:0;background:var(--red);opacity:.2;mix-blend-mode:multiply}
+  .counter-nm{font-family:var(--display);font-style:italic;font-weight:600;font-size:20px;
+    line-height:1.1;text-transform:uppercase;color:var(--txt)}
+  .counter-wr{font-weight:600;font-size:15px;color:var(--txt);grid-row:1;grid-column:3}
+  .bar{grid-column:2 / 4;height:4px;background:var(--high);margin-top:4px}
+  .bar.worst{background:var(--red)}
+
+  /* ---- GUÍA ---- */
+  .guide-bullets{list-style:none;display:flex;flex-direction:column;gap:16px}
+  .guide-bullets li{position:relative;padding-left:22px;font-size:15px;line-height:1.65;color:var(--muted)}
+  .guide-bullets li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:3px;
+    background:var(--outline);transform:skewX(-15deg)}
+  .guide-bullets b{color:var(--txt);font-weight:600}
+  .timeline{position:relative;padding-left:24px;display:flex;flex-direction:column;gap:20px}
+  .timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .tl-item{position:relative}
+  .tl-item::before{content:"";position:absolute;left:-24px;top:6px;width:12px;height:12px;
+    background:var(--lowest);border:2px solid var(--outline)}
+  .tl-title{font-family:var(--display);font-style:italic;font-weight:600;font-size:20px;
+    text-transform:uppercase;color:var(--txt);line-height:1.2}
+  .tl-desc{margin-top:2px;color:var(--muted);font-size:14px;line-height:1.6}
+
+  /* ---- HISTORIAL ---- */
+  .match-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+  .match-head .h-sec{font-size:24px}
+  .match-head .wr{font-weight:600;font-size:18px;color:var(--txt)}
+  .match-head .dot{color:var(--line)}
+  .match-list{display:flex;flex-direction:column}
+  .match{display:grid;grid-template-columns:96px 84px 76px 84px 1fr auto;
+    gap:16px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--line);
+    border-left:2px solid var(--outline)}
+  .match:last-child{border-bottom:0}
+  .match.loss{border-left-color:var(--error)}
+  .match .result{font-weight:600;font-size:13px;letter-spacing:.08em;
+    text-transform:uppercase;color:var(--txt)}
+  .match.loss .result{color:var(--error)}
+  .match .cell .val{font-weight:600;font-size:15px;color:var(--txt)}
+  .match .cell.sub .val{color:var(--silver)}
+  .build-mini{display:flex;gap:6px}
+  .build-mini i{width:24px;height:24px;display:block;
+    background:linear-gradient(145deg,var(--high),var(--lowest));border:1px solid var(--line)}
+  .match .queue{text-align:right}
+  .match .queue .q{color:var(--muted);font-size:12px}
+  .match .queue .t{color:var(--silver);font-weight:600;font-size:13px}
+
+  /* ---- FOOTER ---- */
+  footer{margin-top:48px;border-top:1px solid var(--line);padding:24px 0 48px;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .wordmark{display:flex;align-items:baseline;gap:12px}
+  .wordmark .wm{font-family:var(--display);font-style:italic;font-weight:700;
+    font-size:22px;text-transform:uppercase;color:var(--txt);letter-spacing:-.01em}
+  .wordmark .slash{color:var(--line);font-weight:700;transform:skewX(-15deg);display:inline-block}
+
+  /* ============ RESPONSIVE MÍNIMO ============ */
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .hero .duo{height:200px;order:-1}
+    .hero-metrics{padding:0 24px 24px;flex-wrap:wrap}
+    .stats-grid{grid-template-columns:repeat(2,1fr)}
+    .stat + .stat{border-left:0}
+    .stat:nth-child(even){border-left:1px solid var(--line)}
+    .cols-2{grid-template-columns:1fr}
+    .items-grid{grid-template-columns:repeat(3,1fr)}
+    .match{grid-template-columns:1fr 1fr;border-left-width:2px}
+    .match .build-mini-cell{grid-column:1 / -1}
+  }
+</style>
+</head>
+<body>
+<div class="bg-glow"></div>
+<div class="bg-stripes"></div>
+
+<main class="container">
+
+  <!-- ======== BREADCRUMB ======== -->
+  <nav class="breadcrumb" aria-label="Migas de pan">
+    <a href="#">Inicio</a><span class="sep">›</span>
+    <a href="#">Campeones</a><span class="sep">›</span>
+    <span class="here">Ahri</span>
+  </nav>
+
+  <!-- ======== HERO DEL CAMPEÓN ======== -->
+  <div class="hero-frame">
+    <div class="hero-border">
+      <header class="hero">
+        <div class="duo">
+          <img src="assets/champs/Ahri.webp" alt="Splash art de Ahri en duotono rojo-negro"
+               onerror="this.style.display='none'">
+          <div class="tint"></div>
+          <div class="fade"></div>
+        </div>
+        <div class="hud-corners"><i></i><i></i><i></i></div>
+
+        <div class="hero-id">
+          <div class="chips">
+            <span class="chip">Mid</span>
+            <span class="chip">Mago</span>
+          </div>
+          <h1 class="display hero-name">Ahri</h1>
+          <p class="label label-md hero-sub">La nueve colas</p>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric heroic">
+            <span class="label label-xs">WR</span>
+            <span class="val tnum">51.2%</span>
+          </div>
+          <div class="metric">
+            <span class="label label-xs">Pickrate</span>
+            <span class="val tnum">8.4%</span>
+          </div>
+          <div class="metric">
+            <span class="label label-xs">Banrate</span>
+            <span class="val tnum">3.1%</span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <!-- ======== TABS ======== -->
+  <nav class="tabs" role="tablist" aria-label="Secciones de la ficha">
+    <button class="tab active" role="tab" aria-selected="true"  data-tab="habilidades">Habilidades</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="build">Build</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="counters">Counters</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="guia">Guía</button>
+    <button class="tab"        role="tab" aria-selected="false" data-tab="historial">Tu historial</button>
+  </nav>
+
+  <!-- ======== TAB · HABILIDADES (activa por defecto) ======== -->
+  <section class="tab-panel active" id="panel-habilidades" role="tabpanel">
+    <div class="panel">
+      <h2 class="h-sec" style="margin-bottom:16px">Stats base <span class="dim">· nivel 1</span></h2>
+      <div class="stats-grid card">
+        <div class="stat"><span class="label label-xs">HP</span><span class="val tnum">798</span></div>
+        <div class="stat"><span class="label label-xs">Daño de ataque</span><span class="val tnum">53</span></div>
+        <div class="stat"><span class="label label-xs">Armadura</span><span class="val tnum">18</span></div>
+        <div class="stat"><span class="label label-xs">Res. mágica</span><span class="val tnum">30</span></div>
+        <div class="stat"><span class="label label-xs">Vel. mov.</span><span class="val tnum">330</span></div>
+      </div>
+
+      <h2 class="h-sec" style="margin:24px 0 12px">Habilidades</h2>
+      <div class="abilities">
+        <article class="card ability">
+          <div class="abil-icon"><span>P</span><i class="key">PASIVA</i></div>
+          <div>
+            <h3 class="abil-name">Esencia de robo</h3>
+            <p class="abil-data tnum">Pasiva<span class="dot">·</span>Sin enfriamiento<span class="dot">·</span>Al acumular <b>9 esencias</b> cura la próxima oleada</p>
+          </div>
+        </article>
+        <article class="card ability">
+          <div class="abil-icon"><span>Q</span><i class="key">Q</i></div>
+          <div>
+            <h3 class="abil-name">Orbe ilusorio</h3>
+            <p class="abil-data tnum">Enfriamiento <b>7s</b><span class="dot">·</span>Coste <b>55</b><span class="dot">·</span>Rango <b>880</b></p>
+          </div>
+        </article>
+        <article class="card ability">
+          <div class="abil-icon"><span>W</span><i class="key">W</i></div>
+          <div>
+            <h3 class="abil-name">Fuego de zorro</h3>
+            <p class="abil-data tnum">Enfriamiento <b>9s</b><span class="dot">·</span>Coste <b>50</b><span class="dot">·</span>Rango <b>700</b></p>
+          </div>
+        </article>
+        <article class="card ability">
+          <div class="abil-icon"><span>E</span><i class="key">E</i></div>
+          <div>
+            <h3 class="abil-name">Encanto</h3>
+            <p class="abil-data tnum">Enfriamiento <b>11s</b><span class="dot">·</span>Coste <b>60</b><span class="dot">·</span>Rango <b>980</b></p>
+          </div>
+        </article>
+        <article class="card ability">
+          <div class="abil-icon"><span>R</span><i class="key">R · ULT</i></div>
+          <div>
+            <h3 class="abil-name">Ímpetu</h3>
+            <p class="abil-data tnum">Enfriamiento <b>110s</b><span class="dot">·</span>Coste <b>100</b><span class="dot">·</span>Rango <b>450</b></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TAB · BUILD ======== -->
+  <section class="tab-panel" id="panel-build" role="tabpanel" hidden>
+    <div class="cols-2">
+
+      <!-- Runas recomendadas: card #1 -->
+      <div>
+        <h2 class="h-sec" style="margin-bottom:12px">Runas recomendadas</h2>
+        <div class="card rune-card">
+          <div class="badge-pick"><span>Mejor pick</span></div>
+          <div style="display:flex;align-items:flex-start;gap:16px;flex-wrap:wrap">
+            <div class="keystones">
+              <div class="keystone heroic">
+                <div class="sq">A</div><span class="nm">Aery</span>
+              </div>
+              <div class="keystone">
+                <div class="sq">E</div><span class="nm">Electrocutar</span>
+              </div>
+              <div class="keystone">
+                <div class="sq">F</div><span class="nm">Fiebre de fase</span>
+              </div>
+              <div class="keystone">
+                <div class="sq">P</div><span class="nm">Primogolpe</span>
+              </div>
+            </div>
+            <div class="wr-block">
+              <div class="val tnum">53.1%</div>
+              <span class="label label-xs">WR · 12.480 partidas</span>
+            </div>
+          </div>
+          <div class="rune-rows">
+            <span class="label label-xs" style="display:block;padding:10px 0 2px">Hechicería · Dominación</span>
+            <div class="rune-row">
+              <div class="rune-ic"></div>
+              <span class="rune-nm">Banda de flujo de maná</span>
+              <span class="rune-stats tnum">54.2% · 9.870</span>
+            </div>
+            <div class="rune-row">
+              <div class="rune-ic"></div>
+              <span class="rune-nm">Trascendencia</span>
+              <span class="rune-stats tnum">51.8% · 9.412</span>
+            </div>
+            <div class="rune-row">
+              <div class="rune-ic"></div>
+              <span class="rune-nm">Escoriación</span>
+              <span class="rune-stats tnum">50.9% · 8.733</span>
+            </div>
+            <div class="rune-row">
+              <div class="rune-ic"></div>
+              <span class="rune-nm">Cazador del tesoro</span>
+              <span class="rune-stats tnum">53.4% · 7.905</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ítems + orden de habilidades -->
+      <div class="stack" style="gap:24px">
+        <div>
+          <h2 class="h-sec" style="margin-bottom:12px">Build de ítems</h2>
+          <div class="card" style="padding:16px">
+            <div class="items-grid">
+              <div class="item"><div class="sq"><span class="n">1</span></div><span class="nm">Tempestad de Luden</span></div>
+              <div class="item"><div class="sq"><span class="n">2</span></div><span class="nm">Sombrero de Rabadon</span></div>
+              <div class="item"><div class="sq"><span class="n">3</span></div><span class="nm">Reloj de arena de Zhonya</span></div>
+              <div class="item"><div class="sq"><span class="n">4</span></div><span class="nm">Báculo del Vacío</span></div>
+              <div class="item"><div class="sq"><span class="n">5</span></div><span class="nm">Morellonomicón</span></div>
+              <div class="item"><div class="sq"><span class="n">6</span></div><span class="nm">Botas de hechicero</span></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="h-sec" style="margin-bottom:12px">Orden de habilidades</h2>
+          <div class="card" style="padding:16px">
+            <div class="skill-order">
+              <div class="so-step"><div class="sq">Q</div><span class="lv">1</span></div><span class="so-arrow">→</span>
+              <div class="so-step"><div class="sq">Q</div><span class="lv">2</span></div><span class="so-arrow">→</span>
+              <div class="so-step"><div class="sq">W</div><span class="lv">3</span></div><span class="so-arrow">→</span>
+              <div class="so-step"><div class="sq">Q</div><span class="lv">4</span></div><span class="so-arrow">→</span>
+              <div class="so-step"><div class="sq">E</div><span class="lv">5</span></div><span class="so-arrow">→</span>
+              <div class="so-step"><div class="sq">R</div><span class="lv">6</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== TAB · COUNTERS ======== -->
+  <section class="tab-panel" id="panel-counters" role="tabpanel" hidden>
+    <div class="cols-2">
+
+      <div>
+        <h2 class="h-sec" style="margin-bottom:12px">Te ganan <span class="dim">· cuidado</span></h2>
+        <div class="card" style="padding:6px 20px">
+          <div class="counter-list">
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Zed.webp" alt="Zed" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Zed</span>
+              <span class="counter-wr tnum">53.8%</span>
+              <div class="bar worst" style="width:78%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Yasuo.webp" alt="Yasuo" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Yasuo</span>
+              <span class="counter-wr tnum">52.9%</span>
+              <div class="bar" style="width:71%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Akali.webp" alt="Akali" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Akali</span>
+              <span class="counter-wr tnum">52.1%</span>
+              <div class="bar" style="width:65%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Leblanc.webp" alt="LeBlanc" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">LeBlanc</span>
+              <span class="counter-wr tnum">51.6%</span>
+              <div class="bar" style="width:61%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="h-sec" style="margin-bottom:12px">Les ganas <span class="dim">· venta de pick</span></h2>
+        <div class="card" style="padding:6px 20px">
+          <div class="counter-list">
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Annie.webp" alt="Annie" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Annie</span>
+              <span class="counter-wr tnum">46.2%</span>
+              <div class="bar" style="width:18%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Veigar.webp" alt="Veigar" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Veigar</span>
+              <span class="counter-wr tnum">47.0%</span>
+              <div class="bar" style="width:24%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Malphite.webp" alt="Malphite" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Malphite</span>
+              <span class="counter-wr tnum">47.8%</span>
+              <div class="bar" style="width:30%"></div>
+            </div>
+            <div class="counter-row">
+              <div class="portrait"><img src="assets/champs/Anivia.webp" alt="Anivia" onerror="this.style.display='none'"><div class="tint"></div></div>
+              <span class="counter-nm">Anivia</span>
+              <span class="counter-wr tnum">48.4%</span>
+              <div class="bar" style="width:35%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== TAB · GUÍA ======== -->
+  <section class="tab-panel" id="panel-guia" role="tabpanel" hidden>
+    <div class="cols-2">
+      <div class="panel">
+        <h2 class="h-sec" style="margin-bottom:16px">Cómo jugar contra Ahri</h2>
+        <ul class="guide-bullets">
+          <li><b>Esquiva el encanto (E):</b> es su única forma de comprometer. Quédate detrás de minions.</li>
+          <li><b>Su roaming es letal tras nivel 6:</b> avisa a tu equipo con pings cuando desaparezca.</li>
+          <li><b>Compra Control Ward temprano:</b> Ahri abusa de los bushes para encantar.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2 class="h-sec" style="margin-bottom:16px">Momentos de peligro</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <h3 class="tl-title">Nivel 6</h3>
+            <p class="tl-desc">Burst completo con Q+R: con dos cargas de Ímpetu te cierra desde el 70% de vida.</p>
+          </div>
+          <div class="tl-item">
+            <h3 class="tl-title">Mid game</h3>
+            <p class="tl-desc">Flanqueos por lado: desaparece del carril y reaparece por tu espalda.</p>
+          </div>
+          <div class="tl-item">
+            <h3 class="tl-title">Late game</h3>
+            <p class="tl-desc">Busca el flanco sobre tu carry: no te asomes sin visión de su posición.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TAB · TU HISTORIAL ======== -->
+  <section class="tab-panel" id="panel-historial" role="tabpanel" hidden>
+    <div class="match-head">
+      <h2 class="h-sec">Últimas partidas con Ahri</h2>
+      <span class="dot">·</span>
+      <span class="wr tnum">60% WR</span>
+      <span class="dot">·</span>
+      <span class="label">5 partidas</span>
+    </div>
+    <div class="card match-list">
+
+      <div class="match">
+        <span class="result">Victoria</span>
+        <div class="cell"><div class="label label-xs">KDA</div><div class="val tnum">8/2/7</div></div>
+        <div class="cell sub"><div class="label label-xs">CS</div><div class="val tnum">214</div></div>
+        <div class="cell sub"><div class="label label-xs">Oro</div><div class="val tnum">18.2k</div></div>
+        <div class="cell build-mini-cell"><div class="build-mini"><i></i><i></i><i></i></div></div>
+        <div class="queue"><div class="label label-xs">Rankea</div><div class="t tnum">32:14 · ayer</div></div>
+      </div>
+
+      <div class="match loss">
+        <span class="result">Derrota</span>
+        <div class="cell"><div class="label label-xs">KDA</div><div class="val tnum">3/5/9</div></div>
+        <div class="cell sub"><div class="label label-xs">CS</div><div class="val tnum">176</div></div>
+        <div class="cell sub"><div class="label label-xs">Oro</div><div class="val tnum">13.4k</div></div>
+        <div class="cell build-mini-cell"><div class="build-mini"><i></i><i></i><i></i></div></div>
+        <div class="queue"><div class="label label-xs">Rankea</div><div class="t tnum">28:05 · hace 2 días</div></div>
+      </div>
+
+      <div class="match">
+        <span class="result">Victoria</span>
+        <div class="cell"><div class="label label-xs">KDA</div><div class="val tnum">6/1/12</div></div>
+        <div class="cell sub"><div class="label label-xs">CS</div><div class="val tnum">231</div></div>
+        <div class="cell sub"><div class="label label-xs">Oro</div><div class="val tnum">16.8k</div></div>
+        <div class="cell build-mini-cell"><div class="build-mini"><i></i><i></i><i></i></div></div>
+        <div class="queue"><div class="label label-xs">Rankea</div><div class="t tnum">35:41 · hace 4 días</div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <div class="wordmark">
+      <span class="wm">Klify</span>
+      <span class="slash">//</span>
+      <span class="label label-md">Analiza · Mejora · Domina</span>
+    </div>
+    <span class="label label-xs">Datos · Data Dragon · Lolalytics</span>
+  </footer>
+
+</main>
+
+<script>
+  // Tabs: JS mínimo — cada tab muestra su panel
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => {
+        const on = t === tab;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', on);
+      });
+      document.querySelectorAll('.tab-panel').forEach(p => {
+        const on = p.id === 'panel-' + tab.dataset.tab;
+        p.classList.toggle('active', on);
+        if (on) { p.removeAttribute('hidden'); } else { p.setAttribute('hidden', ''); }
+      });
+    });
+  });
+</script>
+</body>
+</html>

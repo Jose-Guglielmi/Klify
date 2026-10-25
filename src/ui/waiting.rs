@@ -19,7 +19,9 @@ const WAITING_SPLASH_URL: &str =
 
 /// Estado del paso 01 del HUD (puro, testeado): (etiqueta, subdetalle).
 ///
-/// - `Disconnected` → "BUSCANDO…" + "Buscando LeagueClientUx".
+/// - `Disconnected` → "BUSCANDO CLIENTE" + "Modo offline disponible: podés
+///   explorar fichas sin el juego abierto." (estado honesto: desde el menú
+///   principal ya se puede usar la app sin el cliente).
 /// - Cliente detectado → "CONECTADO" + "LeagueClientUx". La plataforma
 ///   (`LA2`, ...) viaja en la prop `platform` de la vista y se anexa en el
 ///   render, separada del detalle puro.
@@ -27,8 +29,8 @@ const WAITING_SPLASH_URL: &str =
 pub fn client_status(state: &AppState) -> (String, String) {
     match state {
         AppState::Disconnected => (
-            String::from("BUSCANDO…"),
-            String::from("Buscando LeagueClientUx"),
+            String::from("BUSCANDO CLIENTE"),
+            String::from("Modo offline disponible: podés explorar fichas sin el juego abierto."),
         ),
         AppState::WaitingForChampSelect | AppState::InChampSelect(_) => (
             String::from("CONECTADO"),
@@ -220,8 +222,11 @@ mod tests {
     #[test]
     fn paso_01_segun_estado() {
         let (label, detail) = client_status(&AppState::Disconnected);
-        assert_eq!(label, "BUSCANDO…");
-        assert_eq!(detail, "Buscando LeagueClientUx");
+        assert_eq!(label, "BUSCANDO CLIENTE");
+        assert_eq!(
+            detail,
+            "Modo offline disponible: podés explorar fichas sin el juego abierto."
+        );
 
         let (label, detail) = client_status(&AppState::WaitingForChampSelect);
         assert_eq!(label, "CONECTADO");

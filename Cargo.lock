@@ -2832,6 +2832,7 @@ name = "klipy"
 version = "0.1.0"
 dependencies = [
  "dioxus",
+ "getrandom 0.2.17",
  "irelia",
  "reqwest 0.13.5",
  "serde",

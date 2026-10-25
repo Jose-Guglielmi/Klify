@@ -7,9 +7,9 @@
 //!   (segundo click desfija), igual que el prototipo.
 //! - **Derecha · panel contextual**: con selección → ficha completa del
 //!   hechizo (tecla roja, nombre, descripción, HUD de enfriamiento/costo/
-//!   rango/recurso); sin selección → estado honesto del orden de subida y
-//!   summoners (hoy `Unavailable`: "fuente temporalmente caída"; cuando la
-//!   fuente reviva el dato fluye solo).
+//!   rango/recurso); sin selección → estado honesto del orden de subida:
+//!   spinner solo mientras el análisis corre; resuelto sin datos → estado
+//!   vacío definitivo ("sin datos de skill order", cero datos fabricados).
 //!
 //! [`skill_items`] y [`spell_stats`] son la derivación pura (testeada): el
 //! RSX solo pinta. Sin detalle (Data Dragon caído o análisis en curso) la
@@ -94,6 +94,16 @@ pub fn skill_row_classes(is_live: bool, is_pinned: bool) -> String {
         classes.push_str(" cs-skill-row--pinned");
     }
     classes
+}
+
+/// ¿Hay skill order usable para pintar? (puro, testeado): solo una fuente
+/// con prioridad no vacía cuenta como dato. `None` o el valor "sin datos"
+/// ([`SkillOrder::unavailable`]) → `false`, que la UI pinta como estado
+/// vacío definitivo (nunca como carga en curso; QA: panel sin spinner
+/// infinito cuando el dataset no trae kit para el champ/patch).
+#[must_use]
+pub fn skill_order_available(skills: Option<&SkillOrder>) -> bool {
+    matches!(skills, Some(skills) if !skills.priority.is_empty())
 }
 
 /// Tab HABILIDADES. Re-renderiza cuando el análisis publica.
@@ -289,15 +299,20 @@ fn SpellSheet(
     }
 }
 
-/// Panel "// ORDEN DE SUBIDA" con estado honesto: hoy la fuente está caída
-/// (`Unavailable` → "fuente temporalmente caída"); si algún día reviva, la
-/// prioridad fluye sin cambios de UI.
+/// Panel "// ORDEN DE SUBIDA" con estado honesto en tres ramas: spinner solo
+/// mientras el análisis del pick corre (`loading` real); prioridad visible
+/// con dato verificado; y ya resuelto sin skill order (`None` o
+/// [`SkillOrder::unavailable`]) → estado vacío definitivo "sin datos", no
+/// carga en curso (QA: el dataset no trae kit para este champ/patch, no es
+/// una caída temporal). Si una fuente verificada expone el dato algún día,
+/// la prioridad fluye sin cambios de UI.
 #[component]
 fn OrderBlock(skills: Option<SkillOrder>, loading: bool) -> Element {
-    let (priority, source_available) = match skills {
-        Some(ref skills) if !skills.priority.is_empty() => (skills.priority.clone(), true),
-        _ => (Vec::new(), false),
-    };
+    let source_available = skill_order_available(skills.as_ref());
+    let priority = skills
+        .as_ref()
+        .map(|skills| skills.priority.clone())
+        .unwrap_or_default();
     let source = match skills.map(|skills| skills.source) {
         Some(SkillSource::Lolalytics) => "LOLALYTICS",
         Some(SkillSource::Ugg) => "U.GG",
@@ -334,13 +349,15 @@ fn OrderBlock(skills: Option<SkillOrder>, loading: bool) -> Element {
                     }
                 }
             } else {
+                // Resuelto sin skill order: estado vacío definitivo, no
+                // carga en curso (cero datos fabricados).
                 div { class: "cs-unavailable mt-4",
-                    span { class: "label label-md t-error", "Orden de subida no disponible" }
-                    p { class: "cs-unavailable-reason", "fuente temporalmente caída" }
-                }
-                div { class: "cs-unavailable mt-3",
-                    span { class: "label label-md t-error", "Summoners no disponibles" }
-                    p { class: "cs-unavailable-reason", "fuente temporalmente caída" }
+                    span { class: "label label-md t-dim",
+                        "Sin datos de skill order"
+                    }
+                    p { class: "cs-unavailable-reason",
+                        "El dataset no trae kit para este campeón en este patch."
+                    }
                 }
             }
 
@@ -491,5 +508,22 @@ mod tests {
             skill_row_classes(false, true),
             "cs-skill-row cs-skill-row--pinned"
         );
+    }
+
+    /// `skill_order_available`: solo dato con fuente y prioridad cuenta;
+    /// `None` y el valor "sin datos" son estado vacío definitivo (la UI no
+    /// los trata como carga en curso).
+    #[test]
+    fn skill_order_available_distingue_dato_de_vacio() {
+        assert!(!skill_order_available(None));
+        assert!(!skill_order_available(Some(&SkillOrder::unavailable())));
+
+        let listo = SkillOrder {
+            source: SkillSource::Lolalytics,
+            priority: vec!['Q', 'W', 'E'],
+            levels: None,
+            summoners: None,
+        };
+        assert!(skill_order_available(Some(&listo)));
     }
 }

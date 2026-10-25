@@ -391,6 +391,8 @@ mod tests {
             perk_ids: vec![8005, 8008, 9103, 8014, 8126, 8139],
             stat_shards: vec![5005, 5008, 5001],
             keystone_id: Some(8005),
+            estilo: None,
+            sintetizada: false,
         }
     }
 

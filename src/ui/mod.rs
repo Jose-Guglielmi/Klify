@@ -1,6 +1,8 @@
 //! Componentes de interfaz.
 //!
 //! - [`shell`]: header KLIFY + footer HUD compartidos por las tres vistas.
+//! - [`vivo`]: vista VIVO (espejo de la partida en curso vía Live Client
+//!   Data API); se visita desde la sidebar.
 //! - [`waiting`]: vista "SIN CLIENTE" (pantalla de espera del prototipo).
 //! - [`profile`]: vista PERFIL (hero + top champs + historial + modales).
 //! - [`champ_select`]: vista champ select rediseñada (FASE 11b-2a): equipo
@@ -20,7 +22,9 @@ pub mod champ_display;
 pub mod champ_select;
 pub mod format;
 pub mod match_detail;
+pub mod menu;
 pub mod profile;
 pub mod recommendations;
 pub mod shell;
+pub mod vivo;
 pub mod waiting;

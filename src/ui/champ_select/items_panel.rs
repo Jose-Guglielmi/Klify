@@ -19,6 +19,15 @@
 //! o `Unavailable`) → "Build no disponible · {razón}" con la razón corta
 //! del analizador. Toda la derivación de filas es pura y testeada
 //! ([`item_rows`], [`row_blurb`], [`truncate_line`]); el RSX solo pinta.
+//!
+//! Zona de acción (al pie, solo con build): crea un ITEM SET en el cliente
+//! LCU con el build destacado — el mismo que se muestra — vía
+//! [`crate::lcu::actions::cargar_item_set`] (el set se llama "Klify ·
+//! {campeón}", detalle interno de actions). Copy de los estados
+//! ([`copy_de_carga`]): "CARGAR AL JUEGO" → "CARGANDO…" → éxito "CARGADO ✓"
+//! con la nota de dónde aparece en la tienda, o error "REINTENTAR" con el
+//! motivo corto. Sin cliente conectado, el botón queda deshabilitado con
+//! el chip "CLIENTE NO CONECTADO" (mismo patrón que el botón de runas).
 
 use std::sync::Arc;
 
@@ -26,10 +35,12 @@ use dioxus::prelude::*;
 
 use crate::data_dragon::item::{item_name, ItemCatalog};
 use crate::data_dragon::models::ChampionCatalog;
+use crate::lcu::actions::cargar_item_set;
+use crate::lcu::events::es_placeholder;
 use crate::stats::source::analysis::{
     analysis_failure_reason, analysis_in_progress, analysis_items, AnalysisState,
 };
-use crate::stats::source::items::ItemStat;
+use crate::stats::source::items::{ItemBuild, ItemStat};
 use crate::ui::format::{format_thousands, strip_html};
 use crate::ui::recommendations::format_winrate;
 
@@ -112,13 +123,87 @@ pub fn row_games(games: u64) -> String {
     format_thousands(i64::try_from(games).unwrap_or(i64::MAX))
 }
 
-/// Tab ITEMS.
+/// Tope de caracteres del motivo de error de la carga (es una nota corta
+/// junto al botón, no un párrafo; el motivo completo queda en el log).
+const MOTIVO_MAX_CHARS: usize = 60;
+
+/// Estado de la creación del item set en el cliente LCU (Signal local del
+/// panel; se reinicia cambiando de tab porque el componente se desmonta).
+#[derive(Clone, Debug, PartialEq, Eq)]
+enum Carga {
+    /// Sin acción todavía (estado inicial).
+    Inactiva,
+    /// Spawn en curso contra el LCU.
+    Cargando,
+    /// El set quedó creado en el cliente.
+    Ok,
+    /// El LCU rechazó la carga o no hubo cliente (motivo corto para la UI).
+    Error(String),
+}
+
+/// Copy y flag `disabled` del botón según el estado de la carga (puro,
+/// testeado). El flag solo cubre la parte del estado: sin cliente
+/// conectado el botón se deshabilita además desde el panel.
+#[must_use]
+fn copy_de_carga(carga: &Carga) -> (&'static str, bool) {
+    match carga {
+        Carga::Inactiva => ("CARGAR AL JUEGO", false),
+        Carga::Cargando => ("CARGANDO…", true),
+        Carga::Ok => ("CARGADO ✓", true),
+        Carga::Error(_) => ("REINTENTAR", false),
+    }
+}
+
+/// Clase del botón según el estado (puro, testeado): en éxito agrega
+/// `.cs-apply-ok`. En error el botón queda primary ("REINTENTAR") y la
+/// clase `.cs-apply-err` va en el motivo corto.
+#[must_use]
+fn clase_de_carga(carga: &Carga) -> &'static str {
+    match carga {
+        Carga::Ok => "btn-primary cs-apply-ok",
+        _ => "btn-primary",
+    }
+}
+
+/// Spawn de la creación del item set (función libre, no closure: así el
+/// `onclick` es `Fn` y el handler es testeable/compartible, mismo criterio
+/// que `spawn_match_fetch`). Mapea el `Result` de
+/// [`cargar_item_set`] al Signal [`Carga`]; el handle del cliente lo
+/// resuelve actions por dentro (`client_handle()`).
+fn spawn_cargar_item_set(
+    mut carga: Signal<Carga>,
+    build: Arc<ItemBuild>,
+    champion_id: i64,
+    champ_nombre: String,
+) {
+    // Guard de placeholder: "Campeón {id}" = catálogo aún sin resolver; el
+    // set quedaría con un título basura en el cliente.
+    if es_placeholder(&champ_nombre) {
+        carga.set(Carga::Error(String::from(
+            "el catálogo todavía está resolviendo el campeón; esperá un segundo y probá de nuevo",
+        )));
+        return;
+    }
+    carga.set(Carga::Cargando);
+    spawn(async move {
+        match cargar_item_set(&build, champion_id, &champ_nombre).await {
+            Ok(()) => carga.set(Carga::Ok),
+            Err(motivo) => carga.set(Carga::Error(motivo)),
+        }
+    });
+}
+
+/// Tab ITEMS. `client_connected` habilita la zona de acción (creación del
+/// item set en el LCU) y `champ_nombre` nombra la sección del set en la
+/// tienda ("Klify · {nombre}", lo arma actions por dentro).
 #[component]
 pub(crate) fn ItemsPanel(
     analysis: ReadSignal<AnalysisState>,
     champion_id: i64,
     catalog: ReadSignal<Option<ChampionCatalog>>,
     items: ReadSignal<Option<Arc<ItemCatalog>>>,
+    client_connected: bool,
+    champ_nombre: String,
 ) -> Element {
     // Snapshot corto: el guard no cruza la construcción del rsx.
     let snapshot: AnalysisState = analysis.read().clone();
@@ -131,6 +216,7 @@ pub(crate) fn ItemsPanel(
         .as_ref()
         .map(|data| data.version.clone())
         .unwrap_or_default();
+    let carga = use_signal(|| Carga::Inactiva);
 
     rsx! {
         div { class: "cs-items",
@@ -156,6 +242,13 @@ pub(crate) fn ItemsPanel(
                                 ItemSection { label: "Build Core", rows: core, numbered: true }
                                 ItemSection { label: "Situacionales", rows: situational, numbered: false }
                             }
+                            ItemsAction {
+                                item_build: build.clone(),
+                                champion_id,
+                                champ_nombre: champ_nombre.clone(),
+                                client_connected,
+                                carga,
+                            }
                         }
                     }
                 }
@@ -177,6 +270,72 @@ pub(crate) fn ItemsPanel(
                         }
                     }
                 }
+            }}
+        }
+    }
+}
+
+/// Zona de acción al pie del panel: crea el item set "Klify · {champ}" en
+/// el cliente con el build destacado (`item_build`, el mismo que se
+/// muestra). Sin cliente: botón deshabilitado + chip "CLIENTE NO
+/// CONECTADO". Con cliente: el copy sigue a [`copy_de_carga`] y la nota
+/// lateral muestra dónde aparece el set (éxito) o el motivo corto
+/// truncado (error).
+#[component]
+fn ItemsAction(
+    item_build: Arc<ItemBuild>,
+    champion_id: i64,
+    champ_nombre: String,
+    client_connected: bool,
+    carga: Signal<Carga>,
+) -> Element {
+    // Snapshot corto: el guard no cruza la construcción del rsx.
+    let carga_snapshot: Carga = carga.read().clone();
+    let (label, carga_disabled) = copy_de_carga(&carga_snapshot);
+    // Copias propias para el closure del click: cada spawn necesita valores
+    // 'static (puede reintentarse) y los props originales quedan vivos para
+    // el rsx (la nota de éxito interpola `champ_nombre`).
+    let build_para_click = item_build.clone();
+    let champ_para_click = champ_nombre.clone();
+
+    rsx! {
+        div { class: "cs-page-action",
+            button {
+                class: clase_de_carga(&carga_snapshot),
+                disabled: !client_connected || carga_disabled,
+                "type": "button",
+                onclick: move |_| {
+                    spawn_cargar_item_set(
+                        carga,
+                        build_para_click.clone(),
+                        champion_id,
+                        champ_para_click.clone(),
+                    );
+                },
+                "{label}"
+            }
+            {match (client_connected, &carga_snapshot) {
+                (false, _) => rsx! {
+                    span { class: "cs-soon",
+                        span { class: "dot-pulse", "style": "width: 8px; height: 8px; border-radius: 9999px; background: var(--silver);" }
+                        span { class: "label t-error", "CLIENTE NO CONECTADO" }
+                    }
+                },
+                (true, Carga::Ok) => rsx! {
+                    span { class: "cs-soon",
+                        span { class: "label t-dim",
+                            "Aparece en la tienda, sección Klify · {champ_nombre}"
+                        }
+                    }
+                },
+                (true, Carga::Error(motivo)) => rsx! {
+                    span { class: "cs-soon",
+                        span { class: "label cs-apply-err",
+                            "{truncate_line(motivo, MOTIVO_MAX_CHARS)}"
+                        }
+                    }
+                },
+                _ => rsx! {},
             }}
         }
     }
@@ -367,5 +526,44 @@ mod tests {
         assert_eq!(row_games(0), "0");
         assert_eq!(row_games(48_200), "48.200");
         assert_eq!(row_games(u64::MAX), format_thousands(i64::MAX));
+    }
+
+    /// Copy del botón por estado: label esperado y disabled solo mientras
+    /// carga o ya cargado (en error el botón vuelve a habilitarse para
+    /// reintentar).
+    #[test]
+    fn copy_de_carga_recorre_los_estados() {
+        assert_eq!(copy_de_carga(&Carga::Inactiva), ("CARGAR AL JUEGO", false));
+        assert_eq!(copy_de_carga(&Carga::Cargando), ("CARGANDO…", true));
+        assert_eq!(copy_de_carga(&Carga::Ok), ("CARGADO ✓", true));
+        assert_eq!(
+            copy_de_carga(&Carga::Error(String::from("boom"))),
+            ("REINTENTAR", false)
+        );
+    }
+
+    /// Clase del botón: solo el éxito agrega la clase de OK; el resto de
+    /// los estados queda en primary.
+    #[test]
+    fn clase_de_carga_marca_solo_el_exito() {
+        assert_eq!(clase_de_carga(&Carga::Inactiva), "btn-primary");
+        assert_eq!(clase_de_carga(&Carga::Cargando), "btn-primary");
+        assert_eq!(clase_de_carga(&Carga::Ok), "btn-primary cs-apply-ok");
+        assert_eq!(
+            clase_de_carga(&Carga::Error(String::from("boom"))),
+            "btn-primary"
+        );
+    }
+
+    /// El motivo de error se muestra truncado a una línea corta (el tope
+    /// de la nota, no el de los blurbs de ítem).
+    #[test]
+    fn motivo_de_error_se_trunca_corto() {
+        let largo = "x".repeat(MOTIVO_MAX_CHARS + 40);
+        let truncado = truncate_line(&largo, MOTIVO_MAX_CHARS);
+        assert!(truncado.chars().count() <= MOTIVO_MAX_CHARS);
+
+        let corto = String::from("cliente no conectado");
+        assert_eq!(truncate_line(&corto, MOTIVO_MAX_CHARS), corto);
     }
 }

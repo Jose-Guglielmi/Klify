@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Klify — HUB / Menú principal (preview)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* ============ TOKENS KLIFY ============ */
+  :root{
+    --primary:#ff0033;
+    --on-primary:#ffffff;
+    --primary-hover:#ff1a4d;
+    --primary-pressed:#cc0029;
+    --primary-container:#440011;
+    --on-primary-container:#ffd9de;
+    --background:#0b0e14;
+    --surface:#10141d;
+    --sc-lowest:#090c11;
+    --sc-low:#121722;
+    --sc:#1f2937;
+    --sc-high:#2a3648;
+    --sc-highest:#354358;
+    --on-surface:#e5e7eb;
+    --on-surface-variant:#9aa4b2;
+    --outline:#8b95a3;
+    --outline-variant:#2f3a4a;
+    --error:#ffa198;
+    --status-ok:#86c39c; /* punto verde-slate */
+    --font-display:'Barlow Condensed',sans-serif;
+    --font-ui:'Inter',sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:var(--background);}
+  body{
+    font-family:var(--font-ui);
+    color:var(--on-surface);
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    padding:48px 24px 64px;
+  }
+  .tnum{font-variant-numeric:tabular-nums;}
+  .container{max-width:1024px;margin:0 auto;}
+
+  /* ============ ESQUINAS CORTADAS (una vez por zona, edge 1px) ============ */
+  .cut{
+    --cutsize:16px;
+    background:var(--outline-variant);
+    padding:1px;
+    clip-path:polygon(0 0, calc(100% - var(--cutsize)) 0, 100% var(--cutsize), 100% 100%, 0 100%);
+  }
+  .cut-in{
+    height:100%;
+    background:var(--sc);
+    clip-path:polygon(0 0, calc(100% - var(--cutsize)) 0, 100% var(--cutsize), 100% 100%, 0 100%);
+  }
+
+  /* ============ LABELS ============ */
+  .label{
+    font:600 11px var(--font-ui);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--on-surface-variant);
+  }
+
+  /* ============ HEADER ============ */
+  header{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:24px;
+    padding-bottom:24px;
+    border-bottom:1px solid var(--outline-variant);
+  }
+  .brand{display:flex;flex-direction:column;gap:8px;}
+  .wordmark-row{display:flex;align-items:center;}
+  .wordmark{
+    font:italic 700 46px/1 var(--font-display);
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    color:var(--on-surface);
+  }
+  .slashes{
+    display:inline-flex;
+    align-items:flex-end;
+    gap:3px;
+    margin-left:14px;
+    transform:skewX(-15deg);
+  }
+  .slashes i{display:block;width:3px;height:32px;background:var(--primary);}
+  .slashes i:nth-child(2){height:32px;}
+  .slashes i:nth-child(3){height:20px;opacity:.55;}
+  .status{display:flex;gap:12px;flex-wrap:wrap;}
+  .badge{
+    transform:skewX(-15deg);
+    background:var(--sc-low);
+    border:1px solid var(--outline-variant);
+    padding:7px 16px;
+  }
+  .badge-in{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    transform:skewX(15deg);
+    font:600 11px var(--font-ui);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--on-surface-variant);
+    white-space:nowrap;
+  }
+  .badge strong{color:var(--on-surface);font-weight:600;}
+  .dot{width:7px;height:7px;border-radius:9999px;background:var(--status-ok);flex:none;}
+  .dot-off{background:transparent;border:1.5px solid var(--error);width:8px;height:8px;}
+
+  /* ============ BANNER LCU (único elemento con glow) ============ */
+  .banner-wrap{margin-top:32px;filter:drop-shadow(0 0 18px rgba(255,0,51,.22)) drop-shadow(0 0 4px rgba(255,0,51,.20));}
+  .cut--banner{--cutsize:16px;background:var(--primary);}
+  .banner-in{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    padding:20px 24px;
+    background:linear-gradient(90deg,var(--sc-low),var(--surface));
+  }
+  .banner-copy{display:flex;flex-direction:column;gap:4px;}
+  .banner-copy .label{color:var(--on-surface-variant);}
+  .banner-title{
+    font:italic 700 30px/1.05 var(--font-display);
+    letter-spacing:.01em;
+    text-transform:uppercase;
+    color:var(--on-surface);
+  }
+  .btn-primary{
+    display:inline-block;
+    background:var(--primary);
+    color:var(--on-primary);
+    border:0;
+    cursor:pointer;
+    font:700 20px/1 var(--font-display);
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    padding:14px 32px;
+    margin-left:auto;
+    flex:none;
+    clip-path:polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+    transition:background .12s ease, transform .12s ease;
+  }
+  .btn-primary:hover{background:var(--primary-hover);}
+  .btn-primary:active{background:var(--primary-pressed);transform:translateY(1px);}
+
+  /* ============ CARDS LAUNCHER ============ */
+  .launcher{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;align-items:stretch;}
+  .card-cut{--cutsize:16px;}
+  .card-in{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    padding:24px;
+    background:var(--sc);
+  }
+  .card-title{
+    font:700 28px/1.1 var(--font-display);
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    color:var(--on-surface);
+  }
+  .card-sub{font:400 14px/1.5 var(--font-ui);color:var(--on-surface-variant);margin-top:-8px;}
+  .card-head{display:flex;flex-direction:column;gap:8px;}
+
+  /* inputs */
+  .input-row{display:flex;gap:8px;}
+  input[type="text"]{
+    flex:1;
+    min-width:0;
+    background:var(--sc-lowest);
+    border:1px solid var(--outline-variant);
+    color:var(--on-surface);
+    font:400 14px var(--font-ui);
+    padding:12px 14px;
+    border-radius:0;
+    outline:none;
+    transition:border-color .12s ease, box-shadow .12s ease;
+  }
+  input[type="text"]::placeholder{color:var(--outline);}
+  input[type="text"]:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(255,0,51,.10);}
+  .btn-primary.btn-sm{font-size:18px;padding:12px 24px;clip-path:none;margin-left:0;}
+
+  /* dropdown perfiles */
+  .dropdown{
+    background:var(--sc-lowest);
+    border:1px solid var(--outline-variant);
+  }
+  .dropdown .label{display:block;padding:10px 14px 4px;color:var(--outline);font-size:10px;}
+  .dd-row{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:10px 14px;
+    cursor:pointer;
+    transition:background .12s ease;
+  }
+  .dd-row:hover{background:var(--sc-low);}
+  .dd-row + .dd-row{border-top:1px solid var(--outline-variant);}
+  .dd-icon{
+    width:36px;height:36px;flex:none;
+    background:linear-gradient(135deg,#7a0020 0%,#0b0e14 80%);
+    border:1px solid var(--outline-variant);
+    position:relative;overflow:hidden;
+  }
+  .dd-icon::after{content:"";position:absolute;inset:0;background:var(--primary);mix-blend-mode:multiply;opacity:.18;}
+  .dd-row:nth-child(3) .dd-icon{background:linear-gradient(60deg,#440011 0%,#121722 85%);}
+  .dd-row:nth-child(4) .dd-icon{background:linear-gradient(160deg,#ff0033 0%,#090c11 75%);}
+  .dd-name{font:600 14px var(--font-ui);color:var(--on-surface);}
+  .dd-meta{font:400 13px var(--font-ui);color:var(--on-surface-variant);}
+  .dd-arrow{margin-left:auto;color:var(--outline);font:600 16px var(--font-ui);}
+
+  /* grid campeones */
+  .champ-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:12px 8px;
+    margin-top:auto;
+  }
+  .champ{display:flex;flex-direction:column;gap:6px;cursor:pointer;}
+  .champ-media{
+    position:relative;
+    aspect-ratio:4/5;
+    overflow:hidden;
+    border:1px solid var(--outline-variant);
+    background:linear-gradient(135deg,var(--primary-container) 0%,#0b0e14 75%);
+  }
+  .champ-media img{
+    position:absolute;inset:0;
+    width:100%;height:100%;object-fit:cover;object-position:top;
+    filter:grayscale(1) contrast(1.1) brightness(.92);
+    transform:scale(1.001);
+    transition:filter .18s ease, transform .18s ease;
+    display:block;
+  }
+  .champ-tint{ /* capa roja multiply */
+    position:absolute;inset:0;
+    background:var(--primary);
+    mix-blend-mode:multiply;
+    opacity:.20;
+    transition:opacity .18s ease;
+  }
+  .champ-shade{ /* degradado negro inferior */
+    position:absolute;inset:0;
+    background:linear-gradient(to top, rgba(7,10,14,.92) 0%, rgba(7,10,14,.25) 45%, rgba(7,10,14,0) 70%);
+  }
+  /* corner brackets en L (2px, 16px) — solo activo / hover */
+  .champ-media::before,
+  .champ-media::after{
+    content:"";
+    position:absolute;
+    width:16px;height:16px;
+    border:2px solid var(--primary);
+    opacity:0;
+    transition:opacity .15s ease;
+    z-index:3;
+  }
+  .champ-media::before{top:4px;left:4px;border-right:none;border-bottom:none;}
+  .champ-media::after{bottom:4px;right:4px;border-left:none;border-top:none;}
+  .champ:hover .champ-media img,
+  .champ.is-active .champ-media img{
+    filter:grayscale(.15) contrast(1.05) brightness(1);
+    transform:scale(1.06);
+  }
+  .champ:hover .champ-tint,
+  .champ.is-active .champ-tint{opacity:.05;}
+  .champ:hover .champ-media::before,
+  .champ:hover .champ-media::after,
+  .champ.is-active .champ-media::before,
+  .champ.is-active .champ-media::after{opacity:1;}
+  .champ-name{
+    font:italic 600 13px/1 var(--font-display);
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--on-surface-variant);
+    text-align:center;
+    transition:color .15s ease;
+  }
+  .champ:hover .champ-name,
+  .champ.is-active .champ-name{color:var(--on-surface);}
+
+  /* ============ ACCESOS RÁPIDOS ============ */
+  .quick{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;margin-top:24px;align-items:stretch;}
+  .profile-card{--cutsize:14px;}
+  .profile-in{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:16px 24px;
+    background:var(--sc-low);
+    cursor:pointer;
+    transition:background .15s ease;
+  }
+  .profile-in:hover{background:var(--sc);}
+  .profile-ic{
+    width:40px;height:40px;flex:none;
+    display:grid;place-items:center;
+    background:var(--sc-lowest);
+    border:1px solid var(--outline-variant);
+  }
+  .profile-copy{display:flex;flex-direction:column;gap:2px;}
+  .profile-title{font:700 20px/1 var(--font-display);letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface);}
+  .profile-sub{font:400 13px var(--font-ui);color:var(--on-surface-variant);}
+  .profile-arrow{margin-left:auto;font:600 20px var(--font-ui);color:var(--on-surface-variant);transition:transform .15s ease,color .15s ease;}
+  .profile-in:hover .profile-arrow{transform:translateX(4px);color:var(--on-surface);}
+  .recent{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+    padding:16px 0;
+  }
+  .chip{
+    background:var(--sc-high);
+    color:var(--on-surface-variant);
+    border:0;
+    border-radius:9999px;
+    font:600 12px var(--font-ui);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    padding:8px 18px;
+    cursor:pointer;
+    transition:background .12s ease,color .12s ease;
+  }
+  .chip:hover{background:var(--sc-highest);color:var(--on-surface);}
+
+  /* ============ FOOTER ============ */
+  footer{
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid var(--outline-variant);
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  footer .label{color:var(--outline);}
+
+  /* ============ GALERÍA DE ESTADOS ============ */
+  .gallery{
+    margin-top:64px;
+    border:1px dashed var(--outline-variant);
+    background:var(--surface);
+    padding:32px;
+  }
+  .gallery-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+  .gallery-title{font:700 22px/1 var(--font-display);letter-spacing:.04em;text-transform:uppercase;color:var(--on-surface);}
+  .gallery-note{font:400 13px var(--font-ui);color:var(--on-surface-variant);}
+  .gallery-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;align-items:start;}
+  .state-cap{margin-top:12px;color:var(--outline);font-size:10px;}
+  .state-b{
+    background:var(--background);
+    border:1px solid var(--outline-variant);
+    padding:32px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:118px;
+  }
+  .badge--error{
+    background:rgba(255,161,152,.08);
+    border-color:rgba(255,161,152,.45);
+  }
+  .badge--error .badge-in{color:var(--error);}
+  .pulse{animation:pulse 1.6s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
+  .live-time{font:600 16px var(--font-ui);color:var(--on-surface);letter-spacing:.02em;}
+  .banner-row{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;}
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width:900px){
+    header{flex-direction:column;align-items:flex-start;}
+    .launcher,.quick,.gallery-grid{grid-template-columns:1fr;}
+    .banner-in{flex-direction:column;align-items:stretch;text-align:left;}
+    .btn-primary{margin-left:0;}
+    .champ-grid{grid-template-columns:repeat(5,1fr);}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ============ 1 · HEADER ============ -->
+  <header>
+    <div class="brand">
+      <div class="wordmark-row">
+        <span class="wordmark">Klify</span>
+        <span class="slashes" aria-hidden="true"><i></i><i></i><i></i></span>
+      </div>
+      <span class="label">Analiza · Mejora · Domina</span>
+    </div>
+    <div class="status">
+      <div class="badge"><span class="badge-in"><i class="dot"></i><strong>LCU Conectado</strong></span></div>
+      <div class="badge"><span class="badge-in">Parch <span class="tnum" style="color:var(--on-surface)">16.19</span></span></div>
+      <div class="badge"><span class="badge-in">Riot API OK</span></div>
+    </div>
+  </header>
+
+  <!-- ============ 2 · BANNER ALERTA LCU (único glow de la pantalla) ============ -->
+  <div class="banner-wrap">
+    <div class="cut cut--banner">
+      <div class="cut-in banner-in">
+        <div class="banner-copy">
+          <span class="label">Champ Select Detectado</span>
+          <span class="banner-title">Ahri · Mid</span>
+        </div>
+        <button class="btn-primary">Entrar →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 3 · CARDS LAUNCHER ============ -->
+  <section class="launcher">
+
+    <!-- PERFILES -->
+    <div class="cut card-cut">
+      <div class="cut-in card-in">
+        <div class="card-head">
+          <h2 class="card-title">Perfiles</h2>
+          <p class="card-sub">Busca cualquier invocador por Riot ID</p>
+        </div>
+        <div class="input-row">
+          <input type="text" placeholder="Nombre#TAG — ej. Zerkilo#EUW" id="summoner-input">
+          <button class="btn-primary btn-sm">Buscar</button>
+        </div>
+        <div class="dropdown">
+          <span class="label">Resultados</span>
+          <div class="dd-row">
+            <span class="dd-icon"></span>
+            <span class="dd-name">Zerkilo#EUW</span>
+            <span class="dd-meta tnum">· Nivel 312</span>
+            <span class="dd-arrow">→</span>
+          </div>
+          <div class="dd-row">
+            <span class="dd-icon"></span>
+            <span class="dd-name">Kata312#EUW</span>
+            <span class="dd-meta tnum">· Nivel 87</span>
+            <span class="dd-arrow">→</span>
+          </div>
+          <div class="dd-row">
+            <span class="dd-icon"></span>
+            <span class="dd-name">Zerkilo#LAN</span>
+            <span class="dd-meta tnum">· Nivel 45</span>
+            <span class="dd-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAMPEONES -->
+    <div class="cut card-cut">
+      <div class="cut-in card-in">
+        <div class="card-head">
+          <h2 class="card-title">Campeones</h2>
+          <p class="card-sub">Explora fichas, builds y counters</p>
+        </div>
+        <input type="text" placeholder="Buscar campeón…" id="champ-input">
+        <div class="champ-grid" id="champ-grid">
+          <div class="champ is-active" data-name="ahri">
+            <div class="champ-media">
+              <img src="assets/champs/Ahri.webp" alt="Ahri" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Ahri</span>
+          </div>
+          <div class="champ" data-name="annie">
+            <div class="champ-media">
+              <img src="assets/champs/Annie.webp" alt="Annie" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Annie</span>
+          </div>
+          <div class="champ" data-name="akali">
+            <div class="champ-media">
+              <img src="assets/champs/Akali.webp" alt="Akali" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Akali</span>
+          </div>
+          <div class="champ" data-name="yasuo">
+            <div class="champ-media">
+              <img src="assets/champs/Yasuo.webp" alt="Yasuo" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Yasuo</span>
+          </div>
+          <div class="champ" data-name="zed">
+            <div class="champ-media">
+              <img src="assets/champs/Zed.webp" alt="Zed" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Zed</span>
+          </div>
+          <div class="champ" data-name="lux">
+            <div class="champ-media">
+              <img src="assets/champs/Lux.webp" alt="Lux" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Lux</span>
+          </div>
+          <div class="champ" data-name="jinx">
+            <div class="champ-media">
+              <img src="assets/champs/Jinx.webp" alt="Jinx" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Jinx</span>
+          </div>
+          <div class="champ" data-name="thresh">
+            <div class="champ-media">
+              <img src="assets/champs/Thresh.webp" alt="Thresh" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Thresh</span>
+          </div>
+          <div class="champ" data-name="darius">
+            <div class="champ-media">
+              <img src="assets/champs/Darius.webp" alt="Darius" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Darius</span>
+          </div>
+          <div class="champ" data-name="lee sin">
+            <div class="champ-media">
+              <img src="assets/champs/LeeSin.webp" alt="Lee Sin" onerror="this.style.display='none'">
+              <span class="champ-tint"></span><span class="champ-shade"></span>
+            </div>
+            <span class="champ-name">Lee Sin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · ACCESOS RÁPIDOS ============ -->
+  <section class="quick">
+    <div class="cut profile-card">
+      <div class="cut-in profile-in">
+        <span class="profile-ic">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9aa4b2" stroke-width="2" stroke-linecap="square">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"></path>
+          </svg>
+        </span>
+        <span class="profile-copy">
+          <span class="profile-title">Mi Perfil</span>
+          <span class="profile-sub">Ver tu perfil del cliente</span>
+        </span>
+        <span class="profile-arrow">→</span>
+      </div>
+    </div>
+    <div class="recent">
+      <span class="label">Recientes</span>
+      <button class="chip">Ahri</button>
+      <button class="chip">Annie</button>
+      <button class="chip">Akali</button>
+    </div>
+  </section>
+
+  <!-- ============ 5 · FOOTER ============ -->
+  <footer>
+    <span class="label">Klify · Analiza · Mejora · Domina</span>
+    <span class="label tnum">v0.4 · datos: Lolalytics · U.GG · Riot API</span>
+  </footer>
+
+  <!-- ============ 6 · GALERÍA DE ESTADOS (revisión de diseño) ============ -->
+  <section class="gallery">
+    <div class="gallery-head">
+      <h2 class="gallery-title">Galería de estados</h2>
+      <span class="gallery-note">— variantes del banner y del badge de conexión, para revisión</span>
+    </div>
+    <div class="gallery-grid">
+
+      <!-- (a) partida en vivo -->
+      <div>
+        <div class="banner-wrap" style="margin-top:0;">
+          <div class="cut cut--banner">
+            <div class="cut-in banner-in" style="padding:16px 20px;">
+              <div class="banner-copy">
+                <span class="label"><i class="dot pulse" style="display:inline-block;background:var(--primary);vertical-align:middle;margin-right:6px;"></i>Partida en Vivo Detectada</span>
+                <span class="banner-row">
+                  <span class="banner-title" style="font-size:26px;">Ranked</span>
+                  <span class="live-time tnum">12:43</span>
+                </span>
+              </div>
+              <button class="btn-primary">Entrar →</button>
+            </div>
+          </div>
+        </div>
+        <span class="label state-cap">A · Alerta de partida en vivo (ranked, timer tabular en Inter)</span>
+      </div>
+
+      <!-- (b) LCU desconectado -->
+      <div>
+        <div class="state-b">
+          <div class="badge badge--error">
+            <span class="badge-in"><i class="dot dot-off"></i>LCU Desconectado</span>
+          </div>
+        </div>
+        <span class="label state-cap">B · Estado LCU desconectado (error #ffa198, punto hueco)</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  // Filtro mínimo del grid de campeones (solo para revisión del prototipo)
+  var champInput = document.getElementById('champ-input');
+  if (champInput) {
+    champInput.addEventListener('input', function () {
+      var v = champInput.value.trim().toLowerCase();
+      document.querySelectorAll('.champ').forEach(function (c) {
+        c.style.display = c.getAttribute('data-name').indexOf(v) !== -1 ? '' : 'none';
+      });
+    });
+  }
+</script>
+</body>
+</html>

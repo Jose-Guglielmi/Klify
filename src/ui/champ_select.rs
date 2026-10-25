@@ -2,6 +2,10 @@
 //!
 //! Según el prototipo aprobado (ui-preview.html, iteraciones 1-7):
 //!
+//! - **Headers de sección** (prototipo ui-preview-sylas.html): "// CHAMP
+//!   SELECT" con nota de draft sobre la fila 5v5 y "// GUÍA DE MATCHUP" con
+//!   el matchup corriente sobre las tabs, con el banner de matchup
+//!   standalone ([`vs_guide::MatchupBanner`]) entre la fila y las tabs.
 //! - **Fila de equipo en vivo** (5 slots): mi card 200×440 con splash,
 //!   degradado, borde inferior rojo + brackets rojos + glow y chips
 //!   "BLOQUEADO"/posición; aliados 170×420 (splash + nombre + posición al
@@ -36,7 +40,6 @@ use dioxus::prelude::*;
 
 use std::sync::Arc;
 
-use crate::data_dragon::champion_detail::load_champion_detail;
 use crate::data_dragon::item::ItemCatalog;
 use crate::data_dragon::models::ChampionCatalog;
 use crate::data_dragon::runes::RuneCatalog;
@@ -44,20 +47,21 @@ use crate::lcu::models::{AppState, ChampionInfo, MatchContext, Position};
 use crate::stats::aggregation::patch_of;
 use crate::stats::source::analysis::AnalysisState;
 use crate::stats::source::counters::fetch_counters_cached;
-use crate::stats::source::player_tips::{fetch_player_tips_cached, PlayerTip};
 use crate::stats::source::RecommendationsState;
 use crate::ui::shell::{KlifyFooter, KlifyHeader};
 use vs_hero::rival_lane_from_context;
 
-mod champ_art;
+pub(crate) mod champ_art;
 mod counters_panel;
 mod items_panel;
-mod rival_panels;
 mod runes_panel;
 mod skills_panel;
+mod vs_guide;
+pub(crate) mod vs_guide_data;
 mod vs_hero;
+mod vs_row;
 
-pub(crate) use vs_hero::{RivalCountersState, RivalDetailState, RivalTipsState};
+pub(crate) use vs_hero::RivalCountersState;
 
 
 /// Etiqueta corta de una posición para chips y labels (pura, testeada):
@@ -98,13 +102,18 @@ pub enum CsTab {
     Counters,
     /// Tips oficiales (Riot) + sugerido contra el rival elegido.
     VsTips,
-    /// Consejos de jugadores (counterstats/MOBAFire) traducidos.
+    /// Consejos de MI champ desde su ficha embebida (vs_guide).
     PlayerTips,
 }
 
 /// Champ select en vivo (11b-2a). Las señales llegan como [`ReadSignal`]
 /// para que las piezas internas re-rendericen cuando los loops publiquen
 /// (aliados lockeando, análisis, recomendaciones).
+///
+/// Con `manual == true` (modo manual, sin cliente de LoL) se omite el HUD
+/// de draft y la fila 5v5: la vista queda como ficha de análisis pura
+/// (Skills/Runes/Items/Counters/VsTips/Consejos) con botón de salida al
+/// menú. Con `manual == false` el render es exactamente el de siempre.
 #[component]
 pub fn ChampSelectView(
     state: ReadSignal<AppState>,
@@ -118,19 +127,25 @@ pub fn ChampSelectView(
     source_served: bool,
     retry_runes: Signal<u64>,
     in_game: ReadSignal<bool>,
+    /// True cuando la vista se abrió desde el menú sin cliente de LoL.
+    manual: bool,
+    /// True cuando el cliente de LoL está conectado (lo consume la app;
+    /// se reenvía a los paneles de Runas e Items).
+    client_connected: bool,
+    /// Vuelve al menú (solo se dispara en modo manual).
+    on_exit_manual: EventHandler<()>,
 ) -> Element {
     // Snapshot corto: el guard no cruza la construcción del rsx.
     let state_snapshot: AppState = state.read().clone();
     let champion = current_champion(&state_snapshot);
     let in_game_snapshot = *in_game.read();
 
-    // Señales del RIVAL elegido: compartidas entre la franja/split del modo
-    // VS y las tabs "Cómo jugar vs" / "Consejos". El effect de carga vive
-    // acá (una sola vez por elección de rival).
+    // Señal del RIVAL elegido + carga de sus counters (compartidas con el
+    // hero strip y la tab Counters); la tab "Cómo jugar vs" lee la ficha
+    // embebida sin red. El effect de carga vive acá (una sola vez por
+    // elección de rival).
     let rival: Signal<Option<i64>> = use_signal(|| None);
-    let mut rival_detail: Signal<RivalDetailState> = use_signal(RivalDetailState::default);
     let mut rival_counters: Signal<RivalCountersState> = use_signal(RivalCountersState::default);
-    let mut rival_tips: Signal<RivalTipsState> = use_signal(RivalTipsState::default);
 
     let patch_for_effect = patch_version.clone();
     use_effect(move || {
@@ -152,21 +167,15 @@ pub fn ChampSelectView(
 
         spawn(async move {
             let Some(id) = rival_id else {
-                if !matches!(rival_detail(), RivalDetailState::Idle) {
-                    rival_detail.set(RivalDetailState::Idle);
-                }
                 if !matches!(rival_counters(), RivalCountersState::Idle) {
                     rival_counters.set(RivalCountersState::Idle);
-                }
-                if !matches!(rival_tips(), RivalTipsState::Idle) {
-                    rival_tips.set(RivalTipsState::Idle);
                 }
                 return;
             };
             // ¿Ya cargado o cargando este mismo rival? Evita refetchs.
-            match &*rival_detail.read() {
-                RivalDetailState::Loading { rival_id: current }
-                | RivalDetailState::Ready { rival_id: current, .. }
+            match &*rival_counters.read() {
+                RivalCountersState::Loading { rival_id: current }
+                | RivalCountersState::Ready { rival_id: current, .. }
                     if *current == id =>
                 {
                     return;
@@ -177,15 +186,6 @@ pub fn ChampSelectView(
             let Some(entry) = catalog_snapshot.as_ref().and_then(|data| data.get(id)) else {
                 return;
             };
-            let version = catalog_snapshot
-                .as_ref()
-                .map(|data| data.version.clone())
-                .unwrap_or_default();
-            if version.is_empty() {
-                rival_detail.set(RivalDetailState::Failed { rival_id: id });
-                rival_tips.set(RivalTipsState::Failed { rival_id: id });
-                return;
-            }
 
             // Lane del matchup: la posición DEL RIVAL si el lock la trajo,
             // si no MI posición; `None` → muestra agregada de la fuente.
@@ -193,77 +193,22 @@ pub fn ChampSelectView(
             let rival_lane = rival_lane_from_context(&context_snapshot, Some(id), my_position)
                 .or(my_position);
 
-            let ddragon_id = entry.ddragon_id.clone();
-            rival_detail.set(RivalDetailState::Loading { rival_id: id });
             rival_counters.set(RivalCountersState::Loading { rival_id: id });
-            rival_tips.set(RivalTipsState::Loading { rival_id: id });
             let client = match crate::data_dragon::http_client() {
                 Ok(client) => client,
                 Err(_) => {
-                    rival_detail.set(RivalDetailState::Failed { rival_id: id });
                     rival_counters.set(RivalCountersState::Failed { rival_id: id });
-                    rival_tips.set(RivalTipsState::Failed { rival_id: id });
                     return;
                 }
             };
 
-            let detail_task = load_champion_detail(&client, &version, &ddragon_id);
-            let counters_task = fetch_counters_cached(&client, &entry.slug, rival_lane, &patch);
-            let tips_task = fetch_player_tips_cached(&client, &entry.slug);
-            let (detail_result, counters_result, tips_result) =
-                tokio::join!(detail_task, counters_task, tips_task);
-
+            let counters_result =
+                fetch_counters_cached(&client, &entry.slug, rival_lane, &patch).await;
             match counters_result {
                 Ok(summary) => {
                     rival_counters.set(RivalCountersState::Ready { rival_id: id, summary });
                 }
                 Err(_) => rival_counters.set(RivalCountersState::Failed { rival_id: id }),
-            }
-
-            // Tips: oficiales (enemytips del detalle) + jugadores, ambos
-            // pasados por traducción EN→ES best-effort (falla → original).
-            let detail_ok = detail_result.ok();
-            let tips_ok = tips_result.ok();
-            if detail_ok.is_none() {
-                rival_detail.set(RivalDetailState::Failed { rival_id: id });
-            }
-            if detail_ok.is_none() && tips_ok.is_none() {
-                rival_tips.set(RivalTipsState::Failed { rival_id: id });
-            } else {
-                let official_src: Vec<String> = detail_ok
-                    .as_ref()
-                    .map(|detail| detail.enemytips.clone())
-                    .unwrap_or_default();
-                let mut texts = official_src.clone();
-                texts.extend(tips_ok.iter().flatten().map(|tip| tip.text.clone()));
-
-                let translated =
-                    crate::stats::source::translate::translate_all_en_to_es(&client, &texts)
-                        .await;
-
-                let official = Arc::new(translated[..official_src.len()].to_vec());
-                let players = Arc::new(
-                    tips_ok
-                        .unwrap_or_default()
-                        .into_iter()
-                        .enumerate()
-                        .map(|(index, mut tip)| {
-                            tip.text = translated[official_src.len() + index].clone();
-                            tip
-                        })
-                        .collect::<Vec<PlayerTip>>(),
-                );
-                rival_tips.set(RivalTipsState::Ready {
-                    rival_id: id,
-                    official,
-                    players,
-                });
-            }
-            if let Some(detail) = detail_ok {
-                rival_detail.set(RivalDetailState::Ready {
-                    rival_id: id,
-                    detail: Box::new(detail),
-                });
             }
         });
     });
@@ -273,35 +218,139 @@ pub fn ChampSelectView(
             KlifyHeader { state }
 
             main { class: "main-container",
-
-                    // ZONA 3 · ANÁLISIS DEL PICK
+               
                 {match champion {
                     Some(champion) => {
+                        // Snapshots y derivación ANTES del rsx (convención de
+                        // la app): posición propia, rival lockeado, nombres
+                        // del catálogo y notas de los headers de sección.
+                        let my_position = champion_position(&state_snapshot, &match_context);
+                        let context_snapshot = match_context.read().clone();
+                        let rival_id_snapshot = rival();
+                        let catalog_snapshot = catalog.read().clone();
+
+                        // Nota del header de la fila: el parche solo si la
+                        // prop lo trae (sin " · PATCH …" cuando es None).
+                        let patch_note = patch_version
+                            .as_deref()
+                            .filter(|value| !value.is_empty())
+                            .map(str::to_string);
+                        let has_patch_note = patch_note.is_some();
+                        let patch_note_value = patch_note.unwrap_or_default();
+
+                        // Nota del header de las tabs: con rival lockeado
+                        // suma el lado rival (posición desde el contexto,
+                        // mismo criterio que el hero); sin rival, solo el
+                        // propio. Rival sin catálogo degrada a "#id".
+                        let rival_position_snapshot =
+                            rival_lane_from_context(&context_snapshot, rival_id_snapshot, my_position);
+                        let my_side = labeled_side(&champion.name, my_position);
+                        let rival_side = rival_id_snapshot.map(|id| {
+                            let rival_name = catalog_snapshot
+                                .as_ref()
+                                .and_then(|data| data.get(id))
+                                .map(|entry| entry.name.clone())
+                                .unwrap_or_else(|| format!("#{id}"));
+                            format!(" · VS {}", labeled_side(&rival_name, rival_position_snapshot))
+                        });
+                        let guide_note = format!("{my_side}{}", rival_side.unwrap_or_default());
+
                         rsx! {
-                            div { class: "section-head section",
-                                span { class: "bar-skew", "style": "width: 32px;" }
-                                span { class: "label label-md",
-                                    span { class: "sl", "//" }
-                                    " Análisis "
-                                    span { class: "hud-sep", "·" }
-                                    " {champion.name}"
-                                }
-                                if in_game_snapshot {
-                                    span { class: "chip chip--soft", "Partida en vivo" }
-                                }
-                            }
                             div { class: "frame cut-tr-bl cs-analysis",
                                 div { class: "cut-tr-bl-i bg-low",
+                                    // HUD del cliente (header "// CHAMP
+                                    // SELECT" con el draft en vivo + fila
+                                    // 5v5 con rivales clickeables): SOLO con
+                                    // lobby real. En modo manual se omite
+                                    // entero — sin draft ni elección de
+                                    // rival, la `rival` queda en `None` y
+                                    // el banner de matchup desaparece solo.
+                                    if !manual {
+                                        // Header de la fila (prototipo
+                                        // ui-preview-sylas.html): "// CHAMP
+                                        // SELECT" + nota del draft a la derecha.
+                                        // `margin-top: 0` inline: anula el genérico
+                                        // de `.section-head--cs` (32px) para que el
+                                        // frame no arrastre una franja gris vacía
+                                        // sobre la fila 5v5.
+                                        div { class: "section-head section-head--cs",
+                                            "style": "margin-top: 0; margin-bottom: 8px; flex-wrap: wrap;",
+                                            span { class: "bar-skew", "style": "width: 24px;" }
+                                            span { class: "label label-md",
+                                                span { class: "sl", "//" }
+                                                " CHAMP SELECT"
+                                            }
+                                            span { class: "label fs-10 t-outline-var ml-auto",
+                                                "style": "min-width: 0; overflow-wrap: anywhere; text-align: right;",
+                                                "DRAFT EN VIVO "
+                                                span { class: "hud-sep", "·" }
+                                                " PLATINUM+"
+                                                if has_patch_note {
+                                                    span { class: "hud-sep", "·" }
+                                                    " PATCH {patch_note_value}"
+                                                }
+                                            }
+                                            // Indicador de partida en vivo (antes
+                                            // vivía en el header "Análisis").
+                                            if in_game_snapshot {
+                                                span { class: "chip chip--soft", "Partida en vivo" }
+                                            }
+                                        }
+                                        // Fila 5v5: los enemigos lockeados son
+                                        // clickeables y eligen al objetivo de la
+                                        // guía (misma signal `rival` de las tabs).
+                                        vs_row::VsTeamRow {
+                                            my_champion_id: champion.id,
+                                            my_position,
+                                            match_context,
+                                            catalog,
+                                            rival,
+                                        }
+                                    }
+                                    // Hero strip (prototipo
+                                    // ui-preview-sylas.html): DEBAJO de la
+                                    // fila 5v5, con su hint `cs5-hint` entre
+                                    // medias (emite `VsTeamRow`).
                                     vs_hero::VsHero {
                                         champion_id: champion.id,
                                         my_name: champion.name.clone(),
-                                        position: champion_position(&state_snapshot, &match_context),
+                                        position: my_position,
                                         match_context,
                                         catalog,
                                         analysis,
                                         items,
                                         rival,
                                         rival_counters,
+                                    }
+                                    // Banner de matchup standalone (entre la
+                                    // fila y las tabs): misma fuente de datos
+                                    // que la guía, siempre visible con lock.
+                                    vs_guide::MatchupBanner {
+                                        my_champion_id: champion.id,
+                                        my_champion_name: champion.name.clone(),
+                                        my_position,
+                                        match_context,
+                                        catalog,
+                                        rival,
+                                        analysis,
+                                        version: patch_version.clone(),
+                                    }
+                                    // Header de las tabs: "// GUÍA DE
+                                    // MATCHUP" + nota del matchup corriente.
+                                    // `flex-wrap` + `overflow-wrap: anywhere`
+                                    // en la nota: nunca se recorta por el
+                                    // borde derecho (envuelve a la derecha).
+                                    div { class: "section-head section-head--cs",
+                                        "style": "margin-bottom: 8px; flex-wrap: wrap;",
+                                        span { class: "bar-skew", "style": "width: 24px;" }
+                                        span { class: "label label-md",
+                                            span { class: "sl", "//" }
+                                            " GUÍA DE MATCHUP"
+                                        }
+                                        span { class: "label fs-10 t-outline-var ml-auto",
+                                            "style": "min-width: 0; overflow-wrap: anywhere; text-align: right;",
+                                            "{guide_note}"
+                                        }
                                     }
                                     AnalysisTabs {
                                         champion_id: champion.id,
@@ -313,8 +362,10 @@ pub fn ChampSelectView(
                                         recommendations,
                                         retry_runes,
                                         rival,
-                                        rival_detail,
-                                        rival_tips,
+                                        rival_counters,
+                                        patch_version: patch_version.clone(),
+                                        client_connected,
+                                        champ_nombre: champion.name.clone(),
                                     }
                                 }
                             }
@@ -350,6 +401,19 @@ fn champion_position(
     match_context.read().my_position
 }
 
+/// Un lado de la nota del header de guía (puro, testeado): nombre + posición
+/// corta, con un espacio solo si hay posición (`"SYLAS MID"`; sin rol queda
+/// `"SYLAS"`, sin espacio colgante).
+#[must_use]
+fn labeled_side(name: &str, position: Option<Position>) -> String {
+    let label = position_label(position);
+    if label.is_empty() {
+        name.to_string()
+    } else {
+        format!("{name} {label}")
+    }
+}
+
 /// Tabs del análisis + panel activo (FASE 11b-2b: las cuatro con datos
 /// reales).
 #[component]
@@ -363,10 +427,25 @@ fn AnalysisTabs(
     recommendations: ReadSignal<RecommendationsState>,
     retry_runes: Signal<u64>,
     rival: Signal<Option<i64>>,
-    rival_detail: Signal<RivalDetailState>,
-    rival_tips: Signal<RivalTipsState>,
+    rival_counters: ReadSignal<RivalCountersState>,
+    patch_version: Option<String>,
+    /// True cuando el cliente de LoL está conectado (reenviado a Runes/Items).
+    client_connected: bool,
+    /// Display name del champ vigente (reenviado a Runes/Items).
+    champ_nombre: String,
 ) -> Element {
     let mut active_tab = use_signal(CsTab::default);
+
+    // Snapshot ANTES del rsx (convención de la app): slug de MI champ para
+    // la tab Consejos (ficha embebida, sin red). `None` sin champ o sin
+    // entrada en el catálogo; slug vacío también degrada a `None` (sin
+    // ficha que mostrar).
+    let catalog_snapshot = catalog.read().clone();
+    let my_slug: Option<String> = catalog_snapshot
+        .as_ref()
+        .and_then(|data| data.get(champion_id))
+        .map(|entry| entry.slug.clone())
+        .filter(|slug| !slug.is_empty());
 
     rsx! {
         div { class: "cs-tabs",
@@ -425,27 +504,44 @@ fn AnalysisTabs(
                 skills_panel::SkillsPanel { analysis, champion_id, catalog }
             },
             CsTab::Runes => rsx! {
-                runes_panel::RunesPanel { recommendations, runes, retry: retry_runes }
+                runes_panel::RunesPanel {
+                    recommendations,
+                    runes,
+                    retry: retry_runes,
+                    client_connected,
+                    champ_nombre,
+                }
             },
             CsTab::Items => rsx! {
-                items_panel::ItemsPanel { analysis, champion_id, catalog, items }
+                items_panel::ItemsPanel {
+                    analysis,
+                    champion_id,
+                    catalog,
+                    items,
+                    client_connected,
+                    champ_nombre,
+                }
             },
             CsTab::Counters => rsx! {
-                counters_panel::CountersPanel { analysis, champion_id, match_context, catalog, items }
+                counters_panel::CountersPanel {
+                    analysis,
+                    champion_id,
+                    match_context,
+                    catalog,
+                    items,
+                    rival,
+                    rival_counters,
+                }
             },
             CsTab::VsTips => rsx! {
-                rival_panels::VsTipsPanel {
-                    my_champion_id: champion_id,
+                vs_guide::VsGuidePanel {
                     rival,
                     catalog,
-                    analysis,
-                    items,
-                    detail: rival_detail,
-                    tips: rival_tips,
+                    version: patch_version,
                 }
             },
             CsTab::PlayerTips => rsx! {
-                rival_panels::PlayerTipsPanel { rival, tips: rival_tips }
+                vs_guide::ConsejosPanel { my_slug }
             },
         }}
     }
@@ -464,5 +560,13 @@ mod tests {
         assert_eq!(position_label(Some(Position::Bottom)), "BOT");
         assert_eq!(position_label(Some(Position::Utility)), "SUP");
         assert_eq!(position_label(None), "");
+    }
+
+    /// Lado de la nota de guía: espacio solo cuando hay posición.
+    #[test]
+    fn labeled_side_concatena_solo_con_posicion() {
+        assert_eq!(labeled_side("Sylas", Some(Position::Middle)), "Sylas MID");
+        assert_eq!(labeled_side("Akali", Some(Position::Top)), "Akali TOP");
+        assert_eq!(labeled_side("Sylas", None), "Sylas");
     }
 }

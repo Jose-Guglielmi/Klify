@@ -128,6 +128,8 @@ fn normalize(dto: &RunePageDto, label: &str, runes: Option<&RuneCatalog>) -> Run
         keystone_id: keystone_of(&dto.set.pri, runes),
         perk_ids,
         stat_shards: dto.set.mods.clone(),
+        estilo: None,
+        sintetizada: false,
     }
 }
 

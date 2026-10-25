@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLIFY — Partida en vivo · EN VIVO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ================================================================
+   KLIFY · ui-preview-live — Partida en vivo → tab "EN VIVO"
+   Tokens: design.md (fuente de verdad)
+   ================================================================ */
+
+:root {
+  --bg: #0b0e14; --surface: #10141d;
+  --c-lowest: #090c11; --c-low: #121722; --c-base: #1f2937; --c-high: #2a3648; --c-highest: #354358;
+  --on-surface: #e5e7eb; --on-surface-var: #9aa4b2;
+  --primary: #ff0033; --primary-container: #440011; --on-primary-container: #ffd9de;
+  --silver: #c3cad4; --outline: #8b95a3; --outline-var: #2f3a4a; --error: #ffa198;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--on-surface);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(880px 480px at 100% 0%, rgba(255,0,51,.05), transparent 60%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.012) 0 2px, transparent 2px 14px);
+}
+::selection { background: var(--primary); color: #fff; }
+
+.page { position: relative; z-index: 1; max-width: 1024px; margin: 0 auto; padding: 24px; }
+
+/* ---------- Animaciones mínimas ---------- */
+@keyframes pulse   { 0%,100% { opacity: 1; } 50% { opacity: .18; } }
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+
+/* ---------- Breadcrumb ---------- */
+.crumbs { display: flex; align-items: center; gap: 8px; margin-bottom: 16px;
+  font: 600 11px 'Inter'; letter-spacing: .1em; text-transform: uppercase; color: var(--on-surface-var); }
+.crumbs .sep { color: var(--outline-var); }
+.crumbs b { color: var(--on-surface); font-weight: 600; }
+
+/* ---------- Shell de sección: 2 tabs + barra de info (esquina cortada, 1 vez por zona) ---------- */
+.frame { background: var(--outline-var); padding: 1px; }
+.cut { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 18px, 100% 100%, 0 100%); }
+.shell { background: var(--surface); }
+.tabs { display: flex; }
+.tab {
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 21px; line-height: 1;
+  letter-spacing: .05em; text-transform: uppercase;
+  padding: 14px 26px 12px; color: var(--on-surface-var);
+  border-top: 3px solid transparent; border-right: 1px solid var(--outline-var);
+}
+.tab.active { color: var(--on-surface); background: var(--c-base); border-top-color: var(--primary); }
+
+.matchbar {
+  display: flex; align-items: center; gap: 10px; padding: 9px 16px;
+  border-top: 1px solid var(--outline-var);
+  font: 600 11px 'Inter'; font-variant-numeric: tabular-nums;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--on-surface-var);
+}
+.matchbar .time { color: var(--on-surface); }
+.matchbar .dot { color: var(--outline); }
+.refresh { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; }
+.refresh i { width: 7px; height: 7px; border-radius: 50%; background: var(--on-surface-var); animation: pulse 1.5s ease-in-out infinite; }
+
+/* ---------- Columnas de equipo ---------- */
+.teams { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+.col { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+
+.col-head { display: flex; align-items: flex-end; gap: 10px; margin-bottom: 4px; }
+.slashes { display: flex; align-items: flex-end; gap: 3px; }
+.slashes i { width: 4px; height: 12px; background: var(--outline); transform: skewX(-25deg); }
+.slashes i:nth-child(2) { height: 16px; opacity: .7; }
+.slashes i:nth-child(3) { height: 20px; opacity: .4; }
+.slashes.red i { background: rgba(255,0,51,.55); }
+.col-head h2 { font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 700;
+  font-size: 22px; line-height: 1; letter-spacing: .03em; text-transform: uppercase; color: var(--on-surface); }
+.col-head .count { margin-left: auto; font: 600 10px 'Inter'; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--on-surface-var); padding-bottom: 2px; }
+
+/* ---------- Card de jugador ---------- */
+.card {
+  position: relative; display: flex; align-items: center; gap: 12px;
+  background: var(--c-base); border: 1px solid var(--outline-var);
+  padding: 12px; min-height: 96px;
+  transition: border-color .12s ease;
+}
+.card:hover { border-color: var(--outline); }
+.card.enemy { box-shadow: inset 3px 0 0 rgba(255,0,51,.45); }
+.card.nodata { background: var(--c-low); }
+
+/* TU card: corner brackets en L (2px, 16px) + glow primary 20-25% — único elemento #1 */
+.card.you { box-shadow: 0 0 24px rgba(255,0,51,.22); border-color: rgba(255,0,51,.4); }
+.card.you::before, .card.you::after { content: ''; position: absolute; width: 16px; height: 16px; border: 2px solid var(--primary); pointer-events: none; }
+.card.you::before { top: -3px; left: -3px; border-right: none; border-bottom: none; }
+.card.you::after  { bottom: -3px; right: -3px; border-left: none; border-top: none; }
+
+/* Retrato 64px duotono rojo-negro */
+.idbox { display: flex; align-items: center; gap: 8px; flex: none; }
+.pt { position: relative; width: 64px; height: 64px; overflow: hidden; flex: none;
+  background: linear-gradient(150deg, var(--c-highest) 0%, var(--c-low) 70%); }
+.pt img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.1); }
+.pt .duo { position: absolute; inset: 0; background: var(--primary); mix-blend-mode: multiply; }
+.pt.ally   .duo { opacity: .18; }
+.pt.you    .duo { opacity: .25; }
+.pt.enemy  .duo { opacity: .4; }
+.pt.dim img, .pt.dim .duo { opacity: .4; }
+.pt .pname { position: absolute; left: 0; right: 0; bottom: 0; padding: 10px 0 2px;
+  background: linear-gradient(180deg, transparent, rgba(11,14,20,.94));
+  font: italic 700 11px/1 'Barlow Condensed', sans-serif; letter-spacing: .04em; text-transform: uppercase;
+  color: #fff; text-align: center; }
+.pt .lvl { position: absolute; top: 2px; right: 2px; width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(11,14,20,.92); border: 1px solid var(--outline-var);
+  font: 600 10px/18px 'Inter'; font-style: normal; font-variant-numeric: tabular-nums;
+  color: var(--on-surface); text-align: center; }
+
+/* Hechizos de invocador */
+.spells { display: flex; flex-direction: column; gap: 4px; }
+.spells i { width: 24px; height: 24px; display: grid; place-items: center; font-style: normal;
+  font: 600 10px 'Inter'; color: var(--silver); border-radius: 2px;
+  background: linear-gradient(145deg, var(--c-highest), var(--c-base)); border: 1px solid var(--outline-var); }
+
+/* Info del jugador */
+.info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.idrow { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.riot { font: 600 13px 'Inter'; color: var(--on-surface); white-space: nowrap; }
+.rank { display: inline-block; background: var(--c-high); color: var(--on-surface-var);
+  padding: 2px 10px; transform: skewX(-15deg); }
+.rank span { display: inline-block; transform: skewX(15deg);
+  font: 600 9.5px 'Inter'; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+
+.metrics { display: flex; flex-wrap: wrap; gap: 1px 6px;
+  font: 400 11px 'Inter'; font-variant-numeric: tabular-nums; color: var(--on-surface-var); }
+.metrics b { font-weight: 600; color: var(--on-surface); }
+.sub { font: 600 9.5px 'Inter'; letter-spacing: .08em; text-transform: uppercase; color: var(--on-surface-var); }
+
+/* Sin datos */
+.shimmer { font: 600 10px 'Inter'; letter-spacing: .1em; text-transform: uppercase;
+  background: linear-gradient(90deg, var(--on-surface-var) 30%, var(--silver) 50%, var(--on-surface-var) 70%);
+  background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent;
+  animation: shimmer 2s linear infinite; }
+
+/* Rail derecho: chips de aviso (único sitio del rojo puro junto al borde enemigo) */
+.rail { flex: none; width: 156px; display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.chip { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 3px 10px;
+  font: 600 10px 'Inter'; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+.chip-risk { background: var(--primary-container); color: var(--on-primary-container); }
+.chip-warn { background: var(--c-high); color: var(--error); }
+.chip-info { background: var(--c-high); color: var(--on-surface-var); }
+.chip-you  { background: var(--c-high); color: var(--on-surface); }
+.chip-note { font: 400 9px 'Inter'; letter-spacing: .04em; font-variant-numeric: tabular-nums;
+  color: var(--on-surface-var); text-transform: uppercase; text-align: right; }
+
+/* ---------- Footer ---------- */
+footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--outline-var);
+  display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  font: 600 10px 'Inter'; letter-spacing: .12em; text-transform: uppercase; color: var(--on-surface-var); }
+footer b { font-family: 'Barlow Condensed', sans-serif; font-style: italic; font-weight: 700;
+  font-size: 15px; letter-spacing: .06em; color: var(--on-surface); }
+footer b em { color: var(--primary); font-style: italic; }
+footer .src { font-weight: 400; letter-spacing: .08em; }
+
+@media (max-width: 880px) {
+  .teams { grid-template-columns: 1fr; }
+  .rail { width: 140px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 1 · Breadcrumb -->
+  <nav class="crumbs">
+    <span>Inicio</span><span class="sep">›</span>
+    <span>Partida en vivo</span><span class="sep">›</span>
+    <b>En vivo</b>
+  </nav>
+
+  <!-- 2 · Shell de sección: tabs + info de partida -->
+  <div class="frame"><div class="shell cut">
+    <div class="tabs">
+      <div class="tab">Champ Select</div>
+      <div class="tab active">En vivo</div>
+    </div>
+    <div class="matchbar">
+      <span>Ranked Solo/Duo</span><span class="dot">·</span>
+      <span class="time">14:32</span><span class="dot">·</span>
+      <span>Cola Ranked</span>
+      <span class="refresh">Auto-refresco 5s <i></i></span>
+    </div>
+  </div></div>
+
+  <!-- 3 · Dos columnas -->
+  <div class="teams">
+
+    <!-- IZQUIERDA · TU EQUIPO -->
+    <section class="col">
+      <header class="col-head">
+        <span class="slashes"><i></i><i></i><i></i></span>
+        <h2>Tu equipo</h2>
+        <span class="count">5 jugadores</span>
+      </header>
+
+      <!-- TÚ · elemento #1: brackets + glow -->
+      <article class="card you">
+        <div class="idbox">
+          <div class="pt you">
+            <img src="assets/champs/Ahri.webp" alt="Ahri" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Ahri</b><i class="lvl">12</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">Zerkilo#EUW</span><span class="rank"><span>Oro IV</span></span></div>
+          <div class="metrics"><span>WR <b>54%</b> (120p)</span><span>·</span><span>KDA <b>3.8</b></span><span>·</span><span><b>58%</b> con ahri</span></div>
+          <div class="sub">Mid · Main Ahri · 120k pts</div>
+        </div>
+        <div class="rail"><span class="chip chip-you">Tú</span></div>
+      </article>
+
+      <article class="card">
+        <div class="idbox">
+          <div class="pt ally">
+            <img src="assets/champs/Darius.webp" alt="Darius" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Darius</b><i class="lvl">9</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">DarkWolf#777</span><span class="rank"><span>Plata I</span></span></div>
+          <div class="metrics"><span>WR <b>48%</b> (86p)</span><span>·</span><span>KDA <b>2.1</b></span><span>·</span><span><b>41%</b> con darius</span></div>
+          <div class="sub">Top · Darius · 0.9k pts</div>
+        </div>
+        <div class="rail"><span class="chip chip-warn">⚠️ 1ª vez con champ</span></div>
+      </article>
+
+      <article class="card">
+        <div class="idbox">
+          <div class="pt ally">
+            <img src="assets/champs/LeeSin.webp" alt="Lee Sin" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Lee Sin</b><i class="lvl">15</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">MidGap#EUW</span><span class="rank"><span>Esmeralda II</span></span></div>
+          <div class="metrics"><span>WR <b>57%</b> (203p)</span><span>·</span><span>KDA <b>4.4</b></span><span>·</span><span><b>63%</b> con lee sin</span></div>
+          <div class="sub">JG · Main Lee Sin · 210k pts</div>
+        </div>
+        <div class="rail"></div>
+      </article>
+
+      <article class="card">
+        <div class="idbox">
+          <div class="pt ally">
+            <img src="assets/champs/Jhin.webp" alt="Jhin" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Jhin</b><i class="lvl">11</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">Sn1per#LAN</span><span class="rank"><span>Oro II</span></span></div>
+          <div class="metrics"><span>WR <b>51%</b> (154p)</span><span>·</span><span>KDA <b>3.2</b></span><span>·</span><span><b>49%</b> con jhin</span></div>
+          <div class="sub">ADC · Jhin · 45k pts</div>
+        </div>
+        <div class="rail"></div>
+      </article>
+
+      <!-- SIN DATOS -->
+      <article class="card nodata">
+        <div class="idbox">
+          <div class="pt ally dim">
+            <img src="assets/champs/Lulu.webp" alt="Lulu" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Lulu</b><i class="lvl">–</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">Supportdiff#EUW</span><span class="rank"><span>Oro IV</span></span></div>
+          <div class="metrics"><span class="shimmer">Sin datos · consultando…</span></div>
+          <div class="sub">Sup</div>
+        </div>
+        <div class="rail"><span class="chip chip-info">🏆 Duo con Sn1per</span></div>
+      </article>
+    </section>
+
+    <!-- DERECHA · EQUIPO ENEMIGO -->
+    <section class="col">
+      <header class="col-head">
+        <span class="slashes red"><i></i><i></i><i></i></span>
+        <h2>Equipo enemigo</h2>
+        <span class="count">5 jugadores</span>
+      </header>
+
+      <article class="card enemy">
+        <div class="idbox">
+          <div class="pt enemy">
+            <img src="assets/champs/Zed.webp" alt="Zed" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Zed</b><i class="lvl">13</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">Tox1cMid#EUW</span><span class="rank"><span>Diamante IV</span></span></div>
+          <div class="metrics"><span>WR <b>61%</b> (34p)</span><span>·</span><span>KDA <b>5.2</b></span><span>·</span><span><b>71%</b> con zed</span></div>
+          <div class="sub">Mid · Zed · 18k pts</div>
+        </div>
+        <div class="rail">
+          <span class="chip chip-risk">💀 Smurf?</span>
+          <span class="chip-note">cuenta nv. 34 · WR 61%</span>
+        </div>
+      </article>
+
+      <article class="card enemy">
+        <div class="idbox">
+          <div class="pt enemy">
+            <img src="assets/champs/Yasuo.webp" alt="Yasuo" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Yasuo</b><i class="lvl">10</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">FedOrFeed#EUW</span><span class="rank"><span>Oro I</span></span></div>
+          <div class="metrics"><span>WR <b>49%</b> (178p)</span><span>·</span><span>KDA <b>2.8</b></span><span>·</span><span><b>44%</b> con yasuo</span></div>
+          <div class="sub">Top · Yasuo · 32k pts</div>
+        </div>
+        <div class="rail"><span class="chip chip-risk">🔴 Racha 0/6</span></div>
+      </article>
+
+      <article class="card enemy">
+        <div class="idbox">
+          <div class="pt enemy">
+            <img src="assets/champs/Thresh.webp" alt="Thresh" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Thresh</b><i class="lvl">16</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">HookGod#EUW</span><span class="rank"><span>Platino I</span></span></div>
+          <div class="metrics"><span>WR <b>58%</b> (220p)</span><span>·</span><span>KDA <b>4.0</b></span><span>·</span><span><b>60%</b> con thresh</span></div>
+          <div class="sub">Sup · Main Thresh · 340k pts</div>
+        </div>
+        <div class="rail"></div>
+      </article>
+
+      <article class="card enemy">
+        <div class="idbox">
+          <div class="pt enemy">
+            <img src="assets/champs/Jinx.webp" alt="Jinx" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Jinx</b><i class="lvl">12</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">ADCDiff#EUW</span><span class="rank"><span>Esmeralda III</span></span></div>
+          <div class="metrics"><span>WR <b>53%</b> (141p)</span><span>·</span><span>KDA <b>3.5</b></span><span>·</span><span><b>55%</b> con jinx</span></div>
+          <div class="sub">ADC · Jinx · 61k pts</div>
+        </div>
+        <div class="rail"></div>
+      </article>
+
+      <article class="card enemy">
+        <div class="idbox">
+          <div class="pt enemy">
+            <img src="assets/champs/Lux.webp" alt="Lux" onerror="this.style.display='none'">
+            <span class="duo"></span><b class="pname">Lux</b><i class="lvl">8</i>
+          </div>
+          <div class="spells"><i>F</i><i>T</i></div>
+        </div>
+        <div class="info">
+          <div class="idrow"><span class="riot">BardoElSabio#LAN</span><span class="rank"><span>Plata II</span></span></div>
+          <div class="metrics"><span>WR <b>47%</b> (95p)</span><span>·</span><span>KDA <b>2.4</b></span><span>·</span><span><b>39%</b> con lux</span></div>
+          <div class="sub">Sup · Lux · 2.1k pts</div>
+        </div>
+        <div class="rail"><span class="chip chip-warn">⚠️ 1ª vez con champ</span></div>
+      </article>
+    </section>
+  </div>
+
+  <!-- 5 · Footer -->
+  <footer>
+    <span><b>Klify</b> · Analiza · Mejora · Domina</span>
+    <span class="src">fuente: Live Client Data API · Riot API</span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -9,6 +9,16 @@
 //!   `enemyTeam` y el cronómetro `timer` (su campo `phase` es la única fase
 //!   explícita que trae el payload).
 //!
+//! Ojo con el desarme del draft: además del cierre explícito (`data: null`
+//! con evento `Delete`), el LCU suele dejar colgada una **sesión fantasma**
+//! — un objeto de sesión parseable pero con `myTeam`/`theirTeam` vacíos.
+//! En un draft real ambas listas SIEMPRE traen a los miembros del lobby,
+//! así que equipos vacíos solo existen al desarmar la sesión:
+//! [`sesion_es_fantasma`] la detecta y se reporta como cierre
+//! ([`SessionPayload::Closed`]) para que el estado vuelva a esperar el
+//! draft. Sin este guardia, la fantasma parseaba como `Active(None)` y la
+//! app quedaba clavada en champ select al salir de uno (bug real).
+//!
 //! El modelo acepta las dos generaciones de nombres de campo que se ven en
 //! payloads reales (`localMemberCellId`/`localPlayerCellId`,
 //! `enemyTeam`/`theirTeam`) vía aliases serde: el nombre primario es el de
@@ -146,13 +156,40 @@ pub struct ChampSelectMember {
 #[derive(Clone, Debug, PartialEq)]
 pub enum SessionPayload {
     /// Sesión activa, ya parseada (lista para `MatchContext::from_session`).
+    ///
+    /// La **sesión fantasma** del desarme del draft (un objeto parseable pero
+    /// sin jugadores en `myTeam`/`theirTeam`, ver [`sesion_es_fantasma`])
+    /// también cae acá como [`SessionPayload::Closed`]: en un draft real los
+    /// equipos SIEMPRE traen a los miembros del lobby.
     Active(ChampSelectSession),
-    /// La sesión se cerró (`data: null`, evento `Delete`).
+    /// La sesión se cerró: `data: null` (evento `Delete`) o la sesión
+    /// fantasma que el LCU deja colgada al cerrar/cancelar el draft.
     Closed,
+}
+
+/// Detecta la "sesión fantasma" que el LCU deja colgada al cerrar/cancelar
+/// un draft: un objeto de sesión parseable pero sin ningún jugador en
+/// `my_team` ni `enemy_team` (en el payload pueden llegar como `theirTeam`).
+/// En un draft REAL ambas listas SIEMPRE traen a los miembros del lobby
+/// (también durante bans y picks), así que equipos vacíos solo existen en
+/// el desarme de la sesión. Clasificarla como cerrada permite volver a
+/// WaitingForChampSelect.
+///
+/// Es el guardia que usa [`parse_session_payload`]: sin él, la fantasma
+/// parseaba como sesión activa sin campeón local (`Active(None)`) y el
+/// estado quedaba colgado en `InChampSelect(None)` al salir del draft.
+#[must_use]
+pub fn sesion_es_fantasma(session: &ChampSelectSession) -> bool {
+    session.my_team.is_empty() && session.enemy_team.is_empty()
 }
 
 /// Interpreta el campo `data` de un evento de champ select (o el cuerpo del
 /// GET inicial). `None` = payload irreconocible (se ignora sin tocar estado).
+///
+/// El cierre es explícito (`data: null`, evento `Delete`) **o** una
+/// [`sesion_es_fantasma`]: eso cubre los drafts cerrados/cancelados que el
+/// LCU reporta con una sesión desarmada (objeto parseable con
+/// `myTeam`/`theirTeam` vacíos) en vez de un `null` limpio.
 ///
 /// Generalización de [`parse_champ_select_payload`]: entrega la sesión
 /// completa además del update de alto nivel, para que el orquestador construya
@@ -163,9 +200,16 @@ pub fn parse_session_payload(data: Value) -> Option<SessionPayload> {
         return Some(SessionPayload::Closed);
     }
 
-    serde_json::from_value::<ChampSelectSession>(data)
-        .ok()
-        .map(SessionPayload::Active)
+    serde_json::from_value::<ChampSelectSession>(data).ok().map(|session| {
+        // Sesión fantasma del desarme: se reporta como cierre para que el
+        // estado vuelva a `WaitingForChampSelect` en vez de colgarse en
+        // champ select sin jugadores.
+        if sesion_es_fantasma(&session) {
+            SessionPayload::Closed
+        } else {
+            SessionPayload::Active(session)
+        }
+    })
 }
 
 /// Proyección del payload interpretado al update de alto nivel que consume el
@@ -222,6 +266,15 @@ pub fn champion_placeholder(id: i64) -> ChampionInfo {
     }
 }
 
+/// Detecta el nombre de fallback de [`champion_placeholder`]: significa
+/// "el catálogo todavía no resolvió este id". Los flujos de ESCRITURA
+/// (crear página de runas / item set) NO deben usarlo como nombre —
+/// generaría títulos basura como "Klify · Campeón 84" en el cliente.
+#[must_use]
+pub fn es_placeholder(nombre: &str) -> bool {
+    nombre.starts_with("Campeón ")
+}
+
 /// Igual que [`parse_session_payload`], proyectado al [`ChampSelectUpdate`]
 /// que consume el orquestador para `AppState`.
 #[must_use]
@@ -235,6 +288,15 @@ mod tests {
     use super::*;
     use crate::lcu::models::Position;
     use serde_json::json;
+
+    /// `es_placeholder` reconoce el fallback "Campeón {id}" y no confunde
+    /// nombres reales.
+    #[test]
+    fn es_placeholder_detecta_el_fallback() {
+        assert!(es_placeholder("Campeón 84"));
+        assert!(!es_placeholder("Akali"));
+        assert!(!es_placeholder("Camille"));
+    }
 
     /// Payload realista (con campos extra que el LCU incluye y que deben
     /// ignorarse) con el jugador local ya confirmado (ChampionInfo 103 = Ahri).
@@ -330,6 +392,95 @@ mod tests {
         let update = parse_champ_select_payload(Value::Null).expect("data null es válido");
 
         assert_eq!(update, ChampSelectUpdate::Closed);
+    }
+
+    /// Sesión fantasma del desarme del draft: objeto parseable pero con
+    /// `myTeam` y `theirTeam` vacíos. Se reporta como cierre — antes quedaba
+    /// clasificada como `Active(None)` y el estado no volvía a esperar el
+    /// draft (bug real visto saliendo de un champ select de LoL).
+    #[test]
+    fn sesion_fantasma_se_clasifica_como_cerrada() {
+        let payload = json!({
+            "localMemberCellId": 0,
+            "myTeam": [],
+            "theirTeam": []
+        });
+
+        assert_eq!(
+            parse_session_payload(payload),
+            Some(SessionPayload::Closed)
+        );
+    }
+
+    /// La fantasma también cierra por el update de alto nivel que consume
+    /// el orquestador para `AppState`: vuelve a `WaitingForChampSelect`.
+    #[test]
+    fn sesion_fantasma_proyecta_update_cerrado() {
+        let payload = json!({ "myTeam": [], "theirTeam": [] });
+
+        assert_eq!(
+            parse_champ_select_payload(payload),
+            Some(ChampSelectUpdate::Closed)
+        );
+    }
+
+    /// Draft real (aunque recién arranque, sin champ confirmado): `myTeam` y
+    /// `theirTeam` SIEMPRE traen a los miembros del lobby, así que nunca se
+    /// clasifica como fantasma.
+    #[test]
+    fn sesion_con_miembros_se_clasifica_como_activa() {
+        let payload = json!({
+            "localMemberCellId": 0,
+            "myTeam": [
+                { "cellId": 0, "championId": 0, "championPickIntent": 0 }
+            ],
+            "theirTeam": [
+                { "cellId": 6, "championId": 0, "championPickIntent": 0 }
+            ]
+        });
+
+        let parsed = parse_session_payload(payload).expect("sesión activa esperada");
+        let SessionPayload::Active(session) = parsed else {
+            panic!("sesión activa esperada");
+        };
+
+        assert_eq!(session.my_team.len(), 1);
+        assert_eq!(session.enemy_team.len(), 1);
+    }
+
+    /// Contrato del helper directo sobre el struct (además del JSON): solo
+    /// es fantasma cuando ambos equipos están vacíos. Si sobra un solo
+    /// jugador en cualquiera de las dos listas, es draft real.
+    #[test]
+    fn sesion_es_fantasma_solo_con_ambos_equipos_vacios() {
+        let mut session = ChampSelectSession {
+            local_member_cell_id: Some(0),
+            my_team: Vec::new(),
+            enemy_team: Vec::new(),
+            timer: None,
+        };
+
+        assert!(sesion_es_fantasma(&session));
+
+        // Un aliado alcanza para descartar la fantasma.
+        session.my_team.push(ChampSelectMember {
+            cell_id: 0,
+            champion_id: 0,
+            champion_pick_intent: 0,
+            assigned_position: None,
+        });
+
+        assert!(!sesion_es_fantasma(&session));
+
+        // Y también un enemigo: en el desarme se van TODOS.
+        session.enemy_team.push(ChampSelectMember {
+            cell_id: 6,
+            champion_id: 0,
+            champion_pick_intent: 0,
+            assigned_position: None,
+        });
+
+        assert!(!sesion_es_fantasma(&session));
     }
 
     /// Varios compañeros de equipo con el jugador local en el medio: debe
@@ -465,9 +616,13 @@ mod tests {
     #[test]
     fn fase_del_timer_conocida_desconocida_y_ausente() {
         let fase_de = |phase: Value| {
+            // Con un miembro en `myTeam` la sesión no es fantasma: lo que se
+            // testea acá es la fase del timer, no el desarme del draft.
             let payload = json!({
                 "localMemberCellId": 0,
-                "myTeam": [],
+                "myTeam": [
+                    { "cellId": 0, "championId": 0, "championPickIntent": 0 }
+                ],
                 "timer": { "phase": phase }
             });
             let parsed = parse_session_payload(payload).expect("payload válido");
@@ -491,7 +646,11 @@ mod tests {
         assert_eq!(fase_de(json!("")), None);
 
         // Sin `timer` → None (y el resto de la sesión se parsea igual).
-        let payload = json!({ "localMemberCellId": 0, "myTeam": [] });
+        // Con un miembro, para no tropezar con la sesión fantasma.
+        let payload = json!({
+            "localMemberCellId": 0,
+            "myTeam": [{ "cellId": 0, "championId": 0, "championPickIntent": 0 }]
+        });
         let parsed = parse_session_payload(payload).expect("payload válido");
         let SessionPayload::Active(session) = parsed else {
             panic!("sesión activa esperada");

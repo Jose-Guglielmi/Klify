@@ -66,6 +66,12 @@
 //! construir el cliente de la Riot API. Si faltó al conectar (login en
 //! curso), el chequeo de salud lo reintenta en silencio.
 //!
+//! **Backstop anti-sesión fantasma (FASE 13)**: si el LCU desarma un draft
+//! y el `Delete` nunca llega por websocket, el chequeo de salud re-consulta
+//! el GET de la sesión y baja el estado a `WaitingForChampSelect` con el
+//! contexto reseteado ([`backstop_procede`]) — sin tocar el espejo de la
+//! Live API y fuera del modo manual.
+//!
 //! `irelia` 0.11 reconecta el socket pero **no** re-envía las suscripciones
 //! tras un reconnect, por eso en vez de usar `Flow::TryReconnect` de forma
 //! eterna, el error handler corta el hilo ([`BreakOnError`]) y el orquestador
@@ -202,6 +208,7 @@ impl ErrorHandler for BreakOnError {
 /// routing con [`normalize_platform`]): es la pieza que falta para construir
 /// el cliente de la Riot API. Igual que el invocador, se consulta una vez
 /// por conexión y se conserva al desconectar; ver [`fetch_platform`].
+///
 /// FASE 12 · Canales del espejo de partida en curso (agrupados para mantener
 /// la firma de [`run_lcu_loop`] acotada).
 pub struct LiveMirror {
@@ -213,6 +220,14 @@ pub struct LiveMirror {
     pub in_game: Signal<bool>,
 }
 
+/// **MODO MANUAL**: `manual_mode` en `true` congela las escrituras de este
+/// loop sobre la señal de estado de la app (el champ actual lo eligió el
+/// usuario desde el menú, sin juego abierto). La detección, la
+/// sincronización REST y los eventos del websocket siguen corriendo
+/// "en seco": la conexión se publica en versión/invocador/platform/contexto,
+/// pero ninguna transición de `AppState` llega a la señal hasta que el flag
+/// vuelva a `false`.
+#[allow(clippy::too_many_arguments)]
 pub async fn run_lcu_loop(
     mut app_state: Signal<AppState>,
     mut match_context: Signal<MatchContext>,
@@ -221,13 +236,21 @@ pub async fn run_lcu_loop(
     mut summoner: Signal<Option<SummonerInfo>>,
     mut platform: Signal<Option<String>>,
     live: LiveMirror,
+    manual_mode: Signal<bool>,
 ) {
     let mut live_rx = live.rx;
     let mut in_game = live.in_game;
     // Espejo local del estado: evita leer la señal dentro de la tarea y
     // mantiene la lógica de transiciones pura y testeable (`next_state`).
     let mut current = AppState::Disconnected;
-    transition(&mut current, &mut app_state, AppState::Disconnected);
+    // MODO MANUAL: si el usuario ya eligió champ, el reset inicial no pisa
+    // la señal (el guard vive en `transition`).
+    transition(
+        &mut current,
+        &mut app_state,
+        *manual_mode.peek(),
+        AppState::Disconnected,
+    );
 
     // FASE 12 · Espejo de partida en curso: `Some(champ_id)` mientras la
     // app muestra una partida de la Live API (el árbitro es ESTE loop: si
@@ -272,9 +295,11 @@ pub async fn run_lcu_loop(
             // por robustez.
             Some(SessionMessage::Session(payload)) => {
                 let catalog_snapshot = catalog.read();
+                // MODO MANUAL: el guard de `transition` decide.
                 transition(
                     &mut current,
                     &mut app_state,
+                    *manual_mode.peek(),
                     AppState::WaitingForChampSelect,
                 );
                 apply_update(
@@ -284,12 +309,15 @@ pub async fn run_lcu_loop(
                     &mut match_context,
                     payload,
                     catalog_snapshot.as_ref(),
+                    *manual_mode.peek(),
                 );
             }
             Some(SessionMessage::Connected) => {
+                // MODO MANUAL: el guard de `transition` decide.
                 transition(
                     &mut current,
                     &mut app_state,
+                    *manual_mode.peek(),
                     AppState::WaitingForChampSelect,
                 );
             }
@@ -318,6 +346,9 @@ pub async fn run_lcu_loop(
                 set_platform(&mut current_platform, &mut platform, platform_id);
             }
 
+            // Hoist del bool: el guard de `peek()` no debe vivir a través
+            // del `await` (ver clippy.toml).
+            let manual = *manual_mode.peek();
             refresh_initial_state(
                 client,
                 &mut current,
@@ -325,6 +356,7 @@ pub async fn run_lcu_loop(
                 &mut current_context,
                 &mut match_context,
                 &catalog,
+                manual,
             )
             .await;
         }
@@ -346,12 +378,16 @@ pub async fn run_lcu_loop(
                             &mut match_context,
                             payload,
                             catalog_snapshot.as_ref(),
+                            *manual_mode.peek(),
                         );
                     }
                     // El hilo nunca se reconecta (ver doc del módulo); si
                     // llegara a repetirse, re-sincronizamos con el GET.
                     Some(SessionMessage::Connected) => {
                         if let Some(client) = &client {
+                            // Hoist del bool: el guard de `peek()` no debe
+                            // vivir a través del `await` (ver clippy.toml).
+                            let manual = *manual_mode.peek();
                             refresh_initial_state(
                                 client,
                                 &mut current,
@@ -359,6 +395,7 @@ pub async fn run_lcu_loop(
                                 &mut current_context,
                                 &mut match_context,
                                 &catalog,
+                                manual,
                             )
                             .await;
                         }
@@ -378,6 +415,7 @@ pub async fn run_lcu_loop(
                         &mut current_context,
                         &mut match_context,
                         &mut in_game,
+                        *manual_mode.peek(),
                     );
                 }
                 _ = health.tick() => {
@@ -387,7 +425,8 @@ pub async fn run_lcu_loop(
                     {
                         let catalog_snapshot = catalog.read();
                         let next = re_resolve_current(&current, catalog_snapshot.as_ref());
-                        transition(&mut current, &mut app_state, next);
+                        // MODO MANUAL: el guard de `transition` decide.
+                        transition(&mut current, &mut app_state, *manual_mode.peek(), next);
                     }
                     let ws_dead = ws.is_finished();
                     // `head` solo falla ante errores de transporte (cliente
@@ -412,6 +451,7 @@ pub async fn run_lcu_loop(
                             &mut current_context,
                             &mut match_context,
                             &mut in_game,
+                            *manual_mode.peek(),
                         );
                         if let Some(client) = &client {
                         // FASE 8b: si conectamos durante la pantalla de
@@ -434,6 +474,52 @@ pub async fn run_lcu_loop(
                                 set_platform(&mut current_platform, &mut platform, platform_id);
                             }
                         }
+
+                        // FASE 13 · Backstop anti-sesión fantasma: si el estado sigue en
+                        // champ select pero el LCU ya no reporta sesión (o reporta la
+                        // fantasma de equipos vacías que deja al desarmar el draft),
+                        // volvemos a WaitingForChampSelect aunque el websocket no haya
+                        // avisado. Solo corre cuando NO hay partida en vivo espejándose
+                        // (ese estado lo maneja la Live API) y fuera del modo manual.
+                        // Hoist del bool: el guard de `peek()` no debe vivir a través
+                        // del `await` del GET (ver clippy.toml).
+                        let manual = *manual_mode.peek();
+                        if !manual && backstop_procede(&current, &live_mirror) {
+                            match client
+                                .get::<Option<ChampSelectSession>>(CHAMP_SELECT_SESSION_URI)
+                                .await
+                            {
+                                // Fantasma (equipos vacías): misma baja que un cierre limpio.
+                                Ok(Some(session))
+                                    if crate::lcu::events::sesion_es_fantasma(&session) =>
+                                {
+                                    bajar_del_champ_select(
+                                        &mut current,
+                                        &mut app_state,
+                                        &mut current_context,
+                                        &mut match_context,
+                                    );
+                                }
+                                // La sesión ya no existe (404/null): idem. Los demás errores
+                                // también bajan: el `head` de este mismo tick ya garantizó
+                                // que hay cliente vivo, y algunos builds responden 204 con
+                                // body vacío (parsea como error, indistinguible de "sin
+                                // sesión" a efectos del backstop). Si el draft real sigue
+                                // activo, el próximo evento del websocket restablece el
+                                // estado; a efectos del bug (quedarse colgado para
+                                // siempre), bajar es el único desenlace que autocorrige.
+                                Err(_) | Ok(None) => {
+                                    bajar_del_champ_select(
+                                        &mut current,
+                                        &mut app_state,
+                                        &mut current_context,
+                                        &mut match_context,
+                                    );
+                                }
+                                // Draft real en curso: no-op.
+                                Ok(Some(_)) => {}
+                            }
+                        }
                         }
                     }
                 }
@@ -443,7 +529,19 @@ pub async fn run_lcu_loop(
         // FASE 5: caída → `Disconnected`, reset del contexto y nueva ronda
         // de detección.
         let _ = ws.abort();
-        transition(&mut current, &mut app_state, AppState::Disconnected);
+        // MODO MANUAL: la caída del cliente tampoco pisa el champ elegido a
+        // mano; el espejo local sí vuelve a `Disconnected` para que, al salir
+        // del modo manual, la próxima transición retome el control limpio.
+        if *manual_mode.peek() {
+            current = AppState::Disconnected;
+        } else {
+            transition(
+                &mut current,
+                &mut app_state,
+                *manual_mode.peek(),
+                AppState::Disconnected,
+            );
+        }
         set_match_context(
             &mut current_context,
             &mut match_context,
@@ -580,6 +678,7 @@ async fn refresh_initial_state(
     current_context: &mut MatchContext,
     match_context: &mut Signal<MatchContext>,
     catalog: &Signal<Option<ChampionCatalog>>,
+    manual_mode: bool,
 ) {
     match client
         .get::<Option<ChampSelectSession>>(CHAMP_SELECT_SESSION_URI)
@@ -592,7 +691,7 @@ async fn refresh_initial_state(
                 let catalog_snapshot = catalog.read();
                 resolve_champion(id, catalog_snapshot.as_ref())
             });
-            transition(current, app_state, AppState::InChampSelect(champion));
+            transition(current, app_state, manual_mode, AppState::InChampSelect(champion));
             set_match_context(
                 current_context,
                 match_context,
@@ -600,11 +699,11 @@ async fn refresh_initial_state(
             );
         }
         Ok(None) => {
-            transition(current, app_state, AppState::WaitingForChampSelect);
+            transition(current, app_state, manual_mode, AppState::WaitingForChampSelect);
             set_match_context(current_context, match_context, MatchContext::default());
         }
         Err(irelia::requests::Error::Request(status)) if status.as_u16() == 404 => {
-            transition(current, app_state, AppState::WaitingForChampSelect);
+            transition(current, app_state, manual_mode, AppState::WaitingForChampSelect);
             set_match_context(current_context, match_context, MatchContext::default());
         }
         Err(error) => {
@@ -624,6 +723,7 @@ fn apply_update(
     match_context: &mut Signal<MatchContext>,
     payload: Value,
     catalog: Option<&ChampionCatalog>,
+    manual_mode: bool,
 ) {
     let Some(parsed) = parse_session_payload(payload) else {
         return;
@@ -633,7 +733,7 @@ fn apply_update(
     // Waiting si había sesión).
     let update = ChampSelectUpdate::from(&parsed);
     let resolved = resolve_update(&update, catalog);
-    transition(current, app_state, next_state(current, &resolved));
+    transition(current, app_state, manual_mode, next_state(current, &resolved));
 
     // Contexto de partida para el recomendador: sesión activa → snapshot,
     // cierre → reset (ver `match_context_from_parsed`).
@@ -682,6 +782,7 @@ fn handle_live_update(
     current_context: &mut MatchContext,
     match_context: &mut Signal<MatchContext>,
     in_game: &mut Signal<bool>,
+    manual_mode: bool,
 ) {
     match live {
         Some(game) => {
@@ -708,7 +809,9 @@ fn handle_live_update(
                 name: game.my_champion_name.clone(),
                 image_url: String::new(),
             };
-            transition(current, app_state, AppState::InChampSelect(Some(info)));
+            // MODO MANUAL: el champ mostrado lo eligió el usuario; el guard
+            // de `transition` evita pisarlo con el espejo de la Live API.
+            transition(current, app_state, manual_mode, AppState::InChampSelect(Some(info)));
             set_match_context(current_context, match_context, game.match_context());
             *live_mirror = Some(game.my_champion_id);
             in_game.set(true);
@@ -722,11 +825,52 @@ fn handle_live_update(
             // LCU ya escribió otra cosa — ej. un champ select nuevo — no
             // piso nada).
             if matches!(&*current, AppState::InChampSelect(Some(info)) if info.id == was_id) {
-                transition(current, app_state, AppState::WaitingForChampSelect);
+                transition(current, app_state, manual_mode, AppState::WaitingForChampSelect);
                 set_match_context(current_context, match_context, MatchContext::default());
             }
         }
     }
+}
+
+/// FASE 13 · ¿Procede el backstop anti-sesión fantasma? (puro, testeado).
+///
+/// Dos condiciones, ambas necesarias:
+///
+/// - El estado vigente es `InChampSelect(_)` (con o sin pick): es el único
+///   estado que puede quedar colgado en la sesión fantasma cuando el LCU
+///   desarma el draft sin mandar el `Delete`. `WaitingForChampSelect` y
+///   `Disconnected` ya están sanos y el backstop no los toca.
+/// - No hay partida en vivo espejándose (`live_mirror` en `None`): el
+///   espejo de la Live API y el champ select son excluyentes. En plena
+///   partida el GET de champ select da 404 (la sesión ya no existe) y el
+///   backstop "vería" un cierre que en realidad es la partida: mataría el
+///   espejo y toda la UI de análisis sin motivo. Ese estado lo administra
+///   exclusivamente [`handle_live_update`]: el espejo se suelta recién
+///   cuando la propia Live API avisa que la partida terminó.
+#[must_use]
+fn backstop_procede(current: &AppState, live_mirror: &Option<i64>) -> bool {
+    live_mirror.is_none() && matches!(current, AppState::InChampSelect(_))
+}
+
+/// FASE 13 · Baja correlativa de [`transition`]: salida del champ select
+/// cuando confirmamos que la sesión terminó (fantasma de equipos vacías,
+/// `null`/404 del GET). Equivale al cierre limpio: el [`AppState`]
+/// regresa a `WaitingForChampSelect` y el contexto de partida se resetea
+/// (mismo patrón de espejo + `.set()` condicional, idempotente).
+///
+/// Le pasa `manual_mode: false` a [`transition`] porque el caller ya
+/// verificó el flag (`!manual_mode.peek()` en la condición del backstop);
+/// reproducir el guard acá duplicaría la misma condición en el único
+/// camino posible y encarecería los tests de baja (que corren con el modo
+/// manual ya descartado).
+fn bajar_del_champ_select(
+    current: &mut AppState,
+    app_state: &mut Signal<AppState>,
+    current_context: &mut MatchContext,
+    match_context: &mut Signal<MatchContext>,
+) {
+    transition(current, app_state, false, AppState::WaitingForChampSelect);
+    set_match_context(current_context, match_context, MatchContext::default());
 }
 
 /// Sustituye el placeholder del update por la resolución del catálogo.
@@ -777,7 +921,23 @@ fn next_state(current: &AppState, update: &ChampSelectUpdate) -> AppState {
 
 /// Sincroniza el espejo local con la señal de Dioxus solo si cambió el valor,
 /// evitando re-renders innecesarios.
-fn transition(current: &mut AppState, app_state: &mut Signal<AppState>, next: AppState) {
+///
+/// **MODO MANUAL**: es el único camino por el que este loop escribe el estado
+/// de la app, así que el guard vive acá. Con `manual_mode` en `true` no se
+/// toca la señal NI el espejo local (`current` queda congelado): el champ
+/// elegido por el usuario desde el menú permanece intacto y, al volver el
+/// flag a `false`, la próxima transición retoma el control desde el estado
+/// real del loop.
+fn transition(
+    current: &mut AppState,
+    app_state: &mut Signal<AppState>,
+    manual_mode: bool,
+    next: AppState,
+) {
+    // MODO MANUAL: con el flag activo el loop no escribe el estado de la app.
+    if manual_mode {
+        return;
+    }
     if *current != next {
         *current = next.clone();
         app_state.set(next);
@@ -844,6 +1004,64 @@ mod tests {
     use super::*;
     use crate::data_dragon::models::ChampionEntry;
     use crate::lcu::events::{champion_placeholder, ChampSelectMember};
+
+    /// MODO MANUAL: el guard de `transition` es el único camino por el que
+    /// el loop escribe el estado de la app. Con `manual_mode` en `true` no
+    /// toca NI la señal NI el espejo local (`current` queda congelado); al
+    /// volver el flag a `false`, la próxima transición retoma el control
+    /// desde el estado real del espejo.
+    ///
+    /// Los `Signal` requieren un runtime de Dioxus (un `Owner` creado a mano
+    /// aborta al dropear el storage fuera del TLS del runtime), así que la
+    /// lógica corre dentro de un componente montado en un `VirtualDom` de
+    /// prueba (mismo patrón que los tests de dioxus-signals).
+    #[test]
+    fn transition_con_manual_mode_no_escribe_la_senal() {
+        use dioxus::prelude::*;
+
+        fn transicion_harness() -> Element {
+            let elegido_a_mano = AppState::InChampSelect(Some(champion_placeholder(103)));
+            let mut current = AppState::WaitingForChampSelect;
+            let mut app_state = Signal::new(elegido_a_mano.clone());
+
+            // Con el flag activo: ni la señal ni el espejo local se tocan,
+            // aunque el loop quiera pisar el champ elegido a mano.
+            transition(
+                &mut current,
+                &mut app_state,
+                true,
+                AppState::InChampSelect(Some(champion_placeholder(412))),
+            );
+            assert_eq!(
+                *app_state.read(),
+                elegido_a_mano,
+                "el guard no debe dejar que el loop pise el champ del usuario"
+            );
+            assert_eq!(current, AppState::WaitingForChampSelect);
+
+            // Con el flag en false: la transición retoma el control y escribe
+            // señal + espejo desde el estado real (el Waiting congelado).
+            transition(&mut current, &mut app_state, false, AppState::Disconnected);
+            assert_eq!(*app_state.read(), AppState::Disconnected);
+            assert_eq!(current, AppState::Disconnected);
+
+            // Transición no-op (mismo valor): no hay escritura de señal y el
+            // espejo queda igual (idempotencia del camino sin guard).
+            transition(
+                &mut current,
+                &mut app_state,
+                false,
+                AppState::Disconnected,
+            );
+            assert_eq!(*app_state.read(), AppState::Disconnected);
+            assert_eq!(current, AppState::Disconnected);
+
+            rsx! { div {} }
+        }
+
+        let mut dom = VirtualDom::new(transicion_harness);
+        let _muts = dom.rebuild_to_vec();
+    }
 
     /// El guard del espejo: un champ select REAL con pick bloquea a la Live
     /// API; un casillero vacío (`InChampSelect(None)`) que el LCU dejó
@@ -1123,5 +1341,96 @@ mod tests {
 
         // Vacío sigue vacío (y `fetch_client_version` lo convierte en None).
         assert_eq!(clean_game_version(""), "");
+    }
+
+    /// FASE 13: el backstop solo actúa si el estado está colgado en champ
+    /// select (con o sin pick) y NO hay partida en vivo espejándose — en
+    /// partida el GET de champ select da 404 y el "cierre" que él vería
+    /// sería la propia partida: matar el espejo sería el bug inverso. Los
+    /// estados sanos (`Waiting`, `Disconnected`) no necesitan rescate.
+    #[test]
+    fn backstop_procede_solo_en_champ_select_sin_espejo() {
+        let real = AppState::InChampSelect(Some(champion_placeholder(103)));
+        let fantasma = AppState::InChampSelect(None);
+
+        // Colgado en champ select y sin espejo: procede (fantasma o cierre
+        // sin evento `Delete`, sea cual sea el pick del estado).
+        assert!(backstop_procede(&real, &None));
+        assert!(backstop_procede(&fantasma, &None));
+
+        // Espejando una partida: el estado lo maneja la Live API, no se toca.
+        assert!(!backstop_procede(&real, &Some(103)));
+        assert!(!backstop_procede(&fantasma, &Some(103)));
+
+        // Estados sanos: no hay nada que rescatar.
+        assert!(!backstop_procede(&AppState::WaitingForChampSelect, &None));
+        assert!(!backstop_procede(&AppState::Disconnected, &None));
+    }
+
+    /// FASE 13: la baja del backstop equivale a un cierre limpio: `AppState`
+    /// vuelve a `WaitingForChampSelect` y el contexto de partida (que venía
+    /// con la sesión real colgada) se resetea al default. Los `Signal`
+    /// requieren el `VirtualDom` de prueba, mismo patrón que el test de
+    /// `transition` con modo manual.
+    #[test]
+    fn bajar_del_champ_select_resetea_estado_y_contexto() {
+        use dioxus::prelude::*;
+
+        fn baja_harness() -> Element {
+            // Sesión real colgada (con pick del local y miembros en ambos
+            // equipos): su contexto es NO default — si fuera default, el
+            // reset del contexto sería un no-op sin sobre el que verificar.
+            let sesion = ChampSelectSession {
+                local_member_cell_id: Some(1),
+                my_team: vec![
+                    ChampSelectMember {
+                        cell_id: 0,
+                        champion_id: 22,
+                        champion_pick_intent: 0,
+                        assigned_position: Some(Position::Bottom),
+                    },
+                    ChampSelectMember {
+                        cell_id: 1,
+                        champion_id: 103,
+                        champion_pick_intent: 0,
+                        assigned_position: None,
+                    },
+                ],
+                enemy_team: vec![ChampSelectMember {
+                    cell_id: 5,
+                    champion_id: 86,
+                    champion_pick_intent: 0,
+                    assigned_position: Some(Position::Top),
+                }],
+                timer: None,
+            };
+            let contexto_previo = MatchContext::from_session(&sesion);
+            assert_ne!(contexto_previo, MatchContext::default());
+
+            let mut current = AppState::InChampSelect(Some(champion_placeholder(103)));
+            let mut app_state = Signal::new(current.clone());
+            let mut current_context = contexto_previo.clone();
+            let mut match_context = Signal::new(contexto_previo.clone());
+
+            // El caller YA descartó el modo manual (condición del backstop)
+            // y confirmó el cierre: la baja es la correlativa de un cierre
+            // limpio.
+            bajar_del_champ_select(
+                &mut current,
+                &mut app_state,
+                &mut current_context,
+                &mut match_context,
+            );
+
+            assert_eq!(current, AppState::WaitingForChampSelect);
+            assert_eq!(*app_state.read(), AppState::WaitingForChampSelect);
+            assert_eq!(current_context, MatchContext::default());
+            assert_eq!(*match_context.read(), MatchContext::default());
+
+            rsx! { div {} }
+        }
+
+        let mut dom = VirtualDom::new(baja_harness);
+        let _muts = dom.rebuild_to_vec();
     }
 }

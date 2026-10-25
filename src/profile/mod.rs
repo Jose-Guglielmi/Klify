@@ -35,7 +35,7 @@
 //! vacías) pero nunca borra el último resumen válido: solo se actualiza la
 //! señal con fetchs que llegan hasta el final.
 
-use std::time::Duration;
+use std::time::{Duration, Instant};
 
 use dioxus::prelude::{Signal, WritableExt};
 use irelia::requests::RequestClientType;
@@ -58,16 +58,64 @@ const DETECTION_RETRY: Duration = Duration::from_millis(2500);
 const HEALTH_CHECK_INTERVAL: Duration = Duration::from_millis(5000);
 /// Frecuencia de re-fetch del perfil con cliente vivo (5 min, según spec).
 pub const PROFILE_REFRESH_INTERVAL: Duration = Duration::from_secs(300);
+/// Ventana mínima entre avisos repetidos de "sin cliente" (mismo motivo):
+/// la detección reintenta cada [`DETECTION_RETRY`] y sin esto el aviso
+/// llenaba la consola (QA: 434 avisos en una sesión).
+const AVISO_REPEAT_WINDOW: Duration = Duration::from_secs(30);
+
+/// Decide si corresponde loguear el aviso "sin cliente": sí en el primer
+/// intento o cuando el motivo cambia respecto del último logueado; con el
+/// mismo motivo, solo si pasó al menos [`AVISO_REPEAT_WINDOW`] desde el
+/// último log. Puro y testeable: quien llama actualiza el estado si (y
+/// solo si) devuelve `true`.
+fn debe_loguear_aviso(
+    ultimo: &Option<String>,
+    ultimo_ts: Option<Instant>,
+    actual: &str,
+    ahora: Instant,
+) -> bool {
+    if ultimo.as_deref() != Some(actual) {
+        // Primer aviso o motivo distinto al anterior: siempre se loguea.
+        return true;
+    }
+    match ultimo_ts {
+        // Estado inconsistente (motivo recordado sin timestamp): tratar
+        // como primer aviso.
+        None => true,
+        Some(ts) => ahora.duration_since(ts) >= AVISO_REPEAT_WINDOW,
+    }
+}
+
+/// Loguea el aviso "sin cliente" respetando la deduplicación de
+/// [`debe_loguear_aviso`] y, si logueó, actualiza el estado del loop.
+fn loguear_aviso_sin_cliente(
+    ultimo: &mut Option<String>,
+    ultimo_ts: &mut Option<Instant>,
+    motivo: &str,
+) {
+    let ahora = Instant::now();
+    if !debe_loguear_aviso(ultimo, *ultimo_ts, motivo, ahora) {
+        return;
+    }
+    eprintln!("klipy [profile]: aviso: todavía sin cliente REST ({motivo})");
+    *ultimo = Some(motivo.to_string());
+    *ultimo_ts = Some(ahora);
+}
 
 /// Conecta el cliente REST de irelia (bloqueante: escaneo de procesos con
 /// `sysinfo`) en `spawn_blocking`, igual que `lcu::client::connect_rest`.
-async fn connect_rest() -> Option<LcuClient<RequestClientType>> {
+/// El aviso de "sin cliente" pasa por [`loguear_aviso_sin_cliente`] con el
+/// estado de dedup que vive en [`run_profile_loop`].
+async fn connect_rest(
+    ultimo_aviso: &mut Option<String>,
+    ultimo_aviso_ts: &mut Option<Instant>,
+) -> Option<LcuClient<RequestClientType>> {
     match tokio::task::spawn_blocking(LcuClient::connect).await {
         Ok(Ok(client)) => Some(client),
         // "No hay cliente" es el caso esperado mientras no corre el LoL:
-        // no llena la consola.
+        // se avisa con dedup, no en cada reintento.
         Ok(Err(error)) => {
-            eprintln!("klipy [profile]: aviso: todavía sin cliente REST ({error})");
+            loguear_aviso_sin_cliente(ultimo_aviso, ultimo_aviso_ts, &error.to_string());
             None
         }
         Err(error) => {
@@ -98,11 +146,17 @@ pub async fn run_profile_loop(mut profile: Signal<Option<ProfileSummary>>) {
     let mut current = Option::<ProfileSummary>::None;
     set_profile(&mut current, &mut profile, None);
 
+    // Estado local del loop para deduplicar el aviso "sin cliente": se
+    // loguea al cambiar el motivo y, con el mismo motivo, como máximo
+    // 1 vez cada `AVISO_REPEAT_WINDOW`.
+    let mut ultimo_aviso: Option<String> = None;
+    let mut ultimo_aviso_ts: Option<Instant> = None;
+
     loop {
         // 1. Detección: sin cliente → perfil en None (pantalla "sin
         //    cliente" de la UI 11b), handle global limpio (el modal de
         //    detalle muestra "Cliente no conectado") y reintento.
-        let Some(client) = connect_rest().await else {
+        let Some(client) = connect_rest(&mut ultimo_aviso, &mut ultimo_aviso_ts).await else {
             client_handle::set_client_handle(None);
             set_profile(&mut current, &mut profile, None);
             sleep(DETECTION_RETRY).await;
@@ -152,5 +206,64 @@ pub async fn run_profile_loop(mut profile: Signal<Option<ProfileSummary>>) {
         client_handle::set_client_handle(None);
         set_profile(&mut current, &mut profile, None);
         sleep(DETECTION_RETRY).await;
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    const MOTIVO: &str = "no se encontró el cliente";
+
+    /// Primer aviso: sin motivo ni timestamp previos, siempre se loguea.
+    #[test]
+    fn primer_aviso_loguea() {
+        let ahora = Instant::now();
+        assert!(debe_loguear_aviso(&None, None, MOTIVO, ahora));
+    }
+
+    /// Mismo motivo dentro de la ventana de 30s: se suprime.
+    #[test]
+    fn motivo_repetido_dentro_de_ventana_suprime() {
+        let ahora = Instant::now();
+        let ultimo = Some(MOTIVO.to_string());
+        let ts = ahora - Duration::from_secs(10);
+        assert!(!debe_loguear_aviso(&ultimo, Some(ts), MOTIVO, ahora));
+    }
+
+    /// Mismo motivo fuera de la ventana de 30s: vuelve a loguear.
+    #[test]
+    fn motivo_repetido_fuera_de_ventana_loguea() {
+        let ahora = Instant::now();
+        let ultimo = Some(MOTIVO.to_string());
+        let ts = ahora - Duration::from_secs(31);
+        assert!(debe_loguear_aviso(&ultimo, Some(ts), MOTIVO, ahora));
+    }
+
+    /// Borde exacto de la ventana (30s justos): ya se considera vencida.
+    #[test]
+    fn limite_exacto_de_ventana_loguea() {
+        let ahora = Instant::now();
+        let ultimo = Some(MOTIVO.to_string());
+        let ts = ahora - AVISO_REPEAT_WINDOW;
+        assert!(debe_loguear_aviso(&ultimo, Some(ts), MOTIVO, ahora));
+    }
+
+    /// Motivo distinto: se loguea aunque el último log sea reciente.
+    #[test]
+    fn motivo_distinto_loguea_aun_dentro_de_ventana() {
+        let ahora = Instant::now();
+        let ultimo = Some("conexión rechazada por el puerto".to_string());
+        let ts = ahora - Duration::from_secs(1);
+        assert!(debe_loguear_aviso(&ultimo, Some(ts), MOTIVO, ahora));
+    }
+
+    /// Motivo recordado sin timestamp (estado inconsistente): tratar como
+    /// primer aviso.
+    #[test]
+    fn motivo_repetido_sin_timestamp_trata_como_primero() {
+        let ahora = Instant::now();
+        let ultimo = Some(MOTIVO.to_string());
+        assert!(debe_loguear_aviso(&ultimo, None, MOTIVO, ahora));
     }
 }

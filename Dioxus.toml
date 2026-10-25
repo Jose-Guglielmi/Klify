@@ -3,7 +3,7 @@
 [web.app]
 
 # HTML title tag content
-title = "klipy"
+title = "Klify"
 
 # include `assets` in web platform
 [web.resource]

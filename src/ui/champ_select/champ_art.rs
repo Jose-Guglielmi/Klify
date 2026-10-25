@@ -8,6 +8,10 @@ use dioxus::prelude::*;
 
 /// Art sin fondo para un `ddragon_id` (ej. `"AurelionSol"`), si existe en
 /// `assets/champs/`.
+///
+/// Reservado: fallback offline de arte local; el primario actual es la
+/// loading art de Data Dragon (ver vs_row::card_visual).
+#[allow(dead_code)]
 #[must_use]
 pub(crate) fn champ_art(ddragon_id: &str) -> Option<dioxus::prelude::Asset> {
     match ddragon_id {
