@@ -4971,3 +4971,292 @@ span.cs-apply-err {
   .vivo-estado-panel { padding: 20px; }
   .perfil-buscador { padding: 14px 16px; margin-bottom: 14px; }
 }
+
+/* ==========================================================================
+   VISTA VIVO · HEADER CON TABS + PANEL DE PARTIDA EN VIVO
+   Header en grid 1fr auto 1fr: título | tabs centradas | tag derecha (el tag
+   lo alinea el RSX con su propia clase). Pestañas: botón micro-label
+   uppercase; hover = tinte rojo suave de .klify-nav-item; activa = borde y
+   tinte del rojo de marca. Panel de partida en vivo: misma gramática que
+   .vivo-estado-panel (borde 1px outline-var, padding 28, flex col, gap 12)
+   con grupos mini que envuelven en filas.
+   ========================================================================== */
+
+/* Header de la vista: título | tabs | tag */
+.vivo-head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.vivo-tabs {
+  display: flex;
+  gap: 6px;
+}
+
+/* Pestaña del header (botón): micro-label uppercase con borde 1px */
+.vivo-tab {
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid var(--outline-var);
+  border-radius: var(--radius-sm, 4px);
+  color: var(--on-surface-var);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+/* Hover: mismo tinte rojo suave que .klify-nav-item:hover */
+.vivo-tab:hover {
+  background: rgba(255, 0, 51, 0.07);
+  color: var(--on-surface);
+}
+
+/* Activa: rojo de marca pleno (par --activo/--on del sistema) */
+.vivo-tab--on,
+.vivo-tab--on:hover {
+  background: rgba(255, 0, 51, 0.10);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Panel de partida en vivo: misma gramática que .vivo-estado-panel */
+.vivo-panel-live {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+}
+
+.vivo-live-filas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Mini bloque de datos (jugador/equipo) dentro de las filas */
+.vivo-live-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 140px;
+  padding: 10px 12px;
+  border: 1px solid var(--outline-var);
+}
+
+/* Nombre de jugador */
+.vivo-live-nombre {
+  font-size: 12px;
+  color: var(--on-surface-var);
+}
+
+/* Responsive del header: apila y las pestañas envuelven; el panel baja de
+   padding como .vivo-estado-panel (corte 760 del sistema) */
+@media (max-width: 760px) {
+  .vivo-head {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .vivo-tabs {
+    flex-wrap: wrap;
+  }
+
+  .vivo-panel-live {
+    padding: 20px;
+  }
+}
+
+/* ==========================================================================
+   VISTA VIVO · PANEL DE JUGADORES (estilo Porofessor)
+   Listado 5v5 dentro del panel de partida en vivo: filas compactas con
+   posición, retrato 32px (img interior forzado a 100%: lección de
+   .vivo-fila-retrato), nombre con ellipsis, chip de rango tabular y WR
+   coloreado (verde #86c39c del .dot / rojo --primary-bright del sistema).
+   Patrones reusados: micro-label de .cs-banda-seg-titulo, mini-tag de
+   .vivo-fila-lane, badge rojo de .cs5-pill--red y hover tinte rojo de
+   .vivo-fila. Markup esperado:
+   .jugadores-panel
+     .jugadores-titulo · .jugadores-equipo > .jugador-fila >
+       .jugador-pos · .jugador-vos · .jugador-retrato[.jugador-sinpick] ·
+       .jugador-nombre · .jugador-rank · .jugador-wr--{verde,rojo} ·
+       .jugador-champ · .jugador-sindatos
+   ========================================================================== */
+
+/* ---- Contenedor: sección separada por línea bajo el panel de partida ---- */
+
+.jugadores-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--outline-var);
+}
+
+/* Un bloque por equipo (aliados / enemigos) */
+.jugadores-equipo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Micro-label del bloque (patrón .cs-banda-seg-titulo / .vivo-buscador-titulo) */
+.jugadores-titulo {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+}
+
+/* ---- Fila de jugador ---- */
+
+/* Borde transparente de base: al hover aparece el contorno + tinte rojo
+   suave (más tenue que el 0.07 de nav/tabs: la fila no es clicable) */
+.jugador-fila {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.jugador-fila:hover {
+  border-color: var(--outline-var);
+  background: rgba(255, 0, 51, 0.04);
+}
+
+/* Mini-tag de posición (patrón .vivo-fila-lane) */
+.jugador-pos {
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--outline-var);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+/* Badge "VOS": rojo de marca (borde/texto primary-bright, tinte 10%) */
+.jugador-vos {
+  flex: none;
+  padding: 2px 8px;
+  border: 1px solid var(--primary-bright);
+  background: rgba(255, 0, 51, 0.1);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-bright);
+  white-space: nowrap;
+}
+
+/* Retrato 32px: el img interior sin tamaño propio desborda a tamaño natural
+   (lección de .vivo-fila-retrato) → forzar 100% */
+.jugador-retrato {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--outline-var);
+}
+
+.jugador-retrato img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Variante de retrato vacío (combinar con .jugador-retrato): centrado y
+   atenuado, con "?" o similar traído por el RSX */
+.jugador-sinpick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.45;
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--on-surface-var);
+}
+
+/* Nombre: bold, una línea, ellipsis (min-width:0 le permite ceder ancho) */
+.jugador-nombre {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+/* Chip de rango: tenue, números tabulares para que no bailen */
+.jugador-rank {
+  flex: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-var);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* WR del jugador en la partida: el color lo pone la variante, como
+   .vivo-fila-wr--{verde,rojo} */
+.jugador-wr--verde { color: #86c39c; }
+.jugador-wr--rojo { color: var(--primary-bright); }
+
+/* Champ elegido + WR global: tenue, no compite con el nombre */
+.jugador-champ {
+  flex: none;
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.2;
+  color: var(--on-surface-var);
+  white-space: nowrap;
+}
+
+/* Estados sin datos: "CARGANDO…" / "SIN DATOS" / "SIN PICK" */
+.jugador-sindatos {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: var(--on-surface-var);
+}
+
+/* ---- Responsive: filas compactas (corte 760 del sistema) ---- */
+@media (max-width: 760px) {
+  .jugador-fila {
+    gap: 8px;
+    padding: 6px 8px;
+  }
+
+  /* La posición es lo prescindible: fuera para que el nombre entre */
+  .jugador-pos {
+    display: none;
+  }
+}

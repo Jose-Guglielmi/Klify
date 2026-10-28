@@ -1079,6 +1079,8 @@ mod tests {
             cell_id: cell,
             champion_id,
             position,
+            summoner_id: None,
+            summoner_name: None,
         }
     }
 

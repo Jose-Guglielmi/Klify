@@ -144,6 +144,13 @@ pub struct TeamMember {
     pub champion_id: Option<i64>,
     /// Posición asignada por el matchmaking, si la cola la reporta.
     pub position: Option<Position>,
+    /// Id numérico del invocador en el LCU (`summonerId`), si el payload lo
+    /// trajo: es la clave que usa el panel de jugadores para pedir datos por
+    /// jugador (runas, historial) sin mirar la sesión cruda.
+    pub summoner_id: Option<i64>,
+    /// Nombre de invocador (`summonerName`) para mostrar en la UI; `None` si
+    /// el payload no lo trajo.
+    pub summoner_name: Option<String>,
 }
 
 impl TeamMember {
@@ -157,6 +164,8 @@ impl TeamMember {
             cell_id: member.cell_id,
             champion_id: (member.champion_id != 0).then_some(member.champion_id),
             position: member.assigned_position,
+            summoner_id: member.summoner_id,
+            summoner_name: member.summoner_name.clone(),
         }
     }
 }
@@ -230,6 +239,8 @@ mod tests {
             champion_id: champ,
             champion_pick_intent: intent,
             assigned_position: position,
+            summoner_id: None,
+            summoner_name: None,
         }
     }
 
@@ -272,11 +283,15 @@ mod tests {
                     cell_id: 0,
                     champion_id: Some(412),
                     position: Some(Position::Bottom),
+                    summoner_id: None,
+                    summoner_name: None,
                 },
                 TeamMember {
                     cell_id: 1,
                     champion_id: None,
                     position: Some(Position::Top),
+                    summoner_id: None,
+                    summoner_name: None,
                 },
             ]
         );
@@ -288,6 +303,47 @@ mod tests {
         assert_eq!(context.enemies[1].champion_id, None);
         assert_eq!(context.enemies[2].champion_id, None);
         assert_eq!(context.enemies[2].position, None);
+    }
+
+    /// El panel de jugadores (Porofessor-style) lee los equipos desde
+    /// `MatchContext`: el id y el nombre de invocador de cada miembro tienen
+    /// que sobrevivir la conversión tanto para aliados como para enemigos, y
+    /// quedar en `None` donde el payload no los trajo.
+    #[test]
+    fn from_session_preserva_summoner_id_y_nombre_en_ambos_equipos() {
+        let mut session = sesion_de_ejemplo();
+        // Aliado (celda 0) y enemigo (celda 5) con identidad completa.
+        session.my_team[0].summoner_id = Some(4242);
+        session.my_team[0].summoner_name = Some("Klipi".to_string());
+        session.enemy_team[0].summoner_id = Some(777);
+        session.enemy_team[0].summoner_name = Some("MidKing".to_string());
+
+        let context = MatchContext::from_session(&session);
+
+        let aliado = context
+            .allies
+            .iter()
+            .find(|ally| ally.cell_id == 0)
+            .expect("aliado con celda 0 presente");
+        assert_eq!(aliado.summoner_id, Some(4242));
+        assert_eq!(aliado.summoner_name.as_deref(), Some("Klipi"));
+
+        let enemigo = context
+            .enemies
+            .iter()
+            .find(|enemy| enemy.cell_id == 5)
+            .expect("enemigo con celda 5 presente");
+        assert_eq!(enemigo.summoner_id, Some(777));
+        assert_eq!(enemigo.summoner_name.as_deref(), Some("MidKing"));
+
+        // Miembro sin identidad en el payload → `None`, nunca basura.
+        let sin_identidad = context
+            .allies
+            .iter()
+            .find(|ally| ally.cell_id == 1)
+            .expect("aliado con celda 1 presente");
+        assert_eq!(sin_identidad.summoner_id, None);
+        assert_eq!(sin_identidad.summoner_name, None);
     }
 
     /// FASE 6: enemigo lockeado vs enemigo con solo intent. El pick real del

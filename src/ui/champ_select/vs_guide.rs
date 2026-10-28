@@ -1,27 +1,33 @@
-//! Tab "CÓMO JUGAR VS" del champ select (reemplaza la tab vieja de tips):
+//! Tab "CÓMO GANARLE" del champ select (reemplaza la tab vieja de tips):
 //! guía del RIVAL elegido combinando dos fuentes honestas:
 //!
 //! - **Matchup real** (SIEMPRE visible si hay rival): [`MatchupBanner`], la
 //!   sección standalone entre la fila 5v5 y las tabs, con `wr_vs` sobre el
 //!   [`CounterSummary`] del análisis de MI campeón — caras MI champ vs
-//!   RIVAL, lane del cruce, WR grande, partidas y chip de veredicto.
+//!   RIVAL, lane del cruce, WR grande, partidas y chip de veredicto. En
+//!   modo ficha (`manual = true`) el rival es el PROPIO champ de la ficha,
+//!   así que el banner muestra solo su cara (ver [`BannerCaras`]).
 //! - **Ficha cualitativa** ([`super::vs_guide_data`], JSONs embebidos por
 //!   slug): dossier con stats globales del rival + "lo malo de {rival}" +
-//!   cómo ganarle según el arquetipo de MI champ ([`VsGuidePanel`]). Los
-//!   campeones sin JSON caen al empty-state "ficha no disponible" sin
-//!   inventar contenido.
+//!   los tips de counterplay por counter (`counter_tips` de la ficha,
+//!   visibles en ambos modos) + cómo ganarle según el arquetipo de MI
+//!   champ ([`VsGuidePanel`]; esa sección se oculta en modo ficha, donde
+//!   el rival ES el champ de la ficha y no aplica). Los campeones sin
+//!   JSON caen al empty-state "ficha no disponible" sin inventar
+//!   contenido.
 //! - **Tab "CONSEJOS"** ([`ConsejosPanel`]): consejos del PROPIO campeón
 //!   leídos de SU ficha embebida (combos que ganan lane, tips de manejo y
 //!   plan de juego por fases), sin red; sin champ/catálogo, sin ficha o
 //!   sin `playstyle` cae a empty-states honestos. Los consejos CONTRA el
-//!   rival viven en la tab "Cómo jugar vs" ([`VsGuidePanel`]).
+//!   rival viven en la tab "Cómo ganarle" ([`VsGuidePanel`]).
 //!
 //! Los estados cubiertos son: sin rival (el banner desaparece y el panel
 //! muestra el hint), rival sin guía (banner + empty-state) y rival con
 //! guía (banner + dossier + secciones). Toda la derivación es pura y
-//! testeada ([`matchup_chip_text`], [`banner_view`], [`top_lanes`],
-//! [`dossier_view`], [`consejos_view`]); el RSX solo pinta valores ya
-//! resueltos, con los snapshots de señales tomados ANTES de construirlo.
+//! testeada ([`matchup_chip_text`], [`caras_del_banner`], [`banner_view`],
+//! [`top_lanes`], [`dossier_view`], [`consejos_view`]); el RSX solo pinta
+//! valores ya resueltos, con los snapshots de señales tomados ANTES de
+//! construirlo.
 
 use std::collections::HashMap;
 
@@ -37,7 +43,7 @@ use crate::ui::format::format_thousands;
 use crate::ui::recommendations::format_winrate;
 
 use super::position_label;
-use super::vs_guide_data::{guide_for_slug, GuidePlaystyle};
+use super::vs_guide_data::{guide_for_slug, GuideCounterTip, GuidePlaystyle};
 use super::vs_hero::rival_lane_from_context;
 
 /// Umbral de pickrate bajo para el chip dorado del dossier: un rival con
@@ -92,6 +98,30 @@ pub fn matchup_chip_text(vs_winrate: Option<f64>, games: i64) -> &'static str {
             }
         }
         _ => "SIN MUESTRA SUFICIENTE",
+    }
+}
+
+/// Qué caras pinta el banner (puro, testeado): `Espejo` cuando el rival
+/// es MI propio campeón — cruce que solo ocurre en modo ficha (`manual`,
+/// el padre setea `rival` con el id de la ficha), porque en un draft real
+/// los picks son únicos por partida y nadie se enfrenta a sí mismo — y
+/// `Duelo` en cualquier otro caso.
+#[derive(Clone, Copy, Debug, PartialEq, Eq)]
+enum BannerCaras {
+    /// Solo la cara del rival con su frame (`BannerFace`): "MI icono VS
+    /// icono rival" sería X vs X y ese matchup no existe.
+    Espejo,
+    /// MI cara + VS dorado + la cara del rival.
+    Duelo,
+}
+
+/// Resuelve [`BannerCaras`] para el cruce (puro, testeado).
+#[must_use]
+fn caras_del_banner(my_champion_id: i64, rival_id: i64) -> BannerCaras {
+    if rival_id == my_champion_id {
+        BannerCaras::Espejo
+    } else {
+        BannerCaras::Duelo
     }
 }
 
@@ -177,7 +207,8 @@ fn banner_view(inputs: &BannerInputs) -> MatchupBannerView {
 /// Banner de matchup standalone (sección propia entre la fila 5v5 y las
 /// tabs): caras MI champ vs RIVAL con frame rojo, título grande de lane y
 /// WR real del matchup con meta de la muestra y chip de veredicto. Sin
-/// rival elegido la sección entera no se renderiza.
+/// rival elegido la sección entera no se renderiza; si el rival es MI
+/// propio champ (modo ficha) solo se muestra su cara — ver [`BannerCaras`].
 #[component]
 pub(crate) fn MatchupBanner(
     my_champion_id: i64,
@@ -247,12 +278,22 @@ pub(crate) fn MatchupBanner(
         )
     });
 
+    // En modo ficha el rival es el PROPIO champ de la ficha: "MI icono VS
+    // icono rival" sería X vs X (en draft real ese cruce no existe). Se
+    // elige mostrar solo la cara del rival con su frame — misma ancla
+    // visual del banner con las clases existentes, sin CSS nuevo — en vez
+    // de ocultar la fila de caras entera.
+    let caras = caras_del_banner(my_champion_id, rival_id);
+
     rsx! {
         div { class: "vg-matchup cut-tr-bl{banner_mod}",
-            // Caras: MI icono (frame rojo) + VS dorado + icono del rival.
+            // Caras: MI icono (frame rojo) + VS dorado + icono del rival;
+            // solo la cara del rival en modo ficha (BannerCaras::Espejo).
             div { "style": "display: flex; align-items: center; gap: 10px;",
-                BannerFace { name: my_name, icon: my_icon }
-                span { class: "cs5-vs", "VS" }
+                if caras == BannerCaras::Duelo {
+                    BannerFace { name: my_name, icon: my_icon }
+                    span { class: "cs5-vs", "VS" }
+                }
                 BannerFace { name: &rival_name, icon: rival_icon }
             }
 
@@ -324,15 +365,24 @@ fn BannerFace(name: String, icon: Option<String>) -> Element {
     }
 }
 
-/// Panel de la tab "Cómo jugar vs": dossier del rival, lo malo y cómo
-/// ganarle según MI champ. El banner del matchup real ahora es la sección
-/// standalone [`MatchupBanner`] (fuera del panel); acá solo vive la guía
-/// cualitativa, con empty-states honestos para los campeones sin JSON.
+/// Panel de la tab "Cómo ganarle": dossier del rival, lo malo, los tips
+/// de counterplay de su ficha y cómo ganarle según MI champ. El banner
+/// del matchup real ahora es la sección standalone [`MatchupBanner`]
+/// (fuera del panel); acá solo vive la guía cualitativa, con empty-states
+/// honestos para los campeones sin JSON. Con `manual == true` (modo
+/// ficha) el rival ES el campeón de la ficha — el padre setea la señal
+/// `rival` con ese id y la tab no lleva selector — así que la sección
+/// "según tu champ" se oculta (no hay matchup contra MI champ que
+/// condicione el consejo) y el resto lee como la guía de ese campeón,
+/// incluidos los counter tips: contenido del rival, sirve igual en los
+/// dos modos. El hint sin rival queda como fallback: el padre del modo
+/// ficha siempre setea `rival`.
 #[component]
 pub(crate) fn VsGuidePanel(
     rival: Signal<Option<i64>>,
     catalog: ReadSignal<Option<ChampionCatalog>>,
     version: Option<String>,
+    manual: bool,
 ) -> Element {
     // Snapshots cortos: los guards no cruzan la construcción del rsx.
     let rival_id = rival();
@@ -373,6 +423,16 @@ pub(crate) fn VsGuidePanel(
         .unwrap_or_default();
     let has_weaknesses = !weaknesses.is_empty();
 
+    // Tips de counterplay de la ficha: cada counter del rival y cómo le
+    // gana. En ambos modos es contenido del rival; sin tips no hay
+    // sección (los JSON `depth=basic` ni siquiera los traen).
+    let counter_tips: Vec<CounterTipItem> = guide
+        .as_ref()
+        .and_then(|guide| guide.qualitative.as_ref())
+        .map(|qualitative| counter_tip_items(&qualitative.counter_tips))
+        .unwrap_or_default();
+    let has_counter_tips = !counter_tips.is_empty();
+
     // Mini-cards por arquetipo: título + variante de color + bullets, ya
     // filtradas (un grupo vacío no se muestra).
     let arch_cards: Vec<(&'static str, &'static str, Vec<String>)> = qualitative
@@ -400,6 +460,16 @@ pub(crate) fn VsGuidePanel(
         .unwrap_or_default();
     let has_arch_cards = !arch_cards.is_empty();
 
+    // Hint del estado sin rival (fallback: en modo ficha el padre siempre
+    // setea `rival` con el champ de la ficha, así que no debería verse).
+    // En manual no hay fila 5v5 que clickee; con lobby real sí, y el hint
+    // apunta a ella.
+    let empty_hint = if manual {
+        "Elegí un rival para ver cómo ganarle"
+    } else {
+        "Elegí un enemigo en la fila de arriba para ver cómo ganarle"
+    };
+
     rsx! {
         div { class: "vg",
             {match rival_id {
@@ -407,18 +477,16 @@ pub(crate) fn VsGuidePanel(
                 // standalone de arriba tampoco se renderiza).
                 None => rsx! {
                     div { class: "vg-empty",
-                        p { class: "cs-hint",
-                            "Elegí un enemigo en la fila de arriba para ver cómo ganarle"
-                        }
+                        p { class: "cs-hint", "{empty_hint}" }
                     }
                 },
                 Some(_) => rsx! {
-                    // Header del panel: "// Cómo jugar vs {rival}"
+                    // Header del panel: "// Cómo ganarle a {rival}"
                     div { class: "vg-head",
                         span { class: "bar-skew", "style": "width: 24px;" }
                         span { class: "label label-md",
                             span { class: "sl", "//" }
-                            " Cómo jugar vs {rival_name}"
+                            " Cómo ganarle a {rival_name}"
                         }
                     }
 
@@ -442,8 +510,33 @@ pub(crate) fn VsGuidePanel(
                                 WeaknessList { items: weaknesses }
                             }
 
-                            // "// CÓMO GANARLE SEGÚN TU CHAMP"
-                            if has_arch_cards {
+                            // "// CÓMO GANARLE CON CADA COUNTER": los
+                            // tips de counterplay de la ficha (qué
+                            // campeones le ganan y con qué jugadas).
+                            // Orden elegido: primero "lo malo" (el
+                            // diagnóstico de por qué es vencible) y
+                            // después el cómo, accionado counter por
+                            // counter. Sin guard de `manual`: es
+                            // contenido del rival y en modo ficha es LA
+                            // respuesta concreta a "cómo ganarle".
+                            if has_counter_tips {
+                                div { class: "vg-sec",
+                                    span { class: "bar-skew", "style": "width: 24px;" }
+                                    span { class: "label label-md",
+                                        span { class: "sl", "//" }
+                                        " Cómo ganarle con cada counter"
+                                    }
+                                }
+                                {counter_tips.into_iter().enumerate().map(|(index, item)| rsx! {
+                                    CounterTipCard { item, key: "ctip-{index}" }
+                                })}
+                            }
+
+                            // "// CÓMO GANARLE SEGÚN TU CHAMP": oculto en
+                            // modo ficha — el champ de la ficha no es un
+                            // rival distinto de MI champ, así que el
+                            // consejo por arquetipo no aplica.
+                            if !manual && has_arch_cards {
                                 div { class: "vg-sec",
                                     span { class: "bar-skew", "style": "width: 24px;" }
                                     span { class: "label label-md",
@@ -608,6 +701,51 @@ fn ArchetypeCard(
     }
 }
 
+/// Ítem de counterplay ya plano para el RSX: el counter y sus tips, sin
+/// tipos de `vs_guide_data` de por medio (mismo patrón que [`DossierView`]).
+#[derive(Clone, Debug, PartialEq)]
+struct CounterTipItem {
+    /// Nombre visible del counter, ej. `"Talon"`.
+    name: String,
+    /// Tips concretos para ese matchup, en el orden de la ficha.
+    tips: Vec<String>,
+}
+
+/// Arma los ítems de counterplay (pura, testeada): conserva el orden de
+/// la ficha y descarta los counters sin tips (un título suelto sin
+/// consejos no se pinta).
+#[must_use]
+fn counter_tip_items(counter_tips: &[GuideCounterTip]) -> Vec<CounterTipItem> {
+    counter_tips
+        .iter()
+        .filter(|tip| !tip.tips.is_empty())
+        .map(|tip| CounterTipItem {
+            name: tip.name.clone(),
+            tips: tip.tips.clone(),
+        })
+        .collect()
+}
+
+/// Card de counterplay contra el rival: el counter como título bold
+/// (la marca de `vg-arch-title`) y sus tips tenues como bullets
+/// (`.vg-arch ul li` ya trae el guioncito rojo sesgado y el gris de
+/// texto). A lo ancho y apiladas por el `gap` de `.vg`, sin
+/// `vg-arch-grid`: cada tip es una oración larga y las columnas de 220px
+/// la harían ilegibles.
+#[component]
+fn CounterTipCard(item: CounterTipItem) -> Element {
+    rsx! {
+        div { class: "vg-arch",
+            h4 { class: "vg-arch-title", "{item.name}" }
+            ul {
+                {item.tips.iter().enumerate().map(|(index, tip)| rsx! {
+                    li { key: "ctip-{index}", "{tip}" }
+                })}
+            }
+        }
+    }
+}
+
 // ---------------------------------------------------------------------
 // Tab CONSEJOS (ConsejosPanel): consejos de MI campeón desde su ficha
 // ---------------------------------------------------------------------
@@ -728,7 +866,7 @@ pub(crate) fn ConsejosPanel(my_slug: Option<String>) -> Element {
                     }
                 }
                 // Sin slug/catálogo, sin ficha o sin `playstyle` utilizable:
-                // empty honesto (el matchup real sigue en "Cómo jugar vs").
+                // empty honesto (el matchup real sigue en "Cómo ganarle").
                 None => rsx! {
                     div { class: "vg-empty",
                         span { class: "label label-md",
@@ -809,7 +947,7 @@ mod tests {
     use crate::lcu::models::TeamMember;
     use crate::stats::source::counters::{CounterEntry, CounterSummary};
     use crate::stats::source::skills::SkillOrder;
-    use crate::ui::champ_select::vs_guide_data::GuidePlan;
+    use crate::ui::champ_select::vs_guide_data::{GuideCounterTip, GuidePlan};
     use std::sync::Arc;
 
     /// Mapa de lanes a partir de pares (clave Lolalytics, porcentaje).
@@ -863,6 +1001,8 @@ mod tests {
                 cell_id: 1,
                 champion_id: Some(34),
                 position: Some(Position::Middle),
+                summoner_id: None,
+                summoner_name: None,
             }],
             ..MatchContext::default()
         };
@@ -1073,5 +1213,60 @@ mod tests {
         // Sin nada que mostrar (ni siquiera con plan todo vacío): None.
         assert_eq!(consejos_view(&playstyle(0, 0, None)), None);
         assert_eq!(consejos_view(&playstyle(0, 0, Some(("", "", "")))), None);
+    }
+
+    /// Caras del banner: contra MI propio champ (cruce que solo ocurre en
+    /// modo ficha — en un draft real los picks son únicos por partida) va
+    /// una sola cara; contra cualquier otro rival, el duelo completo.
+    #[test]
+    fn caras_del_banner_espeja_solo_contra_mi_propio_champ() {
+        assert_eq!(caras_del_banner(238, 34), BannerCaras::Duelo);
+        assert_eq!(caras_del_banner(238, 999), BannerCaras::Duelo);
+        assert_eq!(
+            caras_del_banner(238, 238),
+            BannerCaras::Espejo,
+            "rival == MI champ → solo la cara del rival"
+        );
+    }
+
+    /// Counter tip de prueba: nombre + tips (vacío para el caso sin datos).
+    fn counter_tip(name: &str, tips: &[&str]) -> GuideCounterTip {
+        GuideCounterTip {
+            name: String::from(name),
+            tips: tips.iter().map(|tip| String::from(*tip)).collect(),
+        }
+    }
+
+    /// Counter tips: se conservan el orden y los tips de cada counter y
+    /// las entradas sin tips quedan afuera (nada de títulos sueltos).
+    #[test]
+    fn counter_tip_items_conserva_orden_y_filtra_los_sin_tips() {
+        let items = counter_tip_items(&[
+            counter_tip("Talon", &["castigá antes del 6", "pegate a la pared"]),
+            counter_tip("Kassadin", &[]),
+            counter_tip("Lissandra", &["ruteala al aterrizar"]),
+        ]);
+
+        assert_eq!(
+            items,
+            vec![
+                CounterTipItem {
+                    name: String::from("Talon"),
+                    tips: vec![
+                        String::from("castigá antes del 6"),
+                        String::from("pegate a la pared"),
+                    ],
+                },
+                CounterTipItem {
+                    name: String::from("Lissandra"),
+                    tips: vec![String::from("ruteala al aterrizar")],
+                },
+            ],
+            "Kassadin no trae tips → no se pinta; el orden de la ficha se conserva"
+        );
+
+        // Sin tips que mostrar (nada o solo counters vacíos) → sin sección.
+        assert!(counter_tip_items(&[]).is_empty());
+        assert!(counter_tip_items(&[counter_tip("Kassadin", &[])]).is_empty());
     }
 }

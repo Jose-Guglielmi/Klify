@@ -12,6 +12,7 @@ use crate::data_dragon::run_runes_loader;
 use crate::data_dragon::runes::RuneCatalog;
 use crate::lcu::client::run_lcu_loop;
 use crate::lcu::models::{AppState, ChampionInfo, MatchContext, SummonerInfo};
+use crate::live::LiveGame;
 use crate::profile::models::ProfileSummary;
 use crate::profile::run_profile_loop;
 use crate::stats::builder::run_dataset_sync;
@@ -232,6 +233,10 @@ pub fn App() -> Element {
     // FASE 12: hay partida en curso (espejo Live API activo). La vista de
     // champ select cambia su etiqueta de sección para no mentir.
     let in_game: Signal<bool> = use_signal(|| false);
+    // FASE 12: partida en vivo espejada (`None` = sin partida). La publica
+    // `run_lcu_loop` — el árbitro del espejo — y la vista VIVO la consume
+    // para renderizar la partida sin re-consultar la Live API.
+    let live_game: Signal<Option<LiveGame>> = use_signal(|| None);
     // FASE 11b-1: la fuente de stats sirvió al menos una tanda de páginas
     // (footer "SYNC · LOLALYTICS" en vez de "EN ESPERA"). Una vez encendida
     // queda encendida para la sesión.
@@ -276,6 +281,7 @@ pub fn App() -> Element {
                 summoner,
                 platform,
                 crate::lcu::client::LiveMirror { rx: live_rx, in_game },
+                live_game,
                 manual_mode,
             )
             .await;
@@ -455,6 +461,8 @@ pub fn App() -> Element {
                         state: app_state,
                         catalog: catalog,
                         on_pick: on_pick,
+                        live_game,
+                        in_game,
                     }
                 },
                 AppView::Menu => rsx! {

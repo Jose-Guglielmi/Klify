@@ -1,4 +1,4 @@
-//! Guías cualitativas "cómo jugar VS" de campeones enemigos, embebidas en
+//! Guías cualitativas "cómo ganarle" de campeones enemigos, embebidas en
 //! el binario.
 //!
 //! Los datos viven en `design/data/{slug}.json` (curados a mano) y se

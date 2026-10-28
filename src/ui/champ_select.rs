@@ -54,6 +54,7 @@ use vs_hero::rival_lane_from_context;
 pub(crate) mod champ_art;
 mod counters_panel;
 mod items_panel;
+mod players_panel;
 mod runes_panel;
 mod skills_panel;
 mod vs_guide;
@@ -141,10 +142,10 @@ pub fn ChampSelectView(
     let in_game_snapshot = *in_game.read();
 
     // Señal del RIVAL elegido + carga de sus counters (compartidas con el
-    // hero strip y la tab Counters); la tab "Cómo jugar vs" lee la ficha
+    // hero strip y la tab Counters); la tab "Cómo ganarle" lee la ficha
     // embebida sin red. El effect de carga vive acá (una sola vez por
     // elección de rival).
-    let rival: Signal<Option<i64>> = use_signal(|| None);
+    let mut rival: Signal<Option<i64>> = use_signal(|| None);
     let mut rival_counters: Signal<RivalCountersState> = use_signal(RivalCountersState::default);
 
     let patch_for_effect = patch_version.clone();
@@ -213,6 +214,21 @@ pub fn ChampSelectView(
         });
     });
 
+    // Giro de diseño (modo manual): en la ficha el RIVAL es el propio
+    // champ — no hay fila 5v5 que lo elija. Sincronizo la señal con el
+    // champ vigente: leo `state` adentro (su fuente reactiva) para que al
+    // entrar a una ficha o cambiar de ficha el rival apunte al de la
+    // ficha. En champ select REAL el guard corta antes y el effect no
+    // escribe nada (la fila 5v5 sigue mandando).
+    use_effect(move || {
+        if !manual {
+            return;
+        }
+        let state_snapshot = state.read().clone();
+        let ficha = current_champion(&state_snapshot);
+        rival.set(ficha.map(|champ| champ.id));
+    });
+
     rsx! {
         div { class: "view",
             KlifyHeader { state }
@@ -262,9 +278,9 @@ pub fn ChampSelectView(
                                     // SELECT" con el draft en vivo + fila
                                     // 5v5 con rivales clickeables): SOLO con
                                     // lobby real. En modo manual se omite
-                                    // entero — sin draft ni elección de
-                                    // rival, la `rival` queda en `None` y
-                                    // el banner de matchup desaparece solo.
+                                    // entero — sin draft ni fila 5v5, la
+                                    // señal `rival` la sincroniza el effect
+                                    // con el champ de la ficha.
                                     if !manual {
                                         // Header de la fila (prototipo
                                         // ui-preview-sylas.html): "// CHAMP
@@ -305,6 +321,15 @@ pub fn ChampSelectView(
                                             match_context,
                                             catalog,
                                             rival,
+                                        }
+                                        // Panel de los 10 jugadores del
+                                        // draft (mi card + aliados + rivales
+                                        // con lane y lock): debajo de la fila
+                                        // 5v5, solo con lobby real (sin draft
+                                        // no hay jugadores que mostrar).
+                                        players_panel::PlayersPanel {
+                                            match_context,
+                                            catalog,
                                         }
                                     }
                                     // Hero strip (prototipo
@@ -366,6 +391,7 @@ pub fn ChampSelectView(
                                         patch_version: patch_version.clone(),
                                         client_connected,
                                         champ_nombre: champion.name.clone(),
+                                        manual,
                                     }
                                 }
                             }
@@ -433,6 +459,10 @@ fn AnalysisTabs(
     client_connected: bool,
     /// Display name del champ vigente (reenviado a Runes/Items).
     champ_nombre: String,
+    /// True en modo manual (sin cliente de LoL): no hay fila 5v5 que
+    /// clickee, así que la señal `rival` apunta al champ de la ficha
+    /// (la sincroniza ChampSelectView) y "Cómo ganarle" la consume.
+    manual: bool,
 ) -> Element {
     let mut active_tab = use_signal(CsTab::default);
 
@@ -482,7 +512,7 @@ fn AnalysisTabs(
                 "role": "tab",
                 "aria-selected": if active_tab() == CsTab::VsTips { "true" } else { "false" },
                 onclick: move |_| active_tab.set(CsTab::VsTips),
-                "Cómo jugar vs"
+                "Cómo ganarle"
             }
             button {
                 class: if active_tab() == CsTab::PlayerTips { "tab tab--active" } else { "tab" },
@@ -534,10 +564,14 @@ fn AnalysisTabs(
                 }
             },
             CsTab::VsTips => rsx! {
+                // El rival llega ya sincronizado: en champ select real lo
+                // elige la fila 5v5 y en manual es el champ de la ficha
+                // (effect de ChampSelectView). Un solo panel para ambos.
                 vs_guide::VsGuidePanel {
                     rival,
                     catalog,
                     version: patch_version,
+                    manual,
                 }
             },
             CsTab::PlayerTips => rsx! {

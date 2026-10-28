@@ -150,6 +150,14 @@ pub struct ChampSelectMember {
     /// algunas colas la traen; valor vacío, `null` o desconocido → `None`.
     #[serde(default, deserialize_with = "deserialize_optional_position")]
     pub assigned_position: Option<Position>,
+    /// Id de invocador del miembro (para resolver nombre/rank vía LCU). En
+    /// los payloads reales llega como número (ver el fixture del test
+    /// `champ_elegido`), de ahí `i64` y no `String`.
+    #[serde(default)]
+    pub summoner_id: Option<i64>,
+    /// Nombre de invocador si el payload lo trae.
+    #[serde(default)]
+    pub summoner_name: Option<String>,
 }
 
 /// Resultado de interpretar un payload crudo de sesión.
@@ -468,6 +476,8 @@ mod tests {
             champion_id: 0,
             champion_pick_intent: 0,
             assigned_position: None,
+            summoner_id: None,
+            summoner_name: None,
         });
 
         assert!(!sesion_es_fantasma(&session));
@@ -478,6 +488,8 @@ mod tests {
             champion_id: 0,
             champion_pick_intent: 0,
             assigned_position: None,
+            summoner_id: None,
+            summoner_name: None,
         });
 
         assert!(!sesion_es_fantasma(&session));
@@ -539,6 +551,8 @@ mod tests {
                 champion_id: 103,
                 champion_pick_intent: 0,
                 assigned_position: None,
+                summoner_id: None,
+                summoner_name: None,
             }],
             enemy_team: Vec::new(),
             timer: None,
@@ -683,5 +697,68 @@ mod tests {
             .map(|m| m.assigned_position)
             .collect();
         assert_eq!(positions, vec![None, None, None, Some(Position::Utility)]);
+    }
+
+    /// `summonerId` (numérico en el payload real) y `summonerName` se
+    /// conservan en el miembro: son la clave para identificar a cada jugador
+    /// del draft en el panel y resolver nombre/rank vía LCU. `summonerName`
+    /// puede faltar aunque `summonerId` venga.
+    #[test]
+    fn miembro_con_summoner_id_y_name() {
+        let payload = json!({
+            "localMemberCellId": 0,
+            "myTeam": [
+                {
+                    "cellId": 0,
+                    "championId": 103,
+                    "championPickIntent": 0,
+                    "spell1Id": 4,
+                    "summonerId": 3948201592_i64,
+                    "summonerName": "Klify"
+                },
+                {
+                    "cellId": 1,
+                    "championId": 25,
+                    "championPickIntent": 0,
+                    "summonerId": 1_234_567_890
+                }
+            ]
+        });
+
+        let parsed = parse_session_payload(payload).expect("payload válido");
+        let SessionPayload::Active(session) = parsed else {
+            panic!("sesión activa esperada");
+        };
+
+        let yo = &session.my_team[0];
+        assert_eq!(yo.summoner_id, Some(3_948_201_592));
+        assert_eq!(yo.summoner_name, Some(String::from("Klify")));
+
+        // Sin `summonerName` el id igual se parsea y el nombre queda en None.
+        let aliado = &session.my_team[1];
+        assert_eq!(aliado.summoner_id, Some(1_234_567_890));
+        assert_eq!(aliado.summoner_name, None);
+    }
+
+    /// Miembro sin `summonerId` ni `summonerName` (payload viejo o
+    /// recortado): los campos nuevos quedan en `None` por el serde default
+    /// y el parseo no se ve afectado.
+    #[test]
+    fn miembro_sin_summoner_id_ni_name() {
+        let payload = json!({
+            "localMemberCellId": 0,
+            "myTeam": [
+                { "cellId": 0, "championId": 0, "championPickIntent": 0 }
+            ]
+        });
+
+        let parsed = parse_session_payload(payload).expect("payload válido");
+        let SessionPayload::Active(session) = parsed else {
+            panic!("sesión activa esperada");
+        };
+
+        let miembro = &session.my_team[0];
+        assert_eq!(miembro.summoner_id, None);
+        assert_eq!(miembro.summoner_name, None);
     }
 }

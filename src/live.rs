@@ -72,6 +72,8 @@ impl LiveGame {
                     cell_id: 1 + index as i64,
                     champion_id: Some(*champion_id),
                     position: *position,
+                    summoner_id: None,
+                    summoner_name: None,
                 })
                 .collect(),
             enemies: self
@@ -82,6 +84,8 @@ impl LiveGame {
                     cell_id: 100 + index as i64,
                     champion_id: Some(*champion_id),
                     position: *position,
+                    summoner_id: None,
+                    summoner_name: None,
                 })
                 .collect(),
         }

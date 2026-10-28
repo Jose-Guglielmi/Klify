@@ -5,7 +5,7 @@
 //!
 //! El rival NO se elige acá: la fila 5v5 (`vs_row::VsTeamRow`) hace
 //! clickeables a los enemigos lockeados y publica el objetivo en la señal
-//! `rival`, compartida con las tabs "Cómo jugar vs" / "Consejos". Este
+//! `rival`, compartida con las tabs "Cómo ganarle" / "Consejos". Este
 //! componente solo la lee; el análisis del matchup (línea de WR y bloque
 //! "Enfrentamiento") vive en la tab de counters (`counters_panel`), que
 //! consume [`RivalCountersState`] vía re-export.
@@ -338,6 +338,8 @@ mod tests {
                 cell_id: 100,
                 champion_id: Some(64),
                 position: Some(Position::Jungle),
+                summoner_id: None,
+                summoner_name: None,
             }],
             ..MatchContext::default()
         };

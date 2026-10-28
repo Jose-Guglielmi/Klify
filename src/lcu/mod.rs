@@ -4,3 +4,4 @@ pub mod actions;
 pub mod client;
 pub mod events;
 pub mod models;
+pub mod scouting;

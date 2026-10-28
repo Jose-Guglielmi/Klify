@@ -72,6 +72,13 @@
 //! contexto reseteado ([`backstop_procede`]) — sin tocar el espejo de la
 //! Live API y fuera del modo manual.
 //!
+//! **Partida en vivo publicada (FASE 13b)**: además del espejo al estado de
+//! champ select, cada evento de la Live API se publica íntegro en la señal
+//! `live_game: Signal<Option<crate::live::LiveGame>>` con el mismo guard de
+//! cambio que las demás señales ([`set_live_game`]). La vista VIVO la
+//! consume para mostrar aliados/enemigos por pestañas: `Some` acompaña al
+//! inicio del espejo y `None` a su baja.
+//!
 //! `irelia` 0.11 reconecta el socket pero **no** re-envía las suscripciones
 //! tras un reconnect, por eso en vez de usar `Flow::TryReconnect` de forma
 //! eterna, el error handler corta el hilo ([`BreakOnError`]) y el orquestador
@@ -209,6 +216,12 @@ impl ErrorHandler for BreakOnError {
 /// el cliente de la Riot API. Igual que el invocador, se consulta una vez
 /// por conexión y se conserva al desconectar; ver [`fetch_platform`].
 ///
+/// `live_game` (FASE 13b) recibe la partida en vivo completa que publica la
+/// Live API, sincronizada con el espejo de [`LiveMirror`]: `Some` cuando
+/// este loop empieza a espejar una partida y `None` cuando la suelta. Es la
+/// fuente de la vista VIVO (aliados/enemigos); la proyección de champ select
+/// no cambia.
+///
 /// FASE 12 · Canales del espejo de partida en curso (agrupados para mantener
 /// la firma de [`run_lcu_loop`] acotada).
 pub struct LiveMirror {
@@ -236,6 +249,7 @@ pub async fn run_lcu_loop(
     mut summoner: Signal<Option<SummonerInfo>>,
     mut platform: Signal<Option<String>>,
     live: LiveMirror,
+    mut live_game: Signal<Option<crate::live::LiveGame>>,
     manual_mode: Signal<bool>,
 ) {
     let mut live_rx = live.rx;
@@ -276,6 +290,12 @@ pub async fn run_lcu_loop(
     // Espejo local del platform id (FASE 8b): solo valores normalizados y
     // válidos según la tabla de routing; se conserva al desconectar.
     let mut current_platform = Option::<String>::None;
+
+    // FASE 13b · Espejo local de la partida en vivo publicada a la UI
+    // (mismo patrón que los demás): se sincroniza junto al espejo del champ
+    // select, con el guard de `set_live_game`.
+    let mut current_live_game = Option::<crate::live::LiveGame>::None;
+    set_live_game(&mut current_live_game, &mut live_game, None);
 
     loop {
         // FASE 1: detección del cliente vía el websocket de irelia.
@@ -411,10 +431,12 @@ pub async fn run_lcu_loop(
                         live_rx.borrow().clone(),
                         &mut current,
                         &mut live_mirror,
+                        &mut current_live_game,
                         &mut app_state,
                         &mut current_context,
                         &mut match_context,
                         &mut in_game,
+                        &mut live_game,
                         *manual_mode.peek(),
                     );
                 }
@@ -447,10 +469,12 @@ pub async fn run_lcu_loop(
                             live_rx.borrow().clone(),
                             &mut current,
                             &mut live_mirror,
+                            &mut current_live_game,
                             &mut app_state,
                             &mut current_context,
                             &mut match_context,
                             &mut in_game,
+                            &mut live_game,
                             *manual_mode.peek(),
                         );
                         if let Some(client) = &client {
@@ -773,15 +797,25 @@ fn should_mirror(current: &AppState, live_mirror: Option<i64>) -> bool {
     }
 }
 
+/// FASE 12 · Proyección del estado de la Live API al champ select espejado
+/// + FASE 13b · publicación de la partida completa para la vista VIVO.
+///
+/// - `Some(game)`: si procede espejar ([`should_mirror`]) y no es la misma
+///   partida ya espejada, escribe `AppState` + contexto sintético +
+///   `in_game` y publica la partida íntegra en `live_game`.
+/// - `None`: si había espejo propio, baja `in_game`, limpia `live_game` y
+///   resetea estado/contexto solo si siguen siendo el espejo propio.
 #[allow(clippy::too_many_arguments)]
 fn handle_live_update(
     live: Option<crate::live::LiveGame>,
     current: &mut AppState,
     live_mirror: &mut Option<i64>,
+    current_live_game: &mut Option<crate::live::LiveGame>,
     app_state: &mut Signal<AppState>,
     current_context: &mut MatchContext,
     match_context: &mut Signal<MatchContext>,
     in_game: &mut Signal<bool>,
+    live_game: &mut Signal<Option<crate::live::LiveGame>>,
     manual_mode: bool,
 ) {
     match live {
@@ -790,7 +824,8 @@ fn handle_live_update(
             if !should_mirror(current, *live_mirror) {
                 return;
             }
-            // Ya espejando esta misma partida → no-op.
+            // Ya espejando esta misma partida → no-op (la señal `live_game`
+            // tampoco se reescribe: el guard del helper lo cubre).
             if *live_mirror == Some(game.my_champion_id)
                 && matches!(current, AppState::InChampSelect(_))
             {
@@ -815,12 +850,18 @@ fn handle_live_update(
             set_match_context(current_context, match_context, game.match_context());
             *live_mirror = Some(game.my_champion_id);
             in_game.set(true);
+            // FASE 13b: publicación de la partida completa para la vista
+            // VIVO (el clon va antes de cualquier consumo de `game`).
+            set_live_game(current_live_game, live_game, Some(game.clone()));
         }
         None => {
             let Some(was_id) = live_mirror.take() else {
                 return;
             };
             in_game.set(false);
+            // FASE 13b: sin partida, la señal de la vista VIVO se limpia
+            // (el guard la deja como está si ya estaba en `None`).
+            set_live_game(current_live_game, live_game, None);
             // Reset solo si el estado vigente sigue siendo MI espejo (si el
             // LCU ya escribió otra cosa — ej. un champ select nuevo — no
             // piso nada).
@@ -992,6 +1033,23 @@ fn set_platform(current: &mut Option<String>, signal: &mut Signal<Option<String>
     if current.as_ref() != Some(&next) {
         *current = Some(next.clone());
         signal.set(Some(next));
+    }
+}
+
+/// FASE 13b · Sincroniza el espejo de la partida en vivo con su señal solo
+/// si cambió el valor (mismo patrón guard que [`set_match_context`]). La
+/// señal alimenta la vista VIVO y publica lo que produce la Live API sin
+/// proyectar: [`crate::live::LiveGame`] deriva `PartialEq`, así que la
+/// comparación es estructural completa (modo, tiempo, champ local y
+/// rosters) y un mismo snapshot repetido nunca re-renderiza.
+fn set_live_game(
+    current: &mut Option<crate::live::LiveGame>,
+    signal: &mut Signal<Option<crate::live::LiveGame>>,
+    next: Option<crate::live::LiveGame>,
+) {
+    if *current != next {
+        *current = next.clone();
+        signal.set(next);
     }
 }
 
@@ -1233,12 +1291,16 @@ mod tests {
                     champion_id: 22,
                     champion_pick_intent: 0,
                     assigned_position: Some(Position::Bottom),
+                    summoner_id: None,
+                    summoner_name: None,
                 },
                 ChampSelectMember {
                     cell_id: 1,
                     champion_id: 0,
                     champion_pick_intent: 103,
                     assigned_position: None,
+                    summoner_id: None,
+                    summoner_name: None,
                 },
             ],
             enemy_team: vec![ChampSelectMember {
@@ -1246,6 +1308,8 @@ mod tests {
                 champion_id: 86,
                 champion_pick_intent: 0,
                 assigned_position: Some(Position::Top),
+                summoner_id: None,
+                summoner_name: None,
             }],
             timer: None,
         });
@@ -1388,12 +1452,16 @@ mod tests {
                         champion_id: 22,
                         champion_pick_intent: 0,
                         assigned_position: Some(Position::Bottom),
+                        summoner_id: None,
+                        summoner_name: None,
                     },
                     ChampSelectMember {
                         cell_id: 1,
                         champion_id: 103,
                         champion_pick_intent: 0,
                         assigned_position: None,
+                        summoner_id: None,
+                        summoner_name: None,
                     },
                 ],
                 enemy_team: vec![ChampSelectMember {
@@ -1401,6 +1469,8 @@ mod tests {
                     champion_id: 86,
                     champion_pick_intent: 0,
                     assigned_position: Some(Position::Top),
+                    summoner_id: None,
+                    summoner_name: None,
                 }],
                 timer: None,
             };
@@ -1431,6 +1501,67 @@ mod tests {
         }
 
         let mut dom = VirtualDom::new(baja_harness);
+        let _muts = dom.rebuild_to_vec();
+    }
+
+    /// FASE 13b: el guard de `set_live_game` — misma partida dos veces →
+    /// una sola escritura (`LiveGame` es `PartialEq` derivado, comparación
+    /// estructural); `None` después de `Some` limpia espejo y señal, y un
+    /// `None` repetido es no-op. Los `Signal` requieren el `VirtualDom` de
+    /// prueba, mismo patrón que los demás tests con señales del módulo.
+    #[test]
+    fn set_live_game_solo_escribe_cuando_cambia() {
+        use dioxus::prelude::*;
+
+        fn live_game_harness() -> Element {
+            let partida = crate::live::LiveGame {
+                game_mode: String::from("PRACTICETOOL"),
+                game_time_secs: 125.5,
+                my_champion_id: 34,
+                my_champion_name: String::from("Akali"),
+                my_position: Some(Position::Middle),
+                allies: vec![(64, Some(Position::Jungle))],
+                enemies: vec![(238, None)],
+            };
+
+            let mut current = Option::<crate::live::LiveGame>::None;
+            let mut live_game = Signal::new(None);
+
+            // Primera publicación: escribe espejo y señal.
+            set_live_game(&mut current, &mut live_game, Some(partida.clone()));
+            assert_eq!(current.as_ref(), Some(&partida));
+            assert_eq!(live_game.read().as_ref(), Some(&partida));
+
+            // Misma partida de nuevo: guard de igualdad estructural → no-op
+            // (espejo y señal quedan con el valor de la única escritura).
+            set_live_game(&mut current, &mut live_game, Some(partida.clone()));
+            assert_eq!(current.as_ref(), Some(&partida));
+            assert_eq!(live_game.read().as_ref(), Some(&partida));
+
+            // Snapshot distinto (otro champ local): sí reescribe.
+            let otra = crate::live::LiveGame {
+                my_champion_id: 412,
+                my_champion_name: String::from("Kayn"),
+                ..partida.clone()
+            };
+            set_live_game(&mut current, &mut live_game, Some(otra.clone()));
+            assert_eq!(current.as_ref(), Some(&otra));
+            assert_eq!(live_game.read().as_ref(), Some(&otra));
+
+            // `None` después de `Some`: limpia espejo y señal.
+            set_live_game(&mut current, &mut live_game, None);
+            assert_eq!(current, None);
+            assert_eq!(*live_game.read(), None);
+
+            // `None` de nuevo: no-op total.
+            set_live_game(&mut current, &mut live_game, None);
+            assert_eq!(current, None);
+            assert_eq!(*live_game.read(), None);
+
+            rsx! { div {} }
+        }
+
+        let mut dom = VirtualDom::new(live_game_harness);
         let _muts = dom.rebuild_to_vec();
     }
 }
