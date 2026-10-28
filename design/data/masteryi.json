@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "masteryi",
+    "ddragonId": "MasterYi",
+    "name": "Maestro Yi",
+    "titleEs": "la Espada Wuju",
+    "cid": 11,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.96,
+    "pr": 7.04,
+    "br": 17.39,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 8.1,
+      "jungle": 87.7,
+      "middle": 1.7,
+      "bottom": 1.5,
+      "support": 1.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MasterYi.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/MasterYi_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 60.36, "games": 222 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 58.96, "games": 999 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.89, "games": 437 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 57.83, "games": 1188 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 56.01, "games": 391 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 55.34, "games": 1104 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 55.16, "games": 1570 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.96, "games": 1694 }
+  ],
+  "weakAgainst": [
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 44.4, "games": 259 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 45.87, "games": 907 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 46.1, "games": 2141 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 46.38, "games": 235 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 46.75, "games": 1859 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 46.99, "games": 730 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 47.12, "games": 382 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 47.21, "games": 915 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Con Highlander activo es inmune a TODO tipo de slow (movimiento y velocidad de ataque): kitarlo con ralentizaciones no funciona, solo el CC duro lo frena.",
+      "Cada takedown extiende su R 7 segundos y recorta 70% el cooldown de sus habilidades: si el primer kill entra, el segundo y el tercero vienen en cadena.",
+      "Alpha Strike lo deja infranqueable durante el dash: esquiva skillshots, tiros de torre y ultimate a mitad de la pelea.",
+      "DPS de objetivo único top del juego con 3 items: en un 1v1 lejos de tu torre casi nadie lo gana, no aceptes ese duelo por orgullo.",
+      "Wuju Style pega daño verdadero: apilarse solo armadura no alcanza, hasta los tanques sufren su autos."
+    ],
+    "weaknesses": [
+      "Cero CC propio y sin escape antes del 6: sus primeros clears son predecibles; invadilo con tu jungla fuerte o gankéalo en el segundo buff.",
+      "Si el primer all-in no entra, Highlander se apaga y queda un melee squishy sin ninguna herramienta: esa es tu ventana, peleá recién ahí.",
+      "Meditate (W) se corta con cualquier CC duro: un stun le borra el sustain completo y lo obliga a cancelar el channel.",
+      "Es flojo en teamfights 5v5 frontales sin kill garantizada: forzá peleas agrupadas donde su Q no encuentra targets aislados.",
+      "Depende de sus básicas: cuando R está en cooldown, Frozen Heart y Thornmail le comprimen el DPS a la mitad."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primera ventana de gank real; sin R necesita que un aliado meta el CC primero, trackeá sus clears con visión.",
+      "Nivel 6: Highlander lo vuelve el mejor duelist del juego por unos segundos; no le peles 1v1 cerca de su propia jungla.",
+      "Primer item completo (~min 10-12): con Blade of the Ruined King ejecuta squishies de un all-in; agrupate y no camines solo por el mapa.",
+      "3 items + botas (~min 22-26): out-duelia a cualquier no-tanque en 1v1; desde ahí solo le peleás agrupados y con el CC listo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Ashe, Lux: pegale desde fuera de tu rango de riesgo y no le des targets aislados; su Q necesita un punto de anclaje para entrar.",
+        "Guardá tu skillshot de CC para después de su Q: mientras está infranqueable no le pega nada; el frame termina y ahí entrás.",
+        "Castigalo cada vez que farmea con Alpha Strike en la wave: quemarle maná en Q lo obliga a W para curarse y le vaciás el pool."
+      ],
+      "tanks": [
+        "Ojo: su E hace daño verdadero, la armadura sola no te salva; sumá vida plana y Thornmail para devolverle parte del DPS.",
+        "Con Rammus tu W refleja un pedazo de cada auto: quedate en la pelea, Yi tunnea en el tanque y se desgasta solo.",
+        "Forzalo a gastar la Q en vos y que tu carry lo castigue: un Yi que pasa 5-6 segundos pegándote a vos es un Yi fuera de posición."
+      ],
+      "assassins": [
+        "Lee Sin, Elise, Graves: ganás el early; invadí su segundo buff antes del 6, cuando todavía no tiene R ni escala de items.",
+        "Su Q esquiva tu combo si la telegrafías: abrí con un auto o una habilidad de relleno y enganchá el CC cuando Alpha Strike ya se gastó.",
+        "Después del 6 no dupees sin visibilidad: si Highlander entra, solo tu burst inmediato te salva; jugá siempre con tu equipo a un flash de distancia."
+      ],
+      "crowdControl": [
+        "Knock-ups y supresiones (Malzahar, Skarner, Alistar): no las limpia ni con tenacidad ni con Mercurial; son la única cadena que lo detiene seguro.",
+        "Encadená el CC duro apenas arranque la R: si el primer all-in no entra, su ventana entera se apaga y queda descalzo en el medio.",
+        "No gastes slows en él mientras Highlander esté activo: es inmune a todos; esperá que se apague para kitarlo tranquilo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Guardá la supresión de tu R para el arranque de su Highlander: mientras lo tenés agarrado, toda su ventana se apaga y queda un melee sin escape.",
+          "Su W se corta con tu CC duro: castigá el channel de Meditate en cada trade y le negás el sustain que lo mantiene en la jungla.",
+          "Invadí con visión antes del 6: sin R no gana el 1v1 contra tu engage y le robás camps con impunidad."
+        ]
+      },
+      {
+        "cid": 24,
+        "name": "Jax",
+        "tips": [
+          "Tu E bloquea básicas: Yi es 100% autos, así que activá Counter Strike apenas arranque el trade y le devolvés el DPS con stun incluido.",
+          "No uses el salto para entrar primero: esperá que gaste Alpha Strike y saltalo ahí, cuando su única esquiva ya está en cooldown.",
+          "Escalá tranquilo a tu segundo item: el 1v1 tardío es tuyo; Yi solo te gana si le dejás pelear antes de tu primer item completo."
+        ]
+      },
+      {
+        "cid": 62,
+        "name": "Wukong",
+        "tips": [
+          "Dejá el clon adelante y dejalo entrar con Q sobre él: si cae en el clon, gastó Alpha Strike sin pegarte y ahí entrás con tu E + R.",
+          "Tu knock-up no lo esquiva ni con tenacidad ni con QSS: es el CC que lo detiene seguro; encadenalo apenas veas la R encendida.",
+          "Peleale temprano en su jungla: antes de Blade of the Ruined King su DPS no te gana y tu burst lo corre de sus propios camps."
+        ]
+      },
+      {
+        "cid": 105,
+        "name": "Fizz",
+        "tips": [
+          "Guardá tu E para el arranque de su combo: la infranqueabilidad de Travesura le funde el all-in en el aire justo cuando entra.",
+          "Buscá el burst antes de que haya kill en pantalla: Highlander vale poco sin takedowns; si el primer all-in no lo mata, R se apaga y queda descalzo.",
+          "No le peles con R activa: pegale entre sus resets, cuando la Q está en cooldown y no tiene forma de esquivar tu pesca ni tu combo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage: R → E → Q sobre el carry → AA x2-3 (tus básicas bajan el cooldown de Q y cargan Double Strike)",
+        "Reset de auto: AA → toque corto de W → AA (el tap de Meditate resetea el timing del básico, suma stack de Double Strike y te salva el kill)",
+        "Clean-up: Q → AA x2 → Q → AA x2 encadenando targets; cada takedown recorta 70% tus cooldowns y extiende R 7 segundos",
+        "Defensiva: Q reactiva al ver el skillshot (Lux Q, Ashe R): el frame de infranqueabilidad del dash esquiva el proyectil y te recoloca",
+        "Recovery: W a media vida en un flanco para recargar y pausar la duración de R y E; cancelalo con un auto para no perder la ventana"
+      ],
+      "tips": [
+        "No abras con Q: es tu esquiva y tu recolocación; entrá con R + E, esperá que gasten Flash, dash o CC y recién ahí meté Alpha Strike.",
+        "Pegá autos entre cada Q: si la spammeás sin básicas en el medio, la pagás a cooldown completo y te quedás sin nada para el 1v1.",
+        "No active R si no hay kill realista: el valor de Highlander es el refund de takedowns, no los stats crudos; si te kitean la duración, quedás en nada.",
+        "Usá W para dos cosas: sustain entre camps y baitear skillshots largos; nunca como botón de pánico en melee, cualquier CC duro la corta.",
+        "No tuneles al tanque: aunque tu E pega daño verdadero, 6 segundos pegándole al front es un carry enemigo borrando a tu equipo; saltalo con Q y volvé con los resets."
+      ],
+      "plan": {
+        "early": "Tres camps → gank al 3 con el pet de Smite → full clear; trackeá al jungla rival y si es uno fuerte early (Lee Sin, Elise), no facechees y jugá para el 6.",
+        "mid": "Snowboleá con R apenas termina Blade of the Ruined King (~min 10-12): forzá skirmishes en scuttle y grubs donde cada kill te extiende la ventana y recorta cooldowns.",
+        "late": "Flankeá con la Q guardada para el CC enemigo: entrá al back line con R + E, ejecutá el carry y usá los resets para limpiar; en 5v5 frontal esperá que el rival gaste el CC duro."
+      }
+    },
+    "sources": [
+      "https://winrate.gg/champion/master-yi/guide",
+      "https://brokenmeta.gg/en/league/guide/masteryi/",
+      "https://www.lolsensei.com/en/champion/master-yi/jungle/guide"
+    ]
+  }
+}

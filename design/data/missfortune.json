@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "missfortune",
+    "ddragonId": "MissFortune",
+    "name": "Miss Fortune",
+    "titleEs": "la Cazarrecompensas",
+    "cid": 21,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.43,
+    "pr": 11.29,
+    "br": 2.22,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0.0,
+      "middle": 0.9,
+      "bottom": 93.6,
+      "support": 5.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MissFortune.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/MissFortune_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 56.14, "games": 228 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 55.22, "games": 2320 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.36, "games": 6201 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 54.31, "games": 5056 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 54.13, "games": 351 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 53.96, "games": 3632 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 53.95, "games": 3985 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 53.81, "games": 9218 }
+  ],
+  "weakAgainst": [
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 40.38, "games": 317 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 44.11, "games": 263 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 44.88, "games": 303 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 46.87, "games": 463 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 47.11, "games": 242 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.42, "games": 1280 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 48.75, "games": 919 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 49.28, "games": 625 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El poke de lane con la Q rebotada es de lo más cruel del juego: un minion moribundo entre ella y vos te baja media vida sin que pueda fallar.",
+      "Una Bullet Time bien puesta en un pasillo o con el equipo agrupado puede definir la teamfight entera por sí sola.",
+      "La pasiva de W le da velocidad de movimiento gratis cuando no recibe daño y la activa suma attack speed para el all-in: presiona y persigue como pocas ADC.",
+      "Es una lane bully pura: con E lenta y rebotes de Q te niega el farm antes de que tengas tiempo de escalar."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, cualquier CC que la encuentre la mata y ella lo sabe, por eso juega pegada a su support.",
+      "Mientras canaliza la R queda plantada: interrumpila con un stun y su daño cae a casi nada.",
+      "Floja en 1v1 y con poco outplay: si no va ahead, su kit depende de peleas en equipo y de que alguien la pelele.",
+      "La R es de cono en línea recta: parate en el centro de la lane y alejate lateralmente para salir del daño casi sin perder nada.",
+      "Es de burst de una tanda: si gasta E y R sin conseguir nada, queda varios segundos sin amenaza real."
+    ],
+    "powerSpikes": [
+      "Primer back con componentes de daño: su duelo en lane sube de golpe, no aceptes trades justo después de que vuelva.",
+      "Nivel 6: kill pressure real con R; si te agrupás con tu support cerca de una pared, te borra del lane.",
+      "Nivel 9 con la Q maxeada: el rebote puede casi one-shotear squishies que se paren detrás de minions.",
+      "Dos items con R nivel 2: se convierte en un demonio de teamfight mientras tenga peeling; la posición define todo desde ahí."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Karthus, Vel'Koz: tu rango te deja castigarla cada vez que camine a farmear; ella necesita acercarse para que el rebote de la Q funcione.",
+        "Post 6 parate siempre en el centro de la lane: sobre una pared su R te encierra y no tenés salida lateral.",
+        "Guardá tu escape para su R, no para farmear: si le cancelás la Bullet Time con un dodge o un stun, perdió la pelea entera."
+      ],
+      "tanks": [
+        "No te agrupes con el tanque aliado: un cono de Bullet Time sobre los dos es un regalo; peleá separados unos metros.",
+        "Forzá peleas largas y cerradas: su burst de una tanda se apaga rápido y después queda casi inútil durante segundos.",
+        "Comprá armadura temprano: su daño early viene casi todo de Q y autos con la pasiva; un item te deja atravesar el poke del lane."
+      ],
+      "assassins": [
+        "Saltala recién cuando gaste la E: sin la lenta puesta, su R no te encuentra y ella no tiene escape para responderte.",
+        "Espera a que empiece a canalizar la R para tu gap closer: es el momento más vulnerable de todo su kit.",
+        "Si no va ahead, tu 1v1 es tuyo: no tiene dash, no puede esquivarte y su outplay potential es de las peores entre las tiradores."
+      ],
+      "crowdControl": [
+        "Reservá un stun para cuando arranque la Bullet Time: cancelarla a mitad de canalización le borra la única herramienta que define peleas.",
+        "No peleeen en pasillos ni en la selva cerrada: es justo el terreno donde su R cubre todo el camino.",
+        "Si tu support tiene engage, no te pares muy adelantado: un hook o un root que te agarre a vos es el setup gratis para su R."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Pegale con tu Q cada vez que baje a last hitear: su rango es más corto y cada paso adelante le cuesta media vida antes del primer item.",
+          "Post 6 quedate en el centro de la lane: si te pega contra una pared, su Bullet Time te cubre toda la salida.",
+          "Usá tu stun para interrumpir la R apenas arranque la canalización: sin Bullet Time su daño de pelea cae a casi nada."
+        ]
+      },
+      {
+        "cid": 30,
+        "name": "Karthus",
+        "tips": [
+          "Tus peleas son largas y las suyas cortas: dejá que gaste E y R y después quedate pegando, su burst se apaga y ella no tiene segunda tanda.",
+          "No te agrupes con tu equipo en pasillos: tocá objetivos y peleá en áreas abiertas donde su cono no pueda agarrar a todos.",
+          "Defilando seguís pegando igual: forzá peleas donde ella tenga que decidir entre correr o recibir todo tu daño sostenido."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango superior te deja zoniarla sin respuesta: castigala en cada last hit y no le regales el acercamiento que necesita para el rebote de la Q.",
+          "Guardá la R para cuando ella arranque la suya: la canalización la planta en el piso y tu rayo entra sin que pueda esquivar.",
+          "No te pares alineado detrás de un minion moribundo: el rebote de la Q es su herramienta principal y sin él su poke se corta a la mitad."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Esperá que gaste la E lenta para saltar: sin ese setup, su R no te encuentra y ella queda descalza sin escape.",
+          "Shunpeá lateral apenas arranque la Bullet Time: salir del cono le anula el daño y quedás arriba en la pelea entera.",
+          "Si va behind, dominale el lane con aggro constante: su 1v1 es flojo y no tiene cómo responder tu movilidad sin ventaja previa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E encima del objetivo → W justo antes del AA → AA → Q → AA (la lenta te garantiza que el rebote y la pasiva entren)",
+        "Poke rápido: W → Q → AA para un trade de un segundo cuando el rival se pare alineado detrás de un minion bajo",
+        "All-in post 6: W → AA → Q → AA → E → R para terminar (arrancá con W activa para el attack speed y cerrá con el cono)",
+        "Daño máximo de R: E encima del objetivo → R inmediato; la lentitud los mantiene adentro del cono todo el channel",
+        "Duelo a salvo: W → AA x2 → E → Q y Flash hacia atrás en el arranque de la Q para canalizar R desde fuera de su alcance"
+      ],
+      "tips": [
+        "Apuntá la Q a un minion moribundo que tenga al campeón detrás: si el primer tiro lo ejecuta, el rebote pega mucho más fuerte; es el 80% de tu poke.",
+        "No spamees la E a lo loco: es cara en maná y es tu único setup para que la R conecte; guardala para trades y all-ins.",
+        "La pasiva de W se rompe al recibir daño: mantenela viva jugando un paso atrás y usá la activa para el all-in, no para caminar por el mapa.",
+        "Canalizá la R desde un flanco o con el CC de tu support ya puesto: si la arrancás en frío al medio de la pelea, te interrumpen y perdiste la R.",
+        "En mid y late pegate al support y no camines nunca sola: no tenés escape y te encuentran en dos segundos."
+      ],
+      "plan": {
+        "early": "Bulleá la lane con rebotes de Q y E lenta para cobrar el farm del rival, jugá seguro los primeros niveles y volvé con componentes para activar tu spike de duelo.",
+        "mid": "Caída la torre de bot rotá a mid con tu support, buscá picks con jungla y usá la R en skirmishes de flanco para convertir cada pelea chica en ventaja de oro.",
+        "late": "Pegate al equipo atrás del support, kiteá con la W activa y reservá la Bullet Time para peleas agrupadas o pasillos donde el cono agarre a varios; no pelees nunca en desventaja numérica."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/missfortune/guide",
+      "https://app.mobalytics.gg/lol/champions/missfortune/combos",
+      "https://mobalytics.gg/lol/champions/missfortune/counters"
+    ]
+  }
+}

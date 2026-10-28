@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "milio",
+    "ddragonId": "Milio",
+    "name": "Milio",
+    "titleEs": "La Flama Gentil",
+    "cid": 902,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.17,
+    "pr": 6.1,
+    "br": 3.93,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0,
+      "jungle": 0,
+      "middle": 0.1,
+      "bottom": 0,
+      "support": 99.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Milio.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Milio_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 60.28, "games": 355 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 56.94, "games": 785 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 56.88, "games": 327 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.85, "games": 890 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.7, "games": 894 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 54.99, "games": 1444 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 54.7, "games": 468 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 54.42, "games": 735 }
+  ],
+  "weakAgainst": [
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 43.14, "games": 350 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 47.11, "games": 970 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 47.88, "games": 4129 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 48.14, "games": 1421 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.72, "games": 979 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 48.99, "games": 841 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 49.33, "games": 223 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 49.35, "games": 306 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su R limpia el CC de todo el equipo cercano y cura en área: el engage obvio contra un grupo con Milio termina en pelea pareja, no en kill gratis.",
+      "La W cura y le da rango de ataque extra a su ADC: sobrevive y gana trades largos que por daño puro debería perder.",
+      "La Q pega, empuja y corta gaps cortos: castiga a cualquiera que entre a rango de last hit contra su duo.",
+      "La pasiva suma daño a los autos de sus aliados cercanos: incluso farmeando, su carry presiona más que el tuyo.",
+      "El escudo con velocidad de movimiento de la E reparte peel en cada trade: matar a su ADC con Milio vivo es mucho más caro de lo que parece."
+    ],
+    "weaknesses": [
+      "Cero movilidad y vida de papel: si el engage lo encuentra a él primero, muere antes de llegar a castear la R.",
+      "Cooldowns largos, sobre todo en la R: castigá cada hechizo que tire al vacío, queda desprotegido un buen rato.",
+      "La R exige que la casteé: un stun que lo agarre primero deja al equipo entero sin cleanse para el resto de la pelea.",
+      "Depende por completo de su carry: si el ADC está atrás o muerto, su kit entero pierde sentido.",
+      "La Q es skillshot lenta y predecible: esquivándola le sacás poke, su única CC y la mitad de su presencia en lane."
+    ],
+    "powerSpikes": [
+      "Nivel 1-2: el poke con autos potenciados más Q ya duele; no te pares a last hit dentro de su rango.",
+      "Nivel 6: la R convierte cualquier engage en jugada perdida; no gasten CC al vacío con Milio al lado de su carry.",
+      "Nivel 9-13: con E maxeada y W al siguiente, sus escudos y curas escalan más rápido que tu daño en trade.",
+      "Nivel 16 con items completos: R con cooldown bajo y curas enormes en cada teamfight; asumí cleanse disponible en cada pelea agrupada."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Swain o Brand pegan de más lejos, pero la W cura el poke: no aceptes trades largos que él sostiene, ganá con burst corto.",
+        "Castigá cada Q que falle: es su única CC y su maná; tras fallarla tenés una ventana para forzar el trade.",
+        "Si jugás disengage real como Janna o poke sostenido como Vel'Koz, el sustain de Milio no alcanza: elegí peleas que él no pueda curar."
+      ],
+      "tanks": [
+        "Maokai, Pantheon o Rell entran fuerte, pero un cleanse en mano niega el engage: no committee todo con la R de Milio disponible.",
+        "Forzá la R con un engage chico antes del fight real: un Milio sin ultimate es un minion con botas.",
+        "No te alinees en recta con su carry: el knockback de la Q interrumpe gaps cortos y te deja parado en el fuego de la W."
+      ],
+      "assassins": [
+        "Milio es inmóvil y squishy: un Zed o Talon que lo encuentre solo en roam lo borra antes de tocar la R.",
+        "Esperá que gaste la E: sin escudo ni velocidad encima, no llega vivo a castear el cleanse.",
+        "En teamfight flanqueá por atrás del carry: el support siempre queda último y sin escape, es el punto más blando del mapa."
+      ],
+      "crowdControl": [
+        "Thresh, Rell o Morgana: guardá el CC principal para cuando Milio se acerque a su carry, no lo quemés en el ADC sin más.",
+        "Agarrá a Milio primero si podés: un support en el piso no castea la R y el equipo queda sin cleanse.",
+        "Encadená un segundo CC después del cleanse: si lo forzaste a gastar la R en uno chico, la pelea entera queda abierta."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Forzá trades largos cuerpo a cuerpo: los escudos de Milio cubren burst, no el sustain de una pelea extendida contra tu armadura.",
+          "Esperá que la Q salga o falle: sin knockback en mano, tu all-in no tiene respuesta de CC.",
+          "Compensá su cleanse jugando peleas 100% commiteadas: si tu equipo pelea pegado, la R de Milio limpia pero no desarma el stat-check."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Tirale la W encima a Milio y no al ADC: es el más lento del duo y sin escape muere al instante.",
+          "Baité la R con un engage chico y volvé a entrar cuando esté limpia: tu combo completo entra sin respuesta.",
+          "Tu ultimate desordena formaciones: Milio necesita al equipo agrupado cerca para funcionar, separalos y su kit se apaga."
+        ]
+      },
+      {
+        "cid": 412,
+        "name": "Thresh",
+        "tips": [
+          "Gancho a Milio primero: es el más lento del duo y si lo conectás, la R nunca sale.",
+          "Guardá el flay para después de su Q: sin knockback disponible, tu engage entra limpio.",
+          "La caja le corta su única reubicación: peleá cerca de paredes y obligalo a elegir entre ward y posición."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Tu disengage es mejor que el suyo: cada engage que cancelás deja a Milio parado sin nada que curar.",
+          "Ganá el trade sostenido con escudo y heal: el rango extra de su W no supera tu peel en peleas largas.",
+          "En teamfight guardá la R para separar: Milio se infla con su equipo agrupado, dispersalos y el cleanse no alcanza para todos."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: auto potenciado por la pasiva → Q al rival cuando camine al last hit (el empujón te deja reubicarte gratis)",
+        "Trade de duo: W a los pies de tu ADC (cura + rango extra) → E sobre el mismo carry cuando el rival responda",
+        "Peel de engage: E al carry → Q knockback al diver → R recién cuando veas el CC clave volando",
+        "Doble E: E en vos → segunda carga en el aliado más cercano para ganar velocidad de movimiento los dos",
+        "Cleanse de teamfight: cuando la Rell R o la Morgana Q conecten en tu grupo, R inmediata para limpiar, curar y recargar la pasiva de todos"
+      ],
+      "tips": [
+        "Maxeá E primero y W después (la Q va última): escudos más gordos temprano valen más que el poke extra.",
+        "No uses R como heal chico: es tu cleanse; si la tirás por curar, el siguiente engage te encuentra sin respuesta.",
+        "La Q tiene cooldown largo: tirála cuando el rival esté commiteado, no como poke a lo loco; cada falla es media lane regalada.",
+        "Pegá con la pasiva cargada apenas esté lista: es daño gratis en lane y se recarga con tus propios hechizos.",
+        "Pegate al carry siempre: sos inmóvil y de papel; cada paso solo es una invitación a que te agarren antes de castear."
+      ],
+      "plan": {
+        "early": "Pokeá con Q y autos potenciados, cubrí a tu ADC con E y W, y mantené posición pegada al carry para tener prioridad sin regalarte.",
+        "mid": "Rotá con tu carry hacia mid, wardá los accesos a los objetivos y no camines solo: si te pescan, el equipo regala dragón o torre en 5v4.",
+        "late": "Jugá detrás del grupo con R en mano para el CC clave, wardá acompañado y soltá el cleanse apenas el engage enemigo conecte."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/milio/build",
+      "https://mobalytics.gg/lol/champions/milio/guide"
+    ]
+  }
+}

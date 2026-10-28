@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "nunu",
+    "ddragonId": "Nunu",
+    "name": "Nunu y Willump",
+    "titleEs": "el Niño y su Yeti",
+    "cid": 20,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.57,
+    "pr": 2.09,
+    "br": 0.51,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 1,
+      "jungle": 81.8,
+      "middle": 11.2,
+      "bottom": 0.3,
+      "support": 5.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nunu.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nunu_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 55.89, "games": 968 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 55.24, "games": 820 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 55.04, "games": 496 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 54.81, "games": 312 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 54.69, "games": 618 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.37, "games": 583 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 54.09, "games": 220 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 54.07, "games": 307 }
+  ],
+  "weakAgainst": [
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 45.83, "games": 480 },
+    { "cid": 203, "slug": "Kindred", "name": "Kindred", "vsWr": 46.31, "games": 298 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 46.62, "games": 695 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 46.78, "games": 295 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 46.85, "games": 222 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 47.76, "games": 245 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.93, "games": 628 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 48.37, "games": 399 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Control de objetivos casi absoluto: Devorar (Q) + Smite suma más de mil de daño instantáneo al dragón, heraldo o Barón; robarle un objetivo a un Nunu que sabe contar es misión imposible.",
+      "Sustain natural de jungla: la Q cura por encima de lo que los camps sacan, llega healthy a cada gank y puede invadir con vida de sobra.",
+      "Ganks de larguísima distancia con la W: la bola de nieve conecta desde el brush y encadena con la E; sin visión, el carril es un corredor mortal.",
+      "La R define peleas: un channel completo de Absolute Zero en el equipo agrupado (o desde un death brush) voltea teamfights y asegura objetivos gratis."
+    ],
+    "weaknesses": [
+      "W y R son interrumpibles: un knock-up mata la bola en pleno vuelo y cortar el channel de la R lo deja parado sin haber hecho daño.",
+      "Duelo temprano flojo: sin items ni R es de los junglers más débiles en 1v1; un invasor peleador le roba camps sin pagar precio.",
+      "Depende de objetivos y ganks: si el rival controla la visión del río, su plan de juego queda a media máquina.",
+      "La cura de Q cae redonda con Grievous Wounds temprano: su sustain y su pelea de objetivos se vuelven parejas.",
+      "La W es una línea recta, lenta y telegrafiada: con el lane empujado o wards en el río, sus ganks se ven venir desde lejos."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E completas: primeros ganks efectivos; si tu laner tiene CC de seguimiento, es kill o Flash.",
+      "Nivel 6: la R multiplica cada gank y hace disputable cualquier dragón o heraldo; no lo dejes solo en el río a partir de acá.",
+      "Segundo item tanque (Dead Man's Plate): velocidad extra para la bola y tanqueo para channelar la R parado en medio de la pelea.",
+      "R en nivel 11 y 16: el daño escalado convierte cualquier arbusto sin visión en una ejecución de equipo entera."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kindred, Graves, Quinn: invadilo antes del nivel 6, su duelo temprano es de los peores de la jungla y su clear se vuelve un asado sin Q disponible.",
+        "Su W es una línea recta lenta: caminala en perpendicular en vez de correr en línea; si la esquiva, Nunu quedó sin engage y sin escape.",
+        "Pokealo en cada intento de objetivo desde fuera del rango de la E: cada vida que le sacás antes del dragón es una pelea que no se anima a channelar."
+      ],
+      "tanks": [
+        "Ponete entre Nunu y tu carry: su W busca la línea a la backline y un cuerpo con CC en el medio rompe el engage entero.",
+        "Guardá tu knock-up o stun para el channel de la R: Amumu, Sejuani y Cho'Gath lo interrumpen de un toque y el daño cae a casi nada.",
+        "Comprate anti-cura si el Nunu escala: su Q recupera pedazos de vida en cada camp y en cada pelea larga de objetivo."
+      ],
+      "assassins": [
+        "Kha'Zix, Evelynn, Zed: allineá tu burst apenas entra con la W; si lo dejás channelar la R encima de tu equipo, el daño lo paga tu backline.",
+        "Trackeá su ruta: gana porque ganka mucho y sano; si sabés dónde está, cada gank suyo es un camp que vos le robás del otro lado del mapa.",
+        "Después del nivel 6 no lo pares cuerpo a cuerpo sin escape: la R a quemarropa más la E te pegan más de lo que parece para un tanque."
+      ],
+      "crowdControl": [
+        "Un solo CC al arranque de la W o al channel de la R mata sus dos únicas amenazas; el Q de sustain no vale la pena gastarlo.",
+        "Encadená tu CC cuando la bola ya salió: es un proyectil largo y sin vuelta; interrumpirlo a mitad de viaje deja a Nunu metido en tu equipo sin nada en mano.",
+        "Anticipá sus peles de objetivo: no peles el dragón cuando su Smite + Q están en mano; forzalo a channelar la R y castigalo con el CC."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 233,
+        "name": "Briar",
+        "tips": [
+          "Invadilo en el primer clear: tu sustain con la W pega y cura más que su Q, y un Nunu atrás en niveles pierde ganks y objetivos por igual.",
+          "Guardá el fear de la E para cuando arranque la bola o el channel de la R: interrumpirle cualquiera de las dos cosas mata su plan de pelea.",
+          "Presentate en cada dragón con tu burst listo: su Q + Smite gana peleas parejas, pero si entrás antes de que tenga rango, el objetivo es tuyo."
+        ]
+      },
+      {
+        "cid": 203,
+        "name": "Kindred",
+        "tips": [
+          "Duelalo en su propia jungla: tu Q para reposicionarte le rompe la línea de la W y tu daño sostenido le gana el 1v1 en cualquier etapa temprana.",
+          "Guardá la R para su R: cuando el channel de Absolute Zero baje tu vida, el círculo niega la ejecución y la pelea de objetivo se invierte.",
+          "Usá tu rango para picar el dragón desde afuera: si le bajás vida antes de que channel, su Q + Smite ya no le alcanza para asegurar."
+        ]
+      },
+      {
+        "cid": 517,
+        "name": "Sylas",
+        "tips": [
+          "Guardá la E (knock-up) para la bola de nieve: cortarle la W en pleno vuelo lo deja metido en tu equipo sin engage ni escape.",
+          "El robo de R te viene de perlas: Absolute Zero robado sobre su propio equipo channelado con tu rango gana la teamfight entera.",
+          "Castigá cada gank que se vea venir: Nunu repite rutas y brushes; esperalo con la E y un laner con CC para cobrarte la invasión con su vida."
+        ]
+      },
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "La banda elástica (Q) es el counter natural de su kit: conectala sobre la W en viaje o sobre el channel de la R y su daño cae a cero.",
+          "No pelees objetivos sin tu ultimate: su Q + Smite gana el dragón, pero un tú + R en la cara del equipo agrupado niega el channel y regala la pelea.",
+          "Empujá visión del río temprano: Nunu depende de ganks limpios, y con tus wards sus bolas telegrafiadas no le dan ni el Flash al rival."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear sano: Q al monstruo grande de cada camp (Devorar te cura) y E solo cuando haya dos o más objetivos; llegás a cada gank con vida completa",
+        "Gank clásico: W armada desde el brush o fuera de visión → cuando conecta, E encima para las tres bolas → Q de seguimiento si el rival escapa con poco",
+        "All-in nivel 6: W conectada → E para el slow → R en la cara y dejá el channel completo; el slow mantiene al objetivo dentro del área",
+        "Robo de objetivo: Q (Devorar) + Smite casi juntos para un golpe instantáneo de más de mil al dragón, heraldo o Barón",
+        "Death brush: flankeá desde un arbusto sin visión con W para llegar más rápido → R cargándose en el medio del equipo → el channel completo decide la pelea"
+      ],
+      "tips": [
+        "Q + Smite es tu blindaje en peleas de objetivo: guardá Smite solo para eso y no lo gastes en camps cuando el dragón esté por spawnear.",
+        "No tires la W desde el medio del carril: es lenta y visible; armala en el brush o cuando el rival esté mirando la wave.",
+        "La R es un channel: entrá con la W o la E ya conectadas, o desde fog; si el rival tiene knock-up a la vista, esperalo antes de arrancar.",
+        "Farmeá entre ganks: tu clear es sano y rápido con la Q, pero sin niveles tu tanqueo no llega; no te transformes en gank-bot.",
+        "Usá la W también para cruzar el mapa: la velocidad de la bola te sirve para roamear, responder un dive o escapar; no la guardes solo para engage."
+      ],
+      "plan": {
+        "early": "Gankeá en repetición las lanes overextendidas o sin Flash, mantené el clear con Q para no perder niveles y asegurate el primer dragón con Q + Smite.",
+        "mid": "Asegurá cada dragón rumbo al Soul, seguí farmeando camps para no quedarte atrás y convertí cada pick con tu equipo en heraldo, Baron o torre.",
+        "late": "Flankeá desde un arbusto sin visión para el channel completo de la R, entrá con peel preparado para tus carries y no pelees si la R sigue en cooldown."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nunu/build",
+      "https://mobalytics.gg/lol/champions/nunu/guide"
+    ]
+  }
+}

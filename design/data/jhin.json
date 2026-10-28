@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "jhin",
+    "ddragonId": "Jhin",
+    "name": "Jhin",
+    "titleEs": "el Virtuoso",
+    "cid": 202,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.93,
+    "pr": 18.01,
+    "br": 2.63,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.7,
+      "jungle": 0.4,
+      "middle": 1,
+      "bottom": 97.4,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jhin.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jhin_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 55.5, "games": 1517 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.64, "games": 11732 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 53.89, "games": 540 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 53.74, "games": 17301 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 53.56, "games": 3542 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 53.49, "games": 215 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 52.72, "games": 1377 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 52.71, "games": 6678 }
+  ],
+  "weakAgainst": [
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 45.48, "games": 642 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 45.5, "games": 600 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 46.71, "games": 289 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 46.92, "games": 780 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 47.16, "games": 352 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.42, "games": 2113 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 47.55, "games": 387 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 47.67, "games": 3587 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El cuarto disparo siempre crítico y castigado según la vida que te falte: cada recarga termina con un golpe que ejecuta al que quedó dañado.",
+      "La W arraiga a 2500 de rango a todo lo marcado por trampas, muertes o aliados: un root desde el fog que abre peleas y corta retiras.",
+      "Cada crítico le da velocidad de movimiento: con items, un Jhin kitea hacia atrás todo el día y no lo alcanza nadie.",
+      "La R ejecuta a distancia en línea recta cuatro veces: remata desde fuera de torre y castiga a cualquiera que pelee en pasillo.",
+      "Las trampas E controlan arbustos y flancos gratis: marcan para el root de la W y avisan el gank sin gastar ward."
+    ],
+    "weaknesses": [
+      "Cuatro balas y a recargar: en el trade largo termina disparando aire; contestalo justo después del cuarto disparo.",
+      "La velocidad de ataque es fija por diseño: en peleas largas su DPS cae por debajo de cualquier otro ADC del juego.",
+      "Cero movilidad y sin escape: el flanqueo lo mata y necesita que el support le pise los engaging para poder pararse a disparar.",
+      "La R lo clava quieto en el lugar: cualquier CC rompe el canal y lo deja parado a media pantalla, probablemente sin balas.",
+      "La W sin mark no arraiga: si no pisás trampas y no te parás quieto, su única herramienta de engage no existe."
+    ],
+    "powerSpikes": [
+      "Primer item de crítico: el burst del cuarto disparo pasa de molesto a letal y cada bala empieza a dar velocidad de movimiento.",
+      "Nivel 6: la R agrega ejecución a distancia para pelear bot y roams; no pelees a media vida parado en línea recta con él.",
+      "Dos o tres items de crítico: el kiting con velocidad por crit hace que alcanzarlo en campo abierto sea casi imposible.",
+      "Late con penetración de armadura: el cuarto disparo y la R revientan también a los tanques; cerrá las líneas antes de que arme."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Ashe, Xerath: castigalo desde fuera de su rango y forzalo a responder la wave; cada bala que gasta ahí es una menos para el trade.",
+        "Pokeá durante el reload: cuatro disparos y recarga; esa ventana de un segundo y medio es gratis para vos.",
+        "Contestá su kiting con CC de larga distancia: su única movilidad es la velocidad que gana al criticar, y sin críticos camina como cualquiera."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: su daño vive en golpes individuales de crítico y la armadura los achica todos por igual.",
+        "El cuarto disparo escala con tu vida faltante: no le des el all-in a media vida dentro de su rango.",
+        "Cerrale la línea de la R: su ulti necesita canal quieto; un tanque parado encima lo interrumpe y lo deja sin nada."
+      ],
+      "assassins": [
+        "Saltalo recién después del cuarto disparo o de la W: son sus dos únicas herramientas de defensa y en ese momento no tiene ninguna.",
+        "Esquivá las trampas al acercarte: el mark de la E habilita su root de larga distancia y ahí muere tu flanqueo.",
+        "Atacalo entre recargas: es el único ADC al que encontrás caminando a velocidad normal en medio de la pelea."
+      ],
+      "crowdControl": [
+        "Un solo CC le corta la R: guardá el stun para cuando abra el ulti y se lo devolvés completo.",
+        "Encadená el CC con el engage del jungla: sin escape ni flash defensivo, cada root firme termina en kill.",
+        "En teamfight, asignale presión constante a un solo jugador: un Jhin que kitea todo el tiempo no pega cómodo nunca."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Castigá cada recarga: cuando tire el cuarto disparo y entre en reload, le tirás la Q-E-R completa sin respuesta posible.",
+          "No pises arbustos sin ward: las trampas lo marcan para su W y un root de Jhin a esa distancia es condena.",
+          "Su W solo arraiga si estás marcado: movete lateral entre minions y le dejás el hechizo en la mano."
+        ]
+      },
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Pokeá con Q mientras recarga y forzalo a gastar balas en la wave: sin munición no existe el trade para él.",
+          "Guardá el empujón de E para cuando camine hacia el cuarto disparo: interrumpir su burst mata su única ventana de daño.",
+          "A nivel 6 no te pares quieto a media vida: una R de Jhin desde el fog ejecuta antes de que veas el primer disparo."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Guardá el pool para el cuarto disparo: si se lo esquivás, le sacás el golpe con más daño de su kit.",
+          "Escalá tranquilo: Jhin no escala con velocidad de ataque y cada trade largo te favorece a medida que suben los items.",
+          "Castigá cada paso adelantado para pescar el cuarto disparo: sin movilidad, ese paso de más es vida regalada."
+        ]
+      },
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Agarralo con W apenas se pare fijo a disparar: sin dash, un root de Swain lo deja descalzo para tu all-in.",
+          "Usá la Q y la pasiva para castigarlo en cada recarga: su DPS en pelea larga es bajo y vos sostenés el trade mejor que él.",
+          "Abrí la R cuando se comprometa al all-in: no tiene forma de salir del área y tu sustain revierte la pelea entera."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA ×3 → Q justo antes del cuarto disparo (la Q rebota y el golpe final crítico cierra el trade)",
+        "Burst con mark: AA → E → W encadenados para cancelar animaciones → AA → AA → Q con el cuarto disparo",
+        "Ejecución: Flash → Q → AA al instante, con el cuarto disparo cargado y el rival bajo de vida",
+        "Pelea completa: AA → E → Q → W y, en pleno cast de la W, Flash hacia atrás y abrís la R desde afuera",
+        "Engage a distancia: esperá que el rival pise la trampa E o que un aliado marque → W al root → encadenás el trade entero"
+      ],
+      "tips": [
+        "Contá las balas antes de cada trade: con menos de tres no entrés; quedarte en cero es recargar frente a la cara del rival.",
+        "Reservá el cuarto disparo para un campeón cuando haya pelea cerca: es el golpe con más daño del kit, no lo gastes en minions.",
+        "Poné trampas en los arbustos del river y en tu retaguardia al empujar: marcan para la W y te avisan el flanqueo.",
+        "La W solo arraiga a marcados: no la tires al aire; esperá la trampa, una kill reciente o el CC de tu equipo.",
+        "Abrí la R en un lugar donde nadie te llegue: quedás parado fijo y cualquier CC te rompe el canal antes del tercer disparo."
+      ],
+      "plan": {
+        "early": "Farmeá con la Q rebotando en la wave, pokeá con el cuarto disparo cuando el rival baje a last hit y usá las trampas como ward del river; evitá all-ins largos porque tu munición no da.",
+        "mid": "Usá la R para ejecutar picks y rematar peleas de lanes pushadas, movete con la velocidad de los críticos y no te adelantes nunca sin Flash: sos el daño, no el enganche.",
+        "late": "Parate detrás de tu línea y kiteá con AA → W sobre lo que se te acerque; guardá la R para abrir desde el flanco o ejecutar a los que quedan bajo de vida en la retirada."
+      }
+    },
+    "sources": [
+      "https://www.mobalytics.gg/lol/champions/jhin/build",
+      "https://mobalytics.gg/lol/champions/jhin/combos"
+    ]
+  }
+}

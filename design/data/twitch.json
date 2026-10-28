@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "twitch",
+    "ddragonId": "Twitch",
+    "name": "Twitch",
+    "titleEs": "la Rata Mutante",
+    "cid": 29,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.71,
+    "pr": 5.77,
+    "br": 8.3,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.3,
+      "jungle": 2.9,
+      "middle": 2.2,
+      "bottom": 88.4,
+      "support": 6.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Twitch.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Twitch_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 55.97, "games": 1842 },
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 55.92, "games": 1740 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 55.53, "games": 3018 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 55.3, "games": 745 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 54.86, "games": 6826 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 54.24, "games": 8565 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 54.09, "games": 1995 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 54.07, "games": 246 }
+  ],
+  "weakAgainst": [
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 44.83, "games": 261 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 45.5, "games": 400 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 45.7, "games": 302 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 46.2, "games": 790 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 46.99, "games": 449 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.47, "games": 1148 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 47.81, "games": 228 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 47.85, "games": 326 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva acumula veneno con cada auto y pega daño verdadero por stack: sus trades largos no se curan con armadura y escalan solos con la velocidad de ataque.",
+      "La R de Spray and Pray atraviesa en línea y pega a todo lo que esté alineado: contra equipos apretados en un pasillo hace daño de área con un solo botón.",
+      "La Q le da camuflaje con velocidad de movimiento y bonus de velocidad de ataque al salir: es roam, es visión y es engage, todo en la misma tecla.",
+      "La E detona todos los stacks de una: con dos o tres autos y la W encima, el burst temprano mata squishies que subestiman el daño del veneno."
+    ],
+    "weaknesses": [
+      "Es de papel y sin escape real: cualquier CC que le pegue lo deja quieto el tiempo suficiente para borrarlo de la pelea.",
+      "Sin R ni Q su presencia en teamfight cae a la de un carry de rango corto común: obligalo a pelear cuando las dos están en cooldown.",
+      "Un Control Ward en el rango de su ruta lo deja expuesto: el camuflaje no es invisibilidad y él no tiene otra forma de entrar.",
+      "Early game flojo: los primeros niveles farmea de atrás y pierde trades largos contra casi cualquier lane bully.",
+      "Depende del posicionamiento absoluto: si lo obligás a caminar hacia adelante, pierde la pelea antes de empezar."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R duplica el rango de sus autos y empieza a castigar a los dos del bot alineados; ahí cambia el lane.",
+      "Primer item completo (crítico o Collector): el daño por auto más el veneno ya mata a un support a media vida.",
+      "Nivel 9 con la E maximizada: el detonate pega como una habilidad ultimate y le da un burst que nadie espera de un autoattacker.",
+      "Segundo y tercer punto de R: con el cooldown corto tiene la ulti casi en cada pelea, así que cada teamfight agrupada es una oportunidad real."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Varus, Xerath: castigalo en cada last hit desde tu rango máximo, porque su alcance base es corto y no puede contestar sin recibir dos autos.",
+        "Empujá la wave y jugá detrás de tus minions: si lo obligás a farmear bajo torre, la E no tiene stacks que detonar y pierde todo el burst.",
+        "Cada vez que uses tu poke, revisá el arbusto: el Q le permite entrar caminando y aparecer encima tuyo con velocidad de ataque extra."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica y armadura temprano: el veneno es daño verdadero pero el resto de su kit es físico, y con dos items defensivos su DPS se estanca.",
+        "Quedate pegado a tu carry cuando aparezca camuflado: su R atraviesa y pega a los dos a la vez, así que separarse le regala el doble hit.",
+        "Obligalo a pelear cuerpo a cuerpo con tu engage: sin rango de R es un carry de 550 de alcance que no puede kitearte."
+      ],
+      "assassins": [
+        "Katarina, Yasuo, Nilah: esperá que gaste la Q para entrar y saltalo en ese momento, porque al salir del camuflaje pierde la velocidad de ataque que necesita.",
+        "Guardá tu movilidad para el arranque de la R: si te reposicionás cuando ya está disparando, sus autos no atravesados se van al aire.",
+        "Flanquealo desde el costado del mapa: su daño es en línea, así que entrar en diagonal rompe todo el ángulo de la R."
+      ],
+      "crowdControl": [
+        "Cualquier stun o root lo mata: encadená el CC en cuanto salga del camuflaje y no le des ni un segundo de autos gratis.",
+        "Un control ward en la entrada del río lo fuerza a rutas peores: negarle el flanco vale más que perseguirlo.",
+        "Reservá el CC duro para después de que use la E: si lo stuneás con el detonate en cooldown, se queda sin burst y sin escape."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 30,
+        "name": "Karthus",
+        "tips": [
+          "Tu Q y tu E le pegan desde fuera de su rango de auto: pokealo constante y no le des la oportunidad de pararse a farmear tranquilo.",
+          "Cuando lo veas camuflado, alejate de la wave y quedate con la E lista: si aparece, el slow de tu Q le corta la entrada.",
+          "Su R global te castiga después de las peleas: no cierres teamfights con poca vida, tomate el recall o lo cobra gratis desde el otro lado del mapa."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Pintá el piso donde tiene que farmear: sin rango propio, cada last hit bajo tu zona le cuesta vida y lo obliga a pedir ayuda al support.",
+          "Guardá el Fear (EE) para cuando salga del camuflaje: interrumpirle la entrada mata su única forma de llegar a rango de auto.",
+          "No te agrupes con tu support en línea recta: su R atraviesa, y dos objetivos alineados le duplican el daño de la pelea."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Q + W desde tu rango máximo: no puede contestar sin caminar hacia adelante, y ahí queda en rango de tu combo completo.",
+          "Ubicate detrás de la wave para que sus autos tengan que atravesar minions: su daño depende de tener línea limpia.",
+          "Cuando arranque la R, salí del cono en diagonal: si te quedás quieto, su ulti te convierte en el objetivo más fácil de la pelea."
+        ]
+      },
+      {
+        "cid": 895,
+        "name": "Nilah",
+        "tips": [
+          "No aceptes el cuerpo a cuerpo: kiteala con tu rango base y usá la E solo cuando tengas stacks, no para pokearte el ego.",
+          "Guardá el dash para después de su W: si esquiva tu burst con la niebla, perdés la pelea y el lane entero.",
+          "Pedile a tu support peel constante: sin espacio para autos, Nilah te pasa por arriba en cada trade largo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: auto → auto → W encima del rival (slow + stacks) → E para detonar todo con 4-6 stacks cargados",
+        "All-in desde camuflaje: Q (esperá el tiempo de camuflaje) → caminá por el flanco hasta quedar detrás → primer auto con bonus de velocidad de ataque → W → autos → E para ejecutar",
+        "Burst de nivel 6: R activada antes de entrar → W sobre el objetivo → autos a rango extendido → E cuando ya no puedas pegarle más",
+        "Teamfight agrupada: Q desde el flanco → R alineada con el equipo enemigo → autos atravesando a todos → E sobre el más stackeado → Q de nuevo para reposicionar",
+        "Roam de visión: Q para entrar camuflado al río, poné el ward, y salí con la velocidad de ataque extra para limpiar un campamento o un pick"
+      ],
+      "tips": [
+        "No detones la E apenas la tengas: el daño escala por stack, así que es una ejecución y no un poke; tirarla con dos stacks es regalar tu única fuente de burst.",
+        "La Q se usa para reposicionar y para scoutear, no solo para engage: salir de camuflaje te da velocidad de ataque, así que reentrar en pelea a mitad de teamfight es daño gratis.",
+        "Revisá los arbustos enemigos con control wards antes de flanquear: si te ven venir, su rango corto te deja expuesto sin haber pegado un solo auto.",
+        "Peleá siempre de atrás hacia adelante y kited con la wave de tu equipo entre medio: no camines hacia adelante para terminar una kill que no podés terminar.",
+        "Farmea las side lanes cuando no hay objetivo en juego, pero volvé antes del spawn del dragón o del barón: sin oro de items sos irrelevante después del minuto 25."
+      ],
+      "plan": {
+        "early": "Farmea seguro los primeros niveles, usá la W para negar el all-in del rival y busca el kill recién con 6, cuando la R te da rango para pegarle a los dos del bot alineados.",
+        "mid": "Pegate al support, empujá bot y rotá a mid para abrir el mapa; buscá picks camuflado con el jungla y no camines solo por el río sin visión.",
+        "late": "Quedate atrás en la teamfight, esperá el primer CC enemigo gastado y entrá por el flanco con R para atravesar al equipo agrupado, kiteando sin pararte nunca en el mismo lugar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/twitch/build",
+      "https://mobalytics.gg/lol/champions/twitch/guide",
+      "https://mobalytics.gg/lol/champions/twitch/combos"
+    ]
+  }
+}

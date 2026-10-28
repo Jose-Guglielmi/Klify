@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "malphite",
+    "ddragonId": "Malphite",
+    "name": "Malphite",
+    "titleEs": "el Fragmento del Monolito",
+    "cid": 54,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.61,
+    "pr": 7.29,
+    "br": 18.42,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 74.4,
+      "jungle": 10.6,
+      "middle": 9.4,
+      "bottom": 0.2,
+      "support": 5.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Malphite.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malphite_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 64.71, "games": 544 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 61.06, "games": 303 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 58.03, "games": 3107 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 57.89, "games": 1432 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 57.53, "games": 1036 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 57.52, "games": 1643 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 57.52, "games": 725 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 57.06, "games": 1714 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 43.35, "games": 233 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 46.4, "games": 1849 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 46.69, "games": 2446 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 46.8, "games": 1158 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 46.85, "games": 1701 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.22, "games": 1258 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 47.36, "games": 416 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 47.46, "games": 2615 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R es un engage imparable con knock-up en área: lanzada está lanzada, no hay dash ni cleanse que la cancele y define teamfights enteras.",
+      "Granite Shield le regenera un escudo del 10% de su vida: frontlinéa natural que absorbe poke todo el día y sobrevive su propio all-in.",
+      "La Q le roba velocidad de movimiento al objetivo: ya sea para perseguir o para escapar, el rival no le gana la carrera.",
+      "Es la pesadilla de los carries inmóviles y de los champs de auto ataque: la E les baja la velocidad de ataque y el W convierte sus trades en daño en área.",
+      "Post-6 cada R coordinada con el jungla es un gank con kill garantizada o un Flash del rival."
+    ],
+    "weaknesses": [
+      "El early game es de los peores del juego: sin R y con el escudo roto por poke sostenido, un lane de rango lo humilla hasta el nivel 6.",
+      "Cero movilidad fuera de la R: si la gasta o la pierde, no tiene ni escape ni engage durante todo el cooldown.",
+      "Maná y cooldowns tempranos apretados: si spamea Q para farmear, queda sin amenaza ni sustain de escudo.",
+      "Depende del equipo para capitalizar: si sus carries no siguen el engage, la R multi-man se tira a la basura.",
+      "Con buena visión enemiga sus flancos se vuelven obvios: la R recta que anuncia es esquivable con un dash."
+    ],
+    "powerSpikes": [
+      "Nivel 6: pasa de invisible a amenaza de lane; desde acá cada R en mano es un gank preparado con el jungla.",
+      "Primer item con CDR y maná: Q y E se vuelven spameables y el trade constante empieza a doler de verdad.",
+      "Nivel 11 y 16 con puntos en R: el cooldown baja tanto que casi siempre la tiene en mano para picks y multi-man en choke points.",
+      "Mid game con core items: Q + R pegan como un camión y cualquier squishy fuera de posición es un pick."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Vayne, Jayce: castigalo con poke constante antes del 6; su escudo no aguanta spam y sin R no tiene respuesta.",
+        "Cuando se prenda la patita del escudo renovándose, sabé que está full vida: si lo ves con el escudo roto, ese es tu trade.",
+        "Al nivel 6 no te pares contra la pared de la wave ni flanquees sin visión: una R limpia te borra o te come el Flash."
+      ],
+      "tanks": [
+        "Sion, Cho'Gath, Mundo: escalan mejor que él, así que no aceptes trades largos; farmeá parejo y ganá el lane por escalar, no por pelear.",
+        "Comprate armor temprano si va full AD o MR si va AP: su daño está calibrado contra el que no lleva resistencia y un item te deja caminando toda su combo.",
+        "Si sos el frontlinéa de tu equipo, jugá adelantado: su R quiere a tus carries, no a vos; comételo vos y la pelea ya la ganaste."
+      ],
+      "assassins": [
+        "Esperá a que gaste la R en otro lado antes de entrar: si te come el knock-up arriba de tu propia dive, quedás pegado a la pelea sin escape.",
+        "Tu all-in pierde contra escudo lleno + E: esperá que el Granite Shield esté roto para saltar.",
+        "Como no tiene movilidad propia, podés castigarlo en el side lane: sin R en mano es presa fácil para cualquier gank."
+      ],
+      "crowdControl": [
+        "Su R es imparable: no quemes tu CC intentando interrumpir el vuelo, guardalo para cuando aterrice y desarmar su follow-up.",
+        "Lissandra, Malzahar: envolvé al que flanquea; un Malphite petrificado en el engage convierte su teamfight en 4v5.",
+        "Alejá a tus carries de los choke points y las paredes: la R multi-man vive de la geometría, no del daño."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Pokealo con Q y W desde fuera del rango de su E antes del 6: romperle el escudo constantemente lo deja sin opción de trade.",
+          "Guardá la raíz (E) para después de su R: cuando aterrice encima tuyo, la root invierte el all-in completo.",
+          "Escalá con tu R en teamfights: si se tira sobre tu equipo, drená a todos y su engage se convierte en tu mejor fight."
+        ]
+      },
+      {
+        "cid": 75,
+        "name": "Nasus",
+        "tips": [
+          "Farmeá con Q desde lejos y aceptá el freeze: él no puede castigar tu stacking sin fundirse el maná de la Q.",
+          "Con Wither le robás la velocidad justo cuando tira la R: su all-in queda caminando y vos ganás el trade por escalado.",
+          "No peles antes de tener stacks y armor: el lane es tuyo por escalado, no hay apuro por matarlo antes del 6."
+        ]
+      },
+      {
+        "cid": 517,
+        "name": "Sylas",
+        "tips": [
+          "Robale la R apenas la use: tu Hijack con su propio knock-up es un engage mejor que el que él puede soñar.",
+          "Pegale con Q de rango cada vez que baje a last hit: castigarlo cuando el escudo está roto gana todos los trades.",
+          "No te pegues a la wave contra un Malphite con R en mano: entrá a la pelea después de que la tire y quedás peleando un 5v4 sin engage."
+        ]
+      },
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Pokealo con E y empujá con W antes del 6: su early es débil y cada CS que perdés por miedo es regaloneo.",
+          "Escalás mejor por vida gratuita: no necesitás matarlo, farmeá parejo y el lane se gana solo pasados los 15.",
+          "En teamfight, esperá que se tire la R para arrancar: tu R por el carril paralelo desarma su backline mientras él se dedica a tu front."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico vs champs de hechizos: Q → caminá hacia el objetivo → AA → W apenas termina el AA (resetea) → E → AA",
+        "All-in estándar: Q → E al entrar en rango → AA → W → R pegado al objetivo → AA",
+        "Engage de teamfight: R al centro del equipo → al aterrizar E → Q → AA → W",
+        "Sorpresivo con Flash: Flash + R apenas llegás para que no reaccione → Q → E → W",
+        "Máximo CC en choke point: R → AA → W → Q → E → AA encadenando el knock-up con la lentitud de la Q"
+      ],
+      "tips": [
+        "No spamees Q sin propósito en el early: es tu único poke y tu maná; usala para robar velocidad de movimiento cuando el rival baja a last hit.",
+        "Jugá con el escudo: si Granite Shield está roto, no aceptes trades; esperá que se regenere y recién ahí cambiá.",
+        "Contra comps de auto ataque (Jax, Vayne, Tryndamere) maxeá la E: la reducción de velocidad de ataque les apaga el kit completo.",
+        "No te tires R sin plan: sin R no tenés ni escape ni engage; si la situation no es clara, esperá 30 segundos y la pelea sigue ahí.",
+        "Flanqueá siempre desde fuera de visión: una R recta que anuncia la esquivan con un dash, la que sale del flanco no la esquiva nadie."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta el 6: farmeá con el escudo, evitá el poke sostenido y mantené la wave cerca de tu lado del mapa; recién con R buscá el all-in o el gank con tu jungla.",
+        "mid": "Split push en side lanes y rotá con R en mano para picks y peleas de objetivos; sin R en cooldown, no agrupes: farmeá o tanqueá desde adelante.",
+        "late": "No pelees sin R: flanqueá desde fuera de visión para el multi-man knock-up, o guardala para peel si tus carries son los que escalan mejor que el backline rival."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/malphite/guide",
+      "https://mobalytics.gg/lol/champions/malphite/combos"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "taliyah",
+    "ddragonId": "Taliyah",
+    "name": "Taliyah",
+    "titleEs": "la Tejedora de Piedra",
+    "cid": 163,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.83,
+    "pr": 1.65,
+    "br": 0.47,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.3,
+      "jungle": 43.1,
+      "middle": 47.1,
+      "bottom": 3.9,
+      "support": 4.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Taliyah.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Taliyah_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 61.57, "games": 242 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 57.57, "games": 304 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 56.71, "games": 328 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.37, "games": 1185 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 55.36, "games": 233 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 54.83, "games": 1709 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 54.46, "games": 718 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.45, "games": 393 }
+  ],
+  "weakAgainst": [
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 42.9, "games": 669 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 44.25, "games": 287 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 44.33, "games": 203 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 44.46, "games": 578 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 45.54, "games": 325 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 45.81, "games": 227 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 45.84, "games": 781 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 46.39, "games": 582 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La combo W + E + Q cae en menos de un segundo y todo el daño es front-loaded: si te agarra sin Flash, no hay ventana para reaccionar.",
+      "La E castiga cada dash que pase por encima: si tu escape o tu engage se mueve con dash, te come el stun y la ráfaga de rocas encima.",
+      "La R le permite aparecer a media lane en dos segundos y cortarte la retirada con un muro: contra ella no se huye caminando por el río.",
+      "Domina cualquier choke point: en la fosa del dragón o en los pasillos de jungla la W te tira donde ella quiere y te separa del equipo."
+    ],
+    "weaknesses": [
+      "Es de papel: cualquier CC que le entre primero la mata, el kit no tiene escudo, ni sustain, ni dash defensivo propio.",
+      "Sin W está descalza: cuando la gasta perdió el engage y el peel por varios segundos, esa es la ventana para allinearle.",
+      "El worked ground la castiga sola: si la obligás a castear Q parada en el mismo círculo, pasa de cinco rocas a una y pierde todos los trades.",
+      "El early es su punto flojo: mid es una lane corta, si la empujás contra la torre y la gankeás se cae antes de llegar a los items.",
+      "La R mal tirada le corta la salida a su propio equipo: castigala cuando la use para zonear, queda parada sin escape por el muro propio."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R no le suma daño pero le da roam y muros; desde ahí aparece en cualquier lane, marcá los ríos y los pasillos.",
+      "Primer componente de maná y AP: empieza a spamear Q sin quedarse seca, y el poke del lane pasa de molesto a insoportable.",
+      "Nivel 9 con Q maxeada: las cinco rocas pegan el doble; cualquier squishy a sesenta por ciento de vida ya está en rango de ejecución.",
+      "Dos items con penetración: te borra con W + E + Q aunque estés a media vida, así que no camines el mapa sin visión ni flanquees solo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Zoe, Vel'Koz: pegale desde afuera del alcance de la Q y no entres a la zona donde pueda plantar la E; todo su daño exige que te acerques.",
+        "No te pares en el mismo lugar a farmear: ella necesita predecirte para pegar las cinco rocas, movete entre casts y el poke se le cae a la mitad.",
+        "Empujala y salí de rango cuando tenga la W lista: si no puede tirarte la W, no tiene combo, y sin combo es un mago de rango medio sin escapes."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica antes de que parezca necesario: su burst está calibrado contra el que no tiene MR y un item temprano te deja caminando la combo entera.",
+        "Mercury's Treads son las botas del matchup: el knock-up de la W es lo que arma todo, si lo recortás te queda solo el daño de las rocas.",
+        "Caminá hacia adelante sobre la E aunque te pegue: los boulders se gastan al explotar y sin ellos su daño sostenido es mediocre, pero no dashes nunca a través."
+      ],
+      "assassins": [
+        "Katarina, Kassadin, Talon: entrá con blink y no con dash, la E solo stunea a los que dashean; Shunpo y Riftwalk la cruzan gratis.",
+        "Esperá a que gaste la W para el waveclear y saltala ahí: sin knock-up no puede armarte la E ni frenar tu all-in.",
+        "No te quedes parado en la wave después del trade: con R puede cortarte el camino de vuelta y el muro taponea la retirada."
+      ],
+      "crowdControl": [
+        "El CC instantáneo la borra: stun, silence o supresión antes de que arme la W y no hay combo posible, porque necesita castear dos hechizos en orden.",
+        "Interrumpí la R: casi todos los CC la bajan del muro, y si la bajás en medio del río queda aislada del equipo sin escape.",
+        "Encadená el CC sobre la E ya plantada: si la agarrás antes de que la detone, perdió la mitad del daño y el stun de las rocas."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Entrá con Shunpo y no con dash: la E de Taliyah solo stunea a los que dashean, así que tu blink la cruza sin activar las rocas.",
+          "Guardá el Shunpo para esquivar la W: si el knock-up no te toca, no hay E encima ni Q asegurada, y ella queda parada sin combo.",
+          "Presionala desde el nivel 2: antes del primer componente se queda sin maná empujando y bajo torre es kill gratis para vos."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Tu Q le corta el combo: silenceala en el momento en que camina hacia adelante y no puede castear la W ni la E.",
+          "Farmea pasivo hasta el 6 y después saltale con Riftwalk: es blink, no dash, así que su E no te stunea al entrar.",
+          "Con RoA y nivel 11 la pasás por arriba: no regales kills antes de eso, ella escala peor y su burst no atraviesa tu MR."
+        ]
+      },
+      {
+        "cid": 1,
+        "name": "Annie",
+        "tips": [
+          "El stun de Pyromania es point-and-click y ella no tiene forma de esquivarlo: cargalo y tirale Q + W cuando se acerque a farmear.",
+          "Al 6 no te pares cerca de la wave: Tibbers + stun la mata antes de que pueda plantar la E, porque su combo necesita castear tres hechizos en orden.",
+          "Si la ves castear Q en el mismo círculo, entrá ahí mismo: está parada en worked ground y solo puede tirar una roca en vez de cinco."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango le gana el lane de arranque: pockeala con Q desde fuera del alcance de la suya y no la dejes acercarse a la wave.",
+          "Guardá el stun (E) para cuando camine hacia adelante: interrumpirle la W antes de que la tire mata el combo entero.",
+          "Después del 6 no te quedes farmeando en la misma línea: con R te corta la retirada y te obliga a pelear en un pasillo donde la E no falla."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in estándar: W (Seismic Shove) sobre el objetivo → E (Unraveled Earth) encima mientras está en el aire → Q con las cinco rocas → auto para el remate",
+        "Trampa de dash: plantá la E en el camino del rival y dejalo entrar con el dash; el stun de las rocas te regala la W gratis y la Q completa después",
+        "Poke de lane: casteá Q parada al costado del worked ground y caminá fuera del círculo antes del siguiente cast, así siempre tirás las cinco rocas",
+        "Roam con muro: R por el río, bajate antes del destino y entrá por detrás con W → E → Q sobre el que está pusheando",
+        "Zona de objetivo: R cortando la entrada de la fosa, E en el único pasillo libre y Q por encima del muro mientras el equipo hace dragón o barón"
+      ],
+      "tips": [
+        "Casteá la Q moviéndote: cada cast deja worked ground y si repetís parada en el mismo círculo tirás una sola roca en vez de cinco.",
+        "La W no es poke: es tu único seteo; si la tirás a ver si pega, te quedás sin engage y sin peel por el resto del cooldown.",
+        "Guardá la E para el dash del rival en vez de usarla de waveclear: plantarla abajo del que va a entrar convierte su engage en un stun gratis.",
+        "No uses la R para llegar a la pelea si tu equipo viene atrás: el muro corta el paso propio; usala para zonear la fosa o para cortar la retirada.",
+        "Cuidá el maná antes del primer componente: sin maná no tenés waveclear y en mid, con la lane corta, quedás encerrada bajo torre sin poder responder."
+      ],
+      "plan": {
+        "early": "Pokeá con Q desde el costado del worked ground y guardá la W para el seteo o para el gank del jungla; al 6 empujá y roameá con R en vez de buscar el 1v1.",
+        "mid": "Empujá y rotá a los objetivos, peleá siempre cerca de pasillos y fosas donde la W y la E no fallan, y usá la R para cortar la entrada del equipo rival.",
+        "late": "Quedate pegada al equipo y buscá picks con R + W sobre el que se aísla; pockeá antes de la pelea y no te adelantes sin visión, porque un solo CC te saca de la partida."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/taliyah/guide/mid",
+      "https://mobalytics.gg/lol/champions/taliyah/guide",
+      "https://op.gg/lol/champions/taliyah/build"
+    ]
+  }
+}

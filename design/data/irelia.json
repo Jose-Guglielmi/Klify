@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "irelia",
+    "ddragonId": "Irelia",
+    "name": "Irelia",
+    "titleEs": "la Cuchilla Danzante",
+    "cid": 39,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.89,
+    "pr": 4.35,
+    "br": 12.22,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 57.4,
+      "jungle": 0.1,
+      "middle": 40.8,
+      "bottom": 1.6,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Irelia.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Irelia_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 57.09, "games": 515 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.08, "games": 1738 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 56.04, "games": 2045 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 55.96, "games": 277 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 55.63, "games": 284 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 54.63, "games": 551 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 54.4, "games": 489 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 53.88, "games": 1509 }
+  ],
+  "weakAgainst": [
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 43.76, "games": 617 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 44.24, "games": 382 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 44.35, "games": 1592 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 44.46, "games": 1516 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 45.23, "games": 1448 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 46.56, "games": 421 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 47.05, "games": 457 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 47.05, "games": 729 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q se resetea en todo lo marcado (minions bajos, marcas de E y R): con wave a favor tiene movilidad casi permanente y una escalera de resets que hace outplays imposibles de leer.",
+      "Con la pasiva stackeada cada auto pega muy fuerte y su daño extra contra escudos castiga a los campeones que dependen de shields para sobrevivir el trade.",
+      "La E en dos partes stunea todo lo que quede entre ambas marcas: engancha CC sobre objetivos ya controlados y le da Q gratis para entrar sin gastar el cooldown.",
+      "La R corta el camino de escape con el muro de blades: sirve de engage para todo el equipo y garantiza que el objetivo pelee dentro en vez de kitearla.",
+      "El sustain de Q sobre minions bajos le permite farmear bajo presión y recuperar vida sin volver a base."
+    ],
+    "weaknesses": [
+      "Depende 100% de los resets de la Q: si se equivoca con un minion o la wave no está, queda parada en medio de la lane sin movilidad y el CC la borra.",
+      "El lane le pertenece solo si controla la wave: congelada cerca de tu torre es una melee sin escape y sin daño, castigala ahí.",
+      "Todo-in sin pasiva armada es un trade perdido: la diferencia de daño entre pasiva vacía y llena decide el 1v1; forzá peleas cuando llegue con la pasiva sin cargar.",
+      "La R en carries con dash es difícil de clavar: si falla el engage, su all-in queda a media máquina y el equipo la castiga por entrar sola.",
+      "Muy frágil al CC en capas: una vez que se compromete en la pelea, un stun encadenado la mata antes de que la W pueda cubrirla."
+    ],
+    "powerSpikes": [
+      "Pasiva completa (5 stacks): cada auto y cada Q pegan mucho más; asumí que cualquier pelea que busque cerca de una wave es pelea ganada para ella.",
+      "Nivel 6: R + stun de E sobre la wave a favor es kill casi garantizada si el rival queda dentro del muro; jugá un paso atrás cuando suba.",
+      "Primer item completo: el 1v1 queda resuelto y va a ganar casi cualquier duelo de side lane; no la contestes solo.",
+      "Nivel 9 con Q maximizada: los resets salen seguidos y el sustain hace que los skirmishes alrededor de objetivos sean suyos.",
+      "Nivel 11 y 16 con puntos en R: cooldown bajo la vuelve un pick constante en side lanes; no camines el mapa solo cuando la R está en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Mantené la wave en el medio y no la empujes sin necesidad: cada minion bajo cerca de ella es un reset gratis para su Q y una excusa para allinearte.",
+        "Pegale de rango cuando baje a farmear sin pasiva: sin stacks su trade no existe y cada auto tuyo es daño puro.",
+        "Jugá con el timer de su W: mientras la tiene levantada no pega; castigá esa ventana y guardá tu escape para cuando suelte la E."
+      ],
+      "tanks": [
+        "Comprate armor temprano y stackeá HP: su daño es físico sostenido por resets, y un Bramble o Randuin le corta la escalera entera.",
+        "Jugá de trade corto: su sustain de Q no existe si el trade dura dos segundos y vos salís con más vida que ella.",
+        "Guardá el CC para después de que entra con Q: no la pokees cuando está parada sobre su wave; enganchala cuando se queda sin resets."
+      ],
+      "assassins": [
+        "Forzala a pelear en espacio abierto, nunca dentro de su wave: cada minion marcado es un reset y ahí es imposible de leer.",
+        "Esquivá el stun de la E con tu dash: si el stun no entra, su combo queda sin arranque y ella ya gastó toda su movilidad.",
+        "Esperá que gaste la W defensiva para tirar el burst: sin la reducción de daño activa, la bajás de verdad."
+      ],
+      "crowdControl": [
+        "El CC en capas la mata: el primero la frena, el segundo la borra; coordiná encadenar apenas entre con Q y no le des tiempo al reset.",
+        "Point-and-click como Lissandra o Malzahar la convierten en piedra en el aire: es el counter más simple y directo que existe contra ella.",
+        "Reservá el CC clave para interrumpirla entre la R y la Q de entrada: cortarle el engage en ese medio frame le arruina la pelea completa."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 98,
+        "name": "Shen",
+        "tips": [
+          "Activá la W cuando ella entre con Q: tu escudo de espíritu bloquea los autos y gran parte de su daño repetido, y su combo queda en nada.",
+          "Mantené la wave congelada cerca de tu torre: sin minions bajos para resetear, Irelia no tiene movilidad ni daño y tiene que caminar hacia vos.",
+          "Tirale el taunt recién después de que gaste el stun de su E: si se te pega encima de tu wave, el trade extendido es tuyo por amplify."
+        ]
+      },
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Comé su all-in con la E: el escudo absorbe el burst inicial y el 1v1 extendido es tuyo por sustain, que es justo lo que ella no quiere pelear.",
+          "Stackeá HP y armor: cuanto más duro estés, menos valor tienen sus resets y más rápido se queda sin nada que morder.",
+          "Jugá la wave hacia tu torre: sin minions bajos su Q no se resetea y queda metida en tu rango sin forma de salir."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Comprate armor rápido y stackeá HP: su daño físico sostenido se estrella contra vos y ella no tiene forma de pickear la build.",
+          "Guardá el Q de slow para después de que ella use el suyo para entrar: la ralentizás cuando ya no tiene resets y la castigás caminando.",
+          "Al 6 tu R es el antídoto del all-in: si se tira con el stun de la E, interrumpila encima de tu torre y el trade entero es tuyo."
+        ]
+      },
+      {
+        "cid": 875,
+        "name": "Sett",
+        "tips": [
+          "Invitala al trade largo sobre tu wave: tus autos y tu regeneración ganan el intercambio extendido y la W a barra llena la castiga por quedarse.",
+          "Guardá el stun de tu E para cuando ella entre con Q: no lo tires de lejos, esperá que ella se acerque sola y el stun es inevitable.",
+          "Bramble temprano le corta el sustain de Q: sin curación, su all-in se vuelve un trade parejo que ganás por pura masa de vida."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: armá la pasiva en la wave → E1 atrás tuyo → E2 sobre el rival (stun) → Q al objetivo → AA → Q a un minion bajo para salir o seguir",
+        "All-in nivel 6: R sobre el objetivo → Q → AA → E + E stun → AA → Q → reseteá en minions bajos y terminá con W + Q",
+        "Engage de teamfight: E1 detrás tuyo → R + Flash instantáneo al carry → Q → E2 stun → AA → Q y W para absorber el focus",
+        "Entrada por wave: E + E stun primero → Q encima → AA → R → seguí con AA → Q reseteando en la wave para reubicarte",
+        "Escape: guardá siempre un minion bajo cerca y usá Q sobre él para salir de la pelea sin gastar Flash"
+      ],
+      "tips": [
+        "Contá los minions bajos de la wave antes de entrar: sin resets disponibles, tu primer Q es todo lo que tenés y quedás descalza.",
+        "No entres sin pasiva stackeada: farmeá con Q sobre la wave para armarla; la diferencia de daño entre vacía y llena decide el 1v1.",
+        "Usá la W para absorber el burst del trade, no como poke: la reducción de daño en el momento justo te hace ganar trades que parecían perdidos.",
+        "Tirá la E1 atrás tuyo y no sobre el rival: si la segunda marca queda entre vos y él, el stun entra seguro y la Q es gratis.",
+        "Cuidá la wave como tu segundo recurso: sin minions tu kit no existe; si te congelan la lane, roameá o pedí gank antes de quedarte sin espacio."
+      ],
+      "plan": {
+        "early": "Farmeá con Q para armar la pasiva y curarte, buscá el trade recién con la wave a favor y al 6 clavá el all-in con R + stun de E sobre el rival bajo de vida.",
+        "mid": "Split push en la side con TP listo: ganás casi cualquier 1v1 que venga a contestarte y rotá con el muro de R si tu equipo necesita el engage.",
+        "late": "Flankeá y buscá al carry con R + Flash, entrá recién cuando el CC principal del rival esté gastado y usá los resets de la wave para pelear alrededor de objetivos."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/irelia/guide",
+      "https://mobalytics.gg/lol/champions/irelia/combos",
+      "https://mobalytics.gg/lol/champions/irelia/counters"
+    ]
+  }
+}

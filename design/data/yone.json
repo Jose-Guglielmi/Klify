@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "yone",
+    "ddragonId": "Yone",
+    "name": "Yone",
+    "titleEs": "el Imborrable",
+    "cid": 777,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.42,
+    "pr": 8.85,
+    "br": 16.65,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 48.2,
+      "jungle": 0.5,
+      "middle": 49.5,
+      "bottom": 1.6,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yone.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yone_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 59.45, "games": 365 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 58.75, "games": 383 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 58.71, "games": 264 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 57.74, "games": 381 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 56.85, "games": 1175 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 56.36, "games": 1682 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 55.76, "games": 217 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 55.49, "games": 537 }
+  ],
+  "weakAgainst": [
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 43.46, "games": 306 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 43.5, "games": 246 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 44.92, "games": 2836 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 45.79, "games": 1175 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 46.31, "games": 298 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 46.67, "games": 225 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 47.05, "games": 525 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 47.45, "games": 3494 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva duplica la chance de crítico: con el primer ítem de crit ya pega como un late game y a partir del segundo cualquier squishy desaparece en tres autos.",
+      "La E (Soul Unbound) es su mejor botón: entra, pega y vuelve a la posición original, así que puede tradear sin riesgo real y escaparse por paredes.",
+      "Limpia waves y hace splitpush mejor que casi cualquier midlaner: con Q stackeada borra la wave en segundos y rota antes de que el rival termine de farmear.",
+      "Su daño es mixto (una mitad mágica, otra física): el que compra armadura se come la mitad de la Q y de la pasiva igual.",
+      "Flanquea mejor que nadie: con la R desde fog of war puede entrar a la teamfight desde cualquier ángulo y salir con la E."
+    ],
+    "weaknesses": [
+      "El early contra rango es un infierno: sin ítems lo pokean desde afuera de su Q y lo obligan a farmear bajo torre durante quince minutos.",
+      "El CC duro lo mata: es squishy y sin tenacidad, una cadena de stuns lo deja parado antes de que pueda volver con la E.",
+      "La R (Fate Sealed) es angosta y se castea con retardo: se esquiva con un paso al costado y si la erra queda parado en medio del equipo enemigo.",
+      "Su E es su vida: si entra sin escape o vuelve tarde, reaparece en la posición original con todo el equipo rival mirándolo.",
+      "Depende de stackear dos Q para tener el knock-up: si spamea Q en la wave para farmear, el rival sabe que no tiene engage por varios segundos."
+    ],
+    "powerSpikes": [
+      "Nivel 6: desbloquea la R y con ella el kill pressure real; puede forzar el all-in o armarle la jugada al jungla.",
+      "Nivel 9: Q maxeada, los trades cortos de E + Q + Q pasan a ganarse solos y el lane se destraba.",
+      "Primer ítem de crítico completo: la pasiva duplica el crit, así que ese spike vale por dos ítems y el daño se dispara.",
+      "Nivel 11 con segundo punto en R: baja lo suficiente el cooldown como para buscar picks desde fog of war en cada rotación.",
+      "Nivel 16 con tres ítems: late game pleno, cualquier objetivo aislado que encuentre muere antes de reaccionar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vex, LeBlanc, Heimerdinger: pokealo desde afuera del alcance de su Q y no dejes que stackee gratis en la wave; antes del primer crítico no aguanta el desgaste.",
+        "Jugá del lado de tu torre: si avanza para farmear, castigalo; si se acerca, retrocedé manteniendo distancia, porque su único gap closer real es la E.",
+        "Cuando gaste la E para entrar, no lo persigas: esperá el retorno y pegale en el punto de regreso, que es fijo y predecible."
+      ],
+      "tanks": [
+        "Comprá armadura temprano, pero no te olvides del daño mágico: la pasiva y la Q pegan mitad mágico y el full armor igual lo sufre.",
+        "Tus CC son la respuesta: un solo stun en el momento en que entra con la E corta la combo entera y lo deja sin retorno.",
+        "Peleá en espacios abiertos: en la jungla o cerca del Barón su R cubre el pasillo completo y ahí sí te gana la teamfight."
+      ],
+      "assassins": [
+        "Un asesino con burst más rápido le gana el trade: él necesita dos o tres autos para matar, vos necesitás uno solo bien puesto.",
+        "Baitéale la E: cuando entra, esperá el retorno; si lo seguís te devuelve el trade con la Q stackeada y te mata.",
+        "Guardá tu escape y tu CC para después de su R: mientras castea Fate Sealed está clavado en el lugar y es completamente vulnerable."
+      ],
+      "crowdControl": [
+        "Cualquier CC duro lo anula: es squishy y sin tenacidad, una supresión o un root bien puesto lo borra antes de que vuelva con la E.",
+        "Encadená el CC sobre el punto de retorno de la E: cuando el timer se termina vuelve sí o sí a esa posición, y ahí no tiene ni Flash.",
+        "No lo chasees con el CC en la mano: si lo perseguís te gastás todo y él simplemente vuelve a la E y te deja mirando."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 85,
+        "name": "Kennen",
+        "tips": [
+          "Tu rango y el stun de la pasiva lo castigan en cada last hit: pokealo desde afuera del alcance de su Q y no le regales trades largos antes del crítico.",
+          "Guardá la E (Lightning Rush) para cuando entre con la suya: te salís del rango, le negás la vuelta y lo dejás parado en medio de la wave.",
+          "En teamfight entrá con la R recién después de que gaste la suya: sin Fate Sealed no tiene forma de matar a nadie y tu AoE lo funde."
+        ]
+      },
+      {
+        "cid": 518,
+        "name": "Neeko",
+        "tips": [
+          "Tu E (root) le corta el flanqueo: si lo ves entrar con Soul Unbound, rootearlo lo clava del otro lado del equipo y no puede ni volver.",
+          "Pokealo con Q desde fuera de rango durante todo el early: sin ítems de crítico su sustain es nulo y cada minion le cuesta vida.",
+          "Pegate a tu equipo solo cuando la R esté lista: si están separados su Fate Sealed no conecta más de un objetivo y el engage se cae."
+        ]
+      },
+      {
+        "cid": 711,
+        "name": "Vex",
+        "tips": [
+          "Tu pasiva le apaga la E: apenas se tira con Soul Unbound, el miedo lo deja parado y sin poder regresar a la posición original.",
+          "Mantené la distancia de tu Q y castigalo cada vez que baje a farmear: su early contra rango es el peor del juego y lo sabés.",
+          "No te pares pegado a la wave cuando tenga dos Q stackeadas: el knock-up + R es su único engage real y sin eso no te llega nunca."
+        ]
+      },
+      {
+        "cid": 80,
+        "name": "Pantheon",
+        "tips": [
+          "Tu W bloquea los autos y la Q: entrá con el escudo arriba y ganás todos los trades cortos del early sin gastar nada.",
+          "Empujá la wave con Q y encerralo bajo torre antes del 6: si no llega a su pico con vida, la lane está ganada.",
+          "Cuando gaste las dos Q en la wave, entrá con la E: sin stack no hay knock-up y lo matás antes de que pueda responder."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: E → Q → AA → W → AA → Q → E — entrás con Soul Unbound, pegás dos Q y volvés antes de que el rival pueda contestar; es el trade que no se pierde.",
+        "Trade con knock-up: Q → Q → E → Q3 (knock-up) → AA → W → AA → E — las dos primeras Q se stackean en la wave, la tercera con la E adentro mete el aire y te deja pegar gratis.",
+        "All-in nivel 6: Q → Q → E → Q3 → R (Fate Sealed sobre el knock-up) → AA → W → AA → Q → E — la R encadena el CC y la E te saca del foco cuando termina.",
+        "Engage de teamfight: E → Flash → R sobre el grupo → Q → W → AA → AA → Q → E — la E se tira primero no para pegar, sino para tener el retorno asegurado cuando la pelea termine.",
+        "Pick desde fog of war: Q → Q → E por pared → Q3 → R → AA → W → AA → E — entrás por terreno y salís con la E aunque el objetivo esté bajo torre."
+      ],
+      "tips": [
+        "No gastes la Q en la wave sin motivo: las dos cargas previas son tu único knock-up; si la tirás para farmear, el rival sabe que no tenés engage por seis segundos.",
+        "La E se usa para entrar, nunca para escapar después: si la gastás de arranque y no matás, volvés a la posición original con el jungla enemigo esperándote ahí.",
+        "W (Spirit Cleave) es escudo y daño, no poke: usala cuando ya estás encima para comer el burst del trade, no desde lejos como si fuera un hechizo de rango.",
+        "Comprá crítico antes que nada: la pasiva duplica la chance de crítico, así que el primer ítem de crit es tu verdadero power spike, no la vida ni la velocidad.",
+        "Guardá la R hasta que el rival gaste su movilidad o su CC: es angosta y se esquiva con un paso; usala sobre el knock-up de la Q3 o cuando el enemigo ya se comprometió."
+      ],
+      "plan": {
+        "early": "Farmea seguro con la Q stackeada desde rango, evitá trades largos contra magos antes del primer ítem de crítico y usá la E solo para trades cortos con retorno; al llegar a 6 buscá el all-in con R.",
+        "mid": "Empujá la wave y flanqueá por la jungla enemiga: sos el mejor pick-off del juego con la E, buscá 1v1 contra squishies aislados y rotá a objetivo después de cada kill.",
+        "late": "No entres de frente: esperá que el equipo enemigo se comprometa, flanqueá por el costado, entrá con E + R sobre los carries y volvé con la E antes de que te encadenen CC."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/yone/guide",
+      "https://mobalytics.gg/lol/champions/yone/combos",
+      "https://mobalytics.gg/lol/champions/yone/counters"
+    ]
+  }
+}

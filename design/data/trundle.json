@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "trundle",
+    "ddragonId": "Trundle",
+    "name": "Trundle",
+    "titleEs": "el Rey de los Troles",
+    "cid": 48,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.79,
+    "pr": 1.85,
+    "br": 0.54,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 67.6,
+      "jungle": 27.9,
+      "middle": 1.0,
+      "bottom": 0.2,
+      "support": 3.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Trundle.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Trundle_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 58.06, "games": 360 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 56.95, "games": 439 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 55.14, "games": 486 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 54.86, "games": 607 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 54.08, "games": 662 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 53.94, "games": 343 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 53.86, "games": 817 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 53.7, "games": 717 }
+  ],
+  "weakAgainst": [
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 45.73, "games": 422 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 46.44, "games": 1040 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 46.49, "games": 1183 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.36, "games": 777 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 47.7, "games": 304 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 48.04, "games": 460 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 48.17, "games": 382 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 48.27, "games": 665 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva King's Tribute le devuelve vida por cada unidad que muere cerca: en lane gana cualquier guerra de attrition sin gastar maná ni recall.",
+      "La Q (Chomp) le roba daño de ataque al rival durante el trade: en un duelo de luchadores el intercambio se inclina solo, porque pega con la stats que le sacó.",
+      "La R (Subjugate) le roba vida máxima y resistencias al enemigo: convierte al tanque más gordo en papel y a él en una pared que no baja.",
+      "La E (Pillar of Ice) es un gap closer disfrazado: sin dash propio, el pilar le permite iniciar ganks y cortar la huida de cualquiera que esté a rango de casteo.",
+      "El W (Frozen Domain) le da velocidad de ataque, velocidad de movimiento y curación amplificada: con la zona armada baja dragones y heraldos solo, sin depender del equipo."
+    ],
+    "weaknesses": [
+      "Fuera de su W y con la E en cooldown es kitable hasta morir: no tiene dash ni blink, así que un carry con rango lo pasea mientras le pega.",
+      "Depende de items más que de niveles: si lo matan una o dos veces temprano se queda sin daño y sin aguante justo cuando más lo necesita.",
+      "El CC duro lo apaga por completo: sin tenacidad en el kit, una cadena de stuns lo mata antes de que llegue a pegar un auto.",
+      "Su respuesta contra tanques es la R y nada más: con Subjugate en cooldown vuelve a ser un melee común que pelea parejo contra cualquiera con aguante.",
+      "El early es flojo comparado con su mid game: si el rival lo castiga antes del primer item, el pico de poder se le retrasa varios minutos."
+    ],
+    "powerSpikes": [
+      "Niveles 2 y 3: con E + Q disponibles busca el all-in sobre cualquiera que se quede sin vida; el pilar más el slow del W alcanzan para matar sin Flash.",
+      "Nivel 6: la R le da el robo de vida y resistencias que le permite ganar duelos que antes perdía, sobre todo contra tanques.",
+      "Primer item de duelo terminado: ahí deja de ser un luchador promedio y empieza a ganar 1v1 contra casi todo el mapa.",
+      "Nivel 9 con la Q maxeada y nivel 11 con la R al segundo punto: es el tramo donde domina las sides y fuerza rotaciones enemigas."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Kennen, Quinn: pegalo desde fuera del alcance de su E y no dejes que te pise el W; si no entra a rango melee, no existe.",
+        "Kitealo apenas gaste el W: sin la zona de hielo no tiene forma de alcanzarte y el pilar solo te frena una vez.",
+        "Comprá Botas de Mercurio o cualquier fuente de tenacidad y slow resist: el E y el slow del W son lo único que lo deja pegarte."
+      ],
+      "tanks": [
+        "Malphite, Tahm Kench, Shen: no te pares a pelear mientras tenga la R en mano; el robo de vida máxima y resistencias te deja sin aguante y a él con el doble.",
+        "Comprá anti-heal temprano: se cura con cada minion que muere cerca y sin Grievous Wounds el war de attrition lo gana siempre él.",
+        "Forzá peleas en waves grandes y cerca de tu torre: su sustain depende de que mueran unidades alrededor, no le regales farmeo gratis."
+      ],
+      "assassins": [
+        "Akali, Jax: esperá que gaste la Q en un minion y entrá justo ahí; sin el robo de daño de ataque su trade pierde la mitad del daño.",
+        "Provocá la E antes del all-in: es su único peel y su única forma de trabarte, y cuando está en cooldown no tiene escape.",
+        "Nunca pelees parado dentro de su W: ahí tiene más velocidad de ataque, más movimiento y curación amplificada; arrastralo afuera antes de comprometerte."
+      ],
+      "crowdControl": [
+        "Encadená CC duro ni bien entra: sin dash ni tenacidad, un stun de un segundo y medio lo mata antes de que llegue a pegar.",
+        "Guardá el CC para después de que active la R: si lo trabás con Subjugate arriba, le arruinás la pelea que iba a ganar por stats.",
+        "Cuando esté splitpusheando, forzá el 5v4: el CC sirve para que no pueda volver a la pelea ni llegue a tiempo al objetivo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 84,
+        "name": "Akali",
+        "tips": [
+          "Pegale con Q desde fuera y entrá con el W (shroud) para negarle el Chomp: sin el robo de daño de ataque el trade es tuyo.",
+          "Su E te frena pero no te mata: guardá la R para salir del Pillar y volvé a entrar cuando haya gastado el W.",
+          "Tradeá corto y salí: no pelees dentro de su Frozen Domain, ahí tiene velocidad de ataque y sustain de sobra para ganarte el intercambio largo."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Tu escudo de pasiva más la armadura le anulan el daño del Q: tradeá cada vez que baje al farm, no puede ganarte por stats.",
+          "Al 6 su R te roba resistencias: no te quedes peleando con Subjugate arriba, kiteá hasta que se le vaya y volvé.",
+          "Comprá anti-heal temprano: se cura con cada minion muerto y sin Grievous Wounds el lane se le hace interminable."
+        ]
+      },
+      {
+        "cid": 24,
+        "name": "Jax",
+        "tips": [
+          "Guardá el E (Counter Strike) para su Q: bloquear el Chomp le corta el robo de daño y el trade entero.",
+          "No pelees en su W: arrastralo fuera de la zona de hielo y recién ahí buscá el trade largo con tu pasiva de velocidad de ataque arriba.",
+          "Su R le roba armadura, pero tu E esquiva autos: usalo cuando intente el all-in y ganale por tempo, no por stats."
+        ]
+      },
+      {
+        "cid": 75,
+        "name": "Nasus",
+        "tips": [
+          "Farmeá stacks tranquilo: su daño early es bajo y no puede zonear a un Nasus que solo quiere minions.",
+          "Tirale Wither ni bien active la R: bajarle la velocidad de ataque le corta la mitad del DPS justo cuando más pega.",
+          "No aceptes trades largos temprano: su sustain de pasiva le gana el war de attrition, tu ventana llega con stacks y ult."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: Q → auto (el Chomp le roba daño de ataque, así que el auto que sigue pega con la stats que le sacaste)",
+        "Gank o engage: W → E detrás del objetivo → auto → Q → auto (el pilar lo tira de vuelta y el W te da la velocidad para alcanzarlo)",
+        "All-in: W → R → Flash Q → auto → E → auto (la R antes del Flash para entrar ya con la vida y las resistencias robadas)",
+        "Emboscada: W → E → Flash → auto → Q → auto (el pilar sale con el Flash encima y no le queda tiempo de esquivarlo)",
+        "Duelo contra tanque: R primero para robarle vida máxima y resistencias, después Q y autos dentro del W"
+      ],
+      "tips": [
+        "Maxeá Q primero: es tu daño, tu sustain y tu robo de daño de ataque; la W va segunda por la velocidad de ataque.",
+        "No gastes la E solo de peel: el pilar es tu única forma de alcanzar a alguien que huye, guardalo para el momento en que se mueva.",
+        "Peleá siempre dentro de tu W: ahí tenés velocidad de ataque, movimiento y curación amplificada; afuera sos un melee lento más.",
+        "Usá la R sobre el tanque enemigo, no sobre el carry: el robo escala con las stats del rival y el carry no tiene nada que robarte.",
+        "Spliteá con visión antes de empujar: sin dash, dos rotaciones te encierran; si no ves al jungla enemigo, no cruces el río."
+      ],
+      "plan": {
+        "early": "Farmeá cerca de tu torre y evitá morir hasta tener niveles; buscá trades cortos con Q cuando el rival gaste una habilidad y recién al 6 jugá el all-in con R.",
+        "mid": "Spliteá la side más lejana al próximo objetivo y peleá todos los 1v1 que te propongan: con el core armado y la R ganás casi cualquier duelo, y con la wave empujada forzá dragón o heraldo.",
+        "late": "Quedate con el equipo, trabá con el pilar al que intente entrar y tirá la R sobre el tanque enemigo para quedar más duro; spliteá solo si el objetivo ya está resuelto o el rival está lejos."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/trundle/guide",
+      "https://mobalytics.gg/lol/champions/trundle/combos",
+      "https://mobalytics.gg/lol/champions/trundle/counters"
+    ]
+  }
+}

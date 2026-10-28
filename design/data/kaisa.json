@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "kaisa",
+    "ddragonId": "Kaisa",
+    "name": "Kai'Sa",
+    "titleEs": "La Hija del Vacío",
+    "cid": 145,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.02,
+    "pr": 20.11,
+    "br": 3.77,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.9,
+      "jungle": 0.4,
+      "middle": 1.3,
+      "bottom": 97.1,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kaisa.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kaisa_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.45, "games": 564 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 57.29, "games": 288 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 55.35, "games": 14825 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 54.82, "games": 1443 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 53.78, "games": 1614 },
+    { "cid": 202, "slug": "Jhin", "name": "Jhin", "vsWr": 53.59, "games": 20557 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 53.45, "games": 1839 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 53.13, "games": 367 }
+  ],
+  "weakAgainst": [
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 42.07, "games": 416 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 44.87, "games": 1188 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 45.47, "games": 2338 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 45.88, "games": 340 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 47.32, "games": 10008 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 47.7, "games": 4547 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 47.81, "games": 228 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 48.32, "games": 865 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Builds versátiles: puede armarse anti-tanque (evolución de W con AP) o anti-squishy (crítico y velocidad de ataque) según lo que pida la partida.",
+      "En 1v1 sin minions cerca, toda la Q cae sobre un solo objetivo: burst enorme en segundos que ningún ADC corto aguanta.",
+      "E y R le dan auto-peel: no depende del soporte para escapar de ganks y puede jugar sola mientras el soporte roamea.",
+      "La R marca objetivos golpeados y le deja saltar encima para rematar, incluso después de un Flash o un dash enemigo.",
+      "El plasma de la pasiva pega daño porcentual de vida: escala contra todo el mapa, no solo contra squishies."
+    ],
+    "weaknesses": [
+      "Con la E en cooldown queda descalza: sin velocidad de movimiento ni invisibilidad es un blanco fácil de CC; castigá esa ventana.",
+      "La R agresiva la mete en medio del equipo rival: se puede baitear y borrar en un segundo; esperá el salto para tirarle el CC.",
+      "Es hipersensible al early: si el lane va mal, tarda en llegar a sus evoluciones y queda por detrás del ADC rival gran parte de la partida.",
+      "La W es un proyectil lento y visible: esquivarla le corta el engage a distancia y la obliga a acercarse caminando.",
+      "Rango de auto corto (500): ADCs de rango largo y poke la castigan en cada intento de farmear; aprovechá ese margen."
+    ],
+    "powerSpikes": [
+      "Level 6: la R le da reubicación, engage y escape en una sola tecla; no subestimes ningún all-in con el círculo marcado.",
+      "Q maxeada alrededor del nivel 9: su daño de trade y de limpiar wave da un salto enorme.",
+      "Primera evolución (según build, Q/W/E): se convierte en la carry principal y pelea de igual a igual con cualquier ADC federo.",
+      "Nivel 13 con Q y E maxeadas: combina daño pico con peel propio; matarla en teamfight exige coordinación completa.",
+      "Tres puntos en R (nivel 16): escudo grande y reubicación casi instantánea; asumí que siempre tiene escape disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Varus, Ashe: superá su rango de 500 y pegale en cada last hit; ella necesita acercarse para que la Q le pegue entera.",
+        "Parate detrás de tu wave: sus autos y Q pierden misiles contra minions si no está encima tuyo.",
+        "Negociá el all-in hasta ver la E gastada: sin velocidad de movimiento ni invisibilidad, el salto de R es su única salida."
+      ],
+      "tanks": [
+        "El plasma pega daño porcentual: stackear solo HP no alcanza; comprá armor temprano porque su DPS físico sigue siendo lo que más pega.",
+        "Randuin's o Frozen Heart cortan su velocidad de ataque y el valor de su evolución de E.",
+        "Guardá tu CC para cuando entre con la R: si el salto la encuentra de frente, el escudo no le alcanza para la pelea entera."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para acercarse o para all-in: sin ese dash extra, su única movilidad es la R y si la usa para huir, perdió el trade.",
+        "Esquivá la W con tu movilidad: sin el slow y el marcaje, nunca te alcanza a rango de Q completa.",
+        "Cuidado con el 1v1 limpio: sin minions alrededor su Q te pega entera; peleá cerca de tu wave."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas arranque la animación de R: mientras cae no puede re-dash y es más quieta que nunca.",
+        "Malzahar, Lissandra y point-click la comen: su escudo de R no la salva de suppress ni de lock largo.",
+        "Forzala a gastar la E para farmear bajo presión: cada segundo sin E es un segundo donde tu jungla la mata gratis."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 30,
+        "name": "Karthus",
+        "tips": [
+          "Tu Q pokeá desde fuera de su rango de auto: cada last hit que intente le cuesta vida antes de llegar a tu cara.",
+          "Guardá el Muro de Dolor para cuando encienda la E: frenarle la velocidad mata el dive y te deja kitearla en tu propio terreno.",
+          "Kai'Sa quiere peleas cortas: forzá trades extendidos donde tus Q sucesivas y tu pasiva post-mortem superan su burst."
+        ]
+      },
+      {
+        "cid": 895,
+        "name": "Nilah",
+        "tips": [
+          "Tu W esquiva autos y reduce daño físico: el DPS de Kai'Sa se te cae encima; allineá recién cuando su E esté gastada.",
+          "Compartí experiencia con tu soporte y buscá el nivel 6 primero: tu R enganchada sobre ella es kill garantizada.",
+          "Pegale arriba con la E de dash: sin W en mano y con vos encima, pierde todos los trades cortos del lane."
+        ]
+      },
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Con tu W activa tu rango supera al suyo por mucho: kiteá hacia atrás y cada paso que dé para acercarse le cuesta media vida.",
+          "Abrí el trade con la Q para romperle resistencias: a partir de ahí tu DPS extendido gana cualquier pelea pareja.",
+          "No aceptes peleas antes de tus dos items: ella pega antes en la partida; farmeá escalando y castigá recién con Artillería Viva."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Pool para esquivar su W y el burst del trade: cada engage que te falla lo ganás vos con la Q cargada.",
+          "Mantené la distancia con la Q de rango: ella necesita trades extendidos cuerpo a cuerpo y vos jugás justo fuera de ese plan.",
+          "Tu escalado late la pasa por arriba: no forces peleas tempranas, farmeá con Q y bancá hasta que tus items hablen."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA → Q al mismo tiempo → AA → W → AA (cada hit suma plasma; la Q pegando a un solo objetivo hace el trade ganado)",
+        "All-in: E hacia el objetivo → AA → Q → AA ×2 → W + R juntos al juntar 3-4 stacks → seguí con autos mientras el plasma explota",
+        "Engage a distancia: W preciso al target → R sobre el marcado → AA + Q al aterrizar → E para reubicarte y seguir kiteando",
+        "Chase: E hacia adelante → AA → Q → R a mitad de la animación para pegarte → autos → ejecutá con W si intenta escapar",
+        "Kill seguro: arrancá la W y Flash en medio de la animación (Flash W) para conectar el slow desde ángulos imposibles"
+      ],
+      "tips": [
+        "La Q reparte misiles entre lo que hay cerca: pegate al blanco para que la lluvia entera caiga sobre uno, y al limpiar wave pegale primero al minion más cercano.",
+        "No gastes la E de forma agresiva sin visión del jungla: es tu única velocidad y tu único peel; sin E sos un blanco de CC andante.",
+        "La W es lenta y se ve venir: tirala desde flancos o después del CC de tu equipo, no como poke aleatorio a vida llena.",
+        "Sumá stacks de plasma con autos entre cada habilidad: el burst de la pasiva sale con el quinto stack y sin él tu all-in cae a la mitad.",
+        "Elegí la evolución según la partida: evolución de W con AP contra tanques y para poke a distancia, crítico y velocidad de ataque contra squishies."
+      ],
+      "plan": {
+        "early": "Jugá seguro los primeros niveles: farmeá y evitá peleas sin ventaja; con algunos niveles buscá trades extendidos y al 6 la R te da engage, escape y remate para castigar.",
+        "mid": "Caída la torre de bot, rotá a mid con tu soporte para abrirla, buscá picks con jungla y armá la primera evolución para convertirte en la carry de las peleas.",
+        "late": "Pegada al equipo y detrás de tu soporte, kiteá pegando al más cercano; guardá la R para reubicarte si te saltan y usá el escudo para sobrevivir el dive."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/kaisa/guide",
+      "https://mobalytics.gg/lol/champions/kaisa/combos"
+    ]
+  }
+}

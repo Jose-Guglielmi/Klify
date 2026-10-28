@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "rumble",
+    "ddragonId": "Rumble",
+    "name": "Rumble",
+    "titleEs": "la Amenaza Mecánica",
+    "cid": 68,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.78,
+    "pr": 1.39,
+    "br": 0.5,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 84.6,
+      "jungle": 6.4,
+      "middle": 6.8,
+      "bottom": 0.2,
+      "support": 2.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rumble.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rumble_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 54.25, "games": 247 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.77, "games": 578 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 52.58, "games": 814 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 50.93, "games": 322 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 50.87, "games": 289 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 50.79, "games": 632 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 49.49, "games": 590 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 49.38, "games": 480 }
+  ],
+  "weakAgainst": [
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 38.15, "games": 422 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 43.36, "games": 339 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 44.42, "games": 1022 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 44.68, "games": 564 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 45.11, "games": 532 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 45.66, "games": 219 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 45.9, "games": 244 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 45.93, "games": 381 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q en Zona de Peligro (pegado al objetivo) pega casi el doble: en trades cortos y peleas apretadas su daño por segundo es de los más altos del top.",
+      "El escudo de la W bancá el poke y la velocidad de movimiento te deja pisar al rival que se quiere ir: nadie escapa caminando de Rumble con heat.",
+      "La R define teamfights enteras: el Equilibrador corta pasillos y chokepoints, y el equipo rival no puede pelear agrupado sin comerse el tapete.",
+      "El burn de la Q con Liandry's derrite tanques: Garen, Mundo o K'Sante no pueden tanquear la lane entera contra un Rumble con items.",
+      "Waveclear altísimo con la Q: empujás, roameá con la R global y nunca quedás bajo torre perdiendo farm."
+    ],
+    "weaknesses": [
+      "Depende del heat: abajo de la mitad del medidor no tiene daño y encima se recalienta al sexto hechizo; el rival sabe exactamente cuándo podés pelear.",
+      "Cero movilidad: sin dash ni blink, un freeze te arruina el lane y cada gank del jungla es casi kill garantizada.",
+      "Cuando está Overheated queda seis segundos sin habilidades: ese es el all-in del rival; si te engages en esa ventana, estás desarmado.",
+      "Squishy para pelear cuerpo a cuerpo: si la Q está en cooldown o mal enfriada, un bruiser te gana el trade a autos puros.",
+      "La R depende de la posición del equipo rival: contra equipos que se reubican rápido, el Equilibrador queda como decoración."
+    ],
+    "powerSpikes": [
+      "Level 6: primera R con efecto global; aunque estés perdiendo el lane, podés voltear cualquier pelea del mapa con el tapete bien tirado.",
+      "Primer componente de Liandry's: el burn combinado con la Q hace que cualquier trade sostenido lo ganés aunque el rival tenga más vida.",
+      "Segundo punto de R (nivel 11): el cooldown baja tanto que la tenés para casi cada objetivo; el equipo tiene que pelear alrededor de tu tapete.",
+      "Full build con Zhonya's: entrás flanqueando, tirás R + Q y Zhonya bancás el engage; tu daño en área borra equipos agrupados enteros."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Vayne, Gnar: no intentes correrlos con la W; pegele con la E desde rango y esperá que gaste el dash para pegarle con la Q encendida.",
+        "Mantené la wave del lado tuyo: un freeze contra un Rumble sin movilidad es el fin del lane; igualá y reseteá antes de que te congelen.",
+        "Si te bajan de vida, rindé la wave y farmeá con la E: tu poder está en pelear agrupado con la R, no en morir de orgullo en el lane."
+      ],
+      "tanks": [
+        "Liandry's primero: el burn escala con su vida y Cho'Gath o K'Sante no pueden bancar un trade largo con la Q en Zona de Peligro.",
+        "Cho'Gath te silencia y te levanta: esperá que gaste la Ruptura antes de entrar con la combo completa.",
+        "No te recalentés peleando con el tanque: entrá, quemá, y salí antes de quedar Overheated al alcance de su jungla."
+      ],
+      "assassins": [
+        "Guardá la W para el arranque de su combo: el escudo + speed te deja bancar el burst y correr al mismo tiempo.",
+        "No entres Overheated a un trade corto contra un asesino: seis segundos sin habilidades es todo lo que necesita para borrarte.",
+        "Yone y similares dashan a través de tus minion: pegate a tu torre cuando su E esté en mano y castigalo cuando quede trabado en el retorno."
+      ],
+      "crowdControl": [
+        "Esquivá el engage lineal: el taunt de Shen o la Ruptura de Cho'Gath deciden la pelea; jugá detrás de minions hasta que lo gasten.",
+        "Tenacity temprana (Mercurio o Unflinching) te deja seguir pisando con la Q aunque te enganchen un CC menor.",
+        "En teamfight esperá que el CC grande entre: tirá la R después del engage rival, no antes; el tapete los encierra a ellos, no a tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 98,
+        "name": "Shen",
+        "tips": [
+          "Es el peor matchup del medidor: no aceptes trades largos, su espada Q te castiga cada vez que te pegás para usar la Zona de Peligro.",
+          "Esquivá el taunt (E) jugando detrás de minions: sin engage no puede forzarte nada y vos ganás el poke con la E doble.",
+          "Ojo con su W: cubre los autos, pero tus habilidades pegan igual; no la respetes de más y quemalo cuando la parezca con la Q encendida.",
+          "Cuando se tire la R a otra lane, empujá y castigá la torre: es el momento de recuperar todo lo que te hizo sufrir en el lane."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "La Ruptura (Q) tiene delay: movete constante y tirale la E solo cuando esté caminando hacia vos; si te levanta, perdiste el trade.",
+          "Silencio de la E primero, combo después: entrá con la Q encendida recién cuando el silencio se haya gastado.",
+          "No pelees al matarlo bajo torre con poca vida: con la ultimate activa se come cualquier all-in tuyo; quemalo, pero no te confíes."
+        ]
+      },
+      {
+        "cid": 777,
+        "name": "Yone",
+        "tips": [
+          "Puní el retorno de su E: cuando queda trabado volviendo a su alma, tirale la R o la combo entera; es la única ventana donde no puede escapar.",
+          "Esquivá el tornado (tercera Q) con la W o caminando lateral: si te levanta, el all-in después es imparable.",
+          "No lo persigas por la lane con el heat lleno: dasha dos veces por los minions y quedás Overheated en el medio de la nada."
+        ]
+      },
+      {
+        "cid": 82,
+        "name": "Mordekaiser",
+        "tips": [
+          "El tirón de su E decide el lane: jugá fuera de línea recta con tus minions de por medio y nunca allinees sin verlo con la E en mano.",
+          "Guardá la W para su Q de poke: el escudo bancá el hechizo y te deja responder con la Q en Zona de Peligro.",
+          "Si te tira la R (Reino de la Muerte) en teamfight, tirá tu Equilibrador adentro: el tapete te cubre el 1v1 y el burn gana la pelea cerrada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (arponazo) → Q encendido pisando al objetivo → W para bancar la respuesta; si te queda heat, segunda E para rematar",
+        "Combo de all-in: Q → W → autoattack → E → autoattack → E → autoattack, terminando Overheated con el bonus de daño en los autos",
+        "Engage con Ultimate: R cortando la retirada del rival → E slow → Flash + Q encendido → W → autoattack → E → autoattack",
+        "Teamfight: R en el chokepoint donde estén agrupados → W para entrar → Q barriendo en Zona de Peligro → E a los que intenten escapar del tapete"
+      ],
+      "tips": [
+        "Viví entre 40 y 60 de heat: abajo no tenés daño y arriba te recalentás en el peor momento; entramá a cada trade con el medidor en amarillo.",
+        "La Q pega casi el doble en Zona de Peligro: pegate al objetivo en los trades; si le tirás el fuego de lejos, tirás la mitad del daño.",
+        "No uses la W solo de escudo: la velocidad de movimiento te deja correr objetivos o esquivar CC; elegí según la pelea, no la spamees al iniciar.",
+        "Respetá los seis segundos de Overheat: solo allinees recalientando si el kill está garantizado; si no, dejá un hechizo de margen.",
+        "Cuidá la wave contra freezes: sin movilidad, un freeze te mata de aburrimiento; empujá o dejá morir, pero nunca te dejes congelar."
+      ],
+      "plan": {
+        "early": "Farmeá seguro con la wave del lado tuyo, comercia en cortos con E + Q encendida solo con el medidor en amarillo y evitá morir: tu early es flojo y tu R al 6 es tu primera carta real.",
+        "mid": "Empujá top con la Q, usá la R global para voltear peleas de dragón o heraldo aunque estés lejos, y castigá cada 1v1 de top con el tapete cuando el rival se pase de confianza.",
+        "late": "Flankeá en teamfights y tirá la R sobre el backline o el chokepoint del objetivo; con Zhonya's bancás el engage y con el cooldown de R a pleno tenés Equilibrador para cada pelea importante."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/rumble/build/top",
+      "https://mobalytics.gg/lol/champions/rumble/guide",
+      "https://mobalytics.gg/lol/champions/rumble/combos"
+    ]
+  }
+}

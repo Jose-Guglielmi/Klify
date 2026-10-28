@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "senna",
+    "ddragonId": "Senna",
+    "name": "Senna",
+    "titleEs": "la Redentora",
+    "cid": 235,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.02,
+    "pr": 5.6,
+    "br": 1.25,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.7,
+      "jungle": 0,
+      "middle": 0.4,
+      "bottom": 7.6,
+      "support": 91.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Senna.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Senna_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 62.76, "games": 333 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 59.39, "games": 293 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 56.99, "games": 279 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 56.76, "games": 1221 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 55.83, "games": 489 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 55.42, "games": 249 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 55.29, "games": 2268 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 55.08, "games": 256 }
+  ],
+  "weakAgainst": [
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 48.64, "games": 3339 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 49.45, "games": 6491 },
+    { "cid": 555, "slug": "Pyke", "name": "Pyke", "vsWr": 49.49, "games": 2528 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 49.53, "games": 1603 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 50, "games": 346 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 50.12, "games": 1207 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 50.4, "games": 4286 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 50.44, "games": 2058 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Poke con rango que crece solo: cada auto y cada Q pegan desde más lejos que casi cualquier soporte, y la misma Q cura a tu ADC con el mismo rayo.",
+      "La W aturde a todo el que quede cerca del objetivo tras el delay: en pasillos y peleas agrupadas engancha a más de uno sin necesidad de tocarlos de arriba.",
+      "La E hace invisible a tu equipo entero: infiltraciones por bush sin ward, engages desde ángulos imposibles y muertes de bush que el rival no ve venir.",
+      "Escala infinito con las almas: rango, probabilidad de crítico y robo de vida llegan sin gastar oro, así que una Senna de 40 minutos es un segundo tirador con utility."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni speedup propio, un all-in del rival es muerte casi segura early, y ella lo sabe, por eso juega tan atrás.",
+      "La W es su único seguro y es de delay lento: si falla o se la guarda mal, cualquier engage de grab o gancho entra gratis sobre vos o tu ADC.",
+      "La E se revienta con un ward de control: te infiltrás camuflada y el rival te ve las patas si tiene visión en el bush; siempre chequeá visiones antes.",
+      "La Q es cara de maná early: si spamea en la wave se queda sin amenaza de trade y sin curación para el carry.",
+      "Depende de las almas para escalar: si la niegan los farm, los muertes y los objetivos, se queda siendo un soporte frágil de un solo hechizo."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con la segunda wave: W conectada es all-in real; antes de eso, pokeá con Q a través de la wave y acumulá almas de cada minion que muera cerca.",
+      "Nivel 6: la R global te deja ejecutar un carry a media vida en otra lane y shieldear tu equipo al mismo tiempo; contá con que siempre está en pantalla.",
+      "Nivel 9 con la Q maxeada más el primer item: la Q pega fuerte, cura mucho y te deja empujar waves sola; acá arranca tu fase de escalado visible.",
+      "Late game con stacks de almas: tu rango de auto rivaliza con el ADC y tus crits borran squishies; peleá solo si tenés W en mano y ward de control visto."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Zilean: tu Q atraviesa la wave y te cura con el mismo rayo, así que el poke del rival te la termina pagando; tradeá cada vez que tu Q esté en mano.",
+        "Parate detrás de tus minions pero dentro de tu rango extendido: sos más larga que la mayoría de los magos de soporte, obligalos a elegir entre farmear o comer autos.",
+        "Guardá la W para respondir su engage o su all-in, no para pokear: contra poke puro tu ventaja es la curación, no el stun."
+      ],
+      "tanks": [
+        "Tahm Kench, Braum, Malphite: no gastes la W en el tanque; guardala para el ADC rival o para responder el engage que venga después.",
+        "Con almas encima tus autos le pegan como un tirador: kitéa hacia atrás y dejá que el minion muerto te dé el alma en cada last hit de ellos.",
+        "Si el tanque se tira encima, E para camuflar tu retreat y W de reversa: no te quedes a autos contra un front que ya cumplió su trabajo de pegarte."
+      ],
+      "assassins": [
+        "Zed, Talon, Akali: ellos te eligen a vos por inmovilidad, así que jugá pegada a tu equipo y nunca wardes sola sin ver al jungla en el mapa.",
+        "Guardá la W para cuando el asesino esté encima tuyo o del carry: si la tirás antes, no hay nada que frenar el salto.",
+        "La R de shield es tu anti-dive: un rayo encima del carry dived le suma vida y te deja girar la pelea sin acercarte."
+      ],
+      "crowdControl": [
+        "Blitzcrank, Thresh, Leona: parate siempre con un minion en el medio entre vos y el rival; tu rango largo te deja pegar desde atrás de la wave igual.",
+        "Respondé cada engage fallido con un trade completo: W conectada → Q a través del ADC rival → autos; esos casts te bajan media vida al que erró.",
+        "Nunca entres a bush sin ward contra estas lanes: tu E camuflada no te salva si el ward de control del rival ya está puesto y te ven arrastrar la niebla."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 53,
+        "name": "Blitzcrank",
+        "tips": [
+          "Poné un minion entre vos y el gancho SIEMPRE: su Q se detiene en el primer objetivo y tu rango te deja pegar desde atrás de la wave sin exponerte.",
+          "Castigá su Q en cooldown: si el gancho va al piso, ese es tu all-in; W conectada sobre él o su ADC y trade completo con Q y autos antes de que vuelva a tenerlo.",
+          "No te pares en bushes sin ward ni uses la E para acercarte: él quiere exactamente ese paso adelante tuyo; jugá el poke desde la wave y dejalo que rote el gancho al aire."
+        ]
+      },
+      {
+        "cid": 412,
+        "name": "Thresh",
+        "tips": [
+          "Jugá fuera del rango de su Q con tu rango extendido: si el gancho no te encuentra, Thresh no tiene engage y vos lo pokeás gratis con Q a través de la wave.",
+          "Cuando gaste la Q o la E mal, ese es tu trade: W conectada → Q a través de él → autos; no le des el segundo gancho esperando a tu ADC que se está curando.",
+          "Del nivel 6 en adelante no te quedes a media vida en su rango: flash + R + caja de su R te mata igual que a tu ADC; esquivá y jugá con vida completa."
+        ]
+      },
+      {
+        "cid": 555,
+        "name": "Pyke",
+        "tips": [
+          "Castigá su Q gastada: si el arpón va al piso, W conectada y trade completo; Pyke sin Q no entra y vos tenés rango para pegarle de afuera.",
+          "No te pares contra su E a baja vida: su R ejecuta desde cualquier vida en rango y una kill para él le da oro doble; mantenete arriba de vida y con un minion en el medio.",
+          "Poné ward de control en el bush que rota: su camuflaje de la pasiva le deja acercarse invisible; sin ese bush, cada intento de engage tuyo lo ves venir desde la wave."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Jugá lateral y detrás de minions: toda su Q y su E son skillshots lineales; tu rango extendido te deja pegarle sin pararte en la línea de tiro.",
+          "Cuando su pasiva acumule 3 stacks, alejáte un paso: la detonación de investigación duele el doble de lo que esperás; rompéle los stacks con tu rango antes de que te los cruce.",
+          "All-ineá cuando su E esté en cooldown: sin el knock-up que le da tiempo de castear, tu W conectada y tu Q a través de su ADC ganan el trade limpio."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q apuntada a tu ADC o a un minion detrás del rival (el rayo pega a todo lo que cruce y cura a tu aliado) → auto con el rango extendido",
+        "All-in nivel 2: W sobre el objetivo → auto → Q a través de él → autos mientras el stun del delay de la W prende",
+        "Engage con niebla: E sobre vos y tu equipo → caminan camuflados por el flanco → W a la cara del primero que pase → Q + autos con la wave de velocidad acumulada",
+        "Combo de teamfight: W al grupo agrupado → E para reposicionarte camuflada → Q a través de tus aliados pegando y curando en la misma línea",
+        "R global: rayo lejano a la teamfight para shieldear a tu equipo que pelea o para ejecutar al carry rival que quedó a media vida escapando"
+      ],
+      "tips": [
+        "La Q atraviesa todo lo que esté en la línea: buscá siempre un aliado o minion detrás del objetivo; el mismo rayo pega al rival y le cura la vida a tu carry, no la gastes sin ese doble uso.",
+        "No uses W como poke a vida llena: es tu único seguro y su delay es lento; si la tirás al aire, el próximo engage del rival entra sin respuesta.",
+        "Las almas caen de minions que mueren cerca tuyo, aliados o rivales: quedate en el rango de recogida durante cada wave y cada skirmish; tu escalado late game se decide acá.",
+        "La E te camufla a vos y a tu equipo, pero no te hace intocable: un ward de control en la niebla te marca, así que warda o confirmá que el bush está limpio antes de infiltrarte.",
+        "La Q cuesta maná caro early: espaciá los casts en la wave y guardá el pool para los trades con W conectada; sin maná sos un auto-attacker de un solo seguro."
+      ],
+      "plan": {
+        "early": "Buscá nivel 2 con la segunda wave, pokeá con Q a través de minions y buscá el all-in con W conectada; recogé almas de cada minion que muera cerca y castigá cada engage fallado del rival.",
+        "mid": "Cayó la torre de bot, rotá a mid y wardá el próximo objetivo con tu equipo al lado; infiltrá con la E para buscar picks, pero nunca camines sola: sos el campeón que más muere wardando.",
+        "late": "Con stacks de almas sos un segundo tirador: posicionate atrás de tu ADC, peleá cerca de choke points donde tu W golpee al grupo y usá la R global para shieldear tus fights o ejecutar carries que escapan."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/senna/build",
+      "https://app.mobalytics.gg/lol/champions/senna/guide"
+    ]
+  }
+}

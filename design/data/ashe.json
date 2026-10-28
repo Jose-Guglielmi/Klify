@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "ashe",
+    "ddragonId": "Ashe",
+    "name": "Ashe",
+    "titleEs": "la Arquera de Hielo",
+    "cid": 22,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.3,
+    "pr": 6.21,
+    "br": 1.82,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 1.6,
+      "jungle": 0.1,
+      "middle": 1.3,
+      "bottom": 82.6,
+      "support": 14.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ashe.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ashe_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 53.57, "games": 1107 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 53.25, "games": 3258 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 52.73, "games": 2122 },
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 52.54, "games": 1222 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 52.38, "games": 1010 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 51.66, "games": 4545 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 51.57, "games": 1939 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 51.47, "games": 340 }
+  ],
+  "weakAgainst": [
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 45.17, "games": 600 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 45.38, "games": 390 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 45.85, "games": 205 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 46.3, "games": 594 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 46.87, "games": 1564 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 48.32, "games": 2233 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 48.56, "games": 208 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 48.61, "games": 216 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El poke de rango largo domina el lane desde el nivel 1: la W pega a los dos rivales y a la wave al mismo tiempo, así que gana prioridad y el trade sin acercarse nunca.",
+      "Cada auto ralentiza: perseguida nadie la alcanza y persiguiendo nadie le escapa; el ADC enemigo deja de ser esquivable y ella decide si hay pelea.",
+      "La utilidad para el equipo es enorme: la R es un stun que viaja todo el mapa, arma picks antes de cada objetivo y encadena CC con lo que tenga el resto.",
+      "Con la Q activada y dos o tres items derrite a varios rivales en peleas cortas mientras kitea: daño sostenido sin comprometerse nunca del todo.",
+      "La E regala visión gratis del jungla enemigo: menos ganks que le entren y más información para todo el team sin gastar un ward."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, un gank o un flanqueo es casi muerte garantizada; su única herramienta de defensa es la propia R.",
+      "Depende del posicionamiento como ningún otro ADC: un solo paso en falso en teamfight la borra y no hay segunda chance.",
+      "Farmear sola en side lanes es suicida: cualquier comp con engage la pica fácil y solo tiene la R para salvarse.",
+      "Todo CC del juego la mata en cualquier momento de la partida: necesita una frontline que la cubra o queda fuera del juego.",
+      "Su impacto escala con items: si el early se le complica, llega sin daño a las peleas de mid game y el equipo juega 4v5 en daño."
+    ],
+    "powerSpikes": [
+      "Level 6: la R agrega presión de kill real en lane y picks a través del mapa; jugá alrededor de la flecha para ganar ventaja.",
+      "Primer back con componente de daño: los trades extendidos con Q y el poke con W pegan bastante más; después de volver, se puede jugar más agresivo.",
+      "Level 9 con W maxeada: el poke previo a cada teamfight es muy difícil de contestar; nivel 11 la R rota con cooldown corto para buscar picks seguidos.",
+      "Late game con build completa y W en cooldown bajísimo: poke constante + kite con Q activada es el paquete que decide peleas enteras."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Ziggs, Kog'Maw: si te ganan en rango, no aceptes el juego de poke; usá la W para empujar y forzá rotaciones a objetivos donde tu utilidad vale más que su daño.",
+        "Esperá que gasten la habilidad clave de poke antes de trade: con la Q cargada, el trade extendido lo ganás contra casi cualquier ADC de rango.",
+        "Manejá la wave cerca de tu torre: mientras menos espacio le des al rival de pegarte de lejos, más rápido llega tu jungla a castigar."
+      ],
+      "tanks": [
+        "Si hay dos o más tanques, la penetración temprano no es opcional: tu DPS tiene que llegar al backline y la W sola no derrite frontlines.",
+        "Kiteá con los slows: un tanque que te persigue nunca te llega; no gastes la R en el tanque salvo que sea para cancelar un engage del otro team.",
+        "En peleas largas tu daño sostenido gana: pegale al más cercano y retreat entre autos, no te comprometas de más por un kill que no es tuyo."
+      ],
+      "assassins": [
+        "Zed, Katarina: guardá la R como defensa, no como inicio; el stun en el arranque de su combo es la diferencia entre vivir y morir.",
+        "Parate siempre detrás de tu frontline: ningún assassino debería llegar a vos sin cruzar antes a tu equipo entero.",
+        "Si sobrevivís el primer burst, el assassino queda atrapado en tus slows: pegale mientras retrocedés y no va a escapar."
+      ],
+      "crowdControl": [
+        "Si el equipo enemigo tiene CC duro apuntándote, el item de cleanse (Quicksilver) es obligatorio: sos el blanco número uno de cada engage.",
+        "Contra comps de engage (Malphite, Alistar), mantedé distancia máxima y entrá recién cuando el CC principal ya se gastó en tu frontline.",
+        "Tu propia R arranca la cadena de CC: una flecha desde la niebla sobre un target aislado y tu equipo colapsa antes de que reaccionen."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Con la W activada te supera en rango y pega más rápido: no aceptes el intercambio de autos planos, buscá el all-in cuando se le termine.",
+          "Kog'Maw sin la W encendida es un ADC lento, corto y sin escape: ese es exactamente tu momento de tirar la R y demás combo.",
+          "En teamfight, si su equipo lo protege, tu R tiene que ser para él: ningún otro target del mapa vale más que dejar al Kog fuera de la pelea."
+        ]
+      },
+      {
+        "cid": 115,
+        "name": "Ziggs",
+        "tips": [
+          "Su poke te desgasta desde afuera de tu rango: farmeá con la W, no te pares en línea recta con los minions y esperá su rotation para trade.",
+          "Ziggs no pelea cuerpo a cuerpo y su escape es nulo: all-in con R + Q cuando baje a poner la bomba en la wave o a tirar torre.",
+          "No le regales tiempo libre cerca de tu torre: la derriba solo con la pasiva; castigá cada vez que se quede solo empujando."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Guardá la R para el arranque de su combo: el stun en el medio de las dagas la borra antes de que el burst termine de salir.",
+          "No te pares sobre las dagas ni aceptes trades cortos: tu Q necesita varios autos para stackear y su burst no te da ese tiempo.",
+          "Katarina roamea apenas empuja: avisá con pings, usá la E para ver por dónde se fue y empujá la wave para castigarle cada ausencia."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El windwall se come tu W y tu R: guardalas para cuando esté en cooldown; sin muro, Yasuo es un melee de rango corto sin respuesta a tu poke.",
+          "Parate lejos de tus minions para negarle los dashes de la E: sin camino de rolls, tiene que caminar hacia vos y tus slows lo condenan.",
+          "Su knockup + R te mata de un combo: si tu support no tiene peel, jugá pegada a torre y escalá a items antes de pelear de nuevo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA → W en medio de la animación → AA (el slow de la W asegura que los siguientes autos no se esquivan)",
+        "Carga de Q: cuatro AA y apretá Q inmediatamente después del cuarto para el burst instantáneo de daño",
+        "All-in completo: AA → Q activada → R → AA → W → AA (todo el kit encadenado mientras el objetivo está stuneado y ralentizado)",
+        "Pick de larga distancia: R desde la niebla → caminá a rango de auto → W mientras sigue stuneado → AA hasta procear la Q",
+        "Flash escondido: W → Flash en medio de la animación → AA (el Flash dentro de la animación no le da tiempo de reaccionar)"
+      ],
+      "tips": [
+        "Tirá la E en diagonal por el jungla enemigo antes de cada objetivo: ves qué camps quedan, dónde está el jungla y si viene por vos sin gastar wards.",
+        "Alinéala la W para pegarle a los dos rivales y a la wave al mismo tiempo: ganás prioridad y el trade con un solo cast.",
+        "No gastes la R en el primer blanco que aparezca: es tu engage y tu escape a la vez; cada flecha tirada al azar te deja indefensa durante todo su cooldown.",
+        "Mantené la Q cargada siempre que puedas: nunca sabés cuándo arranca una pelea sorpresa y el burst del primer segundo decide el trade.",
+        "Después del early, no farmees sola en side lanes: sos el blanco de cualquier pick; andá con tu equipo o con visión completa del mapa."
+      ],
+      "plan": {
+        "early": "Pokeá con la W pegándole a rivales y wave a la vez, usá la E para revisar el jungla antes de pushear y al llegar a 6 buscá el all-in con R cuando el rival esté a media vida.",
+        "mid": "Después de la primera torre rotá a mid con tu equipo, escaneá con la E antes de cada objetivo y usá la R para armar picks o asegurar el smite del jungla en dragón y heraldos.",
+        "late": "Parate detrás de tu frontline, pegale al objetivo más cercano mientras kiteás con W entre autos, y guardá la R para el pick que define la pelea o para CC al jungla en la disputa del objetivo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ashe/guide",
+      "https://app.mobalytics.gg/lol/champions/ashe/build",
+      "https://mobalytics.gg/lol/champions/ashe/combos"
+    ]
+  }
+}

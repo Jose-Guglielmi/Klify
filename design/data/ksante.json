@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "ksante",
+    "ddragonId": "KSante",
+    "name": "K'Sante",
+    "titleEs": "El Orgullo de Nazumah",
+    "cid": 897,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.01,
+    "pr": 2.96,
+    "br": 2.12,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 94.8,
+      "jungle": 0.1,
+      "middle": 2.9,
+      "bottom": 0.3,
+      "support": 2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/KSante.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/KSante_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 51.39, "games": 432 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 51.03, "games": 582 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 50.29, "games": 682 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 50.14, "games": 351 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 50.14, "games": 718 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 50.1, "games": 960 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 50.08, "games": 601 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 49.81, "games": 803 }
+  ],
+  "weakAgainst": [
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 37.61, "games": 234 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 39.81, "games": 417 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 42.64, "games": 1006 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 43.46, "games": 428 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 43.59, "games": 803 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 43.99, "games": 491 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 44.12, "games": 510 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 44.12, "games": 417 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "CC en capas: la W cargada (unstoppable + knock-up), el empujón de R contra la pared y el slow de la Q encadenan tanto control que un carry atrapado no vuelve a pelear.",
+      "El escudo de E y la reducción de daño inherente lo hacen excelente para tanquear burst: entra primero, absorbe la combo enemiga entera y sigue de pie.",
+      "La pasiva pega % de la vida del objetivo: contra los tanques que nadie quiere desgastar, él gana la guerra de atrición solo con Q + autos.",
+      "Escalado defensivo brutal: con dos items es casi imparable en el side lane, y eso lo vuelve el tanque natural para sostener el split push del equipo."
+    ],
+    "weaknesses": [
+      "Daño bruto bajo: sin la R a la pared no borra a nadie solo, y contra rivales que no se acercan el lane se le hace un pantano.",
+      "La W es lenta y muy telegráfica: un rival atento la esquiva caminando, y mal gastada te deja sin engage ni escape por varios segundos.",
+      "Early corto de vida y maná: hasta los primeros componentes pierde trades largos, y los bullies tipo Kled o Renekton lo castigan justo en esa ventana.",
+      "Depende del terreno: la R necesita pared para stunear; en campo abierto solo empuja al rival más lejos y no genera kill.",
+      "La R se lo cobra: transformado pierde vida máxima y parte del sustain; si la usa sin asegurar el objetivo, queda más débil que antes de tirarla."
+    ],
+    "powerSpikes": [
+      "Nivel 4 con dos puntos en Q: el slow pega más y el cooldown baja; arrancá a cobrar trades con Q + auto que el rival no puede responder.",
+      "Nivel 6: la R a la pared es un stun largo más transformación; cualquier all-in con jungla cerca es kill casi garantizada.",
+      "Nivel 9 con Q maxeada: daño y cooldown al tope, ganás el desgaste de side lane contra casi cualquier melee.",
+      "Dos items completos: se vuelve tanque real; la ventana del rival para castigarlo se cierra y de ahí en más solo lo baja un equipo entero."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Gnar, Vayne: no corras detrás del rango; tanqueá la wave bajo torre, farmeá con Q y esperá que se acerquen a una pared para tu R.",
+        "Usá la E sobre la pared del río para cerrar de golpe: el rango puro no espera encontrarte al lado, y ahí tu CC decide el trade.",
+        "Si te castigan el farm, dejá que empujen y catcheá bajo torre: tu escalado gana cuanto más largo es el juego, el rango necesita matarte temprano."
+      ],
+      "tanks": [
+        "Tu pasiva pega % de vida: contra Ornn, Sion o Cho'Gath el trade largo te conviene; pegá Q y autos sin miedo y buscá completar la marca.",
+        "No gastes la R contra un tanque solo: reservala para el carry enemigo; contra tanques ganás con desgaste y sin regalar tu transformación.",
+        "Un tanque puede esquivar tu W pero no tu Q: zonéalo spameando Q (el cooldown baja al pegar campeones) y forzalo a gastar la sustain en la wave."
+      ],
+      "assassins": [
+        "Guardá el escudo de E para el burst del asesino: la reducción de daño lo deja sin daño en su propia ventana de combo.",
+        "Akali y compañía escalan matándote en el side: si no ganás el 1v1, teleportate al otro lado del mapa y ganá por teamfight.",
+        "Antes del 6 jugá atrás: tu all-in real empieza con R a la pared; sin ella tu única amenaza es un desgaste lento que cualquier assassino ignora."
+      ],
+      "crowdControl": [
+        "La W te da unstoppable mientras cargás: cargala a través del CC enemigo para atravesarlo y aun así conectar el knock-up.",
+        "Cuidado con Lissandra o Malzahar: tu entrada con R puede quedarte convertida en piedra en el medio de los cinco.",
+        "En teamfight esperá que el CC pesado se gaste en tu carry o tu jungla: entrás después y la R a la pared encuentra a los rivales sin herramientas."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Kled pega más fuerte hasta los primeros items: no aceptes trades largos, farmeá con Q desde atrás de los minions y esperá tu ventana.",
+          "Contá su coraje: allineá recién cuando esté desmontado y sin la segunda barra de vida para volver a cabalgar.",
+          "Cuando te cargue, usá la E para alejarte y no para acercarte, y dejá la W cargada para interceptar esa carga en la cara."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Kayle solo pide tiempo: castigá cada last hit que intente cobrar antes del 6 y no le regales farm gratis bajo torre.",
+          "Después del 6 su R la vuelve intocable en tu combo: esperá que la gaste antes de allinear, o llamá al jungla para pasársela por arriba.",
+          "Pedí ganks temprano: cada muerte de Kayle early es tiempo que su escalado no recupera; ganale al mapa, no al duelito."
+        ]
+      },
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Garen gana todo trade largo por su regeneración: hachá corto con Q + auto y salí antes de que su Q te silencie la combo.",
+          "El silencio de su Q te impide encadenar W y E en el momento justo: jugá alrededor de ese cooldown y pegale cuando no la tenga.",
+          "Con su R en mano no te pares a media vida: ejecuta por vida faltante; mantenete arriba de la mitad y obligalo a gastarla mal."
+        ]
+      },
+      {
+        "cid": 98,
+        "name": "Shen",
+        "tips": [
+          "Shen no te gana el 1v1, te gana el mapa: su R convierte tu all-in en un 4v5 abajo; avisá al equipo antes de comprometerte.",
+          "Su W bloquea tus autos, que es donde vive tu pasiva: esperá que la espada se pare o castigalo con Q sola esos segundos.",
+          "Cuando veas su R global, empujá la wave y golpeá la torre: castigar el mapa es la única forma de castigar a un Shen."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q → auto hasta que vuelva de cooldown → Q → auto; terminá con la Q potenciada de la tercera marca de la pasiva",
+        "All-in de lane: W cargada sobre el rival → auto → Q → auto → R contra la pared (stun) → auto → Q final",
+        "Engage con Flash: E → Q → Flash → auto → R a través del terreno para stunear → auto → W → auto → Q",
+        "Kill cruzando la pared: E (saltás la pared) → Flash → R contra el terreno → Q → auto → W → auto → Q",
+        "Pelea larga con escudo: E → auto → Q → auto → R → auto → W → auto → Q → auto"
+      ],
+      "tips": [
+        "La W cargada te da unstoppable: usala para atravesar CC y engage, pero como el rival la ve venir, cargala desde fuera de su visión.",
+        "No tires la R sin pared cerca: el knockback en campo abierto solo regala al carry más lejos; caminá dos segundos más y buscá la pared del río o de la torre.",
+        "Post 6 no empujes la wave sin visión: podés terminar tirando al rival hacia su torre y quedando descalzo para el dive enemigo.",
+        "Guardá la E como escape de gank antes que como gap closer de trade: ese escudo es lo único que te salva del jungla en top.",
+        "En teamfight elegí un rol antes de entrar: tanquear el burst arriba de tu carry o flanquear para R al carry enemigo contra la pared."
+      ],
+      "plan": {
+        "early": "Tanqueá la wave cerca de tu torre, cobrá trades cortos con Q + auto desde el nivel 4, freezeá para que tu jungla allinee con tu CC y al llegar al 6 buscá la R a la pared.",
+        "mid": "Roameá para picks con la R, peleá objetivos con tu jungla y balanceá farm del side con teamfight: con dos puntos en R cada pick tuyo define el mapa.",
+        "late": "Sos el tanque del equipo: grupate siempre, absorbé el primer burst y buscá el pick de R al carry enemigo contra una pared para iniciar un 5v4."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ksante/guide",
+      "https://mobalytics.gg/lol/champions/ksante/combos"
+    ]
+  }
+}

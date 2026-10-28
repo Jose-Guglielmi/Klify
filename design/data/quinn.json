@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "quinn",
+    "ddragonId": "Quinn",
+    "name": "Quinn",
+    "titleEs": "las Alas de Demacia",
+    "cid": 133,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": [
+      "el mega endpoint no filtra los counters por lane=jungle: el re-GET con lane=jungle devuelve el payload agregado de todas las lanes (verificado que lane=middle y lane=top sí filtran); esta es la dominante real (50.6% del pool)"
+    ]
+  },
+  "stats": {
+    "wr": 51.12,
+    "pr": 1.2,
+    "br": 0.8,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 34.4,
+      "jungle": 50.6,
+      "middle": 10.2,
+      "bottom": 2.4,
+      "support": 2.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Quinn.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Quinn_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 56.19, "games": 509 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 55.9, "games": 1084 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 55.49, "games": 510 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 55.41, "games": 222 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 54.64, "games": 377 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 54.38, "games": 548 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.06, "games": 579 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 53.82, "games": 301 }
+  ],
+  "weakAgainst": [
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 42.89, "games": 387 },
+    { "cid": 203, "slug": "Kindred", "name": "Kindred", "vsWr": 45.95, "games": 222 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 46.0, "games": 200 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 46.23, "games": 212 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 46.34, "games": 246 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 47.01, "games": 268 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.19, "games": 498 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.86, "games": 491 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La marca de Harrier es daño real: si el auto potenciado te agarra caminando a un last hit, te saca un cuarto de vida sin combo ni gank.",
+      "Behind Enemy Lines es la rotación más rápida del mapa: cruza de lane a lane en segundos y te counter-gankuea antes de que tu jungla llegue.",
+      "Vault la salva de sí misma: corta cualquier dash (Lee Sin Q2, Jax Q), te desarma un instante y la deja aterrizando a máxima distancia para kitar.",
+      "La W activa muestra medio cuadrante: invadirla termina en perdida de tiempo casi siempre, porque te ve venir y se reubica."
+    ],
+    "weaknesses": [
+      "No tiene ni un solo CC duro: un tanque con gap-closer la corre por todo el mapa y ella no tiene más que Vault para frenarlo.",
+      "Vault es su único peel y su único gap-closer: si lo gastás para entrar, un flan del rival la mata en dos segundos.",
+      "Squishy y dependiente de las marcas: fuera del pop de Harrier y del burst de la R su daño en peleas largas es mediocre.",
+      "Mientras vuela con R, cualquier daño de campeón o torre corta el vuelo: la contás arrastrando el maná gastado a mitad del mapa.",
+      "El aterrizaje de Vault cae siempre en un punto fijo a su rango de ataque: guardá el skillshot para el punto de caída y lo conectás gratis."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con dos puntos en Q: gank temprano letal, la E interrumpe dashes y el pop de marca dobla el daño de cada engage.",
+      "Nivel 6: Skystrike remarca a todo el que toque y la velocidad de la R convierte cualquier skirmish en counter-gank instantáneo.",
+      "Primer item de crit asentado (rama Collector/Hubris): cualquier trade sobre un squishy marcado es prácticamente el all-in completo.",
+      "Nivel 16 con la R mejorada: vuelo casi permanente para cazar picks y presionar side lanes durante toda la game."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Cuando te marquen con Harrier, alejate dos segundos: la marca vence sola y la dejás tirando el burst principal a la nada.",
+        "Su Q te deja en nearsight y te hace fallar skillshots: reubicate lateral y dispará después, no antes, para no regalarte el trade.",
+        "Sumá wards perimetrales en el río: la R la trae de gank desde ángulos que nadie cubre, no confíes en el trazo estándar del cuadrante."
+      ],
+      "tanks": [
+        "Tu gap-closer la desarma: no tiene CC duro para frenarte, así que pegale de cerca y forzala a gastar Vault en defensiva.",
+        "Comprá armadura temprano: su burst es todo físico y depende de las marcas; un item resistente convierte su combo en picadura.",
+        "Peleá el trade extendido: su daño vive en dos pops de marca y ahí se agota; los tanques con sustain la pasan por encima."
+      ],
+      "assassins": [
+        "Zed, Ekko: esperá que gaste Vault para rotar; sin E queda descalza y tu combo entera entra sin pelea.",
+        "Entrá cuando no estés marcado por Harrier en vos: si te marca primero, el pop duplica su burst y te borra el trade.",
+        "Un flan con burst la ejecuta antes de que llegue a Vault: es un tirador de papel sin resurrección, dos tandas limpias la bajan."
+      ],
+      "crowdControl": [
+        "El Vault se puede cortar en el aire: cualquier stun o knockup durante el salto le congela el escape y la deja en el peor punto del mapa.",
+        "Cuando vuele con R, cualquier daño de campeón o torre corta el vuelo: un solo poke del backline la saca de la pelea entera.",
+        "Encadená CC sobre el aterrizaje de Vault: siempre cae a su rango de ataque del objetivo, sabés exactamente dónde va a estar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "Peleale extendido y pegada: su daño es todo pop de marca y se agota; con furia cargada y forma dragón el all-in es tuyo.",
+          "Colgale la R apenas gaste Vault: aterriza en punto fijo, desarmada un instante, y el aterrizaje de dragón la agarra clavada.",
+          "Invadí cuando su W esté gastada: su única anti-invasión es la visión del cuadrante de la W, esa ventana es tuya."
+        ]
+      },
+      {
+        "cid": 203,
+        "name": "Kindred",
+        "tips": [
+          "No aceptes trade con marca puesta en vos: movete lateral para que no pueda pope Harrier y enganchala cuando la marca venció.",
+          "Guardá el root de la E para el aterrizaje de Vault: cae siempre a su rango de ataque del objetivo, un punto fijo donde la clavás.",
+          "La R anula su all-in: usala cuando tire el burst completo y girá el duelo con el pop de tu pasiva al salir."
+        ]
+      },
+      {
+        "cid": 113,
+        "name": "Sejuani",
+        "tips": [
+          "Tu Q + Permafrost congelan su combo entero: apuntale apenas aterrice de Vault, el punto de caída es siempre el mismo.",
+          "No existe burst que te mate con tu vida y tu armadura: insistí en el trade largo y forzala a gastar la E en defensiva.",
+          "Pegale la R mientras vuela: cualquier daño de campeón corta Behind Enemy Lines y queda a ritmo normal a mitad del mapa."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "El taunt (E) corta su Vault en pleno salto: si sale el salto de escape, frenalo al aire y la tenés a tiro de la pelea.",
+          "Con tu armadura el pop de marca no te dobla la vida: defendete con la W activa y el trade extendido es tuyo por siempre.",
+          "Gankeala de frente con la bola de la Q: la visión de su W no cubre el flanco del río, y tu velocidad de rodado la alcanza antes de que active la R."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear de campamento: Q sobre el campamento grande (lo remarca) → AA al pop (activa el bonus de AS de la W) → repetí con la marca que reaparece cada 7s, nunca dupliqués el pop sobre un target ya marcado",
+        "Duelo: AA sobre la marca → E (Vault remarca, desarma y corta el dash del rival) → AA potenciado → Q encima para remarcar y cegar",
+        "Gank: entrá con E sobre el target (el salto corta cualquier dash en el arranque) → AA potenciado de la marca → Q para remarcar, cegar y quedarte a tiro por la velocidad de la W",
+        "Persecución con R: volá hacia el target → Skystrike lo remarca → AA potenciado → E cierra la distancia si escapó: el ciclo de marcas te da dos pops más allá de la pelea",
+        "Escape: W activa para ver el cuadrante → E sobre un minion o campamento pegado a la pared → saltás al otro lado consumiendo la marca en el camino"
+      ],
+      "tips": [
+        "Pelear sin marca es pelear con medio kit: esperá el pop de Harrier o generalo vos misma con Q/E antes de allinear.",
+        "No gastes Vault ofensivo sin info del mapa: es tu único peel; si lo quemás para entrar y aparece la jungla rival, no hay segunda salida.",
+        "La W activa antes de invadir o de caminar una lane: medio cuadrante de visión corta counter-ganks y te deja trackear la ruta del rival.",
+        "El aterrizaje de Vault es siempre a tu rango de ataque del objetivo: aprendé la medida y usala de trampolín sobre paredes con minions o campamentos.",
+        "La R come maná por segundo: cerrala recién cuando llegaste, quedarte seca volando a mitad del mapa es el clásico error de Quinn."
+      ],
+      "plan": {
+        "early": "Limpiá rápido marcando el campamento grande con Q, mirá huella con la W activa y buscá gank desde el nivel 3: tu E interrumpe dashes y el pop de marca dobla el daño de cada engage.",
+        "mid": "Rotación con R: counter-gankeá con la velocidad, invadí con visión de la W y peleá skirmish por objetivo; tu utilidad de mapa te da más wins que el farm.",
+        "late": "Flanqueá con R hacia el backline y buscá el carry; si el rival llena el comp de CC, convertí la velocidad en split-push lateral y forzalos a elegir entre peleas 4v4 y tu torre."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/quinn/build",
+      "https://www.skill-capped.com/lol/guides/builds/quinn/jungle",
+      "https://wiki.leagueoflegends.com/en-us/Quinn/Strategy"
+    ]
+  }
+}

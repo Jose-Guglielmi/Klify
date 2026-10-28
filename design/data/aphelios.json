@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "aphelios",
+    "ddragonId": "Aphelios",
+    "name": "Aphelios",
+    "titleEs": "El Arma de los Adeptos",
+    "cid": 523,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.34,
+    "pr": 7.23,
+    "br": 3.41,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 0.4,
+      "jungle": 0,
+      "middle": 0.6,
+      "bottom": 99,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aphelios.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aphelios_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.59, "games": 3550 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 54.59, "games": 894 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 53.28, "games": 229 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 53.1, "games": 1373 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 52.79, "games": 6817 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 52.53, "games": 1066 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 51.78, "games": 533 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 51.52, "games": 2795 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 36.98, "games": 265 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 43.73, "games": 327 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 45.77, "games": 627 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 47.12, "games": 312 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 47.21, "games": 1576 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 47.21, "games": 771 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 47.42, "games": 3676 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 48.64, "games": 516 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Cinco armas con Qs distintas lo vuelven un ADC que se adapta a cualquier pelea: poke con Calibrum, sustain con Severum, root con Gravitum, AoE con Infernum y attack speed con Crescendum.",
+      "Su R según el arma en mano define teamfights enteras: rooteo en área con Gravitum o daño AoE masivo con Infernum sobre el equipo agrupado.",
+      "En trades extendidos es de lo peor del juego: con Severum en mano se cura mientras pega y puede revertir una pelea que parecía perdida.",
+      "El rango extendido de Calibrum sobre objetivos marcados le permite pegar desde posiciones que ningún otro ADC se anima."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni velocidad de movimiento, cualquier CC encadenado o assassín que llegue a su cara lo borra sin que pueda responder.",
+      "Depende de la rotación de armas: con una combinación mala en mano no puede retroceder el trade, y esa ventana es tuya para castigarlo.",
+      "Es adicto a los items: si lo campearon en early y llega retrasado al mid game, su equipo juega 4v5 en cada pelea de objetivo.",
+      "Sin R pierde la mitad de su identidad: su cooldown de definitiva es la señal para que tu equipo busque la pelea.",
+      "Es squishy y predecible: si corre hacia una side lane, probablemente va hacia su jungla o directo a la muerte."
+    ],
+    "powerSpikes": [
+      "Level 6: Moonlight Vigil le da presión de kill real en bot y una amenaza global para peleas de dragón; respetá la R en cada all-in.",
+      "Primer item completo: gana trades en lane de forma cómoda y su sustain lo vuelve casi imposibile de sacar por poke solo.",
+      "Dos y tres items (15-25 min): su pico real; en teamfights con arma favorable derrite frontline y carry al mismo tiempo.",
+      "Late con build completa: derrite tanques, pero sigue siendo squishy; si se posiciona mal una sola vez, la pelea se termina ahí."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Parate fuera del rango de la wave cuando tenga Infernum en mano: cada auto suyo es AoE y la wave entera te pega a vos.",
+        "Si te marcó con la Q de Calibrum no corras hacia tu torre: el auto a distancia te sigue pegando; quedate cerca y devolvé el trade.",
+        "Ganale el clock: sus armas malas duran lo mismo que las buenas; peleá cuando veas Severum o Crescendum recién estrenados y castigá las combinaciones sin sinergia."
+      ],
+      "tanks": [
+        "Los trades extendidos los gana él: como tanque, forzá intercambios cortos que arranquen y terminen alrededor de su Q.",
+        "Comprá Grievous Wounds si tiene Severum en rotación: su curación en pelea larga es su segunda vida.",
+        "Buscá peleas cuando gastó la R o está con arma de transición: un Aphelios sin definitiva en mano es un ADC de rango largo sin spell."
+      ],
+      "assassins": [
+        "Es inmóvil y squishy: un solo all-in bien ejecutado antes del primer item lo manda a base o lo obliga a gastar Flash.",
+        "Esperá que use la Q para farmear o pokear: sin munición de Gravitum no tiene root para separarse de vos.",
+        "En teamfight, saltalo al arranque: si muere en el primer segundo, la R que define la pelea nunca sale de su mano."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas se pare a autoatacar: no tiene spell de escape ni cleanes, cada root o stun es un kill potencial.",
+        "Su R es todo su daño de area: interrumpilo entre el cast de Moonlight Vigil y el engage de su equipo y la pelea entera se apaga.",
+        "Coordiná el engage con su cola de armas: si lo agarrás con combinación mala en mano, no tiene forma de responder ni intercambiar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Abrí con la W (root) cada vez que camine a last hit: es inmóvil, si lo agarrás parado el trade completo lo ganás vos.",
+          "Tus trades extendidos son su pesadilla inversa: con R activada drenás más de lo que su Severum puede curar; buscá el all-in largo, no el poke.",
+          "Al 6 no le des espacio: si lo Root + R mientras está pegado a la wave, no tiene dash para salir del área de tu definitiva."
+        ]
+      },
+      {
+        "cid": 895,
+        "name": "Nilah",
+        "tips": [
+          "Tu W esquivó autos: activala apenas empiece a pegar, todo el daño básico de Aphelios se diluye y sus trades quedan en nada.",
+          "Usá la E sobre minions para meterte en su cara y esquivar el poke: él no puede responder a corta distancia sin munición de Severum.",
+          "Coordiná all-in con tu support al 6: tu R agrupada con la suya encima de un Aphelios inmóvil es kill garantizada antes de que rote armas."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El Wind Wall bloquea la R entera y los proyectiles de Calibrum e Infernum: guardalo para el cast de Moonlight Vigil y su teamfight queda coja.",
+          "Dash eá por la wave para pegarle y salir: cada paso que da hacia atrás es terreno que pierde, y no tiene forma de seguirte el ritmo.",
+          "Cortá los trades antes de que se estiren: si ve que tenés Severum en rotación se cura pegándote; golpeá alrededor de su Q y largate."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q detrás de tus minions: su poke de Calibrum te alcanza igual, así que escalá a distancia y no le regales trades gratis.",
+          "La jaula (E) en sus pies cuando se pare a autoatacar es kill casi seguro: es el campeón más inmóvil del juego y no tiene respuesta al stun.",
+          "Al 6, tu burst completo lo borra antes de que el sustain importe: esperá que gaste la Q en la wave y caele con todo el kit."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage de teamfight con Gravitum en mano: R al grupo → Q apenas aterriza → W + Q en cadena para el root en área → dos autos para limpiar",
+        "Burst a un target: Infernum en mano y Severum al costado → R → Q → W instantáneos y Q de nuevo para borrar al carry con el AoE completo",
+        "Trade de lane con Calibrum: Q para marcar → AA → W → seguí pegando a los marcados desde rango extendido mientras kiteás hacia atrás",
+        "Stack de Crescendum: R + W + Q instantáneos para llenarte de chakrams y después autos con attack speed inflado en la pelea",
+        "Root a distancia con Calibrum + Gravitum: Q (marca) → W al caer → AA → Q de Gravitum para el root y W de vuelta a Calibrum para seguir pegando"
+      ],
+      "tips": [
+        "Mirá tu cola de armas antes de cada pelea: con una combinación mala en mano no pelees, caminá y esperá la rotación; forzar con armas flojas es tirar la lane.",
+        "Guardá munición de Severum para trades y peleas largas: su curación es tu segunda vida, no la gastes farmeando.",
+        "Cuidado con Infernum en lane: el AoE automático empuja la wave y te convierte en target de gank; pedile a tu support que adelante minions parejos.",
+        "No arranques pelea sin R en mano: tu equipo va a pelear alrededor de tu definitiva; si está en cooldown, señalá el repliegue.",
+        "En mid game rotá a mid: la lane corta te protege de los assassins y te deja farmear y generará prioridad para objetivos."
+      ],
+      "plan": {
+        "early": "Farmeá hasta el primer item sin regalar nada, guardá Severum para los trades que armás con Gravitum Q y tu support, y no te acerques nunca al rival aunque esté CCeado.",
+        "mid": "Con uno o dos items ganás la mayoría de los trades: jugá pegado a tu equipo alrededor de dragones, guardá Infernum para la pelea de objetivo y aprovechá mid como tu base de operaciones.",
+        "late": "Jugá las 5v5 pegado a tu frontline con un item defensivo en la bolsa, mirá los flancos antes de cada pelea y guardá Infernum + R para el momento en que el rival se agrupe; con R disponible también podés rematar picks."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/aphelios/guide",
+      "https://mobalytics.gg/lol/champions/aphelios/combos",
+      "https://mobalytics.gg/lol/champions/aphelios/counters"
+    ]
+  }
+}

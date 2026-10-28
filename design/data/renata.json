@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "renata",
+    "ddragonId": "Renata",
+    "name": "Renata Glasc",
+    "titleEs": "la Quimobaronesa",
+    "cid": 888,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.2,
+    "pr": 1.7,
+    "br": 0.29,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 0.1,
+      "bottom": 0.1,
+      "support": 99.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Renata.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renata_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 555, "slug": "Pyke", "name": "Pyke", "vsWr": 58.23, "games": 838 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 57.14, "games": 406 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 54.79, "games": 303 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 54.25, "games": 529 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 53.33, "games": 1425 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 53.08, "games": 650 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 52.84, "games": 528 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 52.82, "games": 248 }
+  ],
+  "weakAgainst": [
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 42.13, "games": 235 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 46.72, "games": 396 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.33, "games": 412 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 48.18, "games": 384 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 48.37, "games": 306 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 48.39, "games": 682 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 48.65, "games": 1223 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 49.03, "games": 771 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R es de las mejores del juego: Hostile Takeover barre al equipo enemigo agrupado y lo pone a pelear contra sí mismo; una bien alineada define la teamfight entera.",
+      "La W (Bailout) convierte un all-in enemigo en un error: si el aliado marcado muere con la W activa, revive con vida completa y entra en furia de velocidad de ataque.",
+      "La E escuda a todos los aliados en su camino y ralentiza a los enemigos: un solo cast paga escudo en tres o cuatro campeones en peleas agrupadas.",
+      "El Q es peel barato y confiable: desplaza al que entra por atrás del carry y corta combos de asesinos sin necesidad de pegarle a nada.",
+      "Escala directo con el agrupado: cuanto más grande la pelea, más valor saca de cada habilidad; en late con items de utilidad completa es de las mejores supports de teamfight."
+    ],
+    "weaknesses": [
+      "Es frágil y no tiene movilidad: un gank del jungla te la borra; juega pegada a visión y sin caminar la jungla sola.",
+      "La R viaja lenta y se ve venir desde lejos: un rival atento la esquiva caminando de lado; necesita flanco, Flash o CC aliado para conectar.",
+      "Early game débil: sin niveles ni items su trade es pobre y los supports agresivos la sacan de la brush a golpes.",
+      "Depende de que el equipo convierta sus herramientas: la furia de la W y los escudos no generan nada si el ADC no pelea arriba de ellos.",
+      "El poke de rango largo la castiga antes de que llegue: magos como Xerath o Vel'Koz la desgastan fuera del alcance de su Q."
+    ],
+    "powerSpikes": [
+      "Level 3 con las tres habilidades: primera ventana real de trade, con Q para desplazar al que entra y E escudando a la vez.",
+      "Level 6 con Hostile Takeover: buscá peleas agrupadas en el río y coordiná picks con tu jungla; la R cambia cualquier skirmish pareja.",
+      "Level 9 con la E maxeada y el primer item completo: escudos mucho más gordos en cada pelea de dragón o heraldo.",
+      "Level 11 y 16 con puntos en R: cooldown lo bastante bajo para tenerla en cada teamfight; en el late agrupado, su mejor fase del juego."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Zyra: no vivas en la brush si cada pie te llena de daño; entrá por flancos o esperá que gasten el poke principal para acercarte.",
+        "Usá la wave y los ángulos para cerrar distancia: el Q directo sobre el mago de rango lo castiga porque no tiene escape propio.",
+        "Son squishy y tu R no necesita agarrar a cinco: una R a dos magos de rango los fuerza Flash o los borra con tu ADC arriba."
+      ],
+      "tanks": [
+        "Maokai, Leona, Braum: su engage frontal se diluye con la W; marcá al carry antes de que arranque el stun y el revive vuelve parejo el trade.",
+        "La E atraviesa el frontal enemigo: escudá a tu backline y ralentizá al tanque para que no llegue limpio al stun.",
+        "No gastes la R contra un tanque solo: guardala para el backline que entra detrás del frontal; el tanque no capitaliza tu furia."
+      ],
+      "assassins": [
+        "Pyke, Sylas, Shaco: el Q en tu propio espacio cuando se acercan corta la entrada y les niega el reset del combo.",
+        "La W es la respuesta al burst: si el asesino deja al ADC en rojo, el revive con furia convierte su all-in en suicidio.",
+        "En teamfight no flankees: tu trabajo contra asesinos es estar a un clic de Q y W del carry, ni un paso más lejos."
+      ],
+      "crowdControl": [
+        "Nautilus, Amumu, Maokai: la W no limpia CC, así que jugá escalonada detrás y esperá que gasten el engage antes de acercarte a la R.",
+        "Si te agarran a vos primero, la pelea se juega sin tu R: wardá los flancos por donde te pueden entrar y no camines sin visión.",
+        "CC aliado es tu mejor setup: un Nautilus o Malphite tuyo que agarra a dos rivales te garantiza que Hostile Takeover conecte limpia."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 57,
+        "name": "Maokai",
+        "tips": [
+          "Sus saplings te desgastan desde antes de pisar la brush: subí E al nivel 1 y limpiálos a distancia segura antes de alinearte.",
+          "Esperá que gaste el Q (el desplazamiento) para acercarte: si te agarra al ADC con el root, W inmediato porque el revive neutraliza el engage completo.",
+          "En teamfight no te pares delante de tu equipo: su W te deja plantada y su R empuja a todos contra el CC enemigo detrás."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "La bomba doble es stun point-and-click: jugá escalonada con tu ADC para que nunca le agarre a los dos a la vez.",
+          "Su R (revivir) compite directo con tu W: esperá que la use primero o buscá el all-in en la ventana donde no la tenga.",
+          "No pelees en pasillos: su E te ralentiza y te deja sin ángulo para el Q; forzá las peleas en espacio abierto donde vos decidís el ángulo."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Te pokea desde fuera de tu rango y castiga cada Q que fallás: comprá item de vida temprano y entrá por flancos, nunca de frente por la lane.",
+          "Su pasiva detona con la tercera marca: no te quedes quieto en la brush y separá tus propios casts para que acumule menos.",
+          "Cuando tire la R y no la tenga, ese es tu all-in: sin ultimate es solo poke, y su peel contra un Q tuyo limpio es nulo."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Las plantas la reemplazan en lane: limpiálas con la E a distancia y no dejes que tu ADC last hitée pegado al arbusto donde ella siembra.",
+          "Su R es knock-up de área y te gana la pelea de ultimates si la tirás dentro de la zona: esperá el knock-up antes de soltar Hostile Takeover.",
+          "No tiene flash ni movilidad: coordiná con tu jungla que un engage limpio la borra antes de que las plantas crezcan."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (escudo + slow) → W al aliado que pelea → Q al enemigo que entra, desplazándolo lejos del trade",
+        "All-in de teamfight: Flash + R al centro del equipo enemigo agrupado → E hacia tus aliados enfurecidos para escudo en cadena",
+        "Peel de emergencia: W al carry moribundo (revive + furia) → Q al asesino que entra → E para escudar al resto y ralentizar la persecución",
+        "Pick con jungla: esperá en brush de flanco → Q desplazando al primero que camina → R si viene un segundo, y tu jungla remata",
+        "Setup tras CC aliado: esperá el hook o el engage de tu tanque → R inmediata sobre los que quedaron quietos → E para pelear encima de ellos"
+      ],
+      "tips": [
+        "No tires la R de frente: viaja lenta y se ve venir; entrá desde flanco o detrás de CC aliado para garantizar que conecte.",
+        "La W va al que pelea, no al que escapa: la furia del revive solo sirve en un campeón que va a pegar; marcar a un aliado huyendo es maná tirado.",
+        "El Q tiene dos usos y ninguno es poke: ofensivo para desplazar al que se acerca, defensivo para separar al que salta; guardalo para lo que esté pasando en serio.",
+        "Pegá la E a través del equipo en cada teamfight: el escudo escala por aliado tocado, y en peleas agrupadas un cast solo paga el cooldown entero.",
+        "Comprá Control Wards como base de tu plan: tu R necesita ángulos y flancos, y sin visión nunca vas a tener el ángulo que la hace imposible de esquivar."
+      ],
+      "plan": {
+        "early": "Viví en la brush buscando el Q al ADC que baja a last hit; si el matchup es de poke, jugá atrás con Q de peel y llegá a 6 sin regalar kills.",
+        "mid": "Roameá con visión, wardá los flancos de la jungla y buscá peleas agrupadas donde la R agarre dos o más; armá Locket y Shurelya antes de cada objetivo.",
+        "late": "Pegate al carry y esperá el engage enemigo para tirar la R desde flanco; en cada teamfight W al carry que vaya a morir y Q al que lo salta."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/renata/build",
+      "https://mobalytics.gg/lol/champions/renata/guide"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "ziggs",
+    "ddragonId": "Ziggs",
+    "name": "Ziggs",
+    "titleEs": "el Experto en Hexplosivos",
+    "cid": 115,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.39,
+    "pr": 1.68,
+    "br": 0.88,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 1,
+      "jungle": 0.1,
+      "middle": 27.3,
+      "bottom": 65.8,
+      "support": 5.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ziggs.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ziggs_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 58.35, "games": 521 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 55.97, "games": 2689 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 55.66, "games": 212 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 55.6, "games": 500 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 55.49, "games": 1020 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 54.93, "games": 781 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 54.87, "games": 913 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 54.26, "games": 446 }
+  ],
+  "weakAgainst": [
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 44.98, "games": 309 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.35, "games": 321 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 47.35, "games": 2530 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 50.59, "games": 676 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 50.94, "games": 479 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 51.07, "games": 374 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 51.19, "games": 463 },
+    { "cid": 202, "slug": "Jhin", "name": "Jhin", "vsWr": 51.66, "games": 2625 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Limpia la wave con Q + E sin acercarse: puede empujar desde fuera de rango de cualquier ADC y obligarte a farmear bajo torre toda la lane.",
+      "El W es el único skill del juego que te saca del mapa a un aliado o te revolea al rival hacia adentro de tu E: cada gank suyo tiene un peel garantizado.",
+      "Es el mejor campeón del juego para tirar torres: con la pasiva (Short Fuse) pegando a estructuras, un mal recall tuyo le regala la torre entera.",
+      "La R tiene alcance semi-global: puede borrar una pelea de río o un dragón desde su lane sin moverse, así que nunca está realmente fuera de la jugada.",
+      "En peleas de objetivo en pasillos su Q y su E tapan el choke entero: pelear en la boca del río contra él es regalarle la teamfight."
+    ],
+    "weaknesses": [
+      "Sin W queda prácticamente sin escape: si le tirás el engage cuando ya gastó la carga, no tiene ni dash ni blink para salir.",
+      "Es full daño de habilidades y depende del maná: si lo obligás a spamear para limpiar waves, en dos reclears se queda sin pool y sin amenaza.",
+      "La Q es esquivable a distancia: rebota y se telegrafia, así que a medio rango se puede esquivar caminando y sin ella no tiene poke.",
+      "Es de los ADC más frágiles en early: auto-ataca poco y sin items pega poquito, así que un trade largo a autos lo gana casi cualquier marksman.",
+      "El level 1 de la R pega muy poco si no le das en el epicentro: no puede matar a nadie de lejos hasta que tenga items o el segundo punto."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E ya tiene el combo de peel y zona; no lo busques cerca de su torre ni con el jungla a media distancia.",
+      "Primer componente de maná resuelto: ahí empieza a spamear Q sin quedarse seco y te empuja la wave a voluntad; castigalo antes de ese recall.",
+      "Nivel 9: la Q maxeada tiene un hitbox enorme, siega waves de un rebote y el poke deja de ser esquivable desde la niebla de guerra.",
+      "Nivel 11 y 16: los puntos en la R convierten la ulti en ejecución real a distancia; si está desaparecido del mapa, no pelees agrupado con poca vida.",
+      "Primer item de daño completo: con penetración y AP, el combo W + E + R borra a cualquier squishy que quede atrapado en la mina."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Hwei: pegale desde fuera de su Q y no aceptes el intercambio de wave clear, porque el rebote le pega a la wave y a vos al mismo tiempo.",
+        "Si te empuja bajo torre, llamá al jungla: sin movilidad y con la wave en tu lado, cada gank suyo es kill o Flash como mínimo.",
+        "Comprá botas temprano y caminá los rebotes: la Q se telegrafia, y el Ziggs que no acierta poke pierde el lane por desgaste de maná."
+      ],
+      "tanks": [
+        "Nautilus, Leona, Rell: todo el engage cuesta un W suyo; esperá a que lo gaste para peelarse de otra cosa y ahí entrá con CC encadenado.",
+        "Comprá MR y aguantá el poke con sustain: su daño es de ráfaga y con resistencia se le apaga justo cuando su maná ya está bajo.",
+        "Zonéalo fuera de la torre en vez de pelear la wave: si no puede pegarle a la estructura, la mitad de su valor desaparece."
+      ],
+      "assassins": [
+        "Yasuo, Katarina, Zed, Fizz: esperá que use Q + E para empujar y entrá ahí; sin habilidades en mano no tiene cómo frenarte.",
+        "Guardá tu movilidad para esquivar el W, no para gapclosear: si te revolea hacia su E y su equipo, el kill es de ellos.",
+        "Castigalo cuando camina a poner la mina: el E tarda en armarse y ese es el segundo en que está parado sin escape."
+      ],
+      "crowdControl": [
+        "Encadená el CC con el W en cooldown: un Ziggs sin satchel no puede peelarse ni reposicionar a su carry.",
+        "Baitéalo con un engage falso y volvé: su W y su R son su respuesta entera, y una vez gastados la teamfight es tuya.",
+        "No te agrupes en el choke: su R pega en área grande y su E cubre el pasillo; abrí la pelea en campo abierto y su daño baja a la mitad."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Empujá la wave y jugá a rango de tu W: le ganás el trade largo a autos y él depende de esquivar tu poke con las piernas, no con el kit.",
+          "Esperá a que gaste el W para peelarse de tu support y recién ahí entrá con todo: sin satchel es el ADC más blando de la lane.",
+          "Tu daño porcentual ignora su poca vida: si lo enganchás con un slow de tu E, no importa que tenga escudo o barrera, se derrite igual."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "Usá la wave como escudo: tu E bloquea sus Q y le corta el dash, así que pelea siempre con minions entre los dos.",
+          "Guardá el Wind Wall para su R y su Q cargada, no para el poke: bloqueando la ulti le anulás la mitad del daño de teamfight.",
+          "Castigalo cada vez que dashéa al minion equivocado: sin minions cerca, el Ziggs no tiene con qué escapar de tu all-in."
+        ]
+      },
+      {
+        "cid": 145,
+        "name": "Kai'Sa",
+        "tips": [
+          "Tu movilidad le rompe el rebote: dashéa en diagonal al ver la Q, y su poke principal queda en el aire todo el trade.",
+          "Esperá su W desperdiciado para entrar: sin satchel no tiene forma de sacarte de encima y tu burst le llega completo.",
+          "Farmea con seguridad hasta el primer item: el Ziggs escala por poke, pero vos escalás por all-in y a dos items la lane se invierte."
+        ]
+      },
+      {
+        "cid": 29,
+        "name": "Twitch",
+        "tips": [
+          "Jugá desde la niebla con el sigilo: si no te ve, no te puede zonear con la Q ni con la mina, y su poke necesita línea de visión.",
+          "Abrí con el veneno ya cargado antes de que llegue a la torre: sin W en mano no tiene peel y muere en el primer stun del support.",
+          "Evitá pelear la wave de frente al principio: tus trades largos ganan, pero el Ziggs te desgasta si le dejás tirar Q gratis desde el arbusto."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade pre-6: auto (pasiva Short Fuse) → E debajo del rival → Q → W debajo suyo → detonar W mientras cae el último auto",
+        "Combo de poke seguro: E sobre el rival → Q → W → W (detonar), todo a rango máximo para no exponerte a ningún auto de vuelta",
+        "All-in: E y W debajo del objetivo → detonar W (lo revolea) → R encima → Q al aterrizaje → auto con pasiva para ejecutar",
+        "Gapclose/escape: W debajo tuyo → detonar W para volar hacia adelante o atrás, después Q y R según si vas a matar o a huir",
+        "Teamfight de pasillo: E tapando la entrada → Q spam desde la niebla → R sobre el grupo agrupado → W para peelarte a vos o sacar al carry aliado"
+      ],
+      "tips": [
+        "No gastes el W como poke: es tu única salida y tu único peel; si lo tirás a vida llena para sumar daño, el próximo engage te mata.",
+        "Usá el arbusto del lane como base de tiro: ahí el rival no ve el rebote de la Q ni la mina, y el poke pega el doble de veces.",
+        "Tirá la Q apuntando a la wave y al rival a la vez: el rebote te da farmeo y poke en un solo hechizo, que es tu forma de ganar el lane sin maná infinito.",
+        "Después de cada habilidad, pegá un auto: la pasiva Short Fuse convierte cada trade en daño extra gratis y es lo que te hace tirar torres rápido.",
+        "En mid game mudate a mid y siega: tu valor no es matar, es tirar estructuras; con W y pasiva una torre con dos waves cae en segundos."
+      ],
+      "plan": {
+        "early": "Farmea con Q apuntando a la wave y al rival juntos, zonea desde el arbusto y no busques kills: tu trabajo es salir del lane con maná, farmeo y la torre rival tocada.",
+        "mid": "Rota a mid apenas puedas, tira waves con Q + E y usá la R semi-global para pelear dragón o hérmes sin moverte; cada estructura abierta es mapa ganado.",
+        "late": "Jugá como mago de asedio desde la niebla: E tapando el choke, Q constante sobre el grupo y R al centro de la teamfight, con Zhonya para sobrevivir al engage."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ziggs/guide",
+      "https://app.mobalytics.gg/lol/champions/ziggs/build",
+      "https://mobalytics.gg/lol/champions/ziggs/combos"
+    ]
+  }
+}

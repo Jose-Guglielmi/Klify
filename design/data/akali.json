@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "akali",
+    "ddragonId": "Akali",
+    "name": "Akali",
+    "titleEs": "la Asesina Furtiva",
+    "cid": 84,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-22",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.10,
+    "pr": 7.70,
+    "br": 16.02,
+    "analysed": 6194625,
+    "laneDist": {
+      "top": 29.3,
+      "jungle": 0.0,
+      "middle": 70.1,
+      "bottom": 0.3,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Akali.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akali_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 58.73, "games": 802 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 55.7, "games": 447 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 55.23, "games": 1691 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 55.17, "games": 203 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.53, "games": 1969 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 53.5, "games": 243 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 53.41, "games": 1788 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 52.76, "games": 434 }
+  ],
+  "weakAgainst": [
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 43.97, "games": 464 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 44.06, "games": 522 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 44.44, "games": 1467 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 45.31, "games": 980 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 45.36, "games": 388 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 45.4, "games": 1227 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 45.63, "games": 1282 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 45.73, "games": 422 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Entre el doble dash de la E y los dos saltos de la R tiene movilidad para entrar, reposicionar y salir casi sin castigo.",
+      "La cortina de humo (W) le da invisibilidad, le devuelve 100 de energía y sube su energía máxima mientras dura: es su batería y su seguro al mismo tiempo.",
+      "La segunda parte de la R escala hasta +200% según la vida faltante, así que ejecuta targets heridos sin importar lo tanque que sean.",
+      "Su auto potenciada al salir del anillo de la pasiva pega con rango doble, hace daño mágico extra y le da velocidad de movimiento para recolocarse.",
+      "Brilla en peleas caóticas y roams: si el mapa queda abierto, aparece del humo encima de tu carry."
+    ],
+    "weaknesses": [
+      "Es melé de 125 de rango: antes del nivel 6 casi no genera kill pressure y pierde los trades cortos.",
+      "La energía la limita: con menos de 60 no completa el combo y en peleas largas se queda seca y deja de pelear.",
+      "Toda su agresión a distancia entra por el shuriken de la E, un proyectil esquivable y bloqueable con escudo mágico.",
+      "El humo es invisibilidad, no invulnerabilidad: los control wards la revelan adentro y el daño en área la pega igual.",
+      "No tiene CC propio ni ningún escape fuera de sus dashes: si entra con todo y no mata, muere dentro del equipo rival."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con dos puntos de Q: el trade con W caminando hacia el rival y Q > auto > Q empieza a doler de verdad.",
+      "Nivel 6: con la R completa gana casi cualquier all-in en mid; el rival necesita flash o Zhonya's para sobrevivir el combo.",
+      "Hextech Gunblade completada (~nivel 9): sustain por oleada + burst para forzar el one-shot de cualquier squishy.",
+      "Nivel 16: la R baja a 60 segundos y consigue un pick por cada pelea; avisá roams y agrupate."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Esquivá el shuriken de la E, su única entrada a distancia: si no te marca y se tira igual, queda sin escape para castigar."
+      ],
+      "tanks": [
+        "Comprate MR temprano y guardá el knockup para interrumpir sus dashes de la E o la R en el aire."
+      ],
+      "assassins": [
+        "Pegale antes del 6 y forzá peleas con la W en cooldown (20 s al inicio): sin humo no tiene batería ni segunda oportunidad."
+      ],
+      "crowdControl": [
+        "No gastes el CC mientras espera en el humo: dejá que entre con la R y encadenale el control al aterrizar; el point-and-click funciona a través del shroud."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 91,
+        "name": "Talon",
+        "tips": [
+          "Puníala desde nivel 2 con el doble W y buscá el all-in antes del 6: sin R no gana el trade y pierde farmeando bajo torre.",
+          "Peleá pegado a paredes: tu parkour te saca del humo y anula su reinicio, y ella no te puede seguir.",
+          "Esquivá o bloqueá el shuriken de la E con tu W: sin marca no puede cerrar la distancia.",
+          "Marcá su barra de energía: con menos de 60 no completa el combo, ahí meté tu propio burst."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Farmeá los primeros niveles con el escudo de la Q y no te expongas: cada minuto que pasa tu R escala y la ventana de ella se cierra.",
+          "Guardá un salto de R para esquivar el segundo cast de su R (la ejecución por vida faltante): si sobrevivís el burst, queda sin escapes y seca.",
+          "Un Banshee's temprano le come el shuriken de la E y le borra la entrada; sin marca de E no se compromete.",
+          "Cuando tire el humo no entres: rodeala, esperá que salga por el auto potenciada y castigala al aterrizar."
+        ]
+      },
+      {
+        "cid": 127,
+        "name": "Lissandra",
+        "tips": [
+          "Tu W es instantáneo y la agarra en el aire: dejá que tire la E2 o la R y ruteala apenas aterriza, el humo no la salva del point-and-click.",
+          "Usá tu R sobre vos misma cuando se meta encima: negás todo su combo y queda peleando sola dentro de su propia nube.",
+          "Pokeá con Q desde fuera de su rango de E y mantené la E lista para cruzar la pared apenas termine el shroud (5-7 s).",
+          "Un control ward dentro del humo la revela: su invisibilidad se convierte en un círculo donde es focuseable."
+        ]
+      },
+      {
+        "cid": 711,
+        "name": "Vex",
+        "tips": [
+          "Tu pasiva castiga cada dash: el gloom le pega de bonus según su vida faltante, así que guardá la marca para su E2 o su R1.",
+          "El fear de tu E interrumpe el engage: soltalo cuando se tire con la E2 o cruze con la R, no antes mientras espera en el humo.",
+          "Pokeá con Q a rango y parate detrás de minions para bloquear el shuriken, su única agresión a distancia.",
+          "Castigala apenas tire la R1: si la bajás de vida antes del segundo cast, la ejecución de su R2 ya no mata y tu R termina el trabajo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: caminá con W hasta el rival → Q → auto del anillo (pasiva) → segunda Q al reenganchar, y cerrá el trade ahí sin estirarlo (procea Electrocute).",
+        "All-in nivel 6: E1 (shuriken) → E2 (dash al objetivo) → Q → auto potenciada → W encima para recargar energía → R1 cruzándolo → R2 para ejecutar.",
+        "Combo de teamfight: R1 pasando al frontline → W → salí del humo con auto potenciada → Q → R2 sobre el carry (one-shot con Gunblade + Stormsurge).",
+        "Entrada indodgeable: R1 primero y, al aterrizar, E1 → E2 sobre el objetivo marcado: el flip no lo puede esquivar.",
+        "Escape: R2 en dirección contraria o lateral (el segundo cast es libre), o E1 a tu propio humo para re-dashear lejos de la pelea."
+      ],
+      "tips": [
+        "Mirá la barra de energía antes de entrar: con menos de 60 no completás el combo; la W te devuelve 100 y sube tu máximo mientras dura el humo.",
+        "Siempre salí del anillo de la pasiva antes de re-engagear: la auto potenciada con rango doble + MS es gran parte de tu daño y tu movilidad.",
+        "No gastes la E2 solo para acercarte: si el shuriken no marca, te quedás caminando en medio del equipo rival.",
+        "Usá el humo para esperar cooldowns y reponer energía, no solo para esconderte: cada ataque te revela un instante, así que peleá en los bordes y reposicionate entre habilidad y habilidad.",
+        "R2 no es solo para ejecutar: usala hacia atrás o lateral para escapar, y acordate que queda 10 segundos disponible una vez tirada la R1."
+      ],
+      "plan": {
+        "early": "Farmeá con Q a rango máximo (el slow ayuda), aguantá los trades pre-6 y, al nivel 6 con R completa, buscá el primer all-in o un roam con el combo entero.",
+        "mid": "Con Gunblade lista, empujá oleada con Q y roam: bot lane y picks en el río son tus kills; usá el humo para bucear bajo torre y resetear peleas.",
+        "late": "No entres primero: esperá que el front comprometa, R1 al carry desde un ángulo, W y burst con auto → Q → R2; si te focusen, Zhonya's y reiniciá desde el humo como amenaza permanente."
+      }
+    },
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/Akali/LoL",
+      "https://www.skill-capped.com/lol/guides/builds/akali/mid",
+      "https://mobalytics.gg/lol/champions/akali/build",
+      "https://turbosmurfs.gg/article/best-counters-to-play-against-akali"
+    ]
+  }
+}

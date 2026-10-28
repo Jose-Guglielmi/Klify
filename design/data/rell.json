@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "rell",
+    "ddragonId": "Rell",
+    "name": "Rell",
+    "titleEs": "la Doncella de Hierro",
+    "cid": 526,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.08,
+    "pr": 3.6,
+    "br": 1.32,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 0.3,
+      "jungle": 0.2,
+      "middle": 0.1,
+      "bottom": 0,
+      "support": 99.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rell.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rell_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 61.17, "games": 206 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 60.98, "games": 328 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 58.33, "games": 204 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 57.79, "games": 1689 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.59, "games": 986 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 56.29, "games": 3754 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 55.98, "games": 368 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.75, "games": 983 }
+  ],
+  "weakAgainst": [
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 47.93, "games": 1909 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 48.27, "games": 433 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 48.69, "games": 1409 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 49.17, "games": 909 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 49.22, "games": 640 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 49.46, "games": 554 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 49.58, "games": 1555 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 50.12, "games": 2470 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q rompe TODOS los escudos que toca y aturde en línea: Locket, escudo de Janna o de Lulu desaparecen al toque y el all-in se vuelve real.",
+      "Su pasiva roba armadura y resistencia mágica en cada golpe: mientras más pelea cerca, más tanque es ella y más blandito queda el rival.",
+      "La W desmontada es un knock-up en área con escudo grande para ella: entra al medio del equipo, golpea a varios a la vez y sobrevive al counter-engage.",
+      "La R arrastra a todo el equipo agrupado hacia un solo punto: es la mejor setup del juego para una R de Miss Fortune, Orianna o un jungla con daño en área.",
+      "La E le da velocidad de movimiento rampante a ella y a un aliado: encadena engages, alcanza fugitivos y roaming más rápido que cualquier otro support tanque."
+    ],
+    "weaknesses": [
+      "La W montada es lenta y telegrafiada, con solo 450 de rango: cualquier hook (Thresh, Nautilus) o poke de enchanter la castiga desde mucho más lejos.",
+      "Desmontada está slowed, con rango corto y sin ninguna escape: si el all-in sale mal, muere en la backline rival sin poder volver.",
+      "No tiene desengage: todo lo que entra con W y R es ida, no vuelta; si su equipo no la sigue en uno o dos segundos, peleó 4v5 y regaló una kill.",
+      "La R tiene apenas 200 de radio: tirada desde afuera solo arrastra a uno; necesita caminar al medio o gastar Flash para que valga la pena.",
+      "Si va detrás en oro, es demasiado blanda para abrir: cualquier team la derriba antes de que el knock-up termine la animación."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con W + E desbloqueadas: primer all-in real del lane; cualquier carry que pase la primera wave sin respetarlo muere con el knock-up + stun.",
+      "Nivel 6: la R multiplica su engage, forzá pelea de dragón cada vez que vuelve el cooldown y un 2v2 en bot se convierte en 2v0 con el jungla.",
+      "Locket del Solari terminado (~minuto 14-16): cada W tira un escudo de equipo gratis encima del engage; agrupate para objetivos y peleá siempre con activo en mano.",
+      "Nivel 11 y 16 con puntos en R: el cooldown baja de 120 a 80 segundos y la ventana entre peleas es tan corta que asumí que la tormenta magnética siempre está lista."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Nami, Senna, Janna: mantenete fuera de su rango de W y pokeala; si ella no encuentra el ángulo de engage, el lane entero es un tributo que no puede cobrar.",
+        "Su Q rompe escudos y aturde en línea: no te alinees con tus minions porque un stun doble pierde el lane solo.",
+        "Cuando se desmonte y quede slowed, castigala sin piedad: esa ventana de unos segundos es todo el daño que le podés hacer gratis."
+      ],
+      "tanks": [
+        "Su pasiva roba resistencias en cada golpe: no te agarres a trades largos cuerpo a cuerpo porque cada segundo ella está más dura y vos más blando.",
+        "No te pares detrás de tu tanque: la Q atraviesa en línea y un stun encadenado de dos abre la pelea sin que hagas nada.",
+        "Aprovechá que no tiene desengage: si tu tanque pelea y ella entra con todo, quedó en medio de tu equipo sin forma de volver; matala primero a ella."
+      ],
+      "assassins": [
+        "Guardá el knock-up de la W para el diver: sea Zed, Talon o el jungla, el único all-in de Rell sirve de peel perfecto para tu carry.",
+        "Desmontada es el campeón más lento del juego: saltala en esa ventana y no hay W, Flash ni Q que la salve.",
+        "Contá la R antes de meterte: si la tormenta magnética está en mano, te arrastra hacia su equipo junto con tu propia dive."
+      ],
+      "crowdControl": [
+        "Guardá tu CC clave para el salto de W: interrumpirla en el aire o apenas aterriza mata su única ventana de engage.",
+        "Un escudo mágico anula todo su kit: Q aturdida, R que arrastra y hasta el W-block de Poppy le niegan el combo entero; seguí el cooldown y peleá recién ahí.",
+        "Encadená tu CC después de su W, no antes: mientras está desmontada y slowed, cada segundo de control extra sobre ella es una kill garantizada para tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 267,
+        "name": "Nami",
+        "tips": [
+          "Pokeala con W cada vez que camine al rango de su propio W: su engage entra a 450 y tu burbuja llega a 1500; el lane se gana desde afuera.",
+          "Guardá tu Q (Updraft) para cuando salte con la W: interrumpir el knock-up en el aire convierte su all-in en un W gastado al vacío.",
+          "Cuando se desmonte, tirale la E (slow) y pegale con tu ADC: queda slowed ella también y no hay forma de volver; cobrale cada engage fallado."
+        ]
+      },
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Dejá que la W aterrice sobre vos: tu E (Dazzle) la aturde desmontada, slowed y con su única movilidad gastada; ahí el trade entero es tuyo.",
+          "Parate en ángulo respecto de tu ADC para que la Q no los aturda a los dos en línea: su daño depende de ese stun doble.",
+          "Al nivel 6 usá tu R cuando ella tire la R: su tormenta agrupa a tu equipo entero dentro de tu ultimate invulnerable y la pelea se invierte sola."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Tu Q (cyclone cargado) cancela el salto de W: si la interrumpís en el aire, quemó su engage de 10 segundos y queda descalza en medio del lane.",
+          "El slow de la W sobre una Rell desmontada es sentencia: no tiene escape, ningún movimiento, nada; pegale con tu ADC hasta borrarla.",
+          "Guardá la R para deshacer el engage completo: su knock-up más tu ultimate de empuje dejan al carry intacto y a Rell sola en tu backline."
+        ]
+      },
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "La W (Steadfast Presence) detiene el salto de W en seco: es el counter más puro del juego contra su engage; dejala cargar el salto y apretá el muro.",
+          "Cuando logre desmontar igual, usá la E para aplastarla contra la pared: desmontada y slowed no esquiva nada.",
+          "Tu pasiva te da escudo en los low HP: su Q va a romperlo, así que guardá el trade real para después de que la Q esté en cooldown."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage clásico: W montada (salto con knock-up y escudo) → Q alineada sobre el objetivo aturdido → AA para detonar la explosión de tu siguiente golpe",
+        "Con aliado cerca: E al carry (velocidad rampante para los dos) → caminá juntos hacia el rival → AA explosivo → Q para el segundo stun",
+        "Teamfight: caminá uno o dos pasos para que 2+ enemigos entren en el radio de 200 → R → W al que intente escapar → Q sobre el que quedó pegado a vos",
+        "Flash trick: tirá Flash mientras el salto de W está en el aire para que el knock-up aterrice desde el ángulo que el rival no vio venir",
+        "Engage sigiloso: W desde un arbusto sin ward del rival; sin la animación a la vista, el carry no puede pre-flash ni esquivar"
+      ],
+      "tips": [
+        "No te quedes desmontada sin motivo: estás slowed, con rango corto y sin escape; remontá apenas resuelva un problema concreto, no por costumbre.",
+        "Guardá la Q para romper escudos en el arranque del all-in (Locket, Janna, Lulu): un all-in que se estrella contra un escudo es un W tirado a la basura.",
+        "La R tiene 200 de radio: si tirás la ult desde afuera solo arrastrás a uno; caminá al medio o esperá al Flash para que valga los 100 de maná.",
+        "No abras la pelea con la E: no tiene CC propio, es tu herramienta de pelea y persecución; primero W para clavar al objetivo, después E para encadenar.",
+        "No tires la W en la wave para empujar: te quedás desmontada 10 segundos sin engage y el support rival te cobra la ventana con un all-in propio."
+      ],
+      "plan": {
+        "early": "Esperá que el carry rival pase la primera wave y buscá el all-in con W → Q; nivel 2 con W + E ya es kill real si tu ADC sigue el engage, y si el lane está perdido, castigá igual con poke de pasiva y roameá.",
+        "mid": "Roameá con la velocidad de E hacia mid y el jungla, forzá pelea de dragón apenas la R vuelva y armá Locket para que cada W te dé un escudo de equipo encima del knock-up.",
+        "late": "Sos el engage del equipo: caminá o flasheá al medio del equipo agrupado para R → W y confiá en que sigan en uno o dos segundos, porque si te dejan sola en la backline, peleaste 4v5."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/rell/build",
+      "https://mobalytics.gg/lol/champions/rell/guide",
+      "https://www.lolsensei.com/en/champion/rell/support/guide",
+      "https://brokenmeta.gg/en/league/combos/rell/"
+    ]
+  }
+}

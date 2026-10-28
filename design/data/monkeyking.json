@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "monkeyking",
+    "ddragonId": "MonkeyKing",
+    "name": "Wukong",
+    "titleEs": "el Rey de los Monos",
+    "cid": 62,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.88,
+    "pr": 6.28,
+    "br": 6.0,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 12.3,
+      "jungle": 85.1,
+      "middle": 1.3,
+      "bottom": 0.3,
+      "support": 1.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/MonkeyKing.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/MonkeyKing_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 61.06, "games": 226 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.68, "games": 1673 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 57.5, "games": 1414 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 56.35, "games": 378 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 55.81, "games": 1290 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 55.8, "games": 2145 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 55.56, "games": 315 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 55.42, "games": 765 }
+  ],
+  "weakAgainst": [
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 45.55, "games": 483 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 46.64, "games": 566 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 47.52, "games": 1393 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 47.71, "games": 568 },
+    { "cid": 427, "slug": "Ivern", "name": "Ivern", "vsWr": 48.36, "games": 275 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 48.51, "games": 1208 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 48.84, "games": 1859 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 49.16, "games": 358 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W le sirve para las dos cosas: engañar en la entrada del gank (el clone se come el focus) y jukear en la salida; con el sweeper activo o sin visión rival, sus ganks son casi imposibles de leer.",
+      "La R es un knock-up en área sostenido: arranca la teamfight él solo y deja toda la cadena de CC del equipo servida encima.",
+      "Brilla en trades extendidos: la Q resetea y pela armadura y la E lo pega al objetivo, así que duela fácil a cualquiera que quede overextendido.",
+      "La pasiva le suma resistencias por cada campeón cerca: en peleas agrupadas tanquea bastante más de lo que el rival calcula al mirarlo."
+    ],
+    "weaknesses": [
+      "Sin R (antes del 6) es ineficiente: su clear y su duelo son mediocres y la ventana de invade en early es real; castigala.",
+      "La W es su único self-peel: gastada la señal, lo agarrás con cualquier CC y lo obligás a recall o lo bajás directo.",
+      "Depende de que la visión rival sea mala: warding bien puesto en los flancos le niega ganks, roams y flancos de teamfight.",
+      "Su daño exige quedarse en melee girando: mientras dura el Cyclone está parado en medio de todos, expuesto a focus y CC.",
+      "Si entra de frente sin flanco, el knock-up agarra a uno y él se come el resto: forzalo a iniciarte la pelea por el frente."
+    ],
+    "powerSpikes": [
+      "Level 6: aparece la R y su impacto pasa de mediocre a definir peleas; desde ahí asumí que hay knock-up en cada engage.",
+      "Level 9 con la Q maxeada: su daño de duelo y skirmish sube un escalón, no aceptes trades extendidos cortos contra él.",
+      "Puntos 11/16 en R y primer item resuelto: girá más tiempo, pega más fuerte y aguanta el focus; agrupate antes de pelearle.",
+      "Full build en late: duelistas tanque con burst corto; no lo dejés limpiar sidelanes solo sin visión."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Todo su kit depende de llegar con la E o el Flash: mantenete a más de su rango de dash y el lane/pelea se vuelve gratis.",
+        "No gastes el escape en el clone de la W: es un señuelo que no pega; esperá el cuerpo real antes de quemar tu dash.",
+        "Wardé los flancos y el matorral de tu lado: sin visiones que cazar, sus ganks y flancos mueren antes de empezar."
+      ],
+      "tanks": [
+        "Armpl early: su daño es físico y entra por Q y autoataques en melee; un item de armadura le corta el plan entero.",
+        "Separate del carry cuando pelee cerca: la R hace tick en área y él juega a agarrar dos con cada giro.",
+        "Castigá antes del 6: invadí su jungle o forzá peleas mientras no tiene R, ahí pierde cualquier duelo contigo."
+      ],
+      "assassins": [
+        "Su W hace invisible y deja un clone: no confíes en la kill hasta ver el cuerpo real; guardá tu dash para después del decoy.",
+        "Forzá el duelo antes de que tenga R o recién después de que la gaste: en el medio, su pasiva + knock-up te ganan el 1v1.",
+        "Cuando la W ya se fue no tiene ninguna herramienta de escape: ese es tu all-in, sin segunda chance para él."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas entre con la E: si lo cortás antes del giro, no llega a abrir el Cyclone y queda parado en tu equipo.",
+        "No quemes el CC clave en el clone de la W: esperá que empiece a girar el cuerpo real y ahí tiráselo encima.",
+        "Un supresor o un root duro (Malzahar, Lissandra) corta la R al medio: su única ventana de daño dura lo que dura el giro."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "Peleá siempre de rango: todo su daño exige quedarse en melee y tu kit lo castiga mientras gira sin llegar a tocarte.",
+          "Guardá la W (el empujón) para cuando arranque la R: interrumpirle el posicionamiento en el medio del Cyclone mata su engage entero.",
+          "Invadí con mapa controlado en early: antes del 6 no tiene R ni duelo, y tu clear con daño de área le niega su propio ritmo."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Usá las plantas como tanque del Cyclone: el giro les pega a ellas y vos seguí pegando de rango sin parar.",
+          "Guardá el root de la E para el arranque de la E de él: si lo cortás antes del knock-up, el gank muere en el camino.",
+          "No te pares encima del clone de la W: tirá las plantas al cuerpo real y dejá que el señuelo se coma el tiempo de pelea."
+        ]
+      },
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "Tu clear es más rápido y más sano: invadí su quadrant antes del 6, donde él no tiene R para responderte.",
+          "Sumá armadura temprano: su daño es físico en melee y con item vos tanqueás el trade extendido que él necesita para ganar.",
+          "Esperá la forma dragón para pelear: con R en mano ganás el all-in incluso después de que él abra el suyo."
+        ]
+      },
+      {
+        "cid": 77,
+        "name": "Udyr",
+        "tips": [
+          "En melee sostenido le ganás el duelo: forzá peleas largas donde su burst de Q se agote y tu daño por segundo decida.",
+          "Guardá el aturdimiento de la postura oso para después del decoy de la W: castigar el clone es regalar tu CC.",
+          "Counter-junglé activo: sin R en early es fácil de encontrar y de bajar, y cada camp robado le retrasa el 6 que busca."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank completo: E → AA → Q → W inmediato → R → AA → Q → recast R → AA (el clone se come el foco mientras arrancás el knock-up)",
+        "Trade corto de skirmish: E → AA → Q → AA, y si responden, W para jujear la salida mientras la Q ya le peló la armadura",
+        "Engage de teamfight: E → Flash → R al centro del agrupamiento → Q → recast R para extender el giro sobre los dos o tres que agarreste",
+        "All-in desde flanco: Flash → E → Q → R → AA → W → Q → R de nuevo (el decoy cubre tu entrada y resetea la pelea a tu favor)",
+        "Engage sin Flash: E → W → R → Q → R, filtrándote con el clone para arrancar el Cyclone desde adentro del equipo"
+      ],
+      "tips": [
+        "La W cumple dos trabajos distintos: que golpeen el clone en la entrada y jujear los CC en la salida; si la gastás por melé, te quedás sin nada para escapar.",
+        "No entres de frente nunca: buscá flanco y niebla de guerra; tu R vale lo que agarra, y de frente agarra uno y te comés el resto.",
+        "Esperá que el rival gaste el escape o el CC clave antes de tirar la E: tu pasiva aguanta el trade extendido, no el focus entero de dos campeones.",
+        "Mantené el recast de R pegado al carry rival: el segundo giro extiende el knock-up y es la diferencia entre un engage bueno y uno que define la partida.",
+        "Antes del 6 counter-gankeá más de lo que invadís: tu duelo temprano es flojo, pero respondiendo ganks con R en mano ganás la iniciativa del mapa."
+      ],
+      "plan": {
+        "early": "Clear sano hasta 3 y ganks por los ángulos ciegos con W; al 6 buscá el primer engage con R y priorizá counter-ganks sobre invades.",
+        "mid": "Skirmisheá alrededor de objetivos, entrá al backline desde la niebla con E o Flash + R y dejá que tu equipo siga el knock-up.",
+        "late": "Duelista full item: aguantá el flanco, entrá último sobre el carry y sumá un item defensivo con tenacidad para sobrevivir al focus después del giro."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/monkeyking/guide",
+      "https://mobalytics.gg/lol/champions/monkeyking/combos"
+    ]
+  }
+}

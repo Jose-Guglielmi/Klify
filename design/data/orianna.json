@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "orianna",
+    "ddragonId": "Orianna",
+    "name": "Orianna",
+    "titleEs": "la Doncella Mecánica",
+    "cid": 61,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.35,
+    "pr": 3.63,
+    "br": 0.51,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 1,
+      "jungle": 0,
+      "middle": 95.4,
+      "bottom": 1.5,
+      "support": 2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Orianna.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Orianna_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 54.32, "games": 243 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 53.56, "games": 519 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 52.35, "games": 447 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 51.42, "games": 317 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 51.1, "games": 1276 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 51.03, "games": 439 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 51.02, "games": 343 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 50.96, "games": 832 }
+  ],
+  "weakAgainst": [
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 44.57, "games": 911 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 45.33, "games": 1059 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 45.42, "games": 240 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 45.53, "games": 850 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 45.63, "games": 366 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 45.78, "games": 972 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 45.82, "games": 742 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 45.96, "games": 1856 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Shockwave es una R que define teamfights enteras: si agarra al equipo agrupado, la pelea se decide en un segundo.",
+      "Kit completo: Q zonéa y pega, W ralentiza o acelera, E escudéa y suma resistencias, R agrupa; aporta daño y utilidad a la vez.",
+      "Clear de wave de primera y autoataque con pasiva: farmea cómodo, cobra placas y nunca se queda sin maná para el siguiente push.",
+      "La bola sola ya zonéa: el rival tiene que jugar alrededor de su posición aunque no tire un solo hechizo."
+    ],
+    "weaknesses": [
+      "Mecánicamente exigente: el techo es altísimo, pero una bola mal posicionada la deja sin daño ni escudo justo cuando los necesita.",
+      "Cero movilidad propia: cada wave pusheada la encierra contra un gank del jungla y no tiene con qué escapar.",
+      "Frágil al hard engage: si la agarran fuera de posición, muere en un parpadeo porque el escudo de la E no alcanza a salvarla.",
+      "Pre-6 es una laner tibia: su kill pressure nace con la Shockwave, así que el early game es la ventana para castigarla.",
+      "Su R pide enemigos agrupados: un equipo separado la deja con una Shockwave de un solo hombre."
+    ],
+    "powerSpikes": [
+      "Primer componente de maná: con el ítem temprano puede spamear Q y W sin volver a base ni racionar el pokeo.",
+      "Nivel 6: la Shockwave le da kill pressure real y le permite hacer jugadas propias o para el equipo.",
+      "Nivel 9 con la Q maxeada: el pokeo y el clear de wave no se cansan más, y puede zonéar objetivos solos.",
+      "R en niveles 11-16 con 2-3 items: la combo entera borra squishies y cada pelea agrupada es de ella."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Artilleros como Xerath y Vel'Koz la out-ranguean: castigá cada paso que da hacia la wave y el lane se vuelve una granja para vos.",
+        "Parate del lado opuesto a la bola en cada trade: si la bola está lejos, no tiene daño ni escudo con qué responderte.",
+        "Empujala con tu propio clear y quedate vivo: sin movilidad, cada wave adelantada la encierra bajo torre y le niega el roam."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: su daño es de combo, y sin penetración se estrella contra resistencia stackeada.",
+        "Extendé la pelea: fuera de la combo con la R su daño sostenido es mediocre; tanqueá la bola lejos de tu carry.",
+        "No te apiles con tu backline: un tanque adelantado con la bola encima es el setup perfecto para su Shockwave."
+      ],
+      "assassins": [
+        "Saltala cuando la bola no la protege: sin E en mano no tiene respuesta a un dash directo encima.",
+        "Guardá tu escape para después de su R: si la Shockwave te agarra dentro, no hay segunda oportunidad.",
+        "Si gastó la combo y no te mató, ese es tu all-in: queda parada en medio de la lane sin R ni movilidad."
+      ],
+      "crowdControl": [
+        "Separate como equipo: su R vale por cantidad de targets, y un equipo disperso la deja con casi nada.",
+        "Hard engage antes de que ubique la bola: cortar su setup es ganar la pelea; una vez que la Shockwave entra, ya es tarde.",
+        "Guardá un CC largo para ella: si la agarrás parada sobre su propia bola, muere sin que el escudo alcance."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 4,
+        "name": "Twisted Fate",
+        "tips": [
+          "Farmeá con la Q desde afuera del rango de su bola: tu plan es escalar y roamear, no ganar el lane a los trades.",
+          "Solo roamees cuando ella haya hecho recall: su clear con Q+W cobra placas de torre por cada segundo que faltás.",
+          "En peleas agrupadas no te pegues a tus aliados: cada target extra que agarra su Shockwave vale más que tu carta dorada."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango te deja castigarla en cada last hit: pegale con Q mientras camina hacia la wave y el lane es tuyo.",
+          "Aliniate siempre del lado opuesto a la bola: su combo solo funciona si estás cerca de donde aterriza.",
+          "Esperá que gaste Q+W para pushear: mientras la bola está limpiando la wave, es tu ventana para pokearla sin respuesta."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Guardá tu E para esquivar la Shockwave: si la R no te encuentra, su all-in queda en nada y ella ya gastó todo.",
+          "Saltala cuando la bola esté lejos de ella: sin bola en mano no tiene daño, escudo ni aceleración para responderte.",
+          "Tu W le entra fácil: juega un paso atrás por costumbre y, sin movilidad propia, no puede salir de la zona."
+        ]
+      },
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Tu Q te deja tradear desde afuera del alcance de la bola: cada esfera que le pegue en lane es trade ganado.",
+          "Guardá el Scatter para cuando la bola venga hacia vos: Q + E la deja stunned antes de que arme su combo.",
+          "Al nivel 6 forzá el all-in cuando su Q esté en cooldown: tu burst resuelve el trade antes de que la Shockwave vuelva a estar lista."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q al cuerpo del rival → W apenas la bola aterriza (el slow asegura que ambos hechizos peguen)",
+        "Trade corto: Q → W → un par de autos con la pasiva mientras el rival está ralentizado, y retirate antes de que responda",
+        "All-in nivel 6: Q detrás del objetivo → R para arrastrarlo → W encima → autos con la pasiva para terminar",
+        "Engage con frontline: E sobre tu tanque o bruiser que entra → R cuando llegue al centro del equipo agrupado",
+        "Zonéo de objetivo: dejá la bola flotando en la entrada y W encima para castigar cualquier intento de contestar"
+      ],
+      "tips": [
+        "Sabé dónde está la bola en todo momento: es tu daño, tu escudo y tu velocidad; una bola olvidada te deja jugando con medio kit.",
+        "No tires la R para picar un solo target salvo que sea el carry: la Shockwave vale con 3+ personas; guardala o buscá el flanco.",
+        "Zhonya es tu segunda R: con R + Zhonya en mano aceptá peleas; sin ellas, pokeá y jugá atrás.",
+        "Para escapar ganks: E sobre vos y W en la bola; la aceleración te saca de casi cualquier emboscada.",
+        "Pushear es tu identidad pero también tu riesgo: con la wave adelantada, ward y reubicá la bola, porque si te agarran morís."
+      ],
+      "plan": {
+        "early": "Pokeá con Q desde el nivel 1, jugá conservador pre-6 y apenas desbloquee la R buscá all-in con Q + Shockwave o pusheá para cobrar placas.",
+        "mid": "Empujá mid con Q+W y rotá con tu equipo a objetivos: pokeá desde afuera, postergá el 5v5 hasta bajarlos de vida y armá Zhonya antes de pelear de verdad.",
+        "late": "No pelees sin R ni Zhonya: quedate pegado al equipo, esperá el agrupamiento rival y buscá la Shockwave multi-persona que cierra el juego."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/orianna/build",
+      "https://mobalytics.gg/lol/champions/orianna/guide",
+      "https://mobalytics.gg/lol/champions/orianna/counters"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "kayn",
+    "ddragonId": "Kayn",
+    "name": "Kayn",
+    "titleEs": "el Segador Sombrío",
+    "cid": 141,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.55,
+    "pr": 8.55,
+    "br": 6.41,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 4.1,
+      "jungle": 95.3,
+      "middle": 0.4,
+      "bottom": 0,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kayn.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kayn_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 58.8, "games": 449 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 57.31, "games": 438 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 56.44, "games": 326 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.29, "games": 334 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 56.17, "games": 1134 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 55.84, "games": 274 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 55.21, "games": 1143 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 54.75, "games": 316 }
+  ],
+  "weakAgainst": [
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 44.59, "games": 305 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 47.03, "games": 757 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 47.67, "games": 1051 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 48.57, "games": 2718 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 48.88, "games": 3302 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 49.06, "games": 907 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 49.14, "games": 818 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 49.15, "games": 879 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E cruza muros con velocidad de movimiento extra: gánquea por ángulos que ningún otro jungla cubre y cambia de ruta para esquivar los wards comunes.",
+      "Dos formas en un solo pick: la Sombra (Azul) one-shottea carries con burst y la Siniestra (Roja) se cura y juega de frontline; la amenaza cambia según lo que pida la partida.",
+      "La R lo vuelve intocable dentro de un campeón: en pose no recibe daño y sale con burst de % de vida máxima; como Rhaast, esa salida lo cura casi por completo.",
+      "Clear sano y rápido con la Q de cooldown bajísimo y dash: si no lo castigás antes de la transformación, llega al mid game con tempo total."
+    ],
+    "weaknesses": [
+      "Antes de completar la forma es un jungla sin identidad: invadilo y peleale temprano, cada duelo perdido le retrasa la transformación minutos enteros.",
+      "Puede llenar el orbe del lado equivocado: si la composición pide Roja y llenó Azul (o al revés), queda con una forma que no responde a la partida.",
+      "La E se interrumpe con displacement: un empujón mientras cruza el muro lo deja del otro lado, sin escape y a rango de todo tu equipo.",
+      "La R depende del cuerpo que posee: si el objetivo camina bajo torre o queda parado junto a su equipo, sale al centro de todos y muere ahí.",
+      "Sin E ni R en mano es un melee de papel: castigá las ventanas donde se lo ve cruzar o terminar la pose."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R le da invulnerabilidad y kill pressure en cualquier lane; no te comprometas a peleas largas sin saber dónde está.",
+      "Transformación completada: arranca su partida real; justo antes de ese momento es su punto más débil y tu mejor ventana para ganar el mapa.",
+      "Nivel 9 con Q maxeada y dos puntos en R (11): el all-in se vuelve repetible y con la forma en la bolsa, no pelees a cara abierta en el mid game.",
+      "Nivel 16 con R maxeada y tres items: Azul borra carries de un solo combo y Roja se vuelve casi imkilleable en peleas largas."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Cada hechizo tuyo que le pega llena su orbe de Shadow Assassin: no le regales toques gratis en skirmishes o la forma la transformás vos mismo.",
+        "Wardá los muros laterales, no el río: su gank llega atravesando la pared con la E, no por los caminos de siempre.",
+        "Con poca vida, no te apoyes contra muros: Kayn Azul sale de la pared con W + Q + R y te borra antes de que reaccionés."
+      ],
+      "tanks": [
+        "Contra Rhaast comprá anti-cura temprano (Bramble o Executioner): se cura con base en tu vida máxima en cada R y en los golpes de Q.",
+        "Guardá tu displacement para cuando cruce el muro con la E: interrumpirlo lo deja encerrado del lado equivocado, sin escape y sin R en mano.",
+        "No lo persigas por la jungla: la E le da velocidad en terreno donde vos no entrás; forzá la pelea en campo abierto."
+      ],
+      "assassins": [
+        "Invadilo pre-forma: antes de transformarse pierde casi cualquier duelo 1v1; robale camps y retrasale el orbe cada vez que puedas.",
+        "Con forma hecha, no pelees cerca de muros: desaparece con la E y vuelve por un ángulo que no podés cubrir.",
+        "Guardá tu escape para la salida de su R: el burst lo tira al reactivarla; esquivar ese instante te gana el trade entero."
+      ],
+      "crowdControl": [
+        "No gastes CC mientras está en pose de R: es invulnerable; esperá que salga y ahí enganchálo.",
+        "El displacement cancela la E en pleno cruce: Gragas, Alistar o Janna arruinan cualquier gank suyo con un solo empujón.",
+        "Encadená el CC apenas termina su R: es el único momento donde queda quieto, sin E y a rango de todos."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 79,
+        "name": "Gragas",
+        "tips": [
+          "Tu Body Slam (E) cancela su Shadow Step: si lo ves cruzar un muro hacia una lane, empujalo de vuelta y queda del otro lado sin escape.",
+          "Ganás el duelo temprano con la W activada: invadilo pre-forma, cada camp que le robás retrasa el orbe y su transformación.",
+          "Guardá la R para su salida de la pose: mientras está dentro es invulnerable, pero al salir un choque bien puesto lo deja muerto en el lugar."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Las plantas bloquean su acercamiento: sembrá la zona entre los muros y tu carry, y su entrada con la E nunca llega limpia.",
+          "Wardá los muros laterales y no el río: su gank no viene por el río, viene atravesando la pared.",
+          "La raíz (E) es tu castigo: apenas salga de la pared o termine su pose de R, enganchálo; sin escape encima, muere al instante."
+        ]
+      },
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Sos más fuerte que él hasta que completa la forma: invadilo temprano, robale camps y forzále duelos que no puede ganar.",
+          "El capullo (E) decide el duelo: pegale primero con la araña y dejá el stun para cuando intente escapar hacia el muro.",
+          "No le regales peleas al mid game: con forma hecha y R en mano gana el 1v1; jugá pegado a tu equipo y deniale los flancos."
+        ]
+      },
+      {
+        "cid": 62,
+        "name": "Wukong",
+        "tips": [
+          "El clon (W) le hace creer que te encontró: dejá que gaste Q + R en el clon y castigalo mientras tiene todo en cooldown.",
+          "Tu ciclonazo (R) interrumpe su E: cancelar el cruce del muro le arruina el ángulo de gank completo.",
+          "Comprate vida temprana: el burst de Kayn Azul necesita borrarte de un combo, y un item de vida le arruina el one-shot."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: E por la pared → W con el objetivo en el centro → Q encima → autos mientras se reacomoda",
+        "Poke en forma Sombra: E a través de la pared → W → Q de vuelta adentro del muro antes de que te contesten",
+        "One-shot nivel 6 (Azul): E → W desde rango máximo → Flash → Q → R instantáneo → reactivá la R para salir con el kill",
+        "Duelo cuerpo a cuerpo (Roja): AA → Q → AA → R y reactivá para quedarte encima → AA → W para la lentitud → AA → Q → AA",
+        "Engage con knock-up (Roja): Flash → W con el centro en el objetivo → caminá a rango de Q → AA → R → esperá el cooldown de Q y volvé a entrar con Q"
+      ],
+      "tips": [
+        "El orbe se llena según a quién pegues: ranged llena el lado de Shadow Assassin y melee el de Rhaast; mirá ambas composiciones antes de decidir qué forma buscás.",
+        "No esperes la transformación farmeando: gankieá y peleá temprano, cada interacción llena el medidor; un Kayn pasivo llega tarde a su propio powerspike.",
+        "Usá rutas de gank alternativas con la E para esquivar los bushes wardados de siempre: tu ventaja es que nadie sabe por dónde aparecés.",
+        "La R te hace invulnerable pero no inmortal: si el objetivo camina bajo torre o queda parado junto a su equipo, elegí otro cuerpo para poseer.",
+        "No cruces muros a la vista de champions con displacement: Gragas o Alistar te pueden tirar del cruce y dejarte muerto del otro lado."
+      ],
+      "plan": {
+        "early": "Clear rápido y skirmishes constantes: tu misión es completar la transformación cuanto antes, usando rutas de E alternativas para esquivar wards y peleando duelos que ganás pre-forma.",
+        "mid": "Con forma y dos puntos en R, flankeá por los muros laterales con la E buscando picks en el carry rival, y asegurate dragón y heraldo como jungla que llama los objetivos.",
+        "late": "Azul: flanqueá y borrá al carry de un combo antes de que reaccione. Roja: jugá adelante, peleá por tu ADC y usá la curación de Rhaast para aguantar; un pick tuyo abre el Barón."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/kayn/guide",
+      "https://mobalytics.gg/lol/champions/kayn/combos",
+      "https://app.mobalytics.gg/lol/champions/kayn/build"
+    ]
+  }
+}

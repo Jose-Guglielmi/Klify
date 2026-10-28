@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "karma",
+    "ddragonId": "Karma",
+    "name": "Karma",
+    "titleEs": "la Iluminada",
+    "cid": 43,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.89,
+    "pr": 6.22,
+    "br": 2.7,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 3.4,
+      "jungle": 0,
+      "middle": 2.5,
+      "bottom": 0.2,
+      "support": 93.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Karma.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karma_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.82, "games": 219 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.19, "games": 285 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 55.29, "games": 208 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 54.91, "games": 224 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 54.69, "games": 256 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 53.7, "games": 486 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 53.65, "games": 1014 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 53.33, "games": 962 }
+  ],
+  "weakAgainst": [
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 44.44, "games": 801 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 46.2, "games": 933 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 46.21, "games": 277 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 46.36, "games": 330 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 46.95, "games": 1280 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 47.03, "games": 2086 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 47.15, "games": 1440 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 47.28, "games": 2927 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El poke temprano con R+Q no tiene competencia en bot: si te plantás en línea recta, cada Q potenciada te baja un cuarto de vida antes del minuto tres.",
+      "La W convierte cualquier trade en pelea larga: mientras mantiene el tether te arraiga y se cura, así que un intercambio que no la mata termina pagándole a ella.",
+      "R+E reparte escudo grande y velocidad de movimiento a todo el equipo: sus carries esquivan engages enteros y tu disengage muere ahí.",
+      "Tiene seis habilidades en la práctica: cada Mantra elige entre daño en área, root con cura o escudo masivo, y la pasiva acorta la R con cada hechizo que conecta."
+    ],
+    "weaknesses": [
+      "Sin E en mano es un papel: cero movilidad y cero defensiva, un hook o un engage seco la borra; castigá cada ventana de cooldown de Inspire.",
+      "Su R existe desde nivel 1, así que el 6 no le cambia nada: los spikes reales los tenés vos; forzá peleas alrededor del 6.",
+      "La W exige quedarse cerca del objetivo para arraigar: si caminás hacia atrás durante el tether, gasta maná y no gana nada.",
+      "Quemar el Mantra mal es perder la pelea: si usa R+Q cuando su equipo necesitaba R+E, quedan sin escudo para el engage siguiente.",
+      "Squishy y adicta al poke: cada Q la acerca a tu rango de engage; esperá el cast y saltala."
+    ],
+    "powerSpikes": [
+      "Niveles 1 a 3 con Q maxeando: es la mejor laner de bot; si le dejás pokear gratis, el lane queda resuelto en cinco minutos.",
+      "Primer componente de maná o regeneración: el poke se vuelve sostenido; no apuestes a que se le va a acabar el maná.",
+      "Nivel 11 con la primera habilidad al máximo: burst de poke o peel serio según maxeó; mirá cuál fue para saber si escuda o mata.",
+      "Nivel 13 con dos habilidades maxeadas: utilidad casi siempre en mano en cada teamfight del mid game.",
+      "Late con cooldowns bajos: casi nunca está sin R+E; asumí escudo masivo disponible en cada pelea de objetivo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Sona con más alcance: pegale desde fuera de su Q y obligala a gastar maná en escudos para sostener el lane.",
+        "Esquivá el Q potenciado lateralizándote apenas cargue Mantra: la explosión pega en área y ralentiza.",
+        "No te pares en línea con tu ADC: el Q con Mantra pega en área y cobra doble si vienen apretados."
+      ],
+      "tanks": [
+        "Aguantá el poke con tu sustain y esperá que baje la E para tirar el engage seco: sin Inspire no hay respuesta.",
+        "El escudo de R+E protege a los carries, no a vos: tu trabajo es saltarle encima a ella, que es squishy.",
+        "La pelea larga te conviene: tu CC encadenado no le deja mantener el tether de la W y le niega la cura."
+      ],
+      "assassins": [
+        "Karma es un escudo en cooldown: esperá que gaste E en el poke y saltale a su carry en esa ventana.",
+        "Cuidado con la W en tu engage: el root te congela en medio del equipo enemigo; entrá después de que queme Mantra en ofensiva.",
+        "Flanqueala a ella y no al carry: cero movilidad, un burst seco la baja antes de llegar a R+W."
+      ],
+      "crowdControl": [
+        "Un solo hook la mata: sin E no tiene segunda vida; sincronizá tu CC con el cooldown de Inspire.",
+        "Interrumpíle el tether con tu CC: cortar la W antes del root le niega cura y arraigo a la vez.",
+        "Cuando queme la R en Q ofensivo está más de veinte segundos sin escudo: ese es tu engage garantizado."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Tu sustain pisa su poke: curate y volvé a posicionarte; Karma necesita ganar el lane temprano y escalando le pasás por arriba.",
+          "Pegale con power chord justo después de que tira Q: le quemás el maná y vos quedás con vida completa para el próximo trade.",
+          "Al nivel 6 con el Crescendo tenés tu primer all-in real: ella no spikea al 6, aprovechá esa ventana antes de que escale su utilidad."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Contá la E de Karma: sin Inspire en mano, tu W + E encuentra squishies sin ninguna respuesta.",
+          "Tirale encima a ella y no al ADC: el escudo protege a otros, ella sola muere entera en tu combo.",
+          "Buscá pelear en lugares angostos: su R+E de disengage pierde valor cuando tus dos objetivos están pegados."
+        ]
+      },
+      {
+        "cid": 7,
+        "name": "LeBlanc",
+        "tips": [
+          "Esquivá el Q con la distorsión y castigá cada cast que falla: su maná no alcanza para pokear y errar a la vez.",
+          "Entrá con W apenas la vea sin E: la ventana entre escudos es tu combo completo gratis.",
+          "Al nivel 6 no te dejes tether: si la W te arraiga en rango de su ADC te baja el chain entero; entrá y salí."
+        ]
+      },
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "Usá la W cuando avance con la velocidad de la E: sin movimiento su poke nunca llega a rango.",
+          "Tanqueá el poke con la pasiva y respondé con E a su ADC: el trade posterior de Karma sin escudo es gratis para vos.",
+          "Guardá la R para mandar volando al carry escudado: separar al que tiene R+E encima rompe el teamfight entero."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (escudo + velocidad) → AA → Q → AA: ganás cada intercambio corto sin gastar Mantra",
+        "All-in de cerca: W → E al instante → AA hasta que caiga el root → R+Q sobre el objetivo arraigado → AA",
+        "Burst con Flash: R → Q → Flash a mitad de animación → W → AA → E → AA para ejecutar",
+        "Supervivencia: R+W al que te persigue → E → Q mientras te retirás (cura + root + escudo en un solo giro)",
+        "Teamfight: R+E a tu carry → Q + W al enemigo más cercano → AA manteniendo el tether"
+      ],
+      "tips": [
+        "En teamfight el Mantra casi siempre vale más en E que en Q: escudo masivo y velocidad para todo el equipo superan un poke extra.",
+        "Vs engage de nivel 1 (Nautilus, Thresh, Blitzcrank) arrancá E y no Q: el escudo temprano anula su jugada y la Q no te sirve si te engancharon.",
+        "Spameá hechizos al campeón para reciclar Mantra: la pasiva baja la R con cada daño de hechizo, así que el poke constante es tu recurso de ultimate.",
+        "La W es más que root: mantené el tether medio segundo más en trades largos y la cura vale más que otra Q.",
+        "No wardes sin equipo cerca: sos el primer target de cada jungla enemiga, y una Karma muerta no escuda a nadie."
+      ],
+      "plan": {
+        "early": "Pokeá con Q (R+Q cuando el Mantra esté listo) para ganar ventaja de vida, ubicá visión alrededor de la lane y no camines adelante sin E en mano.",
+        "mid": "Rotá a mid con tu ADC o colgáte del mid laner, peleá cada objetivo con R+E sobre el equipo y no te separés nunca del grupo.",
+        "late": "Pegada a tu team siempre: un pick tuyo regala Baron; en cada teamfight escudá con R+E, mantené vivos a tus carries y dejá que la utilidad constante defina la pelea."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/karma/guide",
+      "https://app.mobalytics.gg/lol/champions/karma/build",
+      "https://mobalytics.gg/lol/champions/karma/combos"
+    ]
+  }
+}

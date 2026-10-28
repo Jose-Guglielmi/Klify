@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "zoe",
+    "ddragonId": "Zoe",
+    "name": "Zoe",
+    "titleEs": "el Aspecto del Crepúsculo",
+    "cid": 142,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.08,
+    "pr": 2.66,
+    "br": 2.82,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 3.7,
+      "jungle": 0,
+      "middle": 73.8,
+      "bottom": 1.1,
+      "support": 21.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zoe.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zoe_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 57.49, "games": 447 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 56.36, "games": 330 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 55.89, "games": 1315 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 55.68, "games": 801 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 55.56, "games": 216 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 54.05, "games": 1789 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 53.44, "games": 1441 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 53.44, "games": 582 }
+  ],
+  "weakAgainst": [
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 46.56, "games": 378 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 46.82, "games": 267 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 47.05, "games": 1137 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 47.54, "games": 711 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 47.83, "games": 1313 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 47.84, "games": 1158 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 48.13, "games": 214 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.16, "games": 1115 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El E por pared le estira el rango muchísimo: puede dormirte desde fuera de visión y bajarte con la Q sin que tengas chance de tradeársela.",
+      "La W robada es utilidad gratis: un Ignite, un Exhaust o un Flash del piso cambian el trade y no le cuestan maná ni cooldown relevante.",
+      "Al nivel 6 la R le suma rango y le sirve para esquivar skillshots mientras castea; no es escape, pero le permite pegar desde donde no llegás.",
+      "La Q es AOE: el que farmea pegado a los minions come igual, así que esconderse detrás de la wave no alcanza como plan.",
+      "Su pick potential en mid game define peleas: un sleep acertado antes del objetivo es una kill gratis y un 4v5 asegurado."
+    ],
+    "weaknesses": [
+      "Early flojo: antes del 6 no tiene movilidad real y si falla el E queda parada en la lane sin daño ni salida.",
+      "Todo el kit cuelga del E: errado el sleep, sus trades valen la mitad y su all-in deja de existir.",
+      "La R la devuelve sí o sí al punto de origen: cualquier CC encima del portal la deja sin escape y sin combo.",
+      "Wave clear y maná mediocres temprano: si la obligás a empujar con Q, se queda seca y sin amenaza para el próximo trade.",
+      "Muere con ganks si está empujada: sin dash propio y con la W dependiendo de la suerte del piso, el jungla la castiga gratis."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primer punto de R, la Q y el E ganan rango y ahí arranca el kill real desde afuera de la wave.",
+      "Primer item completo: con maná y penetración empieza a borrar squishies con una sola Q cargada, sin necesidad del sleep.",
+      "Nivel 9 con Q maxeada: el chunk a los squishies es de media vida por casteo y el wave clear ya no le come el pool entero.",
+      "Nivel 13 con E maxeada: el sleep dura y pega tanto que cualquier pick desde la niebla de guerra es muerte segura.",
+      "Mid game con control de río: su mejor pico no es numérico sino posicional, picks previos a dragón o barón mientras el rival rota."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vel'Koz, Xerath, Lux: jugá fuera del alcance del E por pared y tirale desde donde no te vea; Zoe necesita acercarse o gastar R para llegar, y la R la devuelve al punto de origen.",
+        "Parate detrás de la wave pero no adentro: la Q es AOE y castiga al que farmea pegado a la línea de minions.",
+        "Castigala cada vez que gaste la Q en la wave: sin Q cargada no tiene daño y el E solo no mata a nadie."
+      ],
+      "tanks": [
+        "Comprá MR temprano y caminá hacia ella: su burst está calibrado contra squishies y un item de resistencia le rompe el cálculo entero.",
+        "Mercury's Treads más un engage duro la dejan intocable: si el CC entra antes del sleep, su combo no arranca nunca.",
+        "Baitéale el E con el tanque y entrá con el resto: el sleep tiene cooldown largo y sin él Zoe no hace daño."
+      ],
+      "assassins": [
+        "Katarina, Ekko, Diana: saltala justo cuando gaste el E en la wave o lo falle; ahí queda parada sin escape real.",
+        "Guardá el dash para después de la R: si la perseguís antes, te devuelve al portal y te deja mirando el aire.",
+        "Contale la W: si no robó nada defensivo, un all-in rápido la mata antes de que cargue la segunda Q."
+      ],
+      "crowdControl": [
+        "Cualquier CC instantáneo le rompe el combo: el sleep tiene travel time y la Q necesita carga, así que interrumpir en el medio la deja sin daño.",
+        "Encadená el CC encima del portal de la R: vuelve al punto de origen sí o sí y ahí la esperás con el stun listo.",
+        "Annie y Malzahar son su pesadilla: stun point-and-click y supresión le cancelan la ventana de casteo completa."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 1,
+        "name": "Annie",
+        "tips": [
+          "Farmeá con Q usando el refund de maná y no aceptes trades largos hasta tener stun y Tibbers: Zoe pierde el early si no le regalás vida.",
+          "Si erró el E, caminá hacia ella con la pasiva cargada: sin sleep no tiene forma de frenarte y el stun entra seguro.",
+          "Al 6, Flash + R sobre ella mientras castea la Q: el stun point-and-click llega antes de que termine la carga."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Usá tu rango superior: pegale desde fuera del alcance del E por pared y nunca te pares en la línea de minions, que la Q es AOE.",
+          "Guardá el knock-up para cuando entre con R a buscarte: interrumpirle el portal mata el all-in completo.",
+          "Empujá la wave y obligala a farmear bajo torre: sin wave clear barato se queda sin maná y sin presión."
+        ]
+      },
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Pusheá con voidlings y quedate atrás: cada Q que Zoe gasta en limpiar la wave es una Q que no te pega.",
+          "Guardá la supresión para cuando se acerque a castear el E o entre con R: le cancela el combo entero al instante.",
+          "Comprá MR y aguantá el early: su burst no llega a tu sustain y el lane escala claramente a tu favor."
+        ]
+      },
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Esperá que gaste el E para empujar y entrá con Q + E: sin sleep en mano no tiene con qué frenar tu engage.",
+          "Usá la R encima de ella cuando esté cargando la Q: si la agarrás casteando, el daño no sale y el trade lo ganás gratis.",
+          "Si te pega el E, alejate en dirección contraria mientras te da sueño: quedarte cerca es comerte la Q cargada encima."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q hacia atrás → Q al objetivo entrando de costado; la segunda Q viaja más lejos y pega bastante más.",
+        "Pick estándar: E por pared → dormir → Q cargada → Q al dormido → AA empoderada del pasivo.",
+        "All-in con portal: R hacia la pared → E desde el aire → volver al portal mientras viaja la Q → Q2 encima del dormido.",
+        "Roam: empujá la wave con Q, caminá al río y tirá E por pared a la lane para dormir al que no te vio venir.",
+        "Escape: E sobre el perseguidor y caminata en diagonal; la R solo para esquivar un skillshot puntual, nunca para huir."
+      ],
+      "tips": [
+        "No gastes el E en la wave: es tu única forma de pelear y de escapar; sin sleep sos un mago de rango medio sin daño.",
+        "La R no es escape: te devuelve al punto de origen, así que usala para castear desde más lejos o esquivar, no para salir de un gank.",
+        "Cargá la Q desde atrás y recién después apuntá: si la tirás directo sin recorrido, perdés buena parte del daño.",
+        "Mirá qué roba la W antes de tradear: sin spell en el piso jugá atrás; con Ignite o Exhaust podés forzar el all-in.",
+        "Aprovechá las paredes del río para el E: el rango extra te deja dormir a alguien que no te ve y armar el pick sin gastar R."
+      ],
+      "plan": {
+        "early": "Jugá atrás las primeras waves, farmeá con Q y castigá solo cuando el rival se acerque a la línea de minions; buscá el kill recién al 6 y solo si el E entra.",
+        "mid": "Empujá y rotá al río: los picks con E por pared antes de dragón o barón valen muchísimo más que cualquier farmeo extra.",
+        "late": "Quedate con el equipo y pockeá desde atrás de la niebla: un sleep en zona clave gana la pelea, pero si te agarran primero el fight ya está perdido."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zoe/guide",
+      "https://mobalytics.gg/lol/champions/zoe/combos",
+      "https://mobalytics.gg/lol/champions/zoe/counters"
+    ]
+  }
+}

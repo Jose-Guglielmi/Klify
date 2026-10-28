@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "renekton",
+    "ddragonId": "Renekton",
+    "name": "Renekton",
+    "titleEs": "el Carnicero de las Arenas",
+    "cid": 58,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.01,
+    "pr": 5.64,
+    "br": 3.91,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 94.4,
+      "jungle": 0.2,
+      "middle": 5.1,
+      "bottom": 0.1,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Renekton.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Renekton_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 61.45, "games": 275 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 56.93, "games": 1379 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 56.73, "games": 208 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 56.4, "games": 2727 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 56.26, "games": 1406 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 55.41, "games": 1720 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 54.8, "games": 2657 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 54.19, "games": 465 }
+  ],
+  "weakAgainst": [
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 44.67, "games": 1596 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 44.99, "games": 429 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 45.67, "games": 1445 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 46.29, "games": 782 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 46.89, "games": 1785 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 47.11, "games": 1677 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 47.46, "games": 708 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 47.49, "games": 1076 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es de los bullies de early más fuertes del juego: con furia cargada cada trade es suyo, y de esa ventaja nace todo su snowball.",
+      "La Q le cura por cada enemigo que pega: ese sustain le deja absorber trades y quedarse farmeando sin volver a base nunca.",
+      "La W potenciada es un stun point-and-click con cancel de animación: encadenada al autoatack mete el burst más rápido de la toplane.",
+      "Con ventaja corre a cualquiera: dos cargas de E y la R le dan lo que necesita para cazar al laner rival hasta debajo de la torre."
+    ],
+    "weaknesses": [
+      "Todo su daño vive en los cooldowns: con habilidades gastadas no tiene trade, y ese es exactamente el momento para pegarle.",
+      "Depende de la barra de furia: si pelea sin ella o gasta la potenciación equivocada (la E potenciada casi siempre), pierde el trade completo.",
+      "No escala: su pico es early-mid y en late pierde contra cualquier carry con items, sobre todo si no sacó ventaja en los primeros minutos.",
+      "Sin engage propio desde lejos: si no llega con E o Flash, la R entra solo y es fácil de kitear, CCear y dejar fuera de pelea."
+    ],
+    "powerSpikes": [
+      "Primer componente de item: su dueling en lane sube un escalón, no le peles cara a cara si arrancaste atrás.",
+      "Level 6: la R convierte cualquier all-in en kill real y le permite zonéar objetivos; contá su ultimate antes de aceptar peleas.",
+      "R con 2 puntos y dos items (mid game): corre a cualquiera en espacios cerrados; es su ventana para cerrar la partida, no la alargues.",
+      "Level 16 con la R al máximo todavía frontlanea y borra squishies; después de ahí solo cae y tu equipo tiene que forzar el late."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Kayle, Kennen: pegale en cada last hit y negale la furia; sin la barra cargada su trade sale a media potencia y lo ganás gratis.",
+        "Jugá detrás de tu wave: la E necesita minions para llegar a vos; sin olas pushadas no tiene cómo cerrar la distancia y el lane es tuyo.",
+        "Puní el cooldown: con la doble E gastada es un tanque lento sin daño; ese es tu all-in, no un segundo antes."
+      ],
+      "tanks": [
+        "Comprá armadura temprana (Bramble Vest, Tabi) y dejalo fundirse: sin kill potential su early vale nada y el juego te escala a vos.",
+        "Ornn, K'Sante: aceptá solo trades cortos y retirate antes del stun de la W; su sustain de Q no compensa si no pega la secuencia completa.",
+        "Al nivel 6 no lo peles con la R activa: la vida extra y la furia le ganan cualquier trade largo; esperá que se la gaste o que baje de furia."
+      ],
+      "assassins": [
+        "Guardá tu escape para la segunda carga de E: si entrás cuando la tiene, te corre y te mata; si ya la gastó, su burst no te alcanza.",
+        "No te peles contra la torre con media vida: un Flash + W stun te borra; Renekton castiga la avaricia como nadie en la toplane.",
+        "Jungla rival en pantalla es tu luz verde: sin R activa y con furia baja, ganale un trade y el lane entero cambia de dueño."
+      ],
+      "crowdControl": [
+        "CC encadenado lo mata: si queda parado entre la primera y la segunda E, es de los campeones más lentos del juego.",
+        "Interrumpí el arranque del all-in: un stun antes de que cargue la R le borra la ventana entera de furia y de daño.",
+        "Malphite, Sejuani y compañía: reservá el CC para cuando se tire al carry; un Renekton que entra CCeado muere antes de pegar la W."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 420,
+        "name": "Illaoi",
+        "tips": [
+          "Buscá la E (Testamento) antes de aceptar cualquier trade: con el espíritu marcado, Renekton o come daño doble o se retira y pierde la wave.",
+          "Su daño es todo al arranque: si sobrevivís los primeros dos segundos, la pelea se alarga y ahí tu R y los tentáculos lo pasan por arriba.",
+          "Jugá alrededor de su furia: cuando la barra esté cargada alejate; sin 50 de furia la W no stunea y su trade cae a la mitad."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Tu rango le niega la furia: pegale en cada last hit y nunca le regales un trade; sin carga, Renekton es la mitad de un campeón.",
+          "Guardá la E (Vault) para su segunda carga de E: cuando la use para llegarte, saltás por arriba y le cortás el camino al stun de la W.",
+          "Escale tranquilo: cada minuto que el lane siga parejo te acerca a tu late, que es donde Renekton desaparece del mapa."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Comprá armadura temprano y dejalo golpear la piedra: sin penetración, su burst de early no te baja ni la mitad de la vida.",
+          "Brittle castiga cada all-in: cuando se tire con R, marcálo y rompelo antes de que la furia le haga el trabajo.",
+          "Jugá la wave hacia tu lado: Renekton sin espacio para correr la E no tiene engage, y un Ornn zonéando le niega todo el farm de melee."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Farmeá con Q de rango y aguantá: no aceptes ni un trade antes del 6; tu único trabajo es llegar entera al punto de escala.",
+          "La R en el momento justo desarma el all-in: cuando se tire con el stun de la W, activá la R y pegale impune durante todo el canal.",
+          "Usá la W de velocidad para escapar el all-in y para kitear: mientras no te agarre con furia llena, no tiene forma de reacharte."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: E in → AA → W → Q → AA → recast de E para salir sin comer la respuesta",
+        "Cancel de animación (pan de cada día): AA → W inmediato → AA; la W corta la animación del auto y el burst entra a mitad de tiempo",
+        "All-in nivel 6: W con furia (stun) → AA → R → E → AA → Q → AA → segunda E al objetivo (la R cancela animación y la furia extra alimenta el resto)",
+        "Chase: E a través de los minions → segunda E al objetivo → Q → W AA para cerrar la kill",
+        "All-in con Flash: Flash → W → AA → R → E → Q → AA → AA → E para quedarte encima mientras muere"
+      ],
+      "tips": [
+        "Administrá la furia como recurso: entrá a cada trade con 50+ y sabé qué vas a potenciar; la W stunea, la Q cura más y la E potenciada casi siempre es un error.",
+        "Nunca gastes las dos cargas de E para entrar: guardá siempre el recast para salir o para seguir; doble E adentro sin kill es regalarte al jungla rival.",
+        "Jugá la wave cerca del centro: querés espacio para correr al rival, no quedar pushado comiéndote el gank mientras tu E está en cooldown.",
+        "Meté la Q cuando haya wave cerca: cura por cada cosa que pegue, y ese sustain es lo que te deja aceptar otro trade de inmediato.",
+        "Presioná antes del 6 y jugá con R en mano después: en late, sin ultimate activo no entrás a ninguna pelea."
+      ],
+      "plan": {
+        "early": "Buscá el kill antes del minuto 10: wave centrada, furia cargada y doble E disponible; cada ventaja que sacás acá es la que te deja cerrar el juego.",
+        "mid": "Split push en side con Teleport listo: duelá a quien venga a pararte y agrupate cuando no quede objetivo lateral por cobrar.",
+        "late": "Flankeá desde un bush sin visión y entrá con R al backline; si la R está en cooldown, no forcés peleas y jugá peel alrededor de tu carry."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/renekton/build",
+      "https://mobalytics.gg/lol/champions/renekton/guide",
+      "https://mobalytics.gg/lol/champions/renekton/combos"
+    ]
+  }
+}

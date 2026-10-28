@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "gragas",
+    "ddragonId": "Gragas",
+    "name": "Gragas",
+    "titleEs": "el Revoltoso",
+    "cid": 79,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.23,
+    "pr": 2.28,
+    "br": 0.71,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 60.6,
+      "jungle": 18.8,
+      "middle": 13.6,
+      "bottom": 0.3,
+      "support": 6.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gragas.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gragas_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 55.44, "games": 386 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 54.66, "games": 633 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 54.14, "games": 266 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 54.08, "games": 638 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 53.65, "games": 274 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 53.55, "games": 422 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 53.11, "games": 787 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 53.04, "games": 1199 }
+  ],
+  "weakAgainst": [
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 42.74, "games": 379 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 42.86, "games": 308 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 44.02, "games": 368 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 45.25, "games": 221 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 45.58, "games": 362 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 46.55, "games": 232 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 46.72, "games": 229 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 46.77, "games": 496 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es un laner dominante en early: cada vez que el rival baja a last hitear, un trade con W → E → Q le gana casi cualquier intercambio corto.",
+      "La pasiva Happy Hour lo cura con los casts: puede comerciar seguido y sostener el lane sin volver a base, algo que el rival no puede igualar con porciones.",
+      "La E es engage confiable con stun y cooldown que se acorta al golpear unidades: puede re-engancharte dos veces en la misma pelea.",
+      "La R es la herramienta más versátil del juego para mover gente: engancha al carry, despeja el peel o corta una teamfight entera según dónde la tires.",
+      "Su pasiva de W le da reducción de daño: en trades cortos entra, pega y sale perdiendo menos vida que cualquier bruiser de la lane."
+    ],
+    "weaknesses": [
+      "Todo el kit es skillshot: si la E pasa de largo o el barril cae mal, queda parado en medio de la lane sin daño y sin escape.",
+      "Los cooldowns y el maná early son caros: si spamea Q y E al vacío, queda sin amenaza durante varios segundos; castigá esa ventana.",
+      "Sin la E disponible es un tipo gordo y lento sin movilidad: un gank del jungla con la E gastada es casi kill garantizada.",
+      "Escalado limitado contra tanques puros: en peleas extendidas largas su daño de combo se agota y pierde el 1v1 sostenido contra escaladores de top.",
+      "Su burst depende de la R: si el barril se lo come un frontal o falla la dirección del knock, la teamfight arranca sin su mayor aporte."
+    ],
+    "powerSpikes": [
+      "Nivel 2-3 con E + Q en mano: es su primer pico real; no aceptes trades cuerpo a cuerpo antes de ahí sin saber qué tiene listo.",
+      "Nivel 6: la R habilita all-in completo y el dive con jungla; un barril bien tirado te empuja a su torre sin que puedas responder.",
+      "Primer item (Lich Bane o RoA según build): con el sheen o el escalado en la bolsa, su combo W → E → Q borra un tercio de vida de golpe.",
+      "Mid game con Teleport disponible: cada TP a bot es una teamfight ganada por la espalda con la R; mirá el mapa, no su lane.",
+      "Teamfights con Flash en mano: Flash + E + R sobre el carry enemigo define la pelea entera antes de que el peel reaccione."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Gnar, Jayce: no lo persigas, dejá que pague cada paso hacia tu rango; su E solo llega si vos te acercás de más.",
+        "Farmeá con Q desde afuera de su auto-attack y mantén la wave cerca de tu torre: sin distancia que recorrer, su engage no existe.",
+        "Pish push no: empujalo a farmear bajo torre con Q spameada y llamá al jungla; un campeón sin movilidad pasiva debajo de su torre es comida."
+      ],
+      "tanks": [
+        "Ornn, Shen, Cho'Gath: no entres a peleas extendidas; hacé el trade corto con W → E → Q y salí antes de que su daño sostenido te pase por arriba.",
+        "Comprá penetración o daño sostenido según tu kit: su scaling de resistencia pura te deja inútil si el juego se estira sin tu burst escalando.",
+        "Usá la R para separarlo de su equipo en teamfights: un tanque solo con su equipo lejos no pelea, y ahí lo castigás."
+      ],
+      "assassins": [
+        "Sylas, Zed, Ekko: guardá la E para cuando entren, no para iniciar vos: tu stun les corta el combo y tu W reduce el daño de la entrada entera.",
+        "Tu W es el anti-burst: tomá el trago apenas veas el arranque del rival y el combo entero pierde un cuarto de su daño.",
+        "Después de que gasten su escape, ahí arranca tu all-in: sin dash, tu E los agarra parados y la R los borra de la lane."
+      ],
+      "crowdControl": [
+        "Entrá limpio o no entres: esperá que el CC frontal se gaste antes de Flash + E; si te agarra la Camille o el Ornn, el combo muere en el aire.",
+        "Tu W reduce daño y tu R despeja: si te enganchan, tirá el barril a tus pies para empujar al que te agarra y comprá distancia.",
+        "Flankeá siempre por los costados: una R desde el flanco sobre el backline evita comer el CC frontal entero que te espera de frente."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 164,
+        "name": "Camille",
+        "tips": [
+          "Guardá la Hookshot para cuando la E de Gragas arranque: si esquivás el stun, su combo entero queda en nada y él ya gastó el dash.",
+          "Pegale en las ventanas de cooldown: después de la E, Gragas no tiene nada que apretar durante varios segundos; ese es tu all-in.",
+          "Cuando use la R en teamfight para separarte, no te vayas lejos de tu equipo: el barril solo gana si logra aislarte del peel."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Escalá tranquilo: tu scaling de vida le gana el juego largo; Gragas necesita kills en early para que su combo importe.",
+          "Guardá la ruptura (Q) para cuando arrancá la E hacia vos: interrumpirle el engage mata el trade entero antes de que el barril explote.",
+          "En peleas extendidas ganás por naturaleza: mantené la wave cerca y forzá intercambios largos donde su burst se agota antes que tu vida."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Esquivá el barril con la W de Ornn (indestructible): es tu anti-combo directo; usala apenas veas la R volando hacia tu equipo.",
+          "Castigá su maná: cada Q y E que tire al vacío lo deja descalzo; hacete la lanemaestro sin responder y ganás el lane gratis.",
+          "En teamfight, mantené tu equipo disperso: su R vale por cuanta gente mueva; si no agrupa al equipo, un barril solo no define nada."
+        ]
+      },
+      {
+        "cid": 6,
+        "name": "Urgot",
+        "tips": [
+          "Pegale de rango en cada last hit: su E tiene que viajar hasta vos y cada paso adelante le cuesta media vida contra tu shotgun.",
+          "Guardá la R de Urgot para cuando se meta con la E: si la ejecución lo encuentra a media vida, no hay W que lo salve.",
+          "En trades extendidos ganás por daño sostenido: dejalo gastar W y Q y recién ahí metete con la E; su burst ya pasó."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W (reducción de daño activa) → E stun → AA potenciada por la W → Q encima del objetivo antes de que se reacomode",
+        "All-in con barril esperando: Q al piso detrás del rival → W → E + R para empujarlo hacia tu barril → AA → la Q explota con el slow",
+        "Combo de engage con Flash: E + R instantáneo detrás del rival para knockearlo hacia tu equipo, o Flash + E si necesita cerrar la distancia de golpe",
+        "Engage de teamfight: R apenas detrás del carry enemigo (nunca encima: lo empujaría para el lado equivocado) → E sobre el desorden → Q en el grupo",
+        "Clear de wave rápido: Q spameada sobre los minions con la pasiva curándote entre casts para sostener el push sin perder vida"
+      ],
+      "tips": [
+        "Tirá la R apenas detrás del objetivo, nunca encima: el knock empuja hacia afuera del punto de impacto; detrás lo trae hacia tu equipo.",
+        "Tomá el trago (W) antes de cada trade: la reducción de daño es lo que te deja ganar intercambios que ningún otro mago de top puede aceptar.",
+        "La E reduce su cooldown al golpear unidades: pasá por minions para recargarla más rápido; no la guardes tanto que mueras sin usarla.",
+        "La pasiva Happy Hour se carga con casts: alterná Q y W en el lane para mantener la cura andando; es tu sustain real, no las pociones.",
+        "No gastes Q como poke a vida llena: es tu maná, tu clear y el final de tu combo; en early cada barril al vacío es una amenaza que desaparece."
+      ],
+      "plan": {
+        "early": "Dominá el lane desde el nivel 2: tradeá cada vez que el rival baje a last hitear con W → E → Q, sostenete con la pasiva y buscá el all-in al llegar a 6 con la R empujándolo hacia tu torre.",
+        "mid": "Usá Teleport para flanquear bot y ganá teamfights con la R por la espalda; empujá tu lane con Q y roamé con la E lista: cada pick tuyo es un objetivo gratis.",
+        "late": "Flankeá y esperá al equipo agrupado: R detrás del carry para traerlo a tu equipo o separá al frontal con el barril, y entrá vos después con E + Zhonya mientras tu equipo termina el trabajo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/gragas/build",
+      "https://mobalytics.gg/lol/champions/gragas/combos"
+    ]
+  }
+}

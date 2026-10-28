@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "lillia",
+    "ddragonId": "Lillia",
+    "name": "Lillia",
+    "titleEs": "La Flor Tímida",
+    "cid": 876,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.26,
+    "pr": 5.43,
+    "br": 4.97,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.1,
+      "jungle": 98.5,
+      "middle": 0.2,
+      "bottom": 0,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lillia.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lillia_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 58.42, "games": 279 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 58.29, "games": 211 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 58.25, "games": 309 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 57.88, "games": 584 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 57.35, "games": 905 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 57.03, "games": 612 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 56.62, "games": 740 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 56.04, "games": 1531 }
+  ],
+  "weakAgainst": [
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 47.69, "games": 824 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 47.86, "games": 420 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 49.45, "games": 724 },
+    { "cid": 427, "slug": "Ivern", "name": "Ivern", "vsWr": 49.63, "games": 268 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 49.86, "games": 714 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 50.05, "games": 923 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 50.24, "games": 1274 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 50.39, "games": 512 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Movilidad acumulada por la pasiva: cada golpe con hechizo le da velocidad, esquivá skillshots caminando y es de las junglas más difíciles de alcanzar en skirmish.",
+      "Clear de jungla top del parche: la Q con cooldown bajísimo y daño real en el borde le da full clears veloces con vida alta; asumí que llega a 6 antes que tu jungla.",
+      "La R duerme a todo el que tenga polvo de sueños: en teamfight agrupada son tres o cuatro rivales apagados a la vez; define peleas enteras.",
+      "Puede iniciar peleas ella sola con la E lejana + R desde fuera de visión: un pick aislado se convierte en dragón o barón sin depender del equipo.",
+      "Burn sostenido con Liandry y Rylai: el daño escala por % de vida en peleas largas; tanques sin MR la sufren todo el juego."
+    ],
+    "weaknesses": [
+      "Early débil: hasta nivel 6 no tiene hard CC y su duelo 1v1 pierde contra junglas agresivas; invadí y castigá su primer clear.",
+      "Squishy AP de libro: burst enfocado la baja antes de que el burn cuente; es de las junglas más fáciles de matar si la agarrás parada.",
+      "Le cuesta contra poke y disengage: si la alejan del cuerpo a cuerpo, su daño no entra y la R no encuentra targets con polvo.",
+      "La R requiere polvo previo y tarda en efectar: spellshield, cleanse o despertar al dormido pegándole le rompen la herramienta.",
+      "Su kiting es caminando: CC, terreno cerrado y gaps closers anulan la velocidad acumulada; parada, no tiene escape real."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la primera gank con Q + R es kill casi segura; wardá tus lanes antes de que aparezca y no sobreextendás sin ver el mapa.",
+      "Nivel 9 con Q maxeada: el burst sube exponencialmente y el clear acelera; no la pelee a vida llena en skirmish de jungla.",
+      "Primer item resuelto (Liandry → Riftmaker): el burn escala con % de vida y ya no podés tanquearla sin resistencia mágica.",
+      "Nivel 11 y 16 con puntos en R: el cooldown baja tanto que casi siempre la tiene en mano; asumí sleep disponible en cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Castigala antes de 6: sin hard CC no puede responderte; poke y disengage son su counter natural, usá tu rango para negarle cada trade.",
+        "Esquivá la E lateral: es su único golpe lejano; sin ese arranque no puede conectarte la R desde fuera de visión.",
+        "Separate del equipo cuando la veas sembrar polvo: la R masiva vale por cantidad de targets; dispersos, su sleep queda en uno solo."
+      ],
+      "tanks": [
+        "MR temprano: su burn es por % de vida y sin resistencia mágica la pelea larga es toda suya; un item defensivo se la come entera.",
+        "Peleá pegado a tu carry: negale el centro de la W y el ángulo del borde de la Q; sin posición, su DPS cae a la mitad.",
+        "CCála apenas se acerque: es squishy y sin dash de escape; un stun adentro de tu equipo la borra antes de que la R entre."
+      ],
+      "assassins": [
+        "Invadila level 2-3: pierde duelos tempranos; saltala en el campamento mientras cleara y ganás kill, vida y tempo en una sola jugada.",
+        "Contá su R: si la usó para escapar, queda más de un minuto sin hard CC; invadí o gankeá adentro de esa ventana.",
+        "Meté todo el burst en la primera entrada: la MS acumulada le deja esquivar la segunda; el que duda, la deja kitar."
+      ],
+      "crowdControl": [
+        "Pegale al dormido: el sleep se corta con daño de terceros; despertar a tu compañero a tiempo le roba la ventana de daño extra.",
+        "Spellshield o cleanse para la R: anular el sleep la deja sin hard CC y sin plan de pelea durante todo el cooldown.",
+        "Guardá un point-and-click para su flanqueo: entra caminando desde el costado; Malzahar o Lissandra la convierten en piedra al instante."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 107,
+        "name": "Rengar",
+        "tips": [
+          "Invadila level 2-3: Lillia pierce los duelos tempranos; saltala desde el arbusto mientras cleara y robale el campamento completo.",
+          "Usá los arbustos para esquivar el centro de la W: sin ese golpe doble el trade de skirmish es tuyo por daño bruto.",
+          "Cuando llegue a 6, esperá que tire Q o E antes de saltar: sin polvo de sueños puesto, su R no te duerme y el all-in es tuyo."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "El muro de la E corta su acercamiento: Lillia pega caminando; sin velocidad sobre tu campo de piedras queda lenta y sin daño.",
+          "Pegale desde rango: su Q de daño real exige ángulo cerrado para el borde; vos ganás cada trade de lejos sin aceptar cuerpo a cuerpo.",
+          "En teamfight no te despegues del equipo: dormida sos kill gratis; dejá visión en tus flancos para que su E de arranque no te tome sola."
+        ]
+      },
+      {
+        "cid": 28,
+        "name": "Evelynn",
+        "tips": [
+          "Castigala antes de 6: sin R no tiene hard CC ni engage; invadí, robale camps y ganá el mapa mientras no puede responderte.",
+          "Entrá camuflada cuando esté a media vida en el clear: su única respuesta es correr con la MS y tu burst la alcanza igual.",
+          "No aceptes peleas largas cuando tenga Liandry: pegá, ejecutá y salí; el burn de trade largo es lo único que le gana el duelo."
+        ]
+      },
+      {
+        "cid": 427,
+        "name": "Ivern",
+        "tips": [
+          "Usá a Daisy para los skirmish: el knock-up interrumpe su Q y su clear; Lillia no pelea un 2v1 adentro de su propio campamento.",
+          "Contrajungleá con visión y robale el lado del mapa antes de que escale: tu ventaja es mapa y escudos, no el duelo directo.",
+          "No te pares a pelear a vida llena: escudá, pegá con Daisy y salí; repetí el trade hasta que el burn no le alcance para ganarte."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear de campamento: Q en cooldown pegando con el borde (daño real) y W al centro del monstruo grande para el golpe extra",
+        "Gank nivel 6: Q para aplicar el polvo de sueños → R inmediato (dormido) → caminá hasta quedar encima mientras duerme → W al centro + Q para ejecutar",
+        "Engage lejano: E cruzando el mapa → al conectar el slow, R desde fuera de visión → tu equipo entra y vos rematás con Q",
+        "Skirmish de jungla: Q (ganás MS) → orbitá alrededor del rival kitéando → W al centro cuando se comprometa → E para cortar la escapada",
+        "Teamfight: Q + E raspando a varios para sembrar polvo → R masiva al grupo → flanqueá al carry dormido con W centrado"
+      ],
+      "tips": [
+        "La R solo duerme a quien tiene polvo de sueños: si no le pegaste con Q, W o E antes, no hay sleep; contá tus golpes antes de apretarla.",
+        "Golpeá con el borde de la Q: el anillo exterior hace daño real; ajustá el ángulo en cada campamento y en cada trade.",
+        "La MS de la pasiva es tu vida: cada golpe a campeón o monstruo te da velocidad; si jugás parado, jugás muerta.",
+        "Tirá la E por el medio de la lane mientras rotás: un golpe lejano es un gank gratis o al menos visión del lado rival.",
+        "No pelees sin R desde mid game: es tu único hard CC y tu seguro de escape; si está en cooldown, farmeá y reposicionate."
+      ],
+      "plan": {
+        "early": "Power farm hasta 6 con la Q en cooldown (golpeá con el borde), gankeá solo lanes sobreextendidas y usá la R apenas esté en mano: tu duelo temprano es flojo, tu clear es tu arma.",
+        "mid": "Jugá alrededor de la R: E lejana + R para picks, asegurá objetivos con el burn de Liandry y no dejes de farmear camps para no perder el tempo de jungla.",
+        "late": "Flanqueá con tu equipo, sembrá polvo con Q/E sobre varios rivales y R masiva al grupo; sin R en mano no pelee: esperá el cooldown reposicionada con la MS."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/lillia/build",
+      "https://mobalytics.gg/lol/champions/lillia/guide"
+    ]
+  }
+}

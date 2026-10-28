@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "morgana",
+    "ddragonId": "Morgana",
+    "name": "Morgana",
+    "titleEs": "la Caída",
+    "cid": 25,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.47,
+    "pr": 5.31,
+    "br": 21.5,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.6,
+      "jungle": 5.2,
+      "middle": 6.7,
+      "bottom": 0.7,
+      "support": 85.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Morgana.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Morgana_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 58.09, "games": 303 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.65, "games": 281 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 57.11, "games": 415 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.21, "games": 643 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 54.5, "games": 200 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 54.32, "games": 915 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 53.99, "games": 3034 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 52.97, "games": 725 }
+  ],
+  "weakAgainst": [
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 45.44, "games": 856 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 46.14, "games": 778 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 47.71, "games": 262 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 47.94, "games": 1431 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 48.35, "games": 1731 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 48.64, "games": 1028 },
+    { "cid": 43, "slug": "Karma", "name": "Karma", "vsWr": 48.86, "games": 1629 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 49.0, "games": 1004 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q es el root más largo del juego a acierto: un rival pegado queda fuera del juego tanto tiempo que alcanza para un kill completo o para robar un objetivo entero.",
+      "La E (Black Shield) vuelve inmune a CC y magia a un carry: contra composiciones con engage o lock pesado, borra de un clic el plan completo del rival.",
+      "La W barre la wave sola: push instantáneo para rotar con el jungla, negar farm bajo torre y ganar el control del río sin mover un dedo.",
+      "La R en pelea agrupada es un stun en área: con Zhonya en mano, enganchás al centro del equipo y el vínculo decide la pelea por su cuenta."
+    ],
+    "weaknesses": [
+      "La Q es una skillshot que se bloquea con minions: un rival que se posiciona bien detrás de la wave la anula, y cada falla te deja un lane largo sin presión.",
+      "Sin movilidad ni escape: si te agarran wardeando o separada del equipo, morís casi siempre; sos de lo más fácil de matar del mapa cuando caminás sola.",
+      "La E mal usada mata: un shield sobre el objetivo equivocado o gastado antes del engage real deja a vos o al carry desnudo ante el CC rival.",
+      "Su daño depende de que el rival se quede en la W y de mantener el vínculo de la R: no borra sola a nadie que juegue afuera de sus zonas.",
+      "Contra enchanters con disengage (Janna, Lulu) no tiene forma de cerrar la distancia: el lane se vuelve poke perdido y engage negado."
+    ],
+    "powerSpikes": [
+      "Nivel 3: combo completa Q + W con E en reserva para negar el engage rival; es tu primera ventana real de trade y all-in.",
+      "Nivel 6: la R suma un stun en área al kit; cualquier pick con Q se convierte en kill, torre incluida si el jungla acompañó.",
+      "Q al máximo (nivel 9): bind frecuente y con más daño, los picks desde la niebla de jungla salen casi solos.",
+      "Zhonya + puntos en R (11 y 16): podés activar el vínculo en medio del equipo rival, esperar el stun adentro del reloj y salir viva para pelear la siguiente."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Janna, Lulu, Milio: no intentes ganar por engage; empujá la wave con W para negar su roaming y buscá peleas 5v5 donde tu E anule su burst puntual.",
+        "Pegale con Q solo al que camina hacia vos para pokear: el que se acerca a pegarte se acerca también a tu rango de bind.",
+        "Jugá desde la niebla: una Q que sale de donde no lo esperan es imposible de esquivar; la que sale a la vista de máxima distancia, siempre falla."
+      ],
+      "tanks": [
+        "Maokai, Nautilus, Alistar: esperá el hook o el root y poné la E preventiva sobre tu ADC recién ahí; el engage entero muere en el shield.",
+        "La W con daño por vida muerde a los tanques: ponela sobre el que pelea adelante y dejá que el pool haga el trabajo mientras vos controlás con Q.",
+        "No le pegues a la tanque con la Q: no gana nada recibiendo tu bind; guardala siempre para el carry de detrás."
+      ],
+      "assassins": [
+        "Zed, Fizz, Akali: la E sobre el carry hace que su combo entera sea un farol; el shield se come el CC y la magia que le sigue.",
+        "Guardá la E para el arranque del combo, no para el poke: un shield gastado a media vida es la muerte escrita de tu carry.",
+        "Q al asesino que roamea solo por el mapa: sin escape en mano, el root lo deja parado encima de tu W y con tu jungla encima."
+      ],
+      "crowdControl": [
+        "Tu E es la respuesta al CC rival, pero es una sola por pelea: leé qué amenaza decide la pelea y protegelo a ese objetivo.",
+        "En peleas agrupadas tu R también es CC en área: arrancala vos primero y el rival tiene que elegir entre dispersarse o comer el stun entero.",
+        "Contra Blitzcrank o Thresh arrancá E nivel 1 y jugá pegada atrás: un shield preventivo vale más que cualquier trade temprano."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Tu tornado y tu E llegan antes que cada Q de Morgana: negá el bind y quedá tranquila, sin Q ella no tiene ninguna amenaza de engage.",
+          "Guardá tu R para cuando active el vínculo del Soul Shackles: empujala fuera de rango y el stun nunca llega a completarse.",
+          "Pokeá con W cada vez que baje a poner el Tormented Shadow en la wave: cada pool suyo en minions es maná que no va a tener para pelear."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Black Shield solo protege a uno: si lo ves en el ADC, enganchá igual; tu W + R entra por dos y su protección quedó en el objetivo equivocado.",
+          "Forzá trades cortos en cada cooldown de su E: sin shield en mano, tu combo completa pasa entera y el lane es tuyo.",
+          "Usá tu engage a través de la wave: la Q de Morgana se bloquea con minions, tu entrada lineal no tiene ese problema."
+        ]
+      },
+      {
+        "cid": 35,
+        "name": "Shaco",
+        "tips": [
+          "Buscá el lane con cajas en el bush: Morgana necesita acercarse para poner la W y ese es exactamente el rango de tu fear.",
+          "Usá la invisibilidad para acercarte: su Q necesita verte para pegarte, y desde la stealth sos intocable hasta que ya estás encima.",
+          "Castigá cada Q fallada: si tiró el bind a la wave y no pegó, queda una ventana larga sin presión y todo el trade es tuyo."
+        ]
+      },
+      {
+        "cid": 902,
+        "name": "Milio",
+        "tips": [
+          "Tu R es la muerte de su R: cuando veas el vínculo de Soul Shackles activado, tu ultimate limpia el stun de todo el equipo a la vez.",
+          "Con el rango extra de tu W, tu ADC pega desde afuera del Dark Binding: Morgana sin línea limpia no encuentra nunca el engage.",
+          "Cuando gaste la E en el ADC, protegé al resto y avisá para all-in: su único recurso defensivo ya no está en la mesa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → W encima del root → AA pegado; si el rival responde con CC, E sobre vos o tu ADC antes de que la amenaza llegue",
+        "Pick desde la niebla: caminá sin ser visto → Q al que pase por el flanco → W + AA para completar; sin visión previa, la Q casi no falla",
+        "All-in con Flash: Flash → Q inmediata → W apenas confirmás el hit → AA; guardá la E para la respuesta de CC del rival",
+        "Engage de teamfight: R al entrar en rango → mantené el vínculo caminando con ellos → Q para extender el control → Zhonya mientras cae el stun",
+        "Defensiva: E preventiva sobre el carry antes del engage rival → W sobre el que se comprometió → R con vínculo para castigar la entrada"
+      ],
+      "tips": [
+        "Arrancá E nivel 1 contra engage pesado (Blitzcrank, Leona, Nautilus, Alistar): el shield temprano vale más que cualquier poke; en el resto, arrancá Q.",
+        "No tires la Q a través de la wave: se bloquea con minions; esperá que se abra o que el rival camine a último hit.",
+        "La E es un solo recurso por pelea: identificá qué CC decide la pelea rival y ponelo preventivo sobre ese objetivo, ni un segundo antes ni uno después.",
+        "Usá la W para empujar la wave y rotar con tu jungla, no como poke a ciegas: el maná del early es escaso y cada pool cuenta para la pelea real.",
+        "No wardes sola nunca: sos el campeón más fácil de matar del mapa caminando sola; poné visión con compañía o con el enemigo en pantalla."
+      ],
+      "plan": {
+        "early": "Pokeá con Q solo a acierto seguro, arrancá E contra engage y al nivel 6 buscá el all-in con R cuando el rival esté a media vida; después de la primera torre de bot, rotá a mid a abrirla.",
+        "mid": "Pegate al equipo, armá visión alrededor del próximo objetivo y buscá picks con Q desde la niebla: cada kill gratis por death timer se convierte en torre o dragón.",
+        "late": "Peleá siempre agrupado: E preventiva al carry antes del engage rival, R al centro del equipo enemigo y Zhonya para sobrevivir tu propio vínculo; mantené el área de objetivos warded para ver el engage venir."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/morgana/build",
+      "https://mobalytics.gg/lol/champions/morgana/guide",
+      "https://mobalytics.gg/lol/champions/morgana/combos"
+    ]
+  }
+}

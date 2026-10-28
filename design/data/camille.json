@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "camille",
+    "ddragonId": "Camille",
+    "name": "Camille",
+    "titleEs": "la Sombra de Acero",
+    "cid": 164,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.43,
+    "pr": 3.57,
+    "br": 1.62,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 74.6,
+      "jungle": 1.7,
+      "middle": 1.3,
+      "bottom": 0.1,
+      "support": 22.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Camille.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Camille_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 57.17, "games": 488 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 56.8, "games": 375 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 55.92, "games": 642 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 55.3, "games": 472 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 55.11, "games": 470 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 54.33, "games": 416 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 54.28, "games": 538 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 54.27, "games": 737 }
+  ],
+  "weakAgainst": [
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 43.51, "games": 239 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 46.03, "games": 1008 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 47.17, "games": 600 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 47.43, "games": 428 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 47.98, "games": 544 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 48.07, "games": 414 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 48.35, "games": 333 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 48.44, "games": 289 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E engancha cualquier pared y pega un stun de casi un segundo: si estás cerca de un muro, el engage llega desde ángulos sin ruta de escape.",
+      "El segundo Q pega daño verdadero: la armadura no salva del trade completo y con Sheen/Trinity cada ventana es media vida en un squishy.",
+      "La R aísla al objetivo del resto del equipo cuatro segundos: si te elige, ningún aliado puede entrar al hex y quedás peleando 1v1 con ella.",
+      "El borde externo de la W pega daño verdadero y la cura: en lanes largas se sostiene sola y negarle ese sustain es parte de ganarle.",
+      "La pasiva le da un escudo del tipo de daño que pegaste último: comerciar dos veces con lo mismo la encuentra con el escudo listo."
+    ],
+    "weaknesses": [
+      "Niveles 1 a 3 no tienen daño ni escape: castigá ese arranque con poke porque desde el 4, con Q y E en mano, el trade cambia de dueño.",
+      "Sin la E está descalza: con el cooldown temprano no tiene ni engage ni escape; contá la pared que usó y avanzá en esa ventana.",
+      "La W solo pega de verdad en el borde externo y avisa con la animación: un paso lateral la vuelve un gesto caro que la deja sin daño ni cura.",
+      "Si pierde el lane no vuelve: su daño depende de items y de puntos en Q; adelantala en oro y va a pedir permiso para tocar la wave.",
+      "La R es un compromiso total: si el objetivo la sobrevive con pool, invulnerabilidad o curación, ella queda sin ult y sin escape adentro de su propio hex."
+    ],
+    "powerSpikes": [
+      "Nivel 4 con Q y E en mano: primera ventana real de trade; hasta ahí farmeá tranquilo que ella no tiene nada para ofrecerte.",
+      "Nivel 6: la R convierte cualquier engage en kill casi garantizada contra un objetivo sin escape; pedí el gank antes de que llegue ese punto.",
+      "Primer item resuelto (Trinity Force): con Sheen activo cada Q2 con daño verdadero borra media vida; no aceptes trades sin item en la bolsa.",
+      "Nivel 9 con Q al máximo: es una de las mejores 1v1 de la side lane; no defiendas solo contra ella y llevá número o castigá su E gastada.",
+      "Late con R en cooldown corto: busca picks constantes; wardá los flancos o la van a encontrar al carry solo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Quinn, Vladimir: pokeala en los primeros tres niveles, cuando no tiene ni daño ni forma de cerrar la distancia sin morir.",
+        "Jugá contra la W: el borde externo es lo único que duele, así que movete en diagonal y el lane es tuyo gratis.",
+        "No te pares pegado a las paredes: la E necesita muro para el stun; en el medio de la calle su engage es una caminata predecible."
+      ],
+      "tanks": [
+        "Ornn, Malphite, K'Sante: stackeá Grasp y armadura temprana; lo único que ignora tu resistencia es el segundo Q, el resto del kit se apaga.",
+        "Guardá el CC para después de la E: si le cortás el stun, la combo no arranca y ella ya pagó la habilidad.",
+        "Antes del primer item no puede partirte: buscá el trade corto con escudo activo y retirate antes de que el Q2 conecte."
+      ],
+      "assassins": [
+        "Esperá que tire la E para saltarla: sin hookshot no tiene escape y tu all-in le llega sin respuesta.",
+        "Cuidado con el escudo adaptativo: si tu último golpe fue mágico, lleva escudo mágico; un AA previo lo reconfigura a tu favor.",
+        "Si te tira la R primero, no gastes tu escape adentro del hex: no podés salir, así que tu única salida es ganar la pelea adentro o hacer que su burst no alcance."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas tire la E: interrumpir el dash o el stun inmediato mata el arranque entero de la combo.",
+        "No dejes que elija el pick: wardá flancos porque su patrón favorito es E desde la pared + R al carry desprotegido.",
+        "Malzahar, Lissandra, Shen: convertir a Camille en piedra dentro de su propio hex invierte la pelea; entró a matar y se queda a morir."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Pokeala con Q en los niveles 1 a 3: hasta el 4 no tiene daño ni escape, y cada Q que le conectás es vida que tiene que salir a recuperar con riesgo.",
+          "Guardá el pool para la R o el stun de la E: si te anticipás, su engage entero cae en un charco y ella queda pegada a vos sin cooldowns.",
+          "Farmeá lejos de las paredes: sin ángulo para la E tiene que caminar, y un Vladimir que camina libre es un late game que Camille no puede matar."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Arrancá el trade con Q desde rango y con el escudo pasivo activo: sus AAtaques y el primer Q pegan poco contra placas tempranas.",
+          "Guardá la R para responder su E: si le cortás el engage con tu salto, la combo no existe y pierde la única ventana que tiene en el lane.",
+          "Comprá Thornmail temprano: le corta la cura de la W y su daño físico se muere contra tu armadura; el daño verdadero es un solo golpe de todo el kit."
+        ]
+      },
+      {
+        "cid": 98,
+        "name": "Shen",
+        "tips": [
+          "Dejá la zona de la W parada sobre tu wave: cuando ella E + Q encima, el bloqueo de espadas le niega todo el trade corto que necesita.",
+          "Ganás los trades con Grasp y la curación de tu Q: a Camille hay que negarle los extended con daño verdadero, así que cortá a los tres golpes.",
+          "Cuando tire la E agresiva, hablá con el jungla: sin escape y con vos en R global, cualquier dive en tu lane es un kill regalado."
+        ]
+      },
+      {
+        "cid": 6,
+        "name": "Urgot",
+        "tips": [
+          "Pokeá con Q fuera de su rango de AAtaque: su plan es el trade corto con stun, y con media vida abajo no se anima a entrar.",
+          "Guardá la E para interceptar el Hookshot o escapar del stun: si esquivás el arranque, ella queda caminando hacia tus escopetas.",
+          "Forzá peleas largas cuando su Q2 esté gastado: tus piernas perforantes escalan mejor y no tiene nada con qué responder en extended."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E → E (stun en la pared) → AA → Q → AA → Q2 (el daño verdadero entra solo si el primer Q conectó)",
+        "Combo completa: E → W de costado (borde externo) → E2 → AA → Q → R encima del objetivo → AA → Q2",
+        "Caza con Flash: E → E hacia el objetivo → Flash si quedó corto → AA → Q → R para encerrarlo y rematar",
+        "Engage de teamfight: flankeá desde una pared lejana → E → E → R al carry → Q2 con Trinity para borrarlo en dos segundos",
+        "Escapada: E a una pared fuera de visión → segunda E cruzando el muro; también sirve para entrar al dive por el ángulo que nadie mira"
+      ],
+      "tips": [
+        "El segundo Q solo pega daño verdadero si el primero conectó: encadená Q1 con el AA y guardá Q2 para cuando el rival no pueda esquivarlo.",
+        "La W avisa de sobra: tirala en diagonal para pegar el borde externo (daño verdadero + cura) y no la uses de frente salvo para frenar un escape.",
+        "Mirá el minimapa antes de tirar la E agresiva: sin hookshot no tenés escape y el jungla rival lo sabe mejor que vos.",
+        "La pasiva te da escudo del último daño de campeón que recibiste: en trades largos, dejá que ese golpe recargue el escudo antes de volver a entrar.",
+        "No tires la R al tanque front: el hex es para aislar al carry; encerrarte con un ladrillo es regalar la ult y quedar descalza en el medio."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta el nivel 4, farmeá y curate con la W en diagonal, y recién con puntos en Q y E en mano buscá el primer trade con stun en la pared.",
+        "mid": "Con Trinity Force ganás casi cualquier 1v1: splitpushá la side, mirá el minimapa y usá la E para flanquear o la R para cazar al carry en los picks.",
+        "late": "No te alejes del equipo más de lo justo: flankeá con E desde los costados, R al ADC o mid rival y entrá a pegar mientras el hex mantiene al objetivo encerrado."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/camille/build",
+      "https://mobalytics.gg/lol/champions/camille/guide",
+      "https://mobalytics.gg/lol/champions/camille/combos"
+    ]
+  }
+}

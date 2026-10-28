@@ -1,0 +1,255 @@
+{
+  "meta": {
+    "slug": "sett",
+    "ddragonId": "Sett",
+    "name": "Sett",
+    "titleEs": "El Jefe",
+    "cid": 875,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.18,
+    "pr": 7.0,
+    "br": 3.3,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 92.2,
+      "jungle": 1.2,
+      "middle": 2.8,
+      "bottom": 0.4,
+      "support": 3.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sett.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sett_0.jpg"
+  },
+  "strongAgainst": [
+    {
+      "cid": 517,
+      "slug": "Sylas",
+      "name": "Sylas",
+      "vsWr": 60.18,
+      "games": 339
+    },
+    {
+      "cid": 11,
+      "slug": "MasterYi",
+      "name": "Maestro Yi",
+      "vsWr": 60.15,
+      "games": 271
+    },
+    {
+      "cid": 39,
+      "slug": "Irelia",
+      "name": "Irelia",
+      "vsWr": 56.86,
+      "games": 2661
+    },
+    {
+      "cid": 141,
+      "slug": "Kayn",
+      "name": "Kayn",
+      "vsWr": 55.65,
+      "games": 248
+    },
+    {
+      "cid": 157,
+      "slug": "Yasuo",
+      "name": "Yasuo",
+      "vsWr": 55.41,
+      "games": 1978
+    },
+    {
+      "cid": 110,
+      "slug": "Varus",
+      "name": "Varus",
+      "vsWr": 55.14,
+      "games": 321
+    },
+    {
+      "cid": 77,
+      "slug": "Udyr",
+      "name": "Udyr",
+      "vsWr": 54.95,
+      "games": 273
+    },
+    {
+      "cid": 68,
+      "slug": "Rumble",
+      "name": "Rumble",
+      "vsWr": 54.94,
+      "games": 597
+    }
+  ],
+  "weakAgainst": [
+    {
+      "cid": 34,
+      "slug": "Anivia",
+      "name": "Anivia",
+      "vsWr": 42.5,
+      "games": 280
+    },
+    {
+      "cid": 57,
+      "slug": "Maokai",
+      "name": "Maokai",
+      "vsWr": 45.45,
+      "games": 209
+    },
+    {
+      "cid": 78,
+      "slug": "Poppy",
+      "name": "Poppy",
+      "vsWr": 45.71,
+      "games": 455
+    },
+    {
+      "cid": 63,
+      "slug": "Brand",
+      "name": "Brand",
+      "vsWr": 46.36,
+      "games": 220
+    },
+    {
+      "cid": 893,
+      "slug": "Aurora",
+      "name": "Aurora",
+      "vsWr": 47.29,
+      "games": 277
+    },
+    {
+      "cid": 10,
+      "slug": "Kayle",
+      "name": "Kayle",
+      "vsWr": 47.87,
+      "games": 1410
+    },
+    {
+      "cid": 266,
+      "slug": "Aatrox",
+      "name": "Aatrox",
+      "vsWr": 48.68,
+      "games": 3763
+    },
+    {
+      "cid": 516,
+      "slug": "Ornn",
+      "name": "Ornn",
+      "vsWr": 49.17,
+      "games": 2237
+    }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q le da velocidad hacia vos y sus dos siguientes autos pegan con % de tu vida máxima: en trades cortos de cerca, casi nadie le gana.",
+      "La pasiva lo regenera según la vida que le falte: si lo dejás vivir después del trade, vuelve a la línea con media barra en un minuto.",
+      "La W guarda todo el daño recibido como Grit y lo devuelve con daño verdadero en el centro: castigarlo con la W cargada es comprar un boleto de vuelta a base.",
+      "La R agarra a quien tenga más cerca y lo tira sobre tu equipo: un tanque adelantado con aliados detrás es munición gratis para él."
+    ],
+    "weaknesses": [
+      "No tiene dash ni escape: todo su gameplan es caminar hacia vos, así que cada slow y cada paso atrás le saca piernas.",
+      "La W es su única mitigación: si la tira al vacío o muy temprano, queda varios segundos sin escudo y sin su mejor daño.",
+      "La E necesita agarrar algo en ambos lados para stunear: sin minion detrás tuyo, el stun no existe.",
+      "Si tu equipo no camina en línea, la R pierde casi todo su valor: separate del que va adelante al sitiar objetivos.",
+      "Su sustain depende de pegar: zonéalo del farm con rango y la pasiva no le sirve de nada."
+    ],
+    "powerSpikes": [
+      "Nivel 1 a 3: gana casi cualquier trade temprano de autos; no le pares al lado con los puños potenciados.",
+      "Nivel 6: R + W es kill real contra el que esté a media vida; no te quedes bajo en línea con su R en mano.",
+      "Q maxeada (nivel 9): su daño de all-in y de duelos en side lane sube bruscamente.",
+      "Segundo punto en R (11) y full build: frontliner confiable con W de daño verdadero disponible en cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Kayle, Vayne: castigalo en cada caminada hacia vos; su único gap closer es correr y vos tenés el rango.",
+        "Cortale los pies con slows: sin movilidad, un slow bien puesto es prácticamente un stun para Sett.",
+        "Post-6 mantené distancia extra: si te ve bajo de vida, la R te alcanza desde más lejos de lo que pensás."
+      ],
+      "tanks": [
+        "Ornn, Maokai: no le des trades extendidos; la Q pega con % de tu vida máxima y el centro de su W es daño verdadero.",
+        "Comerciá corto y volvé: dejalo quemar la W al aire y recién ahí peleá; tu armadura no sirve contra el centro de la W.",
+        "Parate de lado cuando carga la W: el centro hace daño verdadero, los bordes hacen daño físico que tu armadura come."
+      ],
+      "assassins": [
+        "Esperá que tire la W: es su escudo y su burst; sin ella es un grande lento y sin mitigación para tu combo.",
+        "No allinees con su Grit lleno: el centro de la W te parte la vida incluso a vos.",
+        "Después de que commit con la R en tu equipo, colapsá: no tiene escape para volver a su lado."
+      ],
+      "crowdControl": [
+        "Encadená tu CC en el arranque de la R: queda plantado en el lugar y sin R en mano es inofensivo para tu backline.",
+        "Todo su kit depende de acercarse: un slow anula la Q, la E y la R al mismo tiempo.",
+        "Cuidado con ponerte en línea con tu tanque: la R lo usa a él como proyectil contra vos."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 34,
+        "name": "Anivia",
+        "tips": [
+          "Castigalo con la E en cada intento de acercarse: él tiene que caminar hasta vos y tu rango le cobra peaje en cada paso.",
+          "Usá la pared para cortarle la línea de avance: sin forma de rodear, se queda mirando o come el trade desde afuera.",
+          "Al nivel 6 no te quedes baja con su R en mano: te agarra a vos o a tu tanque y la combo de R + W te borra."
+        ]
+      },
+      {
+        "cid": 57,
+        "name": "Maokai",
+        "tips": [
+          "Usá la Q apenas venga caminando: el empujón lo frena antes de que pegue el primer auto potenciado.",
+          "Comerciá con W root y volvé: tus saplings y tu sustain ganan el desgaste que él no puede cobrar de rango.",
+          "Esperá que tire la W (su única mitigación) para allinear: sin escudo ni burst en mano, tu tanquez gana la pelea larga."
+        ]
+      },
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "No confíes en la W para frenar su engage: Sett no tiene dash, guardala para los junglers y para cancelar la MS de su Q.",
+          "Pokealo con la Q y kitéalo: su rango de auto es corto y vos ganás todos los trades que no se alargan.",
+          "Guardá la R para cuando commit: sacalo volando de tu equipo después de su R y el engage queda en nada."
+        ]
+      },
+      {
+        "cid": 63,
+        "name": "Brand",
+        "tips": [
+          "Pegale con la Q desde fuera de su rango: para alcanzarte tiene que cruzar toda tu zona de daño caminando.",
+          "Mantené distancia del centro de su W: ese punto hace daño verdadero y no le importa tu armadura ni tu vida.",
+          "Post-6 no estés adelantado con poca vida: si te agarra su R, te tira encima de tus propios aliados y morís ahí."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q hacia el objetivo → dos autos potenciados → W en el momento justo para bloquear el trade rival y castigar con el centro",
+        "Stun garantizado con E: parate con un minion (o campeón) del otro lado tuyo para que la E agarre de ambos lados y stunee",
+        "All-in nivel 6: R al objetivo → E al aterrizar para el stun → Q + autos → W con Grit cargado para rematar con daño verdadero",
+        "Engage de teamfight: agarrá un tanque adelantado del rival con R y tiralo sobre su equipo agrupado → E multi → W al centro",
+        "Escape de gank: E con minion detrás para stunear → Q en dirección de tu torre (MS hacia enemigos) → W para bloquear el burst del jungler"
+      ],
+      "tips": [
+        "Dejá que te peguen un poco antes de tirar W: el Grit escala con el daño recibido; una W en seco es escudo chico y daño chico.",
+        "No uses la W como poke a vida llena: es tu única mitigación y el cooldown es largo; sin ella, cualquier all-in te encuentra desnudo.",
+        "Mantené la wave pareja o hacia tu lado: sin movilidad, empujar sin visión te convierte en comida del jungla rival.",
+        "Abrí W nivel 1 y E nivel 2, y maxeá Q primero: es el orden estándar para ganar los trades tempranos de la línea.",
+        "Jugá alrededor de la R: si está en cooldown desenganchá; con R en mano, cualquier tanque adelantado del rival es proyectil."
+      ],
+      "plan": {
+        "early": "Sé el bully de la línea: ganá los trades cortos con Q + autos, mantené la wave de tu lado y con R en mano buscá el kill o seteá el gank de tu jungla.",
+        "mid": "Split push en el side con tu duelo ganador, cobrá objetivos de tu lado y agrupate cuando no queden torres ni objetivos cerca; escalá con Stridebreaker y Cleaver.",
+        "late": "Flankeá y usá la R sobre el más adelantado del rival para tirarlo encima de su equipo, entrá con E multi y después del engage volvé con tus carries a pelar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/sett/build",
+      "https://mobalytics.gg/lol/champions/sett/guide",
+      "https://mobalytics.gg/lol/champions/sett/counters"
+    ]
+  }
+}

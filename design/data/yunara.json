@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "yunara",
+    "ddragonId": "Yunara",
+    "name": "Yunara",
+    "titleEs": "La Fe Inquebrantable",
+    "cid": 804,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.54,
+    "pr": 7.63,
+    "br": 4.33,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0,
+      "middle": 0.3,
+      "bottom": 99.4,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yunara.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yunara_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yunara_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 53.12, "games": 337 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 52.87, "games": 976 },
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 52.85, "games": 2628 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 52.82, "games": 2429 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 52.81, "games": 2386 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 52.79, "games": 6818 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 52.61, "games": 306 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 52.56, "games": 15113 }
+  ],
+  "weakAgainst": [
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 43.86, "games": 342 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 44.58, "games": 240 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 46.14, "games": 544 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 46.23, "games": 664 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 46.6, "games": 1719 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 46.61, "games": 221 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.09, "games": 395 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 47.51, "games": 642 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q cargada le da rango de tiradora con splash: si el enemigo se agrupa, cada auto pega a varios y su daño se multiplica sin depender de skillshots.",
+      "Daño mixto real: la pasiva convierte los críticos en daño mágico y la Q suma on-hit mágico, así que apilar armadura contra ella no alcanza.",
+      "Utilidad de sobra para un ADC: slow en la W, ghost y velocidad en la E, y con la R la E se vuelve dash, así que kitea y persigue mejor que la mayoría.",
+      "Pico de nivel 2 muy fuerte: W + Q stackeada gana casi cualquier trade temprano si llega primero al nivel.",
+      "Sinergia con casi cualquier support: no necesita una dupla específica para funcionar en soloQ, lo que la hace flexible en el pick."
+    ],
+    "weaknesses": [
+      "Sin la R no tiene dash: la E sola únicamente da velocidad y ghost, así que un gank bien armado la mata aunque tenga Flash.",
+      "Es de papel y no compra defensivos: el burst de un mago o un asesino la borra antes de que llegue a stackear la Q.",
+      "Depende de la barra de Liberación: si entra a pelear con la Q vacía su daño se cae y pierde trades que con stacks ganaría de sobra.",
+      "El early depende del support: si su compañero no sigue el ritmo, queda expuesta en cada trade y en cada wave empujada.",
+      "Muy dependiente de oro: sin items no tiene daño, así que negarle farmeo o forzarla a pelear sin componentes la deja intrascendente."
+    ],
+    "powerSpikes": [
+      "Nivel 2: W + Q activa con la barra cargada es su primer all-in serio; si llega antes al level, el trade sale casi gratis.",
+      "Nivel 6: la R mejora la W (rayo con slow) y la E (dash), así que en el 2v2 pasa de tiradora frágil a amenaza real.",
+      "Primer componente de daño: el trade deja de ser parejo y cada auto con Q activa duele de verdad.",
+      "Nivel 9 y 11: la Q maxeada y el segundo punto de R suben el splash y el rayo; en teamfights empieza a castigar grupos.",
+      "Dos items completos: ahí el splash de la Q convierte cualquier pelea agrupada en una masacre a favor de ella."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Kog'Maw: pegale desde fuera de su rango de auto y el lane se vuelve farmeo seguro, porque ella necesita acercarse para stackear la Q.",
+        "Si ves la barra de Liberación llena, retrocedé diez segundos: sin stacks tradea mal y no puede sostener el intercambio.",
+        "Empujale la wave y obligala a farmear bajo torre: es muy dependiente de oro y su early se cae si no llega cómoda al nivel 2."
+      ],
+      "tanks": [
+        "Apilá resistencia mágica, no solo armadura: la pasiva le agrega daño mágico a los críticos y la Q pega mágico on-hit, así que la armadura sola no te salva.",
+        "Encadená tu CC apenas se acerque a stackear: si la trabás antes de que active la Q, su ventana de daño se cae completa.",
+        "Aguantá la primera Q activa con escudo o curación: es daño de ráfaga corta y después queda varios segundos sin nada con qué pelear."
+      ],
+      "assassins": [
+        "Zed, Katarina, Syndra: esperá a que gaste la R y entrá; sin Trascendencia no tiene dash y una E de velocidad no la salva de un all-in.",
+        "Atacala con la barra de Liberación vacía: recién llegó a la lane o volvió de base, no tiene stacks y tradea muchísimo peor.",
+        "Flankeala en teamfight y matala primero: es inmóvil y frágil, y si cae, el equipo enemigo se queda sin daño sostenido."
+      ],
+      "crowdControl": [
+        "Encadená el CC al inicio de la pelea: si la trabás antes de la Q activa, el splash nunca llega y su teamfight se apaga.",
+        "Guardá un stun para cuando active la R: en Trascendencia la E es un dash y puede saltar tu engage si no la tenés cubierta.",
+        "No agrupes al equipo contra ella: el splash de la Q pega a todos los que están cerca del objetivo, y separarse es daño mitigado gratis."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Farmeá y pokeá con Q desde fuera de su rango de auto: mientras no te acerques, ella no puede stackear la Q ni tradear.",
+          "Guardá el stun (E) para cuando camine hacia adelante con la barra llena: si la trabás ahí, pierde el trade y la wave entera.",
+          "Empujale la wave con W para que farmee bajo torre: sin oro no escala y su early depende de llegar cómoda al nivel 2."
+        ]
+      },
+      {
+        "cid": 63,
+        "name": "Brand",
+        "tips": [
+          "Zonéala con W y Q desde rango máximo: su daño exige acercarse y vos podés pegarle sin darle la vuelta.",
+          "Cuando se acerque a stackear con autos, tirale el Q stun sobre la wave: queda trabada justo donde la querés.",
+          "No te quedes pegado a tus minions: el splash de su Q te pega a vos también y te come el trade sin que lo busques."
+        ]
+      },
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Cambiá trades largos por trades cortos: con E + Q le pegás desde lejos y su ráfaga no llega a contestarte.",
+          "Tirá Nevermove (E) cuando avance con la Q llena: enganchada y sin stacks, el all-in se lo come ella.",
+          "En teamfight entrá con la R y quedate en el medio del equipo enemigo: el drenaje le gana a su daño de tiradora y el splash no te mata."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q y escalá: cada stack te saca del rango donde ella puede ganar el trade.",
+          "Guardá la jaula (E) para el momento en que active la R: en Trascendencia la E es un dash y la jaula le corta la salida.",
+          "Al nivel 6 no te pares cerca de la wave: W + Q activa + R le alcanza para matarte si estás sin escape."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in completo: W (slow) → E → auto para cargar la Q → R → E otra vez (dash) → autos y W de nuevo para rematar",
+        "Engage con Flash: W → Flash → E → auto → R → auto → E (dash) → autos → W al final",
+        "Trade de lane: autos a los minions para llenar la barra → Q activa → autos al rival → W para slowear si quiere huir",
+        "Escape con Trascendencia: R → E (dash) para cruzar la pared o abrir distancia → W con slow para que no te sigan",
+        "Teamfight: R primero para tener todas las básicas mejoradas → W/rayo para slowear al grupo → Q activa y autos al más cercano para salpicar"
+      ],
+      "tips": [
+        "Nunca entres a pelear con la barra de Liberación vacía: cargala con autos a minions (más rápido si pegás a campeones) antes de cualquier trade.",
+        "Guardá la R para el momento clave: sin Trascendencia la E no es dash y no cruzás paredes, así que sin R estás muerta si te gankeanean.",
+        "Con la R activa la Q se activa al instante: no la desperdicies antes de entrar, guardala para el primer auto dentro de la pelea.",
+        "Pegale al objetivo que tenga aliados cerca: el splash de la Q es daño gratis y en peleas agrupadas vale más que perseguir al squishy.",
+        "Apuntá a 100 minions cada 10 minutos: es una tiradora muy dependiente de oro y sin items el splash no existe."
+      ],
+      "plan": {
+        "early": "Llegá primero al nivel 2, cargá la Q con la wave y buscá el trade con W + Q activa, siempre cerca de tu torre porque sin R no tenés escape.",
+        "mid": "Quedate pegado al support, tirá la torre de bot y rotá a mid, y seguí farmeando parejo: cada pick con jungla o support vale más que un trade forzado.",
+        "late": "Jugá atrás cerca del support, abrí con R para tener el W-rayo y la E-dash, y usá la Q activa sobre el objetivo con más gente alrededor para salpicar a todo el equipo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/yunara/guide",
+      "https://mobalytics.gg/lol/champions/yunara/combos",
+      "https://mobalytics.gg/lol/champions/yunara/counters"
+    ]
+  }
+}

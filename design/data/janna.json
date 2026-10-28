@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "janna",
+    "ddragonId": "Janna",
+    "name": "Janna",
+    "titleEs": "la Furia de la Tormenta",
+    "cid": 40,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.38,
+    "pr": 4.29,
+    "br": 0.91,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.4,
+      "jungle": 0,
+      "middle": 0.2,
+      "bottom": 0.1,
+      "support": 99.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Janna.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Janna_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.5, "games": 607 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 57.43, "games": 491 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 56.94, "games": 555 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 56.66, "games": 856 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 56.43, "games": 443 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 56.17, "games": 308 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 56, "games": 225 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 55.25, "games": 257 }
+  ],
+  "weakAgainst": [
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 47.3, "games": 315 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 48.22, "games": 674 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 48.37, "games": 1501 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 50.07, "games": 681 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 50.29, "games": 3072 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 50.49, "games": 2426 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 50.51, "games": 1372 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 50.64, "games": 1878 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es la definición de anti-engage: la Q cargada y la R empujan a cualquier que intente entrar, así que tu all-in se desarma en un segundo.",
+      "El escudo de la E no solo absorbe daño: da AD, así que en cada trade tu ADC pega más fuerte y ganás los intercambios cortos.",
+      "La W te da velocidad de movimiento pasiva y ralentiza al objetivo: pegas y te vas sin que te alcancen, y roameás más rápido que cualquier soporte.",
+      "La pasiva de Tailwind le suma velocidad de movimiento al equipo al acercarse a vos: tus roams y los engages de tu jungla llegan siempre primero.",
+      "Cero dependencia de acertar skillshots para ser útil: escudo, slow y knockback pelean solos aunque el lane venga mal."
+    ],
+    "weaknesses": [
+      "Daño casi nulo: si tu ADC no acompaña el trade, un pokeo con W es un desperdicio de maná y no cambia la línea.",
+      "Es squishy y sin escape real más allá del R: un Blitzcrank que te engancha a vos en vez del ADC te mata en la ventana de tu R.",
+      "La Q tiene wind-up lento si se suelta al toque: con buena reacción se camina la ráfaga y quedás sin disengage para el resto del trade.",
+      "La R canalizada te planta en el medio: si la usás tarde o encerrada contra una pared, te ejecutan a vos en lugar de salvar al carry.",
+      "Su maná se funde si spamea escudos: forzá trades largos y la dejás sin E para la próxima pelea."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con E + W: el escudo con AD y el slow hacen que cada trade corto vaya a favor de tu duo; no le aceptes peleas cortas a esa altura.",
+      "Primer item de soporte resuelto (Moonstone/Shurelya): el maná deja de ser problema y podés escudar y curar en cada intercambio.",
+      "Nivel 16 con R de rango y curación fuertes: el Monsoon voltea engages completos; no te commitées a una pelea si la ves atrás del carry con la R en mano.",
+      "Late con prioridad de velocidad de movimiento: nunca la atrapás; la única forma de matarla es engancharla a ella primero."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokeala en cada subida a farmear: su daño de respuesta es bajo y si la mandás a la torre, pierde el control de visión del bush.",
+        "Cuando gaste la E en sí misma o en el ADC equivocado, todo-in en la ventana: el escudo tiene cooldown largo a niveles bajos.",
+        "Guardá tu propio disengage para su R: si la sorprendés sin la ultimate lista, no tiene forma de despegarse de vos."
+      ],
+      "tanks": [
+        "Su engage (Nautilus, Leona) pierde contra el knockback de la R: esperá que tire el gancho o el all-in y desarmalo recién ahí, no antes.",
+        "Comprá Grevious/antivida si tu equipo no escala: Janna no tanquea, es el ADC el que muere tarde o temprano por tu daño sostenido.",
+        "Ignorala en la teamfight: su daño es irrisorio; si tu equipo la mira a ella, el carry hace lo que quiere gratis."
+      ],
+      "assassins": [
+        "Su W la salva del primer salto: esperá que lo gaste en el slow o en roamear y saltala despegada del carry.",
+        "Zed, Talon, Qiyana: forzá la R temprano con presión lateral; si la ultimate se usa para desengancharse a sí misma, el carry queda sin peel.",
+        "Sé paciente en la teamfight: el único frame vulnerable de Janna es durante la canalización de su R; entrá ahí, no antes."
+      ],
+      "crowdControl": [
+        "Blitzcrank y Thresh la matan si enganchan a ella y no al ADC: tirá el gancho cuando se adelante a ward y ejecutala antes de que llegue la R.",
+        "Encadená CC en cadena: un stun en el arranque de su canalización de R cancela la ultimate entera y la pelea se vuelve 5v4.",
+        "Zilean y Renata la superan en utility: escaloná tus engages para que tenga que elegir entre escudar al carry o desengancharse, no le dejes tiempo para ambas."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 888,
+        "name": "Renata Glasc",
+        "tips": [
+          "Tirale la W (bailarina) en cada trade extendido: si tu ADC muere, vuelve con vida y la curación de Janna no alcanza para igualar ese intercambio.",
+          "Guardá el Q para cancelar la canalización de su R: un solo hit en el momento justo y la ultimate de Janna desaparece sin efecto.",
+          "Si ella desengancha con R, guardá tu W para después: el revivir de tu pasiva convierte la pelea de vuelta; no entres sin esa carta en mano."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Pokeala con bombas dobles cuando avance a ward o a farmear: su rango es corto y no puede responder daño, solo desgastarse.",
+          "Tu R (viaje en el tiempo) niega su burst de all-in: si el enemigo quema todo en tu ADC y revive, Janna no tiene respuesta de daño para terminar el trabajo.",
+          "Aprovechá tu velocidad: acelerá a tu ADC para esquivar la Q cargada; sin el knockback, Janna es solo un escudo con cooldown."
+        ]
+      },
+      {
+        "cid": 53,
+        "name": "Blitzcrank",
+        "tips": [
+          "Escondete en el fog y tirá el gancho cuando se adelante: enganchada a ella, no tiene escudo suficiente para sobrevivir el combo entero.",
+          "Si agarra a tu ADC igual, no desesperes: el knockback de su R interrumpe tu gancho, así que esperá a que lo gaste antes de hacer el pull decisivo.",
+          "Forzála a usar la E temprano con amenazas de gancho: escudo gastado es una Janna descalza por los próximos 10 segundos."
+        ]
+      },
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Escalá mejor que ella: no aceptes trades cortos, acumulá stacks de la pasiva y ganá el lane por sustain y maná a largo plazo.",
+          "Tu E de aura le gana el trade corto si juega agresiva: cuando avance a pegar con W, respondé con el power chord y obligala a gastar escudo en defensa.",
+          "En late tu R de área hace más que su knockback: buscá peleas 5v5 agrupadas donde su R de un solo empujón no alcance para desarmar el engage."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E al ADC → AA del ADC con el escudo puesto → W al rival → AA de nuevo (el AD del escudo multiplica cada auto de tu carry)",
+        "Pokeo seguro: esperá que el rival gaste la habilidad de tradeo → caminá, AA → W → volvé atrás con el boost de velocidad de la pasiva",
+        "Engage sorpresa: W al objetivo → doble cast de Q instantáneo → AA (si venís desde el fog, la ráfaga entra sin reacción posible)",
+        "Knockback al equipo: Flash detrás del objetivo → R de un tap → W apenas aterriza para que tu equipo lo cobre entero",
+        "Disengage de teamfight: R de un solo tap cuando el enemigo entra → Q cargada sobre la retaguardia → Shurelya para reubicar a tu equipo"
+      ],
+      "tips": [
+        "Pegá con W y autos solo cuando el rival gastó la habilidad principal: tu daño es bajo, el valor real está en tradear cuando no pueden responder.",
+        "La Q cargada es tu vida: no la tires como poke a distancia corta; cargala detrás de tu torre y soltala como disengage cuando te busquen.",
+        "Escudá al que está siendo atacado, no a vos: la E puesta sobre el ADC que tradea genera más valor por el AD que un escudo desperdiciado.",
+        "No uses la R para curar si hay un engage en pantalla: el Monsoon es primero un botón anti-engage; la curación es el bonus, no el plan.",
+        "Nunca te adelantes sola a wardear sin visión del jungla: sos el rehén perfecto y sin vos el equipo no tiene peel para el carry."
+      ],
+      "plan": {
+        "early": "Pokeá con W y autos en cada ventana de habilidad gastada, escudá al ADC en los trades cortos y usá tu velocidad para ganar el control de bush sin morir.",
+        "mid": "Pegate al equipo y roameá con la W para llegar primero a las peleas de río; buscá picks con la Q cargada y cubrí siempre la retaguardia del carry.",
+        "late": "Jugá de reacción: guardá R y Q para desarmar el engage enemigo, escudá al carry en cada pelea y dejá que los items de utilidad hagan el trabajo en las peleas agrupadas."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/janna/build",
+      "https://mobalytics.gg/lol/champions/janna/combos"
+    ]
+  }
+}

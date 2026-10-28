@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "pantheon",
+    "ddragonId": "Pantheon",
+    "name": "Pantheon",
+    "titleEs": "la Lanza Inquebrantable",
+    "cid": 80,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.36,
+    "pr": 4.33,
+    "br": 3.78,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 42.3,
+      "jungle": 8.7,
+      "middle": 11.2,
+      "bottom": 0.5,
+      "support": 37.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Pantheon.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Pantheon_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 55.96, "games": 445 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 53.99, "games": 426 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 53.93, "games": 2227 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 53.92, "games": 779 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 53.91, "games": 1265 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 53.82, "games": 773 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 53.53, "games": 566 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 53.05, "games": 835 }
+  ],
+  "weakAgainst": [
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 40.58, "games": 276 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 44.2, "games": 371 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 44.48, "games": 825 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 44.93, "games": 739 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 45.63, "games": 1578 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 46.25, "games": 586 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 46.28, "games": 484 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 46.71, "games": 319 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E (Aegis Assault) bloquea todo el daño frontal mientras la mantiene: un all-in tuyo de frente se estrella contra el escudo y termina en trade perdedor.",
+      "La Q pica y ejecuta desde el arbusto sin respuesta: si pelea pegado a la maleza, te pega y vos no lo tocás.",
+      "La W es un stun point-and-click con salto: si te agarra con la pasiva cargada, la combo entera entra sin posibilidad de esquivar.",
+      "Con la R tiene pick potencial en todo el mapa: en mid game cae del cielo sobre vos o tu carry si no hay visión."
+    ],
+    "weaknesses": [
+      "Sin la E en mano es de papel: ese es tu all-in; forzá que la gaste para farmear o pelear y saltalo en el cooldown.",
+      "Pierde los all-ins de nivel 6 contra ultimates de daño puro: tu R le gana el duelo directo a la suya.",
+      "Si tira la R sin follow-up queda solo en medio del equipo rival: castigá el aterrizaje con CC y borrálo ahí mismo.",
+      "Con armadura comprada su burst deja de ejecutar y no tiene plan B: escala mejor vos quedando vivo que él pegando.",
+      "Sin R es un melee sin gap closer: jugale de rango y no puede ni cerrar la distancia para comerciar."
+    ],
+    "powerSpikes": [
+      "Nivel 1-3 ya es el bully del lane: no aceptes un trade largo early sin tu combo de arranque lista.",
+      "Componente del primer item con maná: empieza a spamear Q sin fondo; no te pares en línea con la wave.",
+      "Nivel 6: la R le da plays de mapa; avisale a tu jungla cuando se la comió porque sin ult no hay picks.",
+      "Nivel 9 con la Q maxeada: burst brutal, cualquier descenso a media vida termina en ejecución.",
+      "Late game cae fuerte contra stacks de armadura: su ventana de potencia es early/mid, estirá la partida si venís parejo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Jayce, Kennen, Quinn: pegale desde fuera del rango de tu W y el lane es gratis; para llegar solo tiene caminar o R, y ambas se ven venir.",
+        "Castigá cada Q que tira desde el arbusto con poke de vuelta: si no puede farmear del arbusto, su identidad de lane se apaga.",
+        "Nivel 6 adelante wardá los flancos: tu único all-in posible es la R y con visión adelantada no aterriza nunca bien."
+      ],
+      "tanks": [
+        "Malphite, Ornn, Sion: comprá armadura temprano y negale el kill; el bully sin kills es solo un melee con maná caro.",
+        "Ganale las peleas largas: su burst es una tanda y después queda apretando habilidades de poco daño contra tu tanqueo.",
+        "Usá tu CC para interrumpirlo entre el W y la Q: cortarle la combo a mitad es lo peor que le puede pasar."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para farmear o bloquear poke: es tu ventana; sin escudo, tu burst de asesino lo borra antes de que la W te stunee.",
+        "Si te agarra con la pasiva cargada estás en problemas: contá sus casts y no te pares en rango de W con 5 stacks hechos.",
+        "Después del nivel 6 no duées de igual a igual: si tiene R y vos también, esperá que la tire primero o usá la tuya para escapar el engage."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas aterrice de la R: el descenso tiene delay y es el momento perfecto para interrumpirle la combo entera.",
+        "Maokai, Malphite, Cho'Gath: un engage encima de él antes de que arranque convierte al agresor en blanco inmoble.",
+        "Guardá el CC para después de que use la E ofensivamente: sin escudo y sin movilidad, un solo root lo termina."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Tus torretas le niegan el all-in: armá el set al borde de tu rango de farm y no puede W sin comerse el daño completo de la torreta.",
+          "Pokealo con la Q cada vez que baje a last hit: cada paso que da hacia la wave le cuesta vida y no tiene sustain para bancárselo.",
+          "Al nivel 6 ganás el all-in con R + torretas: si se tira con W encima tuyo, soltale la R y la combo completa encima."
+        ]
+      },
+      {
+        "cid": 85,
+        "name": "Kennen",
+        "tips": [
+          "El lane es tu rango contra su nada: marcálo con Q en cada acercamiento y no le regales que te pegue de vuelta, tu rango supera el suyo.",
+          "Esperá a que gaste la E de escudo antes de allinear: con la E en cooldown, tu E de velocidad + W stun + R lo borra sin respuesta.",
+          "Con la R en mano buscá el all-in cuando se acerque a farmear: su burst no te mata si entrás con la E activada."
+        ]
+      },
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Tu escala de vida crece más rápido de lo que su burst mata: armate armadura temprano y negale cada all-in; con niveles de tanque no te ejecuta.",
+          "Detoná la W después de que arranque su combo: el burst le entra al escudo de la E de él y tu explosión le pega después.",
+          "Esquivá la Q cargada caminando lateral: sin esa habilidad en el trade, lo que queda es un melee con maná que se funde."
+        ]
+      },
+      {
+        "cid": 36,
+        "name": "Dr. Mundo",
+        "tips": [
+          "Tu regeneración supera su poke: dejalo gastar la Q en vos; a los minutos vos estás lleno y él se quedó sin maná para repetir.",
+          "Comprate vida y resistencias antes de que parezca necesario: su burst está balanceado contra squishies y contra vos no ejecuta nada.",
+          "Al nivel 6 activá la R para bancarte su all-in completo: después de la tanda de burst, tu Q + E de pelea larga lo corrés del lane."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W encima del objetivo → AA → Q → E (el AA garantizado de la W te deja la Q corta de ejecución servida)",
+        "Trade corto: Q → AA → W → AA → E → AA, y Q de nuevo cuando vuelva del cooldown si no hizo flash",
+        "Con la pasiva cargada: W → AA → Q → AA → E para chase o desenganche (cada habilidad sale empoderada por Mortal Will)",
+        "All-in completo: R hacia el objetivo → Q + AA → W al aterrizar → AA → E → AA → Q final",
+        "Engage de equipo: R al flanco → W al carry apenas tocás suelo → AA → Q → E para bloquear la respuesta del resto"
+      ],
+      "tips": [
+        "Maxeá Q primero, E segundo y W al final (nivel 1 Q, 2 W, 3 E): el poke y la ejecución de la Q son tu fuente de ventaja en el lane.",
+        "Administrá Mortal Will: entrá al trade con los 5 stacks hechos para que la primera habilidad salga empoderada, no en cero.",
+        "Usá los arbustos para pokear con Q sin respuesta: cada Q desde la maleza es rango gratis que el rival no contesta.",
+        "No gastes la E como daño: es tu seguro de vida; guardala para bloquear el burst rival o el aluvión de torre, no para abrir el combo.",
+        "La W es un stun de punto: usala para anular canalizaciones y escapes (la R de Katarina, la E de Akali), no como iniciación sin pasiva lista."
+      ],
+      "plan": {
+        "early": "Sos el bully del lane: comercia con W + Q cada vez que la pasiva esté cargada, mantené la wave pareja para poder correr al rival y con R lista buscá jugadas por el mapa.",
+        "mid": "Split push en side lanes con tu duelo ganador, asegurate objetivos laterales y buscá picks con la R; agrupate cuando no queden objetivos para tomar.",
+        "late": "Caés fuerte: flankeá desde un bush sin ward para R sobre el carry y después de entrar usá la E para peel; no pelee sin R en mano, estirá hasta tenerla."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/pantheon/guide",
+      "https://mobalytics.gg/lol/champions/pantheon/combos",
+      "https://app.mobalytics.gg/lol/champions/pantheon/build"
+    ]
+  }
+}

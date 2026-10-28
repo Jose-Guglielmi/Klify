@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "sona",
+    "ddragonId": "Sona",
+    "name": "Sona",
+    "titleEs": "la Virtuosa de las Cuerdas",
+    "cid": 37,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.63,
+    "pr": 2.37,
+    "br": 0.18,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0,
+      "middle": 0.2,
+      "bottom": 0.2,
+      "support": 99.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sona.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sona_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 60.75, "games": 214 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 58.85, "games": 520 },
+    { "cid": 43, "slug": "Karma", "name": "Karma", "vsWr": 56.65, "games": 1407 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 56.47, "games": 255 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.49, "games": 546 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.08, "games": 581 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 54.7, "games": 1435 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 54.34, "games": 852 }
+  ],
+  "weakAgainst": [
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 48.51, "games": 569 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 48.77, "games": 408 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 48.97, "games": 1266 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 49.12, "games": 627 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 49.28, "games": 1246 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 49.71, "games": 2416 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 50.23, "games": 1320 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 50.61, "games": 1798 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Todas sus auras son point-and-click y no se esquivan: daño, curación, escudo y velocidad llegan sin que tenga que acertar un solo skillshot.",
+      "La R (Crescendo) es un stun en cono a rango largo: si el equipo rival se agrupa en el pozo o en un pasillo de jungle, una sola tecla define la pelea entera.",
+      "Escala como una monstruosidad: cada item de support le multiplica curación, escudo y daño de aura al mismo tiempo, así que en late es un segundo carry.",
+      "La W cura a dos y deja un aura de escudo: convierte cualquier trade corto de bot lane en una guerra de desgaste que ella gana por maná y regeneración.",
+      "El Acorde Dominante le regala un golpe extra cada pocos casts con efecto según la última habilidad: burst con Q, anti-curación con W y slow con E, todo gratis."
+    ],
+    "weaknesses": [
+      "Es de papel: HP y armadura de los más bajos del juego y cero dash o escape; si la agarra un engage o un gank, se muere antes de llegar a la torre.",
+      "Early game malísimo: antes del nivel 6 no tiene CC propio ni daño relevante, así que el 1-3 es la ventana para empujarla y negarle la wave.",
+      "El maná es su reloj: la Q y la W se comen la barra, y si la forzás a pokear y curar sin parar se queda seca y deja de existir en la lane.",
+      "Depende de estar pegada al equipo para que las auras toquen a alguien: aislada por un flank o un pick, sus auras no le llegan a nadie y se vuelve inútil.",
+      "Su único recurso defensivo es la R (con cast time) y el Flash: contá esos dos y después cualquier engage sobre ella es kill gratis."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera amenaza real con Crescendo, tanto para pelear el 2v2 como para armar el gank del jungla; castigala fuerte antes de ese punto.",
+      "Primer item de support completo (Echoes of Helia o Moonstone): la curación y el escudo dejan de ser simbólicos y tu bot lane ya no gana trades largos.",
+      "Dos o tres items de support: momento en el que el aura cura a todo el equipo en cada pelea y el daño sostenido del rival deja de alcanzar.",
+      "Niveles 11 y 16: la W y la E escalan y el cooldown de la R baja; en mid-late la tiene casi siempre lista, así que no asumas que la gastó."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Brand, Karma, Lux, Neeko: peleá desde afuera del rango de su Q y empujá la wave; sin necesidad de acercarse, ella no puede contestar el poke.",
+        "Cada W que gaste en curar es tu ventana: el costo de maná es alto, así que el trade siguiente lo pierde y la dejás sin sustain.",
+        "Forzá el nivel 1-3: sin R y con la Q de daño bajo, cualquier mago de rango la empuja contra la torre y le corta los stacks del support item."
+      ],
+      "tanks": [
+        "Rell, Blitzcrank, Thresh, Leona, Nautilus: un solo engage acertado la mata, porque su HP y su armadura son de los más bajos del juego.",
+        "Comprá el anti-curación antes de lo normal: si la pelea se alarga sin cortar la W, su sustain gana el desgaste solo.",
+        "Trabajá la wave y no la dejes farmear: si la encerrás en la torre con la wave empujada, el support-tank hace toda la zona y ella no puede salir a stackear."
+      ],
+      "assassins": [
+        "Sylas, Shaco, Ekko: entrá recién después de que gaste la R y el Flash; sin esos dos no tiene absolutamente nada para frenarte.",
+        "Su Crescendo tiene cast time: un dash lateral cuando lo empieza la deja casteada, castigada y sin escape.",
+        "En teamfight flanqueá en vez de pelear de frente: aislada del ADC, sus auras no llegan a nadie y cae en dos golpes."
+      ],
+      "crowdControl": [
+        "Cualquier stun o supresión encadenada la saca de la pelea antes de que entre la primera aura: es la prioridad número uno del pick.",
+        "Guardá un CC para después de su R: si la dejás castear Crescendo sobre el grupo, la pelea ya está perdida.",
+        "No peleen en pozo, pasillos ni jungle cerrada: ahí el cono de la R toca a todo el equipo; obligala a pelear en río abierto."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Entrá con W y R sobre ella y no la sueltes: sin dash ni escape, un engage bien puesto la mata antes del nivel 6.",
+          "Cortá la curación temprano: si su W sigue curando, aguanta el trade que por números deberías ganar.",
+          "Jugá pegado a la wave y buscá el nivel 2 para el all-in: hasta el 6 su única respuesta es correr hacia la torre."
+        ]
+      },
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Tragala con la W cuando se adelante a pokear: sin poder castear no da auras y su ADC queda solo en la lane.",
+          "Su daño early es bajo contra un tanque con sustain: forcejá el trade largo, que ella pierde por maná.",
+          "Empujá y negale los stacks del support item: si el primer item le llega tarde, su spike se atrasa toda la partida."
+        ]
+      },
+      {
+        "cid": 235,
+        "name": "Senna",
+        "tips": [
+          "Tu rango es mayor: pegale desde afuera del alcance de su Q y no la dejes acercarse a curar; cada stack tuyo es un trade que ella no contesta.",
+          "Cuando gaste la R en un engage fallido, ese es tu all-in: sin Crescendo no tiene forma de frenarte.",
+          "Empujá y rotá: si la dejás sola con la wave en contra pierde oro, y sus auras no valen nada lejos del equipo."
+        ]
+      },
+      {
+        "cid": 497,
+        "name": "Rakan",
+        "tips": [
+          "Tu engage es más rápido: entrá con W y E sobre ella antes de que llegue a la posición de R, y tirá el stun cuando ya esté casteando.",
+          "Baitéale el Flash: sin Flash le queda solo la R como salida y se la podés forzar cuando quieras.",
+          "En teamfight flanqueala con tu carry: aislada del grupo, sus auras no curan ni escudan a nadie."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q (Himno del Valor) sobre el rival → auto con Acorde Dominante encima → W para devolver la curación del trade",
+        "Doble golpe de pasivo: con dos stacks, AA con Acorde → Q inmediato → otro AA; es la forma más rápida de meter dos golpes potenciados seguidos",
+        "Pick/engage: E (velocidad) para entrar → Flash → R (Crescendo) → Q → AA con Acorde, así el stun no se desperdicia",
+        "Teamfight: R sobre el grupo → Q → AA → W → AA → E para reposicionar, alternando Q y W para mantener las dos auras arriba todo el tiempo",
+        "Sustain en lane: W cuando el ADC esté por debajo del 60% y la wave esté trabada, nunca en el primer golpe del trade"
+      ],
+      "tips": [
+        "No spamees Q y W a vida llena: el maná es lo único que te mantiene en lane y sin barra perdés el nivel 6 y la lane entera.",
+        "Maxeá W primero, después Q y E: la curación y el escudo son tu valor real en pelea, el poke de la Q es solo el adorno.",
+        "Guardá la R para cuando el rival comprometa el engage, no para abrir: es tu único CC y tu única salida.",
+        "Posicionate detrás del ADC pero dentro del rango de aura: si te separás del grupo no curás a nadie y si te adelantás te matan.",
+        "Elegí el pasivo antes de pelear: Q para burst, W para cortar curación, E para ralentizar; pensalo mientras se carga, no cuando ya estás encima."
+      ],
+      "plan": {
+        "early": "Jugá atrás, farmeá los stacks del support item con Q a distancia y administrá el maná como si fuera oro; no aceptes trades largos antes del 6 y pedí gank recién con la R disponible.",
+        "mid": "Agrupá con el equipo y mantené las auras arriba en cada objetivo; buscá picks con E + Flash + R sobre el que se adelante y curá antes de que entre el daño, no después.",
+        "late": "Quedate pegado al carry en la última línea, alterná Q y W para tener las dos auras siempre activas y reservá la R para cortar el engage enemigo o cerrar la pelea agrupada."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/sona/build",
+      "https://mobalytics.gg/lol/champions/sona/combos",
+      "https://mobalytics.gg/lol/champions/sona/counters"
+    ]
+  }
+}

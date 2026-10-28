@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "pyke",
+    "ddragonId": "Pyke",
+    "name": "Pyke",
+    "titleEs": "el Destripador del Muelle Rojo",
+    "cid": 555,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.39,
+    "pr": 6.12,
+    "br": 20.14,
+    "analysed": 9474376,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0.1,
+      "middle": 0.6,
+      "bottom": 0.2,
+      "support": 99.0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Pyke.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Pyke_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.23, "games": 325 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 53.95, "games": 1075 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.91, "games": 447 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 53.54, "games": 1681 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 53.47, "games": 937 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 53.1, "games": 226 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 53.08, "games": 1560 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 52.65, "games": 302 }
+  ],
+  "weakAgainst": [
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 41.32, "games": 242 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 43.96, "games": 455 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 45.12, "games": 1405 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 46.47, "games": 637 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 46.99, "games": 249 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 47.16, "games": 1461 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 47.73, "games": 4808 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 48.16, "games": 1169 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Movilidad brutal con W + E: entra, aturde al cruzar con la E y se va caminando bajo sigilo; si lo dejás avanzar en los arbustos, el pick es gratis.",
+      "Es el support más rico del juego: cada ejecución con la R le paga a él y a tu compañero el oro completo, así que cada kill suya adelanta todo el early.",
+      "La R es ejecución sin identidad de damage compartido: llegá a media vida y sos blanco; no hayruna de снять 'reparte el oro que. espera a morir",
+      "El gancho (Q) separa targets del equipo: si se stanie detrás de chân minions y te carga, te possono arrastrar Value para tu carry no responda",
+      "Regenera la vida gris fuera de vista: trades que le hacés en la lane se los recupera escondido en el arbusto si no lo perseguís"
+    ],
+    "weaknesses": [
+      "Todo su kit arranca con la Q o la E: si las gasta y fallan, queda desarmado durante varios segundos; ese es tu all-in.",
+      "El stun de la E se interrumpe de caminos: Renata, Thresh (Flay) o cualquier knock lo cancelan en pleno dash y cae descalzo.",
+      "Es squishy real: no puede comprar vida (su pasiva convierte HP extra en AD), así que cualquier burst o CC sostenido lo borra.",
+      "Comete un11 comisión si dependés del oro de la R: fallar la ejecución es quedarte sin reset, sin oro y sin daño; perde la ventana.",
+      "Cae duro late game: si la pelea es 5v5 organizada sin targets aislados, no hay picks y su impacto bajal casi a nada."
+    ],
+    "powerSpikes": [
+      "Level 2: con Q + E listo busca el all-in antes que ustedes; contá la primera wave + 3 melee y no aceptes el trade a ese quiero nivel.",
+      "Level 6: la R desbloquea la ejecución y el oro duplicado; desde acá cualquier squishy a media vida es kill suya si no hay cómo pelearte.",
+      "Botas Mobi completando: el roam se vuelve el arma principal; avisa con pings cada vez que desaparece del bot lane.",
+      "Puntos en R (11/16): baja el cooldown tanto que casi siempre la tiene en mano en cada teamfight; asumí que hay ejecución disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Janna, Soraka, Lulu: quedate siempre detrás de los minions, el gancho necesita línea limpia y cada Q desperdiciada es un trade que perdés vos.",
+        "El escudo o la curación oportuna niega la R: si mantenés al carry arriba de la línea de ejecución, su burst no se convierte en oro.",
+        "Empujá la wave y forzalo a warding: si está pegado a los dendik minions pappeando, no tiene la visión para armar el pick."
+      ],
+      "tanks": [
+        "Nautilus, Leona, Rell: tapá el carrying cuerpo mostrando los minions: ningún hook si lo bloquean vos actividad corporal.",
+        "Enganchalo vos primero: sin gap closer armado (Q anclado o E lista), es un support sin mitigación que muere al primer CC.",
+        "Flay / cancelación de dash: Thresh y compagnie lo arrancan de la E en pleno stun y queda adentro de su propio commit sin escape."
+      ],
+      "assassins": [
+        "LeBlanc, Ekko: esperá que gaste la Q anclada o la E y jumpale recién ahí; sin gap en mano no tiene burst para ganar el trade 1v1.",
+        "Elise y Kha'Zix lo castigan en el río: el cocoón a distancia pega antes de que llegue; no camines al lado de bushes indefensas compartidas.",
+        "Comprá Hexdrinker temprano si sos mid ap burst: su full combo + R no pasa el escudo y te deja caminando la ejecución."
+      ],
+      "crowdControl": [
+        "Renata es el muelle directo: la W point-and-click (Bailout) salva al execute y le aturde el dash, y le roba la economía entera.",
+        "Zilean con la R activa mata su win condition: morir con revive le niega el oro y el reset; gestioná su R como un cool-down más, no como sorpresa.",
+        "Encadená el CC a la E, no al W: mientras anda sigiloso es intocable, pero al cruzar con la dash se frena et air y ahí es fragile."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Cocoon desde rango cuando prepare la E o la W: gostá tu stun antes de que llegue y su combo muere en el arranque.",
+          "No aceptes el trade a nivel 2: con Q + E listo te abre de golpe; jugá atrás de la wave hasta tener el cocoón disponible.",
+          "Castegial en cada ventana de cooldown: si la E está en recarga, es un support squishy caminando sin escape."
+        ]
+      },
+      {
+        "cid": 888,
+        "name": "Renata Glasc",
+        "tips": [
+          "La W (Bailout) point-and-click rompe su kit completo: salva al aliado por arriba de la línea de ejecución y le niega el oro de la R.",
+          "El Q (Handshake) interrumpe la E en pleno dash: esperalo cruzar y tiráselo; queda papas dentro de tu trade sin escape.",
+          "Cargale la R cuando su equipo bucee: lanzar Hostile Takeover contra la dive es lucrar kills gratis en su cara de flanco."
+        ]
+      },
+      {
+        "cid": 497,
+        "name": "Rakan",
+        "tips": [
+          "Entrá vos primero con la W: chocar induce engage contra engage y su E se queda sin stun si vos llegás antes.",
+          "El charm lo lleva directo a tu equipo: si se lanza con la E, un R + W enviado lo corta en pleno commit.",
+          "Outscaleá en late: la teamfight organizada no le da picks y tu kit completo de engage + peeling vale más que su ejecución aislada."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "La R revive mata su ejecución: si el aliado resucita, Pyke pierde el oro, el reset y la ventaja económica que vino a buscar.",
+          "Las bombas castigan desde fuera de su rango de enganche: él necesita línea de Q o dash de E para tocarte y vos pegás a rango.",
+          "Mandá speed al aliado trainado: si nadie puede ser pick, su whole plan collapse y se queda junglando pelea sin rol."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage corto: E atravesando al objetivo (queda aturdido al cruzar) → tap Q encima → AA para cerrar el trade",
+        "Caza con sigilo: W desde el arbusto → E a través del target → tap Q al aterrizar (si no podés enganchar, tap Q te da la lenta) → AAs hasta rango de ejecución → R",
+        "All-in con gancho: Q cargada (te anclás) → al soltarla R sobre el punto de arrastre antes de que aterrice → E o W para retirarte con vida",
+        "Engage de rango extendido: Q cargada → Flash mientras el gancho vuela para extender el alcance → E inmediato sobre el stun → R para ejecutar",
+        "Teamfight multi-stun: E a través de los primeros dos objetivos → R detrás del siguiente mientras el stun te alcanza → Flash en el aire para conectar un tercer stun"
+      ],
+      "tips": [
+        "Aprovechá la pasiva: la vida gris que te sacan en trades se regenera si no estás a la vista; metete al arbusto unos segundos y volvés a la pelea con vida recuperada.",
+        "Distinguí Q cargada de Q tap: cargada te ancla y arrastra al target hacia vos; tap es la lenta instantánea para pokear y aplicar AAs, no la spamees porque es cara en maná.",
+        "Jugá el spike de nivel 2: pegá la primera wave + 3 melee y buscá el all-in cuando llegue antes que el rival; la ventaja de vida early se convierte en kill y oro.",
+        "Gestioná la R como un cooldown, no como estética: si el target tiene Flash disponible, llamá los arrastres al aliado para quemarla antes; fallar la ejecución es quedarte sin oro y sin reset.",
+        "Roameá con propósito: después de ganar o romper el tower bot, rotá a mid con las Mobi y el Umbral para limpiar visión; pero en late quedate con tu equipo, ward solo es muerte."
+      ],
+      "plan": {
+        "early": "Buscá el nivel 2 primero y aguantá el trade, forzá el all-in con el gancho cuando tu Q pueda cruzar sin bloqueo de minions y buscá la kill con E + tap Q + AA antes de que el rival ustěže mana.",
+        "mid": "Controlá la visión de los objetivos con Oracle Lens y Umbral, roameá de lane en lane buscando ejecuciones con la R y convertí cada pick en torre u objetivo con el death timer del rival.",
+        "late": "Estás débil en teamfight frontal: quedate pegado a tu equipo, no ward solo y reservá la R para peel al aliado que lo necesite o para el pick que decide el objetivo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/pyke/build",
+      "https://mobalytics.gg/lol/champions/pyke/guide",
+      "https://mobalytics.gg/lol/champions/pyke/combos",
+      "https://skillgap.pro/blogs/news/top-5-pyke-counters-support",
+      "https://op.gg/lol/champions/pyke/counters"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "shaco",
+    "ddragonId": "Shaco",
+    "name": "Shaco",
+    "titleEs": "el Bufón Siniestro",
+    "cid": 35,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.93,
+    "pr": 4.71,
+    "br": 21.87,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 2.1,
+      "jungle": 76.6,
+      "middle": 0.5,
+      "bottom": 0.1,
+      "support": 20.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Shaco.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shaco_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.51, "games": 426 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 56.27, "games": 853 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 55.92, "games": 1148 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 55.89, "games": 721 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 55.68, "games": 4145 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.66, "games": 318 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 55.53, "games": 1511 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 55.52, "games": 1059 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 43.93, "games": 214 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 46.8, "games": 203 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 47.16, "games": 914 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 47.22, "games": 521 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 47.72, "games": 1926 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 47.77, "games": 291 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 47.78, "games": 1737 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 47.87, "games": 2135 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Las cajas (W) pelean solas: clear de jungla sin perder vida, visión gratis en cada bush y un fear que corta cualquier persecución.",
+      "La Q (Deceive) es blink + invisibilidad con backstab garantizado: ganks desde ángulos que ningún ward cubre.",
+      "El clon (R) es la herramienta de jukeo más fuerte del juego: tanquea torre, bloquea skillshots y explota en cajas al morir.",
+      "Daño de DoT constante con cajas y Shiv: castiga sin arriesgar el cuerpo, y la E ejecuta a los que quedan flotando a media vida.",
+      "Su presión no depende del oro: con el kit base ya tiene ganks, invade y control de objetivos a través de las cajas."
+    ],
+    "weaknesses": [
+      "Un solo control de visión lo apaga: con pink ward y barrido, la Q deja de ser escape y Shaco muere tan rápido como mata.",
+      "Es de vidrio: si le errás al engage o te detectan el clon, no hay plan B; su barra de vida aguanta dos golpes.",
+      "Su daño es DoT y ejecución, no burst: contra tanques con sustain el combo se estanca y necesita varios segundos para matar.",
+      "Depende al cien por ciento de la Q: sin blink no hay gank, no hay escape y no hay backstab; castigá cada Q gastada en clear.",
+      "El clear temprano depende de posicionar cajas bien: si lo invadís antes del nivel 3 lo encontrás lento y desprotegido."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E completas: primera ventana de gank con backstab garantizado; no camines la river sin visión.",
+      "Nivel 6: el clon convierte cada gank en 2v1 y cada dive en jugada segura; asumí que hay caja en cada bush.",
+      "Primer item AP resuelto: las cajas pasan a limpiar oleadas enteras y el DoT escala; dejés de comer cajas a pie.",
+      "Mid game con Liandry's: el DoT apilado derrite a cualquiera que pelee más de cinco segundos; no aceptes peleas largas sin MR."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Taliyah, Karthus, Quinn: baréalos con la Q por el flanco; si entrás de frente comés todo el poke gratis.",
+        "Controlá la visión de tus bushes con sweep: cada caja detectada es un gank muerto antes de nacer.",
+        "Negale el flanco: peleá pegado a tu equipo; la Q de Shaco necesita un ángulo ciego y si no existe, no existe el gank."
+      ],
+      "tanks": [
+        "Comprá control de visión temprano: sin sigilo su clear lento lo deja atrás en oro y tu equipo juega 5v4.",
+        "Lockdown gana: un root sobre el Shaco real (no el clon) lo borra antes de que el DoT te incomode; mirá quién lanza la R.",
+        "El DoT no te mata solo: ganá las peleas largas con sustain y las cajas se quedan sin miedo que dar."
+      ],
+      "assassins": [
+        "En el 1v1, la caja detrás de él te asusta (flee): caminá en ángulo y no atravieses directo por donde la puso.",
+        "Contá sus cooldowns: sin Q en mano Shaco es un cuerpo de papel con un cuchillo; saltalo recién ahí.",
+        "El clon (R) muere con un combo y explota en cajas: no le gastes tu burst principal; identificá al cuerpo real antes de apretar."
+      ],
+      "crowdControl": [
+        "El CC es la respuesta completa: Shaco no tiene tenacity ni cleanse; un stun encadenado después de la Q lo borra.",
+        "Guardá el skillshot para cuando sea visible: mientras está en Q no hay target; quemar cooldowns a la nada es su juego favorito.",
+        "Pink wards y barrido en los bushes de river: no le niegan el blink, pero sí el backstab garantizado, y sin backstab su daño cae a la mitad."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Tu escudo (W) absorbe el daño de las cajas y del Shiv: no aceptes el poke con el escudo en cooldown.",
+          "Forzá el duelo temprano: antes de los items AP, el DoT de Shaco no te va a ganar la barra de vida.",
+          "Tu R te deja seguirlo por todo el mapa: pateale la jungla con visión y no le regales tiempo para posicionar cajas."
+        ]
+      },
+      {
+        "cid": 57,
+        "name": "Maokai",
+        "tips": [
+          "Los saplings (E) revelan la Q invisible cuando camina cerca: sembrá tu jungla y la suya para negarle el sigilo.",
+          "Tu root (Q) y tu knockback (W) son la respuesta al engage: desplazalo apenas sale de la Q y muere sin escape.",
+          "El DoT no te compite la vida: tanqueá los trades largos y peleá alrededor de objetivos donde tus saplings mandan."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Tu duelo 1v1 escala mejor que su combo de un disparo: invitá peleas largas en river, donde la E te cura por cada golpe.",
+          "No persigas al clon: fijate quién pega de verdad en tu barra; el clon muere de un combo y vos quedás con cooldowns gastados.",
+          "Comprá visión antes de cada objetivo: el juego de Shaco vive de picks a ciegas, y un barrido a tiempo mata su plan entero."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "Tu muro (R) corta la Q de escape: tirásela en el pasillo del gank y Shaco queda encerrado sin blink.",
+          "El W desplaza y el terreno volátil (E) castiga cada auto de backstab: peleá en pasillos donde él no pueda flanquear.",
+          "Jugá con tu jungla sembrada de visión: su Q depende de ángulos ciegos y tu muro convierte cualquier retirada en trampa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: Q por el flanco → W detrás del objetivo → AA con backstab → AA → E para ejecutar (la E pega más a vida baja)",
+        "Burst corto: E → Q → AA pegado a la espalda; la velocidad de esos tres golpes decide el trade",
+        "Gank post-6: Q → W detrás del objetivo → R (clon) → AA → E de ejecución; el clon duplica tu daño y tanquea la respuesta",
+        "Juke de teamfight: R1 y mandá el clon lejos → Q invisible al costado → W al cuerpo → reactivá R2 para teletransportar el clon justo antes de que explote",
+        "Duelo en jungla: W en tu propio cuerpo (caja defensiva) → E slow → Q para reposicionarte a la espalda → AA"
+      ],
+      "tips": [
+        "Colocá la W antes de abrir cada camp: el clear sin recibir daño es tu sustain y tu ritmo en la jungla.",
+        "Usá la Q para entrar solo si tenés la E en mano: sin slow ni ejecución, el gank es un paseo caro.",
+        "El backstab es la mitad de tu daño: si no podés ponerte detrás, esperá un segundo; la paciencia vale más que el auto apurado.",
+        "Guardá una caja para la retirada: W en tu propio path de escape convierte cualquier persecución en miedo para el que te sigue.",
+        "Controlá el clon con el re-cast (R2): un clon que corre recto muere gratis; uno que camina hacia el carry te gana la teamfight."
+      ],
+      "plan": {
+        "early": "Full clear poniendo W en cada camp, variá tus rutas para que no te invadan con patrón y buscá el primer gank por el flanco ciego con Q + W.",
+        "mid": "Jugá de pick: barré el bush, esperá al carry aislado y borraselo con Q → W → R; usá el clon para divear torres sin arriesgar el cuerpo.",
+        "late": "Nunca entres primero: flankeá con Q, mandá el clon a absorber el engage rival y ejecutá con E al que quede a media vida; una caja en cada bush del objetivo vale más que un ward."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/shaco/build",
+      "https://mobalytics.gg/lol/champions/shaco/combos",
+      "https://leagueoflegends.fandom.com/wiki/Shaco/LoL"
+    ]
+  }
+}

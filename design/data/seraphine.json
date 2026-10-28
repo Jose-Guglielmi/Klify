@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "seraphine",
+    "ddragonId": "Seraphine",
+    "name": "Seraphine",
+    "titleEs": "la Cantante Soñadora",
+    "cid": 147,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.08,
+    "pr": 7.22,
+    "br": 5.59,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 1.7,
+      "bottom": 5.4,
+      "support": 92.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Seraphine.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Seraphine_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 61.06, "games": 208 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 61.04, "games": 444 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.92, "games": 1010 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 57.23, "games": 2088 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 56.96, "games": 474 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 56.7, "games": 709 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 56.14, "games": 399 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 55.97, "games": 427 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.94, "games": 2382 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 49.12, "games": 283 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 49.25, "games": 4325 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 49.29, "games": 2481 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 49.29, "games": 1615 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 49.53, "games": 5720 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 49.59, "games": 246 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 49.73, "games": 4102 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "CC en cantidad y fácil de acertar: la E frena y la R encadena charm en línea; un buen Encore sobre el equipo agrupado define la pelea entera.",
+      "La R se estira con cada campeón que toca (aliados incluidos): tirada desde atrás de tu equipo llega mucho más lejos de lo que el rival cree.",
+      "W escuda y cura en área (cura extra a los ya escudados): sostiene al ADC en el lane y mantiene al equipo en pie en peleas largas.",
+      "Escala de maravilla con items de support: con Helia y Moonstone cada hechizo tuyo es a la vez daño, escudo y curación.",
+      "Fácil de aprender: el kit no exige mecánica fina, así que la curva de aprendizaje es corta y el impacto alto."
+    ],
+    "weaknesses": [
+      "Stats base bajos y early frágil: antes del primer item cualquier mage support te gana el trade de poke; jugá atrás y saludá con Q nada más.",
+      "Cero escape: ni dash ni invisibilidad; un garfio de Blitzcrank o un gank por la espalda te borran y no hay nada que hacer al respecto.",
+      "La W early es floja: no confíes el sustain en curar a vida llena, el escudo no salva de un all-in bien ejecutado.",
+      "Tiene maná de vidriera: si spameás Q y W sin criterio te quedás seca justo en la ventana de trade del rival.",
+      "Depende de alinear la R: contra equipos que juegan dispersos, el ult queda en un slow caro y tu amenaza desaparece."
+    ],
+    "powerSpikes": [
+      "Level 3 con el kit completo: desde los arbustos, E → Q → auto con la pasiva pega bastante más de lo que el rival espera.",
+      "Level 6: la primera R en línea cambia el 2v2; si el rival se alinea con sus minions, el charm entra seguro.",
+      "Primer item completo (Echoes of Helia): la utilidad por hechizo se dispara y el 2v2 se vuelve casi injugable para el otro bot.",
+      "Puntos 2 y 3 en la R (niveles 11 y 16): menos cooldown y más daño; asumí que hay Encore disponible en cada teamfight.",
+      "Late game 25+: con el build resuelto sos un segundo mago con escudos, y tu potencial de pick con E/R crece cada minuto."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vel'Koz y Zyra te pegan desde más lejos: no te quedes quieta en la wave, movete lateral y pokeá con Q recién cuando avancen a last hit.",
+        "Usá los arbustos para romper el line-up: sin visión de vos, sus skillshots se tiran a ciegas y dejás de comer cada poke.",
+        "Buscá el all-in cuando el mage support tenga el engage en cooldown: una E acertada + R en línea lo borra antes de que reponga."
+      ],
+      "tanks": [
+        "Blitzcrank te busca todo el lane: parate detrás de minions y castigá cada garfio fallado con Q + E; sin garfio es un muñón lento.",
+        "Guardá la E para desenganchar cuando el tanque se tire: el slow y el root posterior te dejan reposicionar mientras tu ADC termina el trabajo.",
+        "W sobre vos misma al primer contacto: el escudo te saca del all-in con vida y el heal en área sostiene a tu ADC de yapa."
+      ],
+      "assassins": [
+        "Jugá pegada a tu carry y soltá W al primer salto: el escudo más la cura son exactamente los dos segundos que el asesino necesita para borrarte.",
+        "Guardá la E para el engage del asesino, no para pokear: un slow a mitad de combo lo deja sin reset y sin pelea.",
+        "No camines la selva sola: sin escape, un asesino fed te encuentra y no hay R que te salve a boca de jarro."
+      ],
+      "crowdControl": [
+        "Encadená el CC de tu equipo justo después de tu Encore: el charm los deja parados para que el resto entre gratis.",
+        "Contra comps de CC comprate Mikael's temprano: limpiarle el stun a tu carry vale más que cualquier item de daño.",
+        "Esquivá con posición, no con reflejos: parate detrás de minions y nunca alineada con tu ADC y media mitad de los skillshots no te alcanza."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango supera al de ella: pokeala con Q y W cada vez que se asome a last hit; Seraphine early no tiene con qué responder.",
+          "Guardá la interrupción para su R: cortarle el Encore en el arranque le borra la única amenaza real del lane.",
+          "Jugá con la wave de tu lado: si se adelanta a pokear, un all-in tuyo la mata antes de que llegue a torre."
+        ]
+      },
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Contá el cooldown de su E aérea: si bajó al lane y no la tiró, quedate detrás de minions hasta ver el capullo volar.",
+          "En el gank, escudate con W apenas se baje de la telaraña y frenala con E: sin el stun de araña, el gank muere en la wave.",
+          "Early te borra de dos ciclos: control ward en el río y nada de extenderte sin visión del jungla rival."
+        ]
+      },
+      {
+        "cid": 902,
+        "name": "Milio",
+        "tips": [
+          "Su R limpia tu charm: esperá a que la gaste (o engancháselo a él primero) antes de comprometer el Encore.",
+          "Pokeá con Q a su ADC: Milio no tiene burst para responder y cada trade de poke lo ganás por rango de hechizo.",
+          "Usá W cuando él use el suyo: tu heal en área supera el suyo en peleas largas de 2v2 y el lane se te da vuelta solo."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Barré las plantas apenas brotan con Q en área: sin plantas, su zona de control y su daño de lane caen a la mitad.",
+          "Su root decide el lane: parate detrás de minions y nunca te alinees con tu ADC para que una E no se lleve puestos a los dos.",
+          "All-in con su E en cooldown: tu E + R en línea gana el 2v2 contra una Zyra desprotegida que ya gastó el engage."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q al rival cuando camine a last hit → auto con la pasiva cargada para sumar el daño extra gratis",
+        "Trade con CC: E (slow) → si se la vuelven a comer, ya entra como root → Q encima mientras están frenados",
+        "All-in 2v2: E → R en línea atravesando al rival (charm) → Q → W sobre tu ADC mientras el charm dura",
+        "Engage de teamfight: flanqueá y tirá la R cruzando el equipo agrupado → E al que quede con vida → W cuando arranque el intercambio",
+        "Peel de emergencia: E al diver → R hacia atrás cruzando a tu carry (charm al que lo perseguía) → W escudo + cura en área"
+      ],
+      "tips": [
+        "Contá tu pasiva: cada tercer hechizo se repite solo y tu próximo ataque pega extra; alineá ese eco con la E para doble CC.",
+        "No uses W a vida llena: la cura es floja early; guardala para cuando tu ADC esté dañado o para el all-in real.",
+        "La R se estira con cada campeón tocado, aliados incluidos: tirala desde atrás de tu equipo para ganar rango gratis.",
+        "Q es tu único daño sin condiciones: soltala cada vez que el rival camine a last hit, no la guardes para nada.",
+        "Viví en los arbustos: pegar y esconderte rompe el line-up rival y hace que sus skillshots se tiren a ciegas."
+      ],
+      "plan": {
+        "early": "Pokeá con Q y pasiva cada vez que el rival last hit, mantené a tu ADC vivo con W puntual, y al llegar a 3 buscá el trade con E; en 6, una R en línea con minions de tu lado es kill.",
+        "mid": "Caída la torre de bot, rotá a mid con tu ADC, wardá el próximo objetivo en compañía y buscá picks con E y R en las entradas de la selva; nunca camines el mapa sola.",
+        "late": "Pegate al equipo y peeli: E al diver, R cruzando a tu carry y W en cada intercambio; con Helia y Moonstone tu utilidad sostiene las peleas 5v5 y tu pick potential define los objetivos."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/seraphine/build",
+      "https://mobalytics.gg/lol/champions/seraphine/guide"
+    ]
+  }
+}

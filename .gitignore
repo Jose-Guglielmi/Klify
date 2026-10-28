@@ -15,4 +15,4 @@
 # Los builds publicados para descarga viven en dist/ (ver README)
 
 # Datos personales del usuario (historial de partidas, PUUID, settings)
-data/
+/data/

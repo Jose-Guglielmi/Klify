@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "xerath",
+    "ddragonId": "Xerath",
+    "name": "Xerath",
+    "titleEs": "el Mago Ascendente",
+    "cid": 101,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.1,
+    "pr": 4.12,
+    "br": 10.16,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.4,
+      "jungle": 0,
+      "middle": 50,
+      "bottom": 8,
+      "support": 41.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Xerath.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 61.31, "games": 1026 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 60.5, "games": 238 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 58.74, "games": 824 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 58.42, "games": 736 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 57.93, "games": 290 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 57.83, "games": 396 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.49, "games": 207 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 57.07, "games": 573 }
+  ],
+  "weakAgainst": [
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 47.01, "games": 268 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 47.07, "games": 444 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.13, "games": 244 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 47.86, "games": 2054 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 48.48, "games": 1017 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 48.57, "games": 1711 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.71, "games": 1437 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 49.39, "games": 741 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Rango de otra pantalla: la Q cargada y la R le permiten pegar sin entrar a la pelea, y el Arcane Comet escala con la distancia, así que cuanto más lejos está, más pega.",
+      "La W es el skillshot más fácil del juego para él: cae rápido, ralentiza, y ese slow garantiza el Q y la E que vienen atrás.",
+      "Waveclear gratis con Q: un solo cast borra la wave desde el centro de la lane, le da prioridad de rotación y le libera tiempo para pegarle a otra lane con la R.",
+      "La R tiene varias cargas y sube de daño con los niveles: puede decidir una pelea de objetivo desde la niebla sin estar en la pelea.",
+      "La pasiva Mana Surge le devuelve maná con el ataque básico cargado: el sustain del lane es real y le permite spamear habilidades sin volver a base."
+    ],
+    "weaknesses": [
+      "Cero movilidad: no tiene dash ni blink, así que cualquier gap closer que lo alcanza le gana; depende de la E para peel y del Flash para vivir.",
+      "Mientras carga la Q se ralentiza solo: esa es la ventana exacta para tirarle CC y all-inearlo, y él no tiene forma de esquivarlo.",
+      "La E es lenta, la bloquean los minions y el stun depende de la distancia: si la gasta sin pegar, queda completamente descalzo.",
+      "La R lo clava en el lugar y se interrumpe con cualquier CC; usarla mal es regalar un objetivo quieto en medio de la pelea.",
+      "Es de papel: sin vida ni resistencias, un burst de asesino lo borra antes de que pueda soltar la segunda habilidad."
+    ],
+    "powerSpikes": [
+      "Nivel 1 con W: poke casi imposible de errar que además prende Arcane Comet y Manaflow Band en cada uso.",
+      "Nivel 6: primera R, mata desde media lane y puede tirar varias cargas sobre la misma pelea o sobre otro carril.",
+      "Primer ítem completo con maná resuelto: empieza a empujar la wave de un Q y deja de sufrir el pool; ahí arranca la presión constante sobre torre.",
+      "Niveles 11 y 16 con puntos en la R: suma cargas y daño, y con dos o tres ítems gana peleas sin siquiera estar cuerpo a cuerpo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Competí la wave, no el poke: Xerath gana cualquier duelo de rango quieto, así que tradeá solo cuando esté cargando Q y se esté ralentizando solo.",
+        "Contra Mel, Hwei o Zoe: castigalo apenas gaste W + Q en la wave; en ese hueco de varios segundos no tiene ni daño ni peel disponible.",
+        "Si sos de rango corto, pega desde atrás de tus minions: la E se bloquea con la wave y sin stun no puede frenarte el all-in."
+      ],
+      "tanks": [
+        "Comprá resistencia mágica temprano: su daño es poke sostenido, no burst, así que con un item defensivo cada combo le rinde la mitad.",
+        "Mercury's Treads o un manto te dejan caminar dos combos enteros; con eso podés forzar el engage y pegarle mientras carga la Q.",
+        "Si te toca flanquearlo, hacelo con la wave a favor: sin movilidad no puede escapar y muere de un CC encadenado."
+      ],
+      "assassins": [
+        "Naafiri, Talon, Katarina, Ekko: esperá que gaste la E para empujar la wave y saltá ahí; sin stun y sin Flash está muerto.",
+        "No entres de frente: entrá por la niebla lateral y pega cuando esté cargando Q, porque la carga lo deja frenado.",
+        "Wardeá tu propio lado del río: el gank a mid siempre funciona contra él porque no tiene cómo escapar."
+      ],
+      "crowdControl": [
+        "Su R se cancela con cualquier CC: guardá una habilidad de disrupción para el momento en que se planta a tirar cargas.",
+        "CC encadenado sobre la carga de Q: mientras castea está ralentizado y no puede esquivar nada de lo que le tires.",
+        "Si lleva Zhonya, esperá que la gaste: sin el stun de la E y sin Flash, un solo CC lo deja servido para todo tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Tenés el gap closer que él no puede frenar: entrá cuando gaste la E para empujar la wave, nunca de frente con la E lista.",
+          "La pasiva de daño mágico según vida faltante lo ejecuta: pokealo con las dagas y cerrá con la manada, porque no tiene escape para kitearte.",
+          "Entrá por la niebla lateral: si te ve caminar entre los minions, su E te stunea y te mata antes de que llegues a rango."
+        ]
+      },
+      {
+        "cid": 91,
+        "name": "Talon",
+        "tips": [
+          "Nivel 2 con W + Q ya es kill: saltá sobre la wave, pegalo con W y rematalo antes del 3; a melee no tiene ninguna defensa real.",
+          "Empujá y roameá: Xerath no puede seguirte el ritmo de rotaciones; ganá el mapa y volvé con ventaja de ítems.",
+          "Usá los muros para flanquear: sin visión no puede stunear lo que no ve, y su R no lo salva si ya estás encima con el combo armado."
+        ]
+      },
+      {
+        "cid": 75,
+        "name": "Nasus",
+        "tips": [
+          "Stackeá tranquilo: su poke molesta pero no te mata; con Q farmeada y un item de MR ganás el 1v1 a partir del mid game.",
+          "Guardá el Wither para cuando lo alcances: el slow le corta el kiteo y lo deja sin forma de escapar de tu Q.",
+          "Farmeá detrás de tu wave para no comer E y pedile un gank temprano al jungla: sin movilidad, mid es un carril de ganks gratis."
+        ]
+      },
+      {
+        "cid": 805,
+        "name": "Locke",
+        "tips": [
+          "Tenés dos formas de llegar (Salto de Ceniza y el desplazamiento del combo): guardá el salto para después de que gaste la E.",
+          "La velocidad de Incineración del Alma te deja cerrar distancia mientras él carga la Q, que lo ralentiza solo.",
+          "Purgatorio lo ejecuta a media vida: pokealo primero y esperalo bajo vida, porque sin Flash no tiene cómo zafarse de un execute a rango."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: W al rival → Q cargada que soltás después de que aterrice el slow (el slow garantiza el impacto) → autoataque para cobrar la pasiva",
+        "Combo de stun estándar: E → W → Q apenas confirmás que el orbe va a pegar; con el stun encima no se mueve y come todo",
+        "Burst máximo a rango largo: Q cargada al máximo → soltar → E → W → R con todas las cargas",
+        "Setup de R confiable: Q cargada → soltar → W inmediato (slow) → E (stun asegurado) → R completa",
+        "Engage extendido: E → Flash a mitad de la animación → W → Q → autoataque, para stunear desde fuera de su rango de reacción"
+      ],
+      "tips": [
+        "Tomá W al nivel 1: es el skillshot más fácil de pegar temprano y te asegura el proc de Arcane Comet + Manaflow en cada uso; la Q recién rinde cuando podés castearla tranquilo.",
+        "No uses la E como poke: es tu único peel y tu única forma de frenar un all-in; si la gastás en la wave, el jungla enemigo te mata gratis.",
+        "Cargá la Q desde la niebla o desde atrás de los minions: mientras cargás te ralentizás solo, y mostrarte cargando es regalar el engage.",
+        "Cobrá la pasiva con autoataques cuando el rival no puede contestar: es maná gratis y te deja seguir spameando sin volver a base.",
+        "Antes de la R, reubicá a un lugar sin visión o detrás de tu equipo: la R te clava en el lugar y cualquier CC te la corta."
+      ],
+      "plan": {
+        "early": "Pokeá con W cada vez que tengas Comet y Manaflow, farmeá la wave con Q desde atrás y al llegar al 6 buscá el stun + R sobre el rival o pegale a otra lane con la R.",
+        "mid": "Empujá mid con un solo Q, tomá placas con presión de poke y rotá a los objetivos para pegar con R desde la niebla; comprá penetración y no fuerces peleas cuerpo a cuerpo.",
+        "late": "Quedate dos pantallas atrás, pokeá antes de que empiece el objetivo y rematá con R desde la niebla; si te alcanzan, Zhonya + Flash y volvé a la distancia."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/xerath/guide",
+      "https://app.mobalytics.gg/lol/champions/xerath/combos",
+      "https://www.skill-capped.com/lol/guides/builds/xerath/mid"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "sivir",
+    "ddragonId": "Sivir",
+    "name": "Sivir",
+    "titleEs": "la Señora de la Batalla",
+    "cid": 15,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.12,
+    "pr": 4.25,
+    "br": 1.54,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0,
+      "middle": 0.7,
+      "bottom": 99,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sivir.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sivir_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 56.22, "games": 434 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 56.04, "games": 4529 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 54.72, "games": 508 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 54.52, "games": 310 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 54.03, "games": 211 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 53.92, "games": 6015 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 53.83, "games": 2857 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 53.59, "games": 1504 }
+  ],
+  "weakAgainst": [
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 43.5, "games": 246 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 46.94, "games": 1715 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.12, "games": 239 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 48.78, "games": 246 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 48.81, "games": 2649 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 49.42, "games": 1299 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 50.09, "games": 569 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 50.37, "games": 679 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E le come un hechizo entero y le devuelve maná: contra engage de un solo botón (Lux Q, Morgana Q, Rakan W) el trade lo gana gratis y encima no paga el costo.",
+      "Con W prendida pega a tres objetivos a la vez: no hay ADC que limpie wave más rápido ni que castigue un push enemigo mejor que ella.",
+      "La R es un buff de equipo, no de ella: velocidad para todos durante el engage le da a tu jungla y a tu top una entrada que sin Sivir no existe.",
+      "Escala con crítico: pasados los dos ítems pega como cualquier hypercarry y encima lo hace a distancia de rebote, sin pararse en la línea de frente.",
+      "La Q pega dos veces si la atrapás de ida y de vuelta: en un trade largo o en un all-in a rango corto duplica el burst real del hechizo."
+    ],
+    "weaknesses": [
+      "Sin escape propio más allá del escudo: un gank con CC la mata si la E está gastada, y su única movilidad pasiva no alcanza contra un dash.",
+      "El cooldown del escudo es largo (más de 20 segundos early): si lo usa para bloquear un poke, queda desnuda para el engage que sí importa.",
+      "Rango de autoataque corto para ser ADC (500): los de 550+ y los magos de bot la castigan en cada last hit sin que pueda contestar.",
+      "No tiene burst: necesita trades largos, así que cualquier pick de una sola tanda la borra antes de que empiece a acumular autos.",
+      "Depende del crítico: hasta el segundo ítem pega blando y una lane que la retrase diez minutos la deja irrelevante para el resto de la partida."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q/W/E: ya puede tradear completo y bloquear el CC del enganche enemigo; ahí arranca el lane de verdad.",
+      "Primer ítem de crítico resuelto: la wave se limpia con dos W y su daño sostenido pasa de flojo a peligroso en teamfights chicas.",
+      "Nivel 6 con la R: no le da burst a ella, le da engage al equipo; con la jungla en bot el 2v2 se convierte en 3v2 y el rival no puede jugar la wave.",
+      "Dos ítems de crítico: los rebotes de W y la Q ya borran squishies, y cualquier pelea en la que sobreviva cuatro segundos libres la gana.",
+      "Late game con cuatro ítems: es la mejor waveclear del juego y su R le da a todo el equipo la velocidad para llegar primero al Baron."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Ezreal, Xerath: te pegan desde afuera de tu W y te ganan el intercambio corto; jugá trades largos o no los juegues.",
+        "Empujá la wave con W antes de que ellos la empujen a vos: si farmeás debajo de la torre contra poke, perdés plata y no podés tradear.",
+        "Comé el skillshot grande (Xerath Q, Lux Q) con la E: bloquea el daño y te devuelve maná, así el intercambio te sale gratis."
+      ],
+      "tanks": [
+        "Un tanque con engage (Malphite, Rell, Nautilus) le rompe la W: pedí cleanse o comprá Quicksilver antes de agruparte para los objetivos.",
+        "El daño de Sivir es sostenido, no burst: si un tanque le queda encima seis segundos, se muere antes de bajarle la mitad de la vida.",
+        "Castigala cuando el escudo está en cooldown: un engage de CC de área la deja sin respuesta; contá los segundos desde que lo tiró."
+      ],
+      "assassins": [
+        "Zed, Katarina, Talon: esperá que gaste la E en cualquier poke y entrá ahí; sin escudo y sin movilidad es la kill más barata del mapa.",
+        "Si te tira la Q a rango máximo, caminá en diagonal para salir de la vuelta: el daño de regreso es el que duele de verdad.",
+        "No la persigas en línea recta cuando tiene R: le da velocidad a ella y a todo su equipo, y el fuera de posición terminás siendo vos."
+      ],
+      "crowdControl": [
+        "Una cadena de CC le gana la pelea: no tiene tenacidad ni escape propio más allá del escudo, así que dos stuns seguidos la sacan del combate.",
+        "Quemá su E con un CC barato (slow o stun corto) antes del engage real, y recién después tirá el CC que decide la pelea.",
+        "En teamfight apuntala primero a ella: si Sivir sobrevive cuatro segundos libre, limpia el equipo entero con los rebotes de W."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Tu Q y tu E tienen más alcance que su W: pokearla es gratis, y cada wave empujada le sale en vida porque no puede contestar sin acercarse.",
+          "Guardá el stun para después de que gaste la E-escudo: si lo tira en tu poke, tenés veinte segundos para el engage real.",
+          "Al 6 armá la combo completa cuando esté sin escudo: tus esferas la matan antes de que pueda usar la R para salir de la línea."
+        ]
+      },
+      {
+        "cid": 29,
+        "name": "Twitch",
+        "tips": [
+          "Abrí desde el arbusto con Q y entrá con el veneno ya puesto: Sivir tiene que gastar el escudo en el poison o comerlo entero.",
+          "Tradeá con E apilada y no le des la vuelta al intercambio: tu daño sostenido con W le gana hasta que ella complete el crítico.",
+          "Con la R lista, buscá el flank desde fuera de la lane: sin escape propio come cuatro autos del ulti antes de poder reaccionar."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Pokeala con la Q rebotando desde fuera de su rango: si no puede contestar, la lane se gana sola sin pelear.",
+          "Usá el E (knock-up) cuando se acerque a tradear con W: interrumpirle el rebote apaga su daño por completo.",
+          "Guardá la R para después de que gaste el escudo: sin E, el láser la borra de la pantalla en dos segundos."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Esperá que use la E para bloquear tu Q y entrá ahí: el escudo tiene cooldown enorme y sin él la tenés en la cara gratis.",
+          "Tradeá corto con Q-E y salí: ella gana el intercambio largo por el sostenido de W, vos ganás el burst y la reposición.",
+          "Al 6 no te quedes agrupada con el soporte: tu R en teamfight la obliga a gastar el escudo en el AoE y no en tu combo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: AA → W (resetea el autoataque) → Q apenas termina la animación → AA; es el intercambio más rentable del lane",
+        "Doble hit de Q: tirala a rango máximo cuando el rival está quieto farmeando, así la ida y la vuelta le pegan las dos",
+        "All-in con R: R para llegar con velocidad → Q al máximo alcance → AA → W para resetear → AA hasta el kill; el R es para entrar, no para pegar",
+        "Engage de equipo: R cuando el jungla o el top estén a un paso del rival, y usá W sobre la wave para que los rebotes también peguen al carry enemigo",
+        "Escudo + trade: comé el CC con E (te devuelve maná) y contestá enseguida con AA → W → Q; con el escudo arriba el intercambio lo ganás siempre"
+      ],
+      "tips": [
+        "La E no es para el poke chico: guardala para el CC que decide (Morgana Q, Lux Q, Rakan W); bloquear cincuenta de daño y quedarte veinte segundos sin escudo es la forma más rápida de perder la lane.",
+        "Empujá con W antes de volver a base o de roamear: con los rebotes limpiás la wave en dos autos y volvés con la wave del lado enemigo.",
+        "Pegá desde el borde de tu rango: 500 de alcance no aguanta un intercambio de frente contra Caitlyn o Ezreal, pero sí les gana si vos elegís cuándo.",
+        "No gastes la R solo para escaparte de un gank salvo que sea vida o muerte: es el engage del equipo y su cooldown es largo.",
+        "Pedile visión a tu soporte antes de agrupar: sin escape propio, la única defensa real de Sivir es ver al asesino antes de que llegue."
+      ],
+      "plan": {
+        "early": "Farmeá con Q y W sin exponerte, usá la E solo para bloquear el CC que te mata y tradeá cuando el sup enemigo gaste su enganche; al 6 avisale a tu jungla que la R convierte el 2v2 en 3v2.",
+        "mid": "Limpiá waves con W y rotá: Sivir es la que hace que el equipo llegue primero a los objetivos, y con un ítem de crítico ya pelea 5v5 desde atrás.",
+        "late": "Jugá pegada al equipo y dejá que la R abra el engage del jungla o del top; pegá desde el borde del rango, guardá la E para el CC importante y priorizá Baron con la waveclear."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/sivir/build",
+      "https://mobalytics.gg/lol/champions/sivir/combos",
+      "https://mobalytics.gg/lol/champions/sivir/counters"
+    ]
+  }
+}

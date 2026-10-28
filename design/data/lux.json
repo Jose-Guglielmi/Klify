@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "lux",
+    "ddragonId": "Lux",
+    "name": "Lux",
+    "titleEs": "la Dama Luminosa",
+    "cid": 99,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.06,
+    "pr": 8.48,
+    "br": 6.55,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.6,
+      "jungle": 0,
+      "middle": 31.3,
+      "bottom": 5.6,
+      "support": 62.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lux.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lux_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 61.4, "games": 285 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 60.06, "games": 646 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 58.89, "games": 343 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 56.72, "games": 372 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 55.6, "games": 241 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.11, "games": 1506 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 54.98, "games": 271 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 54.75, "games": 263 }
+  ],
+  "weakAgainst": [
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 46.87, "games": 1359 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 47.26, "games": 383 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 47.34, "games": 3494 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 48.31, "games": 1064 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 48.32, "games": 861 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 48.48, "games": 2042 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 48.76, "games": 1692 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 48.9, "games": 3278 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Todo su daño cae detrás de una raíz: si la Q te toca (y atraviesa un minion para agarrarte), la combo entera Q → E → R llega sin que puedas responder nada.",
+      "La E es un campo de ralentización que spamea desde fuera de tu rango: pisa la zona y perdés vida y movilidad, no la pisás y te zonéa del farm.",
+      "La W es un escudo que atraviesa aliados: en peleas largas neutraliza el poke de tu equipo entero y regatea cada intento tuyo de ganar el lane por desgaste.",
+      "La pasiva ilumina al objetivo: cada auto después de un hechizo suma daño gratis, así que sus trades cortos rinden más de lo que parece y no podés igualarle el intercambio parado.",
+      "Desde el nivel 6 su R cruza media pantalla: farmear relajado con poca vida es regalarle la ejecución, ni hablar de robar dragones por encima de la pared."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, cada hook o engage que le acierte es kill casi garantizada; todo su poder depende de no ser alcanzada.",
+      "Todo es skillshot: si la Q está en cooldown o la esquivás, queda descalza varios segundos; ese es tu único all-in necesario.",
+      "Pierde los all-ins largos: gana el lane por poke, pero si la forzás a pelear cuerpo a cuerpo con MR en la mano, su burst no alcanza y no tiene para sostener.",
+      "Depende de items: acampala en early y el mid game la convertís en un bot de escudos sin daño; jungla que pasa dos veces por bot la saca del juego.",
+      "Es de papel y juega adelantada para pokear: cada vez que avanza a tirar la E queda fuera de posición; castigá ese paso adelante con CC o daño."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con Q + E: el spike de all-in más temprano de la bot lane; no te pares contra la brush si no sabés que tiene ambas.",
+      "Nivel 6: la combo completa con R ejecuta a cualquier squishy a media vida; desde ahí ningún farm se hace con menos de dos tercios de vida.",
+      "Primer item resuelto: con penetrating y AP en la bolsa, la E limpia la wave de un cast y el poke de lane se vuelve insoportable.",
+      "Nivel 11: la R baja de cooldown y sube de daño; asumí que el rayo está disponible en cada pelea y no te agrupes en línea recta nunca."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Hwei: tenés más rango que ella, así que el lane se gana intercambiando desde afuera de su E y haciéndole pagar cada paso adelante.",
+        "Esquivale la Q y comerciá en ese segundo: su única herramienta de defensa es la raíz; si no conecta, no tiene cómo responder tu trade.",
+        "No te pares en línea con tu carry: la Q atraviesa un minion, así que el que está detrás del otro siempre es el objetivo real."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: su burst está calibrado contra squishies; con un item de MR caminás la combo entera y ella se queda sin opciones.",
+        "Esperá que gaste la Q en poke o wave y engagéale encima: sin raíz no tiene escape ni pelea, y tu all-in largo le gana de rampa.",
+        "Ignorá el poke en la medida que puedas y forzá el 2v2 extendido: su kit rinde en trades de tres segundos, no en peleas de diez."
+      ],
+      "assassins": [
+        "Saltala apenas use la Q: si la raíz no está en mano, Lux es un minion con escudo y muere antes de terminar de castear la E.",
+        "Usá la brush y la niebla para acercarte: su R necesita línea recta y tu entry desde un ángulo la deja apuntando a la nada.",
+        "Zed, Ekko, Fizz: guardá tu escape para después de la W, no antes; el escudo es su única respuesta y gastada la ventana, la ejecutás igual."
+      ],
+      "crowdControl": [
+        "Blitzcrank, Thresh, Rell: cada hook o engage que conecte sobre ella es kill; jugá el lane entero amenazando el agarre y le negás las posiciones de poke.",
+        "Encadená el CC después de que use la W: el escudo salva del burst, pero no salva de quedar rooted en medio de tu equipo.",
+        "Malzahar y Lissandra la convierten en piedra con point-and-click: no necesita apuntar nada y Lux no tiene tenacidad ni escape para responder."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Desenganchá todo con el tornado: la combo de Lux necesita que el objetivo se quede quieto, y tu knock-up la corta en el medio del casteo.",
+          "Cargate el escudo y el slow para el trade de tu ADC: si el carry no pierde vida en el intercambio, el poke de Lux rinde cero.",
+          "No dejes que zonéen con la E: pasá por arriba con la velocidad de movimiento de tu pasiva y obligála a recastear, que es donde se funde el maná."
+        ]
+      },
+      {
+        "cid": 3,
+        "name": "Galio",
+        "tips": [
+          "Tu escudo mágico del W absorbe exactamente el tipo de daño que ella tiene: activálo cuando veas la Q volar y el burst entero se vuelve humo.",
+          "Engagéale con E + Q apenas gaste la Q en poke: sin raíz no hay W que la salve de tu taunt ni R que la ejecute a tiempo.",
+          "Guardá tu R para cuando Lux intente el pick con la Q desde la niebla: el entrada global convierte su jugada en una pelea 3v2 en tu favor."
+        ]
+      },
+      {
+        "cid": 53,
+        "name": "Blitzcrank",
+        "tips": [
+          "Parate donde el hook amenace siempre: Lux no puede pokear desde su rango si cada posición adelantada le cuesta quedarse sin AD en tu mano.",
+          "Gancho conectado es kill: ella no tiene escape, así que ni hace falta el full combo; con que la saqués de posición, el trade del lane es suyo.",
+          "Forzála a gastar la Q en self-peel: si la usa para sacarte de encima, quedá quieto diez segundos y el poke siguiente te entra gratis."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Tu all-in es la antítesis de su juego: W + R locked a la bot lane entera y su burst de tres segundos no alcanza para ganar una pelea de diez.",
+          "Engagé cuando la E esté en cooldown: sin el slow no puede kitearte ni zonéarte, y ahí sos vos el que decide cuándo y dónde se pelea.",
+          "No le regales el poke parado en línea con tu carry: la Q atraviesa minions, así que entra en escalón y aceptá el 2v2 apenas ella avanza."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E detrás del rival (slow) → Q al objetivo rooted → auto para detonar la pasiva → explotás la E en su cara mientras retrocede",
+        "Burst completo nivel 6: Q → auto con pasiva → E → R atravesando al objetivo (el rayo detona la pasiva y suma su propio daño encima)",
+        "Asegurado anti-esquiva: Q rooted primero y R recién después: el rayo no se pierde sobre un objetivo quieto, no lo castees al revés",
+        "Peel de teamfight: E al pie del diver para el slow → Q al mismo objetivo → W a través de tu carry mientras se reubica",
+        "Waveclear rápido: E en el centro de la wave → R en línea cuando la E explota: un cast de cada uno y la wave entera desaparece"
+      ],
+      "tips": [
+        "No gastes la Q como poke a vida llena contra campeones con engage: es tu único seguro de vida; sin raíz en mano, un Blitzcrank te come viva.",
+        "Usá la brush como herramienta: tirá la E desde adentro, rompés línea de visión con el rival y el all-in de nivel 2 entra sin que pueda reaccionar.",
+        "Colocá la E detrás del enemigo, no encima: cortarle el camino de retirada hace que el slow dure el doble y tu Q conecte más fácil.",
+        "La W no es solo para vos: tirala a través de tus aliados antes de que el poke enemigo llegue, no después; el escudo preventivo rinde el doble.",
+        "Con la R bajada de cooldown (nivel 11 en adelante) usala de poke en cada pelea: es barata y cada rayo que entra es media vida de un squishy que el rival no recupera."
+      ],
+      "plan": {
+        "early": "Pokeá con E desde el rango y buscá el all-in en nivel 2 y 6 usando la brush para romper visión; mantené al ADC vivo con W y tras la primera torre rotá a mid.",
+        "mid": "Jugá pegada a tu equipo, wardá objetivos con escolta antes de que spawnear y buscá picks con Q desde la niebla para convertir cada raíz en torre o dragón.",
+        "late": "Nunca wardés sola ni camines por side lanes: peelá con Q + E + W a tu carry en cada teamfight y guardá la R para los choke points donde la raíz es imposible de esquivar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/lux/build",
+      "https://mobalytics.gg/lol/champions/lux/guide"
+    ]
+  }
+}

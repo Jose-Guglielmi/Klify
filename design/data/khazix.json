@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "khazix",
+    "ddragonId": "Khazix",
+    "name": "Kha'Zix",
+    "titleEs": "el Saqueador del Vacío",
+    "cid": 121,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.45,
+    "pr": 6.73,
+    "br": 3.81,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 99.5,
+      "middle": 0.1,
+      "bottom": 0,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Khazix.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Khazix_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 57.53, "games": 292 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 56.88, "games": 916 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 55.79, "games": 337 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 55.35, "games": 215 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 55.2, "games": 250 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 54.84, "games": 496 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 53.38, "games": 3078 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.15, "games": 1825 }
+  ],
+  "weakAgainst": [
+    { "cid": 427, "slug": "Ivern", "name": "Ivern", "vsWr": 44.17, "games": 283 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 45.17, "games": 1397 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 45.39, "games": 293 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 45.76, "games": 354 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 46.02, "games": 1760 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 46.31, "games": 1287 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 46.67, "games": 720 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 46.71, "games": 608 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su Q pega extra contra objetivos aislados: si te encontrás solo en side lane o jungleando sin aliados en pantalla, te ejecuta sin pregunta.",
+      "La pasiva Unseen Threat se recarga cada vez que lo perdés de vista: su primer golpe de cada reenganche trae daño extra y slow, y vos no sabés cuándo está cargada.",
+      "Cada kill o asistencia le resetea el Leap: si te mata delante de un aliado herido, saltó al siguiente dos segundos después.",
+      "La invisibilidad de su R le da dos reenganches limpios por pelea: entra, pega, desaparece y entra de nuevo cuando ya gastaste tus escapes.",
+      "Ejecuta objetivos con Q mejorada y pelea fuerte el early: no le regales dragones ni heraldos sin control de visión previo."
+    ],
+    "weaknesses": [
+      "Es de vidrio: un stun bien puesto cuando está dentro del rango de tu equipo lo borra; no tiene forma de tanquear castigo.",
+      "Si tira el Leap hacia adelante y no mata, quedó caminando: castigá cada E ofensiva que no termina en reset, es su única movilidad.",
+      "Necesita aislamiento para hacer daño real: con tu equipo agrupado sobre el carry, su Q pierde el bonus y se vuelve medio asesino.",
+      "Cae fuerte en late game: los items defensivos y las peleas estructuradas lo dejan sin picks que robar.",
+      "Depende de visión para cazar: limpiá sus wards y caminá con el equipo; sin mapa oscuro su único plan es farmear y rezar."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E completas: ganó slow de W, gap closer y burst; no le pelee la jungla cara a cara antes de eso.",
+      "Nivel 6 con primera evolución: Q evolucionada ejecuta y aísla, E evolucionada salta más lejos; a partir de acá no farmees side lane sin escape.",
+      "Nivel 9 con Q al máximo: un Q aislado borra la mitad de vida de un squishy; los carries no caminen solos nunca.",
+      "Nivel 11 con segundo punto en R: más cargas de sigilo para reenganchar y escapar; asumí que tiene invisibilidad disponible en cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Los carries de rango son su plato favorito: ninguno camine solo por la jungla o side lanes, ni para una wave; llevá el pulso del equipo encima.",
+        "Comprá items defensivos temprano (armadura o cuchilla anti-asesino según tu champ): su combo está calibrada para borrar al que no los tiene.",
+        "Si es él el de rango (build rara con W evolucionada), pegale en el cooldown del Leap: sin salto, un mago o tirador lo kitea entero."
+      ],
+      "tanks": [
+        "Los tanques lo ganan por objetivos: pelee el dragón y el Barón con tu equipo entero cerca; sin aislamiento su Q es un pincho de nada.",
+        "Un tanque con CC pegado al carry (Malphite, Skarner, Alistar) anula su plan entero: cada vez que salte, hay castigo esperándolo.",
+        "No persigas el reset: si te ejecutó al frente, quedate con tu formación; perseguirlo es exactamente la segunda kill que busca."
+      ],
+      "assassins": [
+        "Zed, Talon, Naafiri: en 1v1 puro le ganás si pegás primero, pero dudá dos veces de pelearlo con la pasiva cargada y tu escape gastado.",
+        "Esperá que gaste el Leap para agredir: un Kha'Zix en el piso es un asesino descalzo y ahí ganás todos los trades.",
+        "En teamfight, intercambien objetivos: si tu comp tiene más burst confiable que el suyo, forzá peleas 5v5 donde su aislamiento no existe."
+      ],
+      "crowdControl": [
+        "Guardá tu stun para el momento del salto: atraparlo en el aire con E o apenas aterriza mata la combo entera antes de arrancar.",
+        "CC de área (Lissandra R, Malzahar R, Amumu R) convierte su flank en suicidio: tiralo apenas aparezca del sigilo.",
+        "Encadená el CC después de su primera R: le quedan cargas para escapar, así que la ventana real es cuando ya se comprometió a matar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 427,
+        "name": "Ivern",
+        "tips": [
+          "No invadas ni farmees tu jungla sin compañía: sos el squishy más aislado del juego y su Q te ejecuta con el bonus completo.",
+          "Dejá a Daisy pegada al carry en peleas: con el aliado permanente al lado, el carry nunca está 'aislado' y su daño cae a la mitad.",
+          "Wardá tus campamentos temprano: él roba con R invisible; verlo entrar en tu mapa es tu señal para colapsar con el equipo."
+        ]
+      },
+      {
+        "cid": 233,
+        "name": "Briar",
+        "tips": [
+          "Guardá la E (el grito) para cuando tire el Leap: interrumpirlo en el aire o al aterrizar le rompe la kill y te deja el reset a vos.",
+          "Ganás el 1v1 por sustain: invitalo a pelear en tu jungla, aguantá el primer burst con vida alta y recién ahí activá el frenesí de W.",
+          "Si te ejecuta y se cura con el reset, no lo persigas ciego: esperá que reaparezca sin pasiva ni R y ahí lo peleás de vuelta."
+        ]
+      },
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Tu R es la respuesta directa al salto: cuando entre con E, impálalo y arrastralo hacia tu equipo; un Kha'Zix atrapado es un Kha'Zix muerto.",
+          "Pegate al carry en cada pelea: si el ADC nunca está solo, su Q pierde el bonus y tu tanqueo aguanta todo su ciclo de daño.",
+          "Wardá los flancos de cada objetivo: su patrón es entrar en sigilo por el costado; visión previa te deja cargar el R antes de que aparezca."
+        ]
+      },
+      {
+        "cid": 421,
+        "name": "Rek'Sai",
+        "tips": [
+          "Tu knock-up de E interrumpe su entrada: guardala para el momento del salto, no la gastes farmeando o rompiendo paredes.",
+          "El tremor sense te lo detecta sin wards: jugá agresivo sabiendo de dónde viene y negale los picks que necesita para escalar.",
+          "Forzá peleas con tu equipo agrupado: en brawls 5v5 su Q aislada no existe y vos ganás el intercambio de jungleas."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Asesinato básica: W al objetivo → E encima → Q en pleno vuelo → AA al caer (el slow de W asegura el Q aislado)",
+        "All-in con ultimate: R para entrar en sigilo → AA + Q con la pasiva cargada → AA + W → R de nuevo para recargar pasiva y reposicionar → AA + Q para ejecutar → E para salir",
+        "Fake out: entrá con R → W → AA → Q, simulá retirarte caminando y volvé con la segunda R para AA + Q final, cerrando con E hacia afuera",
+        "Trade de jungla: AA → W → E cruzando al objetivo → Q instantáneo en el aire (aterrizás con la pasiva ya recargada)",
+        "Doble salto (con E evolucionada): E pasando al lado del objetivo → Q en el aire para ejecutar → E de nuevo antes de tocar el piso"
+      ],
+      "tips": [
+        "Nunca tires E hacia adelante sin plan de reset: es tu única movilidad; si no matás, el vuelo de vuelta es caminando.",
+        "Salí del campo de visión antes de cada trade: la pasiva Unseen Threat es tu mayor fuente de daño y solo se carga desapareciendo del mapa del rival.",
+        "Elegí la evolución según la partida: Q para ejecutar objetivos y duelos, E para ganks y picks, W si necesitás poke, despejar o pelear desde rango.",
+        "Aislá tus kills: esperá que el rival se separe del grupo; un Q sobre un target acompañado es la mitad del daño y la mitad de tu plan.",
+        "Usá la R para recargar pasiva en plena pelea, no solo para escapar: cada reaparición del sigilo es un AA con daño extra y slow."
+      ],
+      "plan": {
+        "early": "Farmeá tu clear con Q sobre los camps, buscá ganks en lanes overextendidas al nivel 3 y al llegar a 6 evolucioná para asegurar duelos de jungla y objetivos.",
+        "mid": "Cazá picks en side lanes con control de visión, ejecutá al primero y llamá dragón o heraldo inmediatamente: cada kill tuyo tiene que valer un objetivo.",
+        "late": "No aparezcas en pantalla: flankeá desde afuera de visión con E + R, borrá al carry aislado y usá el reset para salir vivo o encadenar la segunda kill."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/khazix/guide",
+      "https://mobalytics.gg/lol/champions/khazix/combos"
+    ]
+  }
+}

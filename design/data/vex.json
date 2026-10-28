@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "vex",
+    "ddragonId": "Vex",
+    "name": "Vex",
+    "titleEs": "la Tristóloga",
+    "cid": 711,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.39,
+    "pr": 3.42,
+    "br": 4.99,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.8,
+      "jungle": 0,
+      "middle": 94.6,
+      "bottom": 1,
+      "support": 2.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vex.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vex_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 58.22, "games": 225 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 57.99, "games": 2873 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 56.93, "games": 274 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.58, "games": 2750 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.54, "games": 1866 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 55.99, "games": 3113 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 55.43, "games": 709 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 55.08, "games": 325 }
+  ],
+  "weakAgainst": [
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 44.73, "games": 968 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.45, "games": 333 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 48.12, "games": 823 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 48.69, "games": 1072 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 49.5, "games": 2091 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 50.19, "games": 1313 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 50.39, "games": 518 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 50.5, "games": 402 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Pena y Pesar convierte cada dash enemigo en tu ventana: asustás e interrumpís el desplazamiento, así que todo el meta de asesinos y dives te regala la pelea.",
+      "W (Espacio Personal) es escudo más daño en área en el mismo botón: te come el burst de un all-in y te deja castear el miedo encima sin ceder un paso.",
+      "Q y E limpian la wave desde lejos y pegan en área: empujás en dos habilidades y te sobra tiempo para roamear o castigar bajo torre.",
+      "R (¡Haz lo tuyo, Sombra!) es pick y movilidad juntos: marcás desde fuera de visión, entrás y si el objetivo cae la pelea se abre para vos.",
+      "Los enemigos agrupados son tu mejor escenario: Q atraviesa la línea entera y E marca a todos, así que cada chokepoint vale por tres kills."
+    ],
+    "weaknesses": [
+      "Si el rival no dashea, tu pasiva pierde la mitad del valor: contra magos de poke puro dependés de acertar la E para tener miedo disponible.",
+      "Te empujan y te poquean desde más rango: Vel'Koz, Hwei y Xerath te sacan de la lane sin que puedas contestar nada.",
+      "Maximizar daño exige respetar el orden: si tirás la Q antes de la E perdés la marca de Pesar y el trade te queda corto.",
+      "La W es tu único escudo y tiene cooldown largo: si la gastás para farmear o para llegar a la wave, quedás desnuda ante el próximo all-in.",
+      "La R es un misil esquivable que te compromete: si la errás o te la bloquean, entrás al rango de todos sin escape y sin el botón que te salvaba."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E ya tenés la rotación completa y el miedo para tradear; ahí empieza tu lane de verdad.",
+      "Nivel 6: la R te da alcance real de kill y de roam; empujá y aparecé en bot desde el río.",
+      "Primer item de AP completo: la wave se limpia en dos habilidades y el burst sobre un squishy marcado ya es kill.",
+      "Nivel 9 con la Q maxeada y nivel 11 con el segundo punto de R: cada pelea de objetivo se vuelve tuya si se agrupan."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Hwei, Vel'Koz, Xerath: te pegan desde fuera de tu Q, así que no camines hacia ellos sin E lista; si te sacan la wave, quedate en tu lado y farmeá bajo torre.",
+        "Pedí gank temprano: son el arquetipo más fácil de agarrar con jungla porque no tienen escape real y tu E los deja marcados dentro del slow.",
+        "Cuando empujen, no contestes la wave: esperá a que la E esté arriba para zonearlos y usá la R solo si el jungla ya está encima."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica antes de que parezca necesaria: tu burst está calibrado contra el que no la tiene y un item temprano te deja caminar la rotación entera.",
+        "Mercury's Treads acá son obligatorias: el miedo decide la pelea, el daño es solo lo que viene después.",
+        "Los tanques sin dash (Malphite, Ornn) no te cargan la pasiva, así que jugá el lane de frente y guardá la E para cortar la entrada del jungla."
+      ],
+      "assassins": [
+        "Akali, Sylas, LeBlanc: cada dash que tiran te carga el miedo, así que no huyas de golpe; esperá el desplazamiento y casteá la habilidad potenciada encima.",
+        "Guardá la W para el arranque del combo, no para farmear: el escudo más el miedo sobre el asesino le corta el all-in y lo deja parado en medio de la lane.",
+        "Si ya te marcó con R, no corras en línea recta: la segunda R te alcanza igual, así que peleá con la E debajo tuyo para que entre al slow."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre el arranque de su combo: si la agarran sin W ni miedo cargado, es un mago de rango medio sin escape.",
+        "Su R te marca y te da la posición: si la ves castear desde lejos, movete lateral antes del impacto y le negás el engage entero.",
+        "Ojo con el miedo en área: cuando la pasiva está cargada, cualquier habilidad suya asusta a todos los que estén cerca, así que no te agrupes con el carry."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Sostené el lane con Q y no aceptes trades largos: su burst no te mata y tu sustain le gana el desgaste; el reloj corre para vos.",
+          "Guardá la piscina (W) para la R de Vex: si te marca desde lejos, entrá a la piscina cuando llegue la segunda R y le rompés el engage entero.",
+          "Al nivel 6 no te quedes con poca vida cerca de la wave: su combo completa plus ignite te borra antes de que puedas volver a la piscina."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Farmeá desde tu rango máximo y empujá con W: Vex tiene que acercarse para limpiar y ahí le pegás con Q y E gratis.",
+          "Cuando camine hacia vos con el miedo cargado, tirá el knock-up (E) antes de que llegue: interrumpirle el casteo le arruina la entrada.",
+          "Quedate fuera de la línea de su Q y detrás de los minions: su wave clear es buena pero sus trades son cortos y predecibles."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Usá tu rango para poquearla en cada last hit: Vex necesita acercarse a la wave y cada paso le cuesta media vida.",
+          "Guardá el miedo del pincel (EE) para cuando se acerque con la pasiva cargada: asustarla antes de que castee corta la rotación entera.",
+          "Zonéala con el área de daño cuando quiera empujar: si no puede limpiar la wave, pierde el roam y se queda atada al lane."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmea con Q desde fuera de su alcance y no fuerces trades: ganás escalando; Vex necesita jugadas antes de que tu AP la pase por arriba.",
+          "Guardá la jaula (E) para su R: si la encerrás cuando entra con el dash, queda parada adentro sin escape y ahí la borrás.",
+          "No te pares cerca de la wave con el miedo cargado: su combo con miedo más R es la única forma en que te mata en lane."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (Amenaza Umbría) encima del rival → Q (Descarga Mistral) para consumir la marca de Pesar → W si te contesta; el miedo lo gastás en la habilidad que venga después",
+        "Anti-dive: cuando el asesino dashea encima tuyo, W primero (escudo más miedo) → E debajo tuyo → Q mientras camina dentro del slow",
+        "All-in nivel 6: R para marcar → segunda R para entrar → W al aterrizar para el miedo → E → Q para rematar; si el objetivo cae, la R se resetea",
+        "Pick desde el río: R desde fuera de visión al carry descolocado → R de entrada → W para asustar al grupo → E y Q sobre los que quedaron juntos",
+        "Engage de Flash: R → Flash → segunda R para acortar la distancia del misil, y recién ahí W, E y Q"
+      ],
+      "tips": [
+        "Contá tu pasiva antes de tradear: si el miedo no está cargado la rotación pega la mitad; en ese estado solo farmeá y esperá.",
+        "Tirá siempre E antes que Q: la marca de Pesar es la que hace que la Q pegue de verdad; la Q sola es una línea lenta y esquivable.",
+        "No gastes W para empujar la wave: es tu escudo y tu fuente de miedo, y sin ella cualquier all-in te mata bajo torre.",
+        "Contra rivales sin dashes tu R es solo un misil: usala para rematar o para llegar a una pelea, nunca como opener a ciegas.",
+        "Jugá chokepoints y peleas agrupadas: Q atraviesa, E marca a varios y un miedo en área sobre tres campeones gana la teamfight sola."
+      ],
+      "plan": {
+        "early": "Farmeá con Q apuntando a los minions y al rival en la misma línea, guardá la W para el dive del jungla y buscá el trade recién con el miedo cargado; al 6 empujá y mirá el río.",
+        "mid": "Limpiá la wave en dos habilidades y roameá con la R a las side lanes; en los objetivos peleá agrupado para que Q y E peguen en varios y el miedo caiga sobre el equipo.",
+        "late": "Jugá de segundo plano hasta que alguien dashee o entre al chokepoint, tirá la R para el pick al carry y entrá con W para asustar al grupo; sin miedo cargado no abras pelea."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/vex/guide",
+      "https://mobalytics.gg/lol/champions/vex/combos"
+    ]
+  }
+}

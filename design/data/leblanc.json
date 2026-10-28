@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "leblanc",
+    "ddragonId": "Leblanc",
+    "name": "LeBlanc",
+    "titleEs": "la Maquiavélica",
+    "cid": 7,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.67,
+    "pr": 5.15,
+    "br": 17.14,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 2.2,
+      "jungle": 0.1,
+      "middle": 83.7,
+      "bottom": 0.5,
+      "support": 13.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leblanc.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 56.85, "games": 825 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 56.8, "games": 500 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 56.01, "games": 982 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 55.78, "games": 2015 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.7, "games": 544 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 54.78, "games": 1944 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 54.76, "games": 1030 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 54.61, "games": 597 }
+  ],
+  "weakAgainst": [
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 44.51, "games": 1712 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 46.45, "games": 1649 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 46.86, "games": 318 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 47.11, "games": 571 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 48.93, "games": 280 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 49.15, "games": 1178 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 49.18, "games": 1035 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 49.25, "games": 1541 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Snowball pura: cada kill adelanta el juego por su cuenta; con una o dos ventajas el lane se resuelve solo y la diferencia se multiplica.",
+      "La W es entrada y escape en la misma tecla: saltás, matás y volvés; eso la hace segura contra ganks y una amenaza permanente en lane.",
+      "El burst es casi instantáneo: marca de Q + R copiando Q borra a un squishy antes de que pueda reaccionar o usar su escape.",
+      "Buen roam y buen push: con la W cruza el río en un segundo y matchea el push de casi cualquier laner."
+    ],
+    "weaknesses": [
+      "Alta exigencia mecánica: cada error de posición de la W le cuesta el escape; forzalá trades largos y tarde o temprano se equivoca.",
+      "El maná le vuela: si spamea la Distorsión para pushear, queda sin combo ni escape justo en la ventana del jungla.",
+      "Behind no existe en este campeón: si se atrasa en niveles o items, su all-in no mata a nadie y se expone en el intento.",
+      "Teamfight frontal la rompe: es de cristal, la primera CC dirigida que le pegue al entrar con la W la borra.",
+      "Depende del cooldown de la W: sin Distorsión en mano no tiene entrada ni salida; ese hueco es tu ventana de all-in."
+    ],
+    "powerSpikes": [
+      "Nivel 2: Q + W ya pica media vida en un trade; no la subestimes aunque sea temprano.",
+      "Nivel 3 con Ignite: W → Q → E + Electrocute es kill real; contá tu vida antes de quedarte en rango de farm.",
+      "Nivel 6: la R copia Q o W para duplicar el burst o el dash; empujá y roameá porque el kill en lane ya es formalidad.",
+      "Primer item + nivel 11: cualquier squishy fuera de posición desaparece de la pantalla; agrupate y no camines solo por el mapa."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lux, Orianna, Xerath: jugá al límite de tu rango y guardá el CC de desenganche para su W de entrada; si la Distorsión no la acerca, no hay combo.",
+        "Pokeala cada vez que baje a farmear con la W gastada: cada Distorsión usada en la wave te regala un hueco largo de inmunidad.",
+        "Empujala contra la torre: su clear con W es caro en maná; cada wave forzada le roba maná, roam y vida de torre al mismo tiempo."
+      ],
+      "tanks": [
+        "MR temprano: su burst está calibrado contra el que no lleva resistencia; un solo item te deja caminando la combo entera.",
+        "Parate en la wave y obligala a gastar maná: si no te puede borrar, no tiene plan B y el lane se vuelve un problema de maná para ella.",
+        "Después del burst no hay seguimiento: si sobrevivís la primera tanda, el resto del all-in es tuyo."
+      ],
+      "assassins": [
+        "Zed, Talon, Fizz: esperá que gaste la W para entrar y allineala recién ahí; sin Distorsión es un campeón a pie y sin escape.",
+        "Guardá tu dash para la cadena (E), no para el poke: si la E no engancha, su combo arranca rota.",
+        "Peleale el roam: tu movilidad iguala la suya y sin kills tempranos ella no escala."
+      ],
+      "crowdControl": [
+        "Guardá el CC para después de que se comprometa con la W: ya entró y no puede volver; ese es el momento de matarla.",
+        "Vex y Lissandra la convierten en historia: CC dirigido sobre una asesina de cristal define la teamfight completa.",
+        "Encadená tu CC con el jungla: LeBlanc muere en medio segundo si dos peles la tocan entre la entrada y la vuelta."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 711,
+        "name": "Vex",
+        "tips": [
+          "Tu W (Lamento) revienta dashes: si se distorsiona hacia vos, detoná la pasiva y castigala con la combo entera mientras está pegada.",
+          "Pokeala con Q y E desde tu rango: ella necesita acercarse para hacer algo y vos no necesitás dejarla.",
+          "Cuando gaste la W en la wave, ese es tu all-in: es el único momento del lane donde es más lenta que vos."
+        ]
+      },
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Tu R es point-and-click: la suprimís en el aire apenas entra con la Distorsión y su combo termina antes de arrancar.",
+          "Empujá la wave con E: si tu torre sangra la suya, LeBlanc no puede roamear y pierde su mejor arma.",
+          "Los voidlings pegan y estorban: cada trade tuyo suma alimañas y su burst no te baja a vos."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Empujá la wave sin parar: matchear tu push le funde el maná y la deja sin amenaza para el roam.",
+          "Allineá cuando su W esté abajo: sin Distorsión no tiene entrada ni salida y su all-in es tuyo.",
+          "Peleá trades extendidos: su daño es de una sola tanda; si no te mata en el primer segundo, el resto del trade es tuyo."
+        ]
+      },
+      {
+        "cid": 893,
+        "name": "Aurora",
+        "tips": [
+          "Guardá tu W (el salto entre mundos) para esquivar la cadena: si la E no engancha, su combo arranca a medio hacer.",
+          "Pokeala con Q desde tu rango y cruzá al otro lado del terreno: castigarte le cuesta gastar la Distorsión.",
+          "Castigá cada Distorsión usada en la wave: es su maná, su escape y tu ventana de trade, todo al mismo tiempo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W encima del objetivo → Q (deja marca) → E si camina; reactivá la W para volver sin comer el trade de vuelta",
+        "Burst completo: W para entrar → Q → R copiando la Q (doble marca) → E de remate → W de vuelta; Electrocute sale sola en la secuencia",
+        "Lock doble: E → R copiando la cadena (root encadenado) → Q → W encima; para all-in con jungla o cazar al que flashea",
+        "Persecución: W → Q → R copiando la W para un segundo dash sobre el objetivo que intenta escapar",
+        "Escape: W a través de la pared sin reactivarla, y si te cortan el camino, R copiando la W para un segundo salto"
+      ],
+      "tips": [
+        "No reactives la W al instante después del trade: esperá un toque para que el rival no te espere parado en el punto de retorno.",
+        "Maná es vida: si no podés hacer W → Q → E completo, no gastes la W; media combo es regalar maná y quedarte a pie.",
+        "Entrá solo cuando el CC dirigido del rival esté gastado: tu vida entera depende de que no te agarren en el aire.",
+        "Nivel 3 con Ignite es kill real: buscá el trade full cuando tengas los tres hechizos y la runa lista.",
+        "Si vas behind, no fuerces all-in: cambiá a modo picks; LeBlanc atrasada solo mata aislados, y eso todavía gana partidas."
+      ],
+      "plan": {
+        "early": "Jugá tranqui los primeros niveles, desde el 2-3 buscá trades de burst con W → Q → E y al 6 empujá y roameá con Ignite en la mano.",
+        "mid": "Cazá aislados en el río y side lanes, rotá al lado bot cuando el rival se agrupe y después de cada kill llamá objective: jugá desde la niebla.",
+        "late": "Nada de teamfight frontal: flanqueá sin mostrar tu sprite, sacá al jungla, ADC o support que camine solo y usá su timer de muerte para terminar o robar el objetivo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/leblanc/guide",
+      "https://mobalytics.gg/lol/champions/leblanc/build"
+    ]
+  }
+}

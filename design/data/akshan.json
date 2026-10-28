@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "akshan",
+    "ddragonId": "Akshan",
+    "name": "Akshan",
+    "titleEs": "el Centinela Rebelde",
+    "cid": 166,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.09,
+    "pr": 2.02,
+    "br": 1.66,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 7.1,
+      "jungle": 0.5,
+      "middle": 86.3,
+      "bottom": 4.3,
+      "support": 1.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Akshan.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Akshan_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 56.02, "games": 739 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 56.01, "games": 291 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 55.74, "games": 244 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 53.39, "games": 487 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 53.21, "games": 218 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 53.1, "games": 983 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 53.01, "games": 249 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 52.9, "games": 777 }
+  ],
+  "weakAgainst": [
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 44.79, "games": 384 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 45.63, "games": 263 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 46.35, "games": 315 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 46.39, "games": 388 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 46.52, "games": 604 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 46.96, "games": 362 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 47.06, "games": 221 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 48.02, "games": 227 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E le da movilidad absurda: cuelga de las paredes, gira alrededor del terreno y llega a vos en un cuarto de segundo; no lo des de perdido aunque lo veas lejos.",
+      "Su pasiva carga con dos golpes: el tercero pega de más, le da escudo y velocidad de movimiento; si entrás a un trade largo le estás regalando los tres.",
+      "La W lo vuelve invisible cerca de paredes y torres: puede reaparecer detrás de vos cuando creíste que se fue, y sus roams por el río son gratis.",
+      "Si mata al campeón que eliminó a un aliado, lo resucita en la base: en late game ese revive puede desarmar una pelea ganada.",
+      "La Q es limpiador de wave y poke a la vez: empuja el lane sin acercarse y el bumerán de vuelta te pega aunque te corras."
+    ],
+    "weaknesses": [
+      "Para hacer daño tiene que entrar al rango de AA: es un tirador que pelea cuerpo a cuerpo, así que cada trade suyo es una entrada y una salida con riesgo real.",
+      "La E depende de terreno: en el medio abierto de la lane no tiene anclas y sin swing no tiene escape; castigalo ahí.",
+      "Un solo CC corta el swing de la E en el aire y lo deja parado en melé: guardá tu skillshot para el momento exacto en que vuele.",
+      "La R es un canal interrumpible: si lo stuneás o lo empujás mientras dispara, pierde la mitad del daño y queda sin recurso.",
+      "En matchups de rango no puede usar la E para atacar porque la necesita para sobrevivir: si lo zoneás desde lejos, pierde el lane farmeando de miedo."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con la E desbloqueada: empieza a pegar trades cortos con la pasiva y a escapar por las paredes; no aceptes trades extendidos sin tu CC listo.",
+      "Primera ida a base con componente de ítem: su daño de trade sube un escalón y va a buscar agresión; jugá un paso atrás ese minuto.",
+      "Nivel 6: la R le da ejecución a distancia para cerrar kills que antes se escapaban; no te quedes a media vida en su rango.",
+      "Nivel 11 y 16 con puntos en la R: la ejecución cada vez más barata y el cooldown bajo lo vuelven una amenaza constante en cada pelea; asumí que la tiene en mano.",
+      "Late game con la pasiva de revive en mesa: si tiene un aliado muerto, matar al villano lo vuelve a traer; no le regales la kill de la shutdown."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, TF, Hwei: pegale desde fuera de su rango de AA; todo su kit exige caminar hacia vos y cada paso le cuesta vida.",
+        "Empujá la wave constante: su mejor jugada es el roam invisible con W, y una wave contra su torre lo encierra.",
+        "Guardá tu CC para su swing: si la E lo deja en el aire, la pelea termina antes de que llegue a pegar su pasiva."
+      ],
+      "tanks": [
+        "Su daño es de sustained melee: plantate, dejá que gaste la E para entrar y pelea hasta que se quede sin anclas para salir.",
+        "Parate cerca de las paredes cuando lo persigás: negarle el terreno anula su movilidad y lo volvés un tirador sin piernas.",
+        "Armadura temprano: su pasiva y su Q pegan físico, un solo item de armor abarata todo su trade."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para entrar y devolvé el burst ahí: sin swing está desarmado y su única salida es caminar.",
+        "Cuando se camufle con la W no lo busques a ciegas: retirate a tu torre o agrupate; aparecerá por tu espalda si te quedás solo.",
+        "Pegale entre sus trades: después de cada entrada tiene que salir al mismo ancla, y ese camino de vuelta es su momento más frágil."
+      ],
+      "crowdControl": [
+        "Un CC bien tirado corta la E o la R, las dos cosas que lo hacen fuerte: guardá tu hard CC para el swing y su canal de la ultimate.",
+        "Annie, Galio y compañía le ganan el all-in: si te tira la combo encima y sobrevivís el primer segundo, él queda sin nada en el rango de tu respuesta.",
+        "No desperdicies CC en el poke: usalo cuando se comprometa a la entrada, porque ahí no tiene escape y la kill es tuya."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 4,
+        "name": "Twisted Fate",
+        "tips": [
+          "Tu carta dorada es point-and-click: guardala para cuando inicie el swing de la E y lo vas a cortar en el aire con todo y daño invertido.",
+          "Empujá la wave con Q y usá tu R para responder sus roams: no dejes que gane el mapa gratis caminando invisible por el río.",
+          "Wardá las paredes laterales del río: la W lo deja invisible para torres pero no para wards, y verlo venir te da la ventana para el stun."
+        ]
+      },
+      {
+        "cid": 39,
+        "name": "Irelia",
+        "tips": [
+          "Tus dashes sobre minions te dejan seguirlo: cuando entre con la E, saltale encima; él entró a melee a pegar tres golpes, vos vivís mejor ahí que él.",
+          "Cargá tu pasiva en la wave antes de aceptar el trade: su escudo del tercer golpe aguanta más de lo que parece si entrás frío.",
+          "Pegale cada vez que la E esté en cooldown: es su único escape y sin anclas cercanas tiene que caminar hacia tu torre para huir."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango te deja castigarlo en cada intento de trade: tiene que acercarse para pegar la pasiva, y cada paso de acercamiento se paga con una Q tuya.",
+          "Guardá tu E para el swing, no para el poke: es la única skill que puede interrumpirle la entrada y después la ultimate de una sola vez.",
+          "Shoveá la wave a su torre: su plan B siempre es el roam con W, y una wave perdida le niega la excusa para irse."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "La charca anula su trade entero: esperá que entre con la E y la pasiva y tirá W; su burst se esfuma y el escudo que ganó no le sirve.",
+          "Pegale con E de rango cada vez que camine a farmear: no puede responder sin entrar a tu rango y vos escalás mejor que él al late.",
+          "Jugá pasivo los primeros niveles y ganale el juego después: Akshan necesita kills tempranas para existir; si el lane termina parejo, su late es peor que el tuyo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: AA → AA → Q (cargá la pasiva en minions antes para que el tercer golpe pegue de más; el bumerán de vuelta pega aunque el rival se corra)",
+        "Trade corto: AA → AA → Q → AA → AA → E a una pared para salir sin recibir nada de vuelta",
+        "All-in nivel 6: AA → AA → Q → AA → AA → E encima del objetivo → R mientras volás para ejecutar o forzar el Flash",
+        "Entrada desde camuflaje: W pegado a la pared → acercate invisible → AA → AA → Q → R → Flash para que la vuelta del Q pegue seguro → E de escape",
+        "Combo de teamfight: poké con Q desde atrás, esperá que el CC del equipo enganche un target y entrá con E → R para ejecutar"
+      ],
+      "tips": [
+        "Cargá tu pasiva en la wave antes de cada trade: dos AA a minions y entrás con el tercer golpe potenciado, escudo y velocidad de movimiento; nunca entrés frío.",
+        "No uses la E para acercarte si el rival tiene CC listo: un swing cortado te deja parado en medio del melé; usala como escape y entrá caminando.",
+        "La R es un canal: no la tires parado frente a un tanque despierto; soltala desde el swing de la E o cuando el CC enemigo ya se gastó.",
+        "Contá quién mató a tus aliados: si el villano está vivo, esa kill te revive un integrante del equipo; caza ese target antes que el carry más rengo.",
+        "Usá la W para roamear por las paredes del río cuando la wave está pushada, no como botón de curación a lo loco: la regeneración no paga lo que vale la invisibilidad."
+      ],
+      "plan": {
+        "early": "Comerciá corto con AA + pasiva cargada en minions, empujá con Q y cuando la wave entra a la torre roameá invisible por el río; al 6 buscá la ejecución con R o castigá al rival a media vida.",
+        "mid": "No juegues de ADC pegado a la pelea: pokéá desde atrás con Q, entrá con E solo sobre targets sin CC y usá la R de cooldown corto para ejecutar; si tenés un villano marcado, priorizá esa kill para revivir un aliado.",
+        "late": "Pegale a las peleas con la R spameable y seguí al asesino enemigo para resucitar a tus carries con la pasiva; la E se usa con más libertad pero jamás entrés antes de que el equipo rival se gaste el CC."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/akshan/guide",
+      "https://mobalytics.gg/lol/champions/akshan/combos"
+    ]
+  }
+}

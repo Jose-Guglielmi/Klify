@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "sylas",
+    "ddragonId": "Sylas",
+    "name": "Sylas",
+    "titleEs": "el Usurpador",
+    "cid": 517,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.51,
+    "pr": 6.63,
+    "br": 16.61,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 7,
+      "jungle": 41.2,
+      "middle": 43.1,
+      "bottom": 0.4,
+      "support": 8.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sylas.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sylas_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 59.49, "games": 701 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 58.44, "games": 243 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 58.3, "games": 259 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 56.9, "games": 348 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 56.27, "games": 295 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 53.31, "games": 272 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 52.87, "games": 1481 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 52.73, "games": 933 }
+  ],
+  "weakAgainst": [
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 39.22, "games": 232 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 41.38, "games": 261 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 42.22, "games": 469 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 44.62, "games": 260 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 45.27, "games": 455 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 45.44, "games": 1305 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 45.58, "games": 939 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 45.98, "games": 1268 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su Q (Chain Lash) tiene poke y wave clear de rango medio: te empuja la wave sin gastar la E y el slow del segundo golpe deja armado el gank del jungla.",
+      "La W (Kingslayer) es point-and-click y cura una barbaridad cuando está bajo: no se puede esquivar y convierte cualquier trade perdido en pelea ganada.",
+      "La E1 (Abscond) es dash puro: le sirve para esquivar skillshots y para entrar sobre el carry sin movilidad; la E2 es un stun de área que además marca el engage.",
+      "La R (Hijack) le da un ultimate del equipo enemigo gratis: contra compos con ults de engage fuertes (Malphite, Gragas) escala como un segundo initiator sin pagar el costo.",
+      "Escala bien: no hay un punto del juego en el que se caiga, y en pelea larga el heal de la W lo mantiene vivo más de lo que parece."
+    ],
+    "weaknesses": [
+      "La R depende 100% de la composición rival: si el enemigo tiene ults de utilidad o de daño suave, Sylas se queda sin la mitad de su kit en teamfight.",
+      "La W lo desplaza: si la usa mal, se mete solo en la zona de daño del rival; y con Grievous Wounds el heal se le cae a la mitad.",
+      "Sin E disponible es un luchador de rango corto sin escape: la E1 es a la vez su engage y su salida, así que cada dash gastado es una ventana de castigo.",
+      "La visión lo anula: si no puede flanquear con la E, no llega a los carries y termina peleando contra el frontline, que es donde su daño rinde menos.",
+      "Early contra rango puro es incómodo: le pegan desde afuera de su Q y lo obligan a gastar E para farmear, justo cuando la necesita para sobrevivir."
+    ],
+    "powerSpikes": [
+      "Nivel 3: ya tiene las tres básicas y gana casi cualquier duelo corto gracias al heal de la W; es su primer momento real de pelear.",
+      "Nivel 6: spike variable según a quién le robe la R; si el rival tiene un ult de engage o de burst, ahí cambia el juego por completo.",
+      "Primer item completo: pasa de sobrevivir la lane a tener presión real; antes de eso es el momento de castigarlo.",
+      "Nivel 9 (Q maxeada) y nivel 11 (segundo punto en R): el daño de la Q pega de verdad y el robo de ultimates entra mucho más seguido.",
+      "Nivel 16: la R al máximo le permite robar y usar ults en cada pelea; en late es donde más se nota la diferencia."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vel'Koz, Zoe, Heimerdinger: pegale siempre desde fuera del alcance de su E1 y el lane se vuelve una granja que no puede cobrar sin comerse medio combo.",
+        "Quedate atrás de al menos un minion: la E2 (stun) es un proyectil y con la wave en el medio no tiene cómo clavártela.",
+        "Si te llega a saltar, cortá el trade en el acto: casi todo su daño pasa cuando está pegado a vos, así que alejarte le anula la pelea."
+      ],
+      "tanks": [
+        "Malphite, Nasus, Gragas: no le regales trades largos, porque el heal de la W escala con su vida perdida y en peleas de desgaste te gana.",
+        "Jugá con Grievous Wounds temprano: sin el heal amplificado, su sustento en lane se cae y depende solo del Q para limpiar wave.",
+        "No gastes tu ult de engage en él si puede robarla: esperá a que la use en otra pelea o forzá la pelea cuando su R esté en cooldown."
+      ],
+      "assassins": [
+        "Talon, Naafiri, Zed, Qiyana: el duelo lo gana el que arranca; si lo ves cargar E1, salí del rango antes de que la E2 te agarre, porque el stun es el que habilita todo su burst.",
+        "Esperá a que gaste la E para empujar la wave y entrá recién ahí: sin dash queda parado a rango corto y con la W como única herramienta.",
+        "Comprá resistencias y un poco de sustain: su combo mata solo si lo dejás llegar a la segunda rotación; si no te mata en la primera, la pelea es tuya."
+      ],
+      "crowdControl": [
+        "Lissandra, Malzahar y Vex lo borran: cualquier CC duro que le corte la E2 en el aire le arruina el engage y lo deja adelantado sin escape.",
+        "Encadená el CC cuando ya está adentro: interrumpirle la W antes de que cure es la diferencia entre un trade parejo y un kill gratis.",
+        "Guardá un CC para su segunda entrada: suele volver con la E en cuanto la tiene, y ahí ya no tiene forma de salir."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Armá la línea de torretas entre vos y él y no la cruces: la E1 lo obliga a entrar a la zona donde tus torretas pegan gratis y la E2 le pega tarde.",
+          "Guardá tu E (stun) para el momento exacto en que entra con la E1: el dash es predecible y el stun le corta la E2 antes del knock-up.",
+          "Farmea desde atrás con Q y W y dejalo empujar: cada wave que gasta en tu zona es una wave que él no puede usar para pelear."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Usá la W (niebla) para negarle la E2 y el poke del Q: si lo obligás a entrar a la niebla para pegarte, pierde el stun y la mitad del daño.",
+          "Burstéalo desde vida alta con la Q cargada: su W cura más cuanto más bajo está, así que la ventana es cuando todavía tiene la barra llena.",
+          "Comprá Grievous Wounds antes del primer item completo: sin el heal amplificado, tus trades de Q + E lo dejan sin sustento en lane."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Jugá a rango máximo de tu Q y W: su E1 no llega si no te acercás, y sin engage no tiene cómo convertir el poke en kill.",
+          "Guardá la E (knock-up) para cuando entre con el dash: el CC en el aire le corta la E2 y lo deja adelantado en tu rango.",
+          "Empujá la wave desde afuera: si lo encerrás contra la torre, gasta la E para farmear y pierde la única forma de llegar a vos."
+        ]
+      },
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Mantené la distancia de tu Q y W y nunca pelees a rango de su E: su kit entero pide estar encima tuyo y a distancia media no llega.",
+          "Tirá la E (slow) en el lugar donde cae su dash: el slow le corta la segunda parte del engage y le hace perder la E2.",
+          "Cuidado con la vida baja: su W cura más cuanto menos HP tiene, así que terminá el kill con un combo completo en vez de dejarlo al 20%."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q → W instantánea sobre el objetivo → AA → E1 de salida apenas arranca la animación del ataque",
+        "Engage básico: E1 → E2 (stun) → AA → Q (slow) → AA → W para cerrar y curarte lo que te devolvieron",
+        "Engage largo con Flash: E1 → Flash justo al final del dash → E2 → AA → Q → AA → W → AA",
+        "Engage desde rango de W: E1 → E2 → W inmediata para viajar y stunear un instante antes de lo que espera el rival",
+        "Cancelar la animación de la R: R y en el mismo frame Q o E (o E1 → E2 → R en el aire) para robar el ult sin perder tempo"
+      ],
+      "tips": [
+        "No uses la W como poke a vida llena: es tu sustain y cura más cuanto menos HP tenés; guardala para el trade en el que te van a pegar de vuelta.",
+        "Cuidá la E como si fuera tu Flash: es engage y escape a la vez, así que usarla para farmear o para pokearte te deja sin salida cuando aparece el jungla.",
+        "Mantené la wave pareja o cerca de tu lado: te deja correr al rival hasta tu torre y evita que te agarren empujado y sin escape.",
+        "Mirá qué ultimates hay en el otro equipo antes de pelear: robá siempre la de engage o la de AoE fuerte, y no gastes el robo en una de utilidad con la teamfight armada.",
+        "Si el rival compró Grievous Wounds, hacé trades cortos en vez de peleas largas: el heal deja de ser una fuente de daño sostenida y pasa a ser solo supervivencia."
+      ],
+      "plan": {
+        "early": "Farmeá con Q manteniendo la wave cerca de tu lado, tradeá solo con E2 disponible y al llegar al 6 buscá el kill robando un ult de burst o de engage.",
+        "mid": "Partí la lane cuando la R está en cooldown y agrupá cuando está arriba: rotá desde la side lane y buscá picks con el ult robado antes de la pelea grande.",
+        "late": "Pegate al equipo y peleá cerca de tus carries, entrá con E desde un flanco sobre el backline y usá la W para sobrevivir el foco en vez de para iniciar."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/sylas/guide",
+      "https://mobalytics.gg/lol/champions/sylas/combos",
+      "https://mobalytics.gg/lol/champions/sylas/counters"
+    ]
+  }
+}

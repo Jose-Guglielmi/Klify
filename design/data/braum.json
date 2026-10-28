@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "braum",
+    "ddragonId": "Braum",
+    "name": "Braum",
+    "titleEs": "el Corazón del Fréljord",
+    "cid": 201,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.19,
+    "pr": 5.1,
+    "br": 5.38,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 0,
+      "bottom": 0,
+      "support": 99.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Braum.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Braum_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 59.59, "games": 339 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 57.94, "games": 680 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.74, "games": 949 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 57.49, "games": 454 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 57.3, "games": 1061 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 57.21, "games": 201 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 57.08, "games": 226 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 56.79, "games": 3960 }
+  ],
+  "weakAgainst": [
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 46.08, "games": 549 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 46.39, "games": 998 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 47.46, "games": 1022 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 48.17, "games": 1229 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 48.66, "games": 411 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 49.28, "games": 907 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 49.42, "games": 864 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 49.55, "games": 664 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Mientras tenga la R en mano, cada engage del rival se le da vuelta: la Q marca pasiva y el stun point-and-click castiga a cualquiera que salte encima de tu carry.",
+      "Es un anti-engage por naturaleza: contra melee, asesinos y soportes de engage, el stun de la pasiva entra apenas atacan y la pelea muere ahí mismo.",
+      "La E (Inquebrantable) bloquea proyectiles enteros para todo el equipo parado detrás: neutra hooks, flechas y bursts de magos sin moverte del lugar.",
+      "En teamfight pelea por dos: knock-up en línea con la R y muralla con la E dan peel masivo sin necesidad de generar daño propio."
+    ],
+    "weaknesses": [
+      "No tiene engage real: su R sirve para pickear, pero depende de que el rival inicie o de que su equipo haga el trabajo; contra composiciones que juegan atrás queda sobrando.",
+      "El lane contra rango es un suplicio: cada CS del ADC lo paga caminando hacia poke y sin All-In forzado su presión es nula.",
+      "Cuando la E está en cooldown él y su ADC quedan desnudos: la ventana de la muralla es exactamente la ventana donde hay que matarlos.",
+      "Su daño propio es casi decorativo: si el carry que acompaña juega mal, Braum no puede cargar la pelea solo como sí lo hacen Leona o Rell.",
+      "La pasiva exige cuatro golpes (Q o básico + 3 básicos) para stunear: contra campeones que se despegan rápido, el stun nunca llega a completarse."
+    ],
+    "powerSpikes": [
+      "Nivel 2: con Q + W ya podés allinear a un rival distraído con tu ADC; un stun temprano a media vida es kill o Flash.",
+      "Nivel 3: kit completo, podés allinear o defender según lo que pida el lane; la E empieza a tapar proyectiles completos.",
+      "Nivel 6: la R desbloquea all-ins con tu ADC y picks en el jungla rival; con Flash en mano, cada ult puede terminar en kill.",
+      "Nivel 11 y 16: puntos extra en la R bajan el cooldown lo suficiente para tener knock-up disponible en casi cada pelea agrupada.",
+      "E al máximo (nivel 13): la mitigación de la muralla escala para tapar el daño de los carries durante todo el late."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Senna, Vel'Koz, Janna: no camines hacia poke gratis; parate en el matorral y castigá solo cuando el ADC pueda seguir tu entrada.",
+        "La E bloquea la primera tanda de proyectiles: usala para ganar el trade, no para tanquear daño continuo que sí la pasa por los costados.",
+        "Juegá la brush y esperá que se acerquen a ward: tu stun de pasiva en rango corto necesita que el poke se confíe una sola vez."
+      ],
+      "tanks": [
+        "Maokai, Nautilus, Rell: dejá que inicie ellos; tu Q + pasiva los stunea apenas saltan y el engage enemigo se convierte en free kill para tu ADC.",
+        "La E corta el burst frontal del tanque mientras tu backline aplica: parate entre el tanque y tu carry, no encima del tanque.",
+        "En peleas largas tu pasiva escala mejor que su daño: comprá Armour (Plated Steelcaps, Frozen Heart) y ganá el desgaste."
+      ],
+      "assassins": [
+        "Zed, Talon, Kha'Zix: W al carry que están cayendo encima y E inmediata para tapar el burst; tu stun de pasiva los congela en el punto exacto del engage.",
+        "Guardá la W para el dive, no para recolectar: sin tu W, el asesino ejecuta a tu ADC sin que puedas hacer nada más que mirar.",
+        "Contá su cooldown de escape: stunealo recién después de que gastó el dash, porque el stun que no conecta es solo un basic attack más."
+      ],
+      "crowdControl": [
+        "Leona, Rakan, Thresh: tu E es respuesta directa a sus hooks y engages de proyectil; antelá el engage y pará la combo antes de que empiece.",
+        "Tu R knock-upea a través del CC enemigo en línea: usala para interrumpir canales (Katarina, Malzahar) o para iniciar cuando el rival agrupa.",
+        "No entrás primero contra comps de CC: tu trabajo es invertir su engage, no competir en quién stunnea más rápido desde cero."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Sus bombas duplicadas stunean más rápido y desde más lejos que tu pasiva: no aceptes trades de poke, buscá el all-in con tu ADC cuando su Q está en cooldown.",
+          "Su E de speed-up hace que nadie de su duo muera a tu stun: coordiná con tu jungla y quemá la revive de su R antes de pelear de vuelta.",
+          "Si su R está abajo, ese es tu all-in completo: sin revive, tu burst combinado con el ADC gana cualquier 2v2."
+        ]
+      },
+      {
+        "cid": 497,
+        "name": "Rakan",
+        "tips": [
+          "Rakan engagea con dash y charm, no con proyectiles: tu E no lo frena, así que mantené distancia y no le des nunca el ángulo de engage sobre tu ADC.",
+          "Su W tiene wind-up visible: cuando lo vea saltar, W a tu carry y stunelo con pasiva apenas aterriza; el engage que rebota es tu mejor setup.",
+          "Pegale de poke cuando su W esté en cooldown: sin su dash es tan frágil como vos y pierde cualquier trade corto."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Su engage W + R arrasa tu peel: no te pares pegado a tu ADC, separá las posiciones para que su knock-up no agarre a los dos.",
+          "Ganale el early antes de que complete items de tanque: su daño es mínimo y tu pasiva + ADC ganan el trade largo si entrás primero con Q.",
+          "Su R agrupa: cuidá el agrupamiento de tu equipo en teamfights; un solo knock-up de ella puede regalar la pelea entera."
+        ]
+      },
+      {
+        "cid": 235,
+        "name": "Senna",
+        "tips": [
+          "Su rango con pasiva te pokea desde afuera de tu Q: jugá el matorral y castigá solo cuando baje a recolectar almas.",
+          "La E de Braum bloquea su Q y su W: usala apenas veas la animación y el trade se vuelve free para tu duo.",
+          "Allineá temprano: Senna escala infinito y cada minuto que pasa es su lane; forzá el 2v2 antes de que arme sus dos primeros items."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Proc de pasiva en trade: Q al objetivo → W a un aliado cerca de él → 3 básicos para stunear (la W te reposiciona sin perder el trazo de la pasiva)",
+        "All-in nivel 6: Q → AA → R instantáneo → AA x2 para completar el stun (el knock-up de la R te da tiempo de sobra para los básicos)",
+        "Engage largo con Flash: W a un aliado cerca del objetivo → Q → Flash a mitad de la animación → R apenas confirmás que la Q conecta",
+        "Rescate de carry: Flash → W al aliado en peligro → Q al aterrizar → AA → R → AA x2 (peel + stun en un solo movimiento)",
+        "Defensa total de aliado: W al aliado → E en la dirección del daño → Q → R para despegar al agresor de encima"
+      ],
+      "tips": [
+        "No uses la E en trades cortos: el maná y el cooldown de la muralla son tu única protección real; guardala para trades largos o engages completos.",
+        "No juegues agresivo por querer: Braum es más fuerte esperando que el rival inicie y revirtiendo la pelea con Q + pasiva sobre el que saltó.",
+        "Cuando la E esté en cooldown, jugá un paso atrás con tu ADC: esa ventana es exactamente cuando el rival busca el all-in.",
+        "Pegate a tu ADC en todo momento del mid y late game: solo vos sos un objetivo gratis, pero Braum + carry es una fortaleza con la W y la E.",
+        "Maxeá Q primero (Q → E → W): el cooldown bajo de la Q te deja buscar stuns de pasiva mucho más seguido durante todo el juego."
+      ],
+      "plan": {
+        "early": "Aguantá el poke de rango parando en brush, buscá el all-in en nivel 2/3 con Q + W cuando tu ADC pueda seguirte y no gastes la E salvo en trades completos.",
+        "mid": "Roameá para pickear con la R en el jungla y alrededor de mid, wardá con tu ADC siempre en pareja y pegate a él para peel en cada skirmish por objetivo.",
+        "late": "Nunca wardes solo, parate en la frontline pegado a tus carries para tapar daño con la E y buscá el knock-up de la R sobre el equipo agrupado en cada pelea por objetivo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/braum/guide",
+      "https://app.mobalytics.gg/lol/champions/braum/build",
+      "https://mobalytics.gg/lol/champions/braum/combos"
+    ]
+  }
+}

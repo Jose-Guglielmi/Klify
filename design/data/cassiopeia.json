@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "cassiopeia",
+    "ddragonId": "Cassiopeia",
+    "name": "Cassiopeia",
+    "titleEs": "el Abrazo de la Serpiente",
+    "cid": 69,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.67,
+    "pr": 1.09,
+    "br": 1.15,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 21.8,
+      "jungle": 0.1,
+      "middle": 64,
+      "bottom": 13,
+      "support": 1.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Cassiopeia.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Cassiopeia_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 54.38, "games": 445 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 52.47, "games": 223 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 52.21, "games": 272 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 51.97, "games": 406 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 51.33, "games": 300 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 50.41, "games": 369 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 50.3, "games": 505 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 50.17, "games": 299 }
+  ],
+  "weakAgainst": [
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 41.74, "games": 230 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 45.82, "games": 251 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 46.27, "games": 268 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 46.33, "games": 259 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 46.45, "games": 437 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 47.56, "games": 431 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 48.1, "games": 210 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 48.28, "games": 495 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R es un stun multi-objetivo que decide teamfights enteras: si te agarra mirándola de frente con tu equipo agrupado, la pelea se termina antes de empezar.",
+      "Daño sostenido que escala en trades largos: mientras la Q siga envenenándote, cada E pega más fuerte y ella no necesita burst para ganarte la vida.",
+      "La W crea un terreno que frena dashes y blinks: contra movilidad es una pared invisible y contra tu jungla es la diferencia entre cazarla o no.",
+      "All-in temprano real desde el nivel 2-3: si le entra la Q, el spam de E te baja media vida antes de que llegues a tu torre.",
+      "Escalado late game: con maná resuelto, su DPS continuo y el cooldown corto de la R la vuelven una de las peores ideas de dejar crecer."
+    ],
+    "weaknesses": [
+      "Se queda sin maná a un ritmo absurdo si spamea E: forzála a castear de más y su presión de lane desaparece por completo.",
+      "De la movilidad casi no tiene: sin dash ni blink, cada gank del jungla es potencial kill y ella lo sabe, así que juega pegada a la wave.",
+      "Todo su daño cuelga de la Q: si la esquivás, sus E pegan mucho menos y no curan; el trade entero se cae a pedazos.",
+      "La R solo aturde a quien la mira de frente: entrá de costado o desde atrás y su ulti se convierte en una slow con humo.",
+      "Rango de casteo corto para ser maga: los magos de puntería larga la pokean sin entrar nunca a su distancia de E."
+    ],
+    "powerSpikes": [
+      "Nivel 2-3: con Q y E completas ya tiene all-in contra squishies; no te pares a last hittear en su rango sin saberte el nivel de la pelea.",
+      "Nivel 6: la R le da kill pressure, setup de ganks y anti-gank al mismo tiempo; asumí que hay petrificada disponible en cualquier trade largo.",
+      "Primer item resuelto (Rod of Ages / Archangel's): con maná infinito y daño escalado, una sola Q bien tirada te cuesta la mitad de la vida.",
+      "Nivel 9 con E al máximo: el bully del lane llega a su pico; evitale pelear cara a cara mientras su Q siga entrando.",
+      "Nivel 16 con R a 3 puntos: stun largo, cooldown corto y daño de ulti real; cada teamfight que no esté su R en el aire, jugala a tu favor."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Viktor, TF: pegale desde fuera de su Q y nunca entres al rango de su E; ella no puede contestarte sin acercarse a zona castigable.",
+        "Esquivá la Q y el loop entero se rompe: sus E sin veneno pegan poco y queman el maná que ella no tiene.",
+        "Pokeala en cada last hit: sin movilidad, cada paso hacia la wave le cuesta vida y se ve obligada a perder farm o perder trades."
+      ],
+      "tanks": [
+        "Su daño es sostenido, no burst: los trades largos los gana ella, así que pegá corto y usá sustain en vez de quedarte a pelear adentro de su E.",
+        "Comprá Resistencia Mágica temprano: su DPS está calibrado contra el que no la tiene, y con MR encima su loop tarda una eternidad en matarte.",
+        "No te pares en el charco de la W: la slow y el veneno te niegan escapar y convertirte en blanco fijo de sus E."
+      ],
+      "assassins": [
+        "Esperá que gaste la W: el terreno frena tu dash y es su única forma de negarte el salto; sin W en el piso sos libre para entrar.",
+        "Esquivá la Q antes de saltar: si tu engage arranca con la Q fallada, su combo queda sin daño y sin cura para responder.",
+        "Entrá desde atrás o de costado en el all-in: si la R no te encuentra de frente, no hay stun y ella está descalza para el resto de la pelea."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas muestre intención de abrir con R: interrumpirla entre el caminar hacia vos y la ulti mata su única ventana de stun.",
+        "Malzahar y Lissandra la convierten en piedra: supresión o zonificación encima de una campeona sin escape es kill garantizada.",
+        "Guardá el CC para después de que tire la R: si la petrificada no entra, queda parada en medio de todo sin ni siquiera poder correr."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango le pega de mucho más lejos que su Q: castigala en cada last hit y el lane se vuelve una granja que ella no puede cobrar sin perder vida.",
+          "Jugá fuera del rango de su E y esquivá la Q: sin veneno, sus E no curan y queman el maná que ella necesita para existir.",
+          "Avisá al jungla que es target fijo: sin escape ni flash de por medio, cada gank a mid es kill y tu poke ya le dejó media vida puesta."
+        ]
+      },
+      {
+        "cid": 4,
+        "name": "Twisted Fate",
+        "tips": [
+          "La carta dorada encadena el gank perfecto: Cassiopeia no tiene escape, así que cada stun tuyo sobre la línea de mid es kill o Flash gastado.",
+          "Empujá con Q roja y rotate: ella quema maná para seguirte el ritmo a la wave y sin maná no te puede seguir ni punir el roam.",
+          "Comunicá tu ulti al equipo: ella va a quedar pegada a la wave farmeando; un dive coordinado la encuentra sin R y sin respuesta."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "El charco te deja comerte su Q y hasta su R sin costo: esperá que arranque el loop de E y pooléale la combo entera en la cara.",
+          "No aceptes trades largos antes de ítems: su daño escalado gana mientras más dura la pelea; pegá corto y saná con la Q y volvé a empezar.",
+          "Escala más que ella con el mismo oro: alcanzá tu primer item pico y el trade uno contra uno pasa a ser tuyo sin necesidad de all-in."
+        ]
+      },
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Empujá la wave sin piedad: limpiarle va a costar maná que no tiene, y una Cassiopeia sin maná es un minion más en la lane.",
+          "La supresión de tu R atraviesa todo su plan: soltala apenas se pare de frente buscando la petrificada y el all-in queda en nada.",
+          "Los voidlings le comen los E y le niegan el farm: con la wave siempre pushada, acercarse a last hittear le cuesta la vida o el oro."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q encima del objetivo → E → E y seguí spameando E mientras dure el veneno (cada E envenenada pega más y te cura)",
+        "All-in nivel 2: Q al acercarse el rival → spam de E hasta quedarse sin maná o sin rival (contra squishy débil es kill real)",
+        "Combo de kill completa: Q → E → E → W al piso para frenar el escape → R mirándola de frente → E → Q → E para terminar",
+        "Engage de teamfight: R → Flash para que el equipo entero te mire de frente → W al grupo → E → Q → E con el stun corriendo",
+        "Anti-engage: R de espaldas a los perseguidores para dejarlos slowed → W en el camino angosto → E para desgastar mientras se alejan"
+      ],
+      "tips": [
+        "Solo comités trades si la Q ya pegó: sin veneno tus E no curan y quedás sin maná ni daño, que son tus dos únicas monedas.",
+        "Cuidá el maná como si fuera vida: spamear E a lo loco te deja sin presión de lane; con Tear y Manáflow el problema baja pero no desaparece.",
+        "La W no es solo daño: el terreno frena dashes y blinks, usala para negar escapes, setear tu R y cubrir la retirada de tu jungla.",
+        "La R solo aturde de frente: si querés el stun, girá antes de tirarla; si estás siendo perseguida, tirala hacia atrás para dejar slow.",
+        "No abras teamfights vos: sos de lo menos móvil del juego, esperá el engage rival o el de tu equipo y peleá pegada al peeling con la R lista."
+      ],
+      "plan": {
+        "early": "Manejá el maná con cuentagotas, buscá el all-in en nivel 2-3 cuando la Q entre y usá la R para negar ganks o setear los de tu jungla.",
+        "mid": "Sidelané y farmeá mientras no haya pelea, flankeá las teamfights para que la R agarre gente de frente y buscá picks con la W en zonas angostas del mapa.",
+        "late": "Sos un monstruo escalado: quedate pegada a tu equipo, cuidá el posicionamiento como si fuera el item más caro y abrí las peleas con una R multi-stun sobre los agrupados."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/cassiopeia/build",
+      "https://mobalytics.gg/lol/champions/cassiopeia/guide",
+      "https://mobalytics.gg/lol/champions/cassiopeia/combos"
+    ]
+  }
+}

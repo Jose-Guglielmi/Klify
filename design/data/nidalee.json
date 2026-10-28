@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "nidalee",
+    "ddragonId": "Nidalee",
+    "name": "Nidalee",
+    "titleEs": "la Cazadora Salvaje",
+    "cid": 76,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.8,
+    "pr": 2.49,
+    "br": 1.59,
+    "analysed": 48451674,
+    "laneDist": {
+      "top": 2.8,
+      "jungle": 86.5,
+      "middle": 1.6,
+      "bottom": 0.6,
+      "support": 8.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nidalee.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nidalee_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 56.51, "games": 338 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.79, "games": 1547 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 54.35, "games": 460 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 54.32, "games": 486 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 53.69, "games": 691 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 53.61, "games": 6959 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 53.58, "games": 881 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 53.39, "games": 502 }
+  ],
+  "weakAgainst": [
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 44.4, "games": 1090 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 45.98, "games": 361 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 46.55, "games": 522 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 46.56, "games": 1454 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 46.71, "games": 289 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 47.29, "games": 203 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 47.43, "games": 877 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 47.46, "games": 1003 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es la reina del counter-jungle: su clear rapidísimo y su movilidad le permiten robar camps al jungla rival y adelantarse mientras lo atrasa.",
+      "Duelista de primer nivel: si esquiva el CC clave y clava la Q, gana la mayoría de los 1v1 y skirmishes por el río.",
+      "Control de objetivos élite: asegura dragones sin sobresaltos y puede bajar el Herald sola en pocos segundos.",
+      "La Javelin desde la niebla de guerra chunkuea media vida a cualquier squishy antes de que arranque la pelea.",
+      "E en forma humana da cura y velocidad de ataque: sostiene a sus carries en teamfight además de a ella misma."
+    ],
+    "weaknesses": [
+      "Necesita snowballar sí o sí: si el early no le sale, el mid game se le cae a pedazos y queda como un jungla de daño mediocre.",
+      "Skill cap altísimo: Q skillshot, switches de forma constantes y kiteo de camps la convierten en uno de los junglas más difíciles de ejecutar bien.",
+      "Es de cristal ante el CC: un enganche de Amumu o un hook y está muerta antes de usar la segunda forma.",
+      "Contra equipos tanques cae fuerte en late: no puede borrar a nadie y termina siendo solo una cura andante.",
+      "Si malgasta el pounce (W) para entrar, se queda sin escape: su movilidad es su única defensa y no admite errores."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con las tres formas base disponibles: su clear y sus duelos tempranos ya son de lo mejor del juego.",
+      "Primer componente de item: más spam de habilidades y dueling; su early se vuelve casi imparable en invades.",
+      "Q maxeada al nivel 9: la Javelin pega como un camión y cualquier spear de lejos es un pick inmediato.",
+      "Mid game con Lich Bane y botas de penetración: el burst de combo borra squishies y define las peleas por objetivos.",
+      "Late con Rabadon: puede one-shottear desde la niebla, pero ojo que contra tanques pierde protagonismo total."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Contra campeones de rango (junglas como Graves o lanes como Jayce) no les des trades gratis: buscá la Q desde ángulos y flancos, nunca en línea recta.",
+        "Usá las trampas (W) en los arbustos de tus rutas: visión gratis de su posición te permite flanquear sin caminar a ciegas.",
+        "Tu movilidad supera la suya si no tenés CC encima: esperá que gaste el slow o el knockback antes de pounce adentro."
+      ],
+      "tanks": [
+        "No le gastes la combo completa al tanque: buscá siempre el backline; contra frontal de Zac o Maokai tu burst no alcanza.",
+        "Comprá penetración mágica temprano si el equipo rival apila MR, y aceptá que en peleas largas tu rol pasa a ser curar y cleanup.",
+        "Invadí a los tanques jungla antes del nivel 6: su clear débil early es tu única ventana clara de ventaja directa."
+      ],
+      "assassins": [
+        "Guardá la E (cura) para después del burst rival, no antes: curarte con vida llena es regalar la ventana de kill.",
+        "No camines sola por el río sin visión: los asesinos jagua te esperan justo entre camps; ward de río y trampas en arbustos.",
+        "Si un asesino te salta, W para alejarte primero y Q después: pelear cuerpo a cuerpo con tu segunda forma recién cuando él ya gastó el engage."
+      ],
+      "crowdControl": [
+        "Esperá que el CC clave esté en cooldown antes de pounce hacia el equipo: Amumu con R en mano te convierte en polvo.",
+        "En teamfight entrá por el flanco con el equipo ya comprometido, nunca primera: sos el picked ideal para cualquier engage rival.",
+        "Un Quicksilver o Cleanse situacional cambia tus peleas contra comps de CC en cadena; consideralo cuando el rival tiene tres o más stunners."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Nidalee muere si la enganchás: guardá la Q (banda) para cuando ella pouncee hacia vos o hacia tu carry, no la tires a lo loco.",
+          "Counter-junglála con tu jungla cerca: ella invade mucho, y un Amumu con refuerzos la convierte en la kill de la partida.",
+          "En teamfight no te muevas hasta verla entrar: su R multi-stun sale sola si Nidalee pouncea adentro primero; dejala quemar la movilidad."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "No le tires la Javelin desde afuera cuando su W (niebla) está activa: le esquiva todo tu poke y te quedás sin maná.",
+          "Tu ventana es el early: all-in antes del nivel 6 y antes de sus items, porque con dos objetos escalada te pasa por arriba.",
+          "Cuando Nidalee quiera skirmish, activá W y caminale: su burst no te encuentra adentro de la niebla y vos pegás de verdad en peleas largas."
+        ]
+      },
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Nidalee va a pouncear alrededor tuyo buscando el ángulo: tirale el E (drag) hacia su camino probable, no esperes verla de frente.",
+          "Tu R anula su movilidad entera: si la agarrás con la W gastada, es kill asegurada; esperá ese momento en vez de perseguirla.",
+          "Cubrí los camps con control y agrupá con tu equipo temprano: ella no puede invadir ni flanquear donde hay visión de Skarner."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Nidalee te va a invadir antes del 6 porque tu clear es lento: wardé tus camps y pedí cobertura del mid, esa es la fase donde te saca la diferencia.",
+          "Guardá el E (slingshot) para cuando ella esté en forma de puma: es el momento exacto donde no tiene escape y lo sabe.",
+          "En teamfight no persigas el poke de las spears: agrupá con tu equipo y forzá que peleen frontal, donde su burst no mata a nadie."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Burst rápido en puma: AA → E → Q y apenas arranca la animación de la Q, W hacia afuera del rango (click alejado del objetivo justo antes de saltar)",
+        "All-in desde spear: Q humana al objetivo → R → W (pounce) encima de él → al aterrizar E → Q → AA encadenados",
+        "Skirmish extendido: W (pounce) al aterrizar → AA → E → Q, seguido de R → E → Q y más AAs alternando formas",
+        "Swap exprés para pokear: W (pounce) y R en pleno aire → Q apenas aterriza en forma humana",
+        "Engage con trampa: poné W-trampa en el arbusto del flanco y buscá la Q desde la niebla; si clava la spear, R → W y bajá con la combo completa"
+      ],
+      "tips": [
+        "Kiteá los camps alternando formas en todo momento: tu velocidad de clear es tu mayor ventaja early y parada en una sola forma jugás a media máquina.",
+        "La Q humana no se tira en línea recta: buscala por ángulos y desde la niebla de guerra, porque una spear de rango máximo chunkuea media vida y abre el pick.",
+        "No uses el pounce (W) para entrar sin segundo salto o sin ver el CC rival: tu única defensa es la movilidad, y gastarla de más te mata.",
+        "La E humana además de curar da velocidad de ataque: en teamfight dásela a tu carry ADC, no te la guardes solo para autocurarte.",
+        "Nivel 6 no es tu spike real (la R solo te da stats y reset de forma): tu poder está en el early con formas y componentes de item, así que jugá con urgencia desde el minuto uno."
+      ],
+      "plan": {
+        "early": "Clear veloz alternando formas, counter-jungle al jungla rival débil y gank con frecuencia para adelantar a tus lanes, sin perder XP por gankear de más.",
+        "mid": "Seguí farmeando camps entre peleas para no caerte en nivel, push sidelanes cuando no hay teamfight y llamá Dragón o Barón apenas conseguís una kill con tu equipo cerca.",
+        "late": "Pegate a tu equipo siempre y peleá alrededor de tus carries: curá y dale E al ADC, focus al enemigo más cercano a ellos y no flanquees sola porque cualquier pick te cuesta la pelea."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nidalee/build",
+      "https://mobalytics.gg/lol/champions/nidalee/guide",
+      "https://mobalytics.gg/lol/champions/nidalee/combos"
+    ]
+  }
+}

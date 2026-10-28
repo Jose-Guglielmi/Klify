@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "udyr",
+    "ddragonId": "Udyr",
+    "name": "Udyr",
+    "titleEs": "el Cambiapieles",
+    "cid": 77,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.15,
+    "pr": 1.69,
+    "br": 0.85,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 22.2,
+      "jungle": 75.3,
+      "middle": 1.8,
+      "bottom": 0.2,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Udyr.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Udyr_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 59.53, "games": 257 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 58.06, "games": 217 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 56.14, "games": 513 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 55.38, "games": 390 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 55.32, "games": 743 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 54.96, "games": 504 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 54.63, "games": 1133 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.43, "games": 722 }
+  ],
+  "weakAgainst": [
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 47.17, "games": 706 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.29, "games": 760 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 48.54, "games": 239 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 48.65, "games": 296 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 48.77, "games": 203 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 48.83, "games": 598 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 48.94, "games": 752 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 49.26, "games": 270 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Duelista de primer nivel en el early: con Q cargada gana casi cualquier 1v1 de jungla, y si además tiene Red Buff no hay jungla que le aguante el trade.",
+      "Control de objetivos brutal: limpia campamentos a una velocidad absurda y con la E llega al Dragón antes que nadie; sin visión en el pit se lo lleva solo.",
+      "La E es stun puntual con velocidad de movimiento enorme: gankea, engages y hace picks corriendo, no necesita dash ni Flash para llegar a la cara.",
+      "Escala como tanque de bruiser: pega mucho más de lo que su barra de vida sugiere y en mid game se vuelve una pared que no se puede atravesar.",
+      "Cambiar de forma no tiene cooldown: puede alternar Q/W/R en el mismo trade y ganar el intercambio solo por tener más botones que el rival."
+    ],
+    "weaknesses": [
+      "No tiene forma de entrar salvo correr hacia vos: kitealo y su E queda en un stun que nunca llega; sin esa habilidad es un saco de golpes.",
+      "Depende del maná: si le negás o le robás el Blue Buff no puede spamear formas y se queda sin daño y sin sustain de W.",
+      "La R no es un power spike real: llega al 6 y al 16 sin la explosión de daño de otros junglas; esos niveles son tu ventana para castigarlo.",
+      "Late game cae fuerte: su daño no escala contra la vida de los carries y su única herramienta sigue siendo la E; si no cerró antes, la 5v5 lo pasa por arriba.",
+      "Si gasta E para iniciar (o E + Flash) se queda sin escape ni forma de salir: enfocalo justo ahí y muere sí o sí."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q + W + E: arranca el duelo real y los ganks que corren a la gente sin movilidad; no te pares en el río sin visión.",
+      "Primer ítem de bruiser terminado: el daño de Q pega un salto y pasa de duelista a camión; desde ahí el 1v1 solo no alcanza para frenarlo.",
+      "Dragón temprano: con E y R lo limpia a vida completa sin ayuda del equipo; wardear el pit es lo único que lo frena.",
+      "Mid game con ventaja: ahí hace los picks que definen la partida; si llega con oro, la E con velocidad se vuelve un stun imposible de esquivar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kitealo sin piedad: sin dash, cada paso atrás mientras lo golpeás le cuesta la vida; el rango es tu única defensa y alcanza.",
+        "Guardá el slow o el CC para cuando prenda la E: si lo frenás antes de que llegue al rango del stun, el gank se cae solo.",
+        "No farmees pegado a la wave: si te alcanza con E te stunea y lo que viene después es Q con Red Buff encima."
+      ],
+      "tanks": [
+        "Comprá anti-heal temprano: su W le da escudo y curación por ataque, y sin anti-heal el duelo se estira hasta que llega su equipo.",
+        "Sumá un ítem de resistencia mágica y botas: su daño es sostenido y de corto alcance, y con MR su Q deja de doler.",
+        "Peleá con la wave a favor: no tiene burst para matar a alguien con vida de tanque antes de que la wave y tu equipo entren."
+      ],
+      "assassins": [
+        "Shaco, Ekko, Naafiri: no lo duelees early ni con Red Buff arriba; farmeá desde lejos, escalá y buscá el 2v1 en el río.",
+        "Pegá en ráfaga y salí: el burst corto mata antes de que cargue la segunda Q; la pelea larga es su terreno, no el tuyo.",
+        "Seguilo con visión: su gank llega corriendo por el río, así que una ward en la entrada de la jungla te da dos segundos de ventaja."
+      ],
+      "crowdControl": [
+        "Encadená CC sobre la E: si lo frenás cuando arranca la estampida, gastó su única entrada y queda parado por varios segundos.",
+        "Slows a distancia (Zyra, Rammus, Warwick) lo dejan caminando sin llegar: cualquier slow le corta todo el engage.",
+        "Reservá el CC de área para la teamfight: agrupado es donde entra corriendo, y un stun en el momento justo salva la pelea."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 35,
+        "name": "Shaco",
+        "tips": [
+          "No lo duelees en el primer clear: cambiá el río por tus cajas y volvé por el otro lado, porque Udyr gana el 1v1 hasta que tengas ítems.",
+          "Poné cajas en la entrada del río y en el pit: su gank llega corriendo y si no tenés visión de la entrada, la E entra sin castigo.",
+          "Robale campamentos con el clon y la Q: negarle experiencia y el Blue Buff lo deja sin maná para spamear formas, que es todo su kit."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Farmeá con Q del otro lado de la wave y no aceptes el 1v1: no matás a alguien con escudo de W antes de los ítems.",
+          "Guardá la R para cuando prenda la E: si te stunea, la Cronodesfase te saca de la pelea y lo deja parado sin nada que apretar.",
+          "Jugá el mapa, no el cuerpo a cuerpo: roameá, ganá por objetivos y aprovechá que Udyr se apaga en late game."
+        ]
+      },
+      {
+        "cid": 122,
+        "name": "Darius",
+        "tips": [
+          "No le escapes al 1v1 a igual vida: el sangrado y la R te ganan el cuerpo a cuerpo, porque Udyr pega sostenido y no tiene burst para matarte antes de que apiles.",
+          "Pegale con el filo exterior de la Q cuando corra hacia vos: si le pegás el filo, el trade es tuyo y su W no alcanza a compensar.",
+          "Cuidá la E para cuando arranque la estampida: engancharlo ahí le corta el escape y lo deja en rango de tu R."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Mandá la jauría primero: los perros se comen sus ataques de Q y las mordidas mientras vos entrás desde el costado.",
+          "Pegá en ráfaga y salí: tu burst mata antes de que cargue la segunda Garra Salvaje, así que no te quedes en la pelea larga.",
+          "Usá la E para reposicionarte cuando prenda la estampida: si el stun no te encuentra, su engage entero queda en nada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: E (Estampida Abrasadora) desde el río → primer ataque para el stun → Q (Garra Salvaje) para el burst → W (Manto Férreo) si el trade se estira",
+        "All-in con R: R (Tormenta Invernal) encima del objetivo para el slow → E para el stun → Q y relanzá la Q mientras la tormenta pega sola",
+        "Sustain de jungla: W antes de cada campamento (escudo + curación por ataque) y relanzá la W en peleas largas para el escudo grande y la curación por vida máxima",
+        "Pick en mid: E + Flash sobre el carry aislado → stun → Q → R para que la tormenta lo termine mientras tu equipo entra",
+        "Duelo limpio: Q para velocidad de ataque → W para el escudo → relanzá la Q y cerrá con E para el stun si intenta huir"
+      ],
+      "tips": [
+        "Pensá las formas en dos pares: Q/W para pelear y sobrevivir, R para waveclear y peleas de área; cambiar de forma no tiene cooldown, así que alterná dentro del mismo trade.",
+        "No entres a un gank sin E disponible: sin la estampida no tenés stun ni velocidad y llegás tarde a todo; si está en cooldown, farmeá y volvé.",
+        "Relanzá la habilidad siempre que puedas: el relanzamiento es el que da el bonus de definitiva (más daño, escudo grande o inmunidad a CC); dejarlo sin usar es tirar oro.",
+        "Cuidá el maná como si fuera vida: dos rotaciones de Q + W lo vacían; si te quedaste sin Blue, priorizá campamentos y no gankees sin maná para salir.",
+        "En teamfight entrá después del primer CC enemigo: tu trabajo es correr al carry, no abrir la pelea; si entrás primero te frenan y morís sin hacer daño."
+      ],
+      "plan": {
+        "early": "Limpiá los campamentos con R y W para no perder vida ni maná, tomá el primer Dragón con visión y gankeá solo lanes sobreextendidas o sin Flash, sin perder experiencia por perseguir.",
+        "mid": "Jugá por objetivos y picks: wardeá el pit, forzá Dragones con tu equipo y usá E + Flash para castigar carries aislados; con el primer ítem de bruiser ya ganás los 1v1 e invadís.",
+        "late": "Dejá de abrir peleas: entrá de costado al carry después del primer CC enemigo, usá W y relanzá para sobrevivir y quedate vivo para el Barón, porque si el juego se estira tu ventana se cierra."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/udyr/guide",
+      "https://mobalytics.gg/lol/champions/udyr/counters",
+      "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/es_AR/champion/Udyr.json"
+    ]
+  }
+}

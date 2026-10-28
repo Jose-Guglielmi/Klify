@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "nasus",
+    "ddragonId": "Nasus",
+    "name": "Nasus",
+    "titleEs": "el Curador de las Arenas",
+    "cid": 75,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.99,
+    "pr": 4.32,
+    "br": 13.12,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 81,
+      "jungle": 3.9,
+      "middle": 13.7,
+      "bottom": 0.3,
+      "support": 1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nasus.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nasus_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 61.54, "games": 325 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 57.9, "games": 696 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 57.78, "games": 270 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 57.18, "games": 439 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 56.81, "games": 764 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 56.33, "games": 900 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 55.82, "games": 1924 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 55.58, "games": 421 }
+  ],
+  "weakAgainst": [
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 46.41, "games": 724 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 46.75, "games": 1260 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 47.58, "games": 559 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 47.59, "games": 664 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 47.64, "games": 741 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 48.05, "games": 2104 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 48.29, "games": 762 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 48.52, "games": 237 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su Q stackea para siempre: cada ejecución suma daño permanente, así que mientras más dura la partida más imposible de enfrentar se vuelve.",
+      "La W (Wither) es uno de los slows más violentos del juego: pégasela al carry rival y lo convertís en estatua caminando, no hay dash que la adelante.",
+      "La R le da vida máxima, alcance, tamaño y drena alrededor: en el 1v1 de top pasa de ser un perro manso a un duelo que casi nadie gana.",
+      "La E reduce armadura y deja limpia la wave: puede stackear bajo torre sin morir y sus trades pegan más de lo que aparentan.",
+      "La pasiva de robo de vida sumada a los stacks de Q lo hace cada vez más sostenido: el que quiera pelearle tarde se encuentra un tanque que mata."
+    ],
+    "weaknesses": [
+      "El early es de los peores del juego: sin stacks ni niveles, cualquier lanero con dos manos lo castiga cada vez que baja a farmear.",
+      "Cero movilidad: su único 'escape' es un slow ofensivo; si lo flanquean o lo ganean, camina para atrás y muere.",
+      "Su plan depende del reloj: si el juego termina a los 30, los stacks que no cosechó no existen; terminá rápido y le ganaste por W.",
+      "Si lo freezean la wave de su lado, tiene que overextendear por cada minion: castigá cada Q que baje a buscar.",
+      "Mientras la R esté en cooldown es un esqueleto con un palo: es ahí cuando el duel es tuyo, no cuando él decide activarla."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R lo convierte en duelista real; antes de eso no arriesgues un trade, después no te quedes a pelear si él la tiene y vos no.",
+      "Primer item resuelto: con daño, vida y stacks en la bolsa, pasa de sobrevivir el lane a castigar al que se le acerque a farmear.",
+      "Nivel 11 con R nivel 2: tanqueo y kill pressure suben juntos; puede meterse al backline y volver caminando.",
+      "Late con 400+ stacks: cada Q ejecuta a un squishy sin peel; si su carry está solo en una lane, ya está muerto, avisale."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Jayce, Kennen, Gnar: pegale en cada Q que baje a stackear; su rango es melee puro y cada auto que te come en el lane es un stack que no cosecha.",
+        "Congelá la wave de tu lado: obligalo a sobreextenderse por cada minion y dejale la torre vacía para el gank de tu jungla.",
+        "Terminá las peles rápido: mientras más rondee el mapa con stacks altos, más te come vivo en las escaramuzas de costado."
+      ],
+      "tanks": [
+        "Ornn, Sion, Tahm Kench: escalan en utilidad de equipo mientras Nasus escala en oro de stacks; no le regales el free farm, castigá cada Q en cooldown.",
+        "Comprá items anti-heal o de armadura cuando su Q empiece a notarse: su sustain de pasiva se corta con Grievous Wounds y la Q deja de curarlo.",
+        "No le peles en su R con tu R gastada: esperá que la active primero o que esté en cooldown; fuera de la R es un tanque sin daño."
+      ],
+      "assassins": [
+        "Camille, Fiora, Aatrox: abusá antes del nivel 6, ahí es donde el lane se define; después de la R el all-in se te vuelve cuesta arriba.",
+        "Guardá tu escape para cuando su W entre: si el slow te agarra en el engage, su Q encantada te borra antes de que tu combo termine.",
+        "Peleá con las Q gastadas: contá sus casts; con Q en cooldown no hay stack, no hay cura y su daño cae a un autoataque triste."
+      ],
+      "crowdControl": [
+        "Encadená tu CC cuando arranque la R: no dejes que el drain y el tamaño hagan su trabajo, interrumpilo y matalo en la ventana de animación.",
+        "No te agrupes detrás del frente sin peel: una W sobre tu ADC y Nasus llega caminando igual, siempre guardá un CC para el que entra de costado.",
+        "Peleá antes de que la R esté disponible: cada kill pressure que tenga viene de esa ultimate; un all-in con R en cooldown es un 5v4 encubierto."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Escalás mejor que él por partida: castigá cada Q que baje a stackear con tu Q + básico y volvé atrás; no necesitás matarlo, necesitás que no coseche.",
+          "Usá la E para romper su all-in: cuando active la R y venga caminando, tirale la vulnerabilidad y el trade se termina antes de que el drain haga daño.",
+          "En teamfight tus items del maestro artesano le ganan la utilidad: tu equipo pelea con items gratis mientras él todavía está split push en top."
+        ]
+      },
+      {
+        "cid": 266,
+        "name": "Aatrox",
+        "tips": [
+          "El lane es tuyo desde el nivel 1: con Q tercera pegada y E dominás cada trade; castigalo tanto que llegue al 6 con la mitad de stacks que quería.",
+          "Guardá la Q tercera para cuando arranque la R: el knock-up le corta el 1v1 y tu healing con Grievous le gana al drain de su pasiva.",
+          "No persigas el kill en su R activa: retrocedé, esperá que termine, y volvé al all-in cuando se le pase el subidón; fuera de R no tiene respuesta."
+        ]
+      },
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Tu escalado de vida y escamas le gana el 1v1 tardío: aguantá el early detrás de tus minions y el lane solo se convierte en quien se aburre primero.",
+          "Comete sus Q con tu E: cuando baje a stackear, tragale el trade; cada stack que le negás en top es un stack que no te borra a las 30.",
+          "En teamfight tu W es el anti-Nasus definitivo: si se tira a tu carry con la R activa, escupilo lejos o tragáte al carry y su engage se vuelve nada."
+        ]
+      },
+      {
+        "cid": 164,
+        "name": "Camille",
+        "tips": [
+          "Ganás el lane antes del 6: E hacia la pared + Q encantada en cada Q suya que baje a farmear; es tu ventana, aprovechala hasta el cansancio.",
+          "Guardá tu E de escape para su W: si el slow te agarra en la pared, su all-in con R te mata; entrá con gancho, salte con gancho.",
+          "Después de sus primeros items cuidá el 1v1 en la side lane: buscá el duelo solo cuando su R esté en cooldown o con tu jungla cerca."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: básico → Q apenas pega el daño → E sobre el rival → W si quiere pelear, y otro básico; el básico antes de la Q asegura el stack",
+        "Combo con cancel de animación: E → W instantáneo → R → Q encantado; encadenarlas casi junta esconde los cast y entra todo de golpe",
+        "All-in nivel 6: R primero (vida, alcance y drain) → W al objetivo → E bajo sus pies → Q encantado, y básicos mientras la R sigue drenando",
+        "Chase: W apenas lo veas → Flash si falta → E sobre él → Q encantado; la W entra antes que el Flash para que no le dé tiempo a escapar",
+        "Waveclear: E en el centro de la wave y ejecutá cada minion con Q; cada Q que ejecuta de un golpe da el doble de stacks"
+      ],
+      "tips": [
+        "El Q que ejecuta un minion de un golpe da el doble de stacks: no la tires a lo loco, mirá la vida del minion y asegurate la ejecución.",
+        "La E reduce armadura: tirala sobre el rival justo antes del trade, no la guardes solo para farmear; esa armadura de menos hace que tu Q pega como trueno.",
+        "No uses la W para pokear a vida llena: es tu única herramienta de chase y anti-carry; si la gastás en el tanque de adelante, su ADC camina libre.",
+        "Activá la R cuando te vayan a pelear, no cuando ya estás a media vida: la vida máxima extra se suma al instante y el drain hace el resto; de reacción siempre llegás tarde.",
+        "Si el lane está perdido, stackeá igual: la E limpia bajo torre y podés agarrar campamentos del jungle que tu jungla no come; cada stack que no cosechás es oro regalado."
+      ],
+      "plan": {
+        "early": "Farmeá y stackeá: cedé el primer push, last hit con Q (doble stack al ejecutar) y no aceptes trades antes del nivel 6; sobrevivir con stacks es ganar el lane.",
+        "mid": "Con primer item y ~200 stacks buscá el 1v1 con R + W en la side lane, split push dibujando presión y castigá al que venga solo a frenarte.",
+        "late": "Seguí split push con stacks altos y forzá al equipo rival a mandar dos; si tocá agrupar, W al carry enemigo y entrá con la R activa: una Q de 500 stacks borra squishies."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/nasus/guide",
+      "https://app.mobalytics.gg/lol/champions/nasus/counters",
+      "https://mobalytics.gg/lol/champions/nasus/combos"
+    ]
+  }
+}

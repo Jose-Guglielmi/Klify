@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "rakan",
+    "ddragonId": "Rakan",
+    "name": "Rakan",
+    "titleEs": "El Encantador",
+    "cid": 497,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.06,
+    "pr": 3.55,
+    "br": 0.34,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0.0,
+      "middle": 0.6,
+      "bottom": 0.0,
+      "support": 99.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rakan.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rakan_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 63.43, "games": 268 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 60.68, "games": 234 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 58.73, "games": 252 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 58.23, "games": 723 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.67, "games": 360 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 56.4, "games": 383 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 56.11, "games": 221 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.87, "games": 732 }
+  ],
+  "weakAgainst": [
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 45.76, "games": 791 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 46.69, "games": 906 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 46.74, "games": 1547 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 47.25, "games": 1344 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 48.69, "games": 534 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 48.95, "games": 525 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 49.0, "games": 1200 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 49.1, "games": 1059 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W aterriza con el knock-up desde una distancia donde nadie espera el cast: si le dejás cerrar el espacio de tu carry, te agarra antes de que reacciones.",
+      "La R es un sprint con charm en área y un empujón de velocidad al primer toque: para cuando la veas cruzar la pelea, ya pasó de vuelta; jugar agrupado le entrega el combo entero.",
+      "La E lo deja engancharse y volver el mismo trade hacia un aliado: saltarle por entrar casi nunca lo muere mientras quede un aliado cerca para reubicarlo.",
+      "Entre el escudo pasivo y la cura en círculo de la Q, los intercambios largos los gana él: no aceptes peelones constantes si Rakan queda a la vista."
+    ],
+    "weaknesses": [
+      "La W tiene un delay al aterrizar y lo deja plantado ese instante: un stun o root en la ventana del cast lo saca del combo completo.",
+      "Todo su kit es engage y el daño es de adorno: si el combo no mata, el trade se devuelve y su aporte queda reducido a un CC por pelea.",
+      "Sin aliado cerca la E no tiene destino: agarralo caminando solo hacia un roam o al ward y no tiene escape ni pelea.",
+      "El charm toca de a uno: caminar disperso y no apilarse frente a tu ADC niega la mitad de su R.",
+      "Los cooldowns caros deciden todo: gastó la R o la W sin kill y tenés varios segundos de regalo para objetiva o pokeo gratuito."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R desbloquea engages desde fuera de la pantalla; la primera pelea de bot la decide él si no respetás el Flash y el sprint.",
+      "Nivel 9 con la E maxeada: el cooldown baja tanto que engancha y vuelve en cada trade; a partir de ahí castigarlo por entrar dejó de ser jugada.",
+      "Mid game con el ítem de soporte resuelto y Ultimate Hunter apilando: la R gira tan rápido que casi cada pelea del mapa se pelea charmada o no se pelea.",
+      "Late con Knight's Vow y Locket en mano: su presencia peleando agrupados es constante; no te pegues al carry si lo ves avanzar con la R lista."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Senna, Jhin: quedate a un rango más allá de su W y el lane se vuelve gratis; su engage se avisa caminando hacia vos, así que cada paso al frente es pokeo para tu tirador.",
+        "Pegale en el windup de la W con el ADC: queda plantado ese segundo y el trade sale limpio; el knock-up solo importa si lo dejás aterrizar.",
+        "Empujale la wave constante: con la lane pushada es él quien camina hacia tu rango para intentar engages, y esos pasos son castigables sin que él pueda responder de lejos."
+      ],
+      "tanks": [
+        "Su daño es de adorno: tolerá el trade y llevá al tanque a la cara; la única amenaza real es el CC y un item de resistencia mágica te deja tragando el knock-up sin drama.",
+        "Si tu tanque tiene anti-dash (Poppy, Rell), lo saca del aire al primer intento: sin la W aterrizando, el combo entero se corta antes de empezar.",
+        "Alargá las peleas: sus ítems van por Locket y Knight's Vow, no por daño; un tanque con resistencia caminando al lado del carry le niega el espacio de engage todo el late."
+      ],
+      "assassins": [
+        "Wardí los caminos del roam: la R le da una velocidad inhumana para cruzar el mapa; si te presentás tarde a la lane que visite, el charm ya definió la pelea.",
+        "Saltalo al primer instante del all-in: si se tiró con la W hacia tu carry y ya gastó la primera E, la recarga no le alcanza para escapar tu combo.",
+        "Su jugada perfecta necesita dos campeones cerca: jugá al carry separado del equipo y su engage ideal deja de existir."
+      ],
+      "crowdControl": [
+        "Soltá el stun dentro del cast de la W: el dash se interrumpe con cualquier CC de inmovilización y lo tirás del aire con el combo a mitad de camino.",
+        "Guardá el CC para el momento en que se comprometa con Flash: sin ese empuje el charm queda corto y él queda solo en medio de tu equipo.",
+        "Interrumpilo en el primer toque del charm: le corta el boost de velocidad y la R deja de servirle para entrar o escapar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Tu doble bomba lo castiga en cada cast de la W: queda plantado durante el delay del aterrizaje y ese segundo es un stun gratis que mata su engage completo.",
+          "Guardá la R para su all-in: Rakan pesca por el burst que sigue al charm; si tu carry revive del otro lado del knock-up, el trade sale negativo para su equipo.",
+          "El acelerón de tu E sobre tu ADC devuelve cada engage de Rakan en un kite eterno: el charm no alcanza a quien corre."
+        ]
+      },
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "La W de Poppy es el counter mecánico directo: anula el dash de su E y tira del aire su aterrizaje; tenela cargada apenas arranque el engage.",
+          "Puníalo con tu E contra la pared apenas abra el cast: si lo plantás mientras espera el delay de su propio knock-up, el trade muere antes de que la Q cure.",
+          "En peleas tarde mantené la W prendida en el camino de su engage: cortar el primer dash hace que el charm entre hueco y la pelea quede cuatro contra cinco."
+        ]
+      },
+      {
+        "cid": 235,
+        "name": "Senna",
+        "tips": [
+          "Tu Q atraviesa el wave entero: punkeá a Rakan y a su ADC con el mismo tiro sin entrar nunca al rango de su W y el lane pasa a ser tu farm gratuito.",
+          "Guardá el root de tu W para el compromiso: encadenalo dentro del cast de su dash y el knock-up no aterriza nunca.",
+          "Alargá la pelea con el sustain de tu pasiva: el valor de Rakan se gasta en la pelea corta; darle segundos de kite lo deja fuera de rango sin daño a cambio."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Guardá la R para cuando se comprometa con el charm: el empuje del Monsoon desarma el all-in y lo deja parado en medio de tu equipo sin haber conectado nada.",
+          "Tirá el tornado en el punto de aterrizaje de su W: leés su caminata hacia el carry y la Q corta el cast antes del knock-up.",
+          "Tu escudo neutraliza el burst que sigue al CC: el knock-up entra, el daño no, y el trade te lo termina pagando con la W gastada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W al rival → AA apenas aterrizás → Q + E al aliado para reubicarte",
+        "All-in nivel 6: R al objetivo (charm en el primer toque) → esperá que termine el lockout → W que aterrice cuando el charm se acaba → Q → E al aliado para salir",
+        "Engage de Flash: R → Flash apenas pasa el lockout → W sin dejar de correr → Q + AA; así definió Rakan su fama en Worlds",
+        "Engage cruzando al equipo: R → E al aliado adelantado (charmás a todos los que cruzás de camino) → W sobre tus objetivos → Q y E para quedarte detrás",
+        "Salvada: Q al atacante para dejar el círculo de cura → E al aliado en peligro → W al perseguidor con el knock-up → salida con la recarga de la E"
+      ],
+      "tips": [
+        "La Q marca un círculo: si tu ADC entra al radio la cura se agranda y aplica al instante; antes de cada trade tené claro dónde va a caminar tu carry y marcá el heal ahí.",
+        "La W tiene delay al aterrizar: no la tires sobre quien guarda dash o CC; entrá por la E de un aliado ya en pelea y guardá la W para cuando ya estás dentro.",
+        "La E tiene recarga gratuita unos segundos: usá el primer salto para el engage y guardá la recarga para salir; jamás gastes las dos caminando hacia tu muerte.",
+        "Golpear a campeones acelera el escudo pasivo: en peleas largas se rearma casi solo, pero no lo desperdicies en minions ni en trades ya ganados.",
+        "R y W no se encadenan apurado: esperá el fin del lockout para el knock-up; el boost de velocidad de la R te lleva igual al objetivo."
+      ],
+      "plan": {
+        "early": "Maxeá la W y poné el círculo de la Q cerca de tu ADC en cada trade: pre-6 buscás trades y pokeo; el all-in serio recién con la R en mano.",
+        "mid": "Con el ítem de soporte resuelto y Ultimate Hunter apilando, roameá con la R lista: el sprint cruza el mapa y los picks de río o mid salen antes de que el rival pueda defenderlos.",
+        "late": "Guardá Flash + R para el carry enemigo: entrás de flanco con el sprint, W aterrizando sobre los agrupados y volvé a tu ADC con la E; en cada pelea tené Locket y Knight's Vow listos para entregar el escudo al equipo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/rakan/build",
+      "https://mobalytics.gg/lol/champions/rakan/combos",
+      "https://wiki.leagueoflegends.com/en-us/Rakan/LoL"
+    ]
+  }
+}

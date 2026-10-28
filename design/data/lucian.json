@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "slug": "lucian",
+    "ddragonId": "Lucian",
+    "name": "Lucian",
+    "titleEs": "el Purificador",
+    "cid": 236,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.99,
+    "pr": 8.29,
+    "br": 2.14,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.8,
+      "jungle": 0,
+      "middle": 5.9,
+      "bottom": 92.2,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lucian.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lucian_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 59.66, "games": 238 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 55.04, "games": 5282 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 53.31, "games": 242 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 52.04, "games": 1399 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 51.37, "games": 1717 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 51.21, "games": 455 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 51.12, "games": 403 },
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 50.94, "games": 1492 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 42.79, "games": 229 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 43.85, "games": 317 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 44.08, "games": 937 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 44.94, "games": 267 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 46.85, "games": 826 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 47.03, "games": 353 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 47.06, "games": 2705 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 47.78, "games": 632 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva Luceslinger dispara dos autos después de cada habilidad: si encadenás bien hechizo → auto → hechizo, ganás casi cualquier trade corto del bot lane.",
+      "Nivel 2 es kill real: con Q + E antes que el rival, el all-in con la ventaja de exp te deja media vida arriba en los primeros tres minutos.",
+      "La E le da movilidad que casi ningún ADC tiene: dash para entrar, reposicionarte en el trade y escapar del gank sin gastar Flash.",
+      "Su daño early-mid es de lo más alto entre los tiradores: con dos items borrá squishies antes de que el rival escale.",
+      "La Q atraviesa al primer objetivo en línea: podés farmear y pokear a la vez, castigando al campeón parado detrás de la wave."
+    ],
+    "weaknesses": [
+      "Rango de 500, de los más cortos del juego: los magos de poke largo (Hwei, Vel'Koz, Lux) te cobran cada paso que das hacia la wave.",
+      "La E es tu única movilidad: si la gastás sin razón y el rival tiene CC o engage, quedás descalzo y el gank es kill.",
+      "La R se bloquea con minions y tanques: si disparás a través de la wave, el daño total queda en nada; reposicionate antes de canalizar.",
+      "Maná caro early: si spameás Q y W en la wave, te quedás sin pool para responder el trade cuando el rival se anima.",
+      "Si el juego se estira, los hypercarries (Kog'Maw, Sivir con pool) te pasan por arriba: tu ventana es early-mid, no te la dejes pasar farmeando pasivo."
+    ],
+    "powerSpikes": [
+      "Nivel 2 (Q + E): primer all-in del juego; con la ventaja de wave, cualquier ADC sin escape a media vida es tuyo.",
+      "Nivel 6: la R suma una tanda de daño más al all-in; con E + W + Q + R cae casi cualquier lane rival.",
+      "Primer item (Essence Reaver): el maná se resuelve y la pasiva pega mucho más fuerte; acá empezás a dictar el lane.",
+      "Dos-tres items (Navori + Infinity Edge): tu mejor ventana del juego; buscá peleas por dragón y rotating antes de que escale el rival."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Hwei, Vel'Koz, Lux: no camines en línea recta hacia la wave; usá la E para esquivar el skillshot de poke y aceptá el trade corto, que lo ganás vos.",
+        "Cuando el mago se pase de maná o falle la habilidad clave, ese es tu all-in: su ventana de respuesta es de varios segundos.",
+        "Pedile a tu support engage o peel según el matchup: contra poke largo necesitás que alguien conecte o vos no llegás nunca."
+      ],
+      "tanks": [
+        "La Q atraviesa al primer objetivo: parate en línea con el tanque para pegarle al carry detrás, o farmeá a través de su cuerpo.",
+        "Marca con W y usá la E para kiting en círculos: un tanque que no te alcanza es solo comida para tu pasiva.",
+        "Esperá a que gaste el CC principal antes de acercarte: sin E disponible, el engage enemigo te encuentra pegado al frente."
+      ],
+      "assassins": [
+        "Guardá la E para el arranque de su combo, no para pokear: si Zed o Qiyana te saltan con tu dash en cooldown, no hay segunda chance.",
+        "Pegale en los segundos posteriores a su engage: la mayoría de asesinos queda sin escape después de entrar, y ahí tu burst de pasiva los corre.",
+        "Torreta y wave a favor son tu mejor escudo: forzá peleas cerca de donde un dive mal dado se convierte en kill tuya."
+      ],
+      "crowdControl": [
+        "Respetá hooks y roots desde el primer minuto: contra Blitzcrank o Lux, un agarre terminado en E gastada es la lane entera perdida.",
+        "Usá la E para esquivar el CC lineal, no para acercarte: tu dash es recto y predecible; un buen rival lo apunta al borde de tu recorrido.",
+        "Si el equipo enemigo es todo CC, considerá Mercurial o QSS en tercer item: morir con la pasiva en mano es regalar tu mejor ventana de daño."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Pokealo con W a través de la wave cada vez que baje a farmear: su rango de 500 no le alcanza para responderte sin gastar la E.",
+          "Guardá la E para cuando dashée hacia vos: su E es una línea recta y predecible; si lo interrumpís a mitad del trade, queda parado en tu rango.",
+          "Esquivá la Q con tus propios desplazamientos laterales y castigá cada E que use para farmear: sin dash, Lucian es el ADC más lento de castigar.",
+          "A partir de dos items tu daño de área supera por largo su burst corto: no aceptes el trade temprano, jugá atrás y escalá la pokeada."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Zonéalo con tus pinturas de área antes de que entre en rango: Lucian necesita caminar hacia la wave, y cada paso debería costarle vida.",
+          "Guardá el Fear (EE) para su all-in: interrumpirle la combo a mitad del dash mata su única ventana de daño.",
+          "Pokeá con QW cuando se acerque a last hit y no te pares nunca dentro de su rango sin tener tu propio escape listo.",
+          "Tu escalado te gana la partida larga: si sobrevivís a sus niveles 2 y 6, el lane se vuelve tuyo sin jugar arriesgado."
+        ]
+      },
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Tu trabajo es sobrevivir el early: farmeá con R desde fuera de su rango y no aceptes ningún trade antes de dos items.",
+          "Con la W activa tenés más rango que él en pelea larga: forzá peleas agrupadas detrás de tu tanque, no trades cortos de lane.",
+          "Su R se bloquea con la wave: parate detrás de tus minions y no le des líneas limpias para canalizar.",
+          "Si te agarra con la E gastada, es tu all-in: contá su dash y enganchálo recién ahí; tu daño escalado lo borra en una pelea pareja."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Pokealo con E desde el máximo de tu rango cada vez que camine hacia la wave: su corto alcance lo obliga a tragarse la pokeada o gastar maná en esquivar.",
+          "Guardá el root (Q) para su dash: Lucian entra y sale en línea recta, así que apuntá al recorrido y no a donde está parado.",
+          "No gastes el root a rango máximo de poke: es más valioso detener su all-in de nivel 6 que robarle tres autos de vida.",
+          "Después de nivel 6 mantené la distancia de un Flash: un W → Flash → combo de Lucian te borra si lo dejás acercarse sin escape propio."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: Q → auto → E (reubicar tras el primer disparo) → auto → W → auto; nunca encadenes dos habilidades sin pegar el doble auto de la pasiva",
+        "All-in nivel 6: E → auto → W → Q → auto → R → auto; meté todo en menos de dos segundos y ejecutá con la ráfaga",
+        "Trade arrancando con W: W → auto → E tras el primer disparo → auto → Q → auto; el speed-up de W te deja reposicionar mientras pegás",
+        "Burst sorpresa con Flash: W → Flash → auto → E tras el primer disparo → auto → Q → auto; para carris a media vida que se creen fuera de rango",
+        "Máximo DPS en teamfight: W → R → Flash para reposicionar → E al terminar la ráfaga → auto → Q → auto; la R se canaliza mejor desde los flancos"
+      ],
+      "tips": [
+        "Después de CADA habilidad pegá el auto antes del siguiente hechizo: la pasiva es tu mayor fuente de daño y cancelarla es jugar a media máquina.",
+        "No uses la E como poke: es tu único escape; si el rival tiene CC o engage, gastarla te deja descalzo por varios segundos.",
+        "Buscá nivel 2 antes que el rival (primera wave completa + tres melee de la segunda): con Q + E primero, el all-in es tuyo.",
+        "Usá la Q a través de minions para pokear al campeón parado detrás: atraviesa al primer objetivo en línea, ideal cuando el rival farmea pegado a la wave.",
+        "La R se bloquea con minions y tanques: limpiá la wave antes de canalizar o flanqueá para pegarle directo al carry enemigo."
+      ],
+      "plan": {
+        "early": "Ganá la carrera a nivel 2 y allineá con Q + E; después de eso, castigá cada last hit del rival con el patrón Q → auto → E → auto mientras mantenés el maná para responder.",
+        "mid": "Con Essence Reaver y Navori en la bolsa, empujá bot, rotá con tu jungla a dragón y buscá peleas 2v2 y 3v3 donde tu burst early-mid decide; tu ventana deoro es acá, no la gastes farmeando.",
+        "late": "Jugá pegado a tu equipo, guardá la E para reposicionarte contra el engage enemigo y flanqueá con la R sobre su backline; asumí que los hypercarries rivales te superan escalando, así que forzá peleas tempranas en cada objetivo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/lucian/build",
+      "https://mobalytics.gg/lol/champions/lucian/combos"
+    ]
+  }
+}

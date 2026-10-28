@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "fizz",
+    "ddragonId": "Fizz",
+    "name": "Fizz",
+    "titleEs": "el Bromista de las Mareas",
+    "cid": 105,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.8,
+    "pr": 5.69,
+    "br": 8.95,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 2.3,
+      "jungle": 10,
+      "middle": 85.8,
+      "bottom": 0.5,
+      "support": 1.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fizz.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fizz_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 64.15, "games": 756 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 60.87, "games": 207 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 57.35, "games": 211 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 56.43, "games": 723 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 56.33, "games": 300 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 55.82, "games": 464 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 55.66, "games": 1660 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 55.58, "games": 502 }
+  ],
+  "weakAgainst": [
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 43.1, "games": 232 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 48.27, "games": 1825 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 48.38, "games": 432 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 48.41, "games": 409 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 49.79, "games": 1219 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 50.03, "games": 1917 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 50.17, "games": 897 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 50.24, "games": 1232 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E (Saltarina/Embustero) lo vuelve intargetable: esquiva skillshots, escapó ganks y resetea el trade justo cuando la combo rival está por entrar.",
+      "Nivel 6 es kill pressure permanente: el tiburón pega fuerte, tiene área grande y cooldown corto para buscar all-in tras all-in.",
+      "Burst brutal sobre squishies: R + Q + W con autos borra un carry en menos de dos segundos si entra sin ser tocado.",
+      "Roaming top-tier: la E cruza paredes del pit y un Fizz desaparecido de mid es una kill bot en el mapa."
+    ],
+    "weaknesses": [
+      "Muy débil antes del nivel 3: si lo poken y le niegan CS, no llega con vida al primer all-in y pierde toda la línea.",
+      "Con la E en cooldown es el campeón más frágil del mapa: sin salto ni intargetabilidad, cualquier CC o gank lo mata gratis.",
+      "Si pierde lane temprano, deja de ser amenaza: necesita oro y niveles para que el burst alcance; un Fizz atrás solo existe para farmear.",
+      "Su all-in depende de la R: sin tiburón en mano no tiene forma de cerrar una kill contra alguien con vida completa.",
+      "Odia los matchups melee con sustain y daño plano: el trade largo se lo gana el rival gracias al sangrado de la W siendo superado por daño constante."
+    ],
+    "powerSpikes": [
+      "Nivel 3: kit completo (Q + W + E); es su primer all-in real, respetalo o castigalo antes de esa marca.",
+      "Nivel 6: la R activa kill pressure en cada minuto que el tiburón esté en mano; si estás 5 y overextendido, te mata con diferencia de nivel.",
+      "Primer item completo: con el burst resuelto, cualquier squishy a media vida desaparece de la pantalla.",
+      "Nivel 9 y 11: habilidad principal al máximo y segundo punto de R hacen su skirmish y poke insoportables en el mid game.",
+      "Nivel 16: tercer punto de R borra al carry que no tenga Zhonya ni GA; pasado ese punto necesita objetivos sin defensivos para cerrar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pegale en cada CS antes del nivel 3: sin salto ni daño acumulado, un Fizz pokeado es un minion más en el lane.",
+        "Guardá tu skillshot de CC para su E: si la tira para iniciarte, el dash te deja libre; si la gastó, es un blanco quieto.",
+        "Mantené la wave cerca de tu lado: con wave libre, la E de Fizz cubre toda la distancia y te corre por el lane entero."
+      ],
+      "tanks": [
+        "No gastes habilidades clave mientras su E esté en mano: esperá que salte y recién ahí lo agarrás desarmado.",
+        "En el trade largo te lleva ventaja: su burst entra en ráfagas y no alcanza para tus resistencias; stackeá MR y apurate a la teamfight.",
+        "Si te pega el tiburón, no retrocedas hacia tus aliados: el AoE del R también los golpea; caminá lejos del grupo hasta que expire."
+      ],
+      "assassins": [
+        "Sos más fuerte que él pre-3 y en varios matchups pre-6: castigá cada CS y no le regales niveles gratis.",
+        "Esperá su E antes de gastar tu gap closer: si saltás después del salto suyo, la combo entera entra sin respuesta.",
+        "No camines solos por el pit sin visión: su R en river te agarra antes de verlo y el pick te cuesta la pelea entera."
+      ],
+      "crowdControl": [
+        "Un solo stun lo borra: es squishy y sin E no tiene escape; guardá el CC para su aterrizaje, que es fijo y predecible.",
+        "Interrumpilo entre la R y la Q: el tiburón pega pero sin el resto de la combo no ejecuta a nadie con vida.",
+        "En teamfight, dejá el CC instantáneo listo: un Fizz que entra y queda clavado muere antes de tocar a tu carry."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Intercambiá corto: su W con sangrado gana los trades largos; entrá con Q de golpe, pegá tu combo y salí antes de que el sangrado escale.",
+          "Guardá la W para su all-in nivel 6: el escudo traga buena parte del tiburón + Q + W y su burst queda en un trade parejo.",
+          "Si usa la E para iniciarte, no huyas: quedá pegado pegando; sin su salto está clavado y tu Q de velocidad lo corre hasta la torre."
+        ]
+      },
+      {
+        "cid": 127,
+        "name": "Lissandra",
+        "tips": [
+          "Castigalo antes del nivel 3: sin salto ni daño no responde tu poke y cada CS que le negás es oro para escalar.",
+          "Esperá su E para tirar tu W: el root en el aterrizaje es casi imposible de fallar y ahí cae media vida gratis.",
+          "Si te all-inea al 6, date la R a vos mismo: queda pegado a vos intargetable mientras tu torre y tus minions lo desarmen."
+        ]
+      },
+      {
+        "cid": 80,
+        "name": "Pantheon",
+        "tips": [
+          "Pokealo con Q en cada CS y dominá los niveles 1 y 2: pre-3 Fizz no tiene respuesta a tu rango ni a tu daño.",
+          "Guardá tu E para la ventana de burst: el bloqueo traga la Q + W + autos y su all-in completo se vuelve humo.",
+          "No tires el W-stun mientras su E esté en mano: esperá que salte y recién ahí lo prendés clavado para la combo."
+        ]
+      },
+      {
+        "cid": 91,
+        "name": "Talon",
+        "tips": [
+          "Ganale el early con el doble W en cada wave: hasta el 3 no puede responderte y pre-6 no te ejecuta.",
+          "Usá tu E para flanquear más rápido que sus roams: llegás antes a la lane peleada y definís la pelea desde el lado de tu equipo.",
+          "Esperá que gaste la E antes de lanzar tu Q: sin su salto es un pececillo sin escape y tu combo completa entra entera."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de poke: Q → auto → W al instante → doble E para salir sin recibir nada (la más usada del lane)",
+        "Trade ida y vuelta: E detrás del objetivo → W activada → Q a través de él para volver a tu posición original",
+        "All-in nivel 6: R → caminá a rango de Q → auto → W → doble E rápido mientras el tiburón hace el trabajo",
+        "Burst de rango: R → E para iniciarte → al aterrizar auto + W + Q lo más rápido posible",
+        "Combo hard: Q y a mitad del dash tirás R (el tiburón queda oculto en el vuelo) → doble E → auto → W para asegurar la ejecución"
+      ],
+      "tips": [
+        "No comercies antes del nivel 3: sos de los peores campeones del juego hasta ahí; farmeá seguro y esperá tu ventana.",
+        "Guardá la E para lo importante: usarla para iniciarte te deja sin escape; contra junglas con CC, saltá solo si sabés dónde está el rival.",
+        "La R a corta distancia pega mucho más que a máxima: si podés, cerrá primero con E o Q y tirá el tiburón encima del pecho del objetivo.",
+        "Usá la Q sobre un minion para cerrar o escapar: apunta a lo primero que encuentre, no necesita campeón.",
+        "Si te poken mucho pre-6, aceptá perder CS o volvé a base: un all-in a media vida es la forma más rápida de regalar la lane."
+      ],
+      "plan": {
+        "early": "Farmeá seguro hasta el 3, buscá el primer trade con Q + auto + W + E y al llegar a 6 forzá el all-in con R o empujá la wave y roameá si el rival juega atrás.",
+        "mid": "Sos el rey del pick: caminá con visión, buscá squishies solos con R, splitpusha cuando no haya teamfights y peleá cualquier 1v1 que no sea un tanque.",
+        "late": "Quedá cerca del equipo pero flanqueando oculto: esperá que el rival adelante a alguien, sacá al carry con R y no entrés primero contra grupos con Zhonya o GA."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/fizz/guide",
+      "https://mobalytics.gg/lol/champions/fizz/counters",
+      "https://mobalytics.gg/lol/champions/fizz/combos"
+    ]
+  }
+}

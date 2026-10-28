@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "annie",
+    "ddragonId": "Annie",
+    "name": "Annie",
+    "titleEs": "la Hija de la Oscuridad",
+    "cid": 1,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-22",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.82,
+    "pr": 1.73,
+    "br": 0.63,
+    "analysed": 6194625,
+    "laneDist": {
+      "top": 4.2,
+      "jungle": 0.1,
+      "middle": 80.5,
+      "bottom": 1.6,
+      "support": 13.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Annie.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Annie_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 57.81, "games": 602 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 57.0, "games": 400 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 55.08, "games": 492 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 54.03, "games": 707 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 53.26, "games": 276 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 52.57, "games": 738 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 52.33, "games": 300 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 51.36, "games": 477 }
+  ],
+  "weakAgainst": [
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 43.19, "games": 213 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 44.39, "games": 205 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 46.98, "games": 298 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 47.18, "games": 248 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 47.37, "games": 266 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 48.1, "games": 395 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 48.73, "games": 236 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 48.86, "games": 264 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El stun de Pyromania es point-and-click cada cuarto hechizo: no se esquiva, se cuenta; si no llevás la cuenta de sus casts, te come la combo entera.",
+      "Level 6 es kill real: Q + W + Tibbers cae todo en menos de un segundo y el daño es front-loaded, sin ventana para reaccionar.",
+      "Tibbers sigue peleando después de que ella se reubica: tanquea torre, persigue y pega como un segundo campeón en la teamfight.",
+      "La Q le devuelve maná al ejecutar minions: puede controlar la wave sin fundirse el pool, algo raro en un mago de burst."
+    ],
+    "weaknesses": [
+      "Rango corto: casi todos los magos le pegan desde afuera de su propio alcance y cada amenaza suya exige caminar hacia zona castigable.",
+      "Cero movilidad: sin dash ni blink, un gank del jungla es casi kill garantizada y ella lo sabe, así que juega pegada a su torre.",
+      "Su burst es de una sola tanda y depende de la R: con Tibbers en cooldown su daño cae a casi nada; castigá esa ventana.",
+      "Maná caro early si spamea: forzála a responder la wave con W y se queda sin amenaza para el próximo trade.",
+      "Cuando la barrera de la pasiva se prende, es visible para todo el mundo: jugá un paso atrás unos segundos y la sacás del juego completo."
+    ],
+    "powerSpikes": [
+      "Level 6: primera combo completa con stun cargado; no te pares en rango de farm sin saber cuántos casts lleva.",
+      "Primer item de burst resuelto: con maná y penetración en la bolsa, cualquier squishy a media vida es borrado de la pantalla.",
+      "Mid game con Flash disponible: un engage de Flash + R sobre el equipo agrupado define la pelea entera; no te pegues al carry si la ves avanzar con Flash.",
+      "Nivel 11 y 16 con puntos en la R: el cooldown de Tibbers baja tanto que casi siempre lo tiene en mano; asumí que hay stun disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: pegale desde fuera de su W y el lane se convierte en una granja que ella no puede cobrar sin morir.",
+        "Cuando la barrera del stun se prenda, pisá un paso atrás por diez segundos: cuidar ese estado no te cuesta nada y la deja inútil.",
+        "Empujala constante: sin movilidad ni maná infinito, cada wave empujada la encierra contra su torre y le niega el roam."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica antes de que parezca necesario: su burst está calibrado contra el que no lo tiene; un item temprano te deja caminando la combo entera.",
+        "Mercury's Treads son las botas acá: el stun decide la pelea, el daño es solo lo que viene después.",
+        "Bajo Tibbers no retrocedas de golpe: matá al oso cuando pueda, es objetivo válido y su daño de pelea larga es mediocre."
+      ],
+      "assassins": [
+        "Fizz, Ekko, Zed: esperá que gaste Q y W para empujar y saltala recién ahí; sin combo en mano está descalza y sin escape.",
+        "Guardá tu escape para el arranque de su combo, no para farmear: si el stun te agarra, no hay segunda oportunidad.",
+        "Si ya gastó el burst y no te mató, ese es tu all-in: queda parada en medio de la lane sin nada que apretar durante varios segundos."
+      ],
+      "crowdControl": [
+        "Encadená tu CC encima del arranque de la combo: interrumpirla entre el Flash y Tibbers mata su única ventana de daño.",
+        "Malzahar y Lissandra la convierten en piedra: suprimir o volverla intocable invierte la teamfight al instante.",
+        "Reservá el CC para después de que use Flash: sin gap closer propio, depende del Flash para llegar y ahí es más frágil que nunca."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q desde fuera de su rango y no aceptes trades: ganás el lane escalando; Annie necesita forzar jugadas antes de que tu AP la pase por arriba.",
+          "Guardá la jaula (E) para cuando se camine hacia vos con la pasiva cargada: si queda encerrada adentro, su única forma de llegar es el Flash.",
+          "Al nivel 6 no te pares contra la pared de la wave: un Flash + R de Annie te borra antes de que tu R pueda responder."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Tu rango te deja castigarla en cada last hit: pintala con Q desde afuera y el lane se vuelve gratis.",
+          "Usá el Fear (EE) cuando camine hacia vos: interrumpirle el acercamiento con la pasiva cargada mata el combo entero.",
+          "Zonéala con el área de daño cuando la barrera se prenda: no puede allinear si cada paso adelante le cuesta media vida."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Guardá la E para esquivar el arranque del stun: si el burst no te encuentra, su combo queda en nada y ella ya gastó todo.",
+          "Contá los casts: al cuarto hechizo alejate porque el stun está cargado; enganchala recién cuando lo gastó.",
+          "Comprate MR temprano: su burst está balanceado contra el que no lleva resistencia y un solo item te deja caminando con un tercio de vida."
+        ]
+      },
+      {
+        "cid": 7,
+        "name": "LeBlanc",
+        "tips": [
+          "Distorsionate hacia atrás apenas se prenda la barrera del stun: todo su daño cae en un segundo y si no te encuentra, perdió la lane.",
+          "Pegale de rango cada vez que baja al farm: su alcance corto la obliga a acercarse y ahí ganás todos los trades.",
+          "Después del nivel 6 no te encadenes a la wave sin ver a Tibbers: esperá el summon en pantalla antes de tirar tu combo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → W con la pasiva cargada (la Q es imposible de fallar, así que el stun entra seguro; guardá la W-stun para cuando la Q ya le pegó)",
+        "Carga rápida de pasiva: E → W casi juntos para llegar al cuarto cast y sorprender con el stun listo antes de que el rival cuente",
+        "All-in nivel 6: Q → R encima del objetivo (Tibbers aterriza con stun) → W sobre el oso y el rival → Q de nuevo para ejecutar si queda vivo",
+        "Engage de teamfight: contá tres casts, Flash + R al centro del equipo agrupado → W → Zhonya mientras Tibbers y tu equipo terminan el trabajo",
+        "Roam con oso: empujá la wave con Q + W (la Q ejecutando minions te devuelve maná) y caminá a bot con Tibbers y la E para ganar velocidad de movimiento"
+      ],
+      "tips": [
+        "Llevá la cuenta de tu pasiva en todo momento: con tres casts hechos buscá el trade; no gastes el cuarto cast en la wave salvo que el rival esté fuera de pantalla.",
+        "Last hit con Q siempre que pueda ejecutar minions: el refund de maná es tu sustain del lane y te deja spamear sin volver a base.",
+        "No uses W como poke a vida llena: es tu maná y tu charge de pasiva; guardalo para limpiar wave o para la combo con stun.",
+        "Allineá solo con stun cargado + Tibbers en mano: sin esas dos cosas sos un mago de rango corto sin amenaza, y quedás descalza si el rival pelea.",
+        "Usá la E para dos cosas: sumar un cast rumbo al stun y ganar velocidad de movimiento para escapar ganks; no la guardes tanto que te muera sin usarla."
+      ],
+      "plan": {
+        "early": "Farmeá con Q usando el refund de maná, comercia recién con la pasiva cargada y al llegar a 6 buscá el kill con Q + R + W o castigá con Tibbers si el rival juega atrás.",
+        "mid": "Empujá mid con W y roameá con Tibbers hacia las lanes pushadas del rival; con Flash en mano buscá picks y armate los items de burst para borrar squishies en teamfights agrupadas.",
+        "late": "Flankeá y esperá al equipo enemigo agrupado para Flash + R, entrá con Zhonya después del stun y aprovechá el cooldown bajo de R para tener a Tibbers disponible en casi cada pelea."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/annie/build",
+      "https://mobalytics.gg/lol/champions/annie/guide"
+    ]
+  }
+}

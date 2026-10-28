@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "zed",
+    "ddragonId": "Zed",
+    "name": "Zed",
+    "titleEs": "el Maestro de las Sombras",
+    "cid": 238,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.31,
+    "pr": 8.21,
+    "br": 23.8,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 5.2,
+      "jungle": 22.6,
+      "middle": 69.8,
+      "bottom": 1.2,
+      "support": 1.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zed.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zed_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 62.26, "games": 310 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 61.71, "games": 222 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 61.0, "games": 200 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 59.04, "games": 271 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 57.14, "games": 294 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.04, "games": 1264 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 56.93, "games": 541 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 56.32, "games": 1099 }
+  ],
+  "weakAgainst": [
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 44.33, "games": 282 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 45.45, "games": 528 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 46.41, "games": 2312 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 46.63, "games": 401 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 46.88, "games": 3242 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 46.95, "games": 262 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 46.96, "games": 477 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 47.16, "games": 4678 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El combo W → E → Q sale en el mismo instante desde el shadow: el daño entra de golpe y no hay ventana real para reaccionar, menos si estás farmeando.",
+      "La W hace de engage y de escape a la vez: entra, pega y vuelve por el shadow sin gastar Flash; por eso puede presionar lanes que no son la suya.",
+      "La pasiva ejecuta a los objetivos con poca vida: castea contra campeones debilitados y cierra kills que otros asesinos dejan en la puerta.",
+      "No usa maná: puede spamear trades y empujar la wave sin volver a base, así que nunca pierde tempo por recursos.",
+      "Post nivel 6 el roam es de los mejores del juego: divea una lane, mata y vuelve al shadow sin quedar pagando el costo."
+    ],
+    "weaknesses": [
+      "Si gasta la W para entrar, no tiene ninguna otra salida: sin shadow plantado atrás es el asesino más frágil del juego.",
+      "La R no suma daño si le errás las habilidades o si el daño se lo come un escudo: rompele el combo y su ultimate no hizo nada.",
+      "Late game todos compran armadura y escudos, y el peel lo apaga: es un campeón de picks, no de teamfights 5v5.",
+      "Rango de 125 y cuerpo squishy: un CC encadenado antes de que arme el shadow lo borra de la pelea.",
+      "Depende de la energía: si lo obligás a estirar el trade, se queda seco y sin combo justo cuando más lo necesita."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primer combo completo con W + E + Q, la kill pressure arranca acá si ya te bajó con poke.",
+      "Nivel 6: la R le da dive y salida gratis; asumí que puede entrar a torre y salir ileso si tiene shadow.",
+      "Primer ítem de penetración completado: cualquier squishy a media vida es una kill, y empieza a roamear a limpiar lanes.",
+      "Nivel 9 con la Q maxeada y nivel 11 con dos puntos en R: el burst pega un salto grande de un nivel a otro.",
+      "Level 16 con dos ítems: los cooldowns quedan tan bajos que puede hacer dos combos en la misma pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Q con slow y poke desde fuera de su rango: si te acercás a farmear sin que él tenga W lista, el trade lo ganás vos.",
+        "Jugá siempre del lado opuesto de la wave y, cuando tire la W, movete al lado contrario del shadow: así no puede caerte encima.",
+        "Comprá armadura temprano aunque seas mago: su burst está calibrado contra el que llega sin resistencias y un solo ítem te deja caminando la combo."
+      ],
+      "tanks": [
+        "Armadura y Tabi antes de que parezca necesario: cada punto de armadura le baja muchísimo el burst porque pega con habilidades físicas.",
+        "No lo persigas en línea recta después de que gaste la R: el shadow atrás es su escape y tu chase termina en una trampa.",
+        "Tu CC es la respuesta: un stun o un knock-up encadenado al aterrizaje de su R lo deja parado sin energía y sin combo."
+      ],
+      "assassins": [
+        "No te pares en rango de W sin visión: el mirror se gana con quien gasta primero el shadow.",
+        "Guardá tu escape para el arranque del combo, no para farmear: si la W te agarra sin movilidad, no hay segunda oportunidad.",
+        "Si ya tiró R y no te mató, ese es tu all-in: queda del lado equivocado del mapa y sin su burst durante varios segundos."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre el instante en que aterriza con la R: interrumpirlo ahí le quita el único daño garantizado que tiene.",
+        "Suprime o stunea antes de que arme la W ofensiva: sin shadow no llega ni se va, y queda caminando hacia vos.",
+        "Reservá el CC para después del recast de la R: la mayoría vuelve al shadow original, así que podés esperarlo parado en ese punto."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Guardá la W (Niebla Sagrada) para su combo, no para farmear: si la tirás cuando entra, le negás la mayor parte del burst y el Q de Zed se va en nada.",
+          "El Q de Gwen pega más en el borde: peleá pegada al límite del círculo y vas a ganar todos los trades largos.",
+          "Empujá la wave y forzá trades extendidos: Zed pierde contra cualquier campeón que pueda sostener el daño más de dos segundos."
+        ]
+      },
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Tirá W antes de que llegue el combo: la reducción de daño te come el burst entero y su R queda sin daño extra para ejecutar.",
+          "El silencio del Q es tu respuesta: si lo castigás cuando baja al farm, no puede tirar W, E ni R y pierde el trade seguro.",
+          "Regenerá con la pasiva lejos de la wave: forzálo a gastar energía en empujar y volvé con vida llena; no hay oneshot contra un Garen entero."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Tu pasiva de escudo absorbe el primer tramo de su combo: dejá que la rompa antes de tradear en serio y recién ahí respondé.",
+          "Comprá armadura y subí W: el daño de Zed es físico y cada punto de armadura le duele mucho más de lo que parece.",
+          "Guardá la R para el momento en que entra con la R encima tuyo: el knock-up corta el combo y lo deja sin salida si el shadow ya lo gastó."
+        ]
+      },
+      {
+        "cid": 79,
+        "name": "Gragas",
+        "tips": [
+          "El Body Slam (E) interrumpe el arranque de la W: si lo golpeás cuando se planta el shadow, el combo no arranca nunca.",
+          "Tu sustain con la pasiva te deja aguantar el poke: no aceptes trades cortos, alargá el intercambio y Zed se queda sin energía.",
+          "La R lo saca de su shadow y lo empuja fuera del rango de la E: usala para romperle el all-in, no para iniciar."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W al costado → E y Q casi instantáneos (salen juntos desde el shadow) → recast de W para volver a tu posición original",
+        "All-in estándar: W atrás → R sobre el objetivo → recast de W al terminar la animación → E → Q → AA → R de vuelta para salir",
+        "Triple shuriken: R → AA → W al lado del objetivo → Q → E → recast de W → AA → R para finalizar si queda vivo",
+        "Dive a torre: W afuera del rango de la torre → E → R → Q al aterrizar → AA → R de vuelta antes del segundo disparo",
+        "Teamfight: R al frontline → W hacia la backline → Q y E sobre el carry → R de vuelta a la posición segura"
+      ],
+      "tips": [
+        "Nunca gastes W solo para empujar la wave: es tu único engage y tu único escape a la vez, y sin ella quedás regalado a cualquier gank.",
+        "Tirá E antes que Q cuando el objetivo se mueve: el slow de la E te asegura que las tres shurikens peguen, y la Q sola se esquiva caminando.",
+        "Usá la R también como dodge y como escape, no solo como ejecución: una R gastada para esquivar un CC te deja vivo para el siguiente trade.",
+        "Contá la energía antes de entrar: si te quedaste sin recurso a mitad del combo, el daño de la R no se completa y perdés la kill.",
+        "En matchups de rango largo farmeá con Q desde lejos y esperá el nivel 6: el all-in recién se vuelve real cuando tenés la R para entrar y salir."
+      ],
+      "plan": {
+        "early": "Farmeá con Q desde fuera del alcance rival, buscá el trade corto recién al nivel 3 con W + E + Q y al llegar a 6 presioná con la R para forzar kills o al menos el Flash.",
+        "mid": "Empujá mid y roameá a las lanes laterales: sos el mejor asesino de picks del mapa, así que buscá objetivos aislados y convertí cada kill en un objetivo cercano.",
+        "late": "Flankeá y esperá el error: entrá por el costado sobre el carry aislado, usá la R para salir y evitá las peleas 5v5 agrupadas, donde el peel y los escudos te apagan."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zed/guide",
+      "https://mobalytics.gg/lol/champions/zed/combos",
+      "https://mobalytics.gg/lol/champions/zed/counters"
+    ]
+  }
+}

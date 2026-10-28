@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "azir",
+    "ddragonId": "Azir",
+    "name": "Azir",
+    "titleEs": "el Emperador de las Arenas",
+    "cid": 268,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.68,
+    "pr": 2.06,
+    "br": 0.33,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 7.3,
+      "jungle": 0.1,
+      "middle": 90.3,
+      "bottom": 1.7,
+      "support": 0.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Azir.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Azir_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 55.81, "games": 215 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 55.47, "games": 256 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 54.92, "games": 295 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 52.08, "games": 1179 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 51.89, "games": 212 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 50.43, "games": 581 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 49.67, "games": 449 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 49.26, "games": 944 }
+  ],
+  "weakAgainst": [
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 41.35, "games": 474 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 42.34, "games": 222 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 43.05, "games": 446 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 43.5, "games": 377 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 44.17, "games": 403 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 44.2, "games": 491 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 44.25, "games": 800 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 45.07, "games": 406 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El rango de los soldados le deja pegar desde afuera del alcance de casi cualquier rival del mid: mientras vos midas bien, el trade lo gana sin exponerse.",
+      "La Q reposiciona los soldados sin moverlo a él: puede farmear, pokear y escalar daño en la wave sin pagar precio de posición.",
+      "La E es dash + escudo: bien usada es uno de los escapes más seguros del juego y mal usada es un suicide; el rival tiene que respetarle ambas versiones.",
+      "La R define teamfights enteras: un muro bien puesto separa al equipo rival en dos o empuja a los tres delanteros hacia tus torres.",
+      "Escala como un hypercarry: con Nashor's y velocidad de ataque, sus soldados pegan como un tirador con poke de mago encima."
+    ],
+    "weaknesses": [
+      "Es un campeón de techo altísimo: sin soldados en mano no tiene daño ni escape, y cada W malgastada lo deja descalzo por varios segundos.",
+      "Early game débil contra burst: antes del primer item, cualquier mago de combo le gana el trade frontal si se acerca a soldadear.",
+      "Empuja la wave por naturaleza (los soldados pegan solos): eso lo convierte en imán de ganks si no controla el line con la Q.",
+      "Sus cooldowns largos en early son una ventana pública: después de gastar E, tiene la mitad del kit en el piso y lo sabe todo el mapa.",
+      "El daño depende de que los soldados sigan vivos y en rango: un buen rival simplemente camina fuera del soldado y lo niega completo."
+    ],
+    "powerSpikes": [
+      "Nashor's Tooth terminado: velocidad de ataque + on-hit convierte cada trade de soldado en daño real; ahí empieza a pegar de verdad.",
+      "Level 6: la R lo salva de todo-in rivales y le da su primera kill garantizada contra el que se acerca sin ver el muro.",
+      "Tres items (Nashor's + Shadowflame + Rabadon's): atraviesa frentes enteros con soldados y su poke empieza a borrar squishies.",
+      "Late game con build completa: pega como un ADC de pelea larga con rango de mago; si llega vivo a la teamfight, la gana."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: no te pares en línea recta detrás de tus soldados, porque el poke te pasa por el costado; bancá con farming seguro y buscá la E-Q recién cuando gastaron su escape.",
+        "Al primer slow o root en el piso, Alejá todo el rango: tu respuesta a un mago de rango es no estar donde pega, no ganar el intercambio.",
+        "Usá la Q para farmear desde ángulos raros de la wave: si el soldado golpea desde el costado, no hay skillshot que lo corte."
+      ],
+      "tanks": [
+        "Los soldados pegaron por rendimiento sostenido: parate a máximo rango y dejá que el DPS escalado los coma de a poco, no intentes burst que no tenés.",
+        "Kiteá con E-Q hacia atrás después de cada avance del tanque: ganar distancia mientras los soldados siguen pegando es la pelea entera.",
+        "Si el frente no se muere, guardá la R para cuando venga el resto del equipo: el muro atrás del tanque corta a sus compañeros, no a él."
+      ],
+      "assassins": [
+        "Fizz, Zed, Ekko: la E es tu respuesta, no tu apertura; con E en cooldown, cualquier asesino te ejecuta gratis en medio de la lane.",
+        "Guardá la R como auto-peel: el que se tira encima de vos se come el muro y queda del otro lado peleando solo.",
+        "Pokeá desde el máximo rango de soldado mientras su combo esté en el piso: después de que gaste el dash, tenés diez segundos de castigo libre."
+      ],
+      "crowdControl": [
+        "Contra comps de engage, la R es disengage primero y jugada después: el muro vale más cortando el engage rival que buscando el shuffle perfecto.",
+        "Bone Plating y posición: tu counterspell contra CC es nunca estar adentro del rango del que lo tiene, no armarte de resistencia.",
+        "Zhonya's tras el primer CC de pelea: esperá el engage, comé el primer stun parado y entrá cuando el cooldown del combo rival ya se gastó."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango supera al de sus soldados: pegale de afuera de la wave y obligalo a farmear perdiendo vida; no necesita acercarse para ganarte el lane.",
+          "Guardá tu aturdimiento (E) para cuando tire la E-Q hacia vos: si lo interrumpís con el dash a mitad de camino, queda pegado al costado de la lane sin escape.",
+          "Después del nivel 6 mantente siempre moviéndote lateralmente: un Azir que gana tu rango es peligroso, pero uno que come stun cada engage no llega al late."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Punishalo duro antes del 6: hasta ahí no tiene all-in ni escape real, y cada soldado que le pegás gratis es oro porque después escala mejor que vos.",
+          "Empujá la wave y roameá con el TP: tu ventana es el mid game, no le regales el juego esperando que llegue a los 16 con seis items.",
+          "Cuando tenga R con puntos, no pelees en pasillos ni cerca de su equipo: un rifte encima tuyo te borra antes de que el soldado pegue dos veces."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "La jaula (E) castiga tu E-Q de entrada: no te tires encima de él si la jaula está en mano; esperá que la gaste farmeando o con el jungla cerca.",
+          "Comerciá al máximo rango de soldado y nunca camines hacia él: tu daño entra desde afuera de su rango y cada paso tuyo hacia adelante es maná y stacking gratis para su pasiva.",
+          "Comprate Resistencia Mágica temprano (o Banshee's si el burst entra igual): el all-in de Veigar con stun borrando a un mago sin MR es la derrota más común de este matchup."
+        ]
+      },
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Su all-in al 6 gana el frontal: bancá la wave atrás de la torre si hace falta, porque un engage limpio de Diana te atraviesa el escudo de la E.",
+          "Guardá la R para empujarla cuando se tire: ella necesita llegar a vos para pegar; el muro en la cara la deja peleando sola contra tu equipo.",
+          "Castigá su early con soldados a máximo rango: hasta el 6 es frágil y sin escape; si no le diste ventaja antes de su spike, cambiá a modo pelea de equipo con la R en mano."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico: W (soldado) → AA → Q para reubicar el soldado sobre el rival → AA (el daño entra sin que vos te muevas del lugar seguro)",
+        "Poke a distancia: W y mové el soldado con Q al máximo rango, castigando el last hit del rival sin exponerte a su respuesta",
+        "Shurima Shuffle: E → Q hacia el objetivo → Flash detrás de él → R empujándolo hacia tu equipo → W → AA para rematar",
+        "All-in de lane: W → AA → E-Q sobre el rival → R empujándolo hacia tus soldados y torre → AA y Q de nuevo mientras intenta volver",
+        "Disengage de teamfight: R en la cara del que engancha (muro separando al equipo) → W y pegá de lejos mientras el rival decide si cruza el muro"
+      ],
+      "tips": [
+        "No gastes la E para abrir jugadas si no tenés la R o el Flash cerca: es tu único escape y un Azir sin E es un mago parado en medio de la lane esperando el gank.",
+        "Medite siempre al rango del soldado, no al tuyo: el rival debería comer daño de un soldado que ni siquiera está a tu lado.",
+        "Llevá la cuenta de las cargas de W: sin soldado en mano no hay daño ni pelea, así que guardá una carga para responder el trade en vez de gastarla toda en la wave.",
+        "Contra melee, parate al máximo rango y hacé que cada paso hacia la wave le cueste vida: el melee que no te puede alcanzar no gana el lane, gana el tuyo.",
+        "Usá la pasiva (torre) como herramienta de siege en mid game: reponer torre en mid empujada fuerza al rival a pelear o perder estructura sin que la tuvieras que abrir vos."
+      ],
+      "plan": {
+        "early": "Farmeá seguro con soldados y pokeá con la Q al last hit del rival; no gastes la E en agresión sin visión del jungla, porque tu early es sobrevivir y llegar a Nashor's sin regalar kills.",
+        "mid": "Con Nashor's y TP, empujá mid y jugá los costados: roameá a las peleas de bot o siege con la pasiva, buscando obligar peles donde tu rango de soldado decide.",
+        "late": "Pegá como un tirador: parate atrás de tu frontline, mandá soldados al objetivo más cercano y guardá la R para cuando el rival enganche, porque en las peleas agrupadas tu muro y tu DPS sostenido valen más que cualquier jugada heroica."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/azir/build",
+      "https://mobalytics.gg/lol/champions/azir/combos"
+    ]
+  }
+}

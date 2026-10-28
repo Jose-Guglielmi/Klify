@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "volibear",
+    "ddragonId": "Volibear",
+    "name": "Volibear",
+    "titleEs": "la Tormenta Implacable",
+    "cid": 106,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.4,
+    "pr": 4.48,
+    "br": 2.5,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 72.8,
+      "jungle": 21.6,
+      "middle": 4.8,
+      "bottom": 0.3,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Volibear.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Volibear_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 57.25, "games": 1027 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 57.01, "games": 221 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 56.52, "games": 230 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 55.65, "games": 841 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.47, "games": 1399 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 55.24, "games": 1669 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 55.09, "games": 432 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 54.7, "games": 1148 }
+  ],
+  "weakAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 40.58, "games": 382 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 42.96, "games": 1697 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 43.75, "games": 256 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 43.98, "games": 3206 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 45.51, "games": 501 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 46.4, "games": 1418 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 46.58, "games": 438 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 46.74, "games": 721 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es un duelista de early durísimo: la Q le da velocidad y un stun point-and-click, así que si te alcanza una vez te corre hasta la torre sin que puedas zafar.",
+      "La W repetida sobre la misma herida le devuelve mucha vida: cualquier duelo largo lo gana él, no importa cómo arranque el intercambio.",
+      "La E es daño a distancia con escudo incluido: puede tradear desde fuera de tu alcance y encima cubrirse el poke que le tires de vuelta.",
+      "La R salta muros y apaga las torres: puede divearte con la torre desactivada, así que quedarte con vida baja bajo torre no te salva.",
+      "El level 3 con las tres básicas arriba es uno de los spikes más fuertes del top: ahí es cuando empieza a pelear en serio."
+    ],
+    "weaknesses": [
+      "Grievous Wounds lo apaga: sin la curación de la W repetida pierde la mitad del sustain y no aguanta los all-ins largos.",
+      "Es kitable: no tiene dash, solo velocidad; cualquier slow o cualquier rango lo obliga a caminar hacia vos comiendo daño gratis.",
+      "Con la R en cooldown su poder de trade baja bastante: sacale la ulti en un intercambio y tenés una ventana larga para pelearle.",
+      "Necesita al equipo enemigo agrupado para que la R pegue fuerte: si te dispersás, su engage se reduce a un solo objetivo.",
+      "Sufre contra rango y poke: Vayne, Teemo, Quinn y Heimerdinger le ganan la lane desde la distancia, no desde el duelo."
+    ],
+    "powerSpikes": [
+      "Level 3: primeras tres habilidades y la Q con stun disponible; no le regales un trade gratis apenas sube.",
+      "Level 6: la R le permite divear con la torre apagada, así que no te quedes con vida baja ni recallees pegado a la torre.",
+      "Primer item completo: el daño y la supervivencia suben de golpe y ahí es cuando empieza a buscar kills en la lane.",
+      "Nivel 9 con la Q maxeada: ese es el punto más alto de su curva de daño; después empieza a caer como duelista."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Teemo, Quinn, Heimerdinger: jugá a rango máximo y castigalo en cada last hit; el duelo cuerpo a cuerpo no se acepta nunca.",
+        "Guardá tu slow o tu kite para cuando prenda la Q: si le cortás la velocidad, el stun no llega y su trade se cae solo.",
+        "Empujá y hacelo caminar: cuanto más lejos de su torre lo pelees, más caro le sale cada paso hacia la wave."
+      ],
+      "tanks": [
+        "Comprá Grievous Wounds temprano (Bramble, Morello o Executioner según tu build): la W repetida es todo su sustain.",
+        "Tradeá corto y salí: no le regales la segunda W sobre la herida abierta, que es donde se cura y te da vuelta el intercambio.",
+        "Tu CC y tu aguante valen más en teamfight que en la lane; con la R en cooldown podés pelearle de frente sin miedo."
+      ],
+      "assassins": [
+        "No entres a matarlo de una: la pasiva le cura al bajar vida y el escudo de la E te come el burst; bajalo primero con trades cortos.",
+        "Esperá que gaste la Q y la E en la wave y recién ahí allineás: sin stun ni escudo es un saco de oro con piernas.",
+        "Cuidado con la R: entra desde fuera de visión y apaga la torre, así que no lo persigas a zonas sin wards."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas arranca la Q hacia vos: si lo frenás antes de llegar, el stun nunca entra y pierde el trade completo.",
+        "Los slows y los roots son oro contra él: no tiene dash y depende de la velocidad de la Q para acercarse.",
+        "Reservá un CC para después de la R: cuando aterriza es cuando quiere pegar la W, y ahí es el mejor momento para interrumpirlo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 67,
+        "name": "Vayne",
+        "tips": [
+          "Jugá a rango máximo y usá la Q solo para reposicionar: si su Q con stun no llega, no hay trade y el lane se vuelve gratis.",
+          "Guardá la Condena (E) para cuando prenda la Q y venga corriendo: el knockback corta el acercamiento y le come el stun.",
+          "Después del BotRK kitealo en círculos: sin dash propio, cada paso que da hacia vos es daño tuyo gratis."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "Sembrá hongos en la entrada de la lane y en los arbustos: le arruinás el flanqueo y la corrida por la wave.",
+          "Castigalo con autoataques y el ciego cuando baje al last hit; a rango máximo su Q con stun no llega nunca.",
+          "Cuando prenda la Q para correrte, tirale un hongo adelante: el slow le corta el stun y te deja pegarle gratis."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Pokealo con Q y autoataques desde rango y usá el Vault (E) para cortarle el acercamiento cuando prenda la Q: el salto te saca del stun.",
+          "Marcalo con la pasiva y pegale cada vez que vaya a farmear: su early es fuerte, pero desde rango no puede contestarte.",
+          "Si te divea con la R, tené el Vault listo para salir del rango de la W al aterrizar y no te quedes con vida baja bajo torre."
+        ]
+      },
+      {
+        "cid": 24,
+        "name": "Jax",
+        "tips": [
+          "Guardá el Counter Strike (E) para el auto con stun de la Q: bloqueás el daño y le devolvés el stun a él.",
+          "Tradeá con Q + W corto y salí antes de que llegue la segunda W suya: esa herida repetida es de donde se cura.",
+          "Después del level 6 pelealo con la R activa: el aguante extra te deja ganar el duelo largo, que es donde él se agranda."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: Q → auto (stun) → E encima del objetivo → W → auto; el stun te da la ventana para que la W entre limpia",
+        "Burst de all-in: Q → E sobre el objetivo → auto → R para aterrizar encima → auto → W → auto",
+        "Engage desde fuera de visión: E → R encima → auto → Q → auto → W; la R te pone en rango y la Q asegura el stun después",
+        "Cancelar la animación de W: E → W → Q inmediato → auto durante el stun, así el stun tapa el recovery de la W",
+        "Trampa en arbusto: E cuando pasa cerca → auto → W → Q para el stun cuando intenta huir; el slow de la E le corta la salida"
+      ],
+      "tips": [
+        "No gastes la E como poke suelto: es tu escudo y tu slow, guardala para cubrir el trade o para frenar la huida.",
+        "La W repetida sobre el mismo objetivo es tu sustain real: buscá siempre el segundo W en el duelo largo.",
+        "Usá la Q para acercarte, no para pegar el primer auto a rango: el stun es tu engage y también tu escape.",
+        "La R apaga las torres: no la tires solo por daño cuando la podés usar para divear o para salir de un colapso bajo torre.",
+        "Si vas jungle, no fuerces ganks sin R: con la ulti tenés dive y con la Q el stun; sin las dos solo perdés tempo."
+      ],
+      "plan": {
+        "early": "Peleá agresivo desde level 3 con Q + auto + W + E de escudo, mantené la wave cerca de tu lado para poder correr al rival y no empujes sin ventaja si el jungla enemigo anda cerca.",
+        "mid": "Spliteá y buscá picks con la R por los muros, sumate a los objetivos cuando no haya side para empujar y usá la ulti para forzar torres y dives.",
+        "late": "Flanqueá desde fuera de visión, entrá con la R al backline y después volvé a pelear como front-line; sin la R en mano evitá las 5v5 y esperá el cooldown."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/volibear/guide",
+      "https://mobalytics.gg/lol/champions/volibear/counters",
+      "https://mobalytics.gg/lol/champions/volibear/combos"
+    ]
+  }
+}

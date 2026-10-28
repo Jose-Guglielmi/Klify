@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "ryze",
+    "ddragonId": "Ryze",
+    "name": "Ryze",
+    "titleEs": "el Mago Rúnico",
+    "cid": 13,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.69,
+    "pr": 2.31,
+    "br": 0.45,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 19.1,
+      "jungle": 0.2,
+      "middle": 79.2,
+      "bottom": 1.1,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ryze.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ryze_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 53.09, "games": 388 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 52.33, "games": 900 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 52.29, "games": 436 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 52.1, "games": 1499 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 51.84, "games": 353 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 51.37, "games": 547 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 51.2, "games": 502 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 50.41, "games": 1468 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 42.03, "games": 207 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 43.44, "games": 861 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 43.6, "games": 484 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 43.67, "games": 332 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 43.78, "games": 715 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 44.64, "games": 1669 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 44.81, "games": 752 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 45.08, "games": 1422 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Marca con la E y cada Q que te pegue con Flux encima hace daño extra con splash a los que estén al lado: no te pegues a tus compañeros cuando esté spameando.",
+      "Cada cinco casts carga la pasiva y se lleva escudo y velocidad de movimiento: en pelea larga se te escapa incluso estando casi muerto, así que no des por muerto a nadie que siga casteando.",
+      "La W lo raíza a vos: si tenés Flux encima el root dura el doble, y ese tiempo alcanza para que su Q te borre la vida entera.",
+      "Realm Warp no hace daño pero mueve a su equipo entero a tu espalda: cuelas de dragón a barón en segundos y backdoors que nadie esperaba.",
+      "Escala con items como pocos: un Ryze con Rod of Ages y Archangel terminados pasa de ser una granja a ser tu problema principal."
+    ],
+    "weaknesses": [
+      "Early game casi inexistente: hasta el primer item su daño es de muñeco de goma; castigalo antes de que complete Rod of Ages.",
+      "Sin movilidad real: su único escape es la R y canaliza dos segundos a la vista; si no la tiene en mano, un gank lo mata igual que a un minion.",
+      "Quema maná a mansalva: forzalo a clear de wave con Q + E seguido y se queda sin pool para pelear.",
+      "Alcance corto (550): Xerath, Vel'Koz y Aurelion Sol lo pegan desde fuera de su rango y no tiene forma de responder sin caminar hacia la muerte.",
+      "Su R lo puede outplayear a él mismo: un warp sin visión mete a su equipo en tu torre o en medio de tu squad; si lo ves canalizar con poca vida, esperalo del otro lado del portal."
+    ],
+    "powerSpikes": [
+      "Primer item terminado (Rod of Ages o Archangel): empieza a spamear de verdad y el lane cambia de dueño; no le regales más trades gratis después de eso.",
+      "Level 6 a 11: la R es rotación, no burst; no temas su all-in todavía, pero asumí que puede llegar a cualquier objetivo antes que vos.",
+      "Tres items (RoA + Mercury's + Archangel/Actualizer): acá es fuerte de verdad, con escudo de pasiva y burst para borrar squishies; evitá pelear 5v5 sin ventaja.",
+      "Level 16 con R mejorada: rota entre objetivos tan rápido que ganá tiempo en el mapa o lo van a robar todo por lateral."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Aurelion Sol: superalo en rango y el lane es tuyo; cada Q que le pegues cuando baja al farm es castigo que él no puede responder sin acercarse.",
+        "Guardá tu escape para su W: si te raíza parado, tu ventaja de rango desaparece; un paso lateral le rompe la línea de tiro.",
+        "Pusheá la wave contra él: su clear necesita E + Q sobre el paquete; si la wave llega siempre a su torre, pierde maná y farm a la vez."
+      ],
+      "tanks": [
+        "Su daño es sostenido y de un solo objetivo: apilá Resistencia Mágica temprano y su combo se convierte en cosquillas largas.",
+        "Mercury's Treads antes que nada: el root de la W habilita todo su daño; caminar ese root es ganar la pelea.",
+        "Forzalo a gastar maná en vos: un tanque que camina hacia adelante le cuesta a Ryze media barra de maná por trade; en la tercera tanda se queda sin nada."
+      ],
+      "assassins": [
+        "Zed, Fizz, Ekko: contá los casts de su pasiva; si saltás con el escudo cargado, tu combo no alcanza y la suya sí.",
+        "Esperá que gaste la E y la W en la wave para saltar: sin W en mano no tiene root y su única respuesta es caminar hacia atrás muriendo.",
+        "Si entra en rango para spamear Q, está en tu rango también: castigá cada acercamiento, su rango corto te da la ventana gratis."
+      ],
+      "crowdControl": [
+        "No gastes el CC en intentar cortar Realm Warp: el channel no se interrumpe; guardalo para cuando aterrice y todavía no castingueó.",
+        "Lissandra y Malzahar lo convierten en piedra: suprimir o envolver al archimago apaga el spam entero y es kill segura.",
+        "Encadená CC después de que use W: sin root en mano no habilita su Q y queda descalzo en medio de tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Peleale de desgaste sin miedo: tu sustain de pasiva supera su spam; cada trade largo lo deja más seco que vos porque él no se cura.",
+          "Usá tu E (Lazos) para engancharlo cuando baje al farm: raíz tuya primero significa que su W nunca llega a habilitar la Q.",
+          "Con R activa no lo dejés spamear solo: su daño sostenido te cura a vos; parate encima de él y el lane es un calvario para un mago de rango corto."
+        ]
+      },
+      {
+        "cid": 127,
+        "name": "Lissandra",
+        "tips": [
+          "Tu E (Glacial Path) entra por detrás de su rango: aparecé adentro cuando gaste la E en la wave y su Q no tiene a quién pegar.",
+          "Respondé su root con tu W: si se acerca a raíz, raíz vos primero y su combo muere en el arranque.",
+          "Guardá tu R para su all-in: el momento en que se para encima tuyo a spamear es exactamente cuando lo congelás y tu equipo lo baja."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Tu Q bloquea daño mágico y interrumpe su ritmo: tirásela apenas arranque cada trade y su combo se queda en E gastada.",
+          "Aguantá el early con MR (Null Magic Mantle): él es fuerte antes de que vos escales; pasados los 25 minutos tu R supera la suya de calle.",
+          "No aceptes pelear en mid game con items parejos: buscá el 1v1 recién con dos items; hasta ahí farmeá y robale el tempo con rotaciones."
+        ]
+      },
+      {
+        "cid": 136,
+        "name": "Aurelion Sol",
+        "tips": [
+          "Extendé el lane desde el minuto uno: tu rango de estrellas supera su alcance 550; cada Q suya que pierda es maná que no recupera.",
+          "Castigalo con tu W cada vez que camine hacia la wave: su clear necesita acercarse y ese paso adelante le cuesta media vida.",
+          "Escalá tranquilo: tu late con pasivas apiladas le gana el 1v1 de lejos; no le regales fights tempranos donde su burst todavía importa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E → Q → W → Q (marcás con Flux para que la Q pegue con bonus y el root de la W dure el doble)",
+        "Clear de wave: E sobre el melee → Q al mismo punto (la Flux se propaga al paquete entero y la Q con Flux lo barre de una)",
+        "All-in con root largo: E → W primero (root extendido por Flux) → Q → E → Q para el burst completo mientras no puede caminar",
+        "Escudo de pasiva: con cuatro casts hechos, tirá un hechizo más antes del trade para entrar con escudo y velocidad de movimiento activos",
+        "Rotación de teamfight: R detrás del equipo rival o al flanco del objetivo, y salís casteando Q → E → Q sobre el grupo mientras llegan"
+      ],
+      "tips": [
+        "Maxeá Q primero y E segundo (W al final): la Q es tu daño real y la E es la que la habilita; la W es control, no prioridad.",
+        "No spamees a ciegas el early: tu maná es finito hasta Tear/RoA; cada Q a la cara del rival vale más que tres a la wave sin Flux.",
+        "Guardá la W para cuando el rival camine hacia vos: el root corto sin Flux casi no sirve y gastarla en la wave te deja descalzo.",
+        "Usá la R como herramienta de mapa, no de pelea: llegá al dragón antes, escapá el gank o meté a tu equipo detrás de la torre; para pelear tiene mejores opciones tu Q.",
+        "Entrá a cada pelea con la pasiva cargada: el escudo gana el intercambio de burst y la velocidad de movimiento te mantiene casteando en vez de caminando muerto."
+      ],
+      "plan": {
+        "early": "Farmeá y escalá: sos débil hasta el primer item, usá E → Q para clear sin fundirte el maná y no aceptes fights sin pasiva cargada.",
+        "mid": "Tomá side lane y seguí farmeando; con la R en mano armá picks con tu jungla sobre el que esté solo y convertilo en dragón o torre.",
+        "late": "Pegale al grupo con tres items: tu burst + escudo de pasiva ganan teamfights; warp a objetivos y jamás te separés del equipo porque sin vos el 4v5 se pierde."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/ryze/build",
+      "https://mobalytics.gg/lol/champions/ryze/guide"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "vi",
+    "ddragonId": "Vi",
+    "name": "Vi",
+    "titleEs": "la Vigilante de Piltóver",
+    "cid": 254,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.78,
+    "pr": 4.38,
+    "br": 1.33,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.8,
+      "jungle": 93.9,
+      "middle": 1.3,
+      "bottom": 0.2,
+      "support": 2.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vi.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vi_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 56.92, "games": 260 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 55.66, "games": 309 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 54.07, "games": 442 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 53.82, "games": 275 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 53.22, "games": 1009 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 52.94, "games": 204 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 52.79, "games": 718 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 52.34, "games": 1219 }
+  ],
+  "weakAgainst": [
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 42.82, "games": 731 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 44.43, "games": 2487 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 45.52, "games": 268 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 46.26, "games": 828 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 46.28, "games": 497 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 46.98, "games": 464 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.05, "games": 2015 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 47.43, "games": 799 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El escudo de Blast Shield le da un clear sano y sin volver a base: puede pelear el primer cangrejo, gankear y seguir farmeando con la misma vida.",
+      "El duelo temprano es de los mejores de la jungla: Q + E + el proc de Denting Blows rompe armadura y baja a cualquier jungla que se anime a contestar.",
+      "La R es point-and-click e imparable durante el dash: es el único engage del juego que garantiza CC sobre un carry con dash sin depender de acertar nada.",
+      "Denting Blows pega daño porcentual de vida máxima: los tanques y los monstruos grandes se derriten, así que drakes, Herald y Barón caen más rápido con ella en el mapa.",
+      "Relentless Force tiene dos cargas y pega en cono: limpia campamentos, rompe waves y en teamfight castiga a los que se agrupan detrás del carry."
+    ],
+    "weaknesses": [
+      "No tiene salida: entra con Q o R y después depende de piernas; si el equipo rival la espera, queda plantada en el medio sin escape.",
+      "La Q es telegrafiada y tarda en cargar: si la erra en un gank pre-6 no tiene follow-up y queda sobre-extendida pagando el costo.",
+      "Late game cae fuerte: con tanques y armadura enfrente su daño no alcanza, y su rol se reduce a peel o a flanquear muriendo en el intento.",
+      "Todo su pick depende de la R: sin R en mano no puede forzar nada, y los equipos que cuentan cooldowns le niegan las peleas.",
+      "Es kitable: rango corto, sin dash extra después del engage; contra campeones con ralentizaciones o disengage no llega nunca al objetivo."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q + E + W ya tiene el paquete completo, y ahí arrancan los ganks reales; wardear las entradas de la jungla antes de ese momento es obligatorio.",
+      "Nivel 6: la R convierte cualquier lane en una kill si el rival está pasado de la línea media; el engage imparable más el CC deja el cuerpo servido para el equipo.",
+      "Trinity Force: el primer item grande multiplica el daño de los AA y del proc de W; desde ahí gana el 1v1 contra casi cualquier jungla.",
+      "Niveles 11 y 16: el cooldown de la R baja tanto que puede pickear en cada pelea; asumí que hay engage disponible en todo momento."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Karthus, Zyra, Teemo: te castigan desde fuera del alcance de tu Q, así que farmeá tu jungla y entrá por flancos con visión negada en vez de pelear en el río abierto.",
+        "Esperá a que gasten el hechizo de zona (las plantas de Zyra, el muro de Karthus) antes de cargar la Q: sin ese recurso no te frenan el dash.",
+        "Comprá resistencia temprana y jugá con el escudo de la pasiva: el poke te llega igual, pero entrando con vida llena la kill sigue siendo tuya."
+      ],
+      "tanks": [
+        "Wukong, Trundle, Sejuani, Cho'Gath: el duelo sostenido lo perdés; buscá el pick sobre el carry y no el 1v1 largo contra el front line.",
+        "Su W rompe armadura y su daño es porcentual: la armadura sola no alcanza, necesitás vida, y Herida Grave si el rival se cura en la pelea.",
+        "No gastes la R en el tanque: el engage que importa es el del carry, y sin R quedás sin entrada para la próxima pelea."
+      ],
+      "assassins": [
+        "Rengar, Naafiri, Kha'Zix: te ganan si llegás con la Q descargada; entrá con visión o esperá a que gasten el primer dash antes de cargar.",
+        "Tu R es point-and-click e imparable: contra un asesino que entra sobre tu carry, usala para fijarlo y que el equipo lo borre.",
+        "Guardá el E para después del aterrizaje: el cono pega a los dos y el proc de W cierra la kill sin necesitar la Q."
+      ],
+      "crowdControl": [
+        "La R es imparable mientras vuela: no gastes CC durante el dash, esperá el aterrizaje y recién ahí encadená el tuyo.",
+        "Janna, Lulu, Morgana: el escudo o la polimorfia sobre el objetivo de la R le cortan todo el follow-up; los enchanters son el counter real de su engage.",
+        "Después de la R no tiene escape: si el objetivo sobrevive, el CC que le tirás a la salida la deja muerta en el medio del equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Jugá atrás de tus plantas: la Q de Vi se telegrafía al cargar, así que si la ves venir podés rootearla con E antes de que llegue.",
+          "Tu daño es de zona: cuando entra con R sobre tu carry, tirá la R encima tuyo y de ella; la pelea agrupada la castiga más a ella que a vos.",
+          "Wardeá tu jungla desde el minuto uno: Vi gankea desde el nivel 3 y tu debilidad es que te agarre rotando sin visión."
+        ]
+      },
+      {
+        "cid": 62,
+        "name": "Wukong",
+        "tips": [
+          "El clon (W) se come la Q: dejalo parado en la línea de carga y reenganchá con E cuando ella ya gastó el dash.",
+          "Tu pasiva de armadura y el sustain te ganan el duelo largo: peleá sostenido y no en burst, así el W de Vi que rompe armadura pierde valor.",
+          "En teamfight guardá la R para cuando ella entra: si la levantás después de que aterriza, su equipo no puede seguir el engage."
+        ]
+      },
+      {
+        "cid": 48,
+        "name": "Trundle",
+        "tips": [
+          "El pilar (E) le corta la Q y el camino: tiralo derecho en la línea de carga y obligala a rodear o a comerse el knockback.",
+          "Subyugar (R) le roba armadura y vida justo cuando su W está rompiendo la tuya: usala al inicio del duelo y el trade se invierte entero.",
+          "Tu duelo sostenido es mejor: peleá pegado a ella y no la dejes salir, porque sin Q cargada no tiene forma de escaparte."
+        ]
+      },
+      {
+        "cid": 113,
+        "name": "Sejuani",
+        "tips": [
+          "No gastes CC durante el dash de la R: es imparable mientras vuela, esperá el aterrizaje y ahí encadená Q + E.",
+          "Aguantá el burst con armadura y la pasiva: el daño de Vi es físico y porcentual, y tu E le baja el ritmo de ataque en el duelo largo.",
+          "Pegate a tu carry cuando Vi tenga R: si entra, tu R de área detrás la deja atrapada en medio de tu equipo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage completo: Q cargada + Flash → AA → E → AA → R → AA → E → AA; el Q-flash cambia el ángulo sin animación y la R entra imparable",
+        "Pick con R: R sobre el carry → AA → E → AA → Q para reposicionarte y cortar el escape → E de nuevo si sigue vivo",
+        "Trade corto en jungla: Q → AA → E → AA y salí; con Denting Blows activo cada tres golpes rompés armadura y ganás el duelo",
+        "Clear eficiente: E en el campamento grande para pegarle a todos los monstruos, W para romper armadura y Q para reposicionarte entre camps",
+        "Dive: R sobre el objetivo bajo torre (el knock-up absorbe el aggro) → AA → E → AA, y salí con Q cargada antes de que lleguen los defensores"
+      ],
+      "tips": [
+        "No gastes la Q para entrar si no tenés cómo salir: es tu única movilidad y sin ella quedás plantada en el medio del equipo rival.",
+        "Cargá la Q fuera de visión: el sonido y la animación avisan; desde un arbusto o detrás de una pared entra sin que puedan reaccionar.",
+        "Guardá una carga de E para el tercer golpe: si la tirás antes, perdés el proc de Denting Blows justo en el momento que más pega.",
+        "Usá la R para abrir y no para cerrar: es CC imparable sobre un objetivo y tu equipo necesita esos segundos para entrar detrás tuyo.",
+        "Peleá con W activo: cada tres golpes baja la armadura enemiga, así que contra tanques peleá sostenido y no en ráfagas de burst."
+      ],
+      "plan": {
+        "early": "Gankeá desde el nivel 3 con Q + E, asegurá el primer drake con W y E sobre el objetivo y no pierdas tempo de farm por gankear de más.",
+        "mid": "Con Trinity Force buscá picks con R sobre los carries, tomá cada drake y usá el E en área para bajar torres rápido y abrir el mapa.",
+        "late": "Flankeá desde fuera de visión y entrá con R solo cuando el carry esté aislado; después del engage volvé a pelear por tu carry, porque sin R no podés re-entrar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/vi/build",
+      "https://mobalytics.gg/lol/champions/vi/guide",
+      "https://mobalytics.gg/lol/champions/vi/combos",
+      "https://mobalytics.gg/lol/champions/vi/counters"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "darius",
+    "ddragonId": "Darius",
+    "name": "Darius",
+    "titleEs": "la mano de Noxus",
+    "cid": 122,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.03,
+    "pr": 7.79,
+    "br": 14.31,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 82.1,
+      "jungle": 15.7,
+      "middle": 1.1,
+      "bottom": 0.3,
+      "support": 0.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Darius.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Darius_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 57.2, "games": 236 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 56.18, "games": 1262 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 55.91, "games": 1515 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.8, "games": 939 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 55.18, "games": 1584 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 54.7, "games": 2660 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 54.57, "games": 1160 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 54.37, "games": 1109 }
+  ],
+  "weakAgainst": [
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 43.96, "games": 207 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 47.36, "games": 511 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 47.74, "games": 1818 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 48.23, "games": 821 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 48.37, "games": 1627 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 49.07, "games": 540 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 49.13, "games": 865 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 49.43, "games": 2276 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Early game de los más fuertes del juego: la Hemorragia apilada gana casi todo trade extendido; el rival que se queda a pegar autos lo pierde.",
+      "La Q pegando con el filo cura y pega en área: sustain y castigo de wave en el mismo giro de hacha.",
+      "La R ejecuta y se resetea con cada kill: en teamfight podés encadenar guillotinas y borrar a todo el equipo de a uno.",
+      "Duelista natural: en 1v1 con 5 stacks casi nadie lo baja, y el split push con ventaja lo aprovecha mejor que nadie.",
+      "La W resetea el auto: DPS extra gratis en cada trade si la intercalás bien."
+    ],
+    "weaknesses": [
+      "Cero movilidad: si lo kitiaron, no llega más; la E es su única herramienta de acercamiento y tiene cooldown largo.",
+      "La Q tiene sweet spot: el filo externo cura, pero un rival que se pega a su cuerpo le anula el daño interior y la cura.",
+      "Cae en late: los tanques aguantan sus stacks y los carries kitierean; su ventana real es early/mid.",
+      "La R mal calculada lo deja sin finisher: si la tira fuera de rango de kill, no hay reset y la teamfight se le cae.",
+      "Depende de llegar: contra poke de rango o dashes el lane se vuelve una frustración y se ve obligado a farmear bajo torre."
+    ],
+    "powerSpikes": [
+      "Nivel 1-3 con Q temprana: ya gana trades extendidos por la pasiva; no se le quede a pegar autos sin plan.",
+      "Primer item armado: con Stridebreaker o Youmuu el daño de Hemorragia se vuelve insoportable en el lane.",
+      "Nivel 6: execute real en mano; cualquier rival a media vida con 5 stacks es kill garantizada.",
+      "Nivel 9 (Q maxeada) y 11 (R nivel 2): el all-in está siempre disponible y castiga cualquier error de posición.",
+      "Nivel 16: R a tope para teamfights, aunque es también donde el late empieza a pasarle factura."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Kennen, Quinn: farmeá lo seguro detrás de la wave; cada paso que das para pisarlos te cuesta más vida de la que les sacás.",
+        "Guardá la E para cuando se comprometan a last hit: contra rango, el agarre es todo tu kit; si lo tirás al vacío, te kitierean diez segundos gratis.",
+        "Ghost por encima de Flash en estos match-ups: necesitás pegarte más de una vez, no llegar una sola."
+      ],
+      "tanks": [
+        "Sion, K'Sante, Tahm Kench: no busques el burst; apilá Hemorragia y ganá el trade extendido por desgaste.",
+        "Rotá el filo de la Q pegándoles y retrocediendo un paso: el sustain gana el lane de atrición contra tanques sin daño.",
+        "No gastes la R en poke: contra tanque el execute es tu única kill real; castigá con Q y W y guardá la guillotina para el all-in."
+      ],
+      "assassins": [
+        "Fiora, Camille, Riven: cuidá la E; si se la gastean con un dash, te quedás sin agarre y sin pelea.",
+        "Jugá con la wave de tu lado: la E hacia vos los trae de vuelta al rango de tu Q en vez de dejarlos escapar a su torre.",
+        "Aceptá que ellos escalan mejor: cerrá el lane con ventaja temprana o el mid game se te complica."
+      ],
+      "crowdControl": [
+        "Malzahar, Lissandra: si te tiran la key ability encima del all-in, estás muerto; entrá recién cuando la tengan en cooldown.",
+        "Tenacidad temprano (Mercurio): morir encadenado sin haber tocado a nadie es la muerte más común de Darius.",
+        "No allineés con la E gastada contra comps con CC: tu único engage también es tu única forma de llegar, y sin él sos un blanco lento."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Empezá cada trade a vida completa: su E rebotando en minions más tu falta de sustain te encuentran a media vida y ahí el silencio te mata.",
+          "Guardá tu interrupt (Q de Malzahar) para cuando Darius camine hacia vos a pegar el filo: cortarle el acercamiento le mata el trade entero.",
+          "Pedí ganks antes del 6: sin escape y con tu supresión en mano, un Darius adelantado no puede ni acercarse a la wave."
+        ]
+      },
+      {
+        "cid": 19,
+        "name": "Warwick",
+        "tips": [
+          "Tu curación escala con su sangre apilada: no entres en guerra de desgaste larga; all-in corto con R o nada.",
+          "La Q de Warwick lo sigue si huye con vida baja: si el trade salió mal, cortá la pérdida antes de que la Hemorragia lo cure a él.",
+          "Espaciate cuando tenga R: la supresión necesita distancia para volar; si te tiene pegado, esperá que la gaste antes de pelear."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "Su ceguera no anula habilidades: si Teemo te la busca de cerca, respondé con Q y W, no con autos; ahí ganás el trade.",
+          "Pegá el filo de la Q detrás de tu wave: el veneno apilado con su poke te hace perder el trade antes de empezarlo si estás a media vida.",
+          "Tradeá recién después de que use la W de velocidad o lo tengás fuera de posición: con tu E gastada no lo alcanzás nunca."
+        ]
+      },
+      {
+        "cid": 85,
+        "name": "Kennen",
+        "tips": [
+          "Su Q pokea sin riesgo desde fuera de tu rango: farmeá detrás de minions y no aceptes trades a media vida con su pasiva de marca cargada.",
+          "Esperá que gaste la E (dash) antes de tirar tu agarre: si se la comés al vacío, te kitiere el lane completo.",
+          "Su all-in con R exige que se te acerque: con 5 stacks y R en mano castigá ese momento, porque sin tu Ghost nunca lo vas a alcanzar si se va."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: Q pegando con el filo → AA → W para resetear el auto y volver a pegar",
+        "All-in estándar: E para traer al rival → AA → W → Q retrocediendo un paso (filo) → AAs hasta 5 stacks → R para ejecutar",
+        "Trade corto con filo garantizado: E → W + AA apenas llega → un paso atrás para que el filo externo de la Q lo agarre",
+        "Animación oculta: AA → W → Q lo más rápido posible para esconder la W y robar vida sin que el rival reaccione",
+        "Teamfight: E al frente → AA W → Q → AAs a 5 stacks → R al primer kill → Flash mid-animación hacia el siguiente objetivo y AA → R de nuevo con el reset"
+      ],
+      "tips": [
+        "La W es un reset de auto: siempre AA antes de apretarla; nunca la uses como hechizo suelto porque perdés DPS.",
+        "Pegá el filo de la Q: el círculo solo cura en el filo externo; si el rival se pega a tu cuerpo, retrocedé un paso antes de castear.",
+        "No tires la R sin contar el daño: la guillotina es un execute; si no mata, no hay reset y quedás sin finisher para el resto de la pelea.",
+        "Ghost sobre Flash contra lanes kitiereadores: necesitás pegarte varias veces, no una; con Ghost activa y 5 stacks nadie te gana el 1v1.",
+        "En mid game, castigá al que venga a frenar tu split: sos el mejor duelo 1v1 de la partida; si mandan dos, ya ganaste tiempo para tu equipo."
+      ],
+      "plan": {
+        "early": "Buscá el trade extendido desde el nivel 2 con la Q en el filo y AAs apilando Hemorragia; al llegar a 6, todo rival a media vida con 5 stacks es kill con la R.",
+        "mid": "Split push en la lane lateral y peleá a quien venga a frenarte; en teamfight entrá por el lado, tirá la R al primer objetivo alcanzable y buscá el reset en vez del flanco heroico.",
+        "late": "Pegate a tu equipo y flankeá solo si estás ahead; si no, usá la E para peel y dejá que tu carry haga el daño: tu ventana de pico ya pasó."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/darius/guide",
+      "https://mobalytics.gg/lol/champions/darius/build",
+      "https://mobalytics.gg/lol/champions/darius/combos"
+    ]
+  }
+}

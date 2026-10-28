@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "zyra",
+    "ddragonId": "Zyra",
+    "name": "Zyra",
+    "titleEs": "el Despertar de las Espinas",
+    "cid": 143,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.23,
+    "pr": 3.18,
+    "br": 4.16,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 0.6,
+      "jungle": 35.6,
+      "middle": 2.7,
+      "bottom": 2.3,
+      "support": 58.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zyra.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zyra_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 58.26, "games": 944 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 57.6, "games": 217 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 56.51, "games": 338 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 56.01, "games": 691 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 55.87, "games": 963 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 55.83, "games": 206 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 55.33, "games": 244 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 54.37, "games": 355 }
+  ],
+  "weakAgainst": [
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 46.67, "games": 225 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 49.25, "games": 995 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 49.76, "games": 1039 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 49.8, "games": 1018 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 49.8, "games": 1010 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 49.85, "games": 1013 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 50.39, "games": 639 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 50.49, "games": 1646 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le regala semillas gratis: cada trade con Q o E brota plantas sin gastar maná, así que su DPS sostenido es de los más altos entre supports.",
+      "Poke de rango larguísimo en el early: la Q y las Thorn Spitters la dejan zonear la bot sin acercarse al alcance de nadie.",
+      "Control de arbustos brutal: una semilla adentro del brush más un E convierten el pasto en zona de muerte para el ADC enemigo.",
+      "La R es una zona de knock-up en área y encima enfurece las plantas: con dos o tres plantas abajo, la teamfight se gana sola.",
+      "Empuje y daño a objetivos: las plantas tanquean y pegan al dragón/heraldo, así que securea neutrales más rápido que casi cualquier support."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni escape, cualquier CC que le entre es kill; vive atada a la posición que eligió hace dos segundos.",
+      "Si erra la E se queda sin amenaza: el root es su único control duro propio y sin él las plantas no enganchan a nadie.",
+      "Las semillas de la W son un recurso: gastadas en farmear, se queda sin plantas justo cuando arranca la pelea.",
+      "Las plantas mueren rápido con AoE: contra magos o tanques con daño en área, su DPS se evapora en un segundo.",
+      "Es de papel: una vez que la agarran, no tiene forma de salir y su daño depende de estar viva casteando desde atrás."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q + E + W ya tiene las dos plantas y el root; es el primer nivel en el que gana trades largos en bot.",
+      "Nivel 6: la R suma knock-up en área y enfurece plantas; el kill sobre el ADC o el support fuera de posición pasa a ser real.",
+      "Liandry terminado: el poke quema y las plantas escalan; desde acá cualquier pelea larga la gana ella sola.",
+      "Niveles 11 y 16: la R pega mucho más y las plantas enfurecidas aguantan más golpes, así que el knock-up de zona pasa a definir teamfights."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Senna: jugá detrás de tu wave y no camines a poner semillas adelante; sin escape, cada paso de más es un stun o un slow gratis para ellos.",
+        "Forzá trades cortos apenas su habilidad de poke esté en cooldown y brotá plantas encima del que se queda a farmear: el que se planta a tirar habilidades pierde contra tus spitters.",
+        "Comprá botas temprano: contra poke de rango, esquivar un Q o un E vale más que cualquier item de daño."
+      ],
+      "tanks": [
+        "Alistar, Braum, Nautilus: no gastes el combo por gusto, esperá a que gasten el escudo o la carga y recién ahí brotá plantas; contra un tanque con CC arriba, tu daño se come un stun.",
+        "Guardá la R para cortar el engage sobre tu ADC: el knock-up interrumpe la entrada y deja al tanque sin follow-up.",
+        "Peleá con plantas ya plantadas en el camino de salida: obligás al tanque a elegir entre seguir al carry o comerse el DPS de las plantas."
+      ],
+      "assassins": [
+        "Pyke, Pantheon, Rengar: no te pares adelante de tu ADC; el asesino entra por el que está más expuesto y ese sos vos si farmeás la wave de frente.",
+        "Guardá la E para el instante en que salen del arbusto: un root en el arranque del combo lo deja parado adentro de tus plantas.",
+        "Después del nivel 6, la R es tu escape: el knock-up en área corta el all-in y te da el segundo que necesitás para reubicarte."
+      ],
+      "crowdControl": [
+        "Leona, Nautilus, Rell, Blitzcrank: contá su habilidad de engage como si fuera tu vida; mientras esté arriba, jugá un paso atrás de la wave.",
+        "Un CC encadenado sobre vos cancela todo: sin movilidad, si te agarran no hay segunda oportunidad, así que la posición vale más que cualquier trade.",
+        "Usá la R defensiva antes que ofensiva en estas matchups: el knock-up corta el engage y convierte su all-in en una pelea larga que ganás con plantas."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 3,
+        "name": "Galio",
+        "tips": [
+          "Su W bloquea daño mágico y encima tauntea: tirale Q y E recién cuando el escudo está gastado; con el W arriba, tu combo entero es daño regalado.",
+          "No te quedes a rango de su E: es su única forma de llegar y si te engancha con el dash, el taunt del W te saca de la pelea.",
+          "Cuando tenga R global, no estires trades con el ADC agrupados: aterriza encima, te levanta y encima cura a los suyos."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Su escudo absorbe casi todo el poke: castigala cuando lo gaste en el ADC y no antes, porque con el E arriba tus plantas pegan al aire.",
+          "Brotá plantas sostenidas en vez de tirar un burst seco: el daño repartido en el tiempo se le escapa del escudo.",
+          "No la aprietes contra su torre: el tornado corta tu combo y la R te saca de rango; buscá el pick cuando esté sola wardando."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Su E se come los proyectiles de tus plantas y de tu Q: no tires el combo contra el escudo, esperá que lo baje o pegalo desde otro ángulo.",
+          "Su pasivo stunea al cuarto stack: si te acercás a autoataquear, te come el stun y el ADC enemigo hace el resto.",
+          "Rootealo cuando esté separado del ADC: sin movilidad, un E acertado en rango propio brota las dos plantas y lo obliga a gastar el escudo para salir."
+        ]
+      },
+      {
+        "cid": 12,
+        "name": "Alistar",
+        "tips": [
+          "Su W + Q te saca de la lane: si te engancha cerca de su ADC, morís; jugá al alcance de tu E y nunca más adelante que tu wave.",
+          "Cuando use la R, no gastes la tuya: reduce el daño recibido; guardá el knock-up para cuando se le termine.",
+          "Zonéalo con plantas en el arbusto: su combo tiene rango fijo y si lo ves arrancar con la W, tu E te da el root justo para salir."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q → W (la semilla dentro del área de la Q brota como Thorn Spitter) → autoataque; las plantas matan la wave y te dejan el trade gratis",
+        "Root con slow: E → W (brota Vine Lasher y le clava slow al enganchado) → Q → W para la segunda planta encima del objetivo",
+        "All-in nivel 6: W → W (dos semillas cerca del rival) → E root → R encima (knock-up + plantas enfurecidas) → Q para el remate",
+        "Engage de teamfight: R sobre el grupo → Flash → E root mientras están en el aire → W → W → Q sobre las semillas",
+        "Anti-gank: E al que entra con más velocidad → W + Q sobre la semilla a tu espalda → pelea retrocediendo con plantas en el camino"
+      ],
+      "tips": [
+        "No plantes semillas sin una Q o una E lista para brotarlas: una semilla sin activar es maná y cooldown tirados, y te deja sin escape.",
+        "Administrá las dos cargas de W: si las gastás farmeando, te quedás sin plantas justo cuando arranca la pelea; guardá siempre una.",
+        "La R no es solo daño: el knock-up corta canales y engages; usala para interrumpir a Alistar o Leona cuando entran sobre tu ADC.",
+        "Pegá desde atrás de tu wave: tu daño no necesita estar cerca y, sin movilidad, cualquier CC que te entre es la muerte.",
+        "Después de cada trade, empujá con plantas y volvé a poner semillas en el arbusto: el control del brush es lo que te da el lane gratis."
+      ],
+      "plan": {
+        "early": "Buscá nivel 2 primero, pokeá con Q y semillas para zonear al ADC enemigo y, al 3, forzá el trade con E root; empujá después de cada intercambio para negarle farm.",
+        "mid": "Rotá a mid después de tirar la torre de bot, poné visión antes de cada objetivo y usá las plantas para securear dragón o heraldo; buscá picks con E + R sobre el que sale a wardear.",
+        "late": "Peleá desde el fondo con Liandry y plantas sembradas en el área, guardá la R para cortar el engage enemigo y wardeá siempre en grupo: sola te agarran y perdés la pelea antes de empezarla."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zyra/guide",
+      "https://mobalytics.gg/lol/champions/zyra/combos",
+      "https://mobalytics.gg/lol/champions/zyra/counters"
+    ]
+  }
+}

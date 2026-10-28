@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "aurelionsol",
+    "ddragonId": "AurelionSol",
+    "name": "Aurelion Sol",
+    "titleEs": "el Forjador de Estrellas",
+    "cid": 136,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.62,
+    "pr": 1.68,
+    "br": 0.69,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 6.4,
+      "jungle": 3.1,
+      "middle": 65.5,
+      "bottom": 21.8,
+      "support": 3.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/AurelionSol.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/AurelionSol_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 56.61, "games": 242 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.38, "games": 525 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.43, "games": 819 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 55.15, "games": 388 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 54.81, "games": 489 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 53.76, "games": 439 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 53.6, "games": 431 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 53.39, "games": 575 }
+  ],
+  "weakAgainst": [
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 42.86, "games": 238 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 44.44, "games": 270 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 46.22, "games": 251 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 46.82, "games": 220 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 47.28, "games": 404 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 47.34, "games": 640 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 48.69, "games": 458 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.72, "games": 351 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El Stardust se acumula para siempre: cada daño que pega le mejora las habilidades de forma permanente, así que cuanto más largo el juego, más grande se pone sin necesidad de matar de más.",
+      "La Q es un aliento en abanico que persigue el cursor: empuja la wave entera mientras te pega y te obliga a esquivar un rayo que no deja de girar.",
+      "La E ejecuta minions bajo el umbral y tironea en área: limpia waves de un solo cast y en peleas te arranca del lugar hacia el agujero.",
+      "Vuela con la W por encima del terreno: roamea, esquiva paredes y escapa ganks sin quemar el Flash; con 65% de su juego en mid, es de los mejores roamers del parche.",
+      "La R es doble: stun en área normal y, con 75 de Stardust, una estrella gigante con knock-up más una onda expansiva que pisa media pantalla."
+    ],
+    "weaknesses": [
+      "Early débil de verdad: antes del 6 no tiene burst ni engage y cada minuto sin pegar es Stardust que no junta; castigalo ahora, después es tarde.",
+      "Cero burst instantáneo: su daño es de acumulación (aliento más quemadura), así que un mago con combo rápida lo borra antes de que el aliento lo derrita.",
+      "Squishy y con un solo escape: si la W está en cooldown por haberla gastado al ataque, queda caminando; guardá tu engage para esa ventana.",
+      "La R avisa: la estrella cae con delay y su área se ve antes de caer; moverse un paso la deja en cero y le quita la mejor parte del combo.",
+      "Depende de sostenerte cerca: la Q necesita tenerte en rango varios segundos y la R falla sola; un campeón móvil lo kiatea todo el juego."
+    ],
+    "powerSpikes": [
+      "Level 6: la Falling Star le da su primer stun de área y un all-in real; no te peles al costado de la wave sin escapatoria.",
+      "75 de Stardust acumulados: la R pasa a Skies Descend (knock-up más onda expansiva); mirá la barra sobre su ícono, si está llena jugá más disperso.",
+      "Dos items (Rylai's más Liandry's): el aliento empieza a ralentizar y quemar, y su daño de área se vuelve imposible de tanquear para las frontlines.",
+      "Late game con la barra de Stardust inflada: radios enormes y la ejecución de la E más amplia; a los 40 minutos él escala mejor que casi cualquier mid laner."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Ziggs: pegale antes del 6, su rango temprano es chato y cada trade que le ganás es Stardust que no junta nunca más.",
+        "Su Q es un abanico que sigue el cursor: no te muevas en línea recta al farmear, zigzagueá y le comés mucha menos vida.",
+        "Cuando vuele hacia vos con la W es porque se quedó sin escape: abrí distancia y castigá el aterrizaje, siempre aterriza cerca de donde despegó."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica temprano: su daño es de quemadura continua (Liandry's) y está calibrado para derretir al que no lleva resistencia.",
+        "No te pares con la vida baja dentro del agujero (E): ejecuta y tironea, un tanque a media vida adentro de la Singularity muere como un minion.",
+        "En teamfight dispersate o entrá por flancos: su R gigante vale solo si agrupás, caminar en manada le regala el knock-up más la onda entera."
+      ],
+      "assassins": [
+        "Fizz, Ekko, Diana: saltalo antes del 6 y de nuevo cuando gaste la W al ataque; sin vuelo en mano es un tipo grande y lento que camina.",
+        "Su daño tarda en subir porque es aliento sostenido: si entrás y salís rápido, la pelea termina antes de que su DPS pese.",
+        "La R es su única protección: esperá que la estrella caiga o la tire al vacío antes de committing; un all-in con su R gastada es casi gratis."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas aterrice de la W: el vuelo tiene trayectoria visible y el aterrizaje es tu ventana de engage garantizado.",
+        "Malzahar, Lissandra, Cho'Gath: suprimirlo o enraizarlo mata su único plan defensivo, porque kitar es literalmente toda su supervivencia.",
+        "El CC le corta la Q canalizada: interrumpirle el aliento no solo le quita daño, le roba los stacks de Stardust de todo el trade."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Pegale desde el nivel 3: ella tiene el engage y vos solo tenés el aliento; si le dejás el lane parejo, al 6 te mata con su combo sin contrapeso.",
+          "Guardá tu dash para esquivar su enganche y no para acercarte: si el dash de Diana no te encuentra, su combo muere antes de arrancar.",
+          "Su escudo aguanta tu burst entero: no quemes todo en la burbuja, esperá que expire y pegale en la ventana sin escudo."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Castigá los primeros cinco niveles: él escala mejor que vos, así que el lane temprano es tu única ventana para ganar el lane por cuenta propia.",
+          "Su charco lo hace inexistente por un segundo: guardá tu engage para después del charco, tirárselo encima es regalarle la esquiva gratis.",
+          "Pedile gank temprano: sin escape real y con una vida que solo se cura a pulso, es un blanco perfecto antes de armar sus items."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Su kit te matchea el rango y encima tiene fear: no pises el área pintada, y si te marca el fear, aleate antes de que caiga.",
+          "Si te vuela encima, ya pintó el área en tu aterrizaje: mezclá la entrada y aterrizá detrás de él, nunca en la línea recta.",
+          "Aceptá el farmeo parejo y ganá en roams: en trades puros te hace más burst, así que tu plan es empatar la wave y moverte por el mapa."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Del nivel 1 al 6 es tuyo: no tiene dash ni daño, pegale con el aliento cada vez que baje a last hit y no le regales recall gratis.",
+          "Después del 6 su salto alcanza tu rango: mantené posición lateral de la wave, no le pares enfrente para farmear cómodo.",
+          "Cuando veas su salto en cooldown, ese es tu all-in: sin escape en mano es un mago cuerpo a cuerpo disfrazado."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W (vuelo corto) → Q sobre el objetivo mientras volás → aterrizás pegado y E para tironearlo al agujero",
+        "Farmeo con Stardust: Q en abanico sobre la wave → E cuando los minions bajan del umbral de ejecución (rematan solos y te dan polvo)",
+        "All-in clásico: R Falling Star encima del objetivo (stun) → E para retener → Q mantenido moviendo el cursor sobre él",
+        "Combo de Skies Descend (barra de 75 llena): W hacia el equipo agrupado → R gigante al centro (knock-up más onda) → E sobre los que quedan → Q para terminar",
+        "Escape o reposición: W por encima de la pared hacia tu torre; nunca la gastes al ataque sin ver al jungla rival en el mapa"
+      ],
+      "tips": [
+        "Pre-6 no fuerces nada: farmeá con la Q de lejos y juntá Stardust; tu único plan de kill temprano es que el rival se equivoque solo.",
+        "Mirá la barra sobre la R: con 75 de Stardust la próxima estrella es la gigante; guardala para teamfight, no la quemes en un poke de lane.",
+        "La E con minions bajos de vida es tu tecla de farm: usala para ejecutar y sumar polvo, cada cast que pega es Stardust permanente.",
+        "La W es tu vida: si la gastaste para entrar no tenés cómo salir; decidí antes de volar si es engage o escape según dónde esté el jungla rival.",
+        "Kitéa mientras respirás: la Q sigue el cursor, así que girá alrededor del objetivo en círculos en vez de pararte encima a canalizarle."
+      ],
+      "plan": {
+        "early": "Farmeá con Q y ejecutá con E para juntar Stardust sin morir, castigá solo cuando el rival baje a last hit y asumí que tus niveles 1-5 son frágiles ante cualquier engage.",
+        "mid": "Empujá mid con Q más E y roameá con la W hacia las lanes pushadas: una estrella sobre bot paga más que quedarte farmeando; armá Rylai's y Liandry's para que el aliento queme y ralentice.",
+        "late": "Jugá atrás de tu frontline kiteando con la Q y guardá la R transformada para cuando el equipo rival se agrupe: Skies Descend sobre una pelea amontonada la define solo."
+      }
+    },
+    "sources": [
+      "https://www.op.gg/champions/aurelionsol/build/mid",
+      "https://app.mobalytics.gg/lol/champions/aurelionsol/build",
+      "https://wiki.leagueoflegends.com/en-us/Aurelion_Sol"
+    ]
+  }
+}

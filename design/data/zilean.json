@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "zilean",
+    "ddragonId": "Zilean",
+    "name": "Zilean",
+    "titleEs": "el Guardián del Tiempo",
+    "cid": 26,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.58,
+    "pr": 2.57,
+    "br": 1.41,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 5.8,
+      "jungle": 0,
+      "middle": 7.2,
+      "bottom": 0.6,
+      "support": 86.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zilean.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zilean_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 58.91, "games": 679 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 58.41, "games": 226 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 56.97, "games": 330 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.95, "games": 669 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 56.67, "games": 930 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 56.5, "games": 984 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.49, "games": 239 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.98, "games": 518 }
+  ],
+  "weakAgainst": [
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 47.26, "games": 383 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 47.89, "games": 641 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 48.78, "games": 1187 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 48.86, "games": 1099 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 49.2, "games": 1126 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 49.25, "games": 1405 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 49.64, "games": 2953 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 50.15, "games": 676 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La doble bomba (Q + W + Q) detona al instante y stunea en área: si te agarra con un aliado cerca, te come el trade entero sin dejarte reaccionar.",
+      "Chronoshift es el mejor botón defensivo del juego: mientras la tenga, matar a su carry no cuenta como kill y el segundo intento suele salir carísimo.",
+      "La E mueve 40-99% de velocidad a un aliado o se lo saca a un enemigo: puede volver a su ADC inalcanzable o dejarte clavado en el lugar justo cuando entrás.",
+      "La pasiva regala niveles a un aliado cada dos minutos: su equipo llega medio nivel arriba a cada pelea sin haber ganado nada en la cancha."
+    ],
+    "weaknesses": [
+      "Pre-6 y sin E está desnudo: 574 de vida base y cero dash; si le pegás con la E en cooldown, se muere sin poder hacer nada.",
+      "La Q es lenta y telegrafiada: el punto de caída se ve, así que cualquier dash o blink la esquiva y lo deja sin stun y sin daño.",
+      "Sin R es un mago de poke y nada más: forzá la pelea justo después de que la gaste, sobre todo en mid game.",
+      "La R la tiene que poner ANTES del daño letal: si lo stuneás o lo silenciás primero, no puede salvarse a sí mismo ni salvar a nadie.",
+      "La W no funciona sola: necesita Q o E en cooldown para castearse, así que si le negás el primer hechizo no hay segunda bomba ni stun."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con Q + W: ya tiene doble bomba con stun y presión de kill real, así que no lo dejes farmear tranquilo.",
+      "Nivel 6: aparece Chronoshift y su supervivencia cambia por completo; no gastes el all-in sin contar con la resurrección.",
+      "Primer item de AP resuelto: una sola Q a un squishy le saca media vida y el poke del carril deja de ser molesto para volverse letal.",
+      "Niveles 11 y 16 con puntos en la R: el cooldown cae a 90 y 60 segundos y con CDR la tiene casi en cada pelea; asumí resurrección disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz y Zoe te pegan desde fuera del alcance de tu Q y no podés contestar: farmeá atrás y pedí gank en vez de tradear.",
+        "Zoe es el counter de libro: su burbuja te obliga a gastar la E en esquivar y, sin E, la doble bomba no llega nunca.",
+        "Contra poke largo esperá a que gaste el hechizo grande y avanzá ahí: sin esa habilidad no puede zonear tu wave."
+      ],
+      "tanks": [
+        "Maokai, Nautilus y Leona te enganchan una sola vez y no llegás a castear la R sobre vos: quedate tan atrás que su engage solo alcance a tu carry.",
+        "La resurrección no te salva de un stun: se activa al morir, pero si te agarran encadenado te matan dos veces.",
+        "Comprá Resistencia Mágica y botas temprano: tu daño no escala contra tanques, así que el carril se gana con paciencia y visión."
+      ],
+      "assassins": [
+        "Zed, Talon y Kha'Zix: guardá la E para el momento en que entran, no para escapar después; el slow de 99% les corta el burst en seco.",
+        "Casteá la R sobre vos apenas veas el dash inicial: si esperás a estar en 1 de vida, el silencio o el stun te la cancelan.",
+        "Tirá la Q en el suelo donde va a aterrizar su dash: el punto de caída es fijo y los asesinos caminan derecho hacia él."
+      ],
+      "crowdControl": [
+        "Contra Leona, Nautilus o Morgana no hay resurrección que valga si te encadenan: la R se castea antes del engage, no durante.",
+        "Un silence de Soraka o Malzahar te deja sin Q y sin R: si te silencian con la R lista, es como si no la tuvieras.",
+        "Con mucho CC enfrente, tirá la doble bomba defensiva sobre el que engage y guardá la E para el carry, no para vos."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 57,
+        "name": "Maokai",
+        "tips": [
+          "Pokealo con Q desde fuera del alcance de su W: su engage es de rango corto y si no te toca, no hay trade.",
+          "Cuando camine hacia tu carry, tirale la E: el 99% de slow le corta el engage antes de que llegue a la raíz.",
+          "Su pasiva le devuelve vida con cada básico, así que el poke solo no alcanza: buscá la doble bomba con stun sobre el ADC enemigo, que no tiene sustain."
+        ]
+      },
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Es de las más lentas del juego y no tiene escapes: casteale la doble bomba cada vez que se acerque a tirar Q y el carril se le vuelve insoportable.",
+          "No gastes la E en el ADC: usala para frenarla a ella cuando avanza, porque si la dejás llegar, su Q con power chord te saca del carril.",
+          "Su R es el engage del equipo: no te pares alineado con tu carry y guardá la tuya para cuando entre con Flash."
+        ]
+      },
+      {
+        "cid": 350,
+        "name": "Yuumi",
+        "tips": [
+          "No la podés bombear mientras está adherida: tirale la doble bomba al ADC, que es el que recibe el daño y no puede esquivar por ella.",
+          "Cuando se baja para tirar el misil o pegar un básico, ahí sí es targeteable: tené la Q lista para ese instante.",
+          "Su sustain depende del carry: si el ADC enemigo no puede last hitear por tu poke, Yuumi se queda sin nada que curar."
+        ]
+      },
+      {
+        "cid": 16,
+        "name": "Soraka",
+        "tips": [
+          "Su sustain gana cualquier guerra de poke: en vez de tradear, armá la doble bomba con stun sobre ella, que no tiene dash ni escape.",
+          "Su silence te corta la R y la segunda bomba: casteá la resurrección antes de entrar en su zona silenciada.",
+          "Forzá el all-in con tu carry antes de que tenga R: sin el heal global, el carril se vuelve una pelea pareja."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Doble bomba estándar: Q → W → Q (la segunda detona la primera al instante y stunea en área; sin W no hay stun)",
+        "Trade con básicos: AA → Q → AA → W → Q → AA (el patrón de daño más eficiente en carril, y la Q tapa el retroceso del ataque)",
+        "Pick con haste: E sobre vos → Q → W → Q → R si el objetivo entra en kill range (la E te lleva al rango de la Q sin gastar Flash)",
+        "Entrega con Flash: Q sobre vos → W → Q sobre el enemigo → Flash (la bomba viaja con vos y explota al llegar)",
+        "Salvataje en teamfight: R sobre el carry antes del engage → E sobre él para que se reubique → Q + W + Q sobre el que lo persigue"
+      ],
+      "tips": [
+        "Nunca tires la segunda Q sin la primera ya pegada: dos bombas en el mismo objetivo detonan al instante y eso es el stun; una sola es solo un poke caro.",
+        "La W es la que habilita todo: usala inmediatamente después de la Q y no la gastes en la E si no te queda Q en cooldown.",
+        "La E es tu única salida: no la tires para acelerar al ADC si vos estás adelantado, porque sin slow ni haste te matan en dos segundos.",
+        "Casteá la R antes de que el carry reciba el burst, no cuando ya está muriendo: la runa dura cinco segundos y tiene que estar puesta antes del daño letal.",
+        "Usá la pasiva ni bien tengas el nivel cargado: regalarle niveles a tu ADC o al top es un power spike gratis que no cuesta maná ni cooldown."
+      ],
+      "plan": {
+        "early": "Buscá nivel 2 rápido (primera wave + tres melee) para tener Q + W, pokeá con Q desde el borde de tu rango y castigá al ADC enemigo con doble bomba cada vez que se acerque a last hitear.",
+        "mid": "Roteá con E sobre vos para llegar antes a las peleas, mantené visión en los objetivos y guardá la R para el carry; con dos items una sola Q ya saca media vida.",
+        "late": "Quedate atrás de tu carry, tirá la R en cuanto el equipo enemigo entre y buscá la doble bomba sobre el grupo agrupado; con CDR tenés resurrección casi en cada pelea."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zilean/guide",
+      "https://mobalytics.gg/lol/champions/zilean/combos",
+      "https://mobalytics.gg/lol/champions/zilean/counters",
+      "https://wiki.leagueoflegends.com/en-us/Zilean/LoL"
+    ]
+  }
+}

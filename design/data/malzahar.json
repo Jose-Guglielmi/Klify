@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "malzahar",
+    "ddragonId": "Malzahar",
+    "name": "Malzahar",
+    "titleEs": "el Profeta del Vacío",
+    "cid": 90,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.59,
+    "pr": 5.91,
+    "br": 12.19,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 9,
+      "jungle": 0.3,
+      "middle": 85.7,
+      "bottom": 3.4,
+      "support": 1.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Malzahar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Malzahar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 61.83, "games": 689 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.56, "games": 205 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 56.63, "games": 1328 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 56.39, "games": 266 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 56.36, "games": 3201 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 56.04, "games": 1663 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 55.93, "games": 683 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.74, "games": 592 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 41.94, "games": 391 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 46.6, "games": 1307 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 46.89, "games": 1719 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 46.9, "games": 226 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 47.73, "games": 750 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 47.76, "games": 335 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.8, "games": 295 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 48.05, "games": 462 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R es supresión point-and-click: un carry adelantado se convierte en pick gratuito y con ese hombre extra definís Barón o torre.",
+      "El escudo pasivo bloquea daño y CC sin que hagas nada: contra engage rival o poke constante tenés una vida extra que no depende de tu puntería.",
+      "Wave clear de élite con E + W + Q: con un item en la bolsa empujás cada wave a torre y controlás el mapa sin exponerte a nada.",
+      "Escalado con DoT: Liandry + Rylai sobre la E contagiosa derrite tanques por % de vida y persigue a cualquiera en peleas largas."
+    ],
+    "weaknesses": [
+      "Mientras canalizás R quedás parado y a la vista: cualquier CC libre corta la supresión a la mitad y después te mata a vos.",
+      "Sin R en mano no tenés kill threat ni escape: durante todo su cooldown sos el blanco ideal para un dive o un all-in.",
+      "Tu 1v1 es de los peores del juego: no podés seguir roams, no ganás sidelane y dependés del team para convertir la supresión en kill.",
+      "Early frágil y telegrafiado: hasta nivel 6 tus hechizos son lentos y predecibles, y cualquier mago agresivo te castiga cada wave."
+    ],
+    "powerSpikes": [
+      "Level 6: la R te da tu primer kill threat real; con el jungla cerca, cada supresión acertada es kill casi garantizada.",
+      "Primer item (Blackfire Torch): el maná y el ability haste te dejan spamear Q + E para empujar y castigar sin volver a base.",
+      "Dos items (Liandry + Rylai): el DoT contagioso con % de vida y el slow convierten cada E en una zona de la que no se sale caminando.",
+      "Nivel 11-16 con la R subida: la supresión pega fuerte y el cooldown baja tanto que casi siempre la tenés para el próximo pick; revisá el inventario rival por QSS antes de allinear."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath y compañía te superan en rango en cada trade: no intentes ganar el poke, empujá la wave con E + W y cambiá presión de mapa por daño recibido.",
+        "El escudo pasivo bloquea un hechizo completo de poke: contá cuándo está por recargarse y recibí la Q rival gratis en lugar de esquivarla con susto.",
+        "Si el mago de rango juega pegado a su torre, tu win condition es la wave y no el trade: negale el roam y escalá a dos items antes de pelear."
+      ],
+      "tanks": [
+        "Sion y Nasus absorben tu burst pero no tu DoT: Liandry temprano hace que cada tick de la E les coma % de vida.",
+        "La R los mantiene quietos pero no los mata sola: usá la supresión como setup para tu equipo, no como ejecución.",
+        "No gastes la R en el tanque si su carry está parado detrás: la supresión vale oro sobre el que hace daño, el tanque se derrite con la E solamente."
+      ],
+      "assassins": [
+        "Fizz, Naafiri y Talon saltan apenas ven tu R gastada: allineá solo con supresión en mano o quedás desarmado en tu propia lane.",
+        "El escudo pasivo anula el arranque de su combo: dejá que gasten el gap closer contra el escudo y respondé recién ahí con Q + W.",
+        "Tu 1v1 contra ellos es perdedor por diseño: jugá pegado a torre, usá el wave clear para negarles el roam y ganá la partida en teamfight."
+      ],
+      "crowdControl": [
+        "Un solo stun corta tu R a media canal: entrá a pelear después del CC principal rival o asumí que la supresión puede quedar en nada.",
+        "Zhonya es tu respuesta al counter-play: canalizá R y si te vienen encima, hora dorada mientras el DoT y los voidlings siguen tickueando.",
+        "Tu R es supresión, no inmunidad: revisá quién queda libre antes de agarrar, porque mientras canalizás sos vos el que está quieto y a la vista."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Su Q cargada te agarra si te quedás en línea recta: caminalo en diagonal y guardá la pasiva para bloquear el knock-up si ya se te escapó.",
+          "Tu DoT con Liandry le come % de vida, pero no lo ejecutás solo: all-in con R recién cuando su E lo comprometa hacia vos o tenga el escudo en cooldown.",
+          "No le gastes la supresión durante su pasiva de muerte: dejá que tu team resuelva el cadáver y guardá la R para el resto de su team."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Te castiga desde fuera de tu rango en cada last hit: no aceptes ese trade, empujá la wave con E + W y hacé que defienda torre mientras vos presionás el mapa.",
+          "Su stun es un skillshot lento y visible: guardá la pasiva para bloquear el primer intento y caminalo lateral para el segundo.",
+          "No allinees con R sin jungla cerca: entre su stun y su burst te mata antes de completar la canalización; esperá un dive de dos."
+        ]
+      },
+      {
+        "cid": 105,
+        "name": "Fizz",
+        "tips": [
+          "Su E (Travesura) esquiva tu Q y tu R: tirá E + W primero y esperá que la gaste antes de agarrarlo con la supresión.",
+          "Con la pasiva lista, su combo de arranque se rompe en tu escudo: si salta encima tuyo con el bloqueo activo, él queda sin escape y vos con combo completa.",
+          "Su trade corto te gana el lane: dale la wave si hace falta, escalá a Liandry y ganá el juego agrupado, no en 1v1 contra él."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Sus sabuesos saltan a vos en cada golpe cercano: farmeá con la E desde lejos y no le regales trades cuerpo a cuerpo.",
+          "Su R le da velocidad y un segundo cuerpo para allinearte: guardá el escudo pasivo para bloquear el arranque y respondé con tu supresión recién cuando gaste el dash.",
+          "Rochea más rápido que vos: empujá la wave y pineá el mapa en vez de seguirla, tu 1v1 contra ella es el peor escenario posible."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Push de wave: E sobre un minion melee → W encima de la wave → Q en cruz cuando se juntan: la visión maléfica se contagia a los que mueren infectados y los voidlings terminan el trabajo",
+        "Trade de lane: E al campeón → Q acertando la cruz (silencio) → W al lado para que los voidlings pegan mientras el DoT sigue tickueando",
+        "All-in nivel 6: E → Q → W y R encima cuando está a media vida: la supresión lo mantiene quieto mientras el DoT y los voidlings lo mastican",
+        "Pick de teamfight: Flash + R sobre el carry aislado que se adelantó → Q para silenciar a quien quiera responder → Zhonya si el resto te viene encima",
+        "Anti-gank: dejá que el primer daño rompa la pasiva no, esperalo con el escudo activo (bloquea CC) → Q para silenciar al jungla → W y caminá hacia torre"
+      ],
+      "tips": [
+        "La pasiva es tu segunda vida: cuando se rompe, jugá un paso atrás hasta que vuelva; su cooldown early es larguísimo y sin escudo sos papel.",
+        "No gastes la R en el tanque de adelante: la supresión es tu único kill threat, guardala para el carry aislado o para responder un dive.",
+        "Mientras canalizás R quedás quieto y a la vista: contá quién queda libre antes de agarrar, porque un stun te corta todo y después te toca a vos.",
+        "Mirá el inventario rival antes de allinear: si el objetivo compró QSS o Mercury's, cambiá de blanco porque tu combo queda sin final.",
+        "Maxeá E primero y farmeá con ella desde lejos: al morir el minion infectado la visión se contagia y empujás la wave sin acercarte a la zona de gank."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta 6 usando la pasiva como colchón y farmeá con la E; al desbloquear la R llamá al jungla, porque cada supresión con compañía es kill casi garantizada.",
+        "mid": "Con Blackfire y Liandry empujá cada wave y buscá picks con la R en mano: con un hombre de ventaja llamá Barón o tirá torre antes de que vuelvan.",
+        "late": "No peles sin R disponible y esperá al rival agrupado o al carry adelantado para Flash + R; si su carry compró QSS, redirigí la supresión a otro blanco antes de tirar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/malzahar/build",
+      "https://mobalytics.gg/lol/champions/malzahar/guide"
+    ]
+  }
+}

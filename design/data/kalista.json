@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "kalista",
+    "ddragonId": "Kalista",
+    "name": "Kalista",
+    "titleEs": "el Espíritu de la Venganza",
+    "cid": 429,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.27,
+    "pr": 3.35,
+    "br": 1.24,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 9.1,
+      "jungle": 0.1,
+      "middle": 2.2,
+      "bottom": 88.3,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kalista.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kalista_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.86, "games": 367 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.75, "games": 1914 },
+    { "cid": 202, "slug": "Jhin", "name": "Jhin", "vsWr": 52.0, "games": 2725 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 51.69, "games": 741 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 51.68, "games": 625 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 51.17, "games": 2054 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 51.04, "games": 868 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 50.78, "games": 1223 }
+  ],
+  "weakAgainst": [
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 40.43, "games": 376 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 46.49, "games": 271 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 47.45, "games": 1296 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 48.21, "games": 1176 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 48.24, "games": 794 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 48.34, "games": 2228 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 48.96, "games": 1007 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 49.14, "games": 1451 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva de saltos con cada AA la hace la mejor kitera del juego: pega, reposiciona y esquiva skillshots al mismo tiempo.",
+      "Con la E (Rend) stackeada es la mejor ADC para asegurar objetivos: combinada con el Smite del jungla, dragón y barón casi nunca se pierden con ella en la cancha.",
+      "La R (Fate's Call) rescata al soporte que se pasó de la raya y a la vez es uno de los mejores engages del juego: arranca peleas desde afuera de la visión del rival.",
+      "Skirmisher pura: en peleas cortas de dos contra dos con soporte de engage, domina el lane desde el nivel 1."
+    ],
+    "weaknesses": [
+      "Si el rival entra a un brush o pierde línea de visión, sus AA no salen: queda parada en plena pelea, y eso en late es muerte segura.",
+      "Un solo CC encadenado la borra: toda su fuerza depende de moverse; enjaulada o ralentizada es un target estático y frágil.",
+      "La E mal usada regala peleas: si ejecuta antes de tiempo o se queda sin lanzas, pierde su daño y le abren la ventana del all-in.",
+      "Necesita attack speed para escalar: hasta las Berserker's y Runaan's su daño es justo y depende del soporte para comerciar.",
+      "Dependencia total del oathsworn: lejos de su soporte no tiene R, no tiene daño de W y no tiene escape."
+    ],
+    "powerSpikes": [
+      "Berserker's Greaves terminadas: primer pico real; con velocidad de ataque empieza a acumular lanzas y a saltar sin parar.",
+      "Nivel 6: la R habilita engages imposibles de leer y rescates del soporte; no targetees al soporte en un trade sin ver la R disponible.",
+      "Runaan's Hurricane completado: aplica lanzas a varios objetivos por pelea y su daño de teamfight agrupada se dispara.",
+      "Objetivo neutral en pantalla: con la E cargada pregunta dragones y barones; nunca discutas un objetivo contra una Kalista con lanzas listas."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kog'Maw, Caitlyn, Zeri: te ganan por rango y a distancia; aceptá el trade extendido solo con lanzas ya acumuladas, sino farmeá atrás.",
+        "Los ADCs que escalan mejor que vos (Jinx, Aphelios, Kog'Maw) definen el late: buscá el snowball temprano y cerrá antes del minuto 30.",
+        "Pegales entre auto y auto con la Q para sumar lanzas sin entrar en su rango de respuesta."
+      ],
+      "tanks": [
+        "Malphite y compañía esperan tu entrada para tirar la R: quedate detrás del frontline y entrá solo cuando el CC grande esté gastado.",
+        "Acumulá lanzas en el tanque de entrada y ejecutá con E a 5+ lanzas: Rend escala con stacks, no hace falta siempre targetear al carry siempre.",
+        "En peleas largas contra tanques, coordiná con tu soporte el objetivo de la pasiva de la W: el daño de % de vida ayuda a desgastarlos."
+      ],
+      "assassins": [
+        "Zed, Talon, Pyke: un root tuyo... un root suyo y morís; comprá QSS temprano y jugá pegada a tu equipo, nunca sola en side sin visión.",
+        "Kiteá en diagonal o lateral, nunca en línea recta hacia atrás: saltar en línea recta te entrega al perseguidor.",
+        "Quedate siempre en rango de R de tu oathsworn: es tu único botón de escape si un asesino te flanquea."
+      ],
+      "crowdControl": [
+        "Contra comps de CC (Malzahar, Lissandra, Amumu) la Quicksilver es item de defensa obligado: una Kalista con QSS activa es casi intocable.",
+        "Los slows matan tu kite: si el equipo enemigo tiene tres slows, delegá la entrada y peleá recién después de que los gasten en tu frontline.",
+        "Si te enganchan al arranque de la teamfight, no hay segunda vida: dejá que tu frontline absorba el engage y recién ahí empezá a saltar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Comerciá con la W activa desde tu rango extra y cortá cada trade en corto: las peleas largas le dan lanzas de Rend gratis.",
+          "Pisé brush para comerciar: si Kalista pierde tu visión, sus autos no salen y queda parada sin kiteo en medio del trade.",
+          "Escalás mejor que ella: tolerá el early jugando atrás y con dos items tu DPS la pasa por arriba en cada teamfight."
+        ]
+      },
+      {
+        "cid": 112,
+        "name": "Viktor",
+        "tips": [
+          "El campo de gravedad (W) la saca del juego: una Kalista dentro de tu W no puede saltar y es un kill asegurado para tu equipo.",
+          "Pokeala con Q + AA en cada intento de last hit: su early es fuerte, pero sin vida no se anima a jugar agresiva.",
+          "Guardá la W para cuando quiera kitear en la teamfight: slow más stun anulan toda su movilidad y deja de existir."
+        ]
+      },
+      {
+        "cid": 804,
+        "name": "Yunara",
+        "tips": [
+          "Comerciá corto y cerca de tu torre: sus trades extendidos son su especialidad, no le des pelea larga en early.",
+          "Tu escalado te gana el late: si sobrevivís los primeros 15 minutos, cada teamfight posterior es tuya por rango y DPS.",
+          "Avisá con pings cuando la R de Kalista esté disponible: el all-in nivel 6 con soporte de engage es su jugada más peligrosa."
+        ]
+      },
+      {
+        "cid": 523,
+        "name": "Aphelios",
+        "tips": [
+          "Elegí el arma para el trade: poke corto con Calibrum o Severum y no aceptes peleas largas donde su Rend escala más que vos.",
+          "Forzá teamfights agrupados con tu frontline: los saltos laterales no le sirven si el daño llega desde tres frentes a la vez.",
+          "Coordiná el all-in con tu soporte después del 6: su R de rescate tiene cooldown largo y si no está, su soporte muere primero."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: AA → Q → AA → E (dos lanzas y burst inmediato; salí del trade con el salto del último auto)",
+        "Acercamiento con saltos: usá AAs a minions u objetivos para saltar hacia tu rival (o cruzar paredes) → Q → AA → E para ejecutar",
+        "Burst completo: 4+ AAs acumulando lanzas → Q (suma una lanza más) → E cuando el daño de ejecución sea letal",
+        "Engage de teamfight: R a tu oathsworn → sale volando con knock-up al aterrizar sobre el equipo agrupado → AAs a todos y E para ejecutar",
+        "Robo de objetivo: metele 4-5 lanzas al dragón/barón, dejá la E lista y coordiná con el Smite del jungla para asegurar el neutral"
+      ],
+      "tips": [
+        "Saltá lateral o en diagonal al kitear, nunca en línea recta hacia atrás: saltar en línea recta te acerca al que te persigue.",
+        "No aprietes E a media vida del rival: si no ejecuta, perdiste el daño, el reset y la pelea; contá lanzas y esperá el número seguro.",
+        "La Q aplica una lanza al primer objetivo que atraviesa: usala para sumar stacks desde fuera del rango de respuesta.",
+        "Mandá centinelas de la W a las zonas oscuras del mapa: visión gratis contra flancos, que es cómo morís casi siempre.",
+        "Pegá al mismo objetivo que tu soporte para activar la pasiva de la W (daño de % de vida): coordinen target en cada trade."
+      ],
+      "plan": {
+        "early": "Jugá agresiva con soporte de engage desde el nivel 2, buscá trades extendidos con lanzas acumuladas y al 6 forzá el all-in con la R o salvá a tu soporte si lo enganchan.",
+        "mid": "Caída la torre de bot, rotá con tu soporte a abrir mapa, buscá picks y asegurate dragón/barón con Rend + Smite sin separarte nunca del equipo.",
+        "late": "Quedate detrás del frontline y cerca de tu oathsworn, kiteá al objetivo más cercano con QSS listo para el CC y mantené lanzas acumuladas para cada pelea de objetivo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/kalista/guide",
+      "https://app.mobalytics.gg/lol/champions/kalista/counters",
+      "https://mobalytics.gg/lol/champions/kalista/combos"
+    ]
+  }
+}

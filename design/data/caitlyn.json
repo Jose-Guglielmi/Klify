@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "caitlyn",
+    "ddragonId": "Caitlyn",
+    "name": "Caitlyn",
+    "titleEs": "la Sheriff de Piltóver",
+    "cid": 51,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.91,
+    "pr": 14.94,
+    "br": 23.3,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 0.8,
+      "jungle": 0,
+      "middle": 0.9,
+      "bottom": 98.1,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Caitlyn.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Caitlyn_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 52.21, "games": 904 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 51.89, "games": 582 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 51.86, "games": 4979 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 51.86, "games": 5935 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 51.73, "games": 2604 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 51.69, "games": 2304 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 51.54, "games": 10566 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 51.43, "games": 3109 }
+  ],
+  "weakAgainst": [
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 42.17, "games": 562 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 42.32, "games": 397 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 42.35, "games": 503 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 43.72, "games": 661 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 44.94, "games": 316 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 45.74, "games": 516 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 46.51, "games": 602 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 47.36, "games": 492 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Tiene el auto ataque con más rango del juego a nivel 1: castigás cada last hit del rival desde donde casi ningún ADC puede responder.",
+      "La presión de lane temprana es brutal: empujás la wave con Q, cobrás placas de torre y generás ventaja de oro antes de que el rival llegue a escalar.",
+      "El headshot pasaivo sale en cada trade útil: desde el pasto, tras trampa o tras la red, cada auto potenciado gana intercambios que otros ADC pierden.",
+      "La R ejecuta objetivos bajos y aislados desde fuera de la pelea: cerrás kills sin ponerte en riesgo cuerpo a cuerpo."
+    ],
+    "weaknesses": [
+      "Sin la E en mano sos un blanco caminando: es tu única movilidad y si la gastás ofensiva, cualquier jungla cobra el all-in completo.",
+      "Se cae fuerte en el mid game: dependés del crítico para escalar mientras otros ADC ya pelean con el kit completo.",
+      "Las trampas (W) piden anticipación: tiradas a lo loco no controlan nada y el lane pierde toda su estructura de zona.",
+      "La R no es un ultimate de pelea: te para en el lugar y es inutilizable en medio de una teamfight como sí lo hacen otros tiradores.",
+      "Poca supervivencia sin flash: un enganche o un CC de agarre te mata antes de que la red te salve si ya la usaste."
+    ],
+    "powerSpikes": [
+      "Level 2-3 con puntos en Q: el empuje de wave + poke te deja al rival farmeando bajo torre y vos cobrando placas libres.",
+      "Primer back con componente de Dañino: el poke sube un escalón y cada trade pasa a ser amenaza de kill real.",
+      "Nivel 9 con Q al máximo: limpiás waves rapidísimo y derribás torres con la presión que genera tu velocidad de juego.",
+      "100% de crítico (3 items): tu daño de late llega a tope y ganás teamfights kiting desde tu rango mientras la frontline se desespera."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lux, Xerath, Vel'Koz: cuando el poke rival supera tu rango, esperá que gaste el hechizo principal para pisar adelante y comerciar con autos + headshot.",
+        "Poné trampas detrás de tu wave, no delante: los magos castigan cada paso adelante y la trampa en tu retroceso es el seguro cuando te enganchan.",
+        "Aprovechá la ventana de cooldown: entre cada Q/E del rival tenés varios segundos de calle libre; entrá, comercia y salí sin castigo."
+      ],
+      "tanks": [
+        "Comprá penetración (Dominik/LDR) apenas haya dos tanques: tu daño de autos escala mejor con armadura perforada que con AD puro.",
+        "Usá el headshot para castigar al tanque que se acerca a farmear: el proc pega igual de duro en un Malphite que en un carry.",
+        "En teamfight no te casés con el tanque: tu rango te alcanza para darle a su backline; picale al tanque solo si no hay nadie más en rango."
+      ],
+      "assassins": [
+        "Guardá la E para cuando te salten: gastar la red ofensiva contra un Zed o un Talon es firmar tu propia sentencia.",
+        "Tirá trampas a tus espaldas cuando jugás adelantada: frenar el engage te regala un headshot y el escape de yapa.",
+        "Si el asesino gastó el dash y no te mató, ese es tu all-in: autos + Q + R desde tu rango mientras él camina de vuelta hacia vos."
+      ],
+      "crowdControl": [
+        "Contra ganchos (Blitz, Thresh), poné trampas en el carril por donde te van a buscar y nunca te pares detrás de un minion a punto de morir.",
+        "Jugá al rango máximo de tus autos contra equipos de engage: cada paso adelante es una invitación a que te conecten el CC entero.",
+        "Si el control del rival es el núcleo del team, un QSS temprano te evita el error más caro: morir con la E sin usar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Su E hace zoníng: pisá la zona recién cuando la slow desapareció y mientras tanto farmeá con Q si hace falta.",
+          "La Q es skilleable y en línea: mantené minions entre vos y ella, y poné trampas en el carril central para frenar el avance cuando busca el bind.",
+          "Después de Q + E gastados tiene varios segundos sin amenaza: esa es tu ventana exacta para comerciar con autos + headshot.",
+          "Tu rango de auto (650) supera al suyo: cada auto que le pegás desde el límite es daño gratis si no entrás al rango de su Q."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Su Q atraviesa y se divide: no te pares en línea recta con tu soporte; la geometría del lane decide ese matchup.",
+          "Castigalo cada vez que camina adelante: su rango de auto es de mago, así que cualquier trade cuerpo a cuerpo lo perdió antes de empezarlo.",
+          "La E lo deja expuesto si falla: cuando se la gaste y no te agarre, cargale con autos + Q y cobrá el headshot de la red.",
+          "Jugale el maná: spamea poke a cada rato, así que comprá sustain temprano y esperá el vacío; sin maná es un cannon minion con anteojos."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Su Q cargado es telegrafiado: cuando lo veas canalizar, movete lateral o escondete detrás de minions y el disparo se vuelve maná tirado.",
+          "La E (stun skilleable) es tu señal de arranque: si la falla, todo su kit queda en cooldown y podés comerciar de frente sin castigo.",
+          "Tirá trampas en los bushes y en tu línea de retroceso: su Costumbre de pararse quieto para cargar lo convierte en presa de headshots gratis.",
+          "Su rango te supera pero su movilidad es cero: ping y jugá con tu jungla; un gank detrás de un Xerath adelantado es kill asegurada."
+        ]
+      },
+      {
+        "cid": 895,
+        "name": "Nilah",
+        "tips": [
+          "No le regales el cuerpo a cuerpo: su kit escala con pelear pegada; mantené la distancia de tus autos y retrocedé apenas pise adelante.",
+          "Su W esquiva tus autos: guardá Q y headshot de trampa para cuando termina la niebla; ahí no tiene nada para esquivar.",
+          "Esperá que gaste la E para saltarte: si la viste usarla ofensiva y falló, ese es tu all-in con autos + Q + R.",
+          "En teamfight no le pegues a ella primero: picá a sus compañeros y dejá que el poke la haga entrar tarde a la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: E al objetivo → Q apenas sale la red → un auto; la E garantiza el headshot y la Q de cerca es casi imposible de esquivar.",
+        "All-in nivel 6: W debajo del objetivo → auto apenas pise la trampa → E → Q encadenados → dos autos → R para ejecutar si escapa.",
+        "Triple headshot: W → Q instantáneos → E tirando la W en pleno aire → tres autos (uno por cada headshot) → R → auto final.",
+        "E-Flash: E al rival y Flash apenas sale la red para pegarte arriba del headshot; gana 1v1 que nadie ve venir.",
+        "Bait de R: R al objetivo y cancelá la animación con Flash hacia él → E + Q + autos; lo trae hacia vos creyendo que escapó."
+      ],
+      "tips": [
+        "Poné trampas donde el rival va a caminar (bushes, tu retroceso, entradas de jungla), nunca en medio de la wave: la W es control de zona, no hechizo de daño.",
+        "Guardá la E para defender: castigá con Q y autos; si la usás ofensiva quedás sin escape y cualquier jungla rival lo sabe mejor que vos.",
+        "Consumí el headshot en el campeón siempre que pueda: desde el pasto, tras trampa o tras red, cada proc es un trade ganado sin costo.",
+        "Empujá la wave con Q desde el minuto 1: tu presión temprana se convierte en placas de torre y en libertad de roamear primero.",
+        "En teamfight kité hacia atrás y disparale al más cercano en rango: tu trabajo es no dejar de tirar, no tirarte al backline con la E."
+      ],
+      "plan": {
+        "early": "Empujá con Q y castigá cada last hit rival con autos + headshot: cobrá placas, ganá el oro temprano y al 6 buscá el all-in de trampa con tu soporte.",
+        "mid": "Cerrada la primera torre, rotá a mid por más placas y usá la R para ejecutar objetivos aislados; jugá pegada a tu equipo y reservá la E solo para escapar.",
+        "late": "Con 100% de crítico sos una torreta: kité hacia atrás, disparale al más cercano y no camines nunca sola por jungla sin visión."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/caitlyn/guide",
+      "https://mobalytics.gg/lol/champions/caitlyn/combos"
+    ]
+  }
+}

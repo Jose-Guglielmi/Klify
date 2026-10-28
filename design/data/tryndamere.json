@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "tryndamere",
+    "ddragonId": "Tryndamere",
+    "name": "Tryndamere",
+    "titleEs": "el Rey Bárbaro",
+    "cid": 23,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.03,
+    "pr": 3.27,
+    "br": 3.17,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 81.2,
+      "jungle": 8.8,
+      "middle": 9.4,
+      "bottom": 0.3,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Tryndamere.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tryndamere_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 65.58, "games": 215 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 56.74, "games": 1165 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 56.15, "games": 504 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 56.1, "games": 836 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 55.82, "games": 661 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 55.79, "games": 337 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 55.75, "games": 1575 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 55.48, "games": 2554 }
+  ],
+  "weakAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 45.83, "games": 2529 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 46.28, "games": 752 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 46.79, "games": 436 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.38, "games": 1220 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 47.63, "games": 1392 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 48.09, "games": 888 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 48.18, "games": 633 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 48.68, "games": 1140 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R (Undying Rage) lo vuelve inmortal unos segundos: puede perder la pelea entera, quedar con un hilo de vida y salir caminando con el kill hecho.",
+      "Es el mejor splitpusher del juego: con la wave a favor tira torres a una velocidad que nadie iguala en la side lane, y obliga a mover gente del objetivo.",
+      "La Q cura con furia cargada: en trades largos recupera más de lo que recibe y, con la barra llena, pega como un campeón de dos items.",
+      "La E es un dash con crítico que le baja el cooldown: entra, pega y sale sin comprometer nada, algo que casi ningún luchador puede hacer.",
+      "En 1v1 de mid game le gana a casi todo el roster: eso le da control del side lane y libera objetivos para su equipo sin pelear 5v5."
+    ],
+    "weaknesses": [
+      "Si va atrás en oro no existe: su daño depende de items de crítico y sin ellos es un melee lento que muere antes de llegar a pegar.",
+      "Sin R es el campeón más frágil del juego: castigá el cooldown de la ulti y su amenaza baja a cero por varios segundos.",
+      "Lo kitean con nada: un slow o un poco de rango lo dejan caminando sin tocar a nadie, y ni la E ni la W alcanzan contra un equipo que se abre.",
+      "La W solo aplica el slow si el rival está de espaldas: un rival que camina hacia él no la recibe, así que su único control es situacional.",
+      "Cero daño a distancia y ningún CC duro: en teamfights agrupadas es un cuerpo corriendo hacia la backline que muchas veces no llega."
+    ],
+    "powerSpikes": [
+      "Niveles 1-2 con furia llena: el primer trade es real, la Q cura y pega fuerte; entrá con la barra cargada o no entres.",
+      "Primer item de crítico resuelto: recién ahí empieza a matar de verdad; antes solo sobrevive y farmea.",
+      "Nivel 6: la R convierte cualquier all-in en una pelea ganable y ya puede torre-divear saliendo con vida.",
+      "Dos items y nivel 11: pico de splitpush, gana el 1v1 contra casi todo y tira torres solo mientras el equipo juega el objetivo.",
+      "Late con Infinity Edge y penetración de armadura: dos críticos y cualquier squishy desaparece; ahí un pick en side vale la partida."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Quinn, Jayce: mantené la wave cerca de tu torre y no regales vida caminando hacia ellos; el rango te gana el trade pero no la wave si la jugás paciencia.",
+        "Cuando el rango empuja, dejalo: farmeá bajo torre con furia cargada y buscá el all-in recién con R y E disponibles.",
+        "Pedí gank al jungla: un campeón de rango sin escape propio muere al primer CC encadenado, y vos hacés el daño."
+      ],
+      "tanks": [
+        "Malphite y Ornn: comprá penetración de armadura antes que daño plano, porque la armadura pasiva les come todo el early.",
+        "No pelees trades largos contra tanques con escudo: pegá, cargá furia y salí con E; su sustain gana todas las peleas de veinte segundos.",
+        "Jugá la wave, no el 1v1: contra tanques el plan es empujar y rotar a otro lado, no quedarse a pelear un duelo que no cierra."
+      ],
+      "assassins": [
+        "Yone, Kled, Camille: guardá la E para esquivar el arranque de su combo, no para iniciar; si la gastás primero, te agarran sin salida.",
+        "Activá la R temprano contra burst: el daño de un asesino entra en dos segundos y si esperás a estar bajo, la ulti llega tarde.",
+        "Si el asesino ya gastó todo y no te mató, ese es tu all-in: queda parado en tu rango sin habilidades y con tu furia llena."
+      ],
+      "crowdControl": [
+        "Cadena de CC sobre tu engage te anula: esperá a que el equipo enemigo gaste el CC en tu frontline antes de entrar.",
+        "Pedí Mercurial o botas de tenacidad cuando el equipo enemigo tiene slows y stuns: el CC es lo único que te saca de la pelea.",
+        "Flanqueá siempre: entrar de frente contra un equipo con CC te deja quieto en el peor lugar, entrando por el lado llegás sin pagar el precio."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Farmea con Q desde el rango y no aceptes trades largos: tu armadura pasiva y el escudo te dejan ganar el desgaste sin pelearle el 1v1.",
+          "Guardá la R para cuando prenda la suya: si lo stuneás durante el Undying Rage, esos segundos de inmortalidad se le van sin pegar nada.",
+          "Empujá y no lo dejes farmear tranquilo: Tryndamere necesita oro para existir, y cada wave que perdés bajo torre lo retrasa dos items."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Tus trades cortos con Brittle y el escudo del W le rompen el patrón de pegar y salir: castigalo cada vez que vuelve a la wave.",
+          "Encadená el CC del E cuando lo veas cargar furia: si no puede pegar minions, no carga la Q y pierde sustain.",
+          "Comprá armadura temprano y jugá la wave con el equipo: en side lane pierde el 1v1 contra vos, pero solo si no le regalás un all-in con R."
+        ]
+      },
+      {
+        "cid": 19,
+        "name": "Warwick",
+        "tips": [
+          "Tu sustain y la supresión de la R cortan su plan: no lo dejes pegar minions gratis, cada trade con Q lo saca de la lane.",
+          "Guardá el miedo de la E para cuando active la R: si lo asustás mientras está inmortal, se queda sin daño y sin escape.",
+          "Jugá trades cortos y usá la Q para curarte: en peleas largas con furia cargada te gana, en intercambios de dos golpes no."
+        ]
+      },
+      {
+        "cid": 75,
+        "name": "Nasus",
+        "tips": [
+          "El W (Wither) es la respuesta exacta: le cortás el ataque y la velocidad justo cuando necesita pegar para bajar el cooldown de la E.",
+          "Farmeá Q con paciencia y no pelees antes de tener stacks: tu escalado le gana el late por lejos y él necesita cerrar la partida temprano.",
+          "Cuando entre con R, kitealo con el slow: sus segundos de inmortalidad se gastan caminando, no pegando."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: AA → E para salir; el crítico baja el cooldown de la E, así que volvés a entrar antes de que el rival pueda responder.",
+        "All-in en melee: AA → W (Mocking Shout) → AA hasta que el rival huya → E para cerrar; la W entra si el rival ya te dio la espalda.",
+        "Engage desde rango: E → AA → W → AA → E otra vez cuando vuelve el cooldown para rematar.",
+        "Ejecución con Flash: E → Flash a mitad de la animación → AA instantáneo para matar al que huye a media vida.",
+        "Torre dive con R: entrá con furia llena, activá la R antes del segundo golpe de torre y salí con E cuando quede un segundo de inmunidad."
+      ],
+      "tips": [
+        "Cargá furia antes de tradear: sin la barra llena la Q cura poco y el daño no alcanza; pegale a minions hasta llenarla.",
+        "No gastes la Q por reflejo: es tu sustain y parte de tu daño, usala cuando el trade ya está ganado o cuando la vida baja de la mitad.",
+        "Activá la R un instante antes de morir, no al empezar la pelea: cada segundo es daño gratis y el cooldown es larguísimo.",
+        "La W solo da el slow si el rival está de espaldas: tirala cuando ya está huyendo, nunca como opener de un engage.",
+        "Si vas atrás, farmeá una side lane lejos del grupo: necesitás oro y XP, no una teamfight 5v5 que no podés ganar."
+      ],
+      "plan": {
+        "early": "Cargá furia con minions, tradeá con AA + Q y salí con E, mantené la wave cerca de tu lado y buscá el all-in recién al 6 con la R en mano.",
+        "mid": "Empujá la side lane lejos del objetivo, ganá el 1v1 contra quien venga a frenarte y forzá rotaciones enemigas; agrupá solo cuando no haya objetivo en el mapa.",
+        "late": "Flanqueá antes de la pelea, entrá por la backline con E, activá la R tarde para estirar la inmunidad y aprovechá la rotación para tirar inhibidor."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/tryndamere/build",
+      "https://mobalytics.gg/lol/champions/tryndamere/guide",
+      "https://mobalytics.gg/lol/champions/tryndamere/combos"
+    ]
+  }
+}

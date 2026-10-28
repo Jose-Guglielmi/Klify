@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "olaf",
+    "ddragonId": "Olaf",
+    "name": "Olaf",
+    "titleEs": "el Berserker",
+    "cid": 2,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.38,
+    "pr": 2.62,
+    "br": 3.15,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 85,
+      "jungle": 11.5,
+      "middle": 1.5,
+      "bottom": 1.6,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Olaf.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Olaf_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 56.88, "games": 443 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 55.6, "games": 1063 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 55.3, "games": 387 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.11, "games": 695 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 54.95, "games": 384 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 53.83, "games": 366 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 53.43, "games": 859 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 53.08, "games": 211 }
+  ],
+  "weakAgainst": [
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 45.85, "games": 229 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 46.24, "games": 439 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 46.37, "games": 593 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 46.69, "games": 786 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 47.34, "games": 376 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 47.63, "games": 380 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 47.66, "games": 235 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 47.93, "games": 217 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R (Ragnarok) lo vuelve inmune al hard-CC: mientras dura, tu stun, tu root y tu supresión no existen; es la certeza de llegar que ningún otro top tiene.",
+      "Es de los mejores duelistas 1v1 del early: la pasiva dispara su velocidad de ataque a poca vida y la W se lo cura, así que el all-in largo casi siempre es suyo.",
+      "La Q frena y al recoger el hacha se resetea el cooldown: si te engancha un axe y no alejás del punto de caída, el chase no termina nunca.",
+      "La E pega daño puro: castiga al que intenta tanquear sus trades, porque la armadura no la reduce ni un punto.",
+      "Snowball real: cada kill temprano se convierte en placas y torre, porque casi nadie le gana la lane de mano a mano antes del minuto 14."
+    ],
+    "weaknesses": [
+      "Sin la R en mano es un campeón a pie: inmóvil, sin escape y más frágil de lo que parece; anotá su cooldown de Ragnarok y castigá esa ventana.",
+      "Depende de acertar la Q: si el hacha no te encuentra, no tiene chase ni forma de extender el trade; esquivarla le niega el lane entero.",
+      "El kiteo lo mata: rango con dashes y slows se pasea alrededor suyo mientras él corre detrás sin llegar.",
+      "La E se paga con su propia vida: si lo obligás a gastarla temprano, llega al all-in más bajo y más cerca del rango de ejecución tuyo.",
+      "Se apaga en el late: contra items defensivos y burst agrupado, su ventana de matar se cierra y queda siendo un stat-check sin escalado."
+    ],
+    "powerSpikes": [
+      "Nivel 1-3: el bully del lane; con Q + E en mano no aceptes trades extendidos ni te pares a farmear en su cara.",
+      "Nivel 6: la R le permite ignorar tu CC para llegar; si lo ves abrir con Ragnarok, no quieras pelear, ganá metros.",
+      "Primer item resuelto: su daño sube de golpe y cualquier trade que antes era parejo pasa a ser tumba; pedí jungla antes de ese punto.",
+      "Nivel 9 con Q maxeada: chase implacable y hachas de camión; evitá caminar lanes laterales solos sin visión.",
+      "Late game cae: con armadura y burst del rival arriba, es el momento de forzar peleas 5v5 y no dejarlo hacer split con picks."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Esquivá el hacha con tu dash y nunca te quedes cerca del punto de caída: sin Q recogida no llega ni pega.",
+        "Pegale en cada last hit: su rango corto lo obliga a caminar hacia vos y ahí ganás todos los trades gratis.",
+        "Pokealo pero no te dejes encontrar: a media vida su pasiva explota y un solo error de distancia te cuesta el lane."
+      ],
+      "tanks": [
+        "Solo su E es daño puro: la armadura frena todo el resto de su kit, así que rush de Plated Steelcaps y vida bruta antes de pelear.",
+        "No aceptes el all-in largo a poca vida: su pasiva y la W escalan con tu daño acumulado; salí del trade y curate.",
+        "Peleá cuando su R esté en cooldown: sin inmunidad, tu chain de CC lo encadena y muere parado en el frontline."
+      ],
+      "assassins": [
+        "Allinealo recién con la R gastada o en cooldown: con Ragnarok arriba tu entrada con CC no lo frena y te devuelve el burst.",
+        "No confíes en el cálculo visual de su barra de vida: su velocidad de ataque crece cuando baja, y ese 'kill' tuyo se convierte en tu muerte.",
+        "Forzá que gaste la E temprano: se daña solo, llega más bajo a tu combo y tu ventana de ejecutar se abre sola."
+      ],
+      "crowdControl": [
+        "La R anula el hard-CC: guardá tu chain para después de que la use; mientras corre con Ragnarok, solo el kiting lo frena.",
+        "Los slows sí siguen funcionando durante la R: tu poke con slow sirve, el stun no; planificá la pelea en torno a eso.",
+        "Si tu CC es la única herramienta, forzá que la R se gaste en un pick chico antes de la pelea grande: sin Ragnarok es un campeón distinto."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Pokealo con la pistola (Q) desde lejos: Olaf no tiene forma de responder a rango y cada proc te cura para el trade siguiente.",
+          "Guardá la E para después de que tire el hacha: si la Q no te engancha, su trade muere ahí y vos entrás libre.",
+          "El all-in largo lo ganás vos: tu remount es una segunda barra de vida y su pasiva de poca vida no alcanza contra dos monturas."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Usá el Spin (E) para esquivar el hacha y reposicionarte a su espalda: cada Q esquivada es un trade completo tuyo gratis.",
+          "La W de tu kit le corta el chase: el slow mata su único plan de juego, que es pegarte a la cara sin solución de continuidad.",
+          "Al 6 no perdés el 1v1: si te abre con Ragnarok, activá tu R y el all-in lo pierde él; después de eso escalás mejor al late."
+        ]
+      },
+      {
+        "cid": 266,
+        "name": "Aatrox",
+        "tips": [
+          "Espaciá la Q en el sweet spot: Olaf tiene que caminar hacia vos para pegar, y el centro de tu Q lo frena justo ahí.",
+          "Guardá la E para esquivar el axe y no para acercarte: la movilidad defensiva vale más que la ofensiva en este matchup.",
+          "Encadená tu W y el CC antes de que baje de media vida: si la pelea llega a la pasiva prendida, el duelo se te da vuelta."
+        ]
+      },
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Jugá la paciencia de la pasiva: sus trades son más fuertes pero cortos, y tu regeneración entre waves te deja repetir hasta que él no pueda.",
+          "Entrá con Q silence cuando su Ragnarok esté down: con la R arriba el silence no entra y te quedás con la Q gastada en la cara.",
+          "Aguantá el all-in con la W y ejecutá con la R: llegá al trade con más vida que él y el verdadero stat-check del lane sos vos."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: Q al objetivo → recogé el hacha mientras pegás autos → W prendida → E para cerrar el trade y retirarte",
+        "All-in completo: abrí con Q → W + autos con la pasiva subiendo → R apenas veas CC o para el bonus de daño → E de nuevo si el rival quedó vivo",
+        "Chase: tirá la Q por delante del rival y corré directo al hacha: recogerla resetea el CD y el slow se encadena en cada tiro",
+        "Dive al carry: R para ignorar el CC del frontline → Q sobre el ADC → W + autos → E de ejecución mientras tu equipo termina",
+        "Cierre de kill: guardá la E para el final porque pega daño puro; usala cuando el rival esté en rango de true damage, no como apertura"
+      ],
+      "tips": [
+        "Maxeá Q primero, E segundo y W al final: es el orden estándar de daño y chase del campeón.",
+        "Recogé el hacha SIEMPRE que sea posible: la Q sin pickup tiene cooldown eterno y te deja sin slow ni daño para seguir.",
+        "No tires la E a ciegas al arranque del trade: se paga con tu propia vida; esperá que el rival se comprometa y castigá con true damage.",
+        "Abrí con Ragnarok cuando veas el CC enemigo cargado y listo: es tu boleto de llegada; usarla tarde es llegar bajo de vida sin inmunidad.",
+        "Jugá el early como el bully que sos: cada trade ganado antes del minuto 14 vale placas y prioridad; escalado pasivo te deja un late muerto."
+      ],
+      "plan": {
+        "early": "Bully puro: Q que pegue a wave y campeón a la vez, trades cortos ganados con W + E desde el brush, sin pushear de más para no ser blanco del gank.",
+        "mid": "Con R y el primer item buscá skirmishes y picks junto a tu jungla: el slow de la Q más la inmunidad de CC ganan cualquier pelea chica; roameá a mid sobre el overextended.",
+        "late": "Sos el que entra: flankeá con Ragnarok sobre el carry rival y confiá en tu equipo para el follow-up; evitá peleas largas contra items defensivos porque tu daño cae y no hay segunda ventana."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/olaf/build",
+      "https://mobalytics.gg/lol/champions/olaf/guide"
+    ]
+  }
+}

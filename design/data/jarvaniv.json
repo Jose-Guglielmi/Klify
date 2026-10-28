@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "jarvaniv",
+    "ddragonId": "JarvanIV",
+    "name": "Jarvan IV",
+    "titleEs": "el Ejemplo de Demacia",
+    "cid": 59,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.77,
+    "pr": 6.11,
+    "br": 1.16,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 1.1,
+      "jungle": 91.7,
+      "middle": 1,
+      "bottom": 0.3,
+      "support": 5.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/JarvanIV.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/JarvanIV_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.92, "games": 583 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 55.21, "games": 259 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.96, "games": 1723 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 54.71, "games": 722 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 54.17, "games": 1355 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 53.98, "games": 415 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 53.92, "games": 983 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 53.85, "games": 351 }
+  ],
+  "weakAgainst": [
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 46.74, "games": 430 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 47.21, "games": 269 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 47.37, "games": 2037 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 47.75, "games": 1135 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 48.02, "games": 885 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 48.07, "games": 1552 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 48.18, "games": 247 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 48.47, "games": 1793 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Level 2 con E+Q es un knock-up casi inevitable: si empujás sin ward o te parás pasadas de la wave, el gank te agarra en el aire antes de poder reaccionar.",
+      "Gana los duelos de jungla tempranos: la Q reduce armadura, la W le da velocidad de ataque y el EQ engancha primero; desafiarlo en su jungla a nivel 3 es un volado perdido.",
+      "Repite ganks cada vez que quiere: los cooldowns bajos de E y Q hacen que cada wave nueva sea una ventana nueva de captura; no te fíes del 'ya las gastó'.",
+      "A nivel 6 la R convierte targets sobreextendidos en sentencia: la arena te aisla y ni los dashes te sacan, salvo que atravieses la pared."
+    ],
+    "weaknesses": [
+      "Su all-in lo compromete: una vez adentro con EQ o R no tiene forma de volver; si tu equipo responde, se come el castigo entero o tiene que gastar Flash para salir.",
+      "La arena corta para los dos lados: muchos dashes atraviesan la pared de la R y tu equipo puede entrar a pelearte adentro; no entres en pánico porque cayó el imán.",
+      "Si va de daño es de vidrio y si va tanque no mata: un trade agresivo antes de su combo lo gana, y con build defensiva su daño en teamfight es decorativo.",
+      "Si se atrasa, sobra: sin daño, sin tanqueidad y con una R que no encierra a nadie importante, no aporta nada en pelea.",
+      "El EQ se esquiva: la bandera cae en un lugar predecible y hay una fracción visible entre la E y la Q donde un Flash o un dash bien dado arruina el knock-up."
+    ],
+    "powerSpikes": [
+      "Level 2: desbloquea E+Q y tiene el gank más fuerte del juego temprano; no empujes sin visión los primeros tres minutos.",
+      "Level 6: la R fija a targets sin movilidad y garantiza kills en ganks extendidos; respetá la ventana de cada R cuando estés sobreextendido.",
+      "Primer item completo + nivel 9 (Q al máximo): pico de duelo y de daño; no lo disputes 1v1 en su jungla en ese tramo.",
+      "Nivel 11 y 16 con puntos en R: más daño y menos cooldown en la arena; asumí que hay engage disponible en cada pelea de objetivo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Parate lateral o pegado a la torre: el EQ viaja en línea recta a la bandera, y si no estás alineado con ella tiene que gastar tiempo extra en engancharte.",
+        "Guardá tu movilidad para el vuelo del EQ, no para el daño: el knock-up es lo que te mata, el resto son autos.",
+        "Wardá los laterales desde el minuto uno: su gank de nivel 2 es su único plan contra vos, y encontrarlo con visión lo desactiva por completo."
+      ],
+      "tanks": [
+        "No te sientas inmortal en trades largos: la Q reduce tu armadura en cada cast y habilita a su equipo a doblegarte más rápido de lo que pensás.",
+        "Pedí countergank: el gank de Jarvan llega con knock-up garantizado, y un countergank tuyo convierte su engage en un regalo de dos kills.",
+        "Si te encierra con la R, peleá adentro: la arena también deja afuera a sus aliados, y un tanque con vida sobra para ganar ese 1v1."
+      ],
+      "assassins": [
+        "Esperá que gaste la E: sin bandera no tiene movilidad ni setup, y si lo comerciás después del EQ queda relojeando cooldowns con autos nada más.",
+        "Si te tira la R encima, no corras a la pared en línea recta: atravesala con tu dash o peleá adentro, porque huir en línea también lo deja pegado a vos.",
+        "Cuidado con sus niveles 2 a 6 en skirmish de jungla: contra su combo cargada perdés; disputale la jungla recién con Flash o con ventaja numérica."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas vuele la bandera: cortarle la Q en pleno vuelo o stunearlo en la llegada mata su único engage.",
+        "Guardá el CC para castigar la R: un Jarvan que entra sin su definitiva es un minion con botas y sin plan B.",
+        "Parate disperso y atrás cuando se venga un objetivo: el Flash+R sobre equipo agrupado es su jugada de libro; negale la alineación y no tiene nada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 77,
+        "name": "Udyr",
+        "tips": [
+          "Ganás cualquier skirmish extendido con tu ciclo de posturas: no le des el EQ gratis en campo abierto, parate detrás de la wave o de tu camp y obligalo a venir a vos.",
+          "Su combo es de una sola tanda: si te tira E+Q y no te mata, el all-in te lo llevás vos con las posturas prendidas y quedás campante en su jungla.",
+          "Wardá las entradas antes de tu primer clear: lo único que te gana es un gank de nivel 2 o 3 mientras arrancás; si llegás parejo a 3, el matchup es tuyo."
+        ]
+      },
+      {
+        "cid": 805,
+        "name": "Locke",
+        "tips": [
+          "Tu E te hace blink fuera de la arena y tu Q lo ralentiza si insiste: usá la bandera de cebo y salí por la pared mientras él queda comprometido adentro.",
+          "Castigá el cooldown del EQ: entra él, marcás con Q, blink con E y dash encima para consumir tus clavos; sin combo en mano es oro para tu ejecución.",
+          "No regales maná ni vida temprano: tu R escala y ejecuta; dejá que gaste combos en ganks fallidos y saltale a mitad de partida cuando tu Purgatorio borre a cualquiera bajo el umbral."
+        ]
+      },
+      {
+        "cid": 62,
+        "name": "Wukong",
+        "tips": [
+          "Tu clon de la W se come el knock-up: cuando vuele la bandera, clonate, invisible y reubicado; un Jarvan que hace E+Q al clon gastó la combo completa en nada.",
+          "El all-in lo ganás con tu R si esperás su entrada: su EQ es una ventana corta y la tuya es daño sostenido con armadura de la E; comercia después de que casteó, no antes.",
+          "Countergankealo en vez de evitarlo: si va a gankear a tu lane, llegás vos con clon y R y das vuelta el 2v2, porque su all-in lo compromete dentro de tu equipo."
+        ]
+      },
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "No lo disputés temprano: entre 2 y 6 es el mejor duelista de la jungla; farmeá seguro, armá tus dragons y esperá el punto donde el matchup se da vuelta.",
+          "Si te agarra con el EQ en un gank, la velocidad de tu W y tu R atraviesan la pared de la arena: salí, esperá los cooldowns y volvé cuando esté descalzo.",
+          "En la disputa de un objetivo no seas la primera cara que ve: dejá que queme EQ y R en tu equipo y entrá después con tu R sobre la pelea entera."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank pre-6: E → Q al instante (knock-up al aterrizar) → AA → W sobre la zona de caída para ralentizar y encadenar más autos",
+        "All-in nivel 6: E → Q → AA → R sobre el target para aislarlo → AA adentro de la arena; si tiene dash, guardá la R para seguirlo después de su movilidad",
+        "Engage de teamfight: Flash → R sobre el carry sin movilidad → E → Q a quien se acerque a tus carries y peel desde adentro",
+        "Captura a distancia: E → Q y en pleno vuelo Flash hacia el target → R al aterrizar (el clásico EQ-Flash-R)",
+        "Escape o trampa: R sobre vos o el rival → E → Q para salir de la arena por arriba de la pared, o para dejarlo encerrado"
+      ],
+      "tips": [
+        "No uses E ni Q para farmear: la combo es tu gank completo; limpiá con autos y la Maestria Marcial, y tené ambas en mano para capturar.",
+        "La Q reduce armadura para vos y tu equipo: castegala antes de cualquier burst, incluso sobre el tanque, para que tu ADC pegue más duro.",
+        "Antes de entrar con R, mirá si tu equipo sigue: la arena te compromete; sin follow-up es un suicidio caro y con follow-up es pelea ganada.",
+        "Usá la R como disengage también: una arena entre vos y los perseguidores te compra el tiempo del Flash o de la salida con E+Q.",
+        "Aprovechá el level 2: si alguna lane está sobreextendida al arrancar, gank de una; es tu mejor ventana de todo el juego y repetilo cada vez que la E vuelva."
+      ],
+      "plan": {
+        "early": "Clear completo con gank de nivel 2 o 3 si hay lane sobreextendida, repetí ganks en la lane ganadora y asegurate el primer objetivo; no te atrasés en farmeo porque el mid te lo cobra.",
+        "mid": "Jugá alrededor de picks y objetivos: wardá para dragones, gankea mid y bot pushadas y usá Flash+R para borrar al carry rival o quemarle summoners cerca de un objetivo.",
+        "late": "No te mueras antes de barón o elder: entrá solo con tu equipo detrás, fijá al target clave con la R y después del engage peel con E+Q para tus carries."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/jarvaniv/guide",
+      "https://mobalytics.gg/lol/champions/jarvaniv/combos",
+      "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/es_AR/champion/Locke.json"
+    ]
+  }
+}

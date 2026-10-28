@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "diana",
+    "ddragonId": "Diana",
+    "name": "Diana",
+    "titleEs": "el Desdén de la Luna",
+    "cid": 131,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.24,
+    "pr": 3.67,
+    "br": 3.89,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 2.9,
+      "jungle": 46.9,
+      "middle": 49.5,
+      "bottom": 0.2,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Diana.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Diana_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 58.4, "games": 375 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 57.14, "games": 371 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 56.78, "games": 516 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 55.69, "games": 1889 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 55.61, "games": 633 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 55.59, "games": 671 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 55.25, "games": 1209 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 54.92, "games": 386 }
+  ],
+  "weakAgainst": [
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 47.75, "games": 689 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.96, "games": 1520 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 48.16, "games": 272 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 48.44, "games": 576 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.98, "games": 927 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 49.12, "games": 1541 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 49.46, "games": 558 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 49.53, "games": 737 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Q + E es un paquete sin salida: si te entra la Luna Creciente, el Lunar Rush resetea sobre vos y el all-in completo te come sin poder caminar hacia atrás.",
+      "Post nivel 6 su burst borra squishies: Q → E → R cae en menos de dos segundos y llega con escudo propio (W), así que el trade de respuesta no la mata.",
+      "Es de las asesinas más tanques: entra, aguanta el castigo con el escudo y Zhonya, y sigue pegando; no contés con ejecutarla solo por responder la combo.",
+      "Flanquea como pocas: si no la viste entrar por visión, el backline desaparece antes de que el frontline pueda hacer algo al respecto."
+    ],
+    "weaknesses": [
+      "Antes del 6 es melee sin amenaza real: castigá cada last hit y negale el farm; si se atrasa, después no llega nunca a su spike.",
+      "La Q es esquivable y lo es todo: sin Moonlight no hay reset de E, su engage muere caminando y tenés varios segundos de castigo gratis.",
+      "Telegrafía el all-in: cuando camina hacia vos con la Q en mano y E lista, esa es tu señal para gastar el escape antes de que te alcance.",
+      "Depende de ir adelante: detrás en oro e items su burst no borra a nadie y queda siendo un melee de rango corto sin presencia.",
+      "Las wards le matan el flanco: con visión de su posición su única entrada es frontal, y frontal el CC del equipo la detiene entera."
+    ],
+    "powerSpikes": [
+      "Nivel 3: ya tiene las tres básicas y busca el primer trade de vida; no te quedes a media altura con Q y E en su mano.",
+      "Nivel 6: la R convierte cualquier Q entrada en all-in letal, y con el roam a las laterales se multiplica; respetá el rango de la Q o jugá full vida.",
+      "Primer item de AP resuelto: su 1v1 y su burst se disparan y cualquier squishy a media vida es kill; no pelees sin saber dónde está.",
+      "Nivel 9 con la Q maxeada suma poke y clear: empuja más rápido y el roam se vuelve constante; seguí el mapa.",
+      "Nivel 11 y 16 con puntos en R: cooldown bajo y daño en área; asumí que tiene Moonfall disponible para cada pelea agrupada."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: sostene el rango y castigá cada last hit antes del 6; cada paso suyo hacia la wave es poke gratis mientras no tenga E para llegar.",
+        "Guardá tu escape para la Q: si el gancho no te entra, la E no resetea y el all-in muere antes de arrancar.",
+        "Cuando gaste la Q en la wave para farmear, ese es tu trade: quedá fuera del rango de E y devolvé daño sin riesgo."
+      ],
+      "tanks": [
+        "Su burst está calibrado contra squishies: con MR temprano y vida caminás la combo entera y ella queda adentro sin segunda tanda.",
+        "Mercury's Treads antes de que pique: entre pasiva, R y equipo, el stun o la resistencia definen si el Moonfall te derriba o la deja expuesta.",
+        "Forzá pelea extendida: Diana trabaja por tandas de burst; después de gastar todo, su daño se cae y tu frontlane gana el resto."
+      ],
+      "assassins": [
+        "Ekko, Fizz, Zed: forzála a gastar el escudo (W) primero; sin escudo, tu burst le gana el trade de respuesta de un tiempo.",
+        "Esquivar la Q con tu dash mata la combo completa: castigá los varios segundos que necesita para volver a armar el engage.",
+        "Post 6 no la dejes allinearte a media vida: tu ventana es castigarla antes del spike, no ganarle el all-in ya armado."
+      ],
+      "crowdControl": [
+        "Guardá el CC para el momento del dash: interrumpirla entre la Q y la E deja el reset sin destino y la combo cortada a la mitad.",
+        "Galio y Vex, sus counters reales, prosperan castigando el engage: si entra primero, volvéla piedra y tu equipo la ejecuta.",
+        "Igual no te agrupes de a tres en fila: la R castiga al equipo apretado; el CC ordenado le niega el Moonfall múltiple."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 3,
+        "name": "Galio",
+        "tips": [
+          "Quedate cerca de tu carry y esperá el dash: cuando la E la meta adentro, el Taunt corta la segunda parte de la combo y tu equipo la borra.",
+          "Tu escudo (W) tanquea el burst de su all-in completo: no te corras del dive, aguantá y respondé con Taunt más R.",
+          "Farmeá con Q de rango y no le regales un all-in a media vida: escalando en resistencias, su burst se te vuelve picazón."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "La pared de viento se come la Luna Creciente: sin Moonlight no hay reset de E ni combo; guardala para el momento exacto del engage.",
+          "Castigala en cada last hit antes del 6: es melee y tu escudo pasivo gana todos los trades cortos que ella no pueda responder con W.",
+          "Con Flow cargado podés aceptar su poke de Q; all-in recién cuando quede baja y tu R tenga kill asegurado."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "Pokeá con Q constante desde rango: Diana necesita caminar para todo y cada paso hacia vos le cuesta vida antes de llegar.",
+          "Sembrá el terreno (E) sobre tu propia posición: cuando se tire con el dash, el campo la castiga en pleno vuelo y te da la ventana de burst entera.",
+          "Empujá la wave y respondé sus roams: si no la acompañás se come tus laterales; si la acompañás, ganás torre o la encontrás tarde."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Guardá la jaula (E) para cuando cargue el engage: si queda encerrada adentro, su única salida es caminar hacia tu R.",
+          "Farmeá con Q desde fuera de su alcance: ganás el late escalando mientras a Diana se le acaba el reloj para hacer jugadas.",
+          "Al 6 no te pares a media vida en rango de su Q: el paquete Q → E → R te borra antes de que tu combo entre."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q al objetivo → E apenas aplica Moonlight (el dash resetea) → auto con pasiva + W encima → salí caminando con el escudo puesto",
+        "All-in nivel 6: Q → E con el reset → R encima del objetivo (Moonfall cae con vos) → W + pasiva para rematar",
+        "Engage de teamfight: flanqueá por un costado → Q al carry → E al reset → R en el centro del grupo → Zhonya mientras tu equipo sigue el trabajo",
+        "Clear de wave: W al arrancar + Q en línea + auto con pasiva: dos tandas limpian el wave completo y te habilitan el roam a las laterales"
+      ],
+      "tips": [
+        "Nunca tires E sin Moonlight en el objetivo: sin reset no hay segunda parte de la combo y quedás adentro del castigo sin nada que apretar.",
+        "Apuntá la Q a donde el rival va a caminar, no a donde está: el arco viaja lento y todo tu engage depende de que entre.",
+        "Usá W al inicio de cada trade, no de remate: el escudo absorbe el burst de respuesta y las orbes suman daño de área gratis.",
+        "Empujá la wave con Q + W y roameá: tu Q → E llega a las laterales más rápido que la rotación rival; si tu lane se juega ultra atrás, el roam es tu win condition.",
+        "En teamfight entrá segundo, no primero: esperá el engage del frontline enemigo o un flanco sin visión; Diana frontal se come todo el CC de una."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta el 3, desgastá con Q y al llegar a 6 buscá el all-in con Q → E → R o empujá y roameá a bot si el rival se esconde atrás de su torre.",
+        "mid": "Con el primer item resuelto tu burst borra squishies: flanqueá desde un costado, entrá con Q → E → R sobre el backline y esperá el follow-up detrás de Zhonya.",
+        "late": "No pelees sin R ni Zhonya: buscá picks en el jungle rival y esperá al equipo agrupado para un Moonfall múltiple que defina la pelea entera."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/diana/guide/mid",
+      "https://mobalytics.gg/lol/champions/diana/guide",
+      "https://app.mobalytics.gg/lol/champions/diana/build"
+    ]
+  }
+}

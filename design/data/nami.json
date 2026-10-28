@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "nami",
+    "ddragonId": "Nami",
+    "name": "Nami",
+    "titleEs": "la Invocadora de Mareas",
+    "cid": 267,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.49,
+    "pr": 8.13,
+    "br": 1.14,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 0,
+      "jungle": 0,
+      "middle": 0,
+      "bottom": 0,
+      "support": 99.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nami.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nami_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 60.64, "games": 282 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 58.56, "games": 263 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 57.47, "games": 475 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 56.11, "games": 1228 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 55.71, "games": 420 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 55.11, "games": 225 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 54.95, "games": 273 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 54.89, "games": 348 }
+  ],
+  "weakAgainst": [
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 45.54, "games": 303 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 48.02, "games": 2647 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 48.93, "games": 421 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 49.18, "games": 3245 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 49.67, "games": 306 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 49.68, "games": 5568 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 49.83, "games": 606 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 49.92, "games": 1815 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W rebota entre aliado y enemigo hasta tres veces: pega y cura en el mismo cast, así que gana casi cualquier trade sostenido del lane.",
+      "Doble knock-up con Q + R le da presión de kill real desde nivel 6 y una cadena de CC que engancha teamfights enteras.",
+      "La pasiva acelera a los aliados tocados por sus hechizos: converge, escapa y persigue mejor que casi cualquier soporte.",
+      "Escala muy bien con items de soporte: con Moonstone y Helia mantiene al equipo con vida plena durante toda la pelea."
+    ],
+    "weaknesses": [
+      "Cero movilidad y vida de papel: cualquier CC que la agarre en el medio del mapa termina en muerte, así que vive pegada al equipo.",
+      "La Q es un proyectil lento: tirada a secas la esquivan caminando; sin slow ni stun previo no entra nunca.",
+      "Poco carry potencial: depende de que su ADC o su mid hagan el daño; si el equipo pierde, ella no puede tomar la partida.",
+      "Maná caro early: si spamea W sin rebotes útiles, se queda seca justo en la ventana donde el rival pelea."
+    ],
+    "powerSpikes": [
+      "Niveles 2 y 3: con W y E en mano empieza a comerciar de verdad y puede tomar control del brush.",
+      "Nivel 6: la R agrega una segunda capa de CC al combo entero y convierte cualquier gancho en kill.",
+      "Nivel 9 con W maxeada: los curazos crecen fuerte y sostiene trades largos sin volver a base.",
+      "Mid-late con dos puntos en R e items de utilidad: la ola está disponible en casi cada pelea y arruina los dives del rival."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Contra magos de poke tipo Lux o Seraphine no intentes ganar el intercambio a distancia: escondete en el brush para cortar sus skillshots y pegales cuando bajen a farmear.",
+        "Usá la W rebotando en un minion cerca del rival: castigás y curás al mismo tiempo sin exponerte a su rango.",
+        "Si el poke te gana la vida, no allinees: esperá el all-in con R + Q cuando se acerquen a ejecutar la torre."
+      ],
+      "tanks": [
+        "Contra tanques engage (Leona, Maokai) guardá siempre E y Q para desenganchar: tu trabajo es desarmar el dive, no iniciarlo vos.",
+        "No comercies cuerpo a cuerpo con un tanque: pegales con W desde detrás de la wave y dejá que tu ADC last hit el trade.",
+        "Cuando tiren todo en el dive de tu carry, respondé con Q sobre el que quedó adentro y la E de velocidad para reposicionar al equipo."
+      ],
+      "assassins": [
+        "Zed, Talon, Akali: quedate siempre detrás de tu carry y guardá Q para el momento en que salte, no para pokear.",
+        "La E en tu ADC durante el dive del asesino le da el slow que convierte su escape en su tumba.",
+        "Si el asesino te tiene fixeada, warded juntos y comprate Mikael o Locket: morir primero es perder la teamfight completa."
+      ],
+      "crowdControl": [
+        "Blitz, Thresh, Amumu: parate detrás de la wave de minions y jugá a que el gancho nunca sea gratis.",
+        "Guardá la E de velocidad como respuesta al engage enemigo: esos píxeles extra son la diferencia entre comer el CC y esquivarlo.",
+        "Si tu equipo también pelea por CC, tirá la R primero: la ola desde niebla abre la pelea con knock-up y tu Q encadena arriba del levantado."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Respetá el rango del Q (Banda Elástica): si te engancha, la R de él y el follow-up de su equipo te borran antes de usar nada.",
+          "No te pares pegada a tu ADC en los pushes: un solo Q + R de Amumu agarra a los dos y pierden la pelea sin pelearla.",
+          "Cuando tire el Q y falle, es tu ventana: castigalo con W + Q y usá la E para alejarte antes de que vuelva a tener cooldowns."
+        ]
+      },
+      {
+        "cid": 53,
+        "name": "Blitzcrank",
+        "tips": [
+          "Parate siempre detrás de minions: el cohete no atraviesa, así que cada wave empujada es un muro entre el gancho y tu vida.",
+          "Si te agarra estás muerta: jugá a más distancia de la que creés necesaria y no wardes sin verlo en pantalla.",
+          "Cuando el cohete esté en cooldown, robale el brush y castigá con W: son varios segundos donde Blitz no tiene amenaza real."
+        ]
+      },
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "No busques el all-in contra Taric: su curación, armadura y la invulnerabilidad de la R niegan todo tu burst; ganale con poke sostenido de W.",
+          "Esperá que gaste la E (Dazzle) o que la esquives al borde del rango: sin stun, su engage no existe y queda caminando hacia vos.",
+          "Cuando él suba a 6, contale los segundos de la R: lo que debés es retirarte del área, no pelear adentro del brillo."
+        ]
+      },
+      {
+        "cid": 89,
+        "name": "Leona",
+        "tips": [
+          "El E de Leona (Filo del Zenit) es el arranque de todo: mantén esa distancia extra y no la dejes alinear el salto sobre vos ni tu ADC.",
+          "Cuando ella salte a tu carry, respondé con Q sobre ella y E en tu ADC: el slow y el knock-up rompen la cadena de su combo.",
+          "Después del 6 asumí que hay R esperando: no aceptes trades cerca de tu torre sin visión del jungla propio."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E en vos → AA → esperá el slow → Q encima del objetivo → W al rival → AA",
+        "All-in confiable: W + E casi juntos en vos → AA → Q → AA → R → AA para rematar",
+        "Engage desde niebla: R desde fuera de visión → Q sobre el levantado → AA → E en vos → W → AA",
+        "Pursuit de Q acertada: Q entra → R para seguir el all-in → E en vos al instante → AA → W → AA",
+        "Poke útil: W a un minion cerca del rival para que rebote entre él y tu ADC, dañando y curando en el mismo cast"
+      ],
+      "tips": [
+        "La W rebota hasta tres veces entre aliado y enemigo: tirála al minion correcto y hacé dos trabajos con un solo cast, pero no la spamees porque el maná se funde.",
+        "La Q a secas la esquivan caminando: tirala recién sobre un objetivo ralentizado (E), levantado (R) o caminando hacia vos.",
+        "Pensá la E como un lanzagranadas para tu ADC: el slow de sus autos prepara tu Q y convierte cualquier trade corto en comercio ganado.",
+        "Usá la pasiva de velocidad con cabeza: cada hechizo acelera aliados, así que roams, escapes y chases se pagan con un W bien puesto.",
+        "No wardes sola sin visión del mapa: sos squishy e inmóvil, y un pick contra vos es jugar 4v5 el resto de la pelea."
+      ],
+      "plan": {
+        "early": "Pokeá con W rebotando en minions para ganar la pelea de vida, y cuando el rival baje de la mitad buscá el all-in con Q + E en tu ADC; tras caer la torre bot, rotá con tu carry a abrir mid.",
+        "mid": "Pegate siempre al equipo y wardá objetivos con compañía: buscá picks con R desde niebla y desarmá los dives del rival con Q y la velocidad de la E.",
+        "late": "No caminás sola nunca: wardá con el equipo y en cada pelea quedate detrás del carry, usando Q y R para responder el engage enemigo mientras la W mantiene a todos con vida."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nami/build",
+      "https://mobalytics.gg/lol/champions/nami/guide",
+      "https://mobalytics.gg/lol/champions/nami/combos"
+    ]
+  }
+}

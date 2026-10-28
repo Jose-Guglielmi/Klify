@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "kayle",
+    "ddragonId": "Kayle",
+    "name": "Kayle",
+    "titleEs": "la Justiciera",
+    "cid": 10,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.51,
+    "pr": 2.18,
+    "br": 1.24,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 80.6,
+      "jungle": 0.6,
+      "middle": 16.2,
+      "bottom": 1,
+      "support": 1.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kayle.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kayle_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 60.0, "games": 420 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 58.7, "games": 230 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 57.11, "games": 485 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 56.97, "games": 1183 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 56.71, "games": 298 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 56.32, "games": 435 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 55.93, "games": 270 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 55.75, "games": 226 }
+  ],
+  "weakAgainst": [
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 44.21, "games": 233 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 46.78, "games": 357 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 47.15, "games": 369 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 47.19, "games": 606 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.8, "games": 569 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 48.14, "games": 565 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 48.37, "games": 492 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 48.84, "games": 473 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Escalado de pasiva imparable: al 6 sus autos vuelan a rango, al 11 pegan en área y al 16 quedan permanentemente potenciados; cada minuto de farm la acerca a ese punto.",
+      "La R sirve para dos vidas: guardás a tu carry del burst enemigo o te la usás en vos para allinear sin morir; es la habilidad que define pelea entera.",
+      "Q y W son herramienta de caza: la Q baja velocidad y rompe resistencias y la W acelera y cura, así que ningún target bajo de vida se le escapa cuando ya escaló.",
+      "Waveclear resuelto desde el nivel 9: con la E maxeada limpia waves solas y se banca la side lane sin depender del equipo."
+    ],
+    "weaknesses": [
+      "Antes del nivel 6 es la pelea más débil de la grieta: sin presencia de lane, sin escape y con el jungla enemigo sabiendo que es un kill gratis.",
+      "Muy vulnerable a crowd control, sobre todo con la R en cooldown: un chain CC la encuentra parada y la borra sin que apriete nada.",
+      "Su plan de juego es ignorar al equipo: vive en la side farmeando, así que su equipo juega en inferioridad numérica mientras ella no exista en el mapa.",
+      "Squishy total sin la R disponible: si le quemás el ultimate ofensivo o defensivo, queda un auto-attack sin defensa que se puede pickar gratis.",
+      "Si la mataste o la forzaste a gastar Flash early, se retrasa todo su escalado: castigarla antes del 6 le cuesta minutos de power spike."
+    ],
+    "powerSpikes": [
+      "Nivel 6: los autos se vuelven a rango y aparece la R; pasa de esconderse bajo torre a jugar el lane con libertad y usar el ultimate como herramienta de trade.",
+      "Primer item + nivel 9: con la E maxeada y Nashor's en la bolsa, el poke, el farm y el trade corto quedan resueltos.",
+      "Nivel 11: segunda ascensión, los autos pegan en área y hacen melt a cualquier target que ataque seguido; acá empieza a pelechar de verdad.",
+      "Nivel 16: tercera ascensión con autos permanentemente potenciados; en late game es de los carry más fuertes del juego y hay que borrarla antes de que la pelea arranque."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Castigala en cada last hit antes del 6: su early no responde y cada auto que le clavás le retrasa el escalado en el que vive.",
+        "Mantené la wave empujada hacia su torre: cuanto más lejos farmee, más lejos está de su R y más espacio le das al jungla para caerle.",
+        "Cuando llegue al 11 cuidá el rango: sus autos vuelan más lejos de lo que parece y dejarla farmear libre es dejar que el late game te pase por arriba."
+      ],
+      "tanks": [
+        "Los tanques con all-in duro (Sion, Tahm Kench) ganan el lane a pura agresión temprana: su burst inexistente y su curación corta no bancan el trade largo.",
+        "Stackeá resistencias temprano: su daño escala con niveles y no con items, así que una pieza de MR o armadura te deja ganando cada intercambio hasta el 11.",
+        "No le regales farm tranquilo: empujala bajo torre, bajale las placas y forzá recalls; cada minuto que farma libre es un minuto menos para tu ventana."
+      ],
+      "assassins": [
+        "Esperá que gaste la R para saltarle: sin Divine Judgment en mano es un squishy sin escape y cae con media combo.",
+        "Guardá tu gap closer para después de su ultimate, no antes: entrar cuando está en el aire te hace comer todo el burst post-inmune.",
+        "Forzala a responder la side lane: si tiene que TP a una pelea llega tarde y sin Flash, y ese es tu momento de cazarla en el camino."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas cruce la línea para farmear: no tiene dash ni phantom, cualquier root o stun la encuentra parada en el mismo lugar.",
+        "Guardá una segunda tanda de CC para después de la R: la invulnerabilidad dura unos latidos y lo que viene después es un carry desprotegido.",
+        "Un pick de CC sobre ella antes del setObjective define la pelea: matarla 10 segundos antes del dragón suele valer más que cualquier engage del rival."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Ganá el lane desde el nivel 1: tu all-in con Q + autos gana cualquier trade corto y ella no tiene forma de responder antes del 6.",
+          "Comé sus autos potenciados con la E gris: cuando el escudo esté disponible, su ventana de burst se apaga y no tiene manera de matarte.",
+          "Cuando tengas ventaja de vida, metele el all-in con R: Kayle no tiene escape para separarse y tu ultimate la encuentra parada en la lane."
+        ]
+      },
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Pokeala con la E y farmeá con la Q a través de la wave: en el early Kayle no gana ni el farm ni el intercambio contra vos.",
+          "Un gank con tu Q cargada o tu R es kill casi garantizada: no tiene escape y su W apenas le devuelve algo de vida.",
+          "Después del 11 no te pares a intercambiar autos largos: dejala pushear y buscá el engage con R cuando camine descuidada a la wave."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "All-in constante desde el 6: tu ultimate te deja pegar cinco segundos seguidos sin riesgo y la R de ella solo compra tiempo, no daño.",
+          "Spin (E) sobre ella cada vez que baje a farmear: antes de sus items core no tiene cómo ganar un trade de autos cuerpo a cuerpo.",
+          "Stackeá furia en la wave y esperá que gaste la R defensiva: cuando la invulnerabilidad termine, el resto de tu barra de furia la ejecuta."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Stackeá armadura con la W y pokeá con la Q: su daño temprano no atraviesa tu armadura y cada trade te lo ganás caminando.",
+          "Castigála con la E en cada acercamiento: bajarle la velocidad de ataque mata lo único que hace a Kayle ser Kayle.",
+          "Al 6 forzála a gastar la R en modo defensivo con tu R + combo: sin ultimate en mano no tiene all-in y podés rematar cuando se le pase el susto."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q → 2 autos rápidos → E al terminar el segundo auto (con EAA si el timing sale) y salí caminando",
+        "Trade escapando: AA → E → Q → W para devolver daño mientras te retirás ganando velocidad de movimiento",
+        "All-in completo: Q → AA → E → AA → W justo antes de R → AA a full velocidad de ataque para terminar el trabajo",
+        "Burst con Flash: Q → Flash → AA → E encadenados lo más rápido posible para ejecutar un target que se cree seguro",
+        "Engage de late: R sobre vos justo antes de que caiga el daño → Flash → Q → E → autos (la R te banca inmune y castiga el área al caer)"
+      ],
+      "tips": [
+        "Antes del 6 sos la pelea más débil de la grieta: farmeá con Q y E desde rango, mantené la wave cerca de tu torre y no aceptes trades largos por orgullo.",
+        "La R es tu vida: con ella en cooldown jugá un paso atrás y no te dejes pickar; sin ultimate sos un squishy sin escape.",
+        "Elegí el modo de la R antes de pelear, no en el medio: defensiva para bancar el burst enemigo u ofensiva para sellar el all-in.",
+        "No spamees la W por maná: es tu curación de trade y tu escape; guardala para cuando la pelea esté decidida.",
+        "Mid game ignorá las peleas de tu equipo y viví en la side: tu trabajo es llegar a 11 y 16 antes de que la partida se te escape de las manos."
+      ],
+      "plan": {
+        "early": "Jugá pasivo con la wave cerca de tu torre, farmeá con Q y E, evitá trades hasta el 6 y recién con la R desbloqueada empezá a castigar decisiones del rival.",
+        "mid": "Viví en la side lane farmeando y subiendo de nivel, evitá peleas grupales, no quemés Flash y usá TP para llegar con ventaja cuando el equipo necesite números.",
+        "late": "Agrupate con tu equipo, temporizá la R para el engage enemigo y enfocá al target más cercano; si tu ADC va bien regalale el ultimate, si escalaste vos, guardátelo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/kayle/build",
+      "https://mobalytics.gg/lol/champions/kayle/guide",
+      "https://mobalytics.gg/lol/champions/kayle/combos"
+    ]
+  }
+}

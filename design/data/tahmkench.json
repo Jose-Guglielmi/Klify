@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "tahmkench",
+    "ddragonId": "TahmKench",
+    "name": "Tahm Kench",
+    "titleEs": "El Rey del Río",
+    "cid": 223,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.03,
+    "pr": 2.76,
+    "br": 3.36,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 41.8,
+      "jungle": 0.3,
+      "middle": 1.3,
+      "bottom": 3.3,
+      "support": 53.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/TahmKench.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/TahmKench_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 57.73, "games": 220 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 55.6, "games": 232 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 55.45, "games": 312 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 54.44, "games": 946 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 54.42, "games": 283 },
+    { "cid": 432, "slug": "Bard", "name": "Bard", "vsWr": 54.34, "games": 657 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 54.26, "games": 411 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 53.78, "games": 1084 }
+  ],
+  "weakAgainst": [
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 40.55, "games": 291 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 46.38, "games": 1134 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 46.44, "games": 745 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 46.53, "games": 1195 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 46.79, "games": 981 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 47.25, "games": 527 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 47.52, "games": 202 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 47.79, "games": 1335 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E (Thick Skin) le da prácticamente dos barras de vida si la activa en el momento exacto del burst: no es un escudo reactivo, es un segundo pool que decide trades enteros.",
+      "La R (Devour) es doble herramienta: se come al carry aliado para sacarlo del foco o se come al enemigo fuera de posición y lo escupe donde no pueda volver.",
+      "La W (Abyssal Dive) cruza paredes y sirve para entrar, salir o robar visión; es la única movilidad del kit y por eso redefine cada pelea chica.",
+      "Tres stacks de pasiva y la Q (Tongue Lash) stunea: en trades largos y cuerpo a cuerpo no hay soporte que le gane el intercambio.",
+      "La pasiva lo cura con el daño que hace, así que en lanes de contacto absorbe el poke y sigue con vida completa sin gastar oro en sustain."
+    ],
+    "weaknesses": [
+      "Es melee puro: contra soportes de rango come poke gratis cada vez que se acerca a la wave y no tiene forma de contestar sin caminar hacia adelante.",
+      "La E tiene que activarse ANTES del burst, no después: si la aprieta tarde el escudo no llega a absorber nada y pierde su habilidad más valiosa del kit.",
+      "Fuera de la W es muy lento: si la W está en cooldown o la gastó para entrar, un gank lo alcanza caminando y muere sin escape.",
+      "Early game flojo como soporte: no puede proteger al ADC de un all-in temprano ni buscar jugadas propias con confianza antes del nivel 3.",
+      "Si el rival congela la wave cerca de su torre, no puede all-inear ni escapar: queda atrapado entre la wave y el jungla enemigo."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primer punto en las tres básicas, ya puede tradear con Q + W + E y moverse entre los arbustos de la lane con seguridad.",
+      "Nivel 6: Devour cambia el lane entero, porque suma presión de kill sobre el enemigo fuera de posición y a la vez un botón de salvataje para el ADC.",
+      "Primer item de tanque terminado: la pasiva y la E escalan con vida, así que el spike real de daño llega con el primer ítem defensivo, no antes.",
+      "Nivel 11 y 16: la R escala en daño y en escudo, y con el carry adentro se vuelve una burbuja de dos segundos y medio imposible de romper."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokeá con Q desde el borde del rango y no camines a last hitear con auto si el soporte enemigo tiene hechizos cargados: cada paso adelante cuesta vida que no recuperás.",
+        "Usá la W como gap closer desde el arbusto o desde fuera de visión: si te ven venir, el rango te va a kiterar y la dive no llega a nada.",
+        "Pedí al ADC que empuje con vos cuando el rival de rango esté sin maná: sin habilidades, tu cuerpo a cuerpo aplasta el trade y ahí sí podés all-inear."
+      ],
+      "tanks": [
+        "Contra otro tanque no ganas por daño, ganás por utilidad: guardá la R para sacar del foco al carry enemigo justo cuando el tanque engagea, no para pegar.",
+        "Tu Q con tres stacks stunea igual contra tanques y es lo que corta el canal de una engage: encadenala sobre el arranque del CC enemigo, no después.",
+        "Comprá resistencias y vida, no daño: tu pasiva escala con HP y en peleas largas de tanque contra tanque la E te hace ganar por aguante."
+      ],
+      "assassins": [
+        "Guardá la E para el momento en que el asesino ya entró: absorber el combo completo con escudo convierte su all-in en un trade perdido para él.",
+        "La R sobre tu carry es la respuesta directa a un burst: se lo come antes de que aterrice el segundo hechizo y lo escupe atrás de la pelea.",
+        "No gastes la W para engagearte contra un asesino: sin escape, el segundo salto suyo te mata; usala para salir o para interrumpir el dive."
+      ],
+      "crowdControl": [
+        "Si te encadenan CC antes de activar la E, la morís igual: prendé el escudo cuando veas el primer hechizo de control viajando, no cuando ya te agarró.",
+        "Contra engages de área (Alistar, Rell) tu R sobre el carry es el único peel real: guardala en teamfights, no la quemes en el pick inicial.",
+        "Tu W no se puede castear mientras estás stuneado, así que posicionate detrás de la wave y no como primera línea cuando el enemigo tiene engage cargado."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Su R te anula el all-in completo: no gastes Q ni W en entrar hasta que la invulnerabilidad esté en cooldown, porque tu daño sostenido no atraviesa nada.",
+          "El escudo de su W le da armadura a la vez a él y al carry: pega siempre al que no esté escudado o esperá a que se cambie el link.",
+          "Su stun es de área y cuerpo a cuerpo: quedate atrás en la wave y castigalo con la E de tu carry cuando camine a buscarte, no entres a su rango."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "No le pegues autos encadenados: cada hit suyo suma stack de su pasiva y termina en stun para vos, así que limitate a Q y a trades cortos.",
+          "Su escudo frontal come tu Q entera: casteala de costado o esperá a que lo gaste para bloquear al ADC, nunca de frente.",
+          "Buffeá tu engage para después de que use el salto al carry: sin el escudo ni el stun disponible, Braum no puede pelear cuerpo a cuerpo contigo."
+        ]
+      },
+      {
+        "cid": 497,
+        "name": "Rakan",
+        "tips": [
+          "No lo persigas: con su W y su E se escapa de cualquier dive tuya y te deja la W gastada en medio de la nada, con el jungla enemigo libre.",
+          "Su sustain de escudos hace que el poke de tu Q no se acumule: enfocate en el ADC enemigo y dejá a Rakan para cuando ya gastó el dash.",
+          "Cuando entre a engagear con su R, tu R sobre tu carry lo deja sin objetivo: el encanto no sirve si el carry ya está adentro tuyo."
+        ]
+      },
+      {
+        "cid": 235,
+        "name": "Senna",
+        "tips": [
+          "Te kitea desde fuera de tu rango todo el lane: no camines a last hitear con auto, farmeá lo justo y esperá el nivel 3 para tradear desde el arbusto.",
+          "Su curación a distancia niega tu presión de poke: si no podés forzar el all-in, empujá la wave y buscá jugadas en otra lane antes que quedarte a perder el sustain.",
+          "La niebla la hace escalar sin oro: no le regales stacks de alma por estar cerca, y cuando la puedas alcanzar con Q + W, ese es el momento de matarla."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA ×3 (para los stacks de pasiva) → Q (stun asegurado) → W encima del objetivo → AA mientras dura el stun",
+        "All-in completo: Q (stun) → W (knock-up) → AA ×3 → R para comértelo → escupirlo hacia tu equipo → Q de nuevo al aterrizar",
+        "Rescate de aliado: Flash → R sobre el carry → W para salir del foco antes de que se rompa el escudo",
+        "Peel defensivo: W sobre el asesino para interrumpir su combo → R sobre tu carry si el burst ya entró → E activada al final para absorber el remanente",
+        "Roam/visión: W pared adentro al arbusto enemigo, ponés visión y salís con la misma W si no hay nadie cerca"
+      ],
+      "tips": [
+        "Activá la E cuando veas venir el daño, no cuando ya lo recibiste: si la apretás tarde el escudo se va sin absorber y perdés tu mejor habilidad de la pelea.",
+        "No uses la W como engage si no tenés otra salida: es tu única movilidad y quemarla para entrar te deja caminando de vuelta bajo el fuego enemigo.",
+        "Cuidá los stacks de la pasiva: con dos autos puestos, la Q ya stunea; contalos y no tires la Q antes de tiempo, porque el stun es lo que hace ganable el trade.",
+        "La R sirve más como peel que como daño: comerte al carry enemigo dentro de tu equipo vale más que comértelo para pegarle solo y quedar sin herramienta.",
+        "En teamfights no entres primero: quedate al lado de tu carry, comé al que salte y recién después caminá con la wave hacia adelante."
+      ],
+      "plan": {
+        "early": "Jugá atrás de la wave, farmeá con Q y esperá el nivel 3 para tradear desde el arbusto; al 6 buscá el all-in solo si el enemigo está fuera de posición, porque tu early como soporte es flojo.",
+        "mid": "Pegate al equipo, poné visión antes de cada objetivo y buscá picks con W desde fuera de visión; tu R sobre el carry decide las peleas chicas de 2v2 y 3v3.",
+        "late": "Quedate pegado al carry en cada teamfight, guardá la R para sacarlo del foco enemigo y usá la E al recibir el primer burst; tu trabajo es que el daño no lo toque, no matar."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/tahmkench/guide",
+      "https://mobalytics.gg/lol/champions/tahmkench/combos"
+    ]
+  }
+}

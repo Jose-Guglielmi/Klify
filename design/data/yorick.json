@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "yorick",
+    "ddragonId": "Yorick",
+    "name": "Yorick",
+    "titleEs": "Pastor de Almas",
+    "cid": 83,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.74,
+    "pr": 3.2,
+    "br": 7.06,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 93.1,
+      "jungle": 2.1,
+      "middle": 3.9,
+      "bottom": 0.3,
+      "support": 0.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yorick.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yorick_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 59.68, "games": 253 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 58.3, "games": 705 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 57.9, "games": 582 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 57.39, "games": 230 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 56.03, "games": 232 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 55.14, "games": 535 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 54.49, "games": 1569 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 54.41, "games": 658 }
+  ],
+  "weakAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 46.06, "games": 1092 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 46.54, "games": 477 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 46.86, "games": 1129 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 47.33, "games": 1720 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 47.52, "games": 2279 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 47.55, "games": 1470 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 48.04, "games": 918 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 48.4, "games": 1376 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es el split-pusher más limpio del juego: con ghouls arriba una lane desatendida se cae en un par de minutos, y con la maiden podés empujar dos carriles a la vez.",
+      "El Q cura y cada ejecución deja una tumba: mantenés la wave y el sustain sin gastar maná en pociones, algo que casi ningún toplaner tiene.",
+      "La W es una cárcel real: encerrar al rival contra los muros gana trades que por números no debería ganar, y también sirve para cortar la retirada o el gank.",
+      "Nivel 6 con maiden puede 1v2: el daño sostenido de la maiden más los ghouls supera a casi cualquier duelista de la lane."
+    ],
+    "weaknesses": [
+      "Early flojo: antes del 6 y sin items pierde cualquier trade largo contra toplaners de daño de arranque como Renekton o Yasuo.",
+      "Sin maiden su DPS se cae a la mitad: matarla antes de la pelea lo deja como un campeón de rango corto con un Q y una pared.",
+      "Cero movilidad: ni dash ni blink, así que un gank bien armado lo mata y su única salida es la W o el Flash.",
+      "Sus ghouls y la maiden son objetivo válido: el waveclear rápido y el daño en área los borran antes de que empiece el trade.",
+      "Sufre Grievous Wounds: todo su sustain sale del Q y del robo de vida de la maiden, así que con la herida activa no aguanta nada."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera maiden; acá arranca el 1v2 y el split push de verdad, no pelees contra él en esa ventana.",
+      "Primer item completo: el daño del Q y el empuje se disparan y empieza a jugar agresivo y a cobrar placas.",
+      "Nivel 9 con Q maxeada y nivel 11 con R mejorada: la maiden sola empuja un carril mientras él presiona el otro.",
+      "Nivel 16 con R al máximo: la maiden se vuelve amenaza de teamfight y el cooldown bajo la tiene arriba casi siempre."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "El rango solo no alcanza: le gana a Jayce, Kennen y Vayne porque los ghouls llegan igual; usá tu rango para negarle farm, no para tradear de cerca.",
+        "Matá los ghouls primero: cada uno que cae le saca daño del trade y le corta el empuje; el waveclear rápido es tu mejor defensa.",
+        "Cuando tira la E y falla, ese es tu turno: sin la marca los ghouls no saltan y su combo pierde la mitad del daño."
+      ],
+      "tanks": [
+        "Comprá Grievous Wounds temprano: su sustain sale del Q y de la maiden, y sin la herida no lo bajás nunca.",
+        "K'Sante y Tahm Kench pierden este lane: no aceptes trades largos con ghouls arriba, jugá bajo torre y pedile al jungla.",
+        "Antes de la pelea matá a la maiden: es un segundo campeón; si la dejás viva, la teamfight es un 5v6."
+      ],
+      "assassins": [
+        "Yasuo, Yone e Irelia le ganan por movilidad: entrá y salí del rango de los ghouls en vez de pelear parado.",
+        "Esquivá la E: sin la marca los ghouls no se lanzan y su daño se cae a la mitad; guardá el dash justo para eso.",
+        "Cuidado con la W en el all-in: si te encierra contra un muro perdiste; rompé los muros o Flasheá antes de que caigan los ghouls."
+      ],
+      "crowdControl": [
+        "El CC lo mata: es lento, sin dash y depende de estar pegado; encadenalo sobre el arranque del combo para cortarle todo.",
+        "Suprimir y los slows lo sacan de la pelea: sin castear Q no tiene sustain y se cae solo.",
+        "Pegale cuando la maiden está en cooldown: sin R es un campeón de rango corto con una pared y nada más."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "Usá el dash para esquivar la E: si la marca no entra, los ghouls se quedan quietos y el trade es tuyo.",
+          "Cortá los ghouls con el tornado y no pelees con tres o más arriba: sin ellos su daño sostenido desaparece.",
+          "Después del 6 matá la maiden antes de alargar la pelea: es lenta y tu daño crítico la borra rápido."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Jugá con la wave cerca de tu torre hasta el 6: sos más débil que él antes y no podés contestar trades.",
+          "Farmeá de lejos con Q y E y no entres a la W: si te encierra, perdés el trade y probablemente la vida.",
+          "Cuando llegás a rango con items, matá ghouls y maiden a distancia: tu daño sostenido le gana el late."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Rompé la W con furia y no pelees adentro: pegado a la pared es donde su combo pega más fuerte.",
+          "Usá la E para salir del rango de los ghouls y volver a entrar: no tradees parado frente a tres ghouls.",
+          "Farmeá y empujá sin pausa: si lo dejás empujar libre, su split push te gana el mapa aunque ganes la lane."
+        ]
+      },
+      {
+        "cid": 58,
+        "name": "Renekton",
+        "tips": [
+          "Dominá los primeros niveles: tu combo con furia gana cualquier trade antes de que tenga maiden.",
+          "Usá el dash para esquivar la E y entrar cuando la gaste: sin marca, los ghouls no hacen nada.",
+          "Después del 6 no alargues la pelea con R activa: matá la maiden o salí, el DPS sostenido es de él."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA → Q (el golpe empoderado que cura) → E al rival cuando retrocede; los ghouls saltan y cierran el trade",
+        "Encierro: E (marca) → W detrás del rival para cortarle la retirada → AA → Q → AA, todo dentro de la pared",
+        "Engage con Flash: Flash → W encima del enemigo → AA → E → AA → Q para el execute",
+        "All-in con maiden: R → E al objetivo → W entre él y su torre → Q → AA, kiteando mientras la maiden y los ghouls pegan",
+        "Split push doble: R y volvé a castearla para soltar la maiden en un carril mientras vos empujás el otro"
+      ],
+      "tips": [
+        "Farmea tumbas con Q sobre el minion grande: cada ejecución deja tumba y te devuelve vida, así que no necesitás volver a base por pociones.",
+        "Contá tus ghouls: pelear con cuatro es pelear con un campeón de más; sin ghouls no busques trades largos.",
+        "Guardá la W para encerrar o para escapar de un gank: es tu única herramienta defensiva y gastarla de poke es tirar el personaje.",
+        "Mandá la maiden a un carril solo con visión y cuando los objetivos estén lejos: una maiden muerta en el carril equivocado es tu peor pérdida.",
+        "En teamfight no entrés primero: dejá que el tanque coma el CC y entrá segundo con W para encerrar al carry."
+      ],
+      "plan": {
+        "early": "Farmeá con Q para generar tumbas sin gastar maná, mantené la wave cerca de tu torre y esperá el 6: antes de la maiden sos un toplaner flojo, así que no aceptes trades largos.",
+        "mid": "Empujá lateral con ghouls y maiden y forzá el 1v1: ganás casi cualquier duelo con tres o cuatro ghouls y R arriba, y cada placa gratis es oro que el rival no puede contestar.",
+        "late": "Jugá el mapa, no la teamfight: mandá la maiden a un carril y empujá el otro mientras tu equipo presiona el objetivo, y si te toca pelear entrá segundo con W para cortar la retirada."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/yorick/guide",
+      "https://mobalytics.gg/lol/champions/yorick/combos",
+      "https://mobalytics.gg/lol/champions/yorick/counters"
+    ]
+  }
+}

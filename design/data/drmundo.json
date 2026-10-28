@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "drmundo",
+    "ddragonId": "DrMundo",
+    "name": "Dr. Mundo",
+    "titleEs": "el Loco de Zaun",
+    "cid": 36,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.6,
+    "pr": 3.45,
+    "br": 2.78,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 84.4,
+      "jungle": 11.9,
+      "middle": 2.2,
+      "bottom": 0.3,
+      "support": 1.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/DrMundo.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/DrMundo_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 58.57, "games": 683 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 58.11, "games": 709 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.22, "games": 720 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 55.56, "games": 1746 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 55.47, "games": 402 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 55.42, "games": 877 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 55.32, "games": 846 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 55.31, "games": 622 }
+  ],
+  "weakAgainst": [
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 39.84, "games": 246 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 41.5, "games": 800 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 44.55, "games": 514 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 45.28, "games": 1016 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 46.74, "games": 353 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 47.68, "games": 518 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 47.91, "games": 1457 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 48.02, "games": 781 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su regeneración no tiene comparación: en pelea larga se recupera más rápido de lo que le pegás, y con la R arriba bajarlo a cero es casi imposible.",
+      "La Q hace % de vida actual y frena al 40%: castiga tanques, caza inmoviles y le da follow-up gratis a su equipo en cada pick.",
+      "Farmear bajo torre le es trivial, así que empujarlo no lo saca del juego; y penselo dos veces antes de divearlo con la R en mano.",
+      "En late es un muro que camina: corta el acceso a su backline y separa al equipo rival entero solo con avanzar."
+    ],
+    "weaknesses": [
+      "La anti-curación es su enemigo mortal, sobre todo early: con Bramble o Execución prendida, su regen pasa a ser decoración.",
+      "Es débil en los primeros niveles: castigalo entre 1 y 3 antes de que escale con vida e items, ahí el lane es tuyo.",
+      "Cada Q que falla le cuesta vida real sin curación de vuelta: tirale desde ángulos raros y quedate cerca de minions para esquivar.",
+      "Cero movilidad: el gank del jungla lo mata si está pushado y cualquier rango lo kitea todo el lane; dejalo overextender.",
+      "Si no hay pelea larga, su R no paga: disengagé cuando la prenda y volvé cuando se le apague el healing con la vida abajo."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R lo convierte en casi indestructible y le da velocidad para cazar o escapar del gank; dejá de allinearle como si nada.",
+      "Wave thineada pushada a su torre: con Q + E te corre y te come vivo; no farmees adelantado contra un Mundo con vida para gastar.",
+      "Primer item completo (Warmog's o Heartsteel): pasa de débil a front line que dolea, ahí empezá a respectar los all-ins.",
+      "Late con build completa y R disponible: puede divear al equipo entero caminando hacia adelante; peleá solo con él fuera de pantalla."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokealo antes del nivel 6 en cada last hit: su regen escala con nivel e items, así que temprano cada punto de daño que le hacés le pesa de verdad.",
+        "Cuando levante el brazo de la Q, caminá lateral: si la falla pierde vida sin curación y queda descalzo para tu próximo poke.",
+        "Nunca te pares en línea recta detrás de la wave farmeando: la Q de Mundo viaja esperándote justo ahí."
+      ],
+      "tanks": [
+        "Su daño es % de vida actual: tu pool grande es su munición, así que comprá anti-curación temprano antes de pensar en pelear largo.",
+        "No aceptes el extended que él quiere: intercambiá corto con la Bramble prendida, retirate arriba de vida y repetí hasta que se quede sin pool.",
+        "Cuando prenda la R, soltá el trade: es diez segundos de curación que no ganás por más armor que stackees; volvé cuando se apague."
+      ],
+      "assassins": [
+        "No lo elijas como target: tu burst no lo borra y su regen + R convierten tu all-in en un regalo; buscale a los carries.",
+        "Esquivá la Q antes de entrar: el slow te delata y le regala follow-up a todo su equipo sobre vos.",
+        "Si te engancha en melee cerca de él, perdés el 1v1: su W drenando más el auto potenciado de la E superan tu ventana de daño."
+      ],
+      "crowdControl": [
+        "Al agarrarlo con CC inmovilizante le cae un frasco de vida al lado: matá el frasco o zonéalo, no lo dejes desayunarse gratis.",
+        "No encadenes todo tu CC sobre él: es el tanque de daño de su equipo; guardá el chain para sus carries y a Mundo kitealo con slows.",
+        "Elegí knockback y slow por encima del stun: le hacés daño con la distancia sin alimentarle la pasiva de curación."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 19,
+        "name": "Warwick",
+        "tips": [
+          "Tu daño escala contra la vida de él: no le tengas miedo al pool, aceptá el all-in largo que ahí ganás vos y no él.",
+          "Pegale cuando esté herido: tu W te dispara velocidad de ataque contra objetivos bajo de vida y tu sustain supera el suyo en pelea sostenida.",
+          "Guardá el recast del miedo (E) para cuando encare con la R: interrumpirle el acercamiento le corta la única forma de volver a pegar.",
+          "Comprate Bramble temprano: su curación sin counterplay se convierte en humo y el lane deja de ser de él."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Usá la niebla (W) para ignorar sus cuchillas: si la Q de Mundo no te encuentra, no se cura, no te frena y no caza.",
+          "Tu daño es % de vida máxima mágico y él apila vida sin MR: cada combo tuya le duele el doble que a cualquier otro top.",
+          "Tradeá corto con auto + Q y salí de rango antes de que responda con la E: vos elegís el momento, no él.",
+          "Del nivel 6 en adelante ganás el all-in: esperá que prenda la R y tirá la tuya encima cuando su curación ya esté comprometida."
+        ]
+      },
+      {
+        "cid": 39,
+        "name": "Irelia",
+        "tips": [
+          "Usá los minions como trampolín con la Q para esquivar el hueso: cada Q que falla Mundo es vida que pierde sin recuperar.",
+          "Después del nivel 4 buscá trades largos: tu daño sostenido y tus resets superan su regen mientras él solo tiene el auto potenciado.",
+          "Guardá la W para absorber el burst de su combo y el slow de la Q: si el golpe grande no te entra, su all-in queda en nada.",
+          "Su nula movilidad te deja pegar de cerca sin castigo: enganchá, stackeá y sólo desenganche cuando él prenda la R."
+        ]
+      },
+      {
+        "cid": 266,
+        "name": "Aatrox",
+        "tips": [
+          "Castigalo con el dulce (tercera Q) desde el nivel 1: Mundo es débil early y cada poke sin respuesta es vida que no va a recuperar.",
+          "Guardá la E para esquivar el hueso: sin acertar la Q no se cura y vos pegás libre con los sweetspots.",
+          "Aceptá el all-in solo con tu R prendida: tu curación en pelea corta más el burst ganan antes de que la suya pague.",
+          "Si se va agresivo con R abajo de la mitad de vida, caminá hacia atrás mientras pegás: el knock-up de tu Q lo mata en la persecución."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q de ángulo detrás de tus propios minions; si acierta, te curás y queda slowed para encadenar el siguiente cast",
+        "Trade corto: Q acertada → auto potenciada con la E → prendé W mientras te responde para drenar daño y mitigar lo que entra",
+        "All-in nivel 6: bajalo con Q a media vida → E → auto → R (es reset de auto) → perseguilo con el slow y ejecutá con la Q",
+        "Farm bajo castigo: ejecutá el melee minion con la E (sale volando y arrastra a los de atrás) o la Q cuando no llegues con el auto, así recuperás el costo de vida",
+        "Teamfight: entrá de frente a media vida con R prendida y W arriba, y usá el slow de la Q para garantizar el follow-up de tu equipo"
+      ],
+      "tips": [
+        "Auto antes de la R siempre: la R es un reset de auto y ese golpe extra define all-ins apretados.",
+        "No spamees Q a lo loco: cada falla es vida perdida sin curación de vuelta, y tu vida es tu único recurso, no tenés maná.",
+        "Prendé la R apenas te comprometés a la pelea larga, no cuando estás casi muerto: si esperás demasiado, morís antes de que el regen pague.",
+        "Mantené la wave de tu lado early: sin movilidad, un push injustificado es una invitación firmada al gank del jungla rival.",
+        "Cuando te agarren con CC, buscá el frasco que cae: es curación y velocidad de movimiento gratis; ponete a caminar hacia él ni bien te suelten."
+      ],
+      "plan": {
+        "early": "Jugá safe hasta tener niveles y componentes: farmeá con Q en los matchups malos, mantené la wave de tu lado y al llegar a 6 pokeá con Q antes de buscar el all-in con R.",
+        "mid": "Sé el front line de tu equipo en cada pelea y splitpush entre objetivos para llamar la atención; con el core armado empezás a dolear, zonear y habilitar a tus carries con el slow de la Q.",
+        "late": "Pegado a tu equipo siempre: quedate al frente soportando daño con la R disponible para divear, y con la Q buscá picks o peleá por tu carry si el backline rival se acercó de más."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/drmundo/build",
+      "https://mobalytics.gg/lol/champions/drmundo/guide"
+    ]
+  }
+}

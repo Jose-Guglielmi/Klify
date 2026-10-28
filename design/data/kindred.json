@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "kindred",
+    "ddragonId": "Kindred",
+    "name": "Kindred",
+    "titleEs": "los Cazadores Eternos",
+    "cid": 203,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.91,
+    "pr": 2.74,
+    "br": 1.52,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.3,
+      "jungle": 97.4,
+      "middle": 0.7,
+      "bottom": 1.5,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kindred.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kindred_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 56.14, "games": 228 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 55.03, "games": 825 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 54.58, "games": 295 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 54.23, "games": 461 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 54.15, "games": 301 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 53.97, "games": 504 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 53.7, "games": 1095 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 53.41, "games": 455 }
+  ],
+  "weakAgainst": [
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 44.89, "games": 323 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 46.0, "games": 250 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 46.3, "games": 648 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 46.52, "games": 273 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 46.62, "games": 577 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 47.01, "games": 536 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 47.49, "games": 638 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.54, "games": 833 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El kiting con Q es interminable contra melee sin dash: si no tenés forma de cerrar la distancia, no la vas a tocar nunca.",
+      "Cada marca le suma daño y rango: con 6+ marcas su alcance supera al de casi cualquier tirador y pega desde fuera de tu respuesta.",
+      "Hace objetivos sola sin despeinarse: cada dragón que no contestás es oro, experiencia y una marca regalada.",
+      "La Q salta paredes: sus rutas de gank no respetan las visiones comunes y aparece por ángulos que no estás cubriendo.",
+      "La R anula toda muerte bajo 10% de vida en su zona: tus all-ins ganados se convierten en empates mientras dure Lamb's Respite."
+    ],
+    "weaknesses": [
+      "Es de papel: un solo stun la baja antes de que llegue a saltar, porque toda su defensa es movilidad.",
+      "Su pelea depende de la W: sin la zona del Lobo activa, la Q no se recarga y su daño se corta a los dos segundos.",
+      "La R mal usada le regala la pelea: si la tira tarde, la curación final también toca a tu equipo; salí de la zona y reataqué al expirar.",
+      "La obsesión por las marcas la mata: ward de sus camps de marca y esperala sola, porque casi siempre camina hacia la marca aunque sea un suicidio.",
+      "Atrasada en marcas y niveles su daño no alcanza: invadí temprano y negale cada campamento de marca posible."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con la E: primer gank real con slow y crit de ejecución; no te pares a media vida en sus rutas de jungla.",
+      "Primer item completo: su duelo se vuelve ganable contra casi cualquier jungla; no pelees marcas sin ventaja de números.",
+      "Q a nivel 9: hops casi sin cooldown dentro de la W; en ese minuto no la persigas, que te mata corriendo.",
+      "4+ marcas en mid game: derretís tanques y squishies por igual; agrupate y no camines solo por el mapa.",
+      "Nivel 16 con R maxeada: la zona está disponible en cada pelea de objetivo; contá su cooldown antes de forzar dragón o barón."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Peleale desde tu rango máximo y obligala a gastar la Q para acercarse: cada hop ofensivo es uno menos para escapar.",
+        "Los junglas de rango le ganan la invasión: campiá sus entradas y castigá cada clear que arranca sin visión.",
+        "Negale las marcas con wards en sus camps: sin marcas su rango nunca escala y queda siendo una tiradora de 500 corta."
+      ],
+      "tanks": [
+        "Su E pega como % de vida faltante: no te confíes en el tanque para quedarte bajo vida en el duel, el tercer golpe critica.",
+        "Comprate armor temprano: su daño es físico y todo crit de ejecución; un item de armadura le corta el ritmo entero.",
+        "Forzalá a saltar sin parar: un engage que no la deja quieto le niega los tres autos de la E y su DPS de un objetivo queda sin uso."
+      ],
+      "assassins": [
+        "Toda su defensa es movilidad: esperá que gaste el hop en el campamento o en el kiting y saltala recién ahí.",
+        "Cuidado con la R: si la veis aparecer antes de tu burst, salí de la zona y reenganchá cuando expire la curación final.",
+        "Seguí su ruta de marcas en el minimapa: la vas a encontrar sola en la jungla más de una vez por partida."
+      ],
+      "crowdControl": [
+        "Un solo stun la mata: guardá el CC para cuando se acerque a pegar y no lo gastes en el delantero.",
+        "Encadená el control antes de que arranque la pelea: sin tiempo para la R, no tiene plan B defensivo.",
+        "Zonéala con tu CC encima: si no puede entrar a rango de la E, su daño de un solo objetivo no existe en teamfight."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 113,
+        "name": "Sejuani",
+        "tips": [
+          "Peleale pegada dentro de tu W: la escarcha acumulada te gana cualquier duelo extendido y Kindred necesita peleas cortas para vivir.",
+          "Guardá la Q → E para cuando se acerque a marcar: si el aturdimiento la agarra en rango, no hay hop que la salve.",
+          "Enganchá con R cuando su Lamb's Respite no esté en mano: sin la zona, tu control la convierte en un kill gratis para tu equipo."
+        ]
+      },
+      {
+        "cid": 9,
+        "name": "Fiddlesticks",
+        "tips": [
+          "Usá tu miedo apenas salte con la Q: el hop es toda su defensa y asustada queda parada en rango de tu drenaje.",
+          "Canaleá el drenaje entre arbustos cerca de sus camps: la sustain supera su trade corto y la obligás a gastar la Q para huir en vez de pegar.",
+          "Entrá con la R después de que use la R de Lamb: la zona evita muertes pero tu burst al expirar los agarra con la curación encima."
+        ]
+      },
+      {
+        "cid": 91,
+        "name": "Talon",
+        "tips": [
+          "Seguí su ruta de marcas en el minimapa: Kindred camina sola hacia cada marca y eso es un burst regalado para vos.",
+          "Peleale cerca de paredes: tu E te da la iniciativa y le niega el kiting en línea recta que necesita para pelear.",
+          "Si saca la R de Lamb, salí de la zona y reenganchá al expirar: su vida queda a la vista y tu combo la ejecuta sin defensa."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Peleá entre tus plantas: su daño es de un solo objetivo y tus plantas le roban el foco mientras castigás desde atrás.",
+          "Guardá la raíz (E) para el salto de la Q: si la agarrás parada, tu combo entra entero y su movilidad deja de existir.",
+          "Tirá la R debajo de ella en teamfight: o sale de la zona y pierde el DPS, o se queda y come el knock-up agrupada con su equipo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de jungla: activá W → Q dentro de la zona (el cooldown se recarga más rápido) → tercer auto con E para el slow y el crit de ejecución",
+        "Gank estándar: entrá por detrás → E al objetivo → Q hacia él pegando → tercer golpe de E para rematar o forzar el Flash",
+        "All-in de duelo: W → Q lateral esquivando el skillshot → E → Q de nuevo pegado al objetivo para tener el hop recargado",
+        "Pelea de objetivo: tirá R antes de que tu equipo baje de 10% → smite el objetivo dentro de la zona → Q para salir cuando expire y agarrar la curación",
+        "Kiting extendido: mantené W activa y saltá Q en cada auto: dentro de la zona el cooldown baja tanto que nunca te alcanzan"
+      ],
+      "tips": [
+        "No te cases con las marcas: una marca en lado enemigo con el jungla rival cerca es una muerte; tomá las seguras y negá las del enemigo con visión.",
+        "Activá W antes de cada campamento: el Lobo tanquea y tu Q recarga más rápido, así el clear te deja casi con vida llena.",
+        "Usá la E solo cuando los tres golpes entran seguros: contra un objetivo que se escapa, aplicala primero por el slow y no la gastes al inicio del trade.",
+        "La R es preventiva, no reparadora: tirala cuando veás el burst venir, porque usada tarde cura también al rival y te regala la pelea.",
+        "Solo dragona con prioridad en las lanes cercanas: si el jungla rival responde, tu R le gana el smite fight, pero un 3v1 no lo salva nadie."
+      ],
+      "plan": {
+        "early": "Hacé el clear completo con W activa, mirá el mapa para la primera marca y ganá los duelos de jungla con la E antes de forzar ganks.",
+        "mid": "Convertí cada marca en presión: cazar con criterio, ejecutá objetivos aislados y llamá dragón o barón después de cada kill.",
+        "late": "No pelees sin R en mano, quedate atrás pegando con el rango escalado por marcas y flankeá para ejecutar al carry con la E."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/kindred/build",
+      "https://mobalytics.gg/lol/champions/kindred/guide"
+    ]
+  }
+}

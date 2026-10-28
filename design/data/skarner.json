@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "skarner",
+    "ddragonId": "Skarner",
+    "name": "Skarner",
+    "titleEs": "El Soberano Primordial",
+    "cid": 72,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.74,
+    "pr": 0.89,
+    "br": 0.24,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 11.5,
+      "jungle": 72.5,
+      "middle": 0.6,
+      "bottom": 0.2,
+      "support": 15.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Skarner.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Skarner_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 59.27, "games": 572 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 55.8, "games": 362 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 54.92, "games": 437 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 54.84, "games": 434 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 54.72, "games": 254 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 54.61, "games": 423 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 54.29, "games": 455 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 54.01, "games": 287 }
+  ],
+  "weakAgainst": [
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 44.49, "games": 526 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 45.61, "games": 239 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 47.35, "games": 226 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 47.99, "games": 523 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 48.15, "games": 297 },
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 48.78, "games": 451 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 49.68, "games": 312 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 50.19, "games": 538 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E atraviesa el terreno y estampa al rival contra la siguiente pared: entra por rutas que no podés wardear y el stun llega antes de que puedas reaccionar.",
+      "Con la R (Empalar) se lleva a un carry arrastrado hasta su equipo: un pick suyo no termina en un kill, termina en una teamfight perdida.",
+      "Es tanque con daño de vida máxima por la pasiva (Temblor): no importa cuánta vida compres, el porcentaje te la muerde igual.",
+      "Limpia jungle y hace objetivos rápido: si lo dejás dos segundos solo en el río, los grubs y el dragón son suyos."
+    ],
+    "weaknesses": [
+      "Depende de dos habilidades con cast visible: si le negás la E y le guardás CC para la R, se queda sin forma de entrar a la pelea.",
+      "La R es suppress pero se interrumpe con CC: cualquier stun o knock-up antes del contacto la cancela y le come el cooldown entero.",
+      "Sin visión no hay gank: con wards en las entradas por pared sus ángulos se cierran y su presión desaparece.",
+      "Late game pierde filo: su daño no escala como el de un carry y toda su utilidad depende de tener la R en mano.",
+      "Es lento de arranque: antes del nivel 6 y del primer ítem completo su presión real es baja, y ahí se lo castiga."
+    ],
+    "powerSpikes": [
+      "Nivel 3: ya tiene Q + E y el primer gank con stun contra pared es real; no juegues pegado a la pared de tu lane.",
+      "Nivel 6: la R cambia el juego, puede sacarte de la lane y llevarte hasta su equipo; asumí que la tiene hasta verla usada.",
+      "Primer ítem de tanque completo: aguanta tu burst entero y sigue caminando; pelearle 1v1 de frente deja de ser una opción.",
+      "Nivel 11 y 16 con puntos en la R: el cooldown baja fuerte y vuelve a tener su pick disponible en casi cada pelea, así que cada R gastada te abre una ventana."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lillia, Kindred, Nidalee: kitealo, su daño es de rango corto y cada paso que das hacia atrás le cuesta la E.",
+        "Pegale desde fuera del alcance de su E y rompele el engage antes de que termine la carga; sin contacto no hay stun ni R encadenada.",
+        "Wardeá las paredes de tu jungle: sus ángulos de gank son las entradas por terreno, no las rutas comunes."
+      ],
+      "tanks": [
+        "Cho'Gath, Zac, Sejuani: en un 1v1 largo el Temblor muerde la vida máxima, así que tradeá corto y salí en vez de pelear de frente.",
+        "Comprá Resistencia Mágica temprano: su daño de pasiva es mágico y escala con tu propia vida, así que sin MR el porcentaje te come igual.",
+        "Guardá tu CC de área para el arranque de la E: interrumpirle la carga decide la pelea más que cualquier daño."
+      ],
+      "assassins": [
+        "Kha'Zix, Rengar, Talon: entrá después de que gaste la E, no antes; sin su movilidad es un tanque lento y predecible.",
+        "No pelees pegado a paredes: la mitad de su kill potential es estrellarte contra el terreno para el stun.",
+        "Forzá el 1v1 antes del nivel 6: ahí todavía no tiene la R y su única salida es caminar."
+      ],
+      "crowdControl": [
+        "Cualquier stun o knock-up antes del contacto de la R cancela el suppress y le deja la habilidad en cooldown: guardá el CC para ese instante.",
+        "Morgana, Malzahar y Lissandra le rompen el plan: el escudo de hechizos o un suppress propio convierten su engage en un suicidio.",
+        "Encadená CC sobre la carga de la E: si lo cortás a mitad de camino, queda en el medio de tu equipo sin haber hecho nada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Kitealo con Q y la pasiva: ganás el 1v1 solo si no lo dejás llegar, y cada pared que usa para la E es una ruta predecible que podés castigar.",
+          "Guardá tu E para cortarle la carga: si la E de Skarner no llega al contacto, no hay stun y tampoco hay R encadenada.",
+          "Pelealo lejos de paredes y de tu torre: su kill depende de estamparte contra terreno, y en campo abierto esa amenaza desaparece."
+        ]
+      },
+      {
+        "cid": 5,
+        "name": "Xin Zhao",
+        "tips": [
+          "Tu E y tu Q te dejan pelearle el 1v1 temprano: Skarner pierde trades antes del primer ítem completo, así que invadí su jungle en los primeros minutos.",
+          "No dejes que te enganche contra la pared: pelea en el medio del río o en campo abierto y su stun no existe.",
+          "Usá tu R para cortar el arrastre: si lo separás del resto del equipo cuando quiere llevarse a tu carry, le rompés la pelea entera."
+        ]
+      },
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Sé el primero en el río: su early es más lento que el tuyo y cada cangrejo o grub que le robás le atrasa el nivel 6.",
+          "Rapelá cuando cargue la E hacia la pared: si esquiva el contacto, el stun no entra y queda con la habilidad en cooldown.",
+          "Gankeá antes que él y snowbaleá las lanes: Skarner necesita objetivos y equipo agrupado, y con lanes perdidas no llega a ninguno de los dos."
+        ]
+      },
+      {
+        "cid": 234,
+        "name": "Viego",
+        "tips": [
+          "Tu Q y tu W te dan duelo sostenido: pelealo en campo abierto, nunca entre paredes, y ganás el 1v1 de vida larga.",
+          "Guardá tu dash para salir de su E cuando cargue: si no te estampa contra el muro, no hay stun ni R posible.",
+          "Si te agarra con la R, pedí peel inmediato: mientras te arrastra estás fuera de la pelea, y el suppress se corta si lo interrumpen."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: E hacia la pared del rival → contacto (stun) → Q empoderada → AA → W para el escudo y el slow → R si lo querés arrastrar al equipo",
+        "Pick sin pared: Flash → R sobre el carry → arrastralo hacia tu equipo → W para escudarte mientras lo traés",
+        "Pelea sostenida: Q (levantás la roca) → Q de nuevo (Upheaval, ralentiza) → AA → E para reposicionarte o cortar la salida → W cuando te tiren el burst",
+        "Clear de jungle: Q empoderada al monstruo grande → AA → W para el escudo que mitiga el daño de los camps → Q de nuevo apenas vuelva",
+        "Objetivo: pegale con la Q empoderada y guardá la E para salir por la pared si te colapsan"
+      ],
+      "tips": [
+        "No gastes la R como daño: es tu herramienta de pick; sin ella no sos una amenaza real en teamfight, así que con la R en cooldown jugá de frontliner y no de iniciador.",
+        "La E solo vale si hay pared cerca: mirá el terreno antes de cargarla, porque sin muro no hay stun y quedás en el medio del enemigo gratis.",
+        "Levantá la roca antes del trade: la Q empoderada pega mucho más que el auto base, y el proyectil de Upheaval ralentiza para que tu equipo llegue.",
+        "Wardeá tu propio jungle antes de gankear: tu presión depende de entrar por ángulos no wardeados; si te ven venir, perdés el pick y el tempo.",
+        "Armá tanque con vida y resistencias: tu daño ya escala con la vida del rival, así que no necesitás ítems de daño para ser relevante."
+      ],
+      "plan": {
+        "early": "Limpiá rápido y buscá el nivel 6 sin regalar tiempo: gankeá solo lanes empujadas o entradas por pared y wardeá el objetivo (grubs, dragón) en vez de forzar peleas sin R.",
+        "mid": "Jugá por picks con E + R sobre el carry más adelantado, asegurá cada dragón con tu equipo y no te quedes atrás de farmeo: este es tu pico real.",
+        "late": "Agrupá, entrá de flanco por visión negada y no inicies sin R: si no podés arrastrar a un carry, pasá a peel para tu propio carry y aguantá la frontline."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/skarner/guide",
+      "https://mobalytics.gg/lol/champions/skarner/combos"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "rammus",
+    "ddragonId": "Rammus",
+    "name": "Rammus",
+    "titleEs": "el Armadurillo",
+    "cid": 33,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.9,
+    "pr": 2.07,
+    "br": 5.71,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 3.7,
+      "jungle": 91.4,
+      "middle": 0.4,
+      "bottom": 0.1,
+      "support": 4.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rammus.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rammus_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 60.31, "games": 829 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 59.19, "games": 642 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 59.08, "games": 413 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 56.87, "games": 211 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 56.42, "games": 1675 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 56.1, "games": 729 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 55.51, "games": 245 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 55.04, "games": 1499 }
+  ],
+  "weakAgainst": [
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 46.52, "games": 976 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 48.11, "games": 1031 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 48.25, "games": 342 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 49.47, "games": 566 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 50.11, "games": 453 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 50.85, "games": 234 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 50.89, "games": 281 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 51.3, "games": 692 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El gank es casi imposible de fallar: Q rodando traba (knockback + stun breve) y el taunt de la E encadena encima; sin skillshot que esquivar, si estás fuera de posición en tu lane, el gank te encuentra.",
+      "Contra daño físico se convierte en una pared que devuelve el golpe: armadura + W reflejando en área significa que cada básica que le pegas sale con castigo automático.",
+      "La R tiene cooldown corto: rota, flanquea o salta picks una y otra vez durante la pelea; no es una ulti que guarda, es una que repite.",
+      "Aunque vaya atrás nunca deja de servir: W + items baratos lo mantienen como frontline útil incluso en partidas donde su jungla quedó perdida."
+    ],
+    "weaknesses": [
+      "Primer clear insalubre y early frágil: si lo invadís a nivel 2-3 no tiene recursos para pelear el 1v1 y sale entregando su camp.",
+      "Daño propio casi nulo: se apoya 100% en que su equipo complete el engage; si nadie lo sigue, su entrada es decorativa.",
+      "Toda su build es armadura: el daño mágico o verdadero pasa por encima del escudo, y le invierte el trade completo.",
+      "Predecible para llegar: solo entra rodando en línea recta o saltando con R; si le cortás la línea de la Q, se queda parado sin engage.",
+      "Depende de acercarse cuerpo a cuerpo: alejate apenas aterrice y su daño post-slam no justifica que siga flotando en la pelea."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q y E en mano: el primer gank real; si la lane quedó empujada hacia su torre, quitate del frente y jugá atrás.",
+      "Nivel 6: la R habilita picks desde flancos y dives de torre; cerca de estructuras el slam rinde el doble, así que no lo esperes solo en la river.",
+      "Primer item de armadura terminado (Thornmail o Sunfire): la W pasa de molesta a sangrante; evitá spamear básicas sobre él en ese punto.",
+      "Segundo punto en R (nivel 11): el cooldown baja tanto que la puede repetir en la misma teamfight; asumí que hay salto disponible siempre."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Parate detrás de tus minions cuando lo veas rodar: la Q se traba en el primer campeón que toca, y un peón adelante le mata todo el arranque.",
+        "Pokealo desde fuera del alcance de su W: sin alguien pegándole de cerca, los pinchos reflejados no existen y su tanqueo no daña.",
+        "Si saltó con R hacia vos, usá el dash apenas aterrice: su combo entero necesita tenerte cuerpo a cuerpo un segundo más de lo que querés estar."
+      ],
+      "tanks": [
+        "Cho'Gath y Trundle le calzan perfecto: daño verdadero (R de Cho) o robo de armadura (R de Trundle) convierten su stat principal en decoración.",
+        "Si caés en su taunt, no castigues el reflejo: al terminar el control alejate en vez de seguir golpeando; los púas son todo su daño en trade.",
+        "Elegí el ritmo: a los tanques los gana el reflejo, así que dejá pasar los primeros dos segundos del trade y terminá la pelea cuando la W se apaga."
+      ],
+      "assassins": [
+        "No all-innes con la W encendida: cada básica con pinchos activos te devuelve daño mágico en área; esperá el drop y entrá después.",
+        "Guardá tu escape para después de su Q, no para farmear: si la rodada no te encuentra, el taunt nunca te alcanza y quedás libre para castigar.",
+        "Zed, Talon, Rengar: su burst físico sale reflejado caro; jugá el trade corto lejos de la W encendida y all-in solo cuando la esté gastada."
+      ],
+      "crowdControl": [
+        "Toda su amenaza arranca en la Q: si encadenás tu CC primero, el armadurillo queda rodando de espaldas sin espejar nada.",
+        "El taunt se limpia: QSS o Limpio te devuelven al juego en el momento exacto en que él creyó ganarte; armá la limpia temprano si su equipo huele a engage.",
+        "Dejalo saltar primero en la teamfight: el slam es su único daño visible; si tu equipo sobrevive la entrada, Rammus se vuelve solo un estorbo gigante."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Tu R hace daño verdadero: toda su pila de armadura no existe contra vos; buscá el Feast con tu daño real apenas tengas stacks y nivel 6.",
+          "Invadilo temprano: su primer clear es insalubre y no gana el 1v1 contra vos a nivel 2-3; robale el camp y fuiste.",
+          "Pokealo con la Q desde rango: bajarle vida gratis lo obliga a entrar a la pelea ya lastimado, donde tu burst lo ejecuta antes de tauntar."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Tu Q pega daño verdadero y todo tu daño es mágico: su build de armadura no te defiende nada; no le regales el trade de bait, castigalo directo.",
+          "Guardá la E (el hechizo que duerme) para cuando lo veas rodar: cortale la Q en seco a media ruta y queda tirado en medio de la jungla sin engage ni escape.",
+          "Nunca pelees a su lado más de dos segundos: kitealo ganando velocidad con la Q en los bordes y su taunt nunca te alcanza para activar los pinchos."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Todo tu daño es mágico y a distancia: los púas reflejados de su W casi no te tocan si peleás desde afuera y no con básicas cuerpo a cuerpo.",
+          "Entrá con tu E desde ángulos sin línea recta: si no tenés una ruta limpia de rodada, la Q de Rammus pierde sentido y se queda parado.",
+          "Esperá que gaste el taunt antes de usar tu R: contrarrestar el engage cuando ya está vacío te deja la teamfight entera ganada."
+        ]
+      },
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Su kit entero es armadura contra tu burst mágico: el matchup es tuyo de fábrica; armate AP agresivo en vez de defensas y exigile cada trade.",
+          "Esperá que gaste la W en el camp o el clear: sin púas rotando, su daño en el trade es cercano a cero y no tiene curación con la que responder.",
+          "Al nivel 6 buscá el all-in: saltale con Q + R y, si escapa, el reset de tu Q alcanza igual; el taunt te agarra lejos o no te agarra."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: rodá con Q desde la niebla → impacto (knockback + stun breve) → E (taunt) inmediato para que quede pegado a tus púas → W apenas estés cuerpo a cuerpo",
+        "All-in nivel 6: Q → E taunt → W rotando → R si el rival intenta escapar (el aterrizaje agrega el control extra que le corta el Flash)",
+        "Engage de teamfight desde flanco: R directo sobre el carry rival → E taunt encima → W prendida para que cada básica enemiga pague el piso",
+        "Dive de torre: R dentro del rango de la torre enemiga (cerca de estructuras el slam amplifica radio y daño) → tanqueá un par de golpes → rodá hacia afuera con Q para escapar",
+        "Peel del carry: cuando el rival salta a tu ADC, R sobre ese atacante → E taunt → W plantado encima de tu carry: su combo muere en vos y tu backline queda libre"
+      ],
+      "tips": [
+        "Abrí la Q fuera de visión: rodar en línea recta adelantada es regalar el esquive; la Q es tu único gap closer y se traba en el primer campeón que toca.",
+        "Activá la W apenas impactás, no antes de la rodada: los pinchos sobre el objetivo marcado son tu DPS; prendida antes es maná tirado.",
+        "Usá el taunt en el rival sin escape, y reservá la R para el que está forzado a flashear: enganchar al que puede salir te roba el combo entero.",
+        "Usá la W solo en camps y peleas: apagala apenas termina el camp (el recast temprano te devuelve maná y el clear no se cae).",
+        "Armá Thornmail y botas blindadas en casi todo matchup físico, pero si el rival es 4-5 AP pasá a Kaenic o Force of Nature: armadura contra mago es tirar oro."
+      ],
+      "plan": {
+        "early": "Clear saludable evitando al invasor rival a toda costa: desde nivel 3 buscá ganks con Q + E en lanes empujadas porque tu presencia temprana paga más que el farmeo, y después asegurá el scuttle del lado de tu clear.",
+        "mid": "Rotá con el cooldown corto de R entre picks y dives: tanqueá el objetivo primero con taunt + armadura y usá el slam cerca de estructuras para empujar torres con tu equipo.",
+        "late": "Flankeá con R desde la niebla hacia el carry rival, pero evitá morirte antes de que aparezca el próximo objetivo: un Rammus plantado delante de su ADC vale más que un pick aislado a esa altura."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/rammus/guide",
+      "https://mobalytics.gg/lol/champions/rammus/build"
+    ]
+  }
+}

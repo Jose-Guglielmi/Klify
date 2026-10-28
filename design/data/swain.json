@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "swain",
+    "ddragonId": "Swain",
+    "name": "Swain",
+    "titleEs": "el Gran General Noxiano",
+    "cid": 50,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.05,
+    "pr": 3.46,
+    "br": 2.81,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 9.7,
+      "jungle": 0.1,
+      "middle": 13.9,
+      "bottom": 15.6,
+      "support": 60.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Swain.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Swain_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.43, "games": 249 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 56.7, "games": 321 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.04, "games": 1001 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 54.93, "games": 213 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 54.5, "games": 1578 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 53.85, "games": 3081 },
+    { "cid": 432, "slug": "Bard", "name": "Bardo", "vsWr": 53.42, "games": 848 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 52.95, "games": 1847 }
+  ],
+  "weakAgainst": [
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 39.73, "games": 224 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 42.73, "games": 653 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 43.98, "games": 407 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 44.39, "games": 971 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 45.07, "games": 1289 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 45.18, "games": 923 },
+    { "cid": 117, "slug": "Lulu", "name": "Lulu", "vsWr": 45.49, "games": 2693 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 46.08, "games": 217 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Nevermove (E) es ida y vuelta: si conecta el regreso, arrastra al rival a tu zona y encadena con cualquier CC del equipo; contra carries inmóviles es casi un root garantizado.",
+      "La Vision of Empire (W) da visión real del área desde lejos: sirve para setear ganks del jungla, chequear objetivos y castigar al que se esconde en la niebla sin cara a cara.",
+      "Los fragmentos de alma lo sostienen: cada target inmovilizado cerca suyo le devuelve vida, así que los trades largos y las peleas agrupadas siempre los gana por desgaste.",
+      "La R (Demonic Ascension) lo convierte en un drenador de área: en peleas cerradas o alrededor de un dragón/barón su daño y su curación escalan con la cantidad de enemigos pegados.",
+      "Post item y con niveles, su daño de pelea larga es de los más altos del soporte: no necesita burst, necesita que la pelea dure veinte segundos."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni escape, un gank o un engage bien puesto lo mata; depende de estar parado detrás de la wave o cerca de su torre.",
+      "El early es flojo: antes del nivel 3 y del primer item casi no puede pelear, y cualquier all-in con CC lo pasa por arriba.",
+      "Toda su amenaza está en la E: si la tira al aire o la tiene en cooldown, es un blanco quieto sin forma de frenar a nadie.",
+      "Las Heridas Graves le cortan la mitad del kit: con anti-curación encima, ni la pasiva ni la R lo salvan de una pelea larga.",
+      "Sin R en mano baja muchísimo: pierde curación amplificada y daño de área, así que la ventana entre ults es el momento de castigarlo."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primera combo completa (E → E → Q → W) y ya puede pelear trades largos contra la bot enemiga; antes de eso, jugá atrás.",
+      "Nivel 6: la R le permite all-inear a los dos de la bot a la vez; si la pelea se arma cerca de la wave agrupada, drenar es automático.",
+      "Primer item completo: el salto de daño es enorme y ahí empieza a ganar trades que antes perdía; cuidado con la lane brush.",
+      "Nivel 11: la R escala fuerte en teamfight y su capacidad de zoneo crece; en peleas por objetivo ya es un problema real.",
+      "Niveles 16 y late: con la R maximizada y cooldowns bajos puede encadenar all-ins casi sin pausa y zonear a los carries inmóviles él solo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vel'Koz, Hwei, Zyra: pegale desde fuera del alcance de la E y no aceptes el trade cuerpo a cuerpo; si te arrastra, perdiste media vida y el lane.",
+        "Empujá la wave y obligalo a farmear bajo torre: sin wave propia no puede usar la E para zonear y su sustain se cae.",
+        "Cuando la E esté en cooldown, ese es tu momento de poke libre: anotá el timer, es larguísimo y es toda su defensa."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica y anti-curación temprano: su daño es sostenido y su sustain es lo que realmente lo mantiene vivo en la pelea.",
+        "Mercury's Treads o cualquier tenacidad le arruina la cadena: si el arrastre de la E dura menos, tu equipo puede reposicionar.",
+        "No luches en espacios cerrados con la R arriba: obligalo a pelear en abierto, donde su curación de área rinde muchísimo menos."
+      ],
+      "assassins": [
+        "LeBlanc, Katarina, Fizz: esperá a que gaste la E para empujar o zonear y entrá ahí; sin esa habilidad no tiene cómo frenarte.",
+        "Su punto débil es el arranque: si lo agarrás antes del nivel 3 o sin R, cae en dos rotaciones y no tiene escape.",
+        "No lo persigas dentro de la R: el drenaje te gana el 1v1; pegale, salí del área y volvé cuando la ult se apague."
+      ],
+      "crowdControl": [
+        "Encadená CC sobre el arranque de la R: interrumpir la canalización o stunearlo en el primer segundo le corta la única pelea que sabe ganar.",
+        "Su pasiva se alimenta de targets inmovilizados: si tu equipo tiene mucho CC, cuidado con regalarle fragmentos y curación gratis.",
+        "Zilean y Renata le rompen el plan: revivir al carry que drenó o dárselo vuelta con un CC largo invierte la pelea entera."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 7,
+        "name": "LeBlanc",
+        "tips": [
+          "Entrá y salí con la distorsión antes de que conecte la E: si el arrastre no te encuentra, no tiene forma de castigarte y gasta el maná igual.",
+          "Pokealo desde fuera del alcance de la Nevermove y forzálo a farmear con la Q: sin vida no puede sostener la lane ni setear ganks.",
+          "Cuando llegue a 6, no te quedes pegado a la wave: su R + E te drena la pelea entera, mejor burstearlo y salir antes de que la ult se estabilice."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Pokealo con las bombas desde rango y guardá la velocidad para salir del arrastre de la E: su única entrada es lenta y telegrafiada.",
+          "Su daño es sostenido: si el trade se alarga, perdés; hacelo corto, salí y volvé con las bombas.",
+          "Guardá la ult para el carry que esté drenando en la R de Swain: revivirlo después del burst anula toda su pelea."
+        ]
+      },
+      {
+        "cid": 888,
+        "name": "Renata Glasc",
+        "tips": [
+          "Usá el escudo y el CC para cortar la entrada: si no puede arrastrar con la E, no puede iniciar nada.",
+          "Tu ult lo convierte en tu mejor aliado a mitad de pelea: esperá a que active la R y giralo contra su propio equipo.",
+          "Peleá cerca de tus carries y no en espacios cerrados: la Demonic Ascension quiere peleas apretadas, vos querés lo contrario."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Mantené la distancia del arrastre de la E y castigalo cada vez que camine a farmear: su rango es corto comparado con el tuyo.",
+          "Empujá la wave con Q y W para que no pueda usar la E ofensiva sin quedar expuesto a un gank.",
+          "Guardá el knock-up para cuando active la R: interrumpirle la ult le saca la curación y el daño de área de la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: E → E (el regreso lo arrastra) → Q pegado encima → AA; nunca tires la Q antes del arrastre porque se pierde el daño máximo",
+        "Pick con rango: W sobre el target → E → E para arrastrarlo dentro del área de la W → Q, y tu carry remata gratis",
+        "All-in con Flash: Q → Flash encima del enemigo → E → W → R → E otra vez → AA → segunda parte de la R para cerrar",
+        "Engage de teamfight: R primero para entrar drenando → E → W → E de nuevo → Q sobre los agrupados → AA → segunda R cuando el equipo enemigo ya está bajo",
+        "Sustain de lane: W sobre la wave y los enemigos para juntar fragmentos de alma, y comerciá recién con la vida arriba y la E disponible"
+      ],
+      "tips": [
+        "No arranques con la E al aire: guardala para responder el engage enemigo o para seguir el CC de tu carry; sin ella quedás parado sin frenar a nadie.",
+        "Antes del nivel 3 jugá atrás y farmeá: cualquier trade largo en ese momento lo perdés y le regalás al rival la lane entera.",
+        "Usá la W para scouting, no solo para daño: chequeá el objetivo o el arbusto antes de que tu equipo camine a cara descubierta.",
+        "Si el rival compra anti-curación, no insistas en peleas largas: cambiá a picks cortos con E y dejá la R para cuando la pelea sea de área.",
+        "Nunca camines solo en mid/late: Swain gana peleas agrupadas y pierde todas las de uno contra uno fuera de la R."
+      ],
+      "plan": {
+        "early": "Jugá atrás hasta el nivel 3, farmeá con Q y W desde lejos, no aceptes trades largos y aprovechá la E solo para castigar un error concreto del rival o para setear el gank de tu jungla.",
+        "mid": "Quedate pegado a tu carry, poné visión antes de cada objetivo con W incluido, buscá picks sobre targets aislados con E + W y rotá a mid después de tirar la torre de bot.",
+        "late": "Peleá siempre agrupado y en espacios cerrados, entrá con la R cuando el enemigo ya está comprometido, encadená E → W sobre los agrupados y no te alejes del equipo para wardear solo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/swain/guide",
+      "https://mobalytics.gg/lol/champions/swain/combos",
+      "https://mobalytics.gg/lol/champions/swain/build?role=support"
+    ]
+  }
+}

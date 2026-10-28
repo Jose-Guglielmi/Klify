@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "blitzcrank",
+    "ddragonId": "Blitzcrank",
+    "name": "Blitzcrank",
+    "titleEs": "el Gran Gólem de Vapor",
+    "cid": 53,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.48,
+    "pr": 7.74,
+    "br": 15.64,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0.1,
+      "middle": 0.2,
+      "bottom": 0.1,
+      "support": 99.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Blitzcrank.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Blitzcrank_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 64.84, "games": 364 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 63.73, "games": 510 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 58.02, "games": 212 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 56.08, "games": 3497 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 55.37, "games": 354 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 55.13, "games": 1344 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 54.82, "games": 1950 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 54.26, "games": 282 }
+  ],
+  "weakAgainst": [
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 43.11, "games": 450 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 46.98, "games": 2199 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 47.02, "games": 302 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 47.57, "games": 2350 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 47.62, "games": 1178 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 48.39, "games": 248 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 48.83, "games": 428 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 49.01, "games": 606 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El gancho (Q) es de las habilidades más temidas del juego: uno solo bien tirado, desde un ángulo que el rival no esperaba, define la pelea entera.",
+      "La R silencia y destruye escudos: los enchanters que viven de escudar se quedan sin herramienta justo en el momento del all-in.",
+      "Nivel 2 es kill real: gancho + knock-up de la E antes de que el rival tenga su combo trae primera sangre al bot lane.",
+      "Con W de velocidad y gancho en mano, su presión de mapa es de otro nivel: roams a mid, invasiones al jungla rival y emboscadas en brush.",
+      "Su combo no depende de skillshots encadenados: si el gancho entra, la E y la R son imposibles de fallar."
+    ],
+    "weaknesses": [
+      "Con Q en cooldown es un minion grande: presión de lane cero y licencia para caminarle encima y castigarlo diez segundos enteros.",
+      "Sin maná no es amenaza: si lo obligás a fallar ganchos seguido, se queda sin pool para la combo y el lane es tuyo.",
+      "Movilidad nula más allá de la W: sin Flash, su único gap closer es un skillshot que podés esquivar detrás de los minions.",
+      "El gancho también juega para el rival: si gancha a tu tanque, le regaló el engage a tu equipo; usalo de cuerpo y contraatacá.",
+      "Late game es frágil de posición: cada vez que avanza a ganar sin respaldo, es un pick gratis para el equipo que tenga visión."
+    ],
+    "powerSpikes": [
+      "Level 2: primera ventana de kill con Q + E knock-up; no le des el ángulo limpio mientras estás en 1.",
+      "Botas compradas: arranca el timer de roams; avisá a tu equipo cuando lo veas salir del lane.",
+      "Level 6: burst de R + destrucción de escudos en el 2v2; si tu support es escudador, no peleés pegados mientras la tenga.",
+      "Mid game: el cooldown del gancho baja tanto que puede pescar dos veces por pelea; asumí que siempre está pescando en brush.",
+      "Late con build completa: es un tanque con pick instantáneo; la forma de jugar contra él no cambia, solo que cada gancho conectado es un campeón menos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokealo desde fuera del rango del gancho y parate con un minion siempre en el medio: cada Q que falla es maná y presión tirada a la basura.",
+        "Contá su cooldown en voz alta: con la Q usada, son unos veinte segundos de lane gratis para last-hitear y castigarlo a la cara.",
+        "Si sos ADC enchanter con dash (Tristana, Ezreal), guardalo: tirar el dash primero es regalarle el gancho fácil."
+      ],
+      "tanks": [
+        "Parate entre Blitzcrank y tu carry en cada wave: cuerpo en el medio convierte cada gancho en maná desperdiciado.",
+        "No te asustes de ser ganchado: tu trabajo es justo ese; aguantá la combo y tu equipo entra por la ventana que él mismo abrió.",
+        "Después del all-in fallido queda parado encima tuyo sin nada: ahí es kill seguro o al menos el doble de tu carry."
+      ],
+      "assassins": [
+        "Esperá que tire el gancho antes de saltar: esquivada la Q, no tiene forma de impedir que lo borres, porque no tiene escape.",
+        "Gankéalo igual que a cualquier inmóvil: sin Flash es el junglero invitado de honor de tu ruta de farmeo.",
+        "No lo saltés parado en brush que no tiene visión: su combo está diseñada para pescar gente que aparece de la nada."
+      ],
+      "crowdControl": [
+        "Castigá cada paso adelante: si le metés CC cuando cruza para pescar, muere antes de llegar, porque su defensa es el rango, no la vida.",
+        "Guardá el CC para después del gancho: si ganchó a tu carry, interrumpir la E o la R puede salvar el trade entero.",
+        "Silencio antes de Flash: si ves la W prender, tirale el CC en el camino, que la W dura poco y sin velocidad queda a pie."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Sos el peor rival de Blitzcrank: parate adelante del carry y dejá que gane a tu cuerpo; la combo completa no te baja y le quemó todo el maná.",
+          "Guardá el Dazzle (E) para cuando cruce después del gancho: stunearlo en medio de la W lo deja parado a mitad de camino sin nada.",
+          "Al nivel 6 ignorá el all-in: con la R activa su combo entera es ruido; recién ahí podés pelear mirándolo a los ojos."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "El muro de la E traga el gancho: leé su postura y levantalo apenas mueva el brazo; cada Q bloqueada es un mini-truco ganado.",
+          "Saltá con la W a tu carry apenas lo ganche: tu pasiva encima del que enganchó convierte su all-in en un trade perdedor.",
+          "En brushes tenés ventaja: tu pasiva con auto-attacks pelea mejor en cuerpo a cuerpo que su combo de un solo uso."
+        ]
+      },
+      {
+        "cid": 3,
+        "name": "Galio",
+        "tips": [
+          "Dejá que gane a vos si tiene que elegir: sos tanque, tenés escudo mágico y tu taunt (E) lo para en seco el engage.",
+          "Respondé cada gancho con taunt al ADC rival: la matemática del 2v2 te favorece si intercambiás CC por CC.",
+          "Con la W cargada castigalo cada vez que avance a pescar: sin movilidad, no puede esquivarte ni escaparte."
+        ]
+      },
+      {
+        "cid": 12,
+        "name": "Alistar",
+        "tips": [
+          "Ponete delante del ADC como cuerpo: sos el tanque que menos le conviene ganar, porque vos sí podés responder el engage con W + Q.",
+          "Contra-all-in: apenas ganche a tu carry, metelo volando con la W-Q al Blitzcrank o al ADC rival y peleá de cerca, donde él peor funciona.",
+          "Con tu R activa su combo entera te hace cosquillas: si te gancha a vos, agradecé y prendé la definitiva para absorber."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage estándar: Q → E apenas aterriza el gancho → auto-attack → R debajo de sus pies mientras queda knockupeado",
+        "Pursuit con W: W → Q → R mientras vuela en el aire → E + AA cuando toca el piso (la velocidad de la W tapona cualquier reacción)",
+        "Anti-Flash: R primero para silenciar → Q al instante → E + AA (sin poder tirar escape, el objetivo no se va)",
+        "Engage de cerca: W → E knock-up → Q en el aire → AA (para cuando ya estás encima del rival sin necesidad de pescarlo de lejos)",
+        "Daño máximo en 2v2: Q → W (velocidad de ataque) → AA → E → AA → R para ejecutar lo que quede vivo"
+      ],
+      "tips": [
+        "No tires Q como poke a vida llena: si fallás, sos un gólem decorativo por veinte segundos; tirá el gancho solo si estás seguro de que entra.",
+        "Esperá a que el rival gaste su dash antes de pescar: el gancho contra alguien sin movilidad es casi gratis, contra un dash es moneda al aire.",
+        "Manejá el maná como si fuera tu segunda vida: siempre tené lo justo para Q + E en reserva, porque sin esa combo tu presencia en lane es cero.",
+        "Emboscá al support rival cuando sale solo a warding: es el pick más rentable del mapa y no necesita Flash para ejecutarse.",
+        "En late game no ganches nunca al tanque: un Maokai o un Alistar enganchado es el engage del equipo rival servido en bandeja."
+      ],
+      "plan": {
+        "early": "Buscá nivel 2 antes que el rival y all-in con Q + E al primero que cruce el ángulo; después pescá solo con el dash del rival gastado y armate botas para empezar a roamear.",
+        "mid": "Roameá con W por brushes y rutas laterales buscando picks: cada gancho conectado es un objetivo gratis, avisá a tu equipo y forzá dragón o torre con el tiempo de muerte.",
+        "late": "Pegale al squishy o no pegues: en teamfight esperá el agrupado para R de silencio y quedate cerca de tu carry para peel con E; nunca warding solo, porque sos el pick que el rival está buscando."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/blitzcrank/guide",
+      "https://app.mobalytics.gg/lol/champions/blitzcrank/combos"
+    ]
+  }
+}

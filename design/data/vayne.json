@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "vayne",
+    "ddragonId": "Vayne",
+    "name": "Vayne",
+    "titleEs": "la Cazadora Nocturna",
+    "cid": 67,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.62,
+    "pr": 4.01,
+    "br": 4.16,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 22.9,
+      "jungle": 1.4,
+      "middle": 1.8,
+      "bottom": 73.7,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vayne.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vayne_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 55.25, "games": 3649 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 53.54, "games": 904 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 53.02, "games": 447 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 52.78, "games": 216 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 52.75, "games": 309 },
+    { "cid": 202, "slug": "Jhin", "name": "Jhin", "vsWr": 52.5, "games": 5768 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 51.88, "games": 4518 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 51.4, "games": 463 }
+  ],
+  "weakAgainst": [
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 45.81, "games": 203 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 45.85, "games": 783 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 46.75, "games": 1275 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 47.38, "games": 1319 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 48.39, "games": 1798 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 48.58, "games": 5014 },
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 48.75, "games": 1364 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 49.1, "games": 2051 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Las Silver Bolts (W) pegan daño verdadero porcentual: cuanto más vida tenga el rival, más le duele, así que los tanques no la counterean, la alimentan.",
+      "La Q (Tumble) es un dash corto con reset de auto: le sirve para esquivar skillshots, reposicionarse y meter tres autos en el tiempo de dos.",
+      "La R (Final Hour) le da AD, velocidad de movimiento y camuflaje al castear Tumble: en late es una pelea ganada si la usás para reenganchar por el flanco.",
+      "El E (Condemn) es peel y kill a la vez: stunear contra pared decide duelos y corta engages, y es su única herramienta defensiva real.",
+      "Escala como pocos: con tres items es el carry más fuerte del juego y puede ganar peleas 1v2 si el rival no tiene CC duro."
+    ],
+    "weaknesses": [
+      "Rango de auto corto (550) para un ADC: cualquier campeón con más alcance le pega gratis y la obliga a caminar hacia la zona castigable.",
+      "Early game muy débil: sin items ni W escalada pierde casi todos los trades largos y muere fácil a un gank bien temporizado.",
+      "Cero waveclear: limpia la wave a autos uno por uno, así que la empujan contra su torre y le regalan placas sin pelear.",
+      "Depende 100% del E para sobrevivir: si gasta Condemn en farmear o en un engage fallido, queda sin peel por varios segundos y eso es kill.",
+      "Sufre el CC en área: un stun o un root en el momento del engage la borra antes de que llegue al tercer auto, y no tiene escape instantáneo más que el camuflaje."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R le da AD, velocidad y camuflaje; ahí sí puede buscar all-ins en lane y ganar trades que antes perdía.",
+      "Primer item completado: el salto de DPS la vuelve una amenaza real en peleas de dos o tres items.",
+      "Dos items: las Silver Bolts ya derriten tanques y puede duelar bruisers; es el momento de empezar a jugar agresiva por el flanco.",
+      "Tres items + nivel 16: pico máximo absoluto; si el juego llega acá sin que la hayan frenado, la partida es suya."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Ezreal, Kog'Maw: jugá fuera de tu propio rango de auto y casteá desde el alcance máximo; Vayne tiene que caminar para pegarte y ese paso es tu trade gratis.",
+        "Empujá la wave constante: sin waveclear, cada wave empujada la encierra contra su torre y le come placas mientras vos rotás.",
+        "Guardá tu movilidad o tu poke para cuando use Q: si gasta Tumble para farmear, ahí tenés una ventana de tres segundos para castigarla."
+      ],
+      "tanks": [
+        "Vayne es la peor noticia para un tanque: las Silver Bolts pegan daño verdadero porcentual, así que stackear vida es regalarle daño.",
+        "Comprá utilidad además de resistencias: Randuin o Frozen Heart le cortan la velocidad de ataque y con eso le rompés el ciclo de tres autos.",
+        "No pelees solo contra ella en late: necesitás CC de equipo para trabarla, porque en duelo extendido te gana siempre."
+      ],
+      "assassins": [
+        "Zed, Katarina, Talon: esperá a que gaste el Q o que se aleje de una pared; sin Condemn disponible, un all-in bien armado la mata.",
+        "Flanqueala cuando esté farmeando sola en la side lane: es donde más muere, porque no tiene waveclear para escapar rápido.",
+        "Forzá el engage antes de que llegue a tres items: cada minuto que pasa, tu ventana se cierra."
+      ],
+      "crowdControl": [
+        "Un stun, root o supresión al inicio de la pelea la deja sin kite y sin daño: es el counter más directo que tiene.",
+        "Encadená CC en área sobre su equipo: si no puede moverse entre autos, las Silver Bolts nunca llegan al tercer stack.",
+        "Reservá el CC duro para después de que use la R: el camuflaje del Tumble le permite reposicionarse y necesita estar trabada para que no escape."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Tu rango te deja castigarla en cada last hit: tirá la Q desde afuera de sus 550 de alcance y el lane se vuelve gratis.",
+          "Guardá el E (empuje) para cuando camine hacia vos con la R prendida: sacarla de rango corta el all-in antes de que stackee las Silver Bolts.",
+          "Al nivel 6 no te pares cerca de la wave con poca vida: su combo completo te borra antes de que llegues a reaccionar."
+        ]
+      },
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Tenés más alcance con la W activa: pokeala desde el borde de tu rango y nunca aceptes un trade de autos cuerpo a cuerpo.",
+          "Empujá la wave y pedí gank: sin waveclear, Vayne no puede contestar el push y queda expuesta bajo su torre.",
+          "Cuidado con el Condemn contra pared: peleá siempre en campo abierto y con tu soporte cerca para no comer el stun."
+        ]
+      },
+      {
+        "cid": 221,
+        "name": "Zeri",
+        "tips": [
+          "Usá tu movilidad para pelear en diagonal: Vayne necesita tres autos seguidos y vos podés cortarle el ciclo con el dash.",
+          "Pokeala con la Q sobre minions desde lejos: su rango corto la obliga a acercarse para farmear y ahí la castigás.",
+          "No te quedes pegado a las paredes: ahí su E se convierte en stun garantizado y perdés el trade entero."
+        ]
+      },
+      {
+        "cid": 119,
+        "name": "Draven",
+        "tips": [
+          "Dominá el nivel 1-3 con las hachas girando: Vayne no puede tradear contra tu daño temprano y pierde toda la presión de lane.",
+          "Zonéala de la wave y forzála a farmear bajo torre: sin waveclear, cada wave que empujás le cuesta oro y experiencia.",
+          "Cuidado con el Condemn en tu engage: si te stunea contra pared con el soporte cerca, perdés la ventaja que armaste."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: auto → Q (Tumble) para resetear el auto → segundo auto y salir; en early no estires el trade a más de tres autos",
+        "All-in nivel 6: R (Final Hour) → Q hacia el rival para entrar camuflada → auto → E (Condemn) contra pared para stunear → autos hasta el tercer stack de W",
+        "Duelo contra tanque: mantené las Silver Bolts en el mismo objetivo (el tercer auto es el que pega verdadero) y usá Q para esquivar el CC, no para pegar",
+        "Defensa en teamfight: E sobre el bruiser que te salta encima (idealmente contra pared), Q para reposicionar y seguir kiteando hacia atrás",
+        "Reenganche por el flanco: R → Q camuflada desde el lateral → dos autos → E para separarte del que te focusee"
+      ],
+      "tips": [
+        "No empieces trades antes del nivel 6 salvo que el rival ya haya gastado habilidades: tu early es el más débil de la lane y cada trade largo lo perdés.",
+        "Guardá el E (Condemn) como peel, no como daño: es tu única salida real; si lo tirás para pegar, quedás sin respuesta al próximo engage.",
+        "Usá la Q para esquivar skillshots y reposicionar, no solo para pegar: el dash corto vale más como esquiva que como daño extra.",
+        "En teamfight kiteá hacia atrás y pegale al objetivo más cercano: nunca camines adelante para ir por el carry, morís antes del tercer auto.",
+        "Farmeá la side lane cuando el equipo no necesite presión, pero mirá el mapa: sos el objetivo más fácil de colapsar cuando estás sola."
+      ],
+      "plan": {
+        "early": "Sobreviví: farmeá con autos, evitá trades, pedí gank y aceptá perder placas antes que morir; al 6 buscá all-in solo si el rival ya gastó habilidades.",
+        "mid": "Juntá dos items y empezá a pelear por el flanco con la R; empujá con autos y rotá, evitando peleas sin CC de tu equipo.",
+        "late": "Sos el daño principal: quedate atrás, kiteá con Q y E, pegale al tanque más cercano y entrá solo cuando el CC enemigo ya se gastó."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/vayne/guide",
+      "https://mobalytics.gg/lol/champions/vayne/counters",
+      "https://app.mobalytics.gg/lol/champions/vayne/build"
+    ]
+  }
+}

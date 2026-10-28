@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "veigar",
+    "ddragonId": "Veigar",
+    "name": "Veigar",
+    "titleEs": "el Pequeño Maestro del Mal",
+    "cid": 45,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.63,
+    "pr": 3.93,
+    "br": 1.62,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 3.3,
+      "jungle": 0,
+      "middle": 67.9,
+      "bottom": 19.7,
+      "support": 9.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Veigar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Veigar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 61.24, "games": 209 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.87, "games": 892 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 59.74, "games": 755 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 59.39, "games": 362 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 58.52, "games": 270 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 57.98, "games": 952 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 57.27, "games": 1926 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 56.63, "games": 581 }
+  ],
+  "weakAgainst": [
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 44.87, "games": 956 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 47.25, "games": 1634 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 47.29, "games": 277 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 48.55, "games": 1584 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 48.87, "games": 2259 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 49.57, "games": 234 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 50.41, "games": 367 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 50.41, "games": 1577 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva escala infinito: cada Q que mata un minion le suma AP permanente, así que cuanto más largo el juego, más se le nota el daño sin comprar nada.",
+      "La E (Horizonte de Eventos) es un stun de área a distancia: en pasillos y peleas de objetivo encierra a dos o tres y arranca la pelea con ventaja numérica.",
+      "Con un solo item de AP ya mata squishies de un combo: E → W → Q → R cae en menos de dos segundos y no deja ventana de reacción.",
+      "Convierte el farmeo en progresión: no necesita kills para escalar, le basta con last hitear con Q y dejarse llevar por el reloj."
+    ],
+    "weaknesses": [
+      "Es de los campeones más inmóviles del juego: sin dash ni escape, cualquier gank con CC lo mata y depende al 100% de la E para sobrevivir.",
+      "Early flojísimo: antes del primer item pierde casi todos los trades y no puede contestar un all-in ni pelear la wave cuerpo a cuerpo.",
+      "La E tiene un cooldown larguísimo y es su único peel: cuando la gasta queda indefenso por diez segundos o más, y todo el mundo lo sabe.",
+      "Frágil y sin defensas: si le llegan encima se muere antes de castear, y el burst de un asesino lo borra sin que pueda tirar la jaula.",
+      "Si lo matan dos o tres veces temprano, llega tarde a todos los spikes y el escalado infinito nunca arranca."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera R (Estallido Primordial) con ejecución sobre vida baja; ahí ya puede matar con el combo completo si el rival está debajo de media vida.",
+      "Primer item de AP completo: una Q sobre un squishy le come un cuarto de vida y la R lo ejecuta desde lejos, sin necesidad de acercarse.",
+      "Nivel 9 con Q maxeada: limpia la wave con Q + W en dos casts y empieza a stackear muchísimo más rápido que antes.",
+      "Nivel 11 y 16: la R pega cada vez más y el cooldown de la E baja fuerte; cada pelea en pasillo pasa a ser una trampa mortal.",
+      "Late game con muchos stacks: mata squishies con Q + R sin usar la E, y la jaula queda libre para el control de la teamfight."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Ziggs, Lux: pegale desde fuera del alcance de su E y el lane se vuelve un farmeo gratis; no camines hacia él para tradear.",
+        "Empujá la wave constante y hacelo farmear bajo torre: pierde stacks de campeón, no puede seguirte el roam y queda expuesto al gank del jungla.",
+        "Cuando gaste la E, ese es tu turno: sin jaula no tiene forma de frenar tu all-in ni de escapar, y su daño en corto alcance es bajo."
+      ],
+      "tanks": [
+        "Comprá MR temprano y caminá la combo entera: su daño está calibrado contra quien no tiene resistencia y con un item aguantás el burst completo.",
+        "Forceá el fight cuerpo a cuerpo: de cerca la W es fácil de esquivar y su única defensa es la E, que se gasta una sola vez.",
+        "Si sos el frontline, comé la R y quedate entre Veigar y tus carries: que no tenga línea limpia sobre el squishy es media pelea ganada."
+      ],
+      "assassins": [
+        "Kassadin, Fizz, LeBlanc: baitéale la E y entrá recién ahí; sin jaula es un muñeco de práctica parado en medio de la lane.",
+        "Guardá tu movilidad para esquivar la E, no para llegar: la jaula es su único peel y si la esquiva queda sin nada.",
+        "Pegale en los primeros niveles, antes de la R y del primer item: pasado ese punto el trade de corto alcance ya no te conviene."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre él en teamfight: es squishy y sin movilidad, un stun de segundo y medio alcanza para que el equipo lo borre.",
+        "No te pares dentro de la jaula: si ya te encerró, salí por el borde antes de pegar y no camines en línea recta hacia la W.",
+        "Reservá el CC para cortarle el combo: interrumpir la W o la R le anula todo el daño y lo deja parado sin nada que apretar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Tu pasiva te reduce el daño mágico y escalás igual de bien que él: farmeá tranquilo hasta el 6 y no aceptes trades antes de tener Q y E.",
+          "Baitéale la E con un amago de acercamiento y saltale con R apenas la gaste: sin jaula no tiene peel y muere en dos rotaciones.",
+          "Después de tu primer item de AP entrá con R + Q: su burst no te alcanza para matarte y tu daño ya lo pasa por arriba."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango es mucho mayor: pokealo con Q desde afuera del alcance de su E y el lane se gana solo, sin riesgo.",
+          "Nunca te quedes quieto casteando: si te encierra en la jaula, la E + W + R duele, así que tirá y movete de inmediato.",
+          "Empujá desde lejos y negale el farmeo con Q: no puede contestar el clear ni seguirte el roam, y pierde stacks por minuto."
+        ]
+      },
+      {
+        "cid": 115,
+        "name": "Ziggs",
+        "tips": [
+          "Farmeá y empujá con Q + E desde fuera de su rango: no necesitás acercarte nunca y su jaula queda de adorno.",
+          "Guardá la W (Satchel) para salir de la jaula o para esquivar el Dark Matter: es tu escape gratis y su combo depende de que caigas.",
+          "Cuando gaste la E, tirale todo: sin peel no puede frenar tu burst ni ejecutarte con R antes de que le pegues."
+        ]
+      },
+      {
+        "cid": 7,
+        "name": "LeBlanc",
+        "tips": [
+          "Antes del 6 tu burst es mucho más rápido que el suyo: entrá con W + Q y matalo antes de que tenga stacks e items.",
+          "Guardá la Distorsión para salir de la jaula, no para entrar: si te encierra sin movilidad, el combo te borra sin contestar.",
+          "No te quedes en rango de su Q a vida media: esperá a que gaste la E para empujar y ahí saltalo de nuevo con todo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Combo estándar de lane: E (jaula) → W → Q → AA → R; la W se tira apenas cae la E porque el stun lo clava justo donde va a caer Dark Matter",
+        "Poke de dos objetivos: Q en línea sobre minion y campeón a la vez, así stackeás sin dejar de castigar el trade",
+        "Pick a máxima distancia: E larga → W → Q → R cuando el equipo ya está siguiendo el engage",
+        "Ejecución instantánea: Q → Flash → R sobre un squishy a media vida; la R pega más cuanto menos vida le queda al objetivo",
+        "Defensa bajo torre: E entre vos y el jungla, W encima del stun y Q al que quede adentro; el all-in se muere en la jaula"
+      ],
+      "tips": [
+        "Farmeá con Q cada minion que puedas matar: cada last hit es AP permanente y el stackeo es la razón por la que el campeón existe.",
+        "No gastes la E para farmear ni para poke: es tu único peel, tiene cooldown larguísimo y sin ella cualquier gank termina en kill.",
+        "Jugá la lane pegada a tu torre hasta tener un item: no hay razón para pelear antes, tu win condition es que pase el tiempo.",
+        "Casteá la W donde va a estar el rival, no donde está: el delay de caída se compensa apuntando adelante del movimiento.",
+        "En teamfight quedate atrás del frontline y tirá la E sobre los carries agrupados: una jaula sobre dos vale más que cualquier combo."
+      ],
+      "plan": {
+        "early": "Farmeá con Q y stackeá sin pelear, pedí ganks cuando tengas E lista y usá la torre como escudo; llegá al 6 con vida y maná para el primer kill.",
+        "mid": "Empujá con Q + W y rotá a una side lane a stackear, buscá picks con E en pasillos y evitá los 1v1 contra bruisers o asesinos fed.",
+        "late": "Quedate pegado al equipo, tirá la E sobre el agrupado en choke points y ejecutá con R al squishy a media vida; no te separes ni camines solo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/veigar/guide",
+      "https://mobalytics.gg/lol/champions/veigar/counters",
+      "https://mobalytics.gg/lol/champions/veigar/combos"
+    ]
+  }
+}

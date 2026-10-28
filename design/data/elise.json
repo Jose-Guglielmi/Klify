@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "elise",
+    "ddragonId": "Elise",
+    "name": "Elise",
+    "titleEs": "la Reina de las Arañas",
+    "cid": 60,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.33,
+    "pr": 2.92,
+    "br": 1.94,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 3.3,
+      "jungle": 79.1,
+      "middle": 1.1,
+      "bottom": 0.2,
+      "support": 16.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Elise.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Elise_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 59.2, "games": 201 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 55.85, "games": 709 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 55.83, "games": 1286 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 55.52, "games": 1077 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 54.34, "games": 403 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 54.26, "games": 352 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 53.93, "games": 1044 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 53.92, "games": 918 }
+  ],
+  "weakAgainst": [
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 43.71, "games": 302 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 45.88, "games": 255 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 46.33, "games": 218 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 47.57, "games": 309 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 48.08, "games": 364 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 48.28, "games": 203 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 48.69, "games": 267 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 48.88, "games": 313 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Gankuea como pocas: cada Cocoon que entra es un kill o un Flash gastado, y con Rappel puede iniciar desde ángulos que ninguna otra jungla tiene.",
+      "El Rappel la vuelve intargeteable en el aire: esquiva el CC clave y anula el aggro de torre durante la subida, lo que la hace reina de los dives.",
+      "Desde el primer item su burst ejecuta squishies sin resistencia mágica en dos segundos; el early no te perdona un paso en falso.",
+      "Doble forma es doble kit: siete habilidades humanas para iniciar y otras tantas araña para pelear; con blue buff puede tirar la combo completa dos veces en la misma escaramuza."
+    ],
+    "weaknesses": [
+      "Todo su kit pende del Cocoon: si errás la E no tenés ni engage ni escape, y el rival lo sabe, así que cada E tirada al aire te deja descalza.",
+      "Sin Rappel no esquiva nada: una Elise con la E en cooldown es un target inmóvil para cualquier CC del equipo enemigo.",
+      "El late le pesa: cuando el rival completa vida y resistencia mágica, su burst ya no ejecuta y queda como una jungla sin amenaza en el 5v5 frontal.",
+      "Depende del blue buff: sin maná su spam muere, y si te lo roban temprano tu jungla entera se vuelve invadible.",
+      "No spickea con la R en 6, 11 ni 16 porque ya la tiene a nivel 1: mientras el jungla rival gana su ultimate, vos seguís siendo la misma de nivel 3."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Cocoon en mano: tu primera gank real; si tu lane tiene CC propio, es kill casi garantizada.",
+      "Primer item completado: tu presión de kill se dispara y ganás casi cualquier 1v1 contra el jungla rival si entrás primero.",
+      "Nivel 9 con la Q maxeada: tus dos Q escalan tan fuerte que outtradeás a casi cualquier jungler en peleas cortas.",
+      "Mid game con dos items: acá sos más fuerte de todo el juego; después el rival escala y vos no, así que cobrá ahora."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Esperá que el rangoso avance a farmear: el Cocoon a quemarropa le gana al rango, la E tirada a máxima distancia se esquiva caminando.",
+        "Entrá por flancos y nunca por el río wardieado: tu engage funciona porque aparece desde donde no te esperan.",
+        "Si el rangoso juega pegado a torre, no lo fuerces: cambiá presión al lado opuesto del mapa y volvé cuando sobreempuje."
+      ],
+      "tanks": [
+        "No allinees tanques con resistencia mágica: tu burst busca squishies, dejá al tanque para tu equipo y buscá al carry rival.",
+        "Los tanques con CC (Sejuani, Rammus, Amumu) son tus peores matchup: guardá Rappel para esquivar su engage, no para iniciarlo vos.",
+        "Si el tanque escala vida pura (Zac, Cho'Gath), armá penetración temprano o tu mid game se diluye pegando a piedra."
+      ],
+      "assassins": [
+        "Guardá Rappel como respuesta a su all-in: el que esquiva el burst gana, y tu E te deja hacerlo siempre que no la hayas gastado para inicar.",
+        "Kha'Zix, Rengar y compañía pican más fuerte en 1v1 limpio: no aceptes peleas aisladas sin visión, peleá pegada a tu equipo.",
+        "Tu burst frontal le gana al suyo si entrás primero: trackeá al asesino rival y quedale encima cuando lo veas caminar hacia un lane."
+      ],
+      "crowdControl": [
+        "Rappel es tu blink defensivo: subí apenas veas el engage venir y el CC entero cae al piso.",
+        "No inicies con Cocoon contra equipos con supresión o zona (Malzahar, Lissandra): si el stun entra y vos comés el follow-up, cambiaste tu vida por nada.",
+        "Esperá que gasten el CC clave en tu carry y entrá después: sos mucho más letal limpiando la pelea que abriéndola contra el equipo parado."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 113,
+        "name": "Sejuani",
+        "tips": [
+          "Escales mejor que ella: evitá el 1v1 temprano, farmeá parejo y llevá la partida a peleas grupales donde tu CC encadenado vale más que su burst.",
+          "Esperá su Rappel antes de tirar la Glacial Prison: si el CC entra cuando ya está intargeteable, se ríe de vos desde el aire.",
+          "Trackeá sus ganks entre niveles 3 y 9: ese periodo es todo lo que tiene; si llegás al mid game parejo, la partida es tuya.",
+          "Ponele el cuerpo a sus dives: tu engage convierte cada Rappel ofensivo de Elise en su sentencia."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Castigala cada vez que tire Cocoon al aire: sin la E no tiene engage ni escape, y un agarre bien puesto te paga el gank entero.",
+          "Jugá atrás de tus plantas y de tu rango: su burst busca squishy sin resistencia, y no puede ejecutar lo que no alcanza.",
+          "Guardá tu agarre para cuando se tire con Rappel: si la agarrás al aterrizar, muere antes de volver a transformarse."
+        ]
+      },
+      {
+        "cid": 122,
+        "name": "Darius",
+        "tips": [
+          "Forzá peleas largas: su burst es de una tanda y a los cinco stacks vos ganás cualquier continuada; retrocedé solo el primer segundo.",
+          "El Rappel esquiva tu E: no la tires al aire, esperá a que la use (para escapar o inicar) y agarrala al caer.",
+          "Wardieá tus flancos: su gank temprano es lo único que te mata; si le negás los primeros kills, no escala y tu late la aplasta.",
+          "En mid game buscala: sin burst para reventarte y sin escape post-Rappel, un Darius con ventaja la corre de su propia jungla."
+        ]
+      },
+      {
+        "cid": 20,
+        "name": "Nunu y Willump",
+        "tips": [
+          "Robale camps con Q + Smite: su blue buff es sagrado para ella, y cada campamento que le sacás la vuelve más inútil.",
+          "Tu W desde el matorral castiga cada Cocoon fallado: a máxima velocidad es un kill o un Flash por intento.",
+          "Peleá pegado a tus carrys con la Absolute Zero: cuando Elise se tire con Rappel, congelala al aterrizar y cae sola.",
+          "Ignorá su early y escalá objetivos: los dragones que tomás con tu Q son presión que ella no puede contestar después del minuto 20."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank básico: Cocoon (E humana) al objetivo → W volátil + Q (Neurotoxin) → R → Q de araña para cerrar la distancia → básico + W araña (Frenzy) para rematar",
+        "Gank con Rappel: arrancá en araña, Rappel sobre el objetivo o un minion → R a humana → Cocoon instantáneo → W + Q + básico",
+        "Combo avanzada: tirá la W humana por detrás del objetivo → transformate → Rappel encima de él → básico + W + Q → volvé a humana y Cocoon a quemarropa → Q final para ejecutar",
+        "Flash gank: Flash → Cocoon en el aire → W + Q humanas → R → Q de araña + básico + W para limpiar",
+        "Clear de jungla: en humana Q + W al campamento para sumar arañitas → R → Q y W de araña con básicos; el doble Q con la colonia completa despeja cada campo casi sin perder vida"
+      ],
+      "tips": [
+        "Sumá arañitas con tus habilidades de humana antes de cada pelea: entrar transformada con la colonia completa cambia tu clear y tu burst.",
+        "No tires Cocoon a máxima distancia por inercia: caminá hasta rango seguro y tirala a quemarropa, porque cada E al aire te deja sin engage y sin escape al mismo tiempo.",
+        "Guardá Rappel como respuesta al CC rival: usarlo solo para inicar te deja sin el botón que te mantiene viva.",
+        "Las dos Q pegan más contra vida perdida: en peleas largas usá la primera para cerrar distancia y guardá la segunda para ejecutar.",
+        "Cuidá el blue buff como oro: sin maná tu spam muere y te vuelven invadible, así que avisale al equipo que ese campamento tiene tu nombre."
+      ],
+      "plan": {
+        "early": "Gankueá desde el nivel 3 con cada Cocoon disponible, asegurá dragones y camps con tu clear sano, y meté toda la presión posible antes de que el jungla rival escale.",
+        "mid": "Convertí cada Cocoon en pick o en objetivo: llamá dragón o torre cada vez que cazás a alguien, y aprovechá que con dos items sos la jungla más fuerte del mapa.",
+        "late": "Jugá de segunda línea: peel a tu carry con Cocoon, buscá picks con visión y asumí que el 5v5 frontal ya no es tuyo cuando el rival completó resistencia mágica."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/elise/guide",
+      "https://mobalytics.gg/lol/champions/elise/combos"
+    ]
+  }
+}

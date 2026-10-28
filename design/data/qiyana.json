@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "qiyana",
+    "ddragonId": "Qiyana",
+    "name": "Qiyana",
+    "titleEs": "La Emperatriz de los Elementos",
+    "cid": 246,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 46.24,
+    "pr": 5.93,
+    "br": 9.88,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 2.3,
+      "jungle": 67,
+      "middle": 28.6,
+      "bottom": 0.4,
+      "support": 1.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Qiyana.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Qiyana_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 50.9, "games": 277 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 50.32, "games": 2019 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 50.3, "games": 499 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 49.77, "games": 436 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 49.77, "games": 426 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 49.66, "games": 292 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 49.47, "games": 6252 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 48.88, "games": 757 }
+  ],
+  "weakAgainst": [
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 41.38, "games": 1102 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 41.71, "games": 844 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 41.84, "games": 564 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 42.59, "games": 1134 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 43.08, "games": 2024 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 43.1, "games": 239 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 43.23, "games": 1670 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 43.3, "games": 619 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R es cambio de partido: rebota contra muros y elemental y stunea a todo lo que esté apretado; en las peleas de jungla siempre encuentra pared, así que si te agrupás en un pasillo te borra el equipo entero.",
+      "Movilidad abusiva: la W le deja saltar paredes y la E la planta encima tuyo; llega a tu carry desde ángulos donde nadie tiene ward puesto.",
+      "Camuflaje real con el elemento de pasto: se desvanece en la maleza y el gank que la ves venir ya te agarró; controlarbustos no es opcional contra ella.",
+      "Burst front-loaded con pasiva + Q: un squishy a media vida desaparece en una combo de menos de dos segundos si la E le llega."
+    ],
+    "weaknesses": [
+      "Es mecánicamente exigente: si el jugador erra el orden de la combo o el ángulo de la R, queda siendo un melee sin amenaza; castigá cada R que no stunea.",
+      "Behind no pega nada: su daño es 100% burst de asesina y si la negás items, su aporte en teamfight se reduce a un stun y nada más.",
+      "Todo su escape es la W: si la usó para entrar, no tiene cómo salir; guardá tu CC para después de ese dash y no para farmear.",
+      "Depende del terreno: lejos de muros su R pierde la explosión de área; forzá peleas en campo abierto y la dejás con medio kit.",
+      "Squishy y melee: una cadena de CC la mata antes de llegar; si tu equipo la espera con el stun listo, cae sola."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con el kit completo: los primeros ganks con camuflaje de pasto llegan antes de que el laner compre vida.",
+      "Nivel 6: la R habilita duels en la jungla y kills que antes no existían; no camines sin visión cerca de muros.",
+      "Primer item de lethality resuelto: cualquier squishy sin armadura se ejecuta en una combo; empezá a agruparte antes de esa marca.",
+      "Nivel 11 y 16 con la R rankeada: más daño y cooldown corto, así que asumí que la tiene en mano en cada pelea de objetivo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Lux: pegale desde fuera del rango de su E y forzala a usar maná en limpiar; una Qiyana atrás no tiene combo que cobrar.",
+        "Controlá la maleza con wards y no te pares pegado a paredes: le negás el camuflaje y el stun de la R al mismo tiempo.",
+        "Guardá tu escape para su E, no para farmear: si el dash no te encuentra, la combo entera le cae al piso."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: su burst está calibrado contra squishies y con un item de armor su combo no te mueve del lugar.",
+        "Peleá en campo abierto y alejá las fights de la jungla: sin muros su R no explota en área y pierde medio daño.",
+        "Peelá al carry apenas se vea la W de engage: no tiene segunda entrada si la primera falla."
+      ],
+      "assassins": [
+        "Esperá que gaste E o W para acercarse y saltala recién ahí: sin dash queda descalza y sin escape en medio de tu equipo.",
+        "Negale el pasto: controlá los arbustos con visión porque el camuflaje es su herramienta para llegar a vos, no la suya para escapar.",
+        "Tradele antes del nivel 6: sin R su duelo es débil y vos escalás mejor hacia los items de burst."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas tire la E: entró sin plan B, así que un stun bien dado la borra del resto de la pelea.",
+        "Reservá la supresión para el flankeo: Malzahar y Skarner la convierten en piedra justo cuando viene el burst.",
+        "Dejá un CC guardado para después de su W: es su único despegue y sin él no llega ni se va."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 113,
+        "name": "Sejuani",
+        "tips": [
+          "No la enfrentes de frente ni sin visión: su engage con la E te congela y tu combo muere antes de empezar; peleá alrededor, no encima.",
+          "Jugá el mapa opuesto: tu clear early es más rápido, invadí el lado contrario y presioná lanes mientras ella tarda en rotar.",
+          "Esperá que gaste el despegue para entrar vos: sin su engage en pantalla, tu R encuentra la pared y el stun entra limpio."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "No allinees con su W defensiva activa: tu burst rebota y el taunt tuyo es la muerte; esperá unos segundos y entrá después.",
+          "Priorizá penetración de armadura (Serylda's) en el build para no perder valor contra su escama y su equipo tanque.",
+          "Gankeá su lane por el ángulo del carry, nunca de frente: un taunt bien dado te entrega al equipo entero."
+        ]
+      },
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Edge of Night antes de pelearle: bloquear el cast de su R te deja ejecutar al carry igual y su ultimate queda en nada.",
+          "Forzá peleas abiertas y evitá pasillos: su R te arrastra a su equipo y en un corredor no hay cómo esquivarla.",
+          "Invadí sus camps temprano: su clear es lento y cada camp que le robás es oro que no escala a los teamfights."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Ejecutá siempre los blobs de su pasiva: un kill sin reventar los pedazos es tiempo regalado; alineá la Q de tierra para el cleanup.",
+          "Su engage de E es largo pero telegrafiado: movete lateral cuando cargue y entrá vos recién después de que falló.",
+          "No te pegues al carry cuando tiene la R lista: te levanta y te tira al medio de su equipo; esperá el cast para flanquear."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear de jungla: Q + auto de pasiva en cada camp y W entre camps para el dash y velocidad de movimiento; priorizá Q en el orden de habilidades",
+        "Gank básico: E al objetivo → Q con el elemento en mano → auto de pasiva → W para reubicarte o cambiar de elemento",
+        "All-in de kill: E → Q de tierra (ejecuta a baja vida) → W (nuevo elemento) → Q → R contra la pared para el stun de área",
+        "Engage de teamfight: camuflaje en el pasto → flanqueo por atrás → R contra el muro con el equipo agrupado → E al carry → Q de ejecución",
+        "Escape: W sobre la pared más cercana hacia tu torre; guardá la E solo si hay minion o monstruo hacia donde rebotar"
+      ],
+      "tips": [
+        "Elegí el elemento según lo que viene: pasto para invisibilidad y ganks, agua para el slow en peleas, tierra para ejecutar a baja vida.",
+        "No entres primero sin visión: sos melee y squishy; esperá el primer CC enemigo o entrá por el flanco con camuflaje.",
+        "Guardá la W como escape y no como daño: sin dash sobre pared no tenés cómo salir de la pelea una vez que entraste.",
+        "Gankeá targets overextendidos y encadená el slow del agua con el CC de tu laner: con la R en mano, cualquier pelea cerca de muros es tuya.",
+        "Si vas behind no fuerces teamfights: jugá a picks en la jungla rival con el pasto hasta recuperar tus items de burst."
+      ],
+      "plan": {
+        "early": "Desbloqueá las tres habilidades antes del primer gank, limpiá con Q + auto de pasiva y buscá lanes overextendidas con el elemento de pasto para entrar invisible.",
+        "mid": "Con el core de lethality jugá a picks con tu support en la jungla rival antes de cada objetivo y explotá cualquier pelea cerca de paredes con R + burst sobre el carry.",
+        "late": "Usá la niebla de guerra para flanquear, esperá al equipo agrupado o al carry aislado para la R contra el muro y entrá con la E recién después del primer CC enemigo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/qiyana/build",
+      "https://mobalytics.gg/lol/champions/qiyana/guide"
+    ]
+  }
+}

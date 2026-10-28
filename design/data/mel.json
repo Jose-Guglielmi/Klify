@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "mel",
+    "ddragonId": "Mel",
+    "name": "Mel",
+    "titleEs": "el Reflejo del Alma",
+    "cid": 800,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.02,
+    "pr": 2.36,
+    "br": 11.28,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.2,
+      "jungle": 0.1,
+      "middle": 60.2,
+      "bottom": 17.2,
+      "support": 21.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Mel.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Mel_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 56.18, "games": 267 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 52.99, "games": 351 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 52.53, "games": 217 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 51.66, "games": 302 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 50.89, "games": 224 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 50.63, "games": 478 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 50.6, "games": 251 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 50.35, "games": 1013 }
+  ],
+  "weakAgainst": [
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 39.46, "games": 740 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 39.51, "games": 572 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 42.05, "games": 818 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 42.27, "games": 679 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 43.44, "games": 366 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 43.67, "games": 229 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 44.24, "games": 1076 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 44.5, "games": 746 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El rango de Q (uno de los más largos entre los magos de mid) te deja empujar wave y castigar desde afuera del alcance de casi todo el rival.",
+      "Cada habilidad suma tres proyectiles extra al próximo auto (hasta nueve): teje autos entre hechizos y duplicás la presión de daño sin gastar maná extra.",
+      "La W refleja proyectiles y te hace intocable un segundo: contra magos de skillshot puntual anula su mejor hechizo y te deja ganar el trade que ellos empezaron.",
+      "La R es global: mientras vos farmeás mid, cualquier enemigo con tus marcas de Overwhelm puede morir en la otra punta del mapa sin que muevas un paso.",
+      "La E tiene setup de gank de manual: root al centro + zona que frena, ideal para que tu jungla convierta poke en kill."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, un gank del jungla o un flanqueo de asesino te borra; la W como única defensa tiene cooldown eterno.",
+      "La W refleja proyectiles y nada más: contra daño de área o habilidades cuerpo a cuerpo (Diana, Master Yi) es solo velocidad de movimiento, uso caro para tan poco.",
+      "El daño vive en los stacks de Overwhelm: si el rival se aleja unos segundos y deja que las marcas expiren, tu R pierde casi todo su valor.",
+      "La Q cuesta mucho maná al inicio: spamearla en la wave sin Doran ni Manaflow te deja seca y descalza para el próximo trade.",
+      "En teamfight matás a uno y quedás sin rotación: si el equipo rival entra agrupado y con frente, cuesta muchísimo pasar del primer objetivo."
+    ],
+    "powerSpikes": [
+      "Level 2 con Q + E: la primera combo all-in está lista; un root bien tirado castiga entre 30% y más de la vida del rival.",
+      "Level 6: la R desbloquea presión global; mirá el minimapa, si un carry del sidelane pelea con tus marcas encima, ejecutalo desde base.",
+      "Luden's Echo terminado (~minuto 12-14): el maná deja de ser techo, empujás la wave a placer y el burst compone con tus autos reforzados.",
+      "Dos items (Luden's + Shadowflame, ~minuto 20): ventana de agruparse por objetivos; un rival sin MR te cae entero con Q + autos + R.",
+      "Nivel 11 y 16 con puntos en R: el cooldown baja tanto que casi cada skirmish arranca con la ejecución global disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Vel'Koz: no juegues al intercambio de poke, empujá la wave más rápido que ellos y negales el lane con presión de torre.",
+        "Esperá que tiren su skillshot principal antes de abrir el W: reflejado en su cara, ese hechizo se convierte en tu mejor trade del lane.",
+        "Guardá la E para cuando se acerquen a last hit con la pasiva cargada: el root en un mago sin movilidad es kill o Flash gastado."
+      ],
+      "tanks": [
+        "Los stacks de Overwhelm pegan por porcentaje acumulado: last hits a distancia en el tanque igual te llenan la R para el teamfight.",
+        "No gastes la W para tanquear: contra un Ornn o Sion que entra de frente el reflect no hace nada, usala solo para reposicionarte.",
+        "Comprá Void Staff apenas termine su Resistencia Mágica: tu daño escala con AP puro y sin penetración el tanque camina tu combo entera."
+      ],
+      "assassins": [
+        "Zhonya's después del primer item es innegociable contra Zed, Diana o Talon: el stasis les pasa por arriba toda la ventana de burst.",
+        "Esperá que gasten el dash para entrar antes de tirar la E: un root sobre un asesino sin escape es ejecución inmediata con tu jungla cerca.",
+        "No uses Flash ofensivo contra ellos: sin escape propio, morir una vez con Flash abajo es regalar el lane entero."
+      ],
+      "crowdControl": [
+        "Banshee's Veil contra CC mágico puntual (charm de Ahri, R de Lissandra): el spell shield te compra la ventana para reaccionar con W.",
+        "Cuando el equipo rival tiene engage en cadena, parate en la segunda posición del frente: tu rango de 950 te deja pelear sin entrar en rango de su CC.",
+        "Usá tu E como counter-engage: rootear al que se tira sobre tu carry invierte la pelea sin que tengas que moverte de tu posición."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 105,
+        "name": "Fizz",
+        "tips": [
+          "Guardá la W para su Q de salto: es proyectil, se refleja, y Fizz que entra reflejado queda pegado a vos a media vida sin escape.",
+          "No te quedes a rango de auto con la tridente sacada: alejate cuando suba a last hit y dejá que la torre castigue cada salto que arriesga.",
+          "Comprate Zhonya's temprano: su combo necesita quedarse arriba de vos un segundo, el stasis lo deja plantado en medio de tu wave sin nada."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Esperá su Q cargada antes de abrir la W: reflejarle el stun de rango máximo te regala un trade que no puede responder.",
+          "Pegale con Q en el momento exacto que se planta para canalizar: el cast de él es más lento que tu andanada y se come el daño parado.",
+          "Empujá la wave con prioridad: tu Q limpia más rápido que el suyo, y Xerath sin prioridad no puede roaming ni usar su rango para castigar."
+        ]
+      },
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Jugá fuera de línea recta: cada stun suyo viaja por una esfera fija, caminando en diagonal le sacás la mitad del kit sin gastar maná.",
+          "La W de vos es oro contra sus esferas de Q: reflejado el daño no evita el stun, pero el barrido que usa para farmear se lo podés devolver en cada trade.",
+          "Después del nivel 6 no te pares sobre las esferas del piso: un stun seguido de su burst te borra antes de que tu R marque la respuesta."
+        ]
+      },
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Tu R atraviesa el suppresseo solo si las marcas fueron hechas antes: llenale stacks con Q y autos antes de que su silencio entre, y ejecutalo desde rango.",
+          "El escudo pasivo de él come un hechizo gratis: arrancá cada trade rompiéndolo con un auto reforzado, no con tu Q.",
+          "No peleeles la wave con Visa Nether: sus bichos tanquean tu andanada entera; limpiá con Q lejos de los voidlings y buscá el all-in con jungla."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (root al centro) → Q encima del objetivo → auto reforzado con proyectiles de la pasiva; si responde, W y caminate mientras el daño reflejado entra",
+        "Teje de pasiva: Q → auto → E → auto: consumir los proyectiles entre hechizos dispara dos autos potenciados por combo y llena Overwhelm el doble de rápido",
+        "All-in con Flash: E → Flash si se aleja → Q → autos → R cuando las marcas estén llenas (mínimo un Q + E + un par de autos antes de ejecutar)",
+        "Teamfight: Q a la agrupación desde 900 de rango → auto a cada objetivo alcanzado → W cuando tiren el hechizo fuerte → R al equipo entero cuando la mitad tenga marcas",
+        "Ejecución global: mirá el minimapa con R en mano; cualquier enemigo con tus marcas peleando en sidelane o recall bajo de vida muere sin importar dónde esté"
+      ],
+      "tips": [
+        "No tires la R con un solo stack: esperá al menos un Q + E más un par de autos; la ejecución con pocas marcas es quemar un cooldown larguísimo por nada.",
+        "Guardá la W para el hechizo importante del rival, no para poke: es proyectil reflect con cooldown de medio minuto, gastarla en wave te deja pelado por 25 segundos.",
+        "Nunca tires E sin Q listo: el root es lento de armar y el cooldown caro; sin la andanada para seguir, el root solo sirve para que el rival se reacomode.",
+        "Q la wave cerca del rival aunque no le pegues: los ticks de la andanada igual le llenan marcas, y pelear con tu Q gastada en minions te corta el daño a la mitad.",
+        "En teamfight parate en la segunda posición, no a rango máximo: tu rango te deja pegar de muy atrás, pero quedar afuera del peel de tu equipo es flanqueo asegurado."
+      ],
+      "plan": {
+        "early": "Pokeá con Q y autos reforzados mientras empujás la wave, buscá el trade all-in con E al llegar a nivel 2-3 y coordiná ganks: tu root es setup perfecto para el jungla.",
+        "mid": "Con Luden's resuelto empujá y roameá con la R global siempre en mano: llenale marcas a todo el mapa en cada skirmish y ejecutá carries sidelane sin moverte de tu lane.",
+        "late": "Pegate a tu equipo, abrí cada teamfight con Q desde atrás del frente para llenar marcas y guardá la R para cuando la mitad del rival esté marcada; con W arriba sos inmatable al engage puntual, sin W no te acerques."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/mel/build",
+      "https://mobalytics.gg/lol/champions/mel/guide/mid",
+      "https://www.lolsensei.com/en/champion/mel/mid/guide",
+      "https://metabot.gg/en/league/champion/Mel/abilities"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "thresh",
+    "ddragonId": "Thresh",
+    "name": "Thresh",
+    "titleEs": "el Carcelero Implacable",
+    "cid": 412,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.61,
+    "pr": 14.66,
+    "br": 11.71,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 0.1,
+      "bottom": 0.1,
+      "support": 99.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Thresh.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Thresh_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 62.35, "games": 486 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 62.09, "games": 335 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 61.09, "games": 1416 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 59.57, "games": 371 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 59.38, "games": 357 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 59.1, "games": 665 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 58.67, "games": 692 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 58.3, "games": 1163 }
+  ],
+  "weakAgainst": [
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 47.26, "games": 201 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 47.31, "games": 818 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 48.65, "games": 929 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 49.17, "games": 8348 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 49.45, "games": 548 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 49.49, "games": 4530 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 49.64, "games": 274 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 50.06, "games": 1706 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q es un gancho de más de 1000 de rango que stunea, revela y te deja recastear para saltar encima: es presión permanente en lane y la mejor herramienta de pick del juego.",
+      "La linterna (W) reposiciona a un aliado desde lejos: salvás ganks, rescatás al carry de un engage mal puesto y hasta bloqueás el paso de los que te persiguen.",
+      "El E (Despellejar) levanta y frena en el aire: corta la Q2 de Lee Sin, el salto de Zac y cualquier dash que pase por delante tuyo.",
+      "La R (La Caja) es zoning puro: cinco muros que ralentizan y pegan; en un pasillo angosto convierte la pelea en una trampa de la que no se sale caminando.",
+      "Las almas escalan gratis: cada una suma armadura y AP sin gastar oro, así que llegás al late bastante más duro que un support común."
+    ],
+    "weaknesses": [
+      "Es de los supports más frágiles del juego: poca vida base y la armadura NO sube por nivel, solo con almas; cualquier trade largo te saca de la lane.",
+      "Errar la Q te deja entre 9 y 19 segundos sin engage y sin escape: el gancho ES tu kit, y si falla quedás parado en zona castigable.",
+      "La Q te clava en el lugar durante el casteo y te frena mientras engancha: un support de poke te la castiga gratis desde afuera de tu rango.",
+      "Depende de que el aliado sepa usar la linterna: si no la clickea, la W es apenas un escudo chico con 21 segundos de cooldown.",
+      "Contra escudos de proyectil y spell shields la Q se anula entera: media tu amenaza se apaga sola con verlos en pantalla."
+    ],
+    "powerSpikes": [
+      "Nivel 2: la primera ventana real. Q + E (o E + Q) sobre el carry enemigo es kill o summoner forzado; llegá antes a la wave y tomá el trade.",
+      "Nivel 6: La Caja cierra la pelea en espacio angosto; un hook adentro de la caja es muerte casi segura para cualquier squishy.",
+      "Botas + primer item de engage: recién ahí empezás a roamear y tu hook se vuelve amenaza en todo el mapa, no solo en bot.",
+      "Mid game con almas juntadas: la armadura y el escudo extra te dejan caminar el engage sin explotar en el primer intercambio."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Hwei, Xerath, Vel'Koz: te pegan desde más lejos de lo que llega tu hook; si tirás la Q de frente te la esquivan y quedás descalzo. Buscá el ángulo desde el arbusto o después de que gasten su habilidad de zona.",
+        "Empujá la wave con tu carry y obligalos a farmear bajo torre: sin minions de por medio el hook entra, y a esa distancia no pueden esquivar caminando.",
+        "Si te están pokeando, comprá botas temprano y jugá con la linterna al lado: el escudo te deja aguantar dos trades más de los que aguantarías sin ella."
+      ],
+      "tanks": [
+        "Amumu, Braum, Rell: NUNCA les tires el hook hacia tu equipo en teamfight, entran con vos y te stunean a todos. Enganchá al carry o a nadie.",
+        "Contra un tanque de engage tu trabajo es peel: guardá el E para cortarle el dash y usá la W sobre el carry; el pick lo buscás después, no antes.",
+        "El Flay corta el arranque del engage: esperá el salto (Rell W, Zac E, Amumu Q) y recién ahí tirás la Q al que quedó atrás del tanque."
+      ],
+      "assassins": [
+        "Zed, Kha'Zix, Talon: no los vas a matar vos, pero el E los corta en el aire y la linterna saca al carry del burst. Jugá pegado a tu ADC.",
+        "Guardá la Q para cuando el asesino ya entró: engancharlo después del ult es la única forma de que tu carry sobreviva; antes se esquiva fácil.",
+        "Wardeá el flanco y jugá un paso atrás: la mayoría de los asesinos te mata a vos primero si te ven solo, y sin support el carry muere igual."
+      ],
+      "crowdControl": [
+        "El hook es CC pero también te inmoviliza a vos: contra CC instantáneo (Lulu W, Morgana Q) tirar la Q desde lejos te expone; esperá a que lo gasten.",
+        "Morgana es el counter conceptual: su escudo negro anula la Q entera; tu win condition es baitearlo con un hook falso y volver a tirar cuando esté en cooldown.",
+        "En teamfight encadená el E después de la Q: el stun del gancho no alcanza para que tu equipo pegue y el Flay evita que se te escape caminando."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "No le tires el hook para abrir pelea: es un tanque que absorbe todo y su R se lleva a tu carry adentro de tu propio equipo. Enganchá al carry o guardá la Q.",
+          "Su E es un dash con el que esquiva la Q de frente: tirá el gancho cuando ya gastó E y W, o desde un ángulo que no esté mirando.",
+          "En teamfight jugá de peel: tu Flay lo frena antes de que llegue a tu ADC; si te engancha a vos, el que pierde la pelea es tu equipo."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Te gana el rango: su poke sale desde afuera de tu hook. Jugá detrás de la wave y tirá la Q solo cuando baje a castear, que sus spells lo dejan clavado en el lugar.",
+          "Su miedo te corta el engage en el aire: si te lo tira, no insistas, volvé al costado y esperá el cooldown antes de la próxima Q.",
+          "Pedile el gank temprano al jungla: Hwei no tiene escape y con hook + Flay es kill casi garantizada antes del nivel 6."
+        ]
+      },
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Su Q es un stun de rango largo que se bloquea con minions: si estás detrás de la wave no puede entrar. Jugá siempre con minions entre los dos.",
+          "Nunca lo enganchés cerca de tu equipo: su R es AoE y tu hook lo trae justo al centro. Si hay que pelearle, enganchá al carry y usá el E para cortar su Q.",
+          "Antes del nivel 6 castigalo sin miedo: en lane es lento y sin ult no tiene cómo contestar tu hook + Flay."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Su E bloquea tu Q entera porque es un proyectil: baitéalo con un hook falso desde un ángulo y tirá de verdad cuando ya está en cooldown.",
+          "El escudo cubre una sola dirección: tirá el gancho desde el lateral en vez de frente, o esperá a que se mueva para cubrir a otro.",
+          "Su pasiva stunea con cuatro autos: no te quedes tradeando autos con su carry, el stun llega antes de que puedas recastear la Q."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage estándar: Q (hook) → recast Q (saltar) → E (Despellejar hacia tu equipo) → W sobre tu carry si te están focusseando",
+        "Combo con zona: E primero para levantarlos y frenarlos → Q sobre el objetivo ya sin moverse → recast → R encima para cerrar la salida",
+        "Pick desde arbusto: W (linterna) al lado del aliado → Q → recast → R (La Caja) detrás del enemigo para que no escape hacia su torre",
+        "Peel puro: guardá la Q, usá E para cortar el dash del asesino y W sobre el carry; recién ahí tirá el hook al que quedó sobre la línea",
+        "Flash hook: Flash → Q instantánea para cubrir la distancia cuando están fuera de rango; después E y R si el equipo sigue el engage"
+      ],
+      "tips": [
+        "No tires la Q como poke a vida llena: son 70 de maná y hasta 19 segundos de cooldown. Tirala cuando el enemigo esté fuera de posición o para cortar un dash.",
+        "La linterna se lanza ANTES del engage, no después: W al costado de tu carry y, si la jugada sale mal, ya tiene el escape listo.",
+        "El E corta dashes y airborne: guardalo para el Zac, la Rell o el Lee Sin. Es tu herramienta defensiva más fuerte y no se ve venir.",
+        "Juntá almas siempre: cada una es armadura y AP gratis y tu armadura NO sube por nivel. Si no juntás, en late sos el más blando del mapa.",
+        "No enganchés al tanque enemigo cerca de tu equipo: tu hook trae el engage rival adentro. Elegí el objetivo por lo que pasa DESPUÉS del hook, no por quién está adelante."
+      ],
+      "plan": {
+        "early": "Buscá el nivel 2 antes que ellos empujando desde el primer minion y ahí tirá Q + E: es tu ventana más fuerte de la lane. Después jugá con la wave de tu lado y juntá almas sin regalarte.",
+        "mid": "Roameá con botas y ward: tu hook es la mejor herramienta de pick del mapa. Jugá alrededor de los objetivos, poné la linterna antes de entrar y buscá picks en los pasillos donde la R cierra la huida.",
+        "late": "Elegí un rol y sostenelo: si tu carry está fuerte, E + W + Q para cortar el engage; si tenés que abrir, Flash + Q al carry enemigo y R sobre el grupo. Nunca enganchés al tanque hacia adentro."
+      }
+    },
+    "sources": [
+      "https://wiki.leagueoflegends.com/en-us/Thresh/LoL",
+      "https://mobalytics.gg/lol/champions/thresh/guide",
+      "https://op.gg/champions/Thresh/synergies/support",
+      "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/es_AR/champion/Thresh.json"
+    ]
+  }
+}

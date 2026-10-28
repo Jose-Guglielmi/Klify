@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "taric",
+    "ddragonId": "Taric",
+    "name": "Taric",
+    "titleEs": "el Escudo de Valoran",
+    "cid": 44,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.12,
+    "pr": 1.23,
+    "br": 0.27,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.3,
+      "jungle": 2.4,
+      "middle": 0.6,
+      "bottom": 0.2,
+      "support": 95.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Taric.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Taric_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 61.52, "games": 343 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 61.18, "games": 304 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 57.21, "games": 1393 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 57.14, "games": 287 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 56.9, "games": 290 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 56.48, "games": 756 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 55.47, "games": 494 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 54.04, "games": 570 }
+  ],
+  "weakAgainst": [
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 46.52, "games": 417 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 46.74, "games": 475 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 47.1, "games": 259 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 47.56, "games": 431 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 48.55, "games": 653 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 48.64, "games": 660 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 48.78, "games": 246 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 48.81, "games": 252 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R hace invulnerable a todo el equipo durante 2.5 segundos: contra engage pesado o burst de un solo golpe, es la pelea entera dada vuelta.",
+      "El W le pasa resistencias al aliado y te las copia a vos: el carry que no compra defensivos termina tanqueando como un bruiser.",
+      "Bravado convierte cada habilidad en dos autos con daño mágico y reducción de cooldowns: en peleas largas no parás de curar y stunear.",
+      "La E sale desde el aliado vinculado con W: tenés un ángulo de stun que el rival no puede leer y que llega más lejos que tu propio cuerpo.",
+      "Escala muy bien con el tiempo: con la Q maxeada y maná en la bolsa, el heal sostenido en teamfight es de los más altos del rol."
+    ],
+    "weaknesses": [
+      "La E es telegrafiada: a rango máximo se esquiva caminando y sin Flash te cuesta muchísimo iniciar una pelea.",
+      "La Q se come el maná: contra poke te obliga a ceder prioridad de lane y a volver a base antes de tiempo.",
+      "Sos melee en un rol de rango: cualquier soporte con poke te saca de la wave y te deja farmeando bajo torre.",
+      "Depende de que el equipo pelee: si nadie hace daño, el heal y la invulnerabilidad no matan a nadie.",
+      "La R tarda 2.5 segundos en activarse: contra burst instantáneo o re-engage rápido llegás tarde si no la tirás antes."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con E + W: primer stun confiable y primer escudo con resistencias; ahí ganás todos los trades cortos de lane.",
+      "Botas tempranas: te dejan pegar los dos autos de Bravado sin que te kiteen y bajan muchísimo el cooldown de la Q.",
+      "Nivel 6: Cosmic Radiance neutraliza el burst enemigo entero y cambia por completo cómo se juega la bot lane.",
+      "Nivel 9 con la Q maxeada: el heal por carga se vuelve enorme y, con maná suficiente, el equipo pelea dos veces.",
+      "Niveles 11 y 16 con puntos en la R: el cooldown baja tanto que la tenés en casi todas las peleas; asumí que hay invulnerabilidad disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Janna, Soraka, Brand: te sacan de rango desde el level 1; jugá atrás, farmeá con el ADC y esperá el counter-engage en vez de buscar el pick.",
+        "No camines a la wave para last-hitear: cada paso adelante contra poke es un tercio de vida y la Q no alcanza a reponerlo.",
+        "Pedí gank o dejá que el rival se acerque: tu E castiga al que entra, no al que se queda atrás tirando hechizos."
+      ],
+      "tanks": [
+        "Nautilus, Leona, Alistar: te encantan, porque si ellos entran tu E les pega seguro y tu R anula su engage completo.",
+        "Contra engage pesado guardá la R para el segundo CC, no para el primero: la invulnerabilidad cubre el follow-up del equipo.",
+        "Con W sobre tu carry y la E lista, el trade de tanque contra tanque lo ganás por sustain: dejá que gasten el CC primero."
+      ],
+      "assassins": [
+        "Zed, Talon, Katarina: vinculá con W al carry amenazado y dejá la E apuntando a su entrada; el stun es tu única defensa real.",
+        "La R se tira ANTES de que el asesino entre, no después: los 2.5 segundos de delay son toda la ventana que tenés.",
+        "Cargá la Q al máximo antes de la pelea: si entrás sin heal disponible, no hay Bravado que te salve."
+      ],
+      "crowdControl": [
+        "Contra cadenas de CC largas comprá Mercury's Treads y guardá la R para cuando el equipo ya está trabado: la invulnerabilidad no cancela el CC, pero sí el daño.",
+        "Si te agarran a vos primero, el equipo pierde el heal y la R: jugá un paso atrás del carry, nunca adelante.",
+        "La E se puede castear y flashear antes de que salga: usala para entrar cuando el rival ya gastó su CC, no antes."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Te saca de rango con W y te corta cada engage con el tornado: no tires la E cruda, esperá que gaste el Q y casteala ahí.",
+          "Su R te desengancha justo cuando entra tu equipo: forzá su ulti con un stun corto antes de comprometer la pelea real.",
+          "Jugá la lane para escalar: con botas y la Q con puntos sos más útil en teamfight que ella, no necesitás ganarle el 2v2."
+        ]
+      },
+      {
+        "cid": 16,
+        "name": "Soraka",
+        "tips": [
+          "Su sustain gana el lane largo: buscá el all-in con stun a niveles 2-3, antes de que su heal escale; no aceptes trades largos.",
+          "Vinculá con W al que vaya a pegarle a Soraka: el stun desde el aliado llega por un ángulo que ella no cubre con la Q.",
+          "Si no podés matarla, empujá y roameá: no puede seguirte sin dejar al carry solo bajo torre."
+        ]
+      },
+      {
+        "cid": 63,
+        "name": "Brand",
+        "tips": [
+          "Su poke quema porcentual: no te pares a comer pasivos, entrá con la E y salí antes de que junte tres stacks.",
+          "La R te salva del burst del pasivo, pero no del daño sostenido: usala para el all-in, no para aguantar poke.",
+          "Guardá la E para cuando se acerque a tirar la Q: si lo stuneás en el casteo, se le cae el combo entero."
+        ]
+      },
+      {
+        "cid": 497,
+        "name": "Rakan",
+        "tips": [
+          "Su engage es más rápido que tu stun: quedate atrás del carry y casteá la E sobre tu propio cuerpo cuando él entra.",
+          "Rakan con W + R te desarma la pelea: guardá Cosmic Radiance para el remate de su engage, no para el arranque.",
+          "Su sustain es peor que el tuyo en peleas largas: si la pelea se estira, tu Q gana."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W sobre el ADC → E apuntada al rival (el stun viaja desde el aliado, no desde vos) → dos autos con Bravado → Q para curar el trade",
+        "Engage con Flash: casteá la E → Flash mientras carga → el stun sale desde la nueva posición; seguí con Q y W sobre el que entre",
+        "Sostén con pasiva: cualquier habilidad → dos autos de Bravado (daño extra y menos cooldown) → Q con cargas para bajar los CDs de todo el kit",
+        "Salvar al carry: W vinculado → R (Cosmic Radiance) → caminar pegado al carry cubriendo los 2.5 segundos con Q y W antes de que caiga la invulnerabilidad",
+        "Contra-engage: esperá que el rival entre → E sobre el que ya está encima → Q → R cuando gastaron los CDs principales"
+      ],
+      "tips": [
+        "La E es telegrafiada: no la tires cruda a rango máximo, usala después del CC de tu aliado o cuando el rival está clavado farmeando.",
+        "Vinculá con W al que está más adelante: el stun sale desde su posición y te da un ángulo que el rival no puede leer.",
+        "Bravado es tu motor: cada habilidad te da dos autos con daño mágico y reduce cooldowns, así que en pelea nunca te quedes atrás sin pegar.",
+        "No spamees Q a vida llena: se come el maná y es tu único sustain; guardá las cargas para el trade o el all-in.",
+        "Tirá la R al arranque del engage, no cuando el carry ya está a un auto de morir: los 2.5 segundos de delay son la diferencia entre salvar y llegar tarde."
+      ],
+      "plan": {
+        "early": "Jugá atrás, farmeá con el ADC y buscá solo counter-engage: con E + W al nivel 2 castigás al que entre y el resto del lane es sobrevivir el poke sin regalar maná.",
+        "mid": "Pegate al equipo, asegurá visión antes de los objetivos y usá la R para anular el engage rival; con botas y la Q con puntos sos el sostén de cualquier skirmish.",
+        "late": "Quedate un paso atrás del carry, vinculalo con W y guardá Cosmic Radiance para el segundo CC enemigo: en peleas agrupadas tu heal y la invulnerabilidad definen el 5v5."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/taric/guide",
+      "https://app.mobalytics.gg/lol/champions/taric/build"
+    ]
+  }
+}

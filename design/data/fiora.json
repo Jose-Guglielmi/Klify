@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "slug": "fiora",
+    "ddragonId": "Fiora",
+    "name": "Fiora",
+    "titleEs": "la Gran Duelista",
+    "cid": 114,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.4,
+    "pr": 4.31,
+    "br": 4.94,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 96.5,
+      "jungle": 0.1,
+      "middle": 2,
+      "bottom": 0.9,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fiora.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiora_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 57.56, "games": 721 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 54.98, "games": 693 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 53.9, "games": 269 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 53.86, "games": 440 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 53.74, "games": 374 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 53.65, "games": 356 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 53.61, "games": 651 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 53.37, "games": 1617 }
+  ],
+  "weakAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 45.54, "games": 1592 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 46.43, "games": 1583 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 46.95, "games": 262 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 48.21, "games": 224 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 48.46, "games": 1009 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 48.83, "games": 1493 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 49.2, "games": 439 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 49.3, "games": 860 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Las vitales de su pasiva hacen daño verdadero según % de vida máxima: no importa tu armadura ni tu build, cada punto débil que toca te descuenta igual y a los tanques los lame como a un squishy.",
+      "La Q es un dash corto con cooldown bajísimo al maxearla: tradea, reposiciona a la vital y escapa del gank con el mismo botón, así que casi nunca la encontrás desarmada por falta de escape.",
+      "La W (Riposte) anula todo daño y control en 0,75s: si le regalás tu CC a esa ventana, te devuelven el stun y perdés el trade entero de un golpe.",
+      "Gana los trades largos por diseño: la E en dos golpes (lentifica + crítico) más la curación de las vitales hacen que cada all-in extendido sea terreno suyo.",
+      "La R marca cuatro vitales y, si las toca todas, abre una zona que cura a ella y a su equipo: peleá adentro del círculo y el 1v1 ya está decidido en su contra."
+    ],
+    "weaknesses": [
+      "Su early es su punto más flojo: hasta el primer item necesita tiempo, y cada vital desperdiciada o trade perdido se lo podés cobrar con plating y ventaja de wave.",
+      "Sin la W en mano está descalza: gastada la Riposte, todo tu control entra limpio y la podés encadenar sin que pueda responder.",
+      "La anticuración la destruye: su sustain de vitales y de R es gran parte de su duelo; con Severidades arriba su all-in pierde la mitad del sentido.",
+      "Es melee y la vital aparece en un lado concreto: usá paredes y la posición de la wave para negarle el ángulo y hacerla caminar más de lo que quiere.",
+      "En 5v5 frontal aporta poco: negale las side lanes con visión y forzá peleas agrupadas donde no puede reposicionar para tocar vitales tranquilas."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R la convierte en la mejor duelista del mapa; no aceptes el 1v1 largo dentro del círculo ni con ventaja de vida.",
+      "Nivel 9 con la Q maxeada: el dash queda en cooldown de risa y puede cobrarte la vital cada pocos segundos; jugá atrás de la wave desde ahí.",
+      "Primer item (Hidra Voraz): suma empuje de wave y kill pressure real; es el momento donde arranca el splitpush serio, denegale la side lane antes de que se instale.",
+      "Nivel 11 y 16 con puntos en R: la cura en área escala y con build completo ganás 1v1 contra casi cualquiera; no le mandes gente de a uno en late."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Heimerdinger, Teemo, Vladimir: pokeala cada vez que baje a tocar la vital; con la vida a media barra no se anima a allinear el all-in.",
+        "Usá el terreno y tus propios objetos (torretas, barriles, hongos) para taparle la lectura del punto: si no ve la vital, no la toca.",
+        "Congelá la wave cerca de tu torre: cada acercamiento a la vital la acerca a tu jungla y convierte su Q ofensiva en Q de escape."
+      ],
+      "tanks": [
+        "Su daño verdadero ignora tu stack de armadura: escalá también con anticuración y vida, no apuestes todo a resistir sus golpes de espada.",
+        "K'Sante, Cho'Gath: la cura de su R escala con la pelea, así que hacé engage corto y desenganche; no le regales un duelo de 20 segundos adentro del círculo.",
+        "Guardá tu CC clave (knock-up, taunt) para cuando la W esté en cooldown: si parryea tu única amenaza, el trade entero es suyo."
+      ],
+      "assassins": [
+        "Nunca abras con tu único disable: un parry de la W sobre tu entrada la convierte en stun para vos y te borra la ventana de kill.",
+        "Fingí el engage y esperá la Riposte al vacío: gastada la W, su kit es puro autoataque y ahí entrás de verdad.",
+        "Pegá y salí: los trades extendidos son su casa, así que forzá intercambios cortos donde tu burst no le dé tiempo a escalar curación."
+      ],
+      "crowdControl": [
+        "La W parryea un solo instante: encadená el control de a dos (Malphite R + tu CC) y el segundo entra limpio sobre ella.",
+        "Los junglas con CC de entrada son su pesadilla solo si esperan la Riposte: coordiná el gank para que el stun entre después del parry.",
+        "En teamfight, agrupá y no le des sides: sin espacio para reposicionar entre vitales, su pasiva vale la mitad."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Comprá armadura igual, pero jugá del Temblor (E): bajarle la velocidad de ataque le rompe el ritmo de vitales y de E, que es de donde sale su daño sostenido.",
+          "Pokeala con el Fragmento Sísmico (Q) y mantené la wave lejos de tu torre: con la vida a media barra no puede comprometerse a tocar vitales cuerpo a cuerpo.",
+          "Guardá tu R para cuando ella tire la suya: si la agarrás quieta dentro de su propio círculo, la cura no le alcanza para ganar el intercambio.",
+          "No aceptes el 1v1 largo esperando que la armadura te salve: hacé intercambios cortos con Q + E y retirate antes de que escale curación."
+        ]
+      },
+      {
+        "cid": 122,
+        "name": "Darius",
+        "tips": [
+          "Entrale por adentro del arco de su hacha: el borde externo de la Q le cura y pega más; el centro hace poco daño y no le da sustain.",
+          "Guardá el Agarre (E) para después de la Riposte: si la W de ella parryea tu pull, te aturde y el trade entero se da vuelta; esperá el sonido de la W gastada.",
+          "Los trades cortos son tuyos y los largos son suyos: aplicá sangrado, retirate con ventaja y repetí; nunca persigas el kill hasta su cuarta vital.",
+          "Con tu pasiva a full seguís sin ganar el duelo largo a vida llena: forzá peleas con ventaja de minions y castigá cada vital que la haga caminar hacia vos."
+        ]
+      },
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Jugá con las torretas entre ella y la wave: cada vital exige acercarse, y ese paso adelante lo paga en daño de torretas más tu Q de poke.",
+          "Guardá la granada (E) para cuando gaste la Riposte o cuando esté farmeando con la Q: paralizarla sin W en mano termina el trade antes de que empiece.",
+          "Empujá y buscá placas antes del nivel 6: tu early es muy superior y cada minuto que el lane quede plano lo aprovecha ella con vitales gratis.",
+          "Si cruza a tocar una vital lejos, castigala con la Q + torretas: su única movilidad es la Q propia y la necesita para salir, no para entrar."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Guardá el charco (W) para el momento caro: la esquiva perfecta es sobre el crítico de su E2 o el arranque de la R, no sobre la Q de poke.",
+          "Pokeala con la Q cada vez que camine hacia una vital: con la vida de ella a media barra, el all-in dentro del círculo no le cierra.",
+          "Empujá la wave y castigá cada reposicionamiento: la vital la obliga a moverse hacia donde vos querés, y cada paso le cuesta un Q tuyo.",
+          "En el all-in nivel 6 abrí con R cuando la vea tirar la W: sin Riposte ni charco disponibles, su duelo queda sin curación ni respuesta."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q hacia la vital → E1 (lentifica) → E2 (crítico) → Q de salida; tocá el punto apenas aparece y cortá el trade con vida ganada.",
+        "All-in nivel 6: E1 → E2 sobre la vital → R encima del objetivo → perseguí las cuatro vitales usando la Q según el lado donde aparezcan.",
+        "Parry a medida: esperá el CC clave del rival (agarre de Darius, R de Malphite) y tirá la W en ese frame; parry sobre un control te da stun para castigar.",
+        "Chase con reset: cuando la vital aparece lejos, apuntá el Q hacia el punto y no hacia el campeón; el dash correcto te deja ya en posición de siguiente golpe.",
+        "Escape de gank: guardá Q y W en todo momento; Q a un minion lejano cuando el jungla se asome y W el CC de entrada si insiste."
+      ],
+      "tips": [
+        "No uses la W como poke ni para farmear: es tu única defensa; sin Riposte en mano, cualquier CC te borra el trade completo.",
+        "Leé la vital antes de gastar la Q: si el punto quedó del lado de la pared, caminá primero y reposicionate; el dash mal tirado te deja dentro del rango de castigo.",
+        "Los trades extendidos son tu terreno: no entrés a golpes sueltos; comprometé la E completa y buscá la segunda y tercera vital antes de retirarte.",
+        "Usá la curación de las vitales como sustain del lane: tocá el punto en cada walk-up del rival y volvé a la wave con más vida de la que trajiste.",
+        "El split solo va con visión: avisá con ping, dividí cuando tu equipo pueda sostener 4v4 y agrupate si tu TP está down o la pelea se define sin vos."
+      ],
+      "plan": {
+        "early": "Farmeá y tocá la vital en cada acercamiento del rival, mantené la wave cerca de tu torre para chasear con Q, y al llegar a 6 buscá el all-in con E + R para sacar el primer lead.",
+        "mid": "Dividí la side lane con Hidra y TP: forzá al rival a mandar gente y ganá el 1v1 contra cualquiera que venga, mientras tu equipo cobra dragón o heraldo del otro lado.",
+        "late": "Seguí el split con visión del Baron o flankeá con TP: buscá el pick con R sobre el más cercano, completá las vitales para curarte y entrá al teamfight con vida llena y tu W lista para el CC de entrada."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/fiora/guide",
+      "https://mobalytics.gg/lol/champions/fiora/build"
+    ]
+  }
+}

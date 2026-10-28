@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "yuumi",
+    "ddragonId": "Yuumi",
+    "name": "Yuumi",
+    "titleEs": "la gatita mágica",
+    "cid": 350,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.33,
+    "pr": 5.34,
+    "br": 7.2,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 0,
+      "jungle": 0,
+      "middle": 0,
+      "bottom": 0.1,
+      "support": 99.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yuumi.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yuumi_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 60.7, "games": 257 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 60.09, "games": 228 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 58.87, "games": 462 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 57.99, "games": 219 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 57.14, "games": 1267 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 55.85, "games": 564 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 55.3, "games": 217 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 54.8, "games": 354 }
+  ],
+  "weakAgainst": [
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 43.25, "games": 4097 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 44.28, "games": 1696 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 44.85, "games": 5962 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 44.88, "games": 361 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 45.35, "games": 2258 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 45.35, "games": 763 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 45.58, "games": 4548 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 45.85, "games": 1435 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Mientras está pegada a un aliado con la W es intargeteable: no la matás con poke ni con engage directo, tenés que forzarla a bajarse o sacarla de encima con control de masas.",
+      "La E le da a su carry curación, velocidad de movimiento y velocidad de ataque: esquiva tus skillshots y gana trades que por número puro debería perder.",
+      "La R tira siete oleadas con slow y enraíza al que come tres: en un pasillo de jungla o sobre el dragón te parte la pelea en dos y no podés pelear ahí.",
+      "Su sustain es continuo, no de ráfaga: si no cortás la curación con Grievous Wounds, todo el daño que metés en el lane se borra en diez segundos.",
+      "Es un multiplicador puro de late: el carry con ítems más escudos más velocidad se vuelve un raid boss que tu equipo no logra enfocar."
+    ],
+    "weaknesses": [
+      "Sola no existe: sin un aliado cerca no tiene movilidad, escape ni forma de pelear; atrapala cuando va a wardar y es la kill más barata del mapa.",
+      "La E cuesta muchísimo maná: si la obligás a gastarlo defendiendo poke, se queda seca y en lane no cura ni una vez en los próximos veinte segundos.",
+      "El CC fuerte la desmonta: si la agarra un stun, un root o un knock-up, la sacan de la W, la W se va a cooldown largo y ahí muere en una rotación.",
+      "No puede contestar visión ni pushear sola: cada vez que su equipo rota y ella se queda atrás, perdés un cuerpo en la pelea.",
+      "Scaling puro: antes del primer ítem completo es media support; si abrís la partida temprano, no llega a la pelea que importa."
+    ],
+    "powerSpikes": [
+      "Nivel 2: ya tiene Q y E y puede curar y pokear en el mismo trade; no le regales vida al carry antes de eso.",
+      "Nivel 6 con la R: primera herramienta real de disengage; el all-in que armaste a nivel 5 se desarma con siete oleadas de slow y root.",
+      "Primer ítem más botas: el maná le alcanza para spamear la E y su carry deja de perder trades; ahí el lane se da vuelta.",
+      "Nivel 13 con Q y E maxeadas y dos puntos en R: la curación por segundo pasa a superar tu DPS sostenido si no tenés Grievous Wounds."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lux, Xerath, Brand: pegalo desde fuera del alcance de su Q y apuntá al carry, no a la gata; si la obligás a gastar E en cada trade, se queda sin maná antes del nivel 6.",
+        "No tires skillshots en línea recta sobre el carry: la E le da la velocidad justo para esquivarlas; tiroteá cuando el hechizo ya salió o desde un ángulo cruzado.",
+        "Cuando va a wardar sola, es kill gratis: sin aliado al lado no tiene escape, ni escudo, ni velocidad para huir."
+      ],
+      "tanks": [
+        "Leona, Nautilus, Rell, Thresh: el CC es la respuesta; el hook o el stun sobre el carry la desmonta o la obliga a bajarse, y sin W está muerta.",
+        "Enganchá en dos tiempos: forzá la R y la E con la primera entrada y volvé a entrar con la segunda; una Yuumi no tiene peel para dos rotaciones seguidas.",
+        "Comprá Grievous Wounds temprano (o pedile Executioner's a tu ADC): contra sustain puro, el 40% de curación menos vale más que cualquier ítem de daño."
+      ],
+      "assassins": [
+        "Zed, Talon, Kha'Zix: maten al carry y no a Yuumi, que está intargeteable mientras esté pegada; el burst tiene que entrar antes de que el heal se acumule.",
+        "Esperá que la W esté en cooldown (después de que la saquen con CC o de que ella se baje) y recién ahí meté todo el burst sobre la gata: muere en dos golpes.",
+        "Entrá con Grievous o Ignite aplicado: sin la curación de la E y la pasiva, su carry es un carry normal y tu combo alcanza."
+      ],
+      "crowdControl": [
+        "El CC que la desmonta es oro: cualquier stun, root o knock-up sobre ella la deja expuesta un instante y ese instante decide la pelea.",
+        "Encadená el CC sobre el carry buffeado y no sobre Yuumi: si el carry no puede pegar, la gata es solo 300 de oro caminando.",
+        "En peleas de objetivo evitá los pasillos: la R de siete oleadas castiga equipos agrupados; peleá abierto y lateral, nunca en fila."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 89,
+        "name": "Leona",
+        "tips": [
+          "Entrá con la E sobre el carry y no sobre Yuumi: la W no lo salva del stun y, con el carry trabado, la gata no tiene forma de sacarlo.",
+          "Guardá el Q para después de su R: si la usa para escapar de la primera tanda de CC, la segunda la deja en el piso sin W.",
+          "Con la pasiva aplicada, tu ADC borra al carry antes de que la E del gato cure algo; coordiná para que los dos peguen el mismo objetivo."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Cabalgá sobre el carry y arrastralo fuera del rango de la W: si lo despegás, la gata queda intargeteable pero inútil en medio de la pelea.",
+          "Usá el escudo y el CC de tu W para forzar la R de Yuumi y después volvé con el segundo engage: no tiene respuesta para dos entradas.",
+          "Cuando se baje a wardar o a pegar autos para la pasiva, girá sobre ella; sin W disponible es la kill más barata del mapa."
+        ]
+      },
+      {
+        "cid": 412,
+        "name": "Thresh",
+        "tips": [
+          "El hook sobre el carry es el mejor hechizo del matchup: rompe la W y la obliga a gastar E y R en defensa; con la linterna no la dejás escapar.",
+          "Flejá a la gata cuando se baja a pegar autos: el empuje la aleja del aliado y sin W queda caminando en medio de la nada.",
+          "Cerrá con la caja alrededor del carry buffeado: la velocidad de la E no le sirve si el único camino de salida está bloqueado."
+        ]
+      },
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Q más R encadenadas sobre el carry no dejan ventana para que la E cure nada; dos bandas de CC seguidas ganan cualquier sustain.",
+          "Tu W en porcentaje de vida es ideal contra un carry con curación: pegalo sostenido, no en ráfaga, y el heal no llega a compensar.",
+          "Buscá el engage cuando Yuumi está despegada: si la agarrás primero, es medio equipo enemigo menos en la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W al carry → Q desde su cuerpo (la gata apunta mientras está pegada) → E al carry cuando el rival empieza a devolver el daño; ese orden te deja pegar sin exponerte",
+        "Poke con Q potenciada: mantené la Q en vuelo más de un segundo antes de soltarla sobre el objetivo para que salga con slow y daño extra",
+        "Teamfight completa: E sobre el carry → R en abanico apuntando al grupo enemigo (enraíza al que come tres oleadas) → W para saltar a otro aliado y reubicarte",
+        "Salto defensivo: cuando entra el engage, W al frontline para comer el CC y volvé con W al carry; nunca te quedes en el mismo cuerpo toda la pelea",
+        "Reset de pasiva: bajate con W, pegá un auto o un Q para activar la pasiva y volvé a subirte; ese escudo y esa curación salen gratis"
+      ],
+      "tips": [
+        "No te quedes pegada al carry todo el lane: saltá con W al que esté más adelante para que la pasiva cure a los dos y la Q salga desde un ángulo incómodo.",
+        "La E se come tu maná: usala para curar después del trade, no para iniciarlo, o te quedás seca justo cuando te empiezan a pokear.",
+        "Nunca wardeés sola: la gata sin aliado es la kill más fácil del mapa; pedile al jungla que te acompañe o mandá al carry adelante con el trinket.",
+        "Guardá la R para el disengage y no para el poke: siete oleadas con slow y root valen diez veces más cuando el enemigo ya gastó el engage.",
+        "Si te sacan de la W con CC, corré al aliado más cercano y no pelees: sin W estás en cooldown y sos un minion con bigotes."
+      ],
+      "plan": {
+        "early": "Pokeá con Q desde el cuerpo del ADC, curá con E recién cuando el trade ya pasó y no cruces el río a wardar sin compañía; el objetivo es llegar a nivel 6 con el carry vivo y con maná.",
+        "mid": "Pegate al que esté más fuerte del equipo —no siempre el ADC—, acompañá cada rotación con W y usá la R para frenar engages o cerrar picks en el río antes de los objetivos.",
+        "late": "Viví pegada al carry fed, casteá E antes del burst enemigo y no después, y reservá la R para partir la pelea en dos; si te desmontan, saltá al tanque y esperá que vuelva la W."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/yuumi/guide",
+      "https://mobalytics.gg/lol/champions/yuumi/counters",
+      "https://mobalytics.gg/lol/champions/yuumi/combos"
+    ]
+  }
+}

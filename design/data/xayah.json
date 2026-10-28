@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "xayah",
+    "ddragonId": "Xayah",
+    "name": "Xayah",
+    "titleEs": "la Rebelde",
+    "cid": 498,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.06,
+    "pr": 6.72,
+    "br": 1.61,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0,
+      "middle": 0.2,
+      "bottom": 99.5,
+      "support": 0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Xayah.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xayah_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.82, "games": 275 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 56.63, "games": 588 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 55.73, "games": 6124 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 55.04, "games": 5331 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 54.83, "games": 2650 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 54.59, "games": 4867 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 54.43, "games": 17919 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 54.34, "games": 484 }
+  ],
+  "weakAgainst": [
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 47.05, "games": 542 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.17, "games": 301 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 48.76, "games": 322 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 48.94, "games": 235 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 49.44, "games": 267 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 50.3, "games": 495 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 50.53, "games": 7606 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 50.57, "games": 265 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El E rootea en área con daño real: con tres plumas en el piso gana trades que ningún otro ADC puede ganar, y encima las plumas quedan tiradas castigando la posición rival.",
+      "El W le da attack speed y velocidad de movimiento, y sus tres autos perforantes después de cada habilidad pican muchísimo early: los trades largos son suyos por default.",
+      "El R la vuelve intargeteable durante el salto: puede esquivar el burst, el engage o el dive sin gastar Flash y aterrizar con cinco plumas para rootear.",
+      "Late game monstruosa si el equipo la cubre: el daño sostenido de autos con crítico pasa por arriba de casi cualquier ADC cuando llega a tres items.",
+      "El root del E no tiene rango de casteo: se dispara desde cualquier distancia de las plumas, así que puede pelear y escapar al mismo tiempo."
+    ],
+    "weaknesses": [
+      "Inmóvil todo el juego: sin dash ni escape propio, cada gank del jungla es una kill casi segura si no tiene E cargada o R en mano.",
+      "Depende del E para todo: con el E en cooldown la allinean sin riesgo, porque no tiene forma de pelear ni de frenar al que la corre.",
+      "Rango de auto corto para ser ADC: los magos de bot (Veigar, Vel'Koz, Lux) la castigan desde afuera de su alcance y ella no puede contestar sin caminar hacia el poke.",
+      "Sin R queda expuesta: su única herramienta contra asesinos y CC en cadena es el R, así que forzá peleas mientras lo tiene en cooldown.",
+      "Early flojo: antes del primer item de crítico no mata a nadie y pierde casi todos los intercambios contra lanes con daño temprano."
+    ],
+    "powerSpikes": [
+      "Primer componente de crítico: el duelo y el farmeo cambian por completo, empieza a ganar trades que antes perdía.",
+      "Nivel 6: el R le da una salida y plumas extra gratis; deja de ser una kill regalada para el jungla.",
+      "Nivel 9 con la E maxeada: el E pega el doble y las plumas borran squishies; no te pares en la línea de plumas.",
+      "Dos items y nivel 11: su pico real de daño; con R en mano gana peleas 2v2 y 3v3 sin ayuda de nadie.",
+      "Tercer punto en la R (nivel 16): el cooldown baja tanto que casi siempre lo tiene en mano; asumí que puede esquivar tu engage."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Veigar, Vel'Koz, Lux, Senna: pegarle desde fuera del alcance de sus autos y negarle el farmeo; es el matchup donde más sufre.",
+        "Apuntá los skillshots a la línea de plumas: si se para cerca de su propio E para rootear, el CC en área la agarra sin escape.",
+        "Empujá la wave y obligala a farmear bajo torre: sin E disponible no puede contestar el poke ni frenar el push."
+      ],
+      "tanks": [
+        "Comprá el item defensivo antes de que parezca necesario: su daño es de autos sostenidos y un componente temprano le corta el pico de dos items.",
+        "Caminá encima de ella con CC en área: sin dash, el tanque que la alcanza la mata; el R solo le da dos segundos de aire.",
+        "No la persigas en línea recta por el pasillo de plumas: flanqueala y el E no puede rootear en ángulo."
+      ],
+      "assassins": [
+        "Katarina, Zed, Kha'Zix: esperá que gaste el E para farmear y entrá ahí; sin E no tiene ni root ni burst.",
+        "Forzá el R antes de comprometerte: si lo usa para escapar, tenés una ventana larga para la próxima all-in.",
+        "Flanqueala en teamfights: kitea muy bien en línea recta, pero un flanqueo la deja sin ángulo de plumas y sin salida."
+      ],
+      "crowdControl": [
+        "Guardá el CC para cuando esté por tirar el E: interrumpir el root le apaga toda la pelea.",
+        "Encadená stuns después de su R: en el aire es intargeteable, así que castigala apenas aterriza.",
+        "Suprimí o stuneá al soporte que la cubre: sin peel, Xayah no puede pelear ni farmear de forma segura."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q y stackeá desde fuera del alcance de sus autos: ella necesita acercarse para tradear y tu rango la castiga en cada last hit.",
+          "Guardá la jaula (E) para cuando se acerque a rootear con tres plumas: encerrada no tiene dash y se come tu combo entera.",
+          "Al nivel 6 no te pares en la línea de plumas: su R + E te borra si te agarra quieto; esperá a que gaste el E para allinear."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Pokeala con Q + W desde los 1000 de rango: su alcance de auto es corto y no puede contestar sin caminar hacia tu poke.",
+          "Usá la disrupción (E) cuando se acerque a rootear: interrumpirle el E apaga su pelea entera.",
+          "Guardá la R para después de su R: mientras está en el aire es intargeteable, pero al aterrizar es un target quieto."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Pokeala con E desde fuera de su rango de autos: es su debilidad estructural durante toda la lane.",
+          "Atala con Q cuando camine hacia adelante a tradear: sin movilidad, una atada es media vida o directamente la kill.",
+          "Empujá la wave y no te quedes sobre las plumas: el E de ella rootea en área y con el R detrás te ejecuta."
+        ]
+      },
+      {
+        "cid": 235,
+        "name": "Senna",
+        "tips": [
+          "Pokeala con Q y autos largos: le ganás el rango por mucho y cada trade le cuesta vida sin poder contestar.",
+          "Si te tira el E encima, no camines sobre la línea de plumas: tomá un ángulo lateral y el root no entra.",
+          "Forceá peleas cortas y mirá el mapa: sin R está indefensa ante el gank, pedile al jungla que castigue su lado."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: W → auto → Q → auto → E para rootear (el W te da el attack speed para meter los autos entre las dagas)",
+        "Root rápido sin aviso: Q → auto → E (las dos dagas más el auto dejan tres plumas, así que el root entra seguro)",
+        "All-in nivel 6: R sobre el objetivo → E mientras estás en el aire → W → autos (el R tira cinco plumas en cono, el root no falla)",
+        "Pick con Flash: R → Flash hacia el carry mientras estás en el aire → E para rootear a todo el que esté en la línea",
+        "Defensivo: R para comerte el burst (sos intargeteable en el salto) y E apenas aterrizás para rootear al que te persiguió"
+      ],
+      "tips": [
+        "No gastes el E en la wave salvo que estés solo o con el jungla lejos: es tu única forma de pelear y de escapar, sin E te allinean gratis.",
+        "Contá tus plumas: con tres o más en el piso el E rootea; con menos solo pega, así que no lo tires por tirar.",
+        "Guardá el R para el burst enemigo, no para abrir: en el aire sos intargeteable y el E de aterrizaje te deja rootear al que se quedó cerca.",
+        "Activá el W antes del Q en los trades: el attack speed hace que las plumas salgan más rápido y que el root llegue antes que su escape.",
+        "Jugá pegado a tu soporte y kiteá con autos: tu daño sostenido es alto pero tu rango es corto, cada paso de más es media vida."
+      ],
+      "plan": {
+        "early": "Farmeá seguro hasta el nivel 3, tradea solo con W + Q + auto + E cuando el soporte enemigo ya gastó el CC y llegá a 6 con R en mano para sobrevivir ganks.",
+        "mid": "Después de la torre de bot rotá a mid, quedate pegado al soporte, juntá side lanes cerca de tu equipo y buscá picks con R + E sobre targets aislados.",
+        "late": "Kiteá desde atrás en teamfights, guardá el R para el engage enemigo y buscá el ángulo de E sobre el equipo agrupado; nunca camines solo por el mapa."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/xayah/guide",
+      "https://mobalytics.gg/lol/champions/xayah/combos",
+      "https://mobalytics.gg/lol/champions/xayah/counters"
+    ]
+  }
+}

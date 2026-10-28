@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "ambessa",
+    "ddragonId": "Ambessa",
+    "name": "Ambessa",
+    "titleEs": "La Matriarca de la Guerra",
+    "cid": 799,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.95,
+    "pr": 2.9,
+    "br": 3.69,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 78.8,
+      "jungle": 14.8,
+      "middle": 5.7,
+      "bottom": 0.3,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ambessa.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ambessa_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 56.26, "games": 471 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 53.13, "games": 672 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.42, "games": 641 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 52.29, "games": 306 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 52.19, "games": 228 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 52.11, "games": 451 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 51.49, "games": 303 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 51.26, "games": 478 }
+  ],
+  "weakAgainst": [
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 43.49, "games": 453 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 43.71, "games": 485 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 45.26, "games": 623 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 45.34, "games": 1396 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 45.39, "games": 282 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 45.71, "games": 595 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 46.08, "games": 204 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 46.94, "games": 637 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva potencia sus próximos dos básicos después de cada habilidad: cada trade con autos intercalados entre Q/E/W pega mucho más de lo que parece.",
+      "Es una peleadora de trades largos: gana los intercambios extendidos, no los de un hit; si aceptás pelear cuerpo a cuerpo varios segundos, te gana.",
+      "La R la vuelve intargetable y noquea al objetivo: esquiva tu skillshot clave y arranca la pelea desde una posición que ningún campeón puede responder.",
+      "Movilidad enorme: el dash de la E recarga corto y puede castear Q o W durante el vuelo, así que persigue, escapa y roamea mejor que casi cualquier top laner."
+    ],
+    "weaknesses": [
+      "Depende de la energía, no del maná: sin barra cargada su combo se corta a la mitad; castigala apenas tire habilidades en vano y quedé sin recursos.",
+      "Sin proyectiles: todo su daño es cuerpo a cuerpo, así que el rango te deja farmear y pegarle sin aceptar el trade que ella necesita.",
+      "Es frontline con escudo de la W pero sin sustain en el kit: sostenela en trades de desgaste constante y no le des all-ins que ella pueda iniciar.",
+      "La R es single-target y de inicio: si el carry está protegido o ella entra primera sin su equipo, queda peleando 1v5 en el medio.",
+      "Los counters de rango y de splitpush puro (Teemo, Tryndamere) la sacan del mapa: elegí ese perfil y ella pierde valor en cada minuto que pasa."
+    ],
+    "powerSpikes": [
+      "Nivel 2-3 con Q + E ya tiene el trade completo: no te pares en rango de su E sin saber cuánta energía tiene cargada.",
+      "Nivel 6: la R de knock-up e intargetabilidad convierte cualquier error tuyo de posición en all-in ganado; jugá un paso atrás hasta verla gastarla.",
+      "Primer item resuelto (Eclipse): con daño y habilidad de chase listos, cualquier wave pushada de tu lado es una muerte esperando a pasar.",
+      "Mid game con Teleport y su core completo: flanquea desde la jungle y salta al carry con R; no camines solo por el mapa con ella desaparecida."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Vayne, Gangplank: pegale desde el borde de tu rango y mantenete en movimiento; ella necesita acercarse para existir y cada paso adelante le cuesta vida.",
+        "Congelá la wave cerca de tu torre: le negás los all-ins de dash y la obligás a extenderse, que es justo donde su rango corto duele más.",
+        "Guardá tu escape para su E-Flash: si esquivás el salto de inicio, ella queda metida en tu rango sin forma de salir."
+      ],
+      "tanks": [
+        "K'Sante, Sion, Nasus: no intentes ganar el early por daño; ella escala con items de pelea larga, así que escalá vos también y negale los trades con wave control.",
+        "Esquivá o tanqueá la Q recast con minions de por medio: su daño viene casi todo de la combo Q-autos, y si no conecta entera no rompe tu línea de vida.",
+        "Comprate armadura temprana: sus autos potenciados y el daño físico son todo su kit; resistir eso la deja sin amenaza real."
+      ],
+      "assassins": [
+        "Cuando use la E para acercarse, es el momento de pelear: su dash es corto y con cooldown, y sin él es un objetivo lento y cuerpo a cuerpo.",
+        "No te apiles con tu carry cuando tenga R disponible: el salto pega al primero que encuentre, así que separá los objetivos en la teamfight.",
+        "Si sobrevivís su combo inicial sin haber gastado nada, ese es tu all-in: le queda poca energía para la segunda ronda."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas empiece el salto de la R o apenas tire la E: cortarle la combo a la mitad la deja a pie en medio de tu equipo.",
+        "Guardá el CC para después de que sea intargetable con la R: la ventana de pelea arranca cuando aterriza, no antes.",
+        "Camille y Warwick le ganan la pelea de resource: obligala a gastar energía en trades cortos y su combo entera queda sin combustible."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Splitpusheá más rápido que ella: tu daño sostenido con fury supera sus trades cortos y la obliga a responder tu push en vez de roamear.",
+          "Esperá que gaste la W de escudo antes de entrar con tu spin: sin el escudo encima, tus básicos la desgastan mucho más rápido de lo que ella regenera.",
+          "Con ultimato activo no le temas al salto de R: la intargetabilidad dura un instante y después seguís pegando con la barra llena."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "Pegale con Q en cada intento de acercarse: su combo entera depende de llegar cuerpo a cuerpo y tu ceguera le apaga justo los autos potenciados de la pasiva.",
+          "Mantené la wave empujada y los hongos detrás de vos: si ella quiere all-in con E tiene que atravesar tu zona minada para llegarte.",
+          "No te pares quieto en rango de su E: tu rango te deja farmear sin entrar jamás al radio de su dash."
+        ]
+      },
+      {
+        "cid": 114,
+        "name": "Fiora",
+        "tips": [
+          "Parí la vitalidad en el momento justo: cuando tire la Q o el stomp de la W, esquivá con la E lateral y las paradas salen gratis.",
+          "Ganale los trades extendidos: ella apuesta a la pelea larga, pero tu pasiva de duelista escala mejor cuando el intercambio pasa los tres segundos.",
+          "Usá tu ultimato para negarle la R: si la marcás antes de que salte, el knock-up entra igual pero vos ya tenés la vitalidad girando."
+        ]
+      },
+      {
+        "cid": 58,
+        "name": "Renekton",
+        "tips": [
+          "Ganale el nivel 1-3 con Q con furia: antes de que su combo arme, tus trades cortos con E + W + Q pegan más de lo que ella responde.",
+          "Guardá tu E para cuando tire la W de escudo: cancelarle la ventana de escudo convierte su trade en daño neto para vos.",
+          "Después del nivel 6 jugá con la wave congelada: ella depende del all-in de R y sin espacio para saltar no encuentra entrada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → 2 autos potenciados → E hacia el costado del rival → 2 autos → Q recast para cerrar (el mismo patrón Q-AA-E-AA-Q de las guías)",
+        "All-in con R: R (intargetable + knock-up) → Q → W encima del objetivo → autos → Q recast → E para reubicarte o perseguir",
+        "Engage con Flash: E → Flash sobre el carry → autos → Q → R → autos para terminar (guardala para picks, no la tires a ciegas)",
+        "Trade extendido con escudo: W para absorber el burst rival → autos → Q → autos → E → autos → Q (peleas largas son tu terreno)",
+        "Escape o persecución: E recargado corto para reposicionarte entre Q y W, nunca gastes los dos dashes seguidos salvo para ejecutar"
+      ],
+      "tips": [
+        "Mirá la barra de energía antes de cada all-in: si no está casi llena, tu combo se corta a la mitad y quedás parado sin nada (la guía lo marca como error número uno).",
+        "Congelá la wave cerca de tu torre cuando puedas: tu movilidad castiga a cualquiera que se pare muy adelantado, y congelar te garantiza que se extiendan.",
+        "Intercalá siempre dos autos entre habilidad y habilidad: la pasiva es tu daño real, y spamear Q-W seguido es jugar con la mitad del kit.",
+        "Usá la W como escudo reactivo al trade, no como poke: el escudo decide los intercambios y gastarlo primero te deja perdiendo el resto del combo.",
+        "Guardá la R para saltar al carry o para esquivar tu habilidad clave con la intargetabilidad: no la uses como engage genérico contra el tanque."
+      ],
+      "plan": {
+        "early": "Farmeá con la wave controlada cerca de tu torre, comercia con Q + autos potenciados recién cuando el rival esté extendido y revisá siempre la energía antes de comprometerte.",
+        "mid": "Con Eclipse y Shojin resueltos, empujá o congelá según el matchup y buscá picks con Teleport: un salto de R sobre el carry enemigo define la pelea entera.",
+        "late": "Flankeá con tu movilidad y esperá el momento en que el carry esté accesible: entrá con E-Flash o R, encadená Q-W sobre el objetivo y salí con el segundo dash de E."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/ambessa/build",
+      "https://mobalytics.gg/lol/champions/ambessa/combos"
+    ]
+  }
+}

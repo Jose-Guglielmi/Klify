@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "nocturne",
+    "ddragonId": "Nocturne",
+    "name": "Nocturne",
+    "titleEs": "la Pesadilla Eterna",
+    "cid": 56,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.26,
+    "pr": 4.2,
+    "br": 10.09,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 2.0,
+      "jungle": 96.8,
+      "middle": 0.9,
+      "bottom": 0.0,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nocturne.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nocturne_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 56.34, "games": 284 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 55.86, "games": 555 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 55.27, "games": 275 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 54.9, "games": 255 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 54.62, "games": 2435 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 54.02, "games": 224 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 53.02, "games": 1092 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 52.97, "games": 236 }
+  ],
+  "weakAgainst": [
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 42.52, "games": 294 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 45.1, "games": 459 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 45.18, "games": 456 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 46.0, "games": 1211 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 46.22, "games": 331 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 46.53, "games": 576 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 46.89, "games": 1301 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 46.9, "games": 226 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R cubre media pantalla con el mapa en oscuro: si caminás solo sin visión, el pick ya te encontró antes de que veas la sombra venir.",
+      "Clear de jungla rápido y sano: powerfarmea y llega a sus spikes de item antes que casi cualquier otro jungla del pool.",
+      "La W le bloquea un hechizo y le da velocidad de ataque: castigarlo con un proyectil suelto le termina financiando la pelea.",
+      "El fear de la E es una amenaza que no requiere Flash: si te agarra en rango de melee, el stun te lo come entero.",
+      "Simple de ejecutar: gana por timing y decisión de cuándo entra la R, no por mecánica compleja."
+    ],
+    "weaknesses": [
+      "Pre-6 no tiene gap closer ni escape: es el momento para invadir su jungla y castigar sus lanes sin que pueda responder.",
+      "Ultra squishy: si entra con la R a una teamfight agrupada, lo derriban antes de completar la combo.",
+      "Depende al cien por ciento de la R: sin ultimate no tiene engage ni vuelta atrás; peleá cuando esté down.",
+      "Si el equipo rival agrupa, se queda sin targets aislados y su R pierde todo el valor.",
+      "La W es un solo bloqueo: pescalo con un proyectil barato primero y el CC real le entra limpio después."
+    ],
+    "powerSpikes": [
+      "Nivel 6: sus ganks pasan a ser confiables; desde ese momento no camines solo por el mapa sin visión.",
+      "Primer item resuelto (Profane Hydra): acelera el clear y le da el burst justo para ejecutar ganks de una pasada.",
+      "Mid game con puntos en la R: el cooldown baja tanto que está presente en cada pick y cada pelea; agrupate antes de cruzar tu jungla.",
+      "Late cae contra armadura y equipos juntos: forzá peleas cuando su R esté en cooldown y no le des picks regaleados."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Tu rango te deja castigarlo antes del 6 y después de que gaste la Q en la jungle: no le regales trades de melee que no necesita ganar.",
+        "Guardá tu escape para el aterrizaje de su R, no para farmear: si la R no te encuentra, queda plantado en medio de tu equipo sin salida.",
+        "Poné visión profunda en tus rutas: su único juego es la sorpresa, y con el mapa iluminado se vuelve un jungla farmeador sin amenaza."
+      ],
+      "tanks": [
+        "Stackeá armadura temprano: todo su daño es físico de autos e items, un solo item defensivo le corta la ejecución por la mitad.",
+        "Pegate a tus carries y agrupate: sin un target aislado para la R, no tiene forma de entrar a la pelea.",
+        "Dejá que entre primero: su squishiness juega en tu contra tanqueando; full combo encima de él cuando aterrice y la pelea queda 4v5."
+      ],
+      "assassins": [
+        "Invadí su jungla antes del 6: sin ultimate es débil en el 1v1 temprano y no tiene escape para responder tu duelo.",
+        "Trackeá su R en el minimapa: si la gastó en un gank fallido, tenés quince segundos para contrajungla o forzar objetivo en el otro lado.",
+        "En 1v1 forzá que gaste la W con tu hechizo de menor valor: sin el bloqueo, su trade cae y tu combo le gana limpia."
+      ],
+      "crowdControl": [
+        "Encadená tu CC en el aterrizaje de su R: es el único instante donde sabés exactamente dónde va a estar, y ahí muere.",
+        "Gastale la W con un proyectil barato y guardá el stun real para tres segundos después: su counter-play es un solo bloqueo.",
+        "Nunca camines side lane sin tu equipo a dos pantallas: cada pick que le regalás se convierte en dragón, torre o barón."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Tu movilidad le gana la R: guardá Vault (E) para despegarte en el momento del aterrizaje y volvé a castigar mientras su combo queda sin rango.",
+          "Castigalo en su propia jungla: antes del 6 no tiene gap closer y tus ganks de counter-jungla le roban el tempo que necesita para llegar a sus spikes.",
+          "Mantené el mapa abierto con visión: su R busca targets aislados, y un Nocturne sin picks termina el juego farmeando por debajo de tu ritmo."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Counter-gankeá con E: su gank entra con la R encima del carry; el salto tuyo encima de los dos invierte la pelea completa.",
+          "Stackeá armadura temprano: sus autos y Profane Hydra son daño físico puro; con tu pool de vida escalado, su combo no te ejecuta y él muere en el intento.",
+          "Forzá a tu equipo a agruparse en peleas de objetivo: su R pierde valor contra equipo junto, y vos sos el que define el engage en esas peleas."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Invadilo temprano y seguido: pre-6 pierde el 1v1 contra vos y cada camp que le robás demora el nivel 6 del que depende todo su juego.",
+          "Disputá cada objetivo con presencia: tu velocidad de clear y las voidlings ganan la carrera del dragón; obligalo a pelear sin R o a perderlos gratis.",
+          "En el duelo directo ganás la pelea larga: tirale el daño real después de que bloquee algo con la W y la combo entera le queda corta."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Predecí el aterrizaje de su R y poné Rupture ahí: es el único punto fijo del mapa donde va a estar, y un knock-up ahí mata la pelea entera.",
+          "Reservá la R (Feast) para cuando entre: con armadura acumulada, su dive termina con él ejecutado y vos de escala extra.",
+          "Parate entre él y tu carry en cada teamfight: al taparle el target aislado, su R no tiene entrada y se queda afuera de la pelea esperando un error que no va a llegar."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank con R lista: R al objetivo → Q en tu dirección de viaje (el sendero te da MS y daño) → auto → E para el fear → autos hasta ejecutar",
+        "Combo rápida con Hail of Blades: Q de cerca → auto → E inmediato para encadenar el fear antes de que el rival reaccione → autos con velocidad de ataque",
+        "Uso defensivo/duelo: W cuando el rival tire su proyectil clave (bloqueo + velocidad de ataque) → Q → E → terminás con la MS del sendero",
+        "Pick de mid game: R desde fuera de pantalla sobre el carry aislado → Q → E → ejecutá y corré al objetivo (dragón/barón) con Axiom Arc devolviéndote parte de la R",
+        "Teamfight: flanqueá por un costado mientras tu equipo agrupa → R al ADC enemigo recién iniciada la pelea → W el CC de respuesta → E para mantenerlo en rango"
+      ],
+      "tips": [
+        "No gankees pre-6 salvo lane imparable en tu favor: tu fuerza arranca con la R; powerfarmá tu clear rápido y sano y llegá a 6 antes que el jungla rival.",
+        "Tirá la Q SIEMPRE hacia tu dirección de viaje: el sendero te da velocidad de movimiento y daño extra; tirarla al revés te deja pegado sin escape.",
+        "Guardá la W para el CC o el proyectil que decide la pelea: bloquearlo te da velocidad de ataque para cerrar más rápido, y gastarla al aire te deja sin nada.",
+        "R solo sobre objetivos aislados o con pelea ya iniciada: entrar con la R a equipo completo agrupado es regalar la vida y tu única herramienta de juego.",
+        "Con Axiom Arc, cada kill convierte en objetivo: encadená pick → dragón/barón/torre y usá la R como presión de mapa permanente, no solo como daño."
+      ],
+      "plan": {
+        "early": "Powerfarmá hasta 6 con tu clear rápido y sano; con la R en mano, gank eá lanes con CC aliado o rivales pushados y asegurá el primer dragón si la tenés disponible.",
+        "mid": "Buscá picks constantes con la R sobre targets aislados y convertí cada kill en objetivo; empujá side lanes entre peleas para llegar a tu core (Profane Hydra + Axiom Arc) lo antes posible.",
+        "late": "Flanqueá desde un costado fuera de visión y entrá solo con pelea iniciada o carry separado; si no hay pick, peelá con E/W a tu ADC y no aceptes peleas sin la R disponible."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nocturne/build",
+      "https://mobalytics.gg/lol/champions/nocturne/guide"
+    ]
+  }
+}

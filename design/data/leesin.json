@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "leesin",
+    "ddragonId": "LeeSin",
+    "name": "Lee Sin",
+    "titleEs": "el Monje Ciego",
+    "cid": 64,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.62,
+    "pr": 11.5,
+    "br": 14.62,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.4,
+      "jungle": 94.9,
+      "middle": 1,
+      "bottom": 0.2,
+      "support": 2.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/LeeSin.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/LeeSin_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 56.83, "games": 410 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 52.43, "games": 391 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 51.83, "games": 3257 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 51.62, "games": 1666 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 51.43, "games": 1859 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 51.33, "games": 2587 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 51.14, "games": 528 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 51.1, "games": 2405 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 42.93, "games": 205 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 43.29, "games": 1051 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 44.17, "games": 2085 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 44.6, "games": 1408 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 44.83, "games": 493 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 45.36, "games": 560 },
+    { "cid": 31, "slug": "Cho'Gath", "name": "Cho'Gath", "vsWr": 45.45, "games": 3210 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 45.5, "games": 611 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Ganks desde nivel 3 con Q, W y E en mano: su presión early es tan alta que puede definir la partida antes del minuto 15.",
+      "El pasivo Flurry le devuelve energía y velocidad de ataque entre casts: farmea y sigue gankueando sin quedarse seco, casi sin ventanas de castigo.",
+      "Duelista temible: pocos junglers le ganan un 1v1 early; si lo encontrás solo en tu jungla, te come el buff y el camp.",
+      "Movilidad total: el ward hop de W y la Q le permiten cruzar paredes, entrar por ángulos imposibles y escapar de ganks invertidos."
+    ],
+    "weaknesses": [
+      "Todo depende de la Q: si el Sonic Wave falla, no tiene forma de acercarse y el gank entero muere ahí; esquivála y ganás el intercambio.",
+      "Escalado pésimo: si se atrasa early, en late es un jungler sin daño que solo aporta una patada y humo.",
+      "Frágil ante hard engage: apenas entra con el ward hop, encadenale CC y muere antes de llegar a la R.",
+      "Falling off marcado: en teamfights largas deja de importar y pasa a ser un disruptor; estirá las peleas y ganás vos.",
+      "Depende de ward en inventario para todo: sin Control Ward no hay insec ni escape; negale las entradas al pit y queda sin jugadas."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primera ventana real de gank; esperálo menos en lanes pushadas y wardá los flancos desde el primer clear.",
+      "Nivel 6: la R agrega daño y knockback, cualquier gank se convierte en kill o Flash rival; no te pares contra la pared de tu lane.",
+      "Nivel 9 con Q maxeada + primer item: su burst pasa de amenaza a ejecución; un squishy a media vida es borrado con Q doble.",
+      "Mid game con dos items: su mejor momento para picks y objectives; no camines solo ni wardés sin cobertura."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Campeones de rango con escape lo niegan por completo: si la Q no engancha, queda parado a mitad de lane sin herramientas; guardá tu dash para su Q, no para farmear.",
+        "Pegale durante su clear: su salud baja en la jungla lo vuelve un blanco fácil para un poke desde la entrance; invadí con tu laner adelante.",
+        "En teamfight, manteneglo a un Q de distancia: si no puede alinear el Sonic Wave, su única entrada es el Flash y ahí lo castigás."
+      ],
+      "tanks": [
+        "Aguantá su burst early y no aceptes su trade: tanques como Zac o Cho'Gath escalan mejor; cada minuto que pasa el matchup es más tuyo.",
+        "Cargale el CC cuando entre con el ward hop: baja del aire sin escape y queda peleando dentro de tu wave.",
+        "Peleá objectives alrededor de tu tanque: su R necesita un blanco aislado; agrupate detrás de tu frontal y su patada no encuentra nada."
+      ],
+      "assassins": [
+        "Trade recién cuando gaste la Q o el ward hop: sin esos dos hechizos es un melee de rango corto sin nada que hacer.",
+        "Si falla el Sonic Wave, ese es tu all-in: queda encerrado en tu rango sin movilidad durante varios segundos.",
+        "No duelenes a ciegas en tu jungla: wardá los buffs y esperalo con tu combo listo; su invasión temprana vive de que no lo veas venir."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas se vea el ward hop: es más frágil de lo que parece y si lo bajás del engage, muere adentro.",
+        "Guardá un hechizo de control para su R: interrumpirlo entre la Q y la patada mata el insec completo.",
+        "Supresiones y knock-ups imprevistos (Malzahar, Zac, Sion) son su pesadilla: su kit no tiene respuesta al punto y click."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Tu vida escala más rápido de lo que él puede rasguñar: comé el intercambio early y ganale el juego largo; su daño late no existe.",
+          "Cargale la Q apenas entre con el ward hop: el knock-up lo baja del aire y queda parado en medio de tu wave sin forma de salir.",
+          "Wardá tus buffs y las entradas de tu jungla: su invasión temprana es su única arma; pasado el minuto 10 el matchup es enteramente tuyo."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "Pegale desde tu campamento con Q en cada invasión: cada hit antes de su engage es vida que su combo no recupera.",
+          "La W hacia atrás revierte todo su engage: tirala cuando cruce la pared o entre con Q y lo mandás fuera de rango de su combo.",
+          "En el pit de dragón o barón, encerrá el terreno con tu R: su movilidad no pasa por encima de tu muro, así que peleá adentro de tu mural."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Tus cachorros le roban la Q: si el Sonic Wave le pega a un perro, su engage muere ahí y queda sin forma de acercarse.",
+          "Evitá el 1v1 temprano y wardá: escalás mucho mejor; esperá a dos items para pelearle la jungla y ahí el duelo es tuyo.",
+          "Guardá tu W para cuando use el ward hop para escapar: castigar ese commit es la diferencia entre dejarlo ir y cerrarlo."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Tu elasticidad aguanta todo su burst early: dejate golpear, recuperá con tus blobs y llegá al teamfight con más vida que él.",
+          "Engageá vos primero desde fuera de su visión: si saltás antes, su Q queda gastada o muerto antes de llegar a la R.",
+          "En el pit, tu CC de área lo clava contra la pared: no le des espacio para patear a tu carry hacia su equipo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade y clear: E → AA → E2 (ralentí) → AA → Q → Q2 para ejecutar; alterná habilidades entre casts para que el pasivo Flurry nunca se apague",
+        "Gank estándar: Q → Q2 (volás hacia el objetivo) → ward detrás → W al ward → R para patearlo hacia tu lane",
+        "Insec completo: Q → Q2 → ward hop con W detrás del objetivo → R pateando hacia tus aliados → Q2 si queda vivo",
+        "Kick-Flash: Q → Q2 → R y Flash a mitad de la patada para cambiar el ángulo y mandarlo al corazón de su equipo",
+        "All-in con escudo: W (Safeguard) → AA → E → AA → E2 → AA → W2 (Iron Will) → AA → R → Q → Q2 para ejecutar"
+      ],
+      "tips": [
+        "Alterná dos hechizos entre casts para mantener el pasivo activo: velocidad de ataque y energía de vuelta; spamear sin AA te deja seco en el peor momento.",
+        "No tires Q1 desde rango máximo como primer engage: si falla, no tenés nada; acercate con el ward hop y enganchá la Q de cerca.",
+        "Guardá el segundo cast de W (Iron Will) para el medio del trade: el escudo más el robo de vida duplica tu supervivencia en duels.",
+        "Cargá siempre un Control Ward: sin ward en inventario no hay ward hop, y sin ward hop no hay insec ni escape.",
+        "Contra enemigos con teleport o channels, la R los interrumpe: esperá ese cast para patear y rompés la jugada completa."
+      ],
+      "plan": {
+        "early": "Cleará rápido con el pasivo activo, gankueá desde nivel 3 en lanes pushadas e invadí al junglar rival débil: cada ventaja temprana es tu late comprado.",
+        "mid": "Buscá picks en side lanes con la Q, controlá objectives con Control Ward en mano y usá tu dueling para robar camps y castigar cada rotación del rival.",
+        "late": "Dejá de confiarte en daño: flanqueá para patear con R al carry rival hacia tu equipo o peel al tuyo, y asumí que tu aporte pasa a ser la patada y el Smite del objective."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/leesin/guide",
+      "https://mobalytics.gg/lol/champions/leesin/combos",
+      "https://mobalytics.gg/lol/champions/leesin/counters"
+    ]
+  }
+}

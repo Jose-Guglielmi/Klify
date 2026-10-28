@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "warwick",
+    "ddragonId": "Warwick",
+    "name": "Warwick",
+    "titleEs": "la Furia Desatada de Zaun",
+    "cid": 19,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.41,
+    "pr": 3.84,
+    "br": 2.78,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 25.5,
+      "jungle": 73.2,
+      "middle": 0.8,
+      "bottom": 0.1,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Warwick.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Warwick_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 59.62, "games": 530 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 58.51, "games": 1610 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 58.19, "games": 775 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 57.91, "games": 1195 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 57.73, "games": 1055 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 56.58, "games": 3215 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 56.04, "games": 2873 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 55.81, "games": 1799 }
+  ],
+  "weakAgainst": [
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 49.0, "games": 600 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 49.24, "games": 463 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 49.45, "games": 273 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 49.68, "games": 2019 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 49.81, "games": 783 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 50.09, "games": 575 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 50.12, "games": 1706 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 50.32, "games": 308 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le devuelve vida en cada golpe y cura el doble cuando está bajo: los duelos largos contra él son pérdida garantizada porque se sostiene mientras te desgasta.",
+      "La Q pega por vida máxima del objetivo y lo cura por el daño hecho: entra igual a los tanques y le sirve para sostenerse solo en dragón o barón.",
+      "La R tiene un alcance enorme y lo deja imparable durante el salto: puede pickear desde la niebla de guerra sin que el rival pueda reaccionar.",
+      "La W pasiva le marca los enemigos con poca vida en todo el mapa: detecta kills gratis y le convierte cualquier gank en un cierre de partida."
+    ],
+    "weaknesses": [
+      "Antes del nivel 6 no tiene engage real: sus ganks dependen de caminar hasta vos y eso le compra tiempo a las lanes para cederle presión al equipo contrario.",
+      "La E es su única entrada de verdad: mientras la tenga en cooldown no puede iniciar nada, así que contar sus usos lo deja sin juego.",
+      "La Q lo lleva en línea recta hacia el objetivo: cualquier dash o blink del rival lo arrastra a una torre o a la zona donde lo esperan.",
+      "Sin movilidad propia fuera de la W, el kite y los slows lo desarman: entre más rango tenga el equipo rival, menos llega a pegar.",
+      "Late game es el más flojo de su curva: si la R no está arriba, no puede ni iniciar ni pelear y su equipo pelea en 4."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E completas puede cerrar a cualquiera que esté pasado de línea; desde ahí empieza a presionar el mapa.",
+      "Nivel 6: la R le abre el pick desde la niebla de guerra y el control de objetivos se duplica; respetá el rango del salto aunque no lo veas.",
+      "Primer item de sustain resuelto (~nivel 9 con la Q maxeada): cura tanto que aguanta trades que ningún otro jungla aguanta.",
+      "Nivel 11 y 16 con puntos en la R: el cooldown baja lo suficiente como para tener pick disponible casi en cada pelea; asumí que siempre hay ult."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "No camines en línea recta hacia él: cada paso frontal le da la Q gratis y el trade lo gana por curación, kitealo de costado con slows.",
+        "Comprá Heridas Graves temprano: si no le cortás la pasiva + Q, cualquier pelea larga la termina ganando con un tercio de vida.",
+        "Respetá la niebla de guerra a partir del 6: la R entra desde lejos, así que wardeá los flancos y no te quedes farmeando solo en la línea."
+      ],
+      "tanks": [
+        "La Q le pega por vida máxima, así que stackear vida no te salva: sumá Resistencia Mágica y cortale la curación con Heridas Graves.",
+        "Cho'Gath, Sejuani y Darius le ganan el duelo porque lo frenan y le cortan el ritmo del miedo: si te busca, aceptá el trade con CC encadenado.",
+        "Peleá alrededor de tu CC: si lo stuneás antes de que suelte el miedo, la E se le vence sin efecto y queda sin entrada."
+      ],
+      "assassins": [
+        "En igualdad de oro el duelo lo gana él por sustain: pegale antes del 6 o con ayuda de lane, nunca de frente a vida completa.",
+        "Guardá tu escape para después del miedo: si lo gastás antes, la E lo alcanza igual y te come con la pasiva curándolo.",
+        "Nidalee, Zed y Qiyana pierden el 1v1 largo: si te encuentra en el río sin cooldowns, no hay trade que ganar, solo huida."
+      ],
+      "crowdControl": [
+        "El miedo de la E es su herramienta de entrada y de escape: un CC duro justo cuando la suelta le apaga la pelea entera.",
+        "Durante el salto de la R es imparable, pero al aterrizar sí come CC: reservá el stun para el momento posterior al suppress.",
+        "El suppress de la R corta canales y canales de casteo: no te quedes casteando hechizos largos si tenés la R en su rango."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 9,
+        "name": "Fiddlesticks",
+        "tips": [
+          "Guardá el miedo de la Q para el aterrizaje de su R: interrumpirle el suppress sobre tu carry invierte la pelea en un segundo.",
+          "Tu drenaje (W) le gana cualquier trade largo si él no tiene ult, pero se corta con su suppress: respetá el rango de la R antes de prenderlo.",
+          "Jugá desde la niebla con control de visión: si él no te ve, no puede ni iniciar ni marcar; su W pasiva le da información y vos se la podés negar."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Tu E (raíces) es la respuesta a su entrada: si la enganchás cuando suelta el miedo, queda plantado sin E y sin forma de seguir.",
+          "Kitealo con plantas: su única movilidad es la W y su daño es de rango cero, así que cada paso que das atrás le cuesta la pelea.",
+          "Su Q pega por vida máxima pero no te outsustainea si lo mantenés lejos: no te dejes arrastrar a un duelo cuerpo a cuerpo."
+        ]
+      },
+      {
+        "cid": 80,
+        "name": "Pantheon",
+        "tips": [
+          "Pokealo con Q desde tu rango antes del 6: sin ult no tiene cómo llegar a vos y cada trade gratis le cuesta la vida.",
+          "Guardá el W (stun) para cortarle la E antes de que suelte el miedo: sin miedo no tiene entrada ni escape.",
+          "No pelees con la R arriba si estás bajo: el salto es imparable y el suppress te deja comido sin poder usar la E defensiva."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Silenciá con W antes de que entre: sin Q ni E no se cura ni asusta, y el trade se vuelve totalmente tuyo.",
+          "Comprá Heridas Graves: su sustain es la mitad de su kit, y sin curación el duelo largo es una ejecución con R.",
+          "No lo dejes llegar a vida baja al lado tuyo: su pasiva cura más justo ahí, así que rematalo con la R antes de que se dé vuelta."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank completo: W activa (velocidad y marca) → E para entrar con reducción de daño → R cuando está en rango → Q mientras lo tenés suprimido → E2 para el miedo cuando termina el suppress",
+        "Duelo en la jungla: E primero (aguantás el burst) → Q pegado al rival (mantené la tecla para seguirlo si dashea) → autos con pasiva → E2 miedo para cerrar o para salir",
+        "Pick desde la niebla: R desde fuera de visión sobre el carry → Q encima → E2 miedo al equipo que viene a salvarlo",
+        "Trade corto de línea: Q sostenida sobre el rival que huye → auto → E2 miedo → salir caminando con la pasiva curándote",
+        "Objetivo solo: W activa para spotear invasores, Q constante sobre dragón/barón (pega por vida máxima y te cura) y E2 para bajar el daño del monstruo"
+      ],
+      "tips": [
+        "No gastes la E para farmear ni para moverte: es tu única herramienta de entrada y de escape, sin ella no entrás a ninguna pelea.",
+        "Mantené apretada la Q cuando el rival tenga dash o blink: la lanza lo sigue y te asegura el daño y la curación que necesitás para ganar el trade.",
+        "La R sale mejor desde la niebla de guerra que a la vista: si te ven venir, el carry se aleja y el salto queda en la nada.",
+        "Antes de gankear tirá la W: te da velocidad y te dice si hay un enemigo bajo de vida cerca, que es tu kill más barata.",
+        "Late game no entres sin R: peleá en segunda línea, peeleá a tu carry y usá el suppress como respuesta, no como apertura, si vas atrás en oro."
+      ],
+      "plan": {
+        "early": "Ruteá buscando el nivel 3 rápido y gankeá con W + E + Q a las líneas pasadas; después del 6 usá la R desde la niebla y pelead cada dragón con la curación de la Q.",
+        "mid": "Farmeá sin perder ritmo, tomá cada dragón con visión y buscá picks con R para convertir en barón o torres; con la Q maxeada aguantás peleas que el rival no puede sostener.",
+        "late": "Agrupá y flanqueá desde un arbusto sin wardear, entrá con R sobre el carry, usá el miedo para el equipo que viene atrás y volvé a peeler: sin ult, no hay pelea que iniciar."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/warwick/build",
+      "https://mobalytics.gg/lol/champions/warwick/guide"
+    ]
+  }
+}

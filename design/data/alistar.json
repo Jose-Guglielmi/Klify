@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "alistar",
+    "ddragonId": "Alistar",
+    "name": "Alistar",
+    "titleEs": "el Minotauro",
+    "cid": 12,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.99,
+    "pr": 4.98,
+    "br": 1.86,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 1.3,
+      "jungle": 0.1,
+      "middle": 0.5,
+      "bottom": 0.1,
+      "support": 98.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Alistar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Alistar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 58.78, "games": 262 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 56.54, "games": 1162 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 55.19, "games": 337 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 54.77, "games": 953 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 54.64, "games": 366 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 54.55, "games": 286 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 54.05, "games": 2172 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 53.98, "games": 2525 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 47.35, "games": 775 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 47.83, "games": 1035 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 47.94, "games": 436 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 48.91, "games": 1284 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 48.96, "games": 1009 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 48.97, "games": 533 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 49.12, "games": 908 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 49.63, "games": 1227 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El engage point-and-click más confiable del juego: W + Q encadena dos knock-ups casi imposibles de reaccionar y define el trade de un golpe.",
+      "Level 6 la R lo vuelve casi inmortal: cruza CC, absorbe burst y le da licencia para divear bajo torre con el ADC a cuestas.",
+      "La E (Trample) suma un tercer stun: si el trade se estira, el basic attack potenciado apaga al rival que quedó parado sin reacción.",
+      "Escalado defensivo enorme sin depender de oro: con Aftershock y items de utilidad tanquea, pelea y habilita a cualquier ADC.",
+      "Amenaza constante sin gastar nada: parado apenas delante del ADC ya obliga al rival a retroceder del farm."
+    ],
+    "weaknesses": [
+      "Todo el kit depende de acercarse: sin Flash y con W en cooldown, un Alistar adelantado es comida de kiting.",
+      "La W sin la Q encadenada es un error caro: empuja al enemigo hacia su torre o fuera del rango de seguimiento de tu ADC.",
+      "Daño propio casi nulo: si el ADC no sigue el engage, el all-in no mata a nadie y vos pagás el trade entero.",
+      "El poke de rango (Zilean, Swain, Lux) lo desgasta sin respuesta antes del 6; cada segundo en lane abierta es vida perdida.",
+      "Cooldowns largos early: fallar W + Q te deja más de diez segundos sin ninguna amenaza en la lane."
+    ],
+    "powerSpikes": [
+      "Level 2: recién ahí existe W + Q completa; antes de eso no sos amenaza, no te adelante ni un paso.",
+      "Level 6: la R habilita dive y all-in bajo torre; con Ignite en mano, cualquier ADC a media vida es kill.",
+      "Primer item completo (Celestial Opposition / Locket): la durabilidad en teamfight se dispara y podés entrar primero sin miedo.",
+      "Mid game con Flash disponible: un Flash + W + Q sobre el carry rival abre la pelea entera de un golpe.",
+      "Nivel 9-11 con puntos en R: el cooldown baja tanto que la inmortalidad está disponible en cada pelea de dragón o barón."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Zilean, Lux, Swain te pokean desde fuera de tu rango: jugá matorrales, esquivá la línea y buscate el engage lateral, nunca frontal.",
+        "Amenazá sin gastar: un paso adelante con la W en mano ya los hace retroceder y tu ADC farmea gratis.",
+        "Contra rango puro tu ventana real es el 6 con Flash: esperá ese instante y cometé el engage completo de una vez."
+      ],
+      "tanks": [
+        "Contra otros tanques engage (Nautilus, Blitz, Leona) gana quien pega primero: peleá por el bush control y wardá defendido.",
+        "La R te deja desoír el CC inicial del tanque rival: si te engancharon, prendé R y devolvé con Q sobre su carry.",
+        "No aceptes trades de attrición: tu daño no existe; cometé corto con tu ADC cerca o no arranques nada."
+      ],
+      "assassins": [
+        "Zed, Talon, Kha'Zix: quedate pegado al ADC; tu Q corta el dash de arranque y el stun de la E arruina su combo.",
+        "La R es tu anti-burst: cuando el asesino se mete, prendé R y el all-in que muere es él, no vos.",
+        "La W también sirve de escape: empujalo fuera del carry si se cuela; no la guardes solo para engage."
+      ],
+      "crowdControl": [
+        "Morgana y Zilean convierten tu combo en humo: Black Shield anula el engage y la R anula el pick; forzá esas habilidades antes del all-in real.",
+        "Prendé R para limpiar el CC que te agarre entrando: es tu única forma de llegar entero contra comps de chain CC.",
+        "Entrá por flanco, no por el frente: contra CC largo tu engage necesita el ángulo correcto, no la distancia."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "No aceptes el poke: su pull y su W te desgastan desde lejos; amenazá desde el arbusto y engage recién cuando esté adelantado o sin E.",
+          "Esperá que tire el pull para entrar: si te engancha a vos, tu all-in se convierte en su all-in con la R prendida.",
+          "En pelea larga su R sostiene más que tu daño: cometé con Ignite y foco total, o cortá el trade y reinicialo después."
+        ]
+      },
+      {
+        "cid": 25,
+        "name": "Morgana",
+        "tips": [
+          "Su Black Shield anula todo tu combo sobre el objetivo escudado: esperá que la gaste y entrale a ella o al que quedó libre.",
+          "Si la ves con escudo listo, compralo con un avance falso: un paso adelante suele hacer que tire el shield por nada.",
+          "Su root castiga engages frontales: entrá lateral o desde arbusto, nunca caminando derecho por el centro de la lane."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Sus bombas te pokean gratis si jugás estático: movete constante y no te pares detrás del ADC en línea recta.",
+          "Su R revive al que matás: en el all-in, forzá la resurrección con foco repetido o esperá a que la gaste antes del engage real.",
+          "R gastada = ventana verde: ahí sí meté W + Q sin miedo, porque el pick ahora es kill real."
+        ]
+      },
+      {
+        "cid": 267,
+        "name": "Nami",
+        "tips": [
+          "Esquivá la burbuja caminando errático al acercarte: si te moja, el trade entero se revierte con su boost y su curación.",
+          "Enganchala a ella cuando baje a farmear adelantada: es squishy y sin escape para tu W + Q paga el trade completo.",
+          "En teamfight su R desarma tu engage frontal: dejá que la tire o entrá por flanco antes de comprometerte."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Combo base de lane: W → Q apenas hace contacto (la Q cae antes de que toque el piso) → E + AA para encadenar el stun de Trample",
+        "Extendé el rango de engage: W y, en el momento justo del contacto, Flash + Q instantáneo sobre el objetivo",
+        "Empuje de retorno: Q y a mitad de animación Flash detrás del objetivo → W para clavarlo hacia tu equipo desde fuera de rango",
+        "Engage sorpresa: Flash → W → Q uno detrás del otro, sin dar medio segundo de reacción al rival",
+        "Combo de muro: Q → E + AA pegado a la pared → W para clavarlo en la pared y cerrar con el stun del AA"
+      ],
+      "tips": [
+        "Aprendé a buffer la Q durante la W (W→Q seguidas): si la W empuja sola, estás regalando al enemigo de vuelta a su torre.",
+        "No uses W como poke: es tu único gap closer; una W al vacío te deja sin engage ni escape por más de diez segundos.",
+        "Parate pegado a tu ADC o apenas delante: la amenaza del engage ya obliga al rival a respetar, no hace falta gastar.",
+        "La R no es solo para sobrevivir: usala para ignorar la torre en dive, atravesar el CC del engage enemigo o convertir el all-in que planeaban contra vos.",
+        "Armá death bushes antes de dragón o barón: desde el arbusto, W + Q sin aviso gana picks que definen objetivos."
+      ],
+      "plan": {
+        "early": "Parate pegado al ADC, amenazá con W + Q cada vez que el rival camine adelantado y ganá trades cortos con Aftershock; guardá maná para el engage real, no para poke.",
+        "mid": "Controlá los matorrales alrededor de dragón, armá death bushes con tu ADC y jungla, y usá el engage para abrir picks o peelear cuando el enemigo responda.",
+        "late": "Entrás primero con Flash + W + Q al carry rival o esperás el engage enemigo para peel con Q, E y R; después del engage volvé atrás y quedate pegado a tu ADC."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/alistar/build",
+      "https://mobalytics.gg/lol/champions/alistar/combos"
+    ]
+  }
+}

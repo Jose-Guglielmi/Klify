@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "hwei",
+    "ddragonId": "Hwei",
+    "name": "Hwei",
+    "titleEs": "el Visionario",
+    "cid": 910,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.62,
+    "pr": 3.37,
+    "br": 2.23,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 1.9,
+      "jungle": 0,
+      "middle": 68.2,
+      "bottom": 16.6,
+      "support": 13.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Hwei.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hwei_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 59.72, "games": 216 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.97, "games": 932 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 56.75, "games": 289 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.8, "games": 448 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 55.02, "games": 289 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 54.59, "games": 381 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 54.53, "games": 1181 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 54.14, "games": 338 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.0, "games": 200 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 47.03, "games": 589 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 47.15, "games": 999 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 47.41, "games": 1565 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.67, "games": 816 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 47.99, "games": 894 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 48.7, "games": 807 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 49.1, "games": 389 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Nueve hechizos sobre una pasiva de marcas: encadenar spells distintos multiplica el daño y cada trade suyo viene cargado de AOE.",
+      "EQ (miedo) es CC real con rango de skillshot: le da picks solitarios y ventanas de combo que pocos magos tienen.",
+      "Poke y waveclear en el mismo paquete: QW atraviesa la línea de minions y te obliga a elegir entre farmear o quedarte con media vida.",
+      "La R pega en un área enorme durante varios segundos: pelear alrededor de objetivos es su terreno natural.",
+      "Escala durísimo con niveles e items: un Hwei adelantado convierte cada teamfight en un panel de pintura letal."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, cada gank y cada pick en rotación lo encuentra caminando.",
+      "Su E tiene cooldown larguísimo: baitéasela y queda sin CC ni defensa durante buena parte de la pelea.",
+      "Devorador de maná: responder wave más poke con la paleta completa lo deja seco; castigá cada Q desperdiciada.",
+      "Tan complejo que bajo presión mezcla mal los spells y desaprovecha la pasiva de marcas.",
+      "Behind no aporta: si pierde el early, su AOE no alcanza para ganar peleas y el late le llega tarde."
+    ],
+    "powerSpikes": [
+      "Nivel 3: acceso a las tres familias (Disaster/Serenity/Torment); desde ahí el trade con fear + QQ es real.",
+      "Nivel 6: la R le da pelea 1v1 y picks junto al jungla; no te pares en su rango sin saber si la tiene.",
+      "Nivel 9 con Q maxeada y primer item: el poke atraviesa la wave y te saca media vida por torre.",
+      "Mid game agrupado y nivel 16: el cooldown de R baja y cada objective se discute con la nube encima."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Akshan: parate fuera de la wave y en diagonal a Hwei; si no puede empujar y pokearte a la vez, su maná se funde solo.",
+        "Castigá cada QQ que falle: recargar la paleta le cuesta maná que a vos no te cuesta nada.",
+        "Su única herramienta de reposición es WE (velocidad): mientras esté en cooldown, tu rango manda en la lane."
+      ],
+      "tanks": [
+        "Comprate MR temprano y caminalo: su daño es todo AOE de una tanda; si la primera combo no te mata, queda recargando sin maná.",
+        "Empujalo a gastar spells en la wave: un Hwei que limpia con QW no tiene la paleta completa para cuando quieras engage.",
+        "Engage directo con su E quemada: el miedo es su único CC y el cooldown te da una ventana larguísima."
+      ],
+      "assassins": [
+        "Baitéale el EQ (miedo) con un paso en falso y saltalo recién ahí: sin E no tiene respuesta a tu engage.",
+        "Ekko, Fizz, Zed: su inmovilidad es tu all-in gratis; pedí gank antes del 6 porque no tiene escape propio.",
+        "Si va behind no le des respect: un Hwei atrasado no gana peleas aunque tenga AOE; forzá la pelea igual."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas entra en rango de R: es lento, no tiene dash, y si lo cortás entre spells su combo muere a la mitad.",
+        "Guardá una interrupción para la R: necesita quedarse cerca para vender la nube; un knock-up la invalida entera.",
+        "Pistealo en rotaciones: un pick contra Hwei es kill casi garantizada y le sacás el late game de las manos."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Respetá su rango: pokeá con QW desde atrás de la wave y no camines en línea recta hacia él nunca.",
+          "Guardá el EQ para cuando tire skillshots cargados: si el miedo interrumpe su combo, el trade pasa a ser tuyo.",
+          "No allines con menos de media barra de maná: necesitás WE y QQ listos para responder su combo entera."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "No le gastes el EQ al arranque del trade: guardá el miedo para cuando quiera entrar a alimentarse; sin pozo tu QQ le pega entero.",
+          "Pokealo con QW antes del nivel 9: tu ventana es early, escalado con items él gana cualquier pelea larga.",
+          "Pedí gank temprano: un Vladimir que pierde el lane antes del primer item no llega nunca a su late game."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Es duelo de rango puro: pokeá con QW por detrás de la wave y no camines hacia él sin WE de velocidad activo.",
+          "Usá los minions como escudo: si su stun no te encuentra parado en línea, su combo no arranca.",
+          "Guardá EQ para cuando canalice la R: un Xerath asustado dentro de tu R completa es kill seguro."
+        ]
+      },
+      {
+        "cid": 103,
+        "name": "Ahri",
+        "tips": [
+          "No te adelantes a last hittear con su E disponible: el charm te congela justo donde su combo entera te encuentra.",
+          "Pokeá con QW mientras limpia la wave: si la bajás de vida antes del 6, su roam pierde todo el valor.",
+          "Seguí su roam con pings y TP: tu fuerza es la pelea agrupada, no perseguirla por el mapa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: QW atravesando la wave → QQ sobre el objetivo marcado (dos spells distintos detona la pasiva)",
+        "Trade corto: WE (velocidad) para acomodarte → EQ (miedo) → QQ encima del objetivo asustado",
+        "All-in nivel 6: EQ (miedo) → R sobre el objetivo quieto → WE → QQ y AA para ejecutar",
+        "One-shot con Flash: EQ → Flash → R → WE → QQ → AA (reservá el Flash para entrar con un fear que no se puede esquivar)",
+        "Teamfight: R de arranque sobre el equipo agrupado → QE dentro de la nube → EE para rematar"
+      ],
+      "tips": [
+        "La pasiva detona con spells DISTINTOS encadenados: repetir el mismo hechizo es tirar maná; alterná siempre.",
+        "No uses EQ como poke a vida llena: es tu único CC y el cooldown te deja descalzo varios segundos.",
+        "Tirá WQ antes de cada ciclo de waveclear: el maná es tu verdadera barra de vida; jugás seco, no existís.",
+        "Pegate al equipo en mid y late: sos lento y sin escape, y morir solo por un pick le regala el objetivo entero al rival.",
+        "Abusá del rango contra melee y squishy en early: tu ventana de ventaja es antes de que el rival escale."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta nivel 3, abusá del rango contra melee y squishy, y al llegar a 6 buscá pelea con tu jungla o castigá con EQ + R al que se adelante.",
+        "mid": "Cuando bot rote a mid, pasá a side lane con visión profunda: empujá la wave con QW y reculá si hay asesino cerca; presentate a las peleas agrupadas con R lista.",
+        "late": "No te muevas solo: pegate al equipo, tirá la R alrededor de objetivos y buscá picks con EQ mientras tus compañeros siguen el miedo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/hwei/build",
+      "https://mobalytics.gg/lol/champions/hwei/guide",
+      "https://mobalytics.gg/lol/champions/hwei/combos",
+      "https://mobalytics.gg/lol/champions/hwei/counters"
+    ]
+  }
+}

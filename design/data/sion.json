@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "sion",
+    "ddragonId": "Sion",
+    "name": "Sion",
+    "titleEs": "el Coloso no Muerto",
+    "cid": 14,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.27,
+    "pr": 3.68,
+    "br": 0.74,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 71.4,
+      "jungle": 9.9,
+      "middle": 11.8,
+      "bottom": 1.3,
+      "support": 5.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sion.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sion_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 60.44, "games": 225 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 60.04, "games": 478 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 58.5, "games": 535 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.48, "games": 1524 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.37, "games": 1384 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 57.19, "games": 960 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 56.53, "games": 1822 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 55.57, "games": 2273 }
+  ],
+  "weakAgainst": [
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 43.63, "games": 204 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 46.29, "games": 229 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 46.67, "games": 1290 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 47.36, "games": 2874 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 47.47, "games": 2587 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 47.48, "games": 1030 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 48.42, "games": 729 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 48.61, "games": 1652 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es la primera línea más sólida del juego: la W le da un escudo que escala con vida máxima y, al reventar, pega área, así que absorbe daño y devuelve presión con el mismo botón.",
+      "La Q es un knock-up en área que se carga desde arbusto o desde fuera de visión: si te agarra sin escape, te come el combo entero y la wave de paso.",
+      "La pasiva le regala una segunda vida: en forma de zombi sigue pegando con velocidad de ataque alta y muchos kills de lane salen después de morir.",
+      "La R es un engage de mapa entero: puede salir de base y aparecer en mid o bot, y mientras carga es imparable, así que ni el CC lo corta.",
+      "Escala muy bien con el tiempo: la W le suma vida máxima permanente por cada unidad que muere cerca, así que un lane aburrido también lo hace más grande."
+    ],
+    "weaknesses": [
+      "Es el campeón más kiteable del juego: sin dash real más allá de la R, cualquier tirador con rango y movespeed lo deja caminando en círculos mientras lo baja.",
+      "La Q lo clava en el lugar: mientras carga no se mueve y cualquier CC o dash a la espalda le arruina el cast completo.",
+      "Early flojo hasta el 6: no tiene movilidad ni daño confiable y depende de que el rival se acerque a la wave.",
+      "Maná y cooldowns altos: si erra la Q y el E en un trade, queda sin herramientas por varios segundos y sin forma de salir.",
+      "Su daño es lento y telegrafiado: contra campeones con curación o con %vida (Gwen, Aatrox, Darius) los trades largos se le dan vuelta."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera R, presión de kill real y, sobre todo, la posibilidad de salir de base y gankear mid o bot sin perder la wave.",
+      "Primer ítem de tanque completo: con vida y armadura, la W pesa el doble y pasa de sobrevivir trades a ganarlos por aguante.",
+      "Nivel 9 con la Q maxeada: el daño y el ancho del knock-up suben mucho; ahí empieza a limpiar waves con dos botones y a amenazar torres.",
+      "Dos ítems de tanque + nivel 11: se vuelve casi imposible de matar 1v1 y puede empujar solo mientras el equipo juega el objetivo del otro lado."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Vayne, Teemo: no camines derecho hacia ellos, entrá en zigzag porque la Q se esquiva moviéndose de costado, no para atrás.",
+        "Empujá la wave y obligalos a farmear bajo torre: sin wave cerca no pueden kitearte gratis y pierden el rango como ventaja.",
+        "Guardá la E para frenarlos cuando se te abren: el slow y el shred de armadura convierten un kite en un trade que ganás."
+      ],
+      "tanks": [
+        "Ornn, Shen, Malphite: no gastes la R para engage frontal, usala para robar una pelea ya empezada o para escapar de un mal all-in.",
+        "En trades largos contá la W: el escudo escala con tu vida máxima, así que comé el primer golpe con el escudo arriba y no después.",
+        "Empujá la side lane: contra tanques con onda lenta, el push constante vale más que cualquier trade y te da presión de torre."
+      ],
+      "assassins": [
+        "Yone, Fiora, Camille: no cargues la Q a full si tienen dash listo; tirala corta para el knock-up rápido y rompé su tempo.",
+        "El knock-up de la Q corta los engages: usalo defensivamente sobre tu propio carry, no como poke.",
+        "Cuidá el costado del mapa: un asesino entra por el río y sin movilidad tu única salida es la R, que necesita carril libre."
+      ],
+      "crowdControl": [
+        "La R es imparable mientras carga, así que es tu respuesta al CC: arrancala antes de que te encadenen y salís igual.",
+        "Respetá el CC de supresión: si te agarra Malzahar o similar, tu pasiva se activa con el equipo encima y no con la wave.",
+        "No cargues la Q contra campeones con stun instantáneo: te la cortan siempre; usala desde arbusto o después de que gasten el CC."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "Tu W le corta la R en seco: quedate la Steadfast Presence para cuando cargue la ulti y nunca la gastes en farmear.",
+          "La E de Poppy lo empuja contra la pared y le rompe la Q cargada: aprovechá cada carga para acercarlo a un muro.",
+          "Trades cortos y salí: su escudo de la W absorbe mucho, así que pega y retirate antes de que lo recargue."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Kitealo con E cuando quiera acercarse: sin dash, cada vez que lo empujás para atrás pierde medio trade.",
+          "Poné visión en los arbustos de la lane: si no puede cargar la Q desde fuera de visión, pierde casi toda su amenaza.",
+          "Cuidá la R: si ves que la carga, salí de la línea recta del carril porque viene derecho y no puede doblar."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Tu Q corta en porcentaje de vida máxima y Sion se arma vida pura: cuanto más tanque se ponga, más le pegás.",
+          "Guardá el E para salir del cono de su Q cargada: si no te levanta, el trade largo es tuyo porque tu pasiva te cura.",
+          "No lo dejes farmear la wave tranquilo: cada unidad que muere cerca le suma vida máxima permanente, así que empujá y castigalo."
+        ]
+      },
+      {
+        "cid": 777,
+        "name": "Yone",
+        "tips": [
+          "Tu E te deja salir del cono de su Q cargada: leé la animación y movete antes de que termine el cast, porque ese knock-up es todo su daño.",
+          "Rompé la wave y no aceptes trades largos: contra su escudo y su %vida, los trades cortos con dash son los que ganás.",
+          "Después del 6 no lo sigas por el río sin visión: la R de Sion desde fuera de pantalla es el pick más fácil que tiene."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: E (slow + shred de armadura) → Q cargada corta sobre el objetivo frenado → W antes de que te pegue el próximo auto (el escudo come el trade)",
+        "All-in desde arbusto: Q cargada al máximo desde fuera de visión (knock-up garantizado) → W → autos → E para frenarlo si intenta salir",
+        "Engage de teamfight: R para entrar → W mientras aterrizás → Q cargada sobre el grupo → E al carry que quieras frenar",
+        "Combo de la R que recomienda Mobalytics: R → W → E → Q → W → autos (el escudo de la W se castea dos veces en la misma pelea)",
+        "Post-muerte: en pasiva, ignorá al tanque y pegale al squishy más cercano; con velocidad de ataque alta cerrás kills que el equipo no cerró"
+      ],
+      "tips": [
+        "No cargues la Q a full en lane abierta: contra alguien con dash o stun te la cortan siempre; usala corta o desde arbusto.",
+        "La W es tu sustain y tu daño, no un escudo de pánico: casteala al inicio del trade, no cuando ya estás en 10% de vida.",
+        "Farmeá con la Q apuntando a la wave entera y no a un minion suelto: cada unidad que muere cerca te suma vida máxima permanente por la W.",
+        "Usá la R también para huir: mientras carga sos imparable, así que es tu única salida cuando te agarra un gank en el río.",
+        "En teamfight no entres primero por el frente: flanqueá y entrá cuando el equipo ya está peleando, así tu knock-up cae sobre carries y no sobre tanques."
+      ],
+      "plan": {
+        "early": "Jugá cerca de tu lado del mapa, farmeá con Q y E sin forzar trades hasta el 6, y aprovechá cada wave muerta cerca tuyo para ir apilando vida máxima con la W.",
+        "mid": "Empujá la side lane y sacá torres mientras el equipo juega el objetivo del otro lado; con la R en mano podés unirte a cualquier pelea del mapa o salir de un colapso.",
+        "late": "Agrupá con el equipo, flanqueá desde fuera de visión y usá R + Q cargada sobre los carries agrupados; tu trabajo es comer el daño y pelear hasta la pasiva."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/sion/guide",
+      "https://mobalytics.gg/lol/champions/sion/combos",
+      "https://mobalytics.gg/lol/champions/sion/counters"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "ekko",
+    "ddragonId": "Ekko",
+    "name": "Ekko",
+    "titleEs": "el Joven que Fragmentó el Tiempo",
+    "cid": 245,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.74,
+    "pr": 5.17,
+    "br": 2.51,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 2.5,
+      "jungle": 46.4,
+      "middle": 49.1,
+      "bottom": 0.9,
+      "support": 1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ekko.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ekko_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 60.1, "games": 203 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 59.74, "games": 231 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 58.64, "games": 515 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 56.29, "games": 636 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 55.71, "games": 517 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 55.58, "games": 1711 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 55.38, "games": 2586 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 55.16, "games": 1608 }
+  ],
+  "weakAgainst": [
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 48.03, "games": 1776 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 48.44, "games": 1057 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.6, "games": 321 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 48.99, "games": 2472 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 50.2, "games": 508 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 50.45, "games": 2206 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 50.64, "games": 543 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 50.66, "games": 1208 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W desde fuera de visión es engage masivo en área: si la tira adelantada y entra con la E al círculo, el stun es prácticamente garantizado y engancha a todo el que esté parado arriba.",
+      "Burst de one-shot sobre la backline una vez escalado: W + E + Q con proc de pasiva borra a un carry en una rotación, sin darle ventana de respuesta.",
+      "La R deshace errores: revierte posición, daño recibido y peleeas perdidas; con cooldown bajo en late, puede forzar jugadas que ningún otro asesino se anima a intentar.",
+      "Movilidad total: la E cruza paredes y pega a targets, y el escudo de la W le da un colchón para farmear y rotar sano mientras busca el pick."
+    ],
+    "weaknesses": [
+      "Cuerpo a cuerpo en una lane de rango: los magos le pegan en cada last hit y si se come poke constante queda detrás en oro y XP, y ahí no ejecuta a nadie.",
+      "Depende de la W para todo: si el círculo se ve venir o lo esquivan, no tiene forma limpia de entrar y su combo queda en la mitad.",
+      "Frágil al CC encadenado: agarrado con capas de control no llega a usar la W, ni pelear, ni escapar con la R.",
+      "Sus flancos son wardables: con el mapa iluminado, el engage desde niebla deja de existir y se lo ve venir desde lejos.",
+      "Necesita oro para funcionar: detrás en items es un melee sin daño que muere apenas entra; castigá su early para retrasar ese punto."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E completas ya tiene combo de gank y kill; cualquier trade donde le pegue el stun es ganado.",
+      "Nivel 6: la R convierte el dive y las jugadas arriesgadas en reversibles; puede tirarse bajo torre y volver atrás con vida.",
+      "Primer item completo de burst: el daño escala de golpe y cualquier squishy a media vida entra en rango de ejecución.",
+      "Niveles 11 y 16 con puntos en la R: cooldown bajísimo y daño enorme; mientras la tenga en mano pelea casi sin riesgo, y el rival agrupado le regala la W multi-stun."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Vel'Koz: castigá cada last hit que baje a buscar; un Ekko detrás en oro no one-shotea a nadie.",
+        "Guardá tu skill shot de CC para cuando entre con la E: el dash es predecible y es tu mejor ventana para ganarte el trade entero.",
+        "Wardá los flancos comunes: sin niebla, su W desde afuera de visión deja de existir y su engage se lee desde la fountain."
+      ],
+      "tanks": [
+        "Comprate MR temprano: su burst está calibrado contra squishies; un tanque con resistencia camina la combo completa y queda parado.",
+        "Forzalo a gastar la E para pegarte: sin dash encima tuyo no asegura el stun de la W y queda descalzo en medio de tu equipo.",
+        "Trackeá su R como un Flash extra: mientras la tenga, cualquier pelea se la revierte; castigá de verdad cuando esté gastada."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para entrar: sin dash no puede escapar ni asegurar el stun; saltalo recién ahí.",
+        "En el 1v1, pegale justo después de que use la W: sin el escudo ni el círculo en mano, es un cuerpo a cuerpo sin respuesta.",
+        "No allinees a muerte abierta con su R en cooldown desconocido: asumí que cualquier trade perdido se lo saca de encima con curación incluida."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas entra con la E: un Ekko agarrado antes de tocar su propio círculo muere sin haber hecho nada.",
+        "Guardá una capa de control para después de su Zhonya: su patrón es entrar, detenerse en oro y revertir; el CC en la salida lo encuentra parado.",
+        "Malzahar y Lissandra lo borran del juego: supresión y punto fijo lo castigan más que cualquier item de daño de tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 84,
+        "name": "Akali",
+        "tips": [
+          "Tu shroud anula su engage: si entra con la E, desvanecete y reubicate; sin target visible, su W y su Q caen al vacío.",
+          "Ganale a niveles 1-3: antes de la R es de lo más frágil de la lane; cada Q tuya a rango de melee es vida que él no recupera.",
+          "Trackeá su R antes de allinear: mientras la tenga en mano, cualquier pelea que pierdas se la revierte con curación incluida."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "Tu pool se come su burst entero: guardalo para cuando entre con la E y te suelte la combo; la rotación completa cae en un charco rojo.",
+          "No gastes el pool para farmear: es tu única respuesta a su combo y sin él cada dive del jungla rival te encuentra descalzo.",
+          "Escalá parejo y empujale la wave desde rango con Q maxeada: un Ekko atado a su torre no puede roamear, que es donde de verdad rompe el juego."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango te deja castigarlo en cada last hit: pegale apenas baje a farmear que su alcance de respuesta es la mitad del tuyo.",
+          "Guardá la E para su entrada con el dash: interrumpirle el acercamiento mata el combo entero y lo deja parado en medio de la lane.",
+          "Jugá detrás de tu wave y a más distancia que su Q: así el poke war es gratis y su W-stun nunca te encuentra en rango."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El Wind Wall bloquea su Q y parte del burst: tirala cuando veas el reloj girar hacia vos y el trade queda en nada.",
+          "Usá la E sobre minions para esquivar su entrada: movilidad igual a la suya pero con escudo de más; movete lateral y el stun nunca te agarra.",
+          "Al nivel 6 castigá sus dives: si se tira bajo torre o te busca con la R gastada, asestale tu combo completo sin miedo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q desde rango → E1 → E2 encima del objetivo → auto para reventar la pasiva; con la W cargada de antemano, sumá el stun al cierre del trade",
+        "All-in completo: W adelantada al objetivo → E1 → E2 dentro del círculo para asegurar el stun → Q a quemarropa → autos con proc de pasiva → R para revertir o rematar",
+        "Engage desde niebla: tirá la W detrás del rival para cortarle la retirada → esperá que el círculo se arme → E para aterrizar adentro del stun → Q + autos",
+        "Inversión de pelea: entrá sabiendo tu rastro, Zhonya en medio del daño enemigo y R hacia atrás atravesando al rival (la R pega y cura, no es solo escape)",
+        "Empuje de wave: Q atravesando los minions y reubicación con E; con Q maxeada la wave cae sola y te libera para roamear"
+      ],
+      "tips": [
+        "Tirá siempre la W desde fuera de visión y adelantada: el rival camina hacia el círculo sin verlo; una W visible es una W esquivada.",
+        "No uses la E para pegarte a targets con escape en mano: es tu única movilidad de pelea; si la gastás y fallás el stun, morís sin la R.",
+        "Usá la W de camino entre waves y camps: el escudo te deja farmear y rotar con vida extra casi gratis.",
+        "Trackeá tu R como segunda vida: entrá sabiendo dónde va a quedar tu rastro de cuatro segundos y acordate que la R hacia adelante también pega.",
+        "En mid con cuerpo a cuerpo, farmeá con Q desde rango y no aceptes trades largos contra magos de poke: buscá el all-in recién con la pasiva lista y jungla cerca."
+      ],
+      "plan": {
+        "early": "Farmeá con Q para no regalarle poke al mago rival, buscá el trade con la W cargada desde nivel 3 y al llegar a 6 aprovechá la R para dives y jugadas que ningún rival va a leer.",
+        "mid": "Empujá la wave y roameá cruzando paredes con la E; buscá picks con W desde niebla y convertí cada kill en dragón, heraldo o torre.",
+        "late": "Flankeá con tu equipo cerca, esperá al rival agrupado para la W multi-stun desde niebla y no pelees nunca sin R o Zhonya en mano; un pick al carry define el juego."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/ekko/build",
+      "https://mobalytics.gg/lol/champions/ekko/guide"
+    ]
+  }
+}

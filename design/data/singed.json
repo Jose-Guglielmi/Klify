@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "singed",
+    "ddragonId": "Singed",
+    "name": "Singed",
+    "titleEs": "el Químico Loco",
+    "cid": 27,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.17,
+    "pr": 2.08,
+    "br": 0.64,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 83.9,
+      "jungle": 2.6,
+      "middle": 8.2,
+      "bottom": 1.3,
+      "support": 3.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Singed.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Singed_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 58.04, "games": 224 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 57.75, "games": 400 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 56.98, "games": 981 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 56.92, "games": 318 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 55.97, "games": 452 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 55.33, "games": 394 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 55.14, "games": 321 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 55.02, "games": 518 }
+  ],
+  "weakAgainst": [
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 45.1, "games": 847 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 45.48, "games": 897 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 47.13, "games": 244 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 48.21, "games": 558 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 48.35, "games": 455 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 48.75, "games": 798 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 49.26, "games": 1224 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 50.17, "games": 1202 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es el único campeón que puede proxy farmear desde el level 1 sin regalar la wave: empuja entre las dos torres y le saca presión a todas las otras lanes.",
+      "Pasiva + E lo hacen casi inatrapable: la velocidad de Noxious Slipstream al pasar cerca de aliados o enemigos y el Fling le dan una salida gratis de casi cualquier gank.",
+      "La Q es DPS continuo sin cooldown real: mientras camina deja un rastro de veneno que le pega a todo el equipo enemigo, incluso cuando no está tirando habilidades.",
+      "La R es un buff masivo de stats (daño, resistencia, velocidad y regeneración): con Insanity Potion se convierte en frontline de verdad y pasa de tanque pasivo a amenaza real.",
+      "Su amenaza no es matar: es arrastrar rotaciones. Obliga al jungla enemigo a quedarse arriba y le regala tiempo y objetivos al resto del mapa."
+    ],
+    "weaknesses": [
+      "Maná early brutal: sin Q activa no farmea ni tradea, y si spamea el rastro se queda sin pool y es un campeón prácticamente inútil hasta que vuelve a base.",
+      "El CC lo mata: cualquier stun, root o suppress lo deja parado fuera de su propio veneno, y encima le arruina el proxy antes de empezar.",
+      "Late game es flojo: los carries ya tienen daño y penetración, así que sus resistencias se derriten y su split push pierde peso frente a un grupo coordinado.",
+      "Contra duelistas con sustain o ejecución real pierde el 1v1: si lo obligan a pelear sin minions alrededor, su DPS de Q no alcanza para ganar el trade largo.",
+      "Depende de la R para pelear de verdad: sin Insanity Potion arriba es un saco de oro caminando que solo puede huir."
+    ],
+    "powerSpikes": [
+      "Level 1 con Q: puede empujar y proxear las primeras waves; si lo dejás llegar, arranca la lane con ventaja de oro y experiencia.",
+      "Level 6 con R: primer pico real de pelea; el ultimate le da stats para aguantar el all-in y salir caminando, así que forzá la pelea antes o esperá a que la gaste.",
+      "Primer item completo (Liandry's o el componente de daño): el veneno empieza a picar de verdad y puede farmear con Q durante mucho más tiempo.",
+      "Level 9 con Q maxeada: DPS de área constante en peleas grupales, sobre todo si nadie lo puede frenar con CC.",
+      "Level 11 y 16 con puntos en R: cada rango le suma resistencias y daño, así que en mid y late se vuelve cada vez más difícil de bajar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Gangplank, Teemo, Heimerdinger: castigalo en cada paso que da hacia la wave y no lo dejes proxear gratis; su única forma de entrar es caminando por tu daño.",
+        "Empujá la wave antes de que la proxee: si la lane está del lado enemigo, el proxy le cuesta vida y no le rinde en oro.",
+        "No lo persigas por el rastro de veneno: tradeá, salí y volvé; cada segundo adentro de la Q es vida que le regalás."
+      ],
+      "tanks": [
+        "Comprá daño porcentual o Liandry's temprano: su build es vida y resistencias, así que el daño plano se le resbala.",
+        "Cortale el proxy con visión en el río: si sabés por dónde entra, el jungla lo castiga antes de que arme la wave.",
+        "En teamfight no lo dejes pasar de largo: si lo dejás correr entre ustedes, el veneno hace el trabajo solo; frenalo con CC y matalo entre dos."
+      ],
+      "assassins": [
+        "Fiora, Olaf, Darius: obligalo a pelear lejos de sus minions y en tramos cortos; el 1v1 largo sin wave lo pierde.",
+        "Guardá tu ejecución o tu sustain para después de la R: con Insanity Potion arriba sus stats engañan y muchos all-ins se pierden por eso.",
+        "Castigalo cuando gasta el E para farmear: sin Fling no tiene forma de despegarte ni de sacarte de encima."
+      ],
+      "crowdControl": [
+        "Stun, root o suppress sobre el arranque del proxy y el plan entero se cae: sin movilidad propia, el CC lo deja parado en su propio veneno.",
+        "Encadená CC antes de que use la R: la Insanity Potion no lo hace inmune, solo más gordo, así que atraparlo temprano es más fácil.",
+        "Un slow encima del Fling le corta la huida: si no puede correr, su kit no tiene segunda salida."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 41,
+        "name": "Gangplank",
+        "tips": [
+          "Poné barriles en la entrada del proxy y rompelos con Q cuando intente pasar: sin camino libre, el proxy le cuesta toda la vida.",
+          "Usá la naranja para cortar el slow del W y salir del rastro: quedarte adentro de la Q es la única forma de que te gane el trade.",
+          "Farmeá desde máximo rango y empujá: te gana el 1v1 cuerpo a cuerpo, pero nunca te alcanza si no te dejás agarrar."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "Sembrá hongos en las entradas del proxy: cada intento de farmear entre torres le sale con veneno encima y sin poder caminar.",
+          "Tu Q lo ciega justo cuando quiere tradear con autos: usalo cuando se te acerque con la Q prendida y ganás el intercambio gratis.",
+          "Jugá con el rango y las minions de tu lado: si no puede proxear ni pelearte de cerca, se queda sin plan de lane."
+        ]
+      },
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Armá la torreta en el centro de la wave y no lo dejes entrar: su Q no limpia torretas rápido y el proxy se le vuelve imposible.",
+          "Guardá el stun para cuando corra hacia vos con el Fling: si lo atrapás en el rastro, el trade es tuyo completo.",
+          "Empujá y quedate atrás de las torretas: no tiene rango ni dash para llegar a vos sin comerse todo el daño."
+        ]
+      },
+      {
+        "cid": 6,
+        "name": "Urgot",
+        "tips": [
+          "Tradeá con la Q y el escudo de la E: aguantás el veneno y le devolvés daño real en cada acercamiento.",
+          "Guardá la R para cuando esté bajo de vida después de la Insanity Potion: la ejecución ignora lo que le queda de resistencias.",
+          "No lo dejes proxear: empujá y quedate en la wave, porque sin minions entre los dos su Q pierde la mitad del valor."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: Q prendida → caminar hasta que la pasiva te de velocidad → AA → E para flipearlo a través del rastro → AA mientras corre",
+        "Combo de W: Q → AA → tirar W detrás tuyo → E al enemigo para flipearlo dentro del adhesivo → AA en el aire",
+        "Sky combo: E → Q instantáneo → AA mientras el objetivo vuela; el auto entra en el aire y suma daño que no puede esquivar",
+        "Engage de teamfight: R → Q → W en tu posición → Flash → E para meter al carry dentro del adhesivo → AA",
+        "Pick con Flash: R → W → Flash → Q → E → AA; arrancá con la R puesta para que el primer trade ya tenga stats"
+      ],
+      "tips": [
+        "No prendas la Q para farmear si te queda poca maná: el rastro es tu daño y tu escape, y sin pool sos un campeón sin kit hasta volver a base.",
+        "Decidí en el minuto uno si vas a proxear o a lanear normal, pero cambiá de plan si el jungla enemigo aparece: el proxy solo funciona con información.",
+        "No pelees sin R arriba: sin Insanity Potion sos lento y blando, y cualquier CC te saca de la pelea antes de que puedas hacer daño.",
+        "En teamfight no entres de frente: flanqueá y corré círculos alrededor del grupo enemigo; tu trabajo es que el veneno pegue en todos, no matar a uno.",
+        "Guardá el E para despegar, no para iniciar, salvo que tengas Flash: es tu única herramienta real de disengage y sin ella te quedás sin salida."
+      ],
+      "plan": {
+        "early": "Elegí proxy o lane normal según el matchup, empujá las primeras waves con Q sin fundir el maná y roameá a mid cuando la wave esté del lado enemigo; a 6 buscá pelea con la R puesta.",
+        "mid": "Spliteá side lanes y forzá que alguien te conteste, peleá el 1v1 con la R arriba cuando venga un solo rival y agrupá solo si hay un objetivo grande por delante.",
+        "late": "Dejá de splitear tanto, flanqueá las peleas y buscá picks sobre carries mal posicionados con Flash + E; el veneno en un 5v5 agrupado gana más que cualquier torre."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/singed/guide",
+      "https://mobalytics.gg/lol/champions/singed/counters",
+      "https://mobalytics.gg/lol/champions/singed/combos",
+      "https://app.mobalytics.gg/lol/champions/singed/build"
+    ]
+  }
+}

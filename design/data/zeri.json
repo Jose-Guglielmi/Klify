@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "zeri",
+    "ddragonId": "Zeri",
+    "name": "Zeri",
+    "titleEs": "La chispa de Zaun",
+    "cid": 221,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.75,
+    "pr": 4.17,
+    "br": 0.85,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 0.9,
+      "jungle": 1,
+      "middle": 1.5,
+      "bottom": 96.6,
+      "support": 0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zeri.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zeri_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 56.4, "games": 578 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 55.45, "games": 3506 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 54.28, "games": 1284 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 54.26, "games": 1384 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 53.52, "games": 256 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 53.5, "games": 7667 },
+    { "cid": 202, "slug": "Jhin", "name": "Jhin", "vsWr": 53.25, "games": 6265 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 52.75, "games": 1435 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 45.5, "games": 211 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 46.08, "games": 332 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 46.38, "games": 304 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 47.57, "games": 370 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 47.86, "games": 2008 },
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 48.9, "games": 863 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 48.99, "games": 845 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 48.99, "games": 2317 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le roba escudos cada vez que pega: contra compos con mucho shield (Janna, Karma, Lulu) gana el trade sin gastar nada a cambio.",
+      "La E cruza paredes: es el tirador más difícil de atrapar del juego y puede escapar por ángulos que ningún otro ADC tiene.",
+      "La W sobre terreno pega más lejos y más fuerte, así que puede castigar desde fuera de la pantalla del rival a través de un muro.",
+      "Con la R encendida se vuelve una ametralladora: el AoE encadenado hace que en peleas agrupadas su DPS se dispare.",
+      "Escala como campeona de late: con dos ítems completos y nivel 16 su daño por segundo está entre los más altos del juego."
+    ],
+    "weaknesses": [
+      "La Q reemplaza el autoataque y es un skillshot: se bloquea con minions y se puede fallar, y si no la pegás, no pegás nada.",
+      "Early flojo: rango efectivo corto, bases de daño bajas y dependencia total de que el soporte inicie el trade.",
+      "La E tiene un cooldown larguísimo para ser su único movimiento: si la gasta para farmear o para entrar, se queda sin escape un buen rato.",
+      "No tiene blink instantáneo: un CC encadenado o un burst sin tiempo de reacción la borra antes de que pueda kiteár.",
+      "Depende del R para pelear: sin Lightning Crash activo su DPS cae fuerte y no gana peleas frontales largas."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E juntas ya tiene las tres herramientas del kit y puede tradear contra casi cualquier ADC.",
+      "Nivel 6: la R le habilita el all-in; si llega a 6 antes que vos, el 2v2 de bot se invierte de golpe.",
+      "Primer componente grande (B. F. Sword / Yun Tal): el Q empieza a doler y el trade de lane cambia por completo.",
+      "Dos ítems completos + nivel 11: entra en la fase donde gana sola las peleas agrupadas si nadie la enfoca.",
+      "Nivel 16: el tercer punto de R hace que el AoE encadenado borre squishies en segundos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kog'Maw y Twitch le ganan el late por rango y DPS puro: no los dejes llegar a tres ítems sin presión, el 45-48% que sacan contra ella se construye con paciencia.",
+        "Contra magos de rango largo (Vel'Koz, Hwei, Lux) jugá detrás de la wave: la Q y la W se bloquean con minions, así que la oleada es tu escudo gratis.",
+        "Empujá y traé la wave a tu lado: Zeri necesita espacio para kiteár; encerrada contra su torre, la E pierde casi todo su valor."
+      ],
+      "tanks": [
+        "Un tanque con CC (Malphite, Ornn, Nautilus) es la respuesta más directa: aguantá el R y encadená CC encima, no tiene forma de matar a alguien con 4k de vida.",
+        "Comprá armadura y sobreviví el primer tramo de la pelea: su daño es sostenido, no explosivo; si pasás los primeros segundos, la ganás.",
+        "Cortale el terreno: la W y la E dependen de las paredes, en espacio abierto pierde la mitad del kit."
+      ],
+      "assassins": [
+        "Katarina y Talon le ganan el 1v1 si entran justo cuando la E está en cooldown: esperá a que la gaste y recién ahí saltá.",
+        "No la persigas detrás de una pared: ahí es donde te quiere, con la E lista y el R encendido.",
+        "Coordiná el burst con el CC del soporte: sin stun propio no puede cortar un combo de asesino a mitad de camino."
+      ],
+      "crowdControl": [
+        "Cualquier CC point-and-click (Swain E, jaula de Veigar, Rell W) la deja fuera de la pelea: no tiene cleanse ni escape instantáneo.",
+        "Su R se corta con un stun apenas arranca: si la ves castear Lightning Crash, el CC encadenado le arruina la pelea entera.",
+        "Los slows importan más de lo que parece: vive de la velocidad de movimiento del R, frenarla le baja el DPS de forma directa."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Pegale desde tu rango máximo con Q y E: la castigás en cada last hit y ella no puede contestar sin meterse en tu W.",
+          "Guardá el knock-up de la E para cuando use la suya hacia adelante: sin dash queda parada en medio de tu combo.",
+          "No te pegues a la wave: tu Q la atraviesa y la obligás a elegir entre farmear y esquivar."
+        ]
+      },
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Tu E (Nevermove) la engancha desde rango seguro y le quema el escape: es la respuesta más limpia a su movilidad.",
+          "Cuando arranca la R de Zeri, alejate del centro del AoE y dejá que tu R te sostenga mientras la kiteás.",
+          "Jugá pegado a tu soporte: en 2v2 con CC la Zeri pierde, su daño es sostenido y no aguanta trades largos trabada."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Esperá a que gaste la E para escapar o para farmear y entrá recién ahí: sin dash es una ADC común.",
+          "No la empieces de frente con su Lightning Crash arriba; una vez que gastó E y R, tu combo la gana seguro.",
+          "Roteá antes que ella: Zeri empuja lento y no puede seguirte a las side lanes sin regalar farm."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "La jaula (E) le corta el dash: si la encerrás adentro no tiene escape y muere con Q + R.",
+          "Farmeá de lejos y no aceptes trades early: tu escalado la pasa por arriba y ella necesita snowballear antes del minuto 20.",
+          "Casteá la jaula sobre la pared por donde suele dashear: la E de Zeri la lleva derecho a tu trampa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → AA → Q → Q cerrando con autoataque real (la Q es tu autoataque, así que se intercala, no se reemplaza)",
+        "Engage por pared: E cruzando el muro → W mientras volás → R al aterrizar → Q + Q + Q y autoataque para ejecutar",
+        "Pick desde lejos: W a través de una pared (pega más lejos y ralentiza) → E para acercarte → R → Q sostenido encima del objetivo",
+        "Kite defensivo: R para ganar velocidad de movimiento → Q mientras retrocedés → E sobre la pared más cercana recién cuando el rival ya comprometió el dash"
+      ],
+      "tips": [
+        "La Q es tu autoataque: practicá el kiting con ella, porque tirarla con el mouse quieto es la forma más rápida de perder el DPS.",
+        "No gastes la E para farmear ni para entrar sin R: es tu único escape y su cooldown es larguísimo; sin ella sos una ADC sin movilidad.",
+        "Usá la W siempre a través de una pared: el láser se alarga, pega más y ralentiza; sin pared es un poke mediocre.",
+        "Peleá con la R encendida o no pelees: sin Lightning Crash tu DPS cae a la mitad, así que esperá el cooldown en vez de forzar.",
+        "Farmeá con Q desde atrás y dejá que el soporte inicie: tu early es débil y cada trade sin ventaja te cuesta la lane."
+      ],
+      "plan": {
+        "early": "Farmeá con Q desde atrás de la wave, pokeá con W a través de las paredes de la lane y jugá el 2v2 solo cuando tu soporte tenga CC; al llegar a 6 buscá el all-in con R si el rival está a media vida.",
+        "mid": "Rotá a mid con un ítem completo, empujá con Q + W desde cobertura y aparecé en las peleas agrupadas con R encendida; no persigas kills hacia la jungla con la E en cooldown.",
+        "late": "Quedate cerca del soporte y de las paredes, abrí con R en peleas agrupadas para activar el AoE encadenado y guardá la E exclusivamente para reposicionarte cuando el engage enemigo ya entró."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/zeri/build",
+      "https://mobalytics.gg/lol/champions/zeri/guide",
+      "https://mobalytics.gg/lol/champions/zeri/combos",
+      "https://mobalytics.gg/lol/champions/zeri/counters",
+      "https://lolalytics.com/lol/zeri/build/?lane=bottom"
+    ]
+  }
+}

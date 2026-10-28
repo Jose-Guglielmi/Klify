@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "gwen",
+    "ddragonId": "Gwen",
+    "name": "Gwen",
+    "titleEs": "La Costurera Sagrada",
+    "cid": 887,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.48,
+    "pr": 2.27,
+    "br": 2.83,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 63,
+      "jungle": 23.2,
+      "middle": 12.9,
+      "bottom": 0.8,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gwen.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gwen_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 59.04, "games": 835 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 55.72, "games": 341 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 55.13, "games": 312 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 54.49, "games": 356 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 54.3, "games": 442 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 53.58, "games": 601 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 53.28, "games": 458 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 53.21, "games": 280 }
+  ],
+  "weakAgainst": [
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 44.38, "games": 721 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 45.15, "games": 392 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 45.92, "games": 233 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.31, "games": 244 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 48.44, "games": 225 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 48.57, "games": 420 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 48.89, "games": 718 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 48.92, "games": 462 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su pasiva pega daño mágico por % de vida máxima en cada golpe y habilidad: los tanques que acumulan vida la alimentan en vez de frenarla.",
+      "La W (Hallowed Mist) la vuelve intocable para toda habilidad que venga de afuera de la niebla, incluidos los tiros de torre: pelea, divea y escape en una sola habilidad.",
+      "Daño de pelea larga: cuanto más dura el trade, más cortadas acumula y más cerca queda de ejecutar; los trade cortos contra ella son una trampa.",
+      "El E se resetea al golpear y alarga sus autos: movilidad de chase constante sin gastar Flash para cerrar kills.",
+      "La R de tres casts agrega slow y daño en área escalable: en teamfight agrupada pinta el campo entero mientras cobra la pasiva."
+    ],
+    "weaknesses": [
+      "Trade corto la destruye: hasta juntar su primer item de AP su burst temprano es flojo y duelistas de golpes fuertes la pasan por arriba.",
+      "La W no corta autos: los duelistas de ataque básico (Garen, Tryndamere, Fiora) la pegan adentro de su propia niebla sin que la niebla los frene.",
+      "Cero control de wave temprano contra push fuerte: si la wave la encierra contra la torre, pierde last hits o vida por horda.",
+      "Depende de juntar 4 cargas antes de la Q: si el rival sabe contar, cada Q a medio cargar es maná y cooldown tirados a la nada.",
+      "La R necesita pegarle a un campeón con el primer cast: si aliña mal o el rival se esconde tras minions, queda sin ultimate para la pelea que importaba."
+    ],
+    "powerSpikes": [
+      "Level 6: la R agrega un burst de tres cortes con slow; cualquier trade extendido que antes era parejo ahora lo cierra ella.",
+      "Primer item de AP (Dusk and Dawn o Riftmaker): la pasiva escala con poder de habilidad y de golpe su trade extendido se vuelve inaceptable para el rival.",
+      "Dos items más botas de penetración: mid game donde divea torres con W y borre tanques; no la dejes llegar a esa ventana gratis.",
+      "Level 16 con R a máximo rango: los tres casts cubren teamfights enteras; asumí que cada pelea agrupada la tiene con ultimate en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kennen, Quinn, Vayne: castigala en cada auto que quiera cobrar; su Q a cero cargas no te llega y ella pierde vida por cada paso que da hacia la wave.",
+        "Guardá tu disengage para su E: si el dash no encuentra el reseteo, queda caminando de vuelta sin escape y ahí es free.",
+        "Empujala bajo torre temprano: su limpieza de horda es floja antes del primer item y cada wave bajo torre le cuesta vida o farm."
+      ],
+      "tanks": [
+        "No compres vida pura y nada más: su daño es por % de vida máxima, la vida sola la alimenta; escala resistencias y pelea de trade corto.",
+        "Jugá de golpes y volvé: cada segundo que el trade se extiende es un segundo a favor de sus cortadas; entrá, pegá, salí.",
+        "Cuidado con divear con ella delante: la W la cubre de todo lo que venga de afuera, incluyendo la torre; no te la creas tanqueada si no hay respuesta."
+      ],
+      "assassins": [
+        "Su W niega tu combo entero si la tirás desde afuera de la niebla: esperá que la gaste o entrá con ella adentro del círculo.",
+        "En trades cortos le ganás fácil antes de items: burst + salida antes de que acumule cargas la deja sin identidad.",
+        "Cuando arranque la R en teamfight, no te quedes estático en el borde: el slow de los cortes te encuentra y después llega el E a cobrarte."
+      ],
+      "crowdControl": [
+        "Enganchá tu CC desde adentro de su niebla o después de que la gaste: lanzado desde afuera es filtrado por completo.",
+        "CC point-and-click no se esquiva pero sí se bloquea: la única ventana real es que esté fuera de la W o recién gastada.",
+        "En teamfight no quemés todo el CC en ella al arranque: su equipo entra detrás y a vos te quedaste sin respuesta para el carry."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Tradeá con Q (silencio + golpe) y girá la E pegado a ella: sus autos y tu giro ignoran la W, mientras que sus tijeras necesitan tiempo que no le vas a dar.",
+          "Castigá cada Q con las tijeras a media carga: si cortás el trade antes de que llene las 4 cargas, su burst queda en nada.",
+          "Con la R ejecutadora en mano no la dejes regenerar bajo torre: su sustain de pelea larga es su plan B y tu ultimate es la respuesta directa."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Tus autos atraviesan su niebla: allineá con la W gastada o parado adentro del círculo y el trade es tuyo.",
+          "Forzá el all-in antes de su primer item: Gwen temprana no tiene burst ni resistencia para tu spin y su E sin reseteo no la salva.",
+          "Guardá la R para después del Zhonya o del arranque de su R: sobrevivir su burst te deja tres segundos de autos gratis para ejecutarla."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Antes del nivel 6 sos el problema: pegale en cada auto que baje al farm y no le regales tiempo de escalar gratis.",
+          "Tu rango con la E te deja farmear y pokear sin entrar en rango de sus tijeras: no hace falta que el trade se extienda jamás.",
+          "Al 11 con tu área de onda, limpiá la wave de lejos y no te pares adentro de su niebla a pelear: peleá en tus términos y a tu rango."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "No la persigas jamás: su identidad es la pelea larga y tu veneno es exactamente eso; flipeá para cortar la Q y caminate atrás.",
+          "Dejá la wave siempre empujada: la Gwen temprana pierde farm y vida bajo horda constante, y su E de chase no sirve sin un objetivo quieto.",
+          "Tu R en teamfight apuntada a ella la obliga a gastar la W en defensa: sin niebla en mano, su divea deja de existir."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA → E (dash alargado) → AA ×2 → Q recién con las 4 cargas llenas; si el trade sigue, AA de nuevo para refrescar el E",
+        "All-in nivel 6: R allineada al campeón → E encima → AA → AA → R → AA → Q → AA, guardando el tercer corte de R para el escape o el ejecutar",
+        "Engage contra rangeros: W primero (niebla puesta) → E → Flash para cerrar adentro del círculo y empezar el trade cubierta",
+        "Dive de torre: entrá con W dentro del rango de la torre para que los tiros te pasen de largo, terminá con Q + R y salí con el E reseteado",
+        "Teamfight agrupada: R desde flanco al centro → E al carry → Zhonya si te enfocan → R y Q mientras la pasiva cocina a todos los marcados"
+      ],
+      "tips": [
+        "No tires la Q con cero cargas: llená las tijeras con autos (o con el E pegado) primero; la Q a full carga corta casi el doble y es la diferencia entre trade ganado y perdido.",
+        "La W es de compromiso, no de rutina: usala cuando el trade ya arrancó y parate adentro; gastarla como poke te deja sin cobertura para la pelea real.",
+        "El E se refresca al golpear: encadená siempre AA → E → AA para no quedarte sin dash ni para chase ni para escape.",
+        "El primer cast de la R necesita tocar un campeón: allinealo en una línea recta o en un pick antes de spamear los otros dos cortes.",
+        "Tu kit es de pelea larga con Conqueror: no te asustes en el arranque del trade temprano, escalá farmeando y buscá las peleas extendidas recién con el primer item arriba."
+      ],
+      "plan": {
+        "early": "Farmeá con la punta de la Q sin gastar cargas al vacío, controlá la wave cerca de tu torre y comerciá recién con las 4 cargas llenas; antes del primer item evitá los all-in contra duelistas y esperá tu ventana.",
+        "mid": "Con el primer item de AP tu trade extendido ya le gana a tanques y a la mayoría de los tops: diveá con W + E, roameá por la R de tres cortes y negá el jungle enemigo con tu velocidad de limpieza.",
+        "late": "Flankeá y arrancá la R desde un ángulo para tocar al carry con el primer corte, entrá con W + Zhonya y dejá que la pasiva y los autos cobren la pelea entera desde adentro de tu niebla."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/gwen/build",
+      "https://mobalytics.gg/lol/champions/gwen/combos"
+    ]
+  }
+}

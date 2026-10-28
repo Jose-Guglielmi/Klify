@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "jinx",
+    "ddragonId": "Jinx",
+    "name": "Jinx",
+    "titleEs": "la Bala Perdida",
+    "cid": 222,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.51,
+    "pr": 14.91,
+    "br": 8.48,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 0.2,
+      "bottom": 99.6,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jinx.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jinx_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 56.11, "games": 3174 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 54.77, "games": 451 },
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 54.43, "games": 1005 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 54.4, "games": 250 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.33, "games": 7614 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 54.33, "games": 3013 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 53.67, "games": 2987 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 53.54, "games": 13492 }
+  ],
+  "weakAgainst": [
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 44.92, "games": 492 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 45.0, "games": 480 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 48.09, "games": 5107 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 48.17, "games": 845 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.31, "games": 356 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 48.72, "games": 392 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 48.82, "games": 934 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 48.9, "games": 317 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El CC encadenado de su kit (W slow + E root) multiplica al support de engage: si te agarra con su duo, no hay forma de escapar el trade.",
+      "La R es un sniper global: ejecuta al que escapa con poca vida desde cualquier parte del mapa y define peleas que ya estaban perdidas.",
+      "La pasiva (velocidad + velocidad de ataque por baja) la convierte en la mejor limpiadora del juego: una kill proceada y empieza el kiteo imposible de alcanzar.",
+      "Fishbones (Q cohetes) pega en área en teamfights agrupadas y con dos items su rango supera al de casi cualquier ADC: derrite equipos desde atrás sin exponerse."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, si gastó los Chompers (E) un all-in es kill casi garantizada; cualquier muerte la atrasa muchísimo porque escala por farm.",
+      "Early game pésimo: antes de items no pega nada y la pueden zonear del CS sin que pueda responder.",
+      "Come maná con los cohetes: si spamea Q en forma cohete se queda seca y pierde justo lo que la hace jugable en lane, el farmeo a distancia.",
+      "Depende de estar siempre pegada al equipo: separada del support o del grupo es un target gratis para picks y flancos.",
+      "Necesita escalado: forzá peleas tempranas y negale el farm, porque cada minuto que pasa con items la pelea se pone cada vez más a su favor."
+    ],
+    "powerSpikes": [
+      "Level 6: la R le permite snipear kills en otras lanes y ejecutar skirmishes de bot; asumí que cualquier escaper con poca vida puede morir desde tu pantalla.",
+      "Q maxeada (nivel 9): el daño de los cohetes sube de golpe y pasa de sobrevivir a dominar los trades extendidos.",
+      "Nivel 13 con Q y W maxeadas: daño full más auto-peel del slow, ya no es tan gratis de saltar.",
+      "Core items resueltos (Runaan's + Infinity Edge): la pasiva proceada la vuelve un cañón de kiteo que ejecuta múltiples targets con la R y derrite al equipo entero."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Hwei, Ziggs, Xerath: pokeala desde fuera del rango de sus cohetes; ella no tiene gap closer y cada CS a distancia le cuesta maná que no tiene.",
+        "Castigá el early sin piedad: antes de dos items es el ADC más inofensivo del juego, después ya es tarde.",
+        "Al hacer push, tené cuidado con pararte en línea con tu carry: la R viaja global y el snipe a mitad de vida es su jugada favorita."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: ella no atraviesa tanques sin Lord Dominik's, así que cada pelea antes de su tercer item te favorece.",
+        "Engage directo al carry: sin movilidad ni Cleanse, un tanque encima de ella la obliga a gastar E y Flash o morir.",
+        "Negale el escalado en vez de pelearla 5v5 tarde: zonzear el jungle, tomar objetivos y cerrar antes de que llegue al punto de derrite de equipos."
+      ],
+      "assassins": [
+        "Esperá que gasten los Chompers (E) antes de saltar: es su única trampa de auto-peel y sin ella no tiene cómo separarse de vos.",
+        "Flanqueá con stealth (Twitch, Nilah): pegarle desde el costado anula la única defensa que tiene, que es kitear de frente con el slow de la W.",
+        "Allineá antes de dos items: pasadas las runs de escalado, la pasiva la deja kiteando a tus assassins hasta matarlos."
+      ],
+      "crowdControl": [
+        "Encadená tu CC al primero que la toque: no tiene escape, un solo lock bien ejecutado es kill en seco.",
+        "Locks de supresión o root largo (Malzahar style) la niegan entera: sin poder moverse, los cohetes no le sirven de nada.",
+        "Guardá el engage para después de ver la E: si los Chompers están en cooldown, es un target estático por doce segundos."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Pintala desde fuera de su rango en cada last hit: Jinx pre-items no puede responder el poke y perdés el lane por CS puro.",
+          "Guardá el Fear para cuando quiera kitear con la pasiva proceada: cortarle la movilidad prestada la deja caminando a tu combo entera.",
+          "Al 6, esperá que baje al farm con cohetes (maná caro) y allineá con la pintura completa: es squishy y no tiene cómo esquivar de pie."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Tu E + Q llegan más lejos que sus autos: pokeala cada vez que vaya a last hittear y el lane es tuyo sin riesgo.",
+          "El bind decide el lane: si lo conectás cuando camina hacia la wave, ella quema E y Flash o muere con tu combo completa.",
+          "Aviso de la R global: no cruzá el mapa con menos de la mitad de vida cuando Jinx está viva, el snipe es gratis para ella."
+        ]
+      },
+      {
+        "cid": 29,
+        "name": "Twitch",
+        "tips": [
+          "Esperá que la E (Chompers) esté en cooldown y flanqueá con Q stealth: sin su trampa es el ADC más fácil de saltar del juego.",
+          "Pegale duro en los primeros niveles: tu early es muy superior y cada kill que le robás ahora es farm que no recupera nunca.",
+          "En teamfight, entrá por el costado opuesto a su front line: si tu combo no pasa por delante de los tanques, ella no tiene tiempo de reaccionar."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q y escalá tranquilo: Jinx necesita ganar tarde también, pero vos podés borrarla a mitad de partida si acumulaste AP.",
+          "La jaula (E) es sentencia: ponela debajo de vos cuando se acerque a trade; sin movilidad, o se quema Flash o queda encerrada en tu combo.",
+          "Cuando tenga la pasiva proceada no la persigas: volvé a la jaula, que entre ella sola, y ejecutála con R antes de que kitee a tu equipo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: autos con Pow-Pow (minigun, la forma rapida) → W para slow y extender el trade → switch a Fishbones si se aleja",
+        "Auto-peel: E (Chompers) DEBAJO tuyo cuando te enganchan → W al que te corre → kitear con minigun hacia tu equipo",
+        "All-in con engage del support: CC del support → E encima del objetivo → autos minigun → W → R si escapa con poca vida",
+        "Teamfight agrupada: Fishbones (cohetes) al clump con Runaan's → primera kill proca pasiva → cleanup con velocidad + autos al más cercano",
+        "Snipe global: R al escaper con menos de la mitad de vida al final de un skirmish o a otra lane mientras farmeás"
+      ],
+      "tips": [
+        "Administrá el maná: no last hittees todo con cohetes; si te quedás seca perdés el farmeo a distancia y te zonean del CS gratis.",
+        "La E va debajo de vos, no hacia el rival: así el enemigo que te engagea camina adentro sí o sí; tirarla adelante suele fallar el priming.",
+        "Usá cada forma de la Q para lo suyo: minigun para target único (más velocidad de ataque) y Fishbones para wave, clump y rango extra; maxeala siempre primero.",
+        "W es herramienta de kiteo, no poke random: a vida llena solo gastás maná y avisás que estás en lane sin ganar nada.",
+        "Nunca te separes del equipo: parate atrás de tu front line, cerca del support; cada paso que das sola es un pick para el rival."
+      ],
+      "plan": {
+        "early": "Farmeá seguro sin pelear sin ventaja, buscá trades extendidos con minigun cuando tu support tiene engage y sincronizá la E con su CC; con R en mano snipeá otras lanes si tu lane no da kills.",
+        "mid": "Caída la torre de bot rotá a mid con tu support, agrupate siempre y buscá picks con jungla; con Q cerca de maxear ya podés pelear objetivos sin miedo.",
+        "late": "Jugá atrás de tu equipo pegada al support, kiteá al enemigo más cercano con la pasiva proceada y guardá la R para ejecutar y volver a procar; si te agarran sola, la partida se termina ahí."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/jinx/guide",
+      "https://mobalytics.gg/lol/champions/jinx/build"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "brand",
+    "ddragonId": "Brand",
+    "name": "Brand",
+    "titleEs": "la Venganza Ardiente",
+    "cid": 63,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.59,
+    "pr": 3.14,
+    "br": 4.13,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 7,
+      "jungle": 5.1,
+      "middle": 15.5,
+      "bottom": 9.4,
+      "support": 63
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Brand.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Brand_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.56, "games": 594 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 54.5, "games": 666 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.96, "games": 202 },
+    { "cid": 432, "slug": "Bard", "name": "Bardo", "vsWr": 53.33, "games": 450 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 53.16, "games": 237 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 52.71, "games": 499 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 52.43, "games": 1440 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 52.34, "games": 791 }
+  ],
+  "weakAgainst": [
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 45.99, "games": 324 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 47.08, "games": 754 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 47.1, "games": 293 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 48.05, "games": 437 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 48.21, "games": 558 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 48.26, "games": 230 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 49.39, "games": 660 },
+    { "cid": 555, "slug": "Pyke", "name": "Pyke", "vsWr": 49.55, "games": 894 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El poke de la W tiene uno de los rangos más largos del juego: castigás desde afuera del alcance del rival y ningún trade entra sin tu permiso.",
+      "La pasiva Blaze pega por % de vida máxima: tu daño escala contra cualquier compo, de Soraka a Leona, y por eso no hay tanque que te vuele del lane.",
+      "La E es point-and-click para aplicar Blaze y la Q aturde seguro sobre un objetivo en llamas: el trade E → Q stun es casi imposible de fallar.",
+      "La R rebotando en equipo agrupado es daño de área brutal: una teamfight apretada la ganás puesta casi por tu cuenta.",
+      "Con el item de support y la pasiva limpiás waves y wardéás sin dejar de hostigar: ganás control de visión sin perder presencia de lane."
+    ],
+    "weaknesses": [
+      "Cero movilidad y vida de papel: sos de los campeones que más mueren del juego; un gank o un hook bien tirado te borra de la pantalla.",
+      "Devorás maná: si spameás la W sin contar el pool, te quedás sin amenaza y tu ADC queda jugando 1v2 en la lane.",
+      "Todo tu daño depende de aterrizar la W o la Q, y son skillshots esquivables: sin Flash arriba jugá replegado porque no tenés plan B.",
+      "El juego largo te pasa por arriba: los enchanters con sustain (Sona, Milio, Soraka) anulan tu poke y escalan mejor que vos."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con el combo completo: cada trade desde ahí es tuyo si laburás la Blaze con la E antes de meter la Q.",
+      "Nivel 6: la R suma el burst que te faltaba para borrar al ADC rival en un all-in bien iniciado.",
+      "Nivel 9 con la W al máximo y primer item en la bolsa: el poke empieza a costar media vida por cast.",
+      "Nivel 11 y 16 con puntos en la R: en teamfights agrupadas los rebotes pegan muchísimo y casi siempre la tenés en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Esperá que tiren su skillshot principal para avanzar: tu rango es menor y cada paso adelante con su CD arriba te cuesta media vida.",
+        "Xerath y Zyra te castigan desde más lejos: all-inéalos con E → Q stun apenas se descuiden, tu burst gana el trade corto.",
+        "Jugá detrás de tus minions contra magos de línea y dejá que empujen: con la wave de tu lado, tu jungla los convierte en kill."
+      ],
+      "tanks": [
+        "Tu pasiva con % de vida máxima derrite tanques: no le tengas miedo al engage de Leona o Nautilus, sostené el trade con daño sostenido.",
+        "Guardá la Q para cuando carguen: llegan en llamas y el stun entra solito, dejándolos parados en el medio de tu combo.",
+        "Rylai's te deja kitearlos toda la pelea: presionalo desde el primer item cuando el rival es de engage cuerpo a cuerpo."
+      ],
+      "assassins": [
+        "Zed, Sylas y compañía te borran de un combo: pegate al ADC y usá la Q como auto-peel, no como poke.",
+        "Zhonya's es tu botón de vida: esperá el engage, detoná tu combo encima y hacete dorado mientras tu equipo responde.",
+        "Si el asesino salta y no te mató, la pelea es tuya: E → Q stun → W y la R si queda vivo para contarla."
+      ],
+      "crowdControl": [
+        "Los hooks (Pyke, Blitz, Thresh) son tu pesadilla: parate detrás de tus minions y nunca en línea con tu ADC.",
+        "Pegale apenas gaste el hook o el engage: Brand sin CC en contra es un mago libre para pokear y allinear a placer.",
+        "Mercury's Treads si el control viene en cadena: morir aturdido sin tirar un hechizo es la única forma en que este campeón pierde una teamfight."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Sus bombas pegan más lejos que tu W: esquivá el doble bombazo moviéndote lateral y no pokees parado.",
+          "El boost de velocidad le regala escapes a su ADC: all-in solo cuando el speed esté en CD o tu E → Q no tenga forma de fallar.",
+          "Esperá que tire la R de resurrección antes de volcar toda la combo: si reviven, tu burst fue directo a la basura."
+        ]
+      },
+      {
+        "cid": 902,
+        "name": "Milio",
+        "tips": [
+          "Su escudo extra y la limpieza de CC con la R anulan tu burst: buscá trades cortos y sostenidos, no el all-in de una tanda.",
+          "El booster de velocidad hace que tu W falle: esperá que lo gaste para castigar al ADC con el combo E → Q stun.",
+          "Si su R ya te canceló el stun una vez, esperala: tirar la Q dentro del anillo de Milio es regalar tu único hechizo decisivo."
+        ]
+      },
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Su sustain infinita gana cualquier guerra de poke: no intentes ganarla desgastándola, forzá el all-in con stun antes del nivel 6.",
+          "Castigala cada vez que camina hacia adelante a pegar la Q de stack: es el único momento en que está adelantada y sin escudo puesto.",
+          "Si el lane se alarga, perdiste: usá tu ventana de los niveles 3 a 6 para torre o kills, no dejes que escale el pase de poder."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "El tornado interrumpe tu all-in y el escudo invalida tu poke: esperá que ambos estén en CD antes de comprometerte.",
+          "Su desenganche desarma el engage frontal: arrancá la pelea con la R encima de su ADC antes de que reaccione.",
+          "No persigas por el slow: Janna convierte cualquier chase largo en pelea perdida; meté el combo y replegate."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E (Blaze garantizada) → Q (stun automático sobre el objetivo en llamas) → W encima para el 25% de daño extra",
+        "All-in nivel 6: E → Q stun → W → R al objetivo (los rebotes priorizan lo que ya está en Blaze y la detonación de la pasiva remata)",
+        "Poke a distancia: W al pie del rival si está quieto farmeando; avanzá a la E solo si el maná alcanza para responder un trade completo",
+        "Teamfight agrupada: R al centro del paquete → W al montón → E y Q sobre su carry mientras los rebotes detonan la pasiva",
+        "Anti-engage: esperá que el rival cargue, aplicá Blaze con la E y metele la Q stun para que el engage le salga carísimo"
+      ],
+      "tips": [
+        "Medí el maná antes de cada W: sin pool no hay amenaza y tu ADC queda 1v2 en la lane.",
+        "La W de poke y la Q de stun no siempre salen juntas: contra assassino o engage, la Q es tu único plan de escape, no la regales.",
+        "Hostigá cuando su CC principal esté en CD (hooks, tornado, engage): esa es la ventana de harass gratis que te gana el lane.",
+        "Tirá la R solo con 2+ enemigos agrupados o para rematar: un rebote único es un desperdicio de tu mejor hechizo.",
+        "En late nunca wardes solo: sos de los campeones que más mueren del juego; entrá con equipo o mandá el farsight."
+      ],
+      "plan": {
+        "early": "Pokeá con la W desde tu rango máximo, abrí el trade real a nivel 3 con E → Q stun y al 6 buscá el all-in con la R sobre el ADC rival.",
+        "mid": "Pegado al ADC, wardéás los accesos de mid y desgastás antes de cada objetivo: commit a la pelea cuando tu poke ya hizo el trabajo previo.",
+        "late": "No wardes solo y guardá Zhonya's para el engage rival; tirá la R en el equipo agrupado y ejecutá al squishy que no compró resistencia mágica."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/brand/build",
+      "https://mobalytics.gg/lol/champions/brand/guide"
+    ]
+  }
+}

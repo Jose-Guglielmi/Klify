@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "rengar",
+    "ddragonId": "Rengar",
+    "name": "Rengar",
+    "titleEs": "el Orgullo Acechante",
+    "cid": 107,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.73,
+    "pr": 3.6,
+    "br": 5,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 6.2,
+      "jungle": 90.3,
+      "middle": 0,
+      "bottom": 0.9,
+      "support": 2.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Rengar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rengar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 61.34, "games": 238 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.52, "games": 2008 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 54.62, "games": 368 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 54.32, "games": 1342 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 53.1, "games": 759 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.75, "games": 218 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 52.21, "games": 475 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 51.44, "games": 2805 }
+  ],
+  "weakAgainst": [
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 41.52, "games": 631 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 42.72, "games": 632 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 43.42, "games": 2059 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 43.68, "games": 1772 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 44.03, "games": 779 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 44.16, "games": 428 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 44.7, "games": 642 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 44.78, "games": 1380 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El salto de la pasiva desde arbustos lo convierte en enemigo público número uno de cualquier squishy: con uno o dos items lo borra de la pantalla antes de que reaccione.",
+      "La R le da camuflaje y visión de los rivales: puede invadir la jungla contraria con Q + pasiva y cazar al jungla rival en su propio campamento, o gankear una lane apareciendo por donde no había nada.",
+      "Su duelo temprano es fuerte mientras tenga un arbusto cerca: pocos junglas le ganan un 1v1 con ferocidad acumulada, y cada kill que saca acelera la bola de nieve.",
+      "La W empoderada le limpia el control de masas encima y lo cura: tiene sosten real en las peleas largas si sabe cuándo usarla."
+    ],
+    "weaknesses": [
+      "Necesita powerfarmear hasta el nivel 6: sin la R no ganakea bien porque depende del salto de arbusto, y un jungla que no ganakea temprano le regala el mapa al rival.",
+      "Usar mal la W en teamfight lo mata: es su única limpieza de CC y su cura; si la tira a lo loco, queda desprotegido en el medio de la pelea.",
+      "Es vulnerable a silencios y control de masas que lo corten en el aire: un knock-up o una supresión en el momento del salto anulan toda la combo.",
+      "Si lo frenan en el early, no hace mucho el resto del partido: es un campeón de bola de nieve o nada, sin plan B escalable.",
+      "Sin arbusto cerca pierde el salto de la pasiva: en peleas en campo abierto tiene que acercarse caminando como cualquier asesino y ahí lo ven venir."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la primera R cambia el personaje; cada vez que está en mano, buscá invasión o gankeo por detrás de la lane sin visión.",
+      "Nivel 9 con la Q al máximo: el burst sobre un solo objetivo sube tanto que cualquier campeón a media vida es ejecutado con la combo completa.",
+      "Primer item de letalidad resuelto: los squishies sin resistencia dejan de existir; cualquier carry que camine solo por la jungle es una kill gratis.",
+      "Nivel 16 con puntos en la R: el cooldown baja tanto que casi siempre la tiene disponible; puede zonéar flancos enteros y asegurar picks cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Lux: zonéalo con tu rango; no puede allinearse desde 1000 unidades, y cada paso que camine hacia vos es daño gratis.",
+        "Peleá en espacios abiertos y lejos de arbustos: sin el salto de la pasiva tiene que acercarse caminando y ahí lo castigás en cada intento.",
+        "Wardá los flancos de tu jungla: sus mejores jugadas salen de un arbusto sin visión; verlo avanzar con R es la diferencia entre morir y counter-gankear."
+      ],
+      "tanks": [
+        "Armadura temprana y no te despegues del carry: su burst físico calibrado para squishies no atraviesa un front line con un solo item.",
+        "Peleá pegado a tu ADC: Rengar necesita aislar objetivos; un tanque en medio del salto le niega la combo entera.",
+        "Aplicale Herida Grave (Bramble/Thornmail): su W lo cura en los all-ins largos y cortarle el sosten invierte el duelo."
+      ],
+      "assassins": [
+        "Esperá que gaste el salto de la pasiva para pelear: sin salto en mano es un meleé sin escape y vos tenés la iniciativa.",
+        "Si sobrevivís su burst, ese es tu all-in: entra, mata o muere; no tiene plan B si la combo no ejecuta.",
+        "Guardá tu escape para el momento del salto con R, no para farmear: si te agarra con ferocidad llena, no hay segunda oportunidad."
+      ],
+      "crowdControl": [
+        "Silencios y supresión lo cortan en el aire: Malzahar, Lissandra y Fiddlesticks convierten su entrada en suicidio.",
+        "Agrupate: Rengar se alimenta de objetivos aislados; cinco campeones pegados lo sacan del juego porque no encuentra salto limpio.",
+        "Reservá el CC instantáneo para cuando aterrice, no para antes: tirarlo temprano solo gasta el hechizo en un rival camuflado que lo esquiva caminando."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Rengar no puede one-shotear a Zac: saltale encima sin miedo y usá la E para interrumpirlo en el aire; él es el que pierde el trade.",
+          "Wardá los flancos y quedate cerca de tu equipo: si entra con R, tu counter-engage con E + R pega a todo su equipo agrupado atrás de él.",
+          "En teamfight quedate pegado al carry: cada salto de Rengar sobre tu backline termina con él parado en medio de tu equipo sin escape."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "Tu armadura convierte su burst en autodaño: disponete y pegale; cada combo completa de Rengar sobre vos lo deja a media vida y sin ferocidad.",
+          "El taunt (E) corta la combo entera: esperá el salto y bloquealo en el aire, no lo gastes antes de que se acerque.",
+          "Con Powerball llegás antes que él a cualquier gank: counter-ganqueá sus invasiones y no le des tiempo de farmear tranquilo."
+        ]
+      },
+      {
+        "cid": 11,
+        "name": "Maestro Yi",
+        "tips": [
+          "Alpha Strike (Q) esquiva el salto y parte de la combo: usala cuando veas la R venir, no antes, porque el camuflaje te deja leer su entrada.",
+          "El Highlander te deja perseguirlo si intenta escapar: Rengar no tiene escape, si entra y no ejecuta, lo corrés hasta la torre.",
+          "No duelées antes de tu primer item: en 1v1 temprano su Q y su ferocidad te ganan; contestá sus invasiones con tu equipo o después de escalar."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "La Ruptura (Q) lo tumba en el aire: cubrí el flanco de tu carry y su salto termina con él debajo de tu knock-up.",
+          "Con tu vida y armadura su burst no te baja: parate entre él y el carry y obligalo a elegir entre pelear contra vos o saltar a un 5v5.",
+          "Después de su combo queda sin nada en mano: cerrá la pelea con Feast (R) de daño verdadero, entra con media vida o menos."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in con R: R → prepará la Q → AA para saltar al objetivo → E → W → AA → Q → AA hasta ejecutar",
+        "Secuencia básica desde arbusto: AA (salto de la pasiva) → E → Q → AA → W → E de nuevo para rootearlo si intenta escapar",
+        "Trade corto: AA de salto → Q → E → W y salí antes de que responda; con ferocidad llena, la Q empoderada entra antes del escape rival",
+        "Clear de jungla: Q empoderada en cada campamento y W para curarte entre camps; guardá ferocidad rumbo al siguiente campamento para no perder velocidad de clear",
+        "Combo con Flash: R → AA → E → W → Q → Flash hacia el arbusto → AA → E → AA para reiniciar el salto de la pasiva sobre el mismo objetivo"
+      ],
+      "tips": [
+        "Entrá siempre con 4-5 de ferocidad: la habilidad empoderada decide el all-in; sin ella tu combo es la mitad y el rival tiene ventana para responder.",
+        "No uses W a lo loco en teamfight: es tu limpiador de CC y tu cura; guardala para cuando te tiren control o para aguantar el burst después de entrar.",
+        "Powerfarmeá hasta 6: sin R tu gankeo depende de que el rival pase al lado de un arbusto, y nadie cae dos veces en lo mismo.",
+        "Elegí la empoderada según el objetivo: E empoderada (root) si tiene escape para asegurarlo, Q empoderada si ya gastó el dash para maximizar daño.",
+        "Usá los arbustos de la river como trampas: un AA de salto sorprende a cualquiera que se crea seguro, y cada salto gratis es ferocidad y daño que no vio venir."
+      ],
+      "plan": {
+        "early": "Powerfarmeá hasta 6 con la Q al máximo, invadí solo con R en mano o con el jungla rival en pantalla, y usá el camuflaje para gankear por detrás cuando la lane esté pushada.",
+        "mid": "Buscá picks con R en los flancos, asegurá drakes y Herald con tu burst, y con el primer item de letalidad empezá a borrar squishies que caminen solos por el mapa.",
+        "late": "Flankeá y esperá al objetivo aislado mientras tu equipo pelea 4v4 al frente; entrá, usá W para limpiar el CC y salí si no ejecutaste, porque quedarte parado en el backline rival es regalar la pelea."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/rengar/build",
+      "https://mobalytics.gg/lol/champions/rengar/guide",
+      "https://mobalytics.gg/lol/champions/rengar/combos"
+    ]
+  }
+}

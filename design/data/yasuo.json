@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "yasuo",
+    "ddragonId": "Yasuo",
+    "name": "Yasuo",
+    "titleEs": "el Imperdonable",
+    "cid": 157,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.35,
+    "pr": 10.13,
+    "br": 25.68,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 23.0,
+      "jungle": 0.2,
+      "middle": 61.5,
+      "bottom": 14.9,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Yasuo.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Yasuo_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 65.49, "games": 284 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 59.09, "games": 374 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.02, "games": 1818 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 58.49, "games": 371 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 57.82, "games": 1681 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 57.37, "games": 563 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 57.31, "games": 253 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 56.89, "games": 1176 }
+  ],
+  "weakAgainst": [
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 43.74, "games": 455 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 44.55, "games": 202 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 44.82, "games": 444 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 44.99, "games": 429 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 45.28, "games": 466 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 45.54, "games": 213 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 45.64, "games": 848 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 45.93, "games": 1696 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le duplica el crítico: con dos items ya pega como un ADC de tres y desde ahí cualquier squishy cae en dos autos.",
+      "La Wind Wall borra todos los proyectiles durante cuatro segundos: ultis de rango, skillshots y el poke entero de un mago desaparecen sin más.",
+      "La E sobre miniones le da movilidad casi infinita en la wave: esquiva, farmea y entra con el mismo botón, y por eso es imposible atraparlo en la lane.",
+      "Cualquier knock-up aliado le habilita la R: con un Malphite, Alistar o Nautilus en el equipo, la pelea arranca con un AoE que deja a cuatro en el aire.",
+      "Gana los trades largos en la wave porque cada dash es daño y cada minion es un escape; el que pelea cuerpo a cuerpo con la wave llena pierde."
+    ],
+    "weaknesses": [
+      "Es hipersensible al CC: un stun o un root le corta la E y la Q3, y ahí queda parado en medio de la lane sin poder hacer nada.",
+      "La E no se puede repetir sobre el mismo objetivo en varios segundos: si le cerrás la wave, se queda sin dashes y sin salida.",
+      "Es de papel y sin escape propio fuera de la wave: 30 de armadura base y un gank coordinado lo matan aunque esté adelantado.",
+      "Su daño depende de autos y de la Q: un blind, un escudo o una Q3 esquivada le bajan el DPS a la mitad por varios segundos.",
+      "La Wind Wall tiene un cooldown largo: cuando la gasta, tenés una ventana clara en la que es un melee común sin defensa contra proyectiles."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R le da kill pressure inmediata sobre cualquier knock-up; desde ahí no te pares cerca de su Q3 al farmear.",
+      "100% de crítico con pasiva más dos items: su DPS se duplica y pasa de molestar a borrar squishies en dos autos.",
+      "Nivel 9 con la Q maxeada: el tornado pega mucho más y el rango le alcanza para iniciar desde atrás de la wave.",
+      "Nivel 16 con la R: el cooldown baja tanto que la tiene casi en cada pelea, y con la penetración de armadura también se come a los tanques."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Ezreal, Smolder, Tristana: pokealo desde afuera del alcance de su tornado y nunca te pares dentro de la wave, que es su rampa de entrada.",
+        "Baitéale la Wind Wall con un skillshot barato y recién ahí tirá el daño real: sin la W, cualquier mago lo empuja fuera de la lane.",
+        "Empujá la wave constante: si no tiene minions cerca, la E no existe y su amenaza se cae a la mitad."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: su daño es de autos y críticos, y un item de armadura le baja el DPS más que cualquier otra cosa.",
+        "Guardá el CC para el arranque de su combo: si lo trabás después de la Q3, la R nunca llega a entrar.",
+        "Peleá fuera de la wave: los tanques ganan el cuerpo a cuerpo limpio, pero pierden si él tiene cinco minions para dashar."
+      ],
+      "assassins": [
+        "Naafiri, Talon, Qiyana: matalo antes de que junte la Q3; sin el knock-up cargado su all-in pierde la mitad del daño.",
+        "Cuidado con la Wind Wall: te anula el burst a distancia, así que entrá cuando ya la haya gastado o desde un ángulo que no cubra.",
+        "No lo persigas en la wave: si la pelea se alarga entre minions, la E le da dashes de sobra para kitearte hasta que llegue el jungla."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre la E: cualquier root o stun le corta el dash, y sin dash es un melee sin escapes.",
+        "Malzahar, Lissandra y Veigar lo borran del mapa: suprimir o encerrarlo anula su movilidad y su Wind Wall no sirve de nada.",
+        "Reservá un stun para después de la R: cuando aterriza del ultimate queda quieto un instante y ahí se lo castiga con todo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 106,
+        "name": "Volibear",
+        "tips": [
+          "Tu Q es un stun que no es proyectil: la Wind Wall no lo frena, así que esperá a que gaste la E en la wave y entrá con Q + autos.",
+          "Buscá trades largos: tu pasiva te cura y su daño viene en ráfagas cortas; cuanto más dura el intercambio, más se inclina para tu lado.",
+          "No pelees adentro de la wave: sus dashes necesitan minions, así que peleá en el río o empujá la wave antes del all-in."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "La Q le aplica blind: usala apenas se te acerque con la E y todos sus autos fallan justo en su ventana de daño.",
+          "Guardá la E (Vault) para el final del dash: lo empuja y le corta la secuencia antes de que arme la Q3 y la R.",
+          "Pegale de rango y no te quedes dentro de la wave: tu lane es de poke, no de cuerpo a cuerpo con minions alrededor."
+        ]
+      },
+      {
+        "cid": 85,
+        "name": "Kennen",
+        "tips": [
+          "Cargá marcas con Q desde afuera de su rango: a la tercera queda stuneado y no puede ni acercarse a la wave.",
+          "Guardá la E para salir del dash cuando te salte con la Q3; sin el dash cargado, su all-in se desarma solo.",
+          "La Wind Wall no frena tu R ni tu E: cuando la gaste, entrá con E + R y stunealo en medio del equipo enemigo."
+        ]
+      },
+      {
+        "cid": 875,
+        "name": "Sett",
+        "tips": [
+          "Guardá la W (Haymaker) para el arranque de su combo: el escudo absorbe la Q3 y el puñetazo verdadero le devuelve todo el daño.",
+          "La E atrae a los dos: si lo enganchás mientras carga la Q3, le cortás la secuencia entera antes de que llegue el knock-up.",
+          "Aguantá con la pasiva: tu regeneración te deja comer el poke sin perder la lane, y él no tiene sustain contra eso."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q → E sobre un minion → auto → E de vuelta a la wave (entrás y salís en dos segundos, sin quedar expuesto)",
+        "All-in con tornado: Q ×2 en la wave → E → Q3 (knock-up) → R encima → auto → Q al aterrizar",
+        "Burst con Flash (keyblade): Q3 cargada → E → Q → Flash instantáneo → auto → R, entra sin dar tiempo a reaccionar",
+        "Poke seguro: Q3 desde atrás de la wave y R solo si el knock-up conecta; si falla, volvés con la E al minion de atrás",
+        "Teamfight: entrá con E sobre la wave, Q3 al carry, R sobre el knock-up del equipo y W entre vos y el resto del daño"
+      ],
+      "tips": [
+        "No gastes la Q3 en la wave: el tornado es tu única forma de iniciar y te deja sin amenaza por varios segundos si lo tirás para farmear.",
+        "Usá la W reactiva, no preventiva: tirala cuando el proyectil ya está en el aire, no antes de que el rival casteó.",
+        "Planificá la salida antes de entrar: no podés dashar dos veces sobre el mismo objetivo, así que dejate un minion de atrás libre.",
+        "Cargá la Q en la wave antes de tradear: dos Q al aire más E y Q3 te dan el knock-up sin que el rival tenga tiempo de esquivarlo.",
+        "No pelees sin la R ni sin un knock-up aliado: sin follow-up, tu all-in depende de que el rival se quede quieto."
+      ],
+      "plan": {
+        "early": "Farmea con Q y tradea corto con E + auto saliendo por el minion de atrás; a nivel 6 buscá el all-in con Q3 + R recién cuando el CC del rival esté gastado.",
+        "mid": "Empujá y rotá a las sidelanes, buscá picks con E + Q3 sobre objetivos aislados y juga cerca del equipo para que tu R entre sobre el knock-up de un aliado.",
+        "late": "Flanqueá la teamfight, dejá que el tanque o el support abran con su knock-up y recién ahí entrá con R al carry; guardá la W para cortar el daño de rango."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/yasuo/guide",
+      "https://mobalytics.gg/lol/champions/yasuo/counters",
+      "https://mobalytics.gg/lol/champions/yasuo/combos"
+    ]
+  }
+}

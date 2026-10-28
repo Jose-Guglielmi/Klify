@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "galio",
+    "ddragonId": "Galio",
+    "name": "Galio",
+    "titleEs": "el Coloso",
+    "cid": 3,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.07,
+    "pr": 3.66,
+    "br": 1.77,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 6.4,
+      "jungle": 0.3,
+      "middle": 75.2,
+      "bottom": 0.3,
+      "support": 17.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Galio.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Galio_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.12, "games": 318 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 56.03, "games": 257 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 55.47, "games": 256 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 54.46, "games": 1289 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 53.93, "games": 2084 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 53.82, "games": 706 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 53.05, "games": 394 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 52.91, "games": 395 }
+  ],
+  "weakAgainst": [
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 42.89, "games": 380 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 42.91, "games": 275 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 44.08, "games": 245 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 44.69, "games": 1553 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 44.71, "games": 331 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 45.44, "games": 570 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 45.75, "games": 424 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 46.1, "games": 282 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Engage en cadena con E (knock-up) + W (taunt): si conectás, el objetivo queda inmóvil casi dos segundos y todo tu equipo entra detrás gratis.",
+      "Waveclear sano con Q + el auto potenciado de la pasiva: empujás la wave en dos golpes y te vas a roamear con la R sin perder CS.",
+      "La R es casi un global de equipo: el knock-up en la llegada rompe cualquier formación agrupada y te deja protagonizar peleas de todo el mapa.",
+      "Es un muro contra daño mágico: el escudo de la W y la build de vida/RESM te dejan parado en medio de magos que derretirían a otro mid.",
+      "Setup de gank de primer nivel: el knock-up de la E convierte cualquier pasada del jungla en kill segura."
+    ],
+    "weaknesses": [
+      "Si la E falla, quedás desarmado: sin knock-up no hay W garantizada y cualquier rival con rango te pica impune durante varios segundos.",
+      "Tu daño escala lento: antes del primer item sos más utilidad que amenaza y al nivel 6 casi ningún mid te respeta en un 1v1.",
+      "Dependés del posicionamiento rival: contra equipos que se espacian bien, la R pierde medio equipo de valor y quedás siendo un tanque sin daño.",
+      "Los ADC y campeones de AD a rango te atraviesan: tu escudo es mágico y tu tanquedad no responde al daño físico sostenido.",
+      "Te ven venir: si wardan el río, cada roam tuyo se anula y volvés a lane con CS y presión perdidos."
+    ],
+    "powerSpikes": [
+      "Primer item completado: la Q y la E pasan a pegar en serio y el all-in con E + W se vuelve letal contra cualquier mid squishy.",
+      "Nivel 6: desbloqueás jugadas cross-map; mirá las sidelines todo el tiempo porque cada pelea del mapa es una R tuya.",
+      "Nivel 9 con la Q al máximo: tu waveclear se dispara y podés empujar y roamear en loop sin regalar mid.",
+      "Mid game con core items resueltos: valor de teamfight máximo, ganás vida, tenacidad y el engage entra siempre limpio."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: castigalo en cada último golpe melee; sin la E en mano no tiene forma de cerrar la distancia y su lane se vuelve una granja para vos.",
+        "Cuando cargue la W para acercarse, no le pegues de cerca: la reducción de daño del escudo anula tu poke y el taunt te deja pelado para su jungla.",
+        "Wardeá el río: Galio vive del roam con la R, y sin visión cada vez que desaparece del lane es una pelea perdida en las sidelines."
+      ],
+      "tanks": [
+        "Su daño es % de vida en la Q y el potenciado de la pasiva: no confíes solo en apilar vida, sumá resistencias para amortiguar el chip constante.",
+        "No tires tu CC de engage primero: si tetirás arriba, te come el knock-up con la W y tu equipo arranca la pelea inmóvil.",
+        "Jugá el lane largo y escalá: Galio no tiene presión de kill temprana, así que el farm parejo te deja ganando el juego fuera del lane."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para engage o escape y saltalo recién ahí: sin dash queda quieto como la piedra que es.",
+        "No allinees adentro de la W cargada: el taunt arranca tu combo a mitad y el jungla rival llega antes de que lo puedas terminar.",
+        "Talon, Ekko: castigalo antes del nivel 6, su R no sirve para pelear 1v1 y cada ventana early tuya es kill gratis."
+      ],
+      "crowdControl": [
+        "Interrumpile la E en pleno dash: un CC antes de que conecte el knock-up mata el engage entero y lo deja plantado en medio de tu equipo.",
+        "Guardá el CC para después de su R: si agarra a tu carry con el taunt, un peel oportuno invierte la teamfight completa.",
+        "Encadená CC con tu jungla en el lane: Galio sin Flash y sin E es kill garantizado porque no tiene escape real."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 893,
+        "name": "Aurora",
+        "tips": [
+          "Pokealo con la Q desde fuera de su rango de E: si no lo dejás acercarse a media vida, su all-in nunca llega y ganás el lane de a poco.",
+          "Guardá el desplazamiento de tu W para el momento del dash: moverte raro justo ahí anula su knock-up y la W queda plantada al vacío.",
+          "No te pares sobre la wave con la W de él cargándose: taunt + jungla es su única jugada de kill; sin esa ventana, el lane es farm parejo y vos escalás mejor."
+        ]
+      },
+      {
+        "cid": 91,
+        "name": "Talon",
+        "tips": [
+          "Castigalo en cada último golpe melee: antes del primer item no tiene respuesta a tu burst y su escudo no tapa daño físico sostenido.",
+          "Wardeá el río desde el primer clear: si anulás sus roams, cada R de Galio a otra lane te deja mid libre para seguir farmeando y pinchando torres.",
+          "Cuidado con gastar la E al vacío: si tu escape está en cooldown cuando conecta la W, el taunt te sentencia; entrá solo con pared disponible para volver."
+        ]
+      },
+      {
+        "cid": 136,
+        "name": "Aurelion Sol",
+        "tips": [
+          "Farmeá escalando con Q y W desde tu rango: Galio no tiene presión de kill early y cada minuto de farm son estrellas apiladas para vos.",
+          "Cuando tire la E para engage, andate un paso atrás con la R y seguí castigando: su combo necesita pegarte de cerca y vos no le tengas que dar ese gusto.",
+          "En teamfights no te pegues al carry: si su R aterriza encima tuyo con el knock-up, la pelea se define ahí; jugá al borde del rango de su W."
+        ]
+      },
+      {
+        "cid": 103,
+        "name": "Ahri",
+        "tips": [
+          "Pokealo con la Q cada vez que baje a farmear: tu rango le gana y su única respuesta es gastar maná en W que no te toca.",
+          "Encantá (E) apenas lo veas cargar la W: si el charm conecta primero, su engage muere en el arranque y la combo entera queda en nada.",
+          "Emparejá sus roams con tu R: si lo ves irse a bot, seguilos vos también; tu movilidad le pisa el global y tu burst decide la pelea al llegar."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E hacia el objetivo (knock-up) → Q al aterrizar → auto potenciado de la pasiva → W cargada con recast al máximo para el taunt largo",
+        "Engage con Flash: Flash + W instantáneo → recast cuando la carga llega al máximo → E hacia atrás para reposicionarte → Q + auto",
+        "Burst rápido a corta distancia: E → Q apenas llegás → W con recast rápido → auto",
+        "Roam o gank: R al aliado → W al aterrizar → recast → Q + E + auto sobre el target prioritario",
+        "Waveclear de roam: Q a la melee → auto potenciado para ejecutar la wave → te vas por el mapa con la R lista"
+      ],
+      "tips": [
+        "Cargá la W caminando hacia el rival, no parado: la reducción de daño y el escudo mágico se disfrutan mejor absorbiendo poke en el camino.",
+        "Recasteá la W al máximo de carga siempre que puedas: el taunt más largo decide trades y pelear; solo recastear al toque si necesitás el peel ya.",
+        "La E también sirve para escapar o reposicionarte hacia atrás: no la gastes toda en engage o te quedás sin escape frente al jungla.",
+        "Empujá la wave con Q + auto potenciado antes de roamear: la R sin CS perdido es la diferencia entre un roam bueno y uno que te quema el lane.",
+        "Pasado el nivel 6, mirá el minimapa en cada cast: la R no sirve si el aliado muere antes de que aprietes el botón; andate temprano, no justo."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta escalar: farmeá con Q, no regales trades y al llegar a 6 usá la R para asistir sidelines aunque tu lane no tenga kill threat propio.",
+        "mid": "Empujá mid con Q y roameá con la R hacia cada pelea; quedate siempre a un global de distancia de tu equipo para que el knock-up entre limpio.",
+        "late": "Enganchá con la R sobre quien inicie o sobre el carry enemigo y dedicá el resto de la pelea al peel: tu carry vivo vale más que tu daño."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/galio/build",
+      "https://mobalytics.gg/lol/champions/galio/guide",
+      "https://mobalytics.gg/lol/champions/galio/combos"
+    ]
+  }
+}

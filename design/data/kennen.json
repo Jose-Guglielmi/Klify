@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "kennen",
+    "ddragonId": "Kennen",
+    "name": "Kennen",
+    "titleEs": "el Corazón de la Tempestad",
+    "cid": 85,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.76,
+    "pr": 1.85,
+    "br": 1.3,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 77.8,
+      "jungle": 0.1,
+      "middle": 16.6,
+      "bottom": 1.3,
+      "support": 4.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kennen.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kennen_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 58.44, "games": 231 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 57.73, "games": 362 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 56.6, "games": 500 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 55.9, "games": 288 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 55.77, "games": 208 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 54.6, "games": 326 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 53.64, "games": 330 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 53.63, "games": 841 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 40.0, "games": 300 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 43.75, "games": 256 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 44.84, "games": 417 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 45.1, "games": 286 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 45.48, "games": 321 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 46.67, "games": 405 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 47.27, "games": 366 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 47.42, "games": 213 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su engage es de los mejores del juego: E + R estalla las 3 marcas en todo lo que esté agrupado y la teamfight entera se define en ese segundo.",
+      "Lane bully contra melee: pega con Q y autos marcados desde rango y como usa energía, no maná, puede pokear sin quedarse seco.",
+      "Lightning Rush le da velocidad, resistencia y paso por minions: llegue flanqueando, escapa ganks y cruza paredes que otro mago no cruza.",
+      "El poke escala tan bien con AP que con dos items un shuriken más tormenta le borra media vida a cualquier squishy."
+    ],
+    "weaknesses": [
+      "Es de vidrio: si entra después de gastar la E o queda pegado tras la tormenta, lo matás casi al instante.",
+      "Toda su movilidad y escape es la E: con Lightning Rush en cooldown es un mago parado en la lane, presa de gank y de all-in.",
+      "Su daño es de una sola ola: la R dura tres descargas, y con MR o Zhonya en contra se apaga y queda descolgado sin nada que apretar.",
+      "Depende de flancos y del rival agrupado: visión buena y desengage constante lo dejan tirando Q al vacío toda la pelea.",
+      "Contra tanques con sustain no existe: no tiene daño sostenido ni vida, y cada trade largo es suyo perdido."
+    ],
+    "powerSpikes": [
+      "Level 6: la R le da AoE stun que levanta peleas solas; no te parezcas al lado de minions marcados ni pelear 1v1 cerca de la wave.",
+      "Primer componente de AP: su poke de Q + W ya empieza a doler de verdad y te obliga a regar el lane.",
+      "Segundo punto en R + Flash listo: cada flank suyo con el equipo agrupado es engage ganado, no le des la espalda en ese estado.",
+      "R maximizada late: con la tormenta al máximo nivel decide peleas de objectives; esperálo agrupado atrás y nunca en línea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Gnar, Quinn, Vayne: castigalo en cada shuriken que falle; contra otro rango pierde el privilegio de bully y cada Q esquivada es un trade tuyo.",
+        "Cuando la E se le apague, jugá agresivo sin miedo: es su única movilidad y sin ella no alcanza ni escapa.",
+        "Jugá lateral al sus si te marca: la Q es una línea, moverte un paso la anula y su plan de poke se cae solo."
+      ],
+      "tanks": [
+        "Un item de MR temprano hace que sus tres descargas peguen a nada: su burst está calibrado contra el que no compra resistencia.",
+        "No te asustes del stun: su combo entera de early no mata a un tanque con MR, dejalo gastarse y castigalo después.",
+        "Peleas largas son tuyas: sin sustain ni daño continuo, cada segundo extra de pelea lo acerca a su tumba."
+      ],
+      "assassins": [
+        "Esperá que use la E para pescar o escapar: sin Lightning Rush no tiene ni arranque ni retreat, saltálo ahí.",
+        "Antes de 6 es un free kill: es squishy, no tiene escape y no gana un all-in frontal contra nadie.",
+        "En teamfight quedate para él: si él flanquea a tu carry, vos flankealo a él; Zhonya le compra segundos, no vida."
+      ],
+      "crowdControl": [
+        "Su identidad es aplicar 3 marcas: un interruptor en su E o en el arranque de la R le borra el combo completo.",
+        "Guardá el CC para después de su Flash engage: sin gap closer propio, si el Flash no le sale queda tirado en tu equipo.",
+        "Encadená el stun apenas entre en bola: un Kennen interrumpido dentro del equipo enemigo muere antes de la primera descarga."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Armate Resistencia Mágica temprano: su combo completa con escudo tuyo activo es solo ruido en la pantalla.",
+          "Dejalo tirarse E + R y respondé con escudo + Q point blank: su daño de una ola no te mata y después queda sin nada.",
+          "Pusheá constante: él no tiene sustain ni farmeo bajo torre cómodo, cada wave castigada le niega el snowball que necesita.",
+          "En mid game ganás el side lane solo: tu escalado con vida le pesa y él no puede contestar un trade largo."
+        ]
+      },
+      {
+        "cid": 98,
+        "name": "Shen",
+        "tips": [
+          "Esperá que gaste la E para roamar o escapar y ahí tauntealo con la tuya: sin Lightning Rush queda parado en la lane.",
+          "Comprate MR y jugá el trade largo: su burst no te atraviesa y tu Q con autos ganan cualquier pelea extendida.",
+          "Cuando veas su R caer en otra lane, presioná top: si contestás la tele con tu R global, elegís vos dónde se juega la partida.",
+          "Pegale en cada CS: su poke es cómodo, pero cada shuriken que cobra le cuesta acercarse a tu taunt."
+        ]
+      },
+      {
+        "cid": 75,
+        "name": "Nasus",
+        "tips": [
+          "Wither (W) es la respuesta a todo su kit: sin velocidad de movimiento no llega a aplicar las tres marcas y su combo se desarma.",
+          "Farmeá bajo torre los primeros niveles y no le regales kills: su fase de bully vale poco si no te mata antes de escalar.",
+          "Sumá Spirit Visage o Fuerza de la Naturaleza: con MR y tus stacks su tormenta es más corta que tu vida.",
+          "Cuando tire R, retirá unos pasos y volvé: son tres descargas cortas y si no te encuentra, la gastó al vacío."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Regateá el poke con tu sustain de pasiva: cada shuriken que le restó, tu pasiva lo devuelve gratis.",
+          "Guardá el knock-up de Q para su E: interrumpirlo en bola lo deja quieto, sin escape y dentro de tu rango.",
+          "Comprate MR temprano y stackeá vida: su burst calibrado contra squishies no te llega ni a la mitad.",
+          "En teamfight esperá el Flash engage: un Cho que le responde con Q + R encima de su tormenta lo borra de la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade a distancia con la W pasiva a un stack: AA → Q → AA → W (el auto y el shuriken marcan y la W estalla todo lo marcado)",
+        "Trade corto contra melee: E adelante → recast E al conectar → AA → W → Q sobre el stun → AA de despedida",
+        "All-in frontal: E → R en rango → W instantáneo → recast E → Q + AA (las marcas de R y W hacen el stun solo)",
+        "Engage de teamfight: E en bola → R → Flash + W al centro del grupo → Q → recast E y AA entre descargas",
+        "Pelea extendida con pasiva lista: E → W al llegar → AA → Q → AA → R y seguí pegando autos entre descargas"
+      ],
+      "tips": [
+        "Usás energía, no maná: podés spammea Q para pokear y farmear, pero siempre dejá carga suficiente para una E de escape.",
+        "La W pasiva marca cada cierto número de golpes: alineá ese stack con el trade contra el campeón, no con la wave.",
+        "La E es tu única movilidad: no la gastes en poke ofensivo si el jungla rival no aparece en el mapa.",
+        "Pegá la R encima del objetivo, no hacia él: la tormenta tiene radio chico y si camina afuera, te fundiste la mejor habilidad del kit.",
+        "Zhonya en el centro de tu propia R es la jugada clásica: la tormenta sigue descargando mientras sos intocable."
+      ],
+      "plan": {
+        "early": "Farmeá y castigá con Q y la W pasiva para ganarle al melee, y al llegar a 6 buscá el all-in con E + R o empujá y roameá con la E lista.",
+        "mid": "Flanqueá con R + Flash cada vez que el rival se agrupe y con la R en cooldown splitpush para no perder oro y experiencia.",
+        "late": "No pelees sin R ni Zhonya: esperá al equipo agrupado en objectives, flankeá desde la niebla y entrá con E + R + W para decidir la pelea entera."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/kennen/guide",
+      "https://mobalytics.gg/lol/champions/kennen/combos"
+    ]
+  }
+}

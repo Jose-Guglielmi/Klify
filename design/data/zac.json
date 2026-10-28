@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "zac",
+    "ddragonId": "Zac",
+    "name": "Zac",
+    "titleEs": "el Arma Secreta",
+    "cid": 154,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.54,
+    "pr": 2.51,
+    "br": 0.98,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 13.6,
+      "jungle": 73.9,
+      "middle": 3.6,
+      "bottom": 0.2,
+      "support": 8.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zac.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zac_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 60.56, "games": 213 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 60.23, "games": 1139 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 60.12, "games": 662 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 57.96, "games": 785 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 57.59, "games": 290 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 56.18, "games": 356 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 55.81, "games": 1075 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 55.8, "games": 2482 }
+  ],
+  "weakAgainst": [
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 45.14, "games": 1513 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 46.5, "games": 471 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.25, "games": 1035 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 47.43, "games": 331 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 47.5, "games": 200 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 48.5, "games": 1301 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 48.61, "games": 932 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 48.7, "games": 230 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E (Honda Elástica) es un engage de media pantalla que sale desde fuera de visión: no existe ward que cubra todos los flancos que puede usar.",
+      "Cada habilidad suya tira un blob y la W se lo come: en peleas largas se cura más de lo que le sacás, así que pegarle sostenido es tirar daño.",
+      "La pasiva lo revive una vez con todo el equipo ya comprometido: contarlo como muerto es regalarle la teamfight entera.",
+      "La R levanta a varios y los reacomoda a la fuerza: un solo engage suyo rompe la formación y deja al carry aislado sin escape.",
+      "Su daño no depende de items de daño: la W pega por vida máxima, así que tanqueando pega más, y no hay forma de desactivarlo con un solo ítem."
+    ],
+    "weaknesses": [
+      "La E arranca con 21 segundos de cooldown: cuando entra y no mata, no tiene con qué salir; esa ventana es tu pelea.",
+      "La pasiva tiene 5 minutos de cooldown: mientras está abajo no puede jugar agresivo, y ahí es cuando se invade o se fuerza objetivo.",
+      "Necesita paredes y flancos oscuros para gankear: en lane abierta y con visión en el río pierde la mitad de su kit de engage.",
+      "Duelo temprano flojo: antes del primer item completo pierde contra casi cualquier jungla de daño que lo agarre en su campamento.",
+      "Su CC es todo de área y telegrafiado: si el equipo se abre un paso, la R levanta a uno o a nadie y queda parado en medio sin escape."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con la E en el segundo punto ya gankea desde fuera de visión; wardeá el flanco antes de que termine su primer clear.",
+      "Nivel 6: la R convierte cualquier gank en muerte casi segura; no pelees pegado a paredes ni bajo torre enemiga sin verlo en el mapa.",
+      "Primer item de tanque terminado: con vida y resistencias hechas, la W escala y pasa a ser inmatable en peleas cortas.",
+      "Niveles 11 y 16 con puntos en la R: el cooldown baja a 105 y 90 segundos y los rebotes pegan más; asumí R disponible en cada pelea.",
+      "Peleas en objetivo cerrado (Baron/Dragón): su E en pasillo es casi imposible de esquivar y la R levanta al equipo entero."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lillia, Taliyah, Zyra: castigalo desde el rango de tu poke y no lo dejes llegar; un Zac que no entra al rango de la E no hace literalmente nada.",
+        "Jugá en lane abierta y mantené el flanco wardado: sin paredes ni visión baja el engage se ve venir desde lejos y se esquiva caminando.",
+        "Comprá slows (Rylai's) o kitealo con ralentizaciones: cada slow le cuesta un engage entero porque su única entrada es la E telegrafiada."
+      ],
+      "tanks": [
+        "Cho'Gath, Shyvana: el duelo de tanques lo ganás si peleás fuera de paredes y con tu escape listo para el knock-up de la R.",
+        "Botas Mercurio temprano: el CC de la R decide su engage; reducir la duración te deja caminar fuera del área antes del segundo rebote.",
+        "No lo pelees con la pasiva arriba: si revive, te das vuelta la pelea en el peor momento; esperá a que la gaste en un gank anterior."
+      ],
+      "assassins": [
+        "Ekko, Bel'Veth, Kha'Zix: invadilo en el primer clear y matalo antes del nivel 6, cuando todavía no tiene R para forzar peleas.",
+        "Guardá el dash para después del aterrizaje de la E: si lo gastás en el aire, caés justo donde quiere y te come la R completa.",
+        "Si su pasiva está disponible, no lo persigas hacia zona sin visión: revive detrás tuyo y te da vuelta la pelea con el equipo llegando."
+      ],
+      "crowdControl": [
+        "Un stun o un knock-up durante el canal de la E lo cancela en el aire: guardá el CC instantáneo para el momento en que se carga.",
+        "Las supresiones (Malzahar) y los knock-ups cortan la R a mitad de los rebotes; ahí queda en el centro de tu equipo sin nada.",
+        "Encadená el CC sobre el aterrizaje, no antes: es el instante en que su equipo entra detrás y el tuyo todavía está reagrupándose."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Tu Q y tu W te dejan pegarlo desde fuera del rango de la E: kitealo en círculos y no lo dejes cargar el engage nunca.",
+          "Cuando se tire con la E, usá el slow de tu E encima del aterrizaje: sin velocidad no llega a los blobs y no se cura.",
+          "Invadilo en el primer clear: antes del nivel 6 y sin items de tanque pierde todos los duelos contra vos."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "En el duelo de jungla temprano lo pasás por arriba: buscá el 1v1 en su segundo buff antes de que tenga R.",
+          "Guardá la E para después de su knock-up: su R te levanta pero no te mata, y con el dash recortás la distancia que perdió.",
+          "No lo dejes farmear tranquilo hasta el item de tanque: si llega a 2 items, su W por vida máxima te gana la pelea larga."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Usá la E para salir del área de la R antes del segundo rebote: si te levanta dos veces, la pelea ya está perdida.",
+          "Pegale con Q desde rango y guardá el escudo del W para el aterrizaje de su E, que es cuando llega todo su daño.",
+          "Invádelo con prioridad de líneas: Zac pierde el duelo contra vos en el early y su clear no le permite contestar."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "El muro de tu R corta el pasillo y le arruina la entrada: usalo para partir la pelea en dos cuando se tire con la E.",
+          "Tu Q sobre el suelo trabajado le pega desde lejos y lo obliga a entrar por donde vos querés; nunca lo esperes en zona abierta.",
+          "Wardea el flanco y jugá pegado a tu equipo: sin engage sorpresa su R levanta a uno solo y queda expuesto."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: E desde fuera de visión sobre el objetivo → AA al aterrizar → Q para engancharlo → W → AA mientras dura el slow",
+        "Insec: E sobre el carry → R y Flash inmediato detrás del objetivo → W encima; lo saca de la pelea y lo entrega a tu equipo",
+        "Redirect de Q: Q a un enemigo que no sea el objetivo → Flash + AA al objetivo real (el Q los estampa entre sí) → E → W → R cuando van a caer → W de nuevo al salir del cooldown",
+        "Pelea en pasillo: E al grupo → R de entrada → W en medio de los rebotes → Q para separar a dos enemigos y rematarlos con la W",
+        "Duelo en jungla: Q a un campamento cercano y AA al rival para estamparlos entre sí, y recién ahí la E con el knock-up encima"
+      ],
+      "tips": [
+        "Juntá los blobs después de cada trade y cada campamento: son vida gratis y son tu sustain de jungla sin volver a base.",
+        "No tires la E desde rango máximo a ciegas: el misil se ve venir y cualquier dash te saca el engage entero sin gastar nada.",
+        "Tratá la pasiva como recurso, no como accidente: si vas a invadir o forzar objetivo, entrá con la división celular disponible.",
+        "Guardá la E para entrar, no para escapar: sus 21-9 segundos de cooldown te dejan sin engage para la pelea siguiente.",
+        "Comprá resistencias y Botas Mercurio temprano: tu daño viene de la W por vida máxima, así que la vida y el CC-reduction son tu curva real de poder."
+      ],
+      "plan": {
+        "early": "Full clear rápido y gank al nivel 3 entrando por fuera de visión: la E desde el flanco oscuro es tu herramienta de kill y el objetivo temprano paga más que un campamento extra.",
+        "mid": "Forzá picks con R en cooldown bajo, asegurá Dragón/Heraldo con visión previa y empujá líneas laterales cuando no haya pelea para no perder XP.",
+        "late": "Flanqueá desde zona sin visión, entrá con E + R para levantar al backline, y después volvé a peelar a tus carries con la Q y la W mientras la R se recarga."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zac/guide",
+      "https://mobalytics.gg/lol/champions/zac/counters",
+      "https://mobalytics.gg/lol/champions/zac/combos"
+    ]
+  }
+}

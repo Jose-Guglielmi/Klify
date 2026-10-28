@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "shyvana",
+    "ddragonId": "Shyvana",
+    "name": "Shyvana",
+    "titleEs": "la Hija del Dragón",
+    "cid": 102,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.28,
+    "pr": 4.19,
+    "br": 5.06,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 5.4,
+      "jungle": 93.9,
+      "middle": 0.5,
+      "bottom": 0.1,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Shyvana.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shyvana_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 60.73, "games": 247 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 58.95, "games": 1715 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 58.61, "games": 360 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 58.29, "games": 410 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 57.55, "games": 2879 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.98, "games": 258 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 56.39, "games": 1566 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 56.13, "games": 1386 }
+  ],
+  "weakAgainst": [
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 47.14, "games": 2342 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 47.86, "games": 2014 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 49.21, "games": 1016 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 49.47, "games": 851 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 49.54, "games": 763 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 49.6, "games": 379 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 50.07, "games": 2249 },
+    { "cid": 427, "slug": "Ivern", "name": "Ivern", "vsWr": 50.28, "games": 354 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su clear de jungla es de los más rápidos del juego: si farmea tranquila, llega al 6 y a cada dragón antes que tu jungla y empieza a invadir con ventaja de tiempo.",
+      "La pasiva le da stats permanentes por cada dragón que su equipo asegura: dejarle objetivos gratis es regalarle escalada para todo el partido.",
+      "Nivel 6 con furia cargada es kill real: R + E + Q borra un carry squishy antes de que el equipo llegue a reaccionar.",
+      "La R empuja y desplaza a todo lo que encuentra: funciona de engage y de peel a la vez, así que pelear en pasillo contra ella es regalarle la teamfight."
+    ],
+    "weaknesses": [
+      "Antes del nivel 6 casi no existe: sin engage confiable, sus ganks son una caminata lenta y previsible que una ward corta anula por completo.",
+      "No tiene control de masas propio ni escape: puede ser kiteada igual que un camp grande; ralentizala y queda caminando detrás tuyo.",
+      "Depende de la R y de la furia para todo: sin ultimate en mano es una bruiser sin gap closer; jugá agresivo apenas la vea gastar el dragón.",
+      "Es muy dependiente de items: si la cambiás atrás en el early y le niegan los camps, entra a las peleas de media parte sin cuerpo ni daño.",
+      "Todo su daño exige pegarse al objetivo: peleá en campo abierto y lejos de muros y la vas a ver girar alrededor sin llegar nunca a conectar."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera R disponible; si la ves con furia llena no cruces el río sin ward y no te pelees de tu equipo.",
+      "Nivel 9 con la Q maxeada: su burst por autoataque y su clear suben de golpe; no aceptes duelos a partir de ahí sin ventaja clara.",
+      "Primer item resuelto (Trinity Force o similar): con furia e item entra a las peleas de dragón siendo delantera y tanque al mismo tiempo.",
+      "Nivel 11 y 16 con puntos en R más stack de drakes: la pasiva acumulada la vuelve un tanque que borra carries; no le regales ni un dragón más."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Graves, Kindred, Quinn: kiteala con tu rango; su única forma de llegarte es caminar o gastar la R, y sin dragón es un minion con burst.",
+        "Wardá tu entrada de jungla y el río: su clear rápido le permite invadirte y salir antes de que llegue ayuda; trackeala o comete tus camps.",
+        "Cuando meta la R no corras en línea recta hacia tu torre: el empujón te acerca a su equipo; lateralizá en vez de correr en fila."
+      ],
+      "tanks": [
+        "Cho'Gath y Trundle la ganan en duelos cortos: forzá el 1v1 en tu jungla antes del nivel 9; su burst no te mata con MR y queda sin R para escapar.",
+        "Randuin o Thornmail si entra bruiser: su daño viene de autos encadenados con Q; la reducción de velocidad de ataque y la herida grave le cortan el clear y el duelo a la mitad.",
+        "Negale los dragones con visión y números: cada objetivo que peleás le quita stacks permanentes de la pasiva; defender drakes es defender tu late game."
+      ],
+      "assassins": [
+        "Qiyana le pierde en las stats: no duelines en su jungla; esperá que gaste la R y entrá con tu burst cuando esté sin dragón ni furia.",
+        "Invadila durante el clear cuando esté low: su sustain es nulo y sin furia no tiene escape; contá sus camps y aparecétele en el segundo buff.",
+        "Guardá tu escape para el empujón de la R: si la lanzás sobre tu carry y no te encontró, queda plantada en medio de tu equipo sin nada más que autos."
+      ],
+      "crowdControl": [
+        "Su kit no tiene limpieza de CC: encadená el stun o la raíz apenas arranque la R; una Shyvana entablada en el aire muere antes de conectar la E.",
+        "Los puntos y clic le ganan: no esquiva nada, así que cualquier CC garantizado (Pantheon W, Malphite Q) la corta entre forma dragón y autos.",
+        "Reservá un CC para después del aterrizaje: la R la compromete a la posición; si queda en medio de tu equipo, su W y sus autos no alcanzan para pelear sola."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 517,
+        "name": "Sylas",
+        "tips": [
+          "Robale la R apenas la meta: una Shyvana sin dragón es medio campeón, y su ultimate en tus manos sirve de engage o para revertir su all-in.",
+          "Forzá peleas antes del nivel 9: su Q no está maxeada y su burst todavía no borra a nadie; tu cadena de E y autos la gana en esos segundos.",
+          "Cuando lance la R sobre tu equipo no te corras en línea: el empujón te acerca a su torre; reposicionate lateral con la E y ella queda sin follow-up."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Tu clear es igual de rápido y tu kite es mejor: pegale con la Q de rango y dormila apenas intente invadir; sin R en mano no llega a tocarte.",
+          "Trackeá sus drakes: Shyvana busca objetivos, no peleas; wardá el nido y aparecétele con tu equipo cuando esté en el punto.",
+          "Usá la velocidad de la pasiva para girarla alrededor: cada W que falla es furia y vida quemada; si no te encuentra, se funde la R para nada."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Duelala antes del nivel 11 con la E activa: tu burst temprano la pasa por arriba mientras ella todavía está farmeando para escalar.",
+          "Peleale cada objetivo en el pozo: tus autos en área y tu ralentización le ganan el race al dragón; cuidá el empujón de su R al entrar.",
+          "Cuando meta la R, peleá alrededor y no en la boca del nido: esperá el aterrizaje y contraatacá con el true damage de tus autos."
+        ]
+      },
+      {
+        "cid": 77,
+        "name": "Udyr",
+        "tips": [
+          "Tu stun del oso gana cada trade corto: interrumpile el clear e invadí con la Q activa; sin furia para la R no tiene forma de contestar el all-in.",
+          "Alterna tortuga cuando encadene autos con Q: su sustain en duelo es nulo comparado con el tuyo; cada trade largo es tuyo.",
+          "Negale los camps de tu lado con tu gank post-6: tu R es engage inmediato y la suya necesita furia; hacé que cada invasión suya le cueste media vida."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Combo base de trade: E → W → AA → Q (resetea el auto) → AA y seguís pegando; la E primero marca el objetivo para que todo el daño posterior queme.",
+        "All-in a corta distancia: W justo antes de la R → R → E al aterrizar → Q → AA encadenados; la W previa te da velocidad y quema durante toda la combo.",
+        "Engage de larga distancia: R → E apenas aterriza → Flash durante la animación para extender el rango → Q + AA; así agarrás carries que juegan atrás.",
+        "Combo con muro: W → E → Flash a mitad de la animación de la E → Q + AA; usalo cuando el objetivo está a un Flash de distancia y la R no está en mano.",
+        "Clear de camp: E al camp grande → W → autos intercalando Q para resetear; con ese orden el camp muere antes y la furia queda cargada para el próximo gank."
+      ],
+      "tips": [
+        "Manejá la furia como recurso: por debajo de la mitad no tenés R en mano, así que no te comprometas a ninguna pelea sin saber cuánto llevás.",
+        "No uses la R como escape por defecto: es tu único engage y tu único burst; si la gastás para cruzar un muro, quedás descalza para el próximo objetivo.",
+        "Powerfarmeá hasta 6: tus ganks pre-R son lentos y visibles; cada camp que no te comés es ventaja regalada para el jungla rival.",
+        "Priorizá dragones sobre kills: la pasiva acumula stats permanentes por drake; un 4-0 sin dragones te deja peor que 1-1 con dos objetivos asegurados.",
+        "Flanqueá antes de cada teamfight: entrá desde un arbusto sin ward con la R cargada; si entrás de frente, el equipo se abre y terminás empujando a un tanque."
+      ],
+      "plan": {
+        "early": "Powerfarmeá hasta 6 lo más rápido posible, usá tu clear superior para invadir cuando veas al jungla enemigo en el mapa y meté la R en el primer lane pushado que encuentres.",
+        "mid": "Asegurá cada dragón con visión previa, seguí farmeando camps para no quedar atrás y buscá picks con tu equipo para convertirlos en Baron o Soul.",
+        "late": "Flanqueá desde afuera de la visión y esperá al equipo agrupado para la R; si no está en mano, postergá la pelea y después de entrar volvé a peelar para tus carries."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/shyvana/build",
+      "https://mobalytics.gg/lol/champions/shyvana/combos",
+      "https://mobalytics.gg/lol/champions/shyvana/guide"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "briar",
+    "ddragonId": "Briar",
+    "name": "Briar",
+    "titleEs": "el Hambre Contenida",
+    "cid": 233,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.34,
+    "pr": 4.73,
+    "br": 10.52,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 5.4,
+      "jungle": 88.7,
+      "middle": 4.2,
+      "bottom": 0.5,
+      "support": 1.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Briar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Briar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 58.3, "games": 247 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 58.16, "games": 239 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.72, "games": 1095 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 56.95, "games": 676 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 56.79, "games": 280 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 56.62, "games": 793 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu y Willump", "vsWr": 56.56, "games": 465 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 56.52, "games": 1380 }
+  ],
+  "weakAgainst": [
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 45.37, "games": 227 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 45.77, "games": 201 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 47.4, "games": 597 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 48.87, "games": 221 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 49.16, "games": 651 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 49.34, "games": 1362 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 49.48, "games": 1429 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 49.74, "games": 392 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Sustain enorme en peleas largas: curación por cada golpe sobre enemigos sangrando; si el rival no compra reducción de curación, gana cualquier trade extendido.",
+      "CC integrado en un jungla: la R aterriza con miedo, la E cargada empuja y aturde contra paredes, y el dash de W arranca el engage; casi nunca entra sin utilidad.",
+      "Con la R en mano ganquea desde la otra punta del mapa: el vuelo cruzado al primer campeón convierte cada pick lejano en kill potencial.",
+      "En frenesí suma velocidad de ataque y lifesteal: en skirmishes de jungla y ríos es un duelist adelantado para la mayoría del roster."
+    ],
+    "weaknesses": [
+      "El frenesí no se controla: ataca al campeón más cercano, así que se deja llevar por kiting, se pega a torres y se tira a peleas perdidas si nadie la reorienta.",
+      "Depende de que el equipo la siga: si entra sola a una teamfight agrupada, la revientan antes de que el lifesteal empiece a devolverle vida.",
+      "La interacción W/E es delicada: la E corta el frenesí, y cada E gastada de más es medio CC y media ventana de daño perdida.",
+      "Lejos de paredes pierde el stun de la E: en campo abierto su único control real es el miedo de la R.",
+      "Su engage es el dash de W, telegrafiado: con Flash o un paso atrás lo esquivás y queda parada sin forma de llegar."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E completas ya tiene combo de gank entera; no pelee skirmishes de jungla contra ella recién salida del clear.",
+      "Nivel 6: la R le da ganks globales y picks cruzando el mapa; asumí que hay miedo disponible en cualquier lane mientras su R no esté en cooldown.",
+      "Primer item de daño resuelto (Collector o BotRK): su output en skirmishes se dispara y empieza a ganar los 1v1 de jungla.",
+      "Niveles 11 y 16 con puntos en R: más daño y presencia en cada pelea; en late su R daña mucho, no la dejes flanquear gratis."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pegale desde fuera de su W: si el dash no conecta, Briar no tiene segunda forma de cerrar distancia y el lane/jungla se vuelve una pesca.",
+        "Kiteala en campo abierto: el frenesí corre al campeón más cercano sin pensar; cada paso atrás tuyo es daño gratis mientras ella se despeña siguiéndote.",
+        "Cuando arranque el frenesí, peleá lejos de paredes: sin el stun de la E cargada, su control queda reducido al miedo de la R."
+      ],
+      "tanks": [
+        "Comprá reducción de curación temprano: toda su sustain sale de la hemorragia; cortala y los trades largos dejan de ser suyos.",
+        "Encadená tu CC después del segundo W: mientras está en frenesí no puede esquivar nada, es el momento más fácil para agarrarla.",
+        "No peleeas pegado a paredes contra ella: la E cargada aturde al empujarte contra ellas; dale campo abierto y su kit pierde la mitad."
+      ],
+      "assassins": [
+        "No le peles cuerpo a cuerpo extendido: con lifesteal y velocidad de ataque de frenesí, supera en duelo a casi cualquier asesino que se quede a morder.",
+        "Hacé burst antes del segundo W: si tu combo cae mientras ella todavía controla a Briar, no llega a curar nada.",
+        "Guardá tu escape para el arranque del frenesí: comprometida y sin control, es fácil de dejar pegada a tu torre o a tu equipo."
+      ],
+      "crowdControl": [
+        "Reservá el CC para el dash de W o el arranque del frenesí: interrumpirle el engage o atajarla comprometida mata su ventana de daño entera.",
+        "Skarner y Malzahar la convierten en suicida: en frenesí camina recto a vos, así que suprimirla o agarrarla es un kill servido.",
+        "Pegale CC mientras carga la E: quedarse quieta cargando es su momento más vulnerable y gasta su único corte de frenesí."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 421,
+        "name": "Rek'Sai",
+        "tips": [
+          "Invadila temprano: sin niveles ni items todavía no cura lo suficiente para sobrevivir tu combo de knock-up saliendo del túnel.",
+          "Desenterrate con el knock-up cuando arranque el W: cortarle el dash en seco deja su combo entera en nada.",
+          "Guardá tu R para el frenesí: cuando está comprometida y sin control es el objetivo más fácil de todo el mapa."
+        ]
+      },
+      {
+        "cid": 48,
+        "name": "Trundle",
+        "tips": [
+          "El Pilar de Hielo (E) le corta el dash de W: sin engage, Briar queda a pie y sin forma de llegar a vos.",
+          "Robale daño de ataque y vida con la Q en cada trade: su lifesteal pierde sentido cuando vos pegás más fuerte y aguantás más.",
+          "Forzá peleas largas: tu pasiva y tu R te pasan por arriba justo en el terreno extendido donde ella cree que gana."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Esquivá el primer W y no le des takedowns: sin frenesí ni resets, tu DPS sostenido con voidlings le gana el 1v1 a lo largo.",
+          "Comprá reducción de curación temprano: cortarle la hemorragia convierte su sustain en una curita.",
+          "Escalá y forzá peleas pasados los 25 minutos: tu R y tu velocidad de ataque superan su ventana de burst."
+        ]
+      },
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Tu R la agarra en pleno frenesí: arrastrala hacia tu equipo y la pelea termina antes de que muerda una vez.",
+          "Aguantá su burst con tu tanquez natural: su ventana de daño es corta y después de gastar la E cargada no tiene nada que apretar.",
+          "Peleá sobre objetivos y en espacios anchos: tu CC constante la castiga porque el frenesí no le deja esquivar ni reposicionarse."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank básico: W1 → W2 (frenesí) → Q al objetivo para reubicarte en plena persecución → E cargada para rematar o cortar el frenesí",
+        "Pick a distancia: R (miedo al primer campeón) → Q para morder al aterrizar → W1 → W2 → E cargada para cerrar",
+        "Engage con Flash: Flash + W1 → W2 → Q → E cargada apuntando a la pared más cercana para el stun",
+        "Trade corto: Q → E cargada mientras muerde → W1 → W2 y básicos para terminar si quedó bajo",
+        "Defensiva: E cargada en medio del engage enemigo (tenés reducción de daño mientras cargás) y soltala para empujar y aturdir contra la pared"
+      ],
+      "tips": [
+        "El frenesí ataca solo al campeón más cercano: si no querés regalarte a la torre, tené Q o E listas para reorientar o cortar antes de activar el segundo W.",
+        "Tu curación sale de golpear enemigos sangrando: revisá dónde quedaron stacks de hemorragia antes de pelear, no entres a secas.",
+        "No uses la E solo para el stun: la reducción de daño al cargar te salva ganks y te devuelve el control cuando el frenesí te lleva a un lugar malo.",
+        "Usá la R apenas esté en cooldown en early: el miedo casi garantiza el kill y los takedowns te la devuelven para la siguiente pelea.",
+        "Peleá cerca de paredes: la E cargada stunnea al empujar contra ellas; en campo abierto tu kit pierde la mitad del control."
+      ],
+      "plan": {
+        "early": "Llegá a nivel 3 lo más rápido posible para ganquear con el combo completo; con la R en 6 usala apenas cargue para buscar picks en todas las lanes y castigá al jungla rival en skirmishes.",
+        "mid": "Cazá carries sin movilidad y flankeá usando la niebla de guerra: cada pick con R antes de un objetivo es dragón o heraldo regalado; peleá solo con tu equipo en posición de seguirte.",
+        "late": "El equipo agrupado te complica: flankeá para que la R llegue a la backline o reservá picks cruzados con la R para forzar Baron o Elder con ventaja numérica."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/briar/guide",
+      "https://mobalytics.gg/lol/champions/briar/build",
+      "https://mobalytics.gg/lol/champions/briar/combos"
+    ]
+  }
+}

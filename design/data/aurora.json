@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "aurora",
+    "ddragonId": "Aurora",
+    "name": "Aurora",
+    "titleEs": "la Bruja entre Mundos",
+    "cid": 893,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.18,
+    "pr": 2.19,
+    "br": 1.29,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 16.7,
+      "jungle": 0.1,
+      "middle": 79.6,
+      "bottom": 2.5,
+      "support": 1.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aurora.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aurora_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 58.22, "games": 383 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 58.21, "games": 201 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.09, "games": 731 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 56.0, "games": 250 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 55.81, "games": 473 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 54.67, "games": 439 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 53.78, "games": 740 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 53.69, "games": 203 }
+  ],
+  "weakAgainst": [
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 46.5, "games": 243 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 46.91, "games": 388 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 47.38, "games": 572 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.64, "games": 508 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 47.65, "games": 489 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 48.59, "games": 391 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 49.28, "games": 207 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 49.6, "games": 250 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q boomeráng pega al ir y al volver: con el doble cast pusheás la wave y castigás al rival sin acercarte más de lo necesario.",
+      "La W la vuelve invisible y la reposiciona: es flanqueo, es escape de gank y es la razón por la que casi nunca la encuentran parada.",
+      "La E asusta en área y pasa muros chicos: control de masas que arregla peleas y una movilidad que ningún battle mage debería tener.",
+      "La R abre un mundo cuyas bordes son teleports: en teamfight entrás, salís del focus y volvés a meterse; engage y disengage en el mismo hechizo."
+    ],
+    "weaknesses": [
+      "Early frágil: en niveles 1 y 2 no tiene daño para responder y un all-in bien cronometrado la encuentra descalza.",
+      "Depende de acertar la Q y la E alineadas con la wave: si jugás fuera de los minions, se queda sin pusheo y sin castigo.",
+      "La R es difícil de dominar: mal usada, la deja parada en medio de la pelea con el cooldown más importante del kit en el piso.",
+      "Para ir profunda necesita que el equipo la acompañe: si cruza sola, la enfocan y muere primero en cada teamfight.",
+      "Cada W desperdiciada son varios segundos de vulnerabilidad total: sin invisibilidad ni reposición, es un squishy más."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R suma presión de kill real; si estás bajo de vida no te quedes en lane, porque el all-in con R y E entra solo.",
+      "Primer componente de item: con daño resuelto arranca a jugar agresiva; invertí en MR antes de que ese spike te pase por arriba.",
+      "Nivel 9 y 11: con la Q o E maxeada y el segundo punto de R, su poke y su amenaza de all-in escalan fuerte; dejá de aceptarle trades de cerca.",
+      "Nivel 16 con build completa: el daño de la R en equipo agrupado define peleas enteras; no te apiles sobre ella sin resistencia mágica."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: parate afuera de la wave para que su Q + E no pueda pushear y castigarte al mismo tiempo; sin ese doble uso, el lane se le vuelve una granja.",
+        "Castigá los niveles 1 y 2: es su peor tramo y no tiene daño para responder; después del 6, no te pares bajo de vida dentro de su rango.",
+        "Aceptá farmear en vez de comerciar a media vida: su R no mata a full, pero con vos bajo el all-in saliendo de la W te encuentra muerto."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: su daño es constante de ida y vuelta con la Q, y sin MR cada intercambio te sale el doble de caro.",
+        "Esperá que gaste la W para pelear: sin invisibilidad no tiene cómo reposicionarse y le sacás la mitad del kit con un solo cast previo.",
+        "Cuando abra el mundo con la R, no la sigas: esperala del otro lado de la borda; si entró sola, es el foco más fácil del mapa."
+      ],
+      "assassins": [
+        "Katarina, Ekko, Fizz: son all-in puro contra un early frágil; baitéale la Q o la E a la wave y saltala cuando no tenga la W en mano.",
+        "Castigá cada W desperdiciada: si la usó para pushear o escapar sin presión, tiene una ventana larga de vulnerabilidad; ese es tu all-in.",
+        "En teamfight dejala entrar con la R y esperá la vuelta: el momento en que cruza la borda para salir es tu counter exacto."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas la veas cruzar hacia tu equipo con la R: interrumpirla dentro del salto mata el engage entero.",
+        "Vex y Malzahar le complican todo: el terror puntual y la supresión la agarran siempre que quiera ir profunda, que es su único plan de pelea.",
+        "Guardá el hard CC para después de la W: mientras está invisible es intocable, pero al reaparecer queda a un paso de distancia sin escape."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 166,
+        "name": "Akshan",
+        "tips": [
+          "Tu rango y tu movilidad por muros ganan el lane temprano: pegale en los niveles 1 y 2, que son sus peores momentos, y construí ahí la ventaja.",
+          "Jugá fuera de la línea de la wave: si tu cuerpo no alinea con los minions, su Q y su E no pueden pushear y castigarte a la vez.",
+          "Después del 6 no te quedes bajo de vida: la R no te mata a full, pero a media vida el all-in saliendo de la W invisible te borra."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q desde fuera de su rango y escalá: tu prisión anula la reposición de su W y cada all-in suyo termina con ella adentro de la jaula.",
+          "Parate afuera de la wave para negarle el doble uso de Q y E: cuando venga a buscarte, enjaulá y contestá con el burst.",
+          "Al llegar a items tu daño la supera: ella necesita ganar un early perfecto; si llegás parejo al mid game, tu R decide la lane."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Sos all-in puro contra una campeona frágil early: baitéale la Q a la wave y saltala; sin W en mano no tiene escape ni daño para responder.",
+          "Guardá el Shunpo para esquivar la E: la asustada es su única pelea ganable; si el fear no entra, el trade completo es tuyo.",
+          "En peleas dejala gastar la R y entrá cuando vuelva a cruzar la borda: reaparece descubierta, sin cooldowns y a tu alcance."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Tu E + Q le gana el early de arranque: ella no tiene daño para igualarte antes del primer item, así que buscá el trade apenas baje de base.",
+          "Tirá tu W adelantada sobre el punto donde va a reaparecer: la invisibilidad no le sirve si tu stun de zona ya la espera del otro lado.",
+          "Si el all-in sale mal, tu R deshace el daño y ella no tiene reversa: forzá peleas que ella no puede sostener y ganás el mapa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → AA → E → Q (la Q al volver y la E asustando castigan sin gastar la W; es tu combo básica de todos los días)",
+        "Poke con doble uso: alineá la Q y la E para que peguen en la wave y en el rival al mismo tiempo (pusheo y castigo en un solo gesto)",
+        "All-in nivel 6: W para reposicionarte invisible → R → Q → E → AA → Q (entrás tapada, asustás de cerca y la Q doble cierra)",
+        "All-in con Flash: W → Q → E → Flash → Q (quémale el Flash al rival antes de que entienda de dónde vino el daño)",
+        "Teamfight: abrí la R sobre el equipo agrupado y usá las bordes del mundo para teleportarte: entrá con Q + E, cruzá para salir del focus, volvé a cruzar y rematá con Q"
+      ],
+      "tips": [
+        "Alineá siempre Q y E con la wave: castigar solo al campeón te deja sin pusheo, y castigar solo la wave es maná tirado.",
+        "Guardá la W el máximo posible: es tu escape de gank y tu reposición para la combo de R; mejor salir vivo con W en mano que gastarla por molestar.",
+        "No cruces profunda con la R si tu equipo no sigue: sola sos un foco andante; usá la R para picks de objetivos aislados mientras no haya teamfight.",
+        "No allinees antes del nivel 6: sin R no tenés daño para cerrar; farmeá con la Q doble y esperá tu spike.",
+        "Usá la E como escape también: pasa muros chicos; no la gastes ofensivamente si no sabés dónde está el jungla rival."
+      ],
+      "plan": {
+        "early": "Farmeá con la Q doble y castigá alineando Q + E entre wave y rival; no allinees antes de 6 y guardá la W para el gank, no para el poke.",
+        "mid": "Roameá a lanes overextendidas para pickear con la R, pasate al side cuando caiga la torre de mid y agrupate con tu equipo para las peleas que se arman.",
+        "late": "Pegate al equipo y no te piquees sola: buscá picks con la R alrededor de objetivos como Baron y mantene el farm del side para no llegar débil a la pelea final."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/aurora/guide",
+      "https://mobalytics.gg/lol/champions/aurora/combos",
+      "https://mobalytics.gg/lol/champions/aurora/counters"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "aatrox",
+    "ddragonId": "Aatrox",
+    "name": "Aatrox",
+    "titleEs": "la Espada Darkin",
+    "cid": 266,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.15,
+    "pr": 6.2,
+    "br": 7.46,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 85.0,
+      "jungle": 12.0,
+      "middle": 1.9,
+      "bottom": 0.2,
+      "support": 0.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Aatrox.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 56.76, "games": 962 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 56.43, "games": 560 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 55.68, "games": 361 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 55.46, "games": 238 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 55.07, "games": 483 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 54.51, "games": 1163 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 54.31, "games": 661 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 54.11, "games": 401 }
+  ],
+  "weakAgainst": [
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 42.12, "games": 368 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 47.14, "games": 1451 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 47.48, "games": 556 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 47.7, "games": 1394 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 47.74, "games": 1370 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 47.77, "games": 448 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 48.55, "games": 826 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 48.76, "games": 1688 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es un lane bully de Q cargada: si se calibra el sweet spot en cada golpe, te saca media vida por trade y ni te dejó responder.",
+      "Sustain enorme entre la pasiva y la R: en un trade largo se cura lo que le pegaste, así que extended trades son terreno suyo.",
+      "La E le da reposición instantánea de posición: encadena Q2/Q3 donde quieras y escapa del gank que otro top habría pagado caro.",
+      "El knock-up de Q3 más el root de la W lo convierten en initiator: si te enreda con minions propios cerca, el all-in ya empezó a tu favor.",
+      "Snowballea rápido: una kill temprana le alcanza para patear la lane entera, así que cada trade perdido temprano se paga doble."
+    ],
+    "weaknesses": [
+      "Cooldowns largos early: sin Q y E en mano es un muñeco de golpe; castigá cada Q que falle y el trade es tuyo.",
+      "Todo su daño es skillshot lento y telegráfico: pararte pegado a él o al lado de minions arruina el sweet spot y la cura baja al piso.",
+      "Con antiheal (Bramble, Executioner) su sustentabilidad se derrumba: sin cura, tanque con daño chico no es nada.",
+      "Cae tarde en la partida: los rivales arman antiheal y agrupan, y su kit de pelea corta no alcanza para peleas largas.",
+      "Depende de la R para pelear de verdad: sin R ni Flash en mano, no entra ni aunque le insistas; es su señal de debilidad."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E completas: arrancá a respetar los trades porque ahí aparece su combo de dos golpes con knock-up.",
+      "Primer item (y componentes) armados: su daño de all-in sube de golpe; no aceptes pelear cuerpo a cuerpo en esa ventana.",
+      "Nivel 6 con la R: la cura y el daño extra le permiten all-ins que antes no existían; no lo peles a vida pareja con la R encendida.",
+      "Nivel 9-13 con la Q maxeada y cooldown items: spamea Q en cada wave y cualquier excusa es trade; jugá pegado a tus minions.",
+      "Nivel 11/16 con puntos de R: en teamfight la cura es casi imposible de resistir sin antiheal; comprá Grievous Wounds antes de que eso pase."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Heimerdinger, Quinn, Teemo: pegale desde afuera y bloqueá la W con minions; su Q necesita acercarse y cada paso adelante le cuesta vida.",
+        "Quedate cerca de tu wave: la Q del sweet spot no pasa por encima de minions, y sin línea limpia no te llega ni la cura.",
+        "Castigá apenas gaste E: si entró con el dash hacia vos y no te mató, queda descalzo y fuera de posición durante varios segundos."
+      ],
+      "tanks": [
+        "Bramble Vest / antiheal temprano: su sustain es su identidad; sin cura, el tanque con daño chico gana cualquier extended trade.",
+        "Parate pegado a él cuando use Q: el sweet spot está en el borde, y a boca de jarro le pegás el daño mínimo y le negás la cura.",
+        "Usá la CC después de su W: interrumpir la cadena Q entre golpes corta su combo antes del knock-up y el root."
+      ],
+      "assassins": [
+        "Esperá que gaste Q y E para farmear o trade: con las dos en cooldown, un Zed o Irelia lo baja antes de que la R le alcance.",
+        "No entrés cuando su R esté encendida: la cura por daño hecho supera tu burst; esperá la ventana y entrá recién ahí.",
+        "CC al primer paso que dé hacia vos: Aatrox cometido no tiene plan B; matarlo entre Q2 y Q3 le borra el 80% del daño total."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas se tire con la E: no tiene escape durante el combo y la R no arranca sola.",
+        "Guardá la CC para después del knock-up de Q3: si la usa para escapar ya cumplió; si la usa a mitad de combo, la pelea cambia de mano.",
+        "Forzá peleas sin su R ni Flash: sin esas dos cosas no entra, y el equipo puede forzar objetivos 4v5 a su espalda."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Poné torretas sobre sus zonas de Q: cada swing que quiera meter en el sweet spot se lo va a cobrar en vida desde el minuto cero.",
+          "Zoneale con la W y torretas la línea de minions: sin camino limpio, su Q no te encuentra y su sustain queda en teoría.",
+          "Cuando se tire con la E hacia vos, tirá torreta detrás y kite: gastó su único dash y está parado en medio de tu setup sin plan B."
+        ]
+      },
+      {
+        "cid": 114,
+        "name": "Fiora",
+        "tips": [
+          "Parry (W) para el knock-up de Q3 o para el root de la W de Aatrox: si anulas una de esas dos, su all-in entero se cae a pedazos.",
+          "Dodge las Q laterales con tu Q entre minions: sin sweet spot, su daño y cura son mínimos y vos ganás el extended trade.",
+          "Entrá a all-in apenas gaste Q3 y E: sin cooldowns ni R no tiene ni daño ni cura, y la R de él no le alcanza para salvarse."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "Kiteá con el rastro de veneno sin frenarte: su daño depende de acertar Q, y un objetivo que no se detiene nunca no deja calibrar el sweet spot.",
+          "Flip (E) apenas entre en rango de Q: interrumpir el swing le rompe el ritmo y le niega el knock-up que necesita para conectar la W.",
+          "Proxy y castigo el maná: si lo obligás a responder waves con Q spam, llega al trade sin pool y ahí sí puede perder cualquier pelea."
+        ]
+      },
+      {
+        "cid": 39,
+        "name": "Irelia",
+        "tips": [
+          "Dash entre minions para esquivar cada Q: esquivás daño, cura y knock-up de una; tres esquivas seguidas le ganan el lane entero.",
+          "Stun con la E cuando se comprometa al combo: Aatrox encerrado en tu stun no tiene escape y la R no le alcanza para curar tu burst.",
+          "All-in con su Q y E en cooldown: apenas las gaste para farmear o trade, saltá; sin cooldowns es solo un tanque sin amenaza."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q1 al suelo → E hacia el rival para enganchar Q2 en el sweet spot → auto con pasiva → Q3 con knock-up → W antes de que aterrice para asegurar el root",
+        "All-in con engage: E hacia el objetivo → W enredando → Q1 mientras viene caminando atado → Q2/Q3 al sweet spot → R para resetear y curar con el daño hecho",
+        "Pelea de teamfight: R apenas antes del engage (el daño y la cura ramping empiezan al castear) → E + W al carry → triple Q encima con la cura activa",
+        "Farmeo seguro: Q1 al centro de la wave desde fuera de su rango → retrocedé entre golpes → recast Q solo si el rival camina hacia el sweet spot",
+        "Escape de gank: E sobre la pared hacia tu torre y Q3 hacia atrás si el jungla se acerca; no gastes W para engage si vas a necesitar el root para frenarlos"
+      ],
+      "tips": [
+        "El sweet spot (el borde de la Q) hace más daño y cura más: practicá el rango hasta que sea músculo; pegado al rival solo pegás el daño chico.",
+        "Castee la R al empezar la pelea, no al final: la cura y el daño suben con el tiempo que esté activa; al final casi no suma.",
+        "La E es tu única movilidad: no la uses de engage por engage, reservala para reposicionar la Q en el sweet spot o para escapar el gank.",
+        "Sin Q en mano no existís en el lane: después de gastar la triple Q jugá atrás y esperá el cooldown en vez de forcejear trades perdidos.",
+        "W no la tires por tirar: errar el root te deja sin tu única forma de asegurar el all-in; usá minions para taparle la línea de retreat al rival."
+      ],
+      "plan": {
+        "early": "Bully con Q sweet spot y autos con pasiva, comercia recién con Q en mano y buscá la primera kill cerca de nivel 6 para empezar el snowball.",
+        "mid": "Con R disponible presioná split o flankeá para saltarle al carry del rival; sin R en cooldown, farmeá y esperá porque no hay pelea que puedas forzar.",
+        "late": "Pegate al equipo y jugá solo peleas con R en mano: el late te cae en contra, así que cerrá con picks de W y buscá el fight que termine el juego."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/aatrox/guide",
+      "https://mobalytics.gg/lol/champions/aatrox/counters"
+    ]
+  }
+}

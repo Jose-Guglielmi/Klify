@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "viktor",
+    "ddragonId": "Viktor",
+    "name": "Viktor",
+    "titleEs": "El Heraldo de lo Arcano",
+    "cid": 112,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.31,
+    "pr": 6.74,
+    "br": 10.53,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 3.2,
+      "jungle": 0,
+      "middle": 76.7,
+      "bottom": 19.5,
+      "support": 0.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Viktor.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Viktor_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 63.75, "games": 240 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 58.26, "games": 333 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 57.44, "games": 1210 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 57.24, "games": 304 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 55.85, "games": 265 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.41, "games": 379 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 53.77, "games": 729 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 53.19, "games": 235 }
+  ],
+  "weakAgainst": [
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 44.39, "games": 223 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 44.82, "games": 792 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 45.27, "games": 444 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 45.38, "games": 1342 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 45.66, "games": 865 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 45.95, "games": 259 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 45.98, "games": 3521 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 46.03, "games": 2705 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E (Hextech Ray) limpia la wave desde rango larguísimo y pega a varios objetivos a la vez: empuja y te saca de rango al mismo tiempo, algo que casi ningún mago hace.",
+      "Su poke es constante y baratísimo de castear: te obliga a volver a base sin que él tenga que comprometerse a nada.",
+      "La W (Gravity Field) más la R en un pasillo o bajo torre deciden la pelea entera: zonear es su forma de ganar sin pelear.",
+      "El Q le da escudo y velocidad de movimiento al mismo tiempo: puede tradear corto y salir caminando sin regalar vida.",
+      "Escala como pocos: cada mejora de la pasiva suma daño de área y a late tiene uno de los DPS sostenidos más altos del juego."
+    ],
+    "weaknesses": [
+      "Early flojísimo: sin la mejora de la E y sin primer item no tiene daño real, así que se la pasa farmeando pegado a la torre.",
+      "La W es su único peel: si la gasta para zonear o para limpiar, cualquier gank o all-in lo mata sin que pueda hacer nada.",
+      "Cero dash y cero escape: si lo flanquean en la teamfight, depende del Flash o del Zhonya para sobrevivir.",
+      "Necesita posicionamiento perfecto: obligado a pelear de cerca o salteado sin aviso, su kit entero se cae.",
+      "Si le negás farmeo y takedowns, tarda muchísimo en completar las mejoras y llega tarde a todos sus picos de poder."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R (Arcane Storm) le da presión de kill y waveclear instantáneo; después del 6 ya puede allinear sin miedo.",
+      "Primera mejora de la E más el primer item: empuja la wave en dos segundos y te encierra abajo de la torre sin poder responder.",
+      "Nivel 9 con la E maxeada: el láser pega tanto que cualquier squishy a media vida queda en rango de ejecución.",
+      "Mejoras de Q y W completas con dos ítems: el escudo más la zona lo vuelven casi imposible de matar en un 1v1 frontal.",
+      "Late con Rabadon's y Void Staff: una R bien puesta en un cuello de botella gana la pelea sola, sin necesidad de picks."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Ziggs: ganale el duelo de rango porque la E tiene animación; casteala y pegalo mientras está clavado en el lugar.",
+        "Jugá siempre fuera de la wave: si te pegás a los minions, su E te pega a vos y limpia el wave al mismo tiempo, ganando las dos cosas gratis.",
+        "Empujá más rápido de lo que él limpia: si lo obligás a last hitear bajo torre, no puede usar la E para pokearte sin perder farm."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica temprano: su daño es sostenido, no burst, así que un manto de MR te cambia la lane entera.",
+        "Caminá hacia él apenas gaste E y W: sin habilidades y sin el escudo del Q es un muñeco sin movilidad.",
+        "Adentro de la R no retrocedas: si lo trabás con CC y lo matás antes de que se reubique, el Arcane Storm se apaga solo."
+      ],
+      "assassins": [
+        "Kassadin, Ekko, Talon: esperá a que gaste la E en la wave y entrá en esa ventana; la W tiene casteo lento y no llega a cubrirlo.",
+        "No entres en línea recta: la E castiga cualquier aproximación predecible; buscá el ángulo que no pueda tapar con el láser.",
+        "Si te stunea con la W, salí del campo caminando hacia atrás y volvé cuando se apague: pelear adentro es regalar el trade."
+      ],
+      "crowdControl": [
+        "Encadená CC duro sobre el casteo de la R: si lo trabás mientras arranca el storm, pierde la habilidad entera.",
+        "El escudo del Q es chico: cualquier CC que lo deje quieto un segundo alcanza para que tu equipo lo borre.",
+        "Flanquealo siempre: sin dash, dos fuentes de daño simultáneas lo matan aunque tenga Zhonya en mano."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Metete con tu W (Neblina Sagrada) encima suyo: adentro del círculo no te puede pegar con el láser y ahí ganás todos los trades cuerpo a cuerpo.",
+          "Cuando gaste E y Q para empujar la wave, entrá con tu E y Q encima: sin el escudo del Q listo no tiene forma de aguantar tu all-in.",
+          "No camines en línea recta hacia él: la E de Viktor castiga la aproximación obvia y te deja a media vida antes de que llegues a pegarle."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango es mayor: farmeá con Q y W desde afuera del alcance de su E y el lane se gana solo, sin aceptar trades.",
+          "Tirale la Q (Plasma Fisión) cuando se pare a castear la E: queda clavado en la animación y el slow te habilita el combo entero.",
+          "Si se mete en la wave para limpiar, castigalo con la R en cuanto gaste W y Q; sin zona ni escudo es el momento más frágil del campeón."
+        ]
+      },
+      {
+        "cid": 115,
+        "name": "Ziggs",
+        "tips": [
+          "Empujá más rápido de lo que él limpia: si tu wave llega primero a la torre, lo obligás a gastar la E en los minions y no en vos.",
+          "Guardá la W (Carga Explosiva) para sacarlo de la Gravity Field o para cancelarle la R apenas la veas arrancar.",
+          "Pokealo con Q desde atrás de tus minions: el láser tiene delay, así que movete después del casteo y lo esquivás gratis."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Aguantá los primeros niveles: farmeá con Q, no pelees hasta el 6 y dejá que el poke se lo coma tu sustain de maná.",
+          "Post 6 entrá con R cuando gaste la W: la zona tiene casteo lento y a corta distancia no se arma antes de que le pegues.",
+          "Comprate MR antes del segundo item y respetá su pico del 6: si sobrevivís la lane, a late lo pasás por arriba."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: E (Hextech Ray) en diagonal sobre el rival → Q más ataque potenciado mientras se acerca → retrocedé con la velocidad del Q para no comer el trade de vuelta",
+        "Setup de kill: W (Gravity Field) un paso adelante del rival → E encima mientras está frenado por el slow → R sobre el campo → Q para el escudo cuando se te viene encima",
+        "Burst nivel 6: R (Arcane Storm) encima → E cruzada → W detrás del rival para cortarle la salida → Q más ataque potenciado para el remate",
+        "All-in con Flash: W → Flash adentro → R → Q → E → ataques potenciados; el campo lo stunea antes de que llegue a flashear",
+        "Waveclear seguro: E en diagonal sobre los seis minions y Q al melee más cercano; nunca castees la R parado sobre la línea de la wave"
+      ],
+      "tips": [
+        "Maxeá la E primero, siempre: es tu waveclear y tu poke; la Q se maxea después porque solo te da escudo y trade corto.",
+        "No uses la W para zonear a alguien que no va a entrar: es tu único peel y sin ella cualquier gank te mata.",
+        "Casteá la R después del CC, no antes: el storm sigue al objetivo y si entra a la pelea ya stuneado no puede salir del área.",
+        "Pasá por la wave con la E antes de retroceder: te llevás la mejora de pasiva y dejás la lane empujada sin exponerte a nada.",
+        "Volvé a base con Lost Chapter antes de los 6: sin maná no podés empujar, y si no empujás el rival roamea gratis."
+      ],
+      "plan": {
+        "early": "Farmear y nada más: last hit con Q y E desde atrás de la wave, no pelees antes del 6 y volvé con Lost Chapter antes de que el rival complete su primer item.",
+        "mid": "Con la E mejorada limpiá la wave en dos segundos y rotá al río: buscá picks con W más R sobre los objetivos y nunca flanquees solo.",
+        "late": "Quedate pegado al equipo y peleá desde atrás: pokeá con E hasta que alguien entre, tirá W más R en el cuello de botella y guardá Zhonya para después de que te salten."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/viktor/build",
+      "https://mobalytics.gg/lol/champions/viktor/guide",
+      "https://mobalytics.gg/lol/champions/viktor/combos",
+      "https://mobalytics.gg/lol/champions/viktor/counters"
+    ]
+  }
+}

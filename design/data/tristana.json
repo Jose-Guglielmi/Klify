@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "tristana",
+    "ddragonId": "Tristana",
+    "name": "Tristana",
+    "titleEs": "la Artillera Yordle",
+    "cid": 18,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.02,
+    "pr": 8.49,
+    "br": 7.73,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.6,
+      "jungle": 0.1,
+      "middle": 6.3,
+      "bottom": 91.8,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Tristana.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Tristana_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 54.88, "games": 379 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 54.2, "games": 4231 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.07, "games": 8334 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 53.14, "games": 2753 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 53.14, "games": 2783 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 52.65, "games": 547 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 52.12, "games": 2920 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 52.11, "games": 10449 }
+  ],
+  "weakAgainst": [
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 41.83, "games": 306 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 44.5, "games": 373 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 45.27, "games": 349 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 45.88, "games": 776 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 46.7, "games": 469 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 46.83, "games": 5245 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 47.04, "games": 270 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 48.17, "games": 218 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El E (Carga Explosiva) stackea con cada auto y explota al máximo: en trades largos no hay ADC que la iguale, y ese mismo stackeo le pega a las torres, así que baja placas a una velocidad que nadie más tiene.",
+      "El W (Salto Cohete) y el R (Disparo Certero) son dos autopeels distintos: con el knockback se saca al asesino de encima y después salta la pared.",
+      "La pasiva (Draw a Bead) le sube el rango de ataque con los niveles: al 18 pega casi desde la pantalla siguiente, sin gastar un ítem en rango.",
+      "El Q (Fuego Rápido) le da un pico de attack speed brutal: con el E puesto, cualquier squishy desaparece en tres segundos de autos.",
+      "El reset del W por kill o assist la vuelve una carry de teamfight: mata, vuelve a saltar y sigue limpiando sin salir de la pelea."
+    ],
+    "weaknesses": [
+      "El W es su escape y su engage a la vez: si lo gasta mal, queda parada en medio del equipo rival sin nada, y eso es muerte segura.",
+      "El E sin el Q arriba es casi inútil en early: el stackeo tarda muchísimo y el rival te tradea gratis mientras esperás la explosión.",
+      "Sin ítems no existe: si llega al mid game con dos componentes y sin kills, su equipo juega un 4v5.",
+      "Todo su daño es sostenido y de autos: los burst de un solo golpe la borran antes de que llegue a stackear el E.",
+      "Sufre el poke de rango largo y las zonas: no puede tradear contra quien la castiga desde afuera de su propio alcance."
+    ],
+    "powerSpikes": [
+      "Niveles 2-3 con el W: si el support tiene CC, el salto con slow es kill; es su ventana más subestimada y la que arranca las snowballs.",
+      "Nivel 6: el R es ejecución y a la vez escape; con el E cargado, cualquier rival a 40% de vida es kill aunque esté bajo torre.",
+      "Primer ítem completo: el daño del E stackeado se multiplica y pasa de granjear a tradear en serio.",
+      "Niveles 11 y 16 con puntos en la R: el burst del finisher escala y el cooldown baja, así que casi siempre lo tiene disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Ezreal, Xerath: la castigan desde afuera del rango de sus autos; si no puede stackear el E, no hay trade que gane.",
+        "Empujá la wave y obligala a last hitear bajo torre: sus autos stackeados son su único sustento y cada minion perdido es oro que no llega.",
+        "Pokeala antes de que tenga el Q arriba: sin attack speed, el E tarda una eternidad en explotar y ahí sí podés tradear."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: su daño es 100% autos y el E escala con AD, no con penetración mágica, así que un Randuin le corta el juego entero.",
+        "Quedate entre ella y la torre: el E stackea contra estructuras, y cada segundo que la dejás pegarle a la torre con E puesto son dos placas.",
+        "Tirá CC justo en el aterrizaje del W: es el único momento en que está quieta y el salto es de un solo uso si no hay kill."
+      ],
+      "assassins": [
+        "Esperá que gaste el W para entrar y recién ahí entrá vos: sin salto ni R defensivo a mano, es el carry más frágil del juego.",
+        "Forzá el R antes del all-in: si usa el Buster Shot para sacarte, ya no tiene finisher y su daño de pelea cae a la mitad.",
+        "No la persigas en línea recta después de que salta: el cooldown del W se resetea con kills y assists, así que en pelea larga puede volver a saltar."
+      ],
+      "crowdControl": [
+        "Encadená CC encima del aterrizaje del W: ahí no puede reaccionar y se le acaba la única herramienta de escape.",
+        "El supress o un stun largo la saca de la pelea completa: el R es su salida y no se puede castear estando CC-eada.",
+        "Guardá un CC para después del R: si el Buster Shot te empuja, ese es el instante en que tu equipo la alcanza."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 30,
+        "name": "Karthus",
+        "tips": [
+          "Farmeá con Q desde afuera del rango de sus autos y no aceptes trades largos: cada auto que le dejás pegar es un stack más de E en tu cara.",
+          "Pokeala mientras empuja la wave: no tiene sustain propio y no puede quedarse en lane comiendo daño constante.",
+          "Guardá el R para el all-in: si salta con W hacia tu equipo, el Requiem la cierra antes de que llegue a stackear el E."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Pegale desde el rango máximo: sus autos no llegan y sin E stackeado no tiene daño, así que el lane es un farmeo gratis si no te acercás.",
+          "Zonéala con el Q cargado cada vez que camina al last hit: no tiene sustain y cada minion le cuesta vida.",
+          "Cuando salte con W para matarte, tirá el stun: el aterrizaje es telegrafiado y en el aire no puede esquivar nada."
+        ]
+      },
+      {
+        "cid": 136,
+        "name": "Aurelion Sol",
+        "tips": [
+          "Farmea la wave desde atrás con tu Q y no la dejes llegar a tus placas: el E stackeado contra torres le da oro gratis y te saca del juego.",
+          "Usá el vuelo para escapar del salto: si te cae con W encima, el Q en el aire te saca del rango antes de que stackee el E.",
+          "No fuerces trades en early: su curva se aplana cuando vos llegás a dos ítems, así que el lane se gana aguantando."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmea con Q desde afuera del rango de sus autos: tu escalado es infinito y su daño sin ítems no llega a matarte en un trade corto.",
+          "Guardá la jaula (E) para cuando salte con W: si queda encerrada no tiene escape y el stun te deja la combo completa.",
+          "Al 6 no te pares cerca: el R de Tristana es ejecución y si te bajó con el E cargado te borra antes de que puedas ultear."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E sobre el rival → Q → autos hasta que explote la carga; si se aleja, W encima para el slow y seguir stackeando",
+        "All-in estándar: W (slow) → E → Q → autos → R cuando está bajo, para ejecutar y a la vez sacarlo de rango si sobrevive",
+        "InSec: W → E → R → Flash → Q → autos → W de nuevo (el reset por kill te deja salir del dive)",
+        "Teamfight: matá al squishy con E + Q, el W vuelve a estar disponible y ahí elegís entre salir de la pelea o reentrar al carry",
+        "Objetivo rápido: E sobre la torre + Q y bajás placas en dos rotaciones; usalo para forzar objetivo después de un kill"
+      ],
+      "tips": [
+        "No uses el W para entrar si tu support no tiene CC listo: el salto es tu única salida y sin reset por kill quedás parada en medio del equipo rival.",
+        "Nunca pongas E sin Q disponible: el E sin attack speed tarda muchísimo en explotar y el rival te tradea gratis mientras lo espera.",
+        "Farmea con E + Q sobre la wave empujada en vez de autos sueltos: el E stackeado limpia más rápido y te da margen para rotar.",
+        "Guardá el R como finisher o como peel, nunca como poke: con un cooldown corto igual no podés gastarlo en alguien que va a sobrevivir.",
+        "Pegale a la torre con el E puesto cada vez que puedas: las placas son tu ventaja de oro real y nadie las baja tan rápido como vos."
+      ],
+      "plan": {
+        "early": "Jugá seguro los primeros niveles, farmea con E + Q sobre la wave y buscá el all-in recién al 3 con un support de CC o al 6 con el R para ejecutar.",
+        "mid": "Pegate a tu support, empujá bot hasta la torre (el E contra estructuras te da placas), rotá a mid y no camines solo por los laterales.",
+        "late": "Quedate atrás en la teamfight, kiteá al más cercano con E + Q y guardá el W y el R para cuando te salten: sos el carry, pero también el objetivo más fácil de focuseár."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/tristana/guide",
+      "https://mobalytics.gg/lol/champions/tristana/combos",
+      "https://mobalytics.gg/lol/champions/tristana/counters"
+    ]
+  }
+}

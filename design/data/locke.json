@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "locke",
+    "ddragonId": "Locke",
+    "name": "Locke",
+    "titleEs": "el Exorcista de las Cenizas",
+    "cid": 805,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.62,
+    "pr": 6.15,
+    "br": 27.85,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 3.1,
+      "jungle": 10.3,
+      "middle": 83.6,
+      "bottom": 1.4,
+      "support": 1.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Locke.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Locke_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Locke_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 56.41, "games": 2161 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 56.35, "games": 575 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 55.72, "games": 1084 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 54.89, "games": 665 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 54.73, "games": 1131 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 54.14, "games": 2220 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 54.12, "games": 1188 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 53.94, "games": 432 }
+  ],
+  "weakAgainst": [
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 45.17, "games": 1997 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 46.7, "games": 1227 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 47.5, "games": 2720 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 47.53, "games": 2769 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 47.85, "games": 836 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.89, "games": 1708 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 48.02, "games": 683 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 48.08, "games": 1693 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Todo su kit escala con la vida faltante del rival: la pasiva pega más fuerte cuanto más cerca está de morir y la R arrastra y ejecuta a los marcados que bajan del umbral, así que media vida contra él ya es zona de peligro.",
+      "La Q marca y ralentiza, y cada básico que conecta consume las marcas en daño mágico extra: si te dejás clavar tres clavos, el trade ya lo perdiste antes de reaccionar.",
+      "La E es blink + dash en una sola habilidad y el cooldown se resetea con bajas: un Locke con una kill a cuestas encadena tres sin salir de la pelea.",
+      "La W se recastea incluso mientras está aturdido y al terminar le cura todo el daño recibido, autodamage incluido: forzarle el burst no garantiza ganarte la pelea.",
+      "Cada sello de la R sube permanentemente el umbral de ejecución y le devuelve cooldown: en juegos largos cada pelea lo vuelve más peligroso que la anterior."
+    ],
+    "weaknesses": [
+      "Es cuerpo a cuerpo puro: para clavar nada tiene que caminar hacia vos, y cada paso hacia la wave es castigable con rango y con ganks.",
+      "Su daño depende de encadenar básicos entre hechizos para cobrar las marcas: un hard CC point-and-click (Lissandra, Malzahar, Annie) corta el loop entero y lo deja parado sin nada.",
+      "No tiene acceso a las herramientas defensivas de los asesinos AD y sus alternativas AP son caras: detrás en oro no tiene plan B, ni invisibilidad, ni escape real, solo clavos lentos.",
+      "La W le cuesta vida verdadera por segundo y su curación baja con Grievous Wounds: aplicale heridas graves antes de que recastee y el sustain del trade se le cae a la mitad.",
+      "La R no sirve para abrir: si la tira sobre un objetivo a vida llena no ejecuta a nadie y queda parado en medio de la pelea con la única amenaza gastada."
+    ],
+    "powerSpikes": [
+      "Primer item (Lich Bane): con el hechizo entre básicos amplificado, tres marcas de Q más un auto borran media vida de cualquier mago squishy.",
+      "Nivel 6: primera Purgatory en mano; contra un rival marcado por debajo del umbral, la ejecución lo arrastra sin dejar ventana de reacción.",
+      "Cada sello conseguido: el umbral de ejecución sube permanente y la R vuelve más rápido; desde el segundo sello ejecuta vida que parecería segura.",
+      "Teamfights enrevesadas: con la E reseteable por baja, una kill se convierte en cadena; no se agrupen bajos de vida alrededor de él."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Vel'Koz son su plato favorito: no tienen escape para negar los clavos y el execute los agarra a media vida; pegale con rango pero no te quedes parado bajo el umbral.",
+        "La Q atraviesa en línea: alineate con tus minions para que le cueste stackear marcas, o movete en ángulos que lo obliguen a elegir qué clavar.",
+        "Castigá cada blink de la E: cuando la gasta para acercarse quedan varios segundos sin dash ni escape, y ese es tu momento de comercio gratis."
+      ],
+      "tanks": [
+        "Ornn y Sion aguantan el burst inicial y le niegan el snowball que necesita: comprá MR y vida temprano y no le regales ejecuciones caminando bajo de vida.",
+        "El execute de la R no negocia con la tankiness si te pasás del umbral: cerca del artefacto, no te pares por debajo del treinta y pico de vida.",
+        "Grievous Wounds (Bramble, Executioner) le corta la curación de la W: el tanque que la aplica le borra el sustain que hace viables sus trades largos."
+      ],
+      "assassins": [
+        "Katarina, Diana y Ekko le ganan el duelo corto: esquivan los clavos con dashes y all-inean antes de que stackee; no le des el lane pero tampoco te all-inees con tres marcas encima.",
+        "La Q es skillshot en línea: movete lateral y el slow nunca te agarra; sin marcas su burst cae a la mitad y el trade es tuyo.",
+        "Cuidado con regalarle la primera baja: su E y su R resetean con kills, así que la primer kill de la pelea es la que decide si la cadena arranca."
+      ],
+      "crowdControl": [
+        "El hard CC point-and-click mata su loop de básicos: Lissandra, Malzahar y Annie lo convierten en estatua antes de que la combo arranque.",
+        "Ojo: puede recastear la W aturdido y curarse igual; encadená tu CC con daño encima, no solo el CC.",
+        "Guardá el lockdown para después de que prenda la W: arrancarle la pelea con CC le deja activar el heal de gratis y peliar el trade."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Shunpeá lateral a cada clavo: el slow de las marcas solo entra si la Q te toca, y sin marcas su trade no existe.",
+          "Buscá el comercio cuando gaste la E para farmear o acercarse: sin blink ni dash queda clavada al piso y tu all-in gana siempre.",
+          "Al 6 no te pares bajo el cuarenta por ciento de vida cerca de él: el umbral de Purgatory te arrastra y tu R no llega a rodar."
+        ]
+      },
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Entrale con la E apenas marque con la Q: su W se está drenando vida por segundo, así que el comercio largo es tuyo.",
+          "Aprovechá que es cuerpo a cuerpo: en el intercambio de básicos ganás con el escudo de tu pasiva; no le des tiempo libre para stackear a distancia.",
+          "Si tiró la R, salí del área con el dash: los que quedan marcados adentro son los ejecutables, y vos no querés ser uno."
+        ]
+      },
+      {
+        "cid": 84,
+        "name": "Akali",
+        "tips": [
+          "El humo anula su ventana de daño: si no te ve, no puede consumir las marcas; tirá el shroud apenas veas las tres clavadas en vos.",
+          "Pegale en el cooldown de la E: usada la blink, no tiene cómo alcanzar el humo ni escapar del tuyo.",
+          "No confíes en lockearlo para ganar: puede recastear la W aturdido y curarse; ganale por daño puro en tu ventana de shroud."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "Wind Wall se come los tres clavos: sin Q no hay marcas y sin marcas su burst es un chiste; guardá la pared para el arranque de su combo.",
+          "Tu movilidad con E en minions lo desgasta: él necesita caminar hacia vos; castigá cada acercamiento con EQ y volvé a la wave.",
+          "Al 6 su R ejecuta: no pelees con menos de cuarenta y cinco por ciento de vida en rango del artefacto; curate o jugá desde afuera."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Setup de lane: Q alineando minions con el rival para clavar de rebote → auto sobre el objetivo con marcas para cobrar el burst sin gastar los tres clavos (el refund de maná y CD paga el poke)",
+        "All-in con tres marcas: Q completa → W prendida para no perder el objetivo → E blink encima + auto-dash que consume las marcas → pasiva y Lich Bane terminan el cálculo",
+        "Ejecución: daño previo con la combo de arriba → R sobre el objetivo marcado bajo el umbral → si sella, agarrá el artefacto del piso antes de pelear de nuevo (umbral permanente + cooldown de vuelta)",
+        "Teamfight de cadena: R al centro → E sobre el primero bajo de vida → baja → E reseteada al siguiente → cada ejecución de la R reinicia el timer de los marcados restantes",
+        "Supervivencia: prendé la W temprano en la pelea y dejala correr: cuanto más tiempo activa, más curás al recastear, y funciona incluso aturdido"
+      ],
+      "tips": [
+        "Nunca abras con Purgatory a vida llena: el execute no entra y gastaste tu única amenaza; usala como remate después de la combo de Q/E.",
+        "Los clavos no gastados te devuelven maná y cooldown: tirar los tres al aire es tirar oro; apuntá siempre líneas con minions en el medio.",
+        "Contá tu propia vida con la W activa: es daño verdadero por segundo; no la prendas a media vida pensando que el heal te salva igual.",
+        "En lane mantené la wave cerca y no la empujes de más: cuerpo a cuerpo sin E disponible es comida de gank, y temprano no podés divear.",
+        "Después del 6 sos un roam de primera: si no matás a tu lane, empujá y caminate a bot; la R por la borda o con Flash es pick casi garantizado."
+      ],
+      "plan": {
+        "early": "Farmeá con la Q cuidando el refund de maná, comercia solo con marcas ya cobradas y mantené la wave cerca para no regalar ganks antes del primer item.",
+        "mid": "Con Lich Bane y Shadowflame buscá el all-in de tres marcas en tu lane o roameá con la R post-6; cada sello que consigas sube tu umbral de ejecución para el resto del juego.",
+        "late": "Entrá siempre después del CC enemigo, flankeá con la W y usá la E para el primero, y dejá la R como remate sobre los marcados: con sellos acumulados ejecutás desde vida que parecería cómoda."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/locke/build",
+      "https://www.unrankedsmurfs.com/blog/locke-league-of-legends-abilities-guide",
+      "https://rft.gg/news/locke-abilities-lol-new-champion-breakdown"
+    ]
+  }
+}

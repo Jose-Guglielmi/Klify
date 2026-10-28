@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "hecarim",
+    "ddragonId": "Hecarim",
+    "name": "Hecarim",
+    "titleEs": "la Sombra de la Guerra",
+    "cid": 120,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.68,
+    "pr": 4.8,
+    "br": 5.22,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.3,
+      "jungle": 99.5,
+      "middle": 0.1,
+      "bottom": 0,
+      "support": 0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Hecarim.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Hecarim_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 57.84, "games": 612 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.73, "games": 1358 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 55.21, "games": 893 },
+    { "cid": 203, "slug": "Kindred", "name": "Kindred", "vsWr": 52.93, "games": 665 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 52.26, "games": 287 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 51.79, "games": 504 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 51.79, "games": 780 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 51.24, "games": 2020 }
+  ],
+  "weakAgainst": [
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 45.14, "games": 381 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 45.41, "games": 1722 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 45.44, "games": 1063 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 45.73, "games": 1509 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 45.74, "games": 1316 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 46.15, "games": 208 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 46.55, "games": 580 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 46.58, "games": 438 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E de velocidad con empuje le deja cazar carries inmóviles que dependen del equipo para sobrevivir: si te va a buscar, te alcanza.",
+      "La Q spamea sola porque cada stack reduce su cooldown y suma daño: sostiene trades largos y limpia camps sin fundirse.",
+      "La R agrupada al equipo enemigo es un fear que separa al target clave de su pelea: cambia teamfights enteras de un cast.",
+      "La pasiva convierte su velocidad de movimiento extra en AD: cada item de MS también es daño, escala distinto a cualquier otro jungler.",
+      "La W cura por una parte grande de todo el daño hecho alrededor: entra a la melé, pega a cinco y sale más entero que entró."
+    ],
+    "weaknesses": [
+      "Sin la R disponible es comida de CC: entra, lo frenan y los carries lo kitean hasta la muerte; castigá cada entrada sin ultimate.",
+      "Espacio abierto y buen spacing lo anulan: si el equipo no está agrupado, su fear agarra a uno y el resto responde.",
+      "La visión enemiga le niega los flancos: sin fog of war para cargar la E, su engage es frontal y telegrafiado.",
+      "Su daño es de avalancha, no de duelo sostenido contra frente firme: si el target no muere rápido, queda plantado en medio de los tanques.",
+      "Todo el kit depende de cargar distancia: un root o slow a tiempo sobre la carga lo deja a pie, sin empuje y sin la mitad del daño."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con E, Q y W en mano puede gankear sin disimulo a cualquier lane pushada; asume que viene el gank apenas desaparece del mapa.",
+      "Nivel 6: la R le da flancos desde el fog que aíslan a un target del resto; con sustain de runas puede encadenar ganks sin volver a base.",
+      "Primer item de velocidad resuelto: con la pasiva prendida, la E pega y empuja como si llevara un item más de AD.",
+      "Nivel 9-11: Q maxeada suma daño constante en la melé y el segundo punto en R baja el cooldown para tener engage en casi cada escaramuza.",
+      "Late con Q y W maxeadas: pegado a un target es casi inkillable mientras se mueva; su peor enemigo es el CC, así que comprá tenacidad o lo frenás."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Mantené distancia de su E cargada: su única forma de llegar es la avalancha, y si la gasta en un paso en falso queda a pie al lado tuyo.",
+        "No camines solo por el jungle ni por lanes pushadas sin wards: su gank desde el fog no se esquiva, se prevé.",
+        "Kiteá hacia tu equipo, no hacia atrás en línea recta: espaciate y su fear agarra humo mientras tu equipo lo baja."
+      ],
+      "tanks": [
+        "Guardá tu CC para el commit, no para el Q spameo: un root sobre la E cargada mata el engage entero antes de que llegue al carry.",
+        "No le regales la melé agrupada: abrí el spacing y su R feara a uno solo mientras el resto de tu línea frontal lo contiene.",
+        "Antes de pelear, prendé anti-heal: su W se alimenta del daño en área y en una teamfight agrupada lo mantiene vivo más de lo que parece."
+      ],
+      "assassins": [
+        "Invadilo antes de 6: su clear es sano pero pierde duelos contra asesinos con movilidad y sus ganks todavía no tienen ultimate.",
+        "Después de 6 no lo duelés cara a cara: esperá que gaste la R en un engage y entrá vos por la backline que quedó sola.",
+        "Guardá tu escape para su R, no para farmear: el fear te pega primero y el burst después; sin escape listo, el flanco te borra."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas veas la carga de E venir: cortarle el impulso a media carga lo deja plantado y sin la mitad del daño del golpe.",
+        "Después de que use R es el mejor momento para tus chains: entró, gastó todo y si lo frenás ahí muere en la melé ajena.",
+        "Reservá el interrupt para su E y no para la Q: el spameo de Q daña, pero es la carga la que lo mete dentro de tu equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 122,
+        "name": "Darius",
+        "tips": [
+          "Guardá el Apprehend para cuando cargue la E hacia vos: lo bajás del caballo antes del empuje y su all-in muere ahí mismo.",
+          "No le pelees adentro de tu minion wave cuando la W está prendida: la cura por cada punto de daño hecho alrededor se lo paga tu farm.",
+          "Extendé el duelo: sin R en mano, Hecarim no gana el 1v1 contra tus stacks; si lo ves venir con R arriba, soltála vos primero y ganás el trade."
+        ]
+      },
+      {
+        "cid": 517,
+        "name": "Sylas",
+        "tips": [
+          "Su todo-in entero depende de la R: dejalo cargar el engage, aguantá el fear con tu W y castigá la ventana sin ultimate.",
+          "Antes de 6 su duelo y su clear son mediocres: invadilo en sus camps y robale tempo mientras su gank todavía no existe.",
+          "Con tu E lo dejás pegado a tu lado: si no le das espacio para cargar la carga completa, su empuje no te separa del equipo y su daño se cae."
+        ]
+      },
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "Evitá el 1v1 temprano: Hecarim gana las escaramuzas del early con E y W; farmeá tus camps y escalá tranquilo.",
+          "Con R de dragón activa tu duelo gana: buscálo en el jungle cuando la tengas, que su ventana de pelea ya pasó.",
+          "Counter-gankeá en vez de invadir a ciegas: compartís pathing, tu presencia salva el lane y vos ganás oro mientras él gasta tiempo."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Kitéalo con Q y el slow de la E: Hecarim es todo-in o nada; si no te agarra en los primeros segundos, la pelea larga es tuya.",
+          "No te dejes cargar la E a full distancia: un empuje con carga completa te manda derecho a su equipo, jugale de costado y en zigzag.",
+          "Peleá lejos de minions y camps: su W cura por el daño hecho en área y si no tiene a quién rodear, el sustain no le rinde."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank clásico: activá E antes de entrar al lane, cargá distancia en el fog y golpeá al carry empujándolo hacia tu team → auto → Q para arrancar los stacks",
+        "All-in nivel 6: R al target (fear) → E al que intenta escapar, empujándolo de vuelta → auto → Q spameo → W encima del objetivo para curarte del trade",
+        "Pelea extendida: auto → Q → auto → Q manteniendo los 3 stacks de Rampage siempre vivos y W activada para el heal por segundo",
+        "Engage de teamfight: flanqueá desde el jungle → R al centro del equipo agrupado → E al carry enemigo empujándolo hacia tus compañeros → Q y W en la melé",
+        "Escape: E activada alejándote del enemigo para ganar MS (y AD por la pasiva) y salí del flanco sin peleas"
+      ],
+      "tips": [
+        "No entres sin R si el enemigo tiene CC disponible: sin ultimate sos un jinete a pie; esperá dos segundos a que lo gasten y entrá recién ahí.",
+        "Cargá la E en el fog de war: el daño y el empuje escalan con la distancia recorrida, y una E de dos metros es un empujoncito inútil.",
+        "Usá W cuando ya estés en melé, no antes: cura por el daño que hacés alrededor, y activarla antes de llegar es regalar la mitad.",
+        "La duración de la E se pausa durante la R: encadenar R → E te guarda la carga completa para el empuje después del fear.",
+        "Tu pasiva convierte velocidad en AD: los items de MS son también items de daño, así que no te obsesionés con comprar AD puro."
+      ],
+      "plan": {
+        "early": "Balanceá farmeo y ganks desde el nivel 3, priorizá lanes pushadas del rival y aprovechá tu fortaleza de skirmisher para invadir camps y robarle oro al jungler enemigo.",
+        "mid": "Asegurate dragones y heraldo, buscá escaramuzas donde tu R aísle targets, y jugá alrededor del cooldown de la R: con ella disponible, cualquier pick tuyo termina en objetivo.",
+        "late": "Entrá con R, hacé tu daño y peel back para tus carries; buscá picks desde el fog y no pelee teamfights sin ultimate: sin R, tu engage frontal le regala la pelea al enemigo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/hecarim/guide",
+      "https://leagueoflegends.fandom.com/wiki/Hecarim/LoL"
+    ]
+  }
+}

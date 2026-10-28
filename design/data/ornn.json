@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "ornn",
+    "ddragonId": "Ornn",
+    "name": "Ornn",
+    "titleEs": "El Fuego Debajo de la Montaña",
+    "cid": 516,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.31,
+    "pr": 3.41,
+    "br": 0.61,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 94.9,
+      "jungle": 0.9,
+      "middle": 2.1,
+      "bottom": 0.2,
+      "support": 1.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ornn.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ornn_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 57.12, "games": 569 },
+    { "cid": 79, "slug": "Vi", "name": "Vi", "vsWr": 56.79, "games": 368 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.67, "games": 485 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 55.66, "games": 830 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.42, "games": 590 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.4, "games": 704 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 55.37, "games": 242 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 54.86, "games": 556 }
+  ],
+  "weakAgainst": [
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 47.42, "games": 213 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 47.72, "games": 329 },
+    { "cid": 223, "slug": "Tahmkench", "name": "Tahm Kench", "vsWr": 48.0, "games": 450 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 48.27, "games": 721 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 48.42, "games": 824 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 49.25, "games": 1131 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 49.34, "games": 527 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 49.49, "games": 491 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le da armadura y resistencia mágica extra de todas las fuentes: escalando se vuelve más tanque de lo que sus items anuncian y al late casi no hay forma de tumbarlo.",
+      "Puede forjar items en plena lane sin volver a base y además regala mejoras a sus aliados: inyecta ventaja de oro a todo el equipo de golpe.",
+      "La R es un CC masivo que cruza media pantalla: agarra al adelantado, gana el 1v1, prepara ganks y bien tirada en teamfight levanta a los cinco.",
+      "Es fuerte en todas las fases salvo pre-6: daño engañoso de % de vida más tanquidad progresiva lo hacen difícil de castigar mientras el juego avanza."
+    ],
+    "weaknesses": [
+      "Pre-6 es débil y todo su kit es telegrafiado: un rival agresivo o de rango lo abusa mientras no tiene R.",
+      "Depende del terreno para el knock-up: lejos de paredes y del pilar de su Q es solo un tanque lento sin engage.",
+      "Si le pegan CC antes de encarar la R o la tira a lo tonto, pierde la ventana entera de pelea; en late una ultimate desperdiciada es la teamfight perdida.",
+      "Necesita que el equipo convierta su engage: si sus carries van detrás, agarra a cinco personas y nadie lo sigue.",
+      "La W y la E se ven venir: son lentas y rectas, y un rival que las caminee le gana los trades sin esfuerzo."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R le da kill solo en lane e impacto en cualquier skirmish; desde ahí no peleen cerca de paredes sin saber si la tiene.",
+      "Max de W al nivel 9: el daño de % de vida máxima se multiplica y pega fuerte incluso sin items ofensivos.",
+      "Segundo punto de R (nivel 11) más items completos: arranca su etapa de split push y dueling; castigarlo 1v1 en side lane sale caro.",
+      "Nivel 16 con R al máximo: la ultimate está en mano casi cada pelea; asumí siempre que hay knock-up disponible y no te agrupes sin verla."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Quinn, Kayle: pegale en cada last hit y no aceptes pelea corta; sin rango, cada trade largo es de él y cada trade corto es tuyo.",
+        "Jugá el centro de la lane, lejos de paredes: la E necesita chocar con terreno para levantar y sin pared es solo un dash lento.",
+        "Cuando tire la Q, pisá de costado del pilar: el pilar es la mitad de su combo y negárselo es negarle el knock-up."
+      ],
+      "tanks": [
+        "No le pelee trades largos cara a cara: su W pega % de tu vida máxima y con Grasp más Sunfire el trade extendido lo gana él siempre.",
+        "Llevá anti-curación contra el Grasp y respetá el nivel 9: la W maxed te borra un tercio de vida por rayo de fuego.",
+        "Forzá la pelea antes del 6: sin R su único CC es la E contra pared y se esquiva caminando; después del 6 cuidá las paredes del river."
+      ],
+      "assassins": [
+        "Riven, Fiora, Camille: castigalo pre-6 y en cada rotación de habilidades; entrá recién cuando la W y la E estén gastadas.",
+        "Esquivá la W caminando de costado: es imparable pero recta; si la última llama no te toca, no hay Frágil y su daño se cae a la mitad.",
+        "Esperá que use la E en el pilar o en la wave: 12 a 14 segundos sin knock-up es tu ventana para el all-in completo."
+      ],
+      "crowdControl": [
+        "Encadená tu CC mientras carga el breath de la W: cortarlo antes de la última llama le borra el Frágil y con eso la mitad del combo.",
+        "En teamfight no te alinees con el elemental: la R atraviesa a todos y cada uno que toca come daño, slow y Frágil.",
+        "Usá el CC en su entrada, no después: un Ornn que ya tiró la R cumplió; matarlo después del knock-up no te devuelve la pelea."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 19,
+        "name": "Warwick",
+        "tips": [
+          "Tu Q pega % de vida y te cura: peleá pegado a él en trades largos, tu sustain supera el breath de fuego y en extended él no puede con vos.",
+          "Guardá la R para su W: cortarle el breath antes de la última llama le borra el Frágil y queda en cuerpo a cuerpo sin daño real.",
+          "Castigalo antes del 6 y peleá en campo abierto: sin ultimate su único CC es la E contra pared y ahí su combo nunca arma."
+        ]
+      },
+      {
+        "cid": 92,
+        "name": "Riven",
+        "tips": [
+          "Sos su peor pesadilla pre-6: castigá con combos cortas y volvé atrás antes de que responda con la W; el trade corto siempre es tuyo.",
+          "Castigá la E apenas la gaste en el pilar de la Q: 14 segundos sin knock-up es tiempo de sobra para all-innearlo gratis.",
+          "Al 6 guardá el stun del tercer Q o tu W para interrumpir el breath: sin la última llama no hay Frágil y su combo cae a la mitad.",
+          "Peleá en el centro de la lane: todo su CC vive del terreno, lejos de la pared del river y de su pilar es un tanque lento."
+        ]
+      },
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Vos también pegás % de vida pero escalás antes: ganá los trades cortos nivel 1 a 5 con Q y pasiva, y no le des tiempo a forjar tranquilo.",
+          "Tu gris (E) se come el burst de su W: con la segunda vida en mano metele el all-in con R detrás de tu wave.",
+          "Esquivá el elemental de la R cruzándote de costado: arranca lento y si lo hacés fallar, le negás el stun entero.",
+          "Peleá en el medio de la lane: su E necesita pared y tu cuerpo no le regala el knock-up fácil que busca."
+        ]
+      },
+      {
+        "cid": 164,
+        "name": "Camille",
+        "tips": [
+          "Tu gancho (E) supera su movilidad: enganchá pared, meté la combo corta y volvé a safe; él nunca llega a responder con la W.",
+          "Castigalo pre-6 negándole el farm: sin R todo su kit es telegrafiado y tu Q de daño verdadero le come la armadura base.",
+          "Usá tu W para slowearlo cuando cargue el breath: si no llega con la última llama, no hay Frágil y el trade es tuyo.",
+          "En late esperá su R antes de tirar la tuya: si lo ve lanzar el elemental, enganchá a un lado y su ultimate viaja sola a la nada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q (slow) → esperá que el rival camine cerca del pilar → E chocando contra el pilar (knock-up seguro) → autos mientras está en el aire",
+        "Combo de Frágil: W al arranque para marcar con la última llama → auto (lo empuja y dispara el daño extra de Frágil) → Q para reconnectear si se aleja",
+        "Engage completo: R1 desde flanco (slow + Frágil en el grupo) → E contra pared en medio de ellos → R2 de cabezazo para redirigir y potenciar el elemental → W sobre los levantados",
+        "Peel de carry: R1 entre tu ADC y el diver enemigo → E al pilar de tu Q ya en melee → W para separar y marcar de Frágil al que siga entrando",
+        "Escape: Q al pie del perseguidor → E al pilar para levantarlo y ganarte la distancia, o E directa contra cualquier pared para el knock-up de área"
+      ],
+      "tips": [
+        "La W es imparable durante el avance: usala para atravesar el CC que veas venir (Morgana Q, Rammus) y no solo como daño.",
+        "Maxeá W primero y Q después: el % de vida máxima escala todo tu daño incluso sin items ofensivos; dejá la E en último punto.",
+        "Forjá items apenas estés full oro en lane y regalá las mejoras a tus carries en cuanto puedas: la pasiva es tu segundo ultimate en valor de oro.",
+        "No tires la R de lejos al pedo: vista desde 2000 unidades se esquiva caminando; tirála desde flancos o después de tu E para asegurar el impacto.",
+        "Ubicá la Q para que el pilar corte el camino o apriete contra la pared: el pilar vale más por zoneo que por su daño."
+      ],
+      "plan": {
+        "early": "Jugá safe hasta nivel 3 pegado a tu pared: farmeá con Q si te castigan de rango y cuando tengas niveles buscá el trade de Q → E al pilar, que gana casi cualquier matchup melee.",
+        "mid": "Forjá gratis con la pasiva, presioná la side lane con tu dueling y llegá a las peleas de objetivo con TP: tu R agarra a cualquiera que discuta un dragón cerca de una pared.",
+        "late": "No pelees sin R y con ella buscá picks sobre el que esté adelantado; en teamfight cruzá el elemental por dos o más y peelá con E + W a tus carries."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ornn/guide",
+      "https://app.mobalytics.gg/lol/champions/ornn/build"
+    ]
+  }
+}

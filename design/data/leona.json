@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "leona",
+    "ddragonId": "Leona",
+    "name": "Leona",
+    "titleEs": "el Radiante Amanecer",
+    "cid": 89,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.85,
+    "pr": 8.72,
+    "br": 10.72,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.2,
+      "jungle": 0.1,
+      "middle": 0.1,
+      "bottom": 0.1,
+      "support": 99.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Leona.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leona_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 62.77, "games": 282 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 60.32, "games": 252 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 59.39, "games": 293 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 58.01, "games": 2417 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 57.95, "games": 478 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.69, "games": 364 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 56.43, "games": 1579 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 56.07, "games": 239 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 48.89, "games": 1393 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 49.18, "games": 1645 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 49.41, "games": 2866 },
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 49.63, "games": 669 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 49.64, "games": 834 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 49.69, "games": 1775 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 50.0, "games": 1992 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 50.17, "games": 2649 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El nivel 2 con E + Q es de los all-ins más violentos del juego: si llegás primero a la subida, el stun encadenado con tu ADC suele costar flash o vida.",
+      "Cadena de CC confiable: la E es un dash puntual, la Q un stun de auto y la R un área enorme; con el kit en mano, el objetivo no camina.",
+      "La W te da escudo y resistencias justo cuando te comprometés: aguantás el trade entero dentro del equipo rival sin derretirte.",
+      "Roam de élite con botas: el stun point-and-click convierte cualquier caminata a mid en kill potencial y presión de mapa gratis."
+    ],
+    "weaknesses": [
+      "Fuera del engage no aportás casi nada: si tu ADC no sigue el all-in, sos un tanque caminando gratis hacia la muerte.",
+      "El poke de rango te derrite: cada paso hacia la wave es vida regalada, y llegar abajo al all-in es regalar el doble kill.",
+      "Te comprometés entera: la E no tiene vuelta atrás, y sin follow-up quedás plantada en medio del equipo rival.",
+      "Dependés de que la wave esté pareja o de tu lado: con la wave pushada contra tu torre no hay ángulo limpio para la E."
+    ],
+    "powerSpikes": [
+      "Nivel 2: se desbloquea el all-in completo con la pasiva Sunlight; ganá la subida y buscá el trade ahí mismo.",
+      "Nivel 6: la R suma rango y área para encadenar CC desde fuera de visión; con ulty en mano, cada pick forzea objetivo o pelea.",
+      "Botas tempranas: desbloquean el roam y te vuelven presión de mapa; con Movilidad llegás a mid antes de que el rival empuje la wave.",
+      "Puntos en W y R escalados: el escudo cubre todo el trade y la R baja a un cooldown que permite buscar picks cada treinta segundos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokeala en cada paso hacia la wave: Leona necesita caminar hasta vos para todo y su all-in depende de llegar con vida.",
+        "Xerath, Vel'Koz, Lux: mantenete fuera del rango de su E y el lane se vuelve un rango de tiro donde ella no cobra nada.",
+        "Castigá la E gastada: tiene cooldown larguísimo early; mientras esté abajo, zonéala y ella deja de existir."
+      ],
+      "tanks": [
+        "Intercambiá recién después de su engage: su burst se agota en el primer segundo y el escudo de la W tiene fecha de vencimiento.",
+        "Guardá tu CC de reacción para el dash: interrumpir el engage encima de tu ADC la deja plantada sin plan B.",
+        "Contra-engage cuando se comprometa sola: Leona metida en tu wave sin follow-up es un kill gratis para el dúo."
+      ],
+      "assassins": [
+        "Esperá que gaste la Q al frente: su stun es lo único que te baja, y sin Q el peel de Leona es solo cuerpo.",
+        "Aprovechá que se compromete al frente: cada all-in suyo deja a su backline sin protección por varios segundos.",
+        "No la elijas de objetivo: es tanque con escudo y Aftershock; matarla a ella es el peor trade de la pelea."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas use la E: no puede cancelar el dash, así que tu stun entra seguro sobre alguien que no puede esquivar.",
+        "Guardá el disengage para el arranque del all-in: desarmar el engage entera a Leona porque no tiene segunda herramienta.",
+        "No gastes CC en ella antes de que se comprometa: esperá la ventana de entrar y castigala ahí."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Pegale desde el límite de tu rango cada vez que camine hacia la wave: Leona necesita acercarse para todo y cada paso adelantado le cuesta vida.",
+          "Guardá tu Q de knock-up para el momento del salto: interrumpir el engage en el arranque entra seguro porque no puede cancelar el dash.",
+          "Contá la E: mientras esté gastada, zonéala con tu W y el lane es tuyo sin riesgo de all-in."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Dejala comprometerse primero: cuando su E la meta en tu wave, contra-engage con tu W y ganás el trade extendido de ahí en adelante.",
+          "Tu R desarma el all-in agrupado: si Leona salta sobre tu ADC con todo encadenado, usala para empujarla lejos del carry.",
+          "Intercambiá autos y esperá que el escudo de su W se apague: su daño es de una tanda y las peleas largas son tuyas."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Levantá el muro apenas la vea saltar: bloqueás el daño del all-in y tu ADC negocia el trade sin morir.",
+          "Tu pasiva resuelve el 2v2: un auto marcado y tu stun llega antes de que el burst de Leona se resuelva.",
+          "Castigá cada E gastada sin kill: queda metida en tu wave sin escape; congelá ahí y cobrale el error con autos."
+        ]
+      },
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Esperá que su E te pegue y respondé con tu stun: intercambiá CC sobre ella cuando ya esté comprometida y no pueda escapar.",
+          "La pelea extendida es tu terreno: su daño se agota en el primer segundo y tus autos con pasiva ganan cualquier trade de tres segundos o más.",
+          "Guardá la R para el all-in de nivel 6: la invulnerabilidad neutraliza la cadena de stun entera y convierte su engage en regalo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in nivel 2: E al objetivo → auto → Q → auto; la pasiva Sunlight marca al rival y el daño de tu ADC se amplifica durante el stun",
+        "Engage estándar: E → Q apenas aterrizás → W recién adentro para que la explosión demorada pegue con vos ya pegado al objetivo",
+        "Pick con R desde la niebla: R al centro → E al target → Q para encadenar el CC mientras tu equipo entra por el stun",
+        "Engage largo con Flash: Flash + E cuando el carry está a más de un E de distancia, o R primero si iniciás desde rango total",
+        "Trade corto: Q + auto para castigar o romper wards; no gastes la E si tu ADC no puede seguir el trade"
+      ],
+      "tips": [
+        "Llegá sana al nivel 2: si te pokean antes de la subida, el all-in que define tu lane no existe; esperá la wave fuera de rango de auto.",
+        "Allate solo con wave pareja o de tu lado y follow-up cantado: sos la primera en comprometerse, y si nadie te sigue morís sola.",
+        "Pingeá antes de saltar: Leona gana por sincronía con tu ADC, no por sorpresa; un ping de objetivo vale más que el engage apurado.",
+        "Después del combo completo, volvé y peel: el stun abre la pelea, pero el trabajo se gana protegiendo al carry el resto de la teamfight.",
+        "Con R en mano, roameá a mid o buscá picks en el río: el cooldown corto te deja usarla sin culpa y volver para la próxima."
+      ],
+      "plan": {
+        "early": "Buscá hit 2 antes que el rival y allate con E + Q apenas se desbloquea; mantenete sana, esperá cooldowns fuera de rango y usá las botas para roamear cuando tu ADC esté seguro.",
+        "mid": "Agrupate con tu equipo, wardá sabiendo dónde está el rival y forzá picks con R cerca de objetivos; tras el engage, volvé y peel para tu ADC.",
+        "late": "Pegada al carry: entrá con E + Q o R sobre el más adelantado, volvé a peel, y repetí cada treinta segundos con el cooldown bajo de la R."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/leona/guide",
+      "https://app.mobalytics.gg/lol/champions/leona/build"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "xinzhao",
+    "ddragonId": "XinZhao",
+    "name": "Xin Zhao",
+    "titleEs": "el Senescal de Demacia",
+    "cid": 5,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.77,
+    "pr": 3.51,
+    "br": 0.87,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 5.5,
+      "jungle": 89.8,
+      "middle": 3.5,
+      "bottom": 0.4,
+      "support": 0.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/XinZhao.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/XinZhao_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 59.56, "games": 225 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 56.21, "games": 338 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 55.8, "games": 500 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.74, "games": 305 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 55.74, "games": 235 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 55.71, "games": 700 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 55.53, "games": 1619 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 54.79, "games": 4711 }
+  ],
+  "weakAgainst": [
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 41.13, "games": 231 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 44.23, "games": 208 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 45.11, "games": 348 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 46.15, "games": 377 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 46.7, "games": 454 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 47.39, "games": 306 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 47.43, "games": 253 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 48.04, "games": 2142 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El early es suyo: la Q con auto-reset y la E con dash le dan el mejor duelo del jungle en los primeros minutos, así que casi cualquier 1v1 o escaramuza le sale bien.",
+      "El tercer golpe de la Q lanza al aire: si te alcanzó con la E y quedaste en melee, no hay forma de esquivar el knock-up ni de salir del trade.",
+      "La R lo aísla del resto del equipo: los tiradores no le pueden pegar desde afuera del círculo, así que los carries de rango largo viven con miedo de su entrada.",
+      "Control de objetivos descarado: con la curación de la pasiva y la velocidad de ataque de la E saca dragón y heraldo temprano, e invade sin pedir permiso."
+    ],
+    "weaknesses": [
+      "Si no mata en la primera entrada se queda sin gas: es un melee de burst sin escape después del engage, y volver atrás no es una opción.",
+      "La R en cooldown lo deja desnudo: sin el círculo que lo protege del daño de afuera, cualquier CC lo agarra y lo borra de la pelea.",
+      "Escala mal: pasado el minuto 30, con los carries con items defensivos, no llega a matar a nadie y muere antes de terminar el combo.",
+      "Depende de picks: en peleas 5v5 agrupadas no tiene AoE real más allá del barrido de la R, así que necesita encontrar gente sola.",
+      "Sin la E cargada no llega: un slow o un root antes del dash lo deja caminando hacia la pelea y entra tarde o no entra."
+    ],
+    "powerSpikes": [
+      "Nivel 3: con Q, W y E disponibles, el gank a una lane sin Flash es casi kill garantizado.",
+      "Nivel 6: la R le permite convertir una escaramuza en un 1v1 y salir ileso del daño de rango que viene de afuera del círculo.",
+      "Nivel 9 con la Q maxeada: es el pico de daño de su kit y ahí gana prácticamente todos los duelos del juego.",
+      "Fuerza del Triforce más el item de jungla: con los dos completos mata squishies en una sola entrada.",
+      "Niveles 11 y 16 con puntos en la R: el cooldown baja tanto que casi siempre tiene el círculo disponible para cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Karthus, Fiddlesticks, Kindred: pegalé desde el rango máximo y no te le acerques ni para farmear el campamento; si te llega la E, el knock-up es muerte segura.",
+        "Guardá tu slow o tu root para el arranque de la E: si no llega al melee, todo su combo se cae solo.",
+        "No gastes habilidades mientras esté adentro de su R: desde afuera no le entra nada, esperá que se le pase el círculo y recién ahí castigalo."
+      ],
+      "tanks": [
+        "Volibear, Aatrox, Trundle: peleale el duelo largo, que es justo donde su daño se queda corto; no te asustes por el primer knock-up.",
+        "Comprá armadura temprano y aguantá la primera entrada: si sobrevivís la Q y la R, su daño se apaga y no tiene con qué salir.",
+        "Pelealo cerca de tu torre o del río con visión: Xin vive de picks solitarios y no puede matar a un tanque con escape."
+      ],
+      "assassins": [
+        "No entres a su rango sin escape listo: la E tiene alcance fijo y si te agarra el knock-up no salís con vida.",
+        "Forzá el 1v1 recién después de que gaste la R: sin el círculo, un asesino con burst le gana el duelo sin discusión.",
+        "Colapsá con tu mid cuando lo veas entrar a tu jungle: su early depende de invadir y si lo cazan dos veces se le cierra la ventana."
+      ],
+      "crowdControl": [
+        "Guardá un stun o un root para el momento en que entra: si lo frenás en la entrada se queda plantado en medio del equipo sin aguantar el foco.",
+        "Su R no lo hace inmune al CC: un stun bien puesto lo deja esperando adentro del círculo a que se le pase la inmunidad al daño.",
+        "No gastes todo el CC en el tanque: Xin suele entrar segundo y si ya no te queda nada, mata a tu carry sin que puedas hacer nada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Tu W (Niebla Sagrada) le apaga los autos: abrí el trade con la niebla puesta y Xin pierde todo el daño de la Q.",
+          "Su daño es físico y de rango corto: comprá armadura temprano y el primer combo no te baja ni la mitad de la vida.",
+          "Pelealo cuando gaste la Q en el campamento: sin los tres golpes potenciados y con la E en cooldown, tu Q al centro le gana cualquier trade."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "El blind le apaga la Q: tirá el dardo cuando ya gastó la E y no puede conectar ni los tres golpes ni el knock-up.",
+          "Sembrá hongos en las entradas de tu jungle: Xin vive de invadir y de gankear por caminos sin visión, y cada hongo le cuesta la entrada.",
+          "No aceptes el melee ni de casualidad: jugá siempre al borde de tu rango y usá el W para salir cuando arranca la carga."
+        ]
+      },
+      {
+        "cid": 24,
+        "name": "Jax",
+        "tips": [
+          "Guardá el Contraataque para el knock-up: bloquea los tres golpes de la Q y le devuelve el stun en la cara.",
+          "El duelo largo es tuyo: cuando gaste la E y la R, tu pasiva y tu W le ganan el 1v1 con el segundo item.",
+          "No gastes Flash por un trade: esperá que entre con la R y usá el E para negarle los autos potenciados."
+        ]
+      },
+      {
+        "cid": 421,
+        "name": "Rek'Sai",
+        "tips": [
+          "Tu early es más fuerte que el suyo: contestale el primer campamento y el escarabajo, no lo dejes arrancar con ventaja.",
+          "Usá el túnel para salir del dash: si la E no conecta, el knock-up se queda sin combo y lo podés pelear.",
+          "Marcá las entradas de tu jungle con visión y colapsá con el mid antes de que llegue a nivel 3."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: W desde rango (slow + marca desafiado) → E con alcance aumentado sobre el desafiado → AA → Q (auto-reset) → AA AA (knock-up) → AA + W de remate",
+        "Duelo ya en melee: AA → Q → AA AA AA (knock-up) → E para seguirlo cuando flashea → AA → W para frenarlo",
+        "All-in con R: E → AA → Q → AA AA (knock-up) → R para sacarlo del grupo y aislar al objetivo → AA hasta que muera",
+        "Pick desde arbusto: R + Flash detrás del objetivo para empujarlo hacia tu equipo → E → Q → AA x3 → W",
+        "Objetivos: E para el buff de velocidad de ataque → AA → W → AA → Q → AA x3, y guardá la R por si aparece el jungla rival"
+      ],
+      "tips": [
+        "No arranques con la E a vida completa: tirá la W desde lejos para frenarlo y marcarlo como desafiado, y guardá el dash para cuando flashee o intente salir.",
+        "La Q es auto-reset: meté un AA antes de apretarla y ganás un golpe gratis en cada trade; el tercer golpe es tu único CC, así que no lo gastes en minions si hay pelea cerca.",
+        "No uses la R como daño: usala para aislar al carry enemigo y quedar inmune al daño de afuera; si la tirás al aire perdés tu única herramienta de supervivencia.",
+        "Mantené el ritmo de farmeo del jungle: si te quedás atrás en experiencia, tu ventana de early se cierra y en late sos un melee sin escape.",
+        "Wardeá tu propio jungle antes de invadir: sin visión de las entradas, un colapso del mid y del jungla rival te mata el early, que es todo lo que tenés."
+      ],
+      "plan": {
+        "early": "Clear rápido de tres o cuatro campamentos y buscá el primer duelo en el río; gankeá solo lanes sin Flash o sin movilidad y tomá dragón o heraldo apenas tengas prioridad.",
+        "mid": "Seguí farmeando camps sin perder tempo, forzá cada dragón y buscá picks desde arbustos con R + Flash; con Triforce completo sos el campeón más fuerte del mapa en escaramuzas 2v2.",
+        "late": "No entres primero: flanqueá, aislá al carry con la R y peleá cuando el CC enemigo ya se gastó; sin R en mano evitá las 5v5 y jugá de peel para tu carry."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/xinzhao/guide",
+      "https://mobalytics.gg/lol/champions/xinzhao/combos",
+      "https://mobalytics.gg/lol/champions/xinzhao/counters"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "chogath",
+    "ddragonId": "Chogath",
+    "name": "Cho'Gath",
+    "titleEs": "el Terror del Vacío",
+    "cid": 31,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.53,
+    "pr": 6.15,
+    "br": 8.71,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 31.1,
+      "jungle": 60.6,
+      "middle": 5.5,
+      "bottom": 0.6,
+      "support": 2.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Chogath.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 62.15, "games": 317 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 58.61, "games": 1034 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 58.1, "games": 327 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.87, "games": 1550 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 57.09, "games": 578 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 57.06, "games": 729 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 57.04, "games": 3205 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 56.9, "games": 413 }
+  ],
+  "weakAgainst": [
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 45.45, "games": 363 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 47.09, "games": 412 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 48.08, "games": 1905 },
+    { "cid": 427, "slug": "Ivern", "name": "Ivern", "vsWr": 48.28, "games": 290 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 49.24, "games": 463 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 49.56, "games": 456 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 50.0, "games": 200 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 50.19, "games": 528 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Control de objetivos élite: con R en mano y Smite, ningún dragón ni Barón está seguro porque tu ultimate ejecuta y encima te agranda por cada festín.",
+      "CC encadenado: el knock-up de Q más el silencio de W suman casi dos segundos de control por gank, y mientras dure el silencio el rival no puede responder con hechizos.",
+      "Sustain natural de jungla: la pasiva Carnívoro te cura y devuelve maná por cada monstruo que ejecutás, despejás el mapa sin volver a base casi nunca.",
+      "Escala con cada Festín que conecta: vida real acumulativa que te convierte en muro delantero que además ejecuta a los squishy del fondo.",
+      "Anti-assesinos por naturaleza: cualquier Zed o Qiyana que salte al carry se encuentra con knock-up, silencio y una mordida que lo borra."
+    ],
+    "weaknesses": [
+      "Te kitan con facilidad: ADCs y campeones con dash te dan vueltas en teamfight si no conectás la Q; perseguirte es tu peor plan.",
+      "Cero plan B sin skills: si fallás Q y W en un 1v1, quedás caminando lento golpeando con autos mientras el rival se va gratis.",
+      "La Q tiene delay largo y telegrafiado: cualquier rival con manos la esquiva caminando un paso, así que tirarla a lo random es regalarla.",
+      "Early frágil a invasiones: si el jungla rival te encuentra sin W y sin nivel, el 1v1 es suyo y vos quedás atrás en el clear.",
+      "Volviendo de atrás cuesta doble: si te van ganando, te invaden los campamentos una y otra vez y no tenés movilidad para escapar."
+    ],
+    "powerSpikes": [
+      "Level 6: la R suma kill pressure real de ejecución y control de dragón; hasta ahí jugá powerfarm y evitá peleas de jungla.",
+      "Level 11 con segundo punto en R: la mordida sube de daño y tu presión de objetivo se vuelve casi imbatible con Smite.",
+      "Level 16 con tercer punto en R: ejecutás a cualquiera fuera de posición, incluso frontliners con vida llena.",
+      "Cada Festín exitoso en campeón o épico: vida y tamaño acumulados que te hacen más difícil de matar por cada pelea ganada.",
+      "Late game con stacks llenos: cuánto más larga la partida, más muro sos; el tiempo juega para vos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Zyra: no los persigas por campo abierto, flanqueá desde el fog y esperá que gasten el escape para tirar Q detrás.",
+        "Peleá en choke points y pasillos: la Q es mucho más fácil de acertar en lugares apretados que en campo abierto donde te kitean.",
+        "Si el mago rival te pega de lejos sin que llegues, wardá su lado del mapa y ganká otras lanes: tu value está en el mapa, no en el wall de la mid."
+      ],
+      "tanks": [
+        "Tu R hace daño real plano: guardala para morder al tanque cuando baje de vida o al carry vulnerable, no la gastes en un muro con vida llena.",
+        "Sumá stacks con la R en minions cuando no haya pelea: cada festín suma vida permanente para el intercambio de golpes largo contra frontliners.",
+        "Contra tanques ganás el trade largo: silenciá con W para anular su engage, pegá con E activada y dejá que la pasiva te sostenga."
+      ],
+      "assassins": [
+        "Zed, Qiyana, Rengar: cuando salten al carry, Q debajo de ellos y W instantáneo; el silencio corta su combo a la mitad.",
+        "Esperá que gasten el dash antes de tirar la Q: telegrafiarla contra un móvil es regalarla, dejá que se comprometan primero.",
+        "Pegate al carry en teamfight: tu trabajo contra asesinos es ser el peaje entre ellos y tu AD, no buscar flancos opuestos."
+      ],
+      "crowdControl": [
+        "Entrá después de que el CC rival se gaste: sin movilidad, un engage de frente contra Malzahar o Lissandra te congela en el lugar.",
+        "Flanqueá siempre desde el fog: tu única herramienta de llegada es caminar, así que la sorpresa es tu Flash barato.",
+        "Si la comp rival tiene supresión, esperá que la usen en tu frontliner antes de entrar a morder: ser atrapado con R en mano es tu peor escenario."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Su niebla (W) bloquea tu R y tus habilidades: nunca tires Festín contra ella adentro de la niebla, esperá que expire.",
+          "Jugale alrededor, no encima: en el 1v1 early con su Q picando perdés siempre; gankala con Q desde el brush cuando esté extendida.",
+          "Recién con 6 y su W gastada buscá el all-in: Q + W + R afuera de la niebla es mordida segura."
+        ]
+      },
+      {
+        "cid": 163,
+        "name": "Taliyah",
+        "tips": [
+          "Silenciá primero con W: sin poder responder, su combo entera se corta y el trade se convierte en mordida.",
+          "Su W te empuja hacia atrás: no te pares contra paredes ni atajos cuando buscas engage, flanqueá desde el río.",
+          "Castigala en su segundo despeje antes de items: es débil al gank temprano y tu Q + autos con E ganan el intercambio corto."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "No persigas: su velocidad de movimiento te da vueltas todo el día; cortale el camino con Q detrás y silenciala antes de que baile lejos.",
+          "Cuidado con el sueño de su R: si te marca la pasiva, movete errático hasta que la marca expire en vez de quedarte quieto.",
+          "Peleá por scuttle recién con nivel 3 y W en mano: sin silencio preparado, su movilidad la hace imposible de agarrar."
+        ]
+      },
+      {
+        "cid": 427,
+        "name": "Ivern",
+        "tips": [
+          "Invasional early: sin Daisy desplegada es un campeón sin pelea, tu Q + W + autos lo corren de su propio campamento.",
+          "Mientras Daisy esté viva, su knock-up interrumpe tu combo: enfocá al viento primero o esperá que expire antes de allinear la R.",
+          "No caces al árbol: Ivern pelea a distancia con escudos, tu value está en morder a sus carries, no en perseguirlo a él."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage de gank: Q detrás del objetivo (no donde está parado) → W al aterrizar el knock-up → autos con E activa → R cuando aparezca el marcador de ejecución",
+        "Contra móviles: W + Q casi juntos (el silencio primero para que no se escape con dash) → AA + E → R para ejecutar",
+        "Trade corto melee: W → AA → E apenas termina el auto (resetea el ataque) → Q al conectar la lentitud → AA AA",
+        "All-in nivel 6: Q → caminar a rango de E + AA → W + AA → R para el festín si el marcador aparece",
+        "Ejecución segura: esperá el marcador de la R en pantalla antes de morder; si no aparece, guardala para el objetivo o para el stack de vida"
+      ],
+      "tips": [
+        "Tirá la Q detrás del rival, no encima de él: el delay es largo y predecir su escape convierte la habilidad en free.",
+        "Balanceá la R entre peleas y stacks: cada festín en campeón o épico te hace más grande, pero no la guardes tanto que pierdas peleas por no morder.",
+        "Usá la W como silencio ofensivo, no solo por el daño: contra magos y asesinos, anular su combo vale más que cualquier número.",
+        "Pedí leash fuerte al arranque: tu clear early es lento y sin nivel 3 rápido el jungla rival invade antes de que estés listo.",
+        "Peleá en choke points y cerca de paredes: la Q acertada en pasillos decide tu pelea entera; en campo abierto sos presa fácil de kiting."
+      ],
+      "plan": {
+        "early": "Powerfarmeá hasta 6 con leash fuerte, cuidá las invasiones al scuttle y una vez con R en mano, controlá cada dragón con tu ejecución y Smite.",
+        "mid": "Buscá flancos en teamfights para morder al carry de fondo, usá la R en objetivos con Smite y sumá stacks de Festín para escalar de muro.",
+        "late": "Peleá en choke points para acertar la Q, acompañá cada pelea de objetivo neutral y con los stacks llenos jugá de peaje delantero que además ejecuta."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/chogath/guide",
+      "https://app.mobalytics.gg/lol/champions/chogath/build",
+      "https://mobalytics.gg/lol/champions/chogath/combos"
+    ]
+  }
+}

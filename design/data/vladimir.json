@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "vladimir",
+    "ddragonId": "Vladimir",
+    "name": "Vladimir",
+    "titleEs": "el Segador Carmesí",
+    "cid": 8,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.61,
+    "pr": 4.01,
+    "br": 5.66,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 21.7,
+      "jungle": 0,
+      "middle": 71.8,
+      "bottom": 6.3,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Vladimir.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Vladimir_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.13, "games": 646 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 58.05, "games": 472 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 58.01, "games": 712 },
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 57.72, "games": 965 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 57.26, "games": 833 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 57.0, "games": 2507 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 55.93, "games": 540 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.47, "games": 247 }
+  ],
+  "weakAgainst": [
+    { "cid": 96, "slug": "KogMaw", "name": "Kog'Maw", "vsWr": 44.28, "games": 201 },
+    { "cid": 90, "slug": "Malzahar", "name": "Malzahar", "vsWr": 46.02, "games": 2171 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 47.06, "games": 289 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 47.07, "games": 750 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 47.41, "games": 483 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 48.46, "games": 260 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 48.84, "games": 776 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 49.01, "games": 2081 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Escala como un monstruo: cada item le sube el daño y la curación al mismo tiempo, así que a los 25 minutos es un campeón completamente distinto al del minuto 5.",
+      "La W (Charca Sanguínea) es un intargeteable con daño: esquiva ganks enteros y le hace perder el tiempo al jungla enemigo que viene a matarlo.",
+      "Contra equipos agrupados es una carnicería: R + E en un choke point amplifican todo el daño que entra después y ganan la pelea solos.",
+      "El Q potenciado le da sustain de lane sin gastar un peso en pociones: si no lo castigás, se queda farmeando arriba indefinidamente.",
+      "La R no solo pega: aplica un debuff que hace que todo tu equipo pegue más sobre los objetivos marcados."
+    ],
+    "weaknesses": [
+      "Early malísimo: antes del primer item no tiene daño ni aguante, y cualquier campeón con presión temprana lo pasa por arriba sin contestar.",
+      "La W tiene un cooldown enorme en la fase de lane: si se la baitéas, tenés una ventana de veinte segundos para all-inearlo tranquilo.",
+      "Cero CC y cero gap closer propio: depende del Flash para llegar a la pelea y no puede frenar a nadie que se le escape.",
+      "Heridas Graves lo apagan: un Executioner's Calling o un Morellonomicon temprano le cortan la única fuente de sustain que tiene.",
+      "Farmea lento bajo torre antes de tener items: si lo empujás y lo obligás a last-hitear abajo de la torre, lo dejás sin tempo para roamear."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primer all-in real con R + E + Q potenciado; desde acá tiene kill pressure en lane y puede pelear el trade completo.",
+      "Primer item completo: el salto de daño y de supervivencia es abrupto y empieza a ganar trades que antes perdía caminando.",
+      "Nivel 9 con la Q maxeada: cooldown bajísimo y curación alta, cualquier trade corto lo gana por attrition aunque vaya perdiendo el intercambio inicial.",
+      "Dos o tres items con R en nivel 11 o 16: el amplificador de daño crece y las teamfights en choke points se vuelven suyas de principio a fin."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Ziggs, Zoe: castigalo desde fuera del alcance de su Q desde el nivel 1 y no le regales ni un last hit gratis.",
+        "Pegale cada vez que baje a last-hitear: su early no aguanta trades largos y sin vida no puede usar el Q potenciado para recuperarse.",
+        "No te pares en línea recta frente a la wave: su E es un cono que carga, si te movés lateral el trade lo ganás vos sin gastar nada."
+      ],
+      "tanks": [
+        "Comprá anti-heal antes que daño: contra Vladimir un Morellonomicon o un Thornmail temprano valen más que cualquier item de burst.",
+        "Guardá el CC para la W: forzarlo a usar la charca sin escape lo deja parado en medio de la lane veinte segundos sin nada que apretar.",
+        "Empujá y jugá con tu jungla: sin movilidad, un gank con CC encadenado lo mata antes de que llegue a su torre."
+      ],
+      "assassins": [
+        "Naafiri, Qiyana, Talon: metele todo el daño antes de que junte items; su early es tan débil que un all-in al 3 o al 4 lo manda a base.",
+        "Baitéale la W y volvé: si la gastó para esquivar tu primer combo, el segundo entra limpio y no tiene absolutamente nada para safar.",
+        "No lo persigas con vida baja dentro de su wave: el Q potenciado cura más de lo que le pegás; mejor reseteá y volvé con anti-heal."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre el arranque de la W: si lo agarran entrando a la charca, no puede salir y pierde el turno completo.",
+        "Malzahar y Anivia son pesadilla: la supresión y el muro le cortan la única salida y lo dejan quieto justo donde no quiere estar.",
+        "Reservá el CC para cuando entre flanqueando con R: interrumpirle la Hemoplaga mata su teamfight antes de que empiece."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 96,
+        "name": "Kog'Maw",
+        "tips": [
+          "Pegale desde tu rango real, muy por encima del alcance de su Q: si no puede acercarse, no puede curarse ni cargar el E.",
+          "Comprá Heridas Graves en el primer back: tu daño es sostenido y él vive de curarse, así que el anti-heal te gana el lane solo.",
+          "No te quedes en línea recta con la wave: su E cargado pega en cono y te come media vida si te agarra parado farmeando."
+        ]
+      },
+      {
+        "cid": 90,
+        "name": "Malzahar",
+        "tips": [
+          "Empujá con Visiones Maléficas y Q desde el nivel 1: si lo encerrás bajo torre, su farmeo lento lo deja sin tempo para escalar.",
+          "Guardá la R para cuando esté fuera de la W: la supresión corta su única salida y lo mata el equipo entero mientras está quieto.",
+          "Sostené la wave empujada y no aceptes trades largos: tu daño por minion y tu escudo pasivo lo obligan a pelear en desventaja."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "All-in al 3 o al 4: su early no tiene daño ni aguante, y si le pegás antes del primer item lo mandás a base sin contestar.",
+          "Baitéale la W con un amague y volvé con el pack: si gastó la charca, el segundo salto entra limpio y no tiene escape.",
+          "Comprá anti-heal temprano: sin la curación del Q potenciado, su sustain de lane desaparece y tus trades cortos ganan siempre."
+        ]
+      },
+      {
+        "cid": 34,
+        "name": "Anivia",
+        "tips": [
+          "Zonéalo con R y cortale la retirada con el muro: no tiene movilidad, así que cada pared que le ponés es una muerte o un Flash quemado.",
+          "Guardá el Q congelante para el arranque de la W: si lo stuneás entrando a la charca, no puede salir y pierde la pelea completa.",
+          "Jugá el lane largo y escalá: tu wave clear lo encierra bajo torre y tu R le niega el farmeo cuerpo a cuerpo que necesita."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: E cargada al máximo → Q potenciado encima del rival → caminar atrás; el E pega más si lo soltás con la carga completa",
+        "Trade con escape pre-6: E → Q → W para esquivar el daño de vuelta mientras te curás con el Q potenciado",
+        "All-in corto: Q → R (Hemoplaga) → E → W; la R amplifica todo el daño que entra después, así que tirala siempre primero",
+        "Pick de teamfight: E cargada → Flash → R sobre el grupo → Q al más blando → W para reposicionarte mientras el equipo remata",
+        "One-shot late: E cargada → R → Q → AA → W para salir del foco después de borrar al carry enemigo"
+      ],
+      "tips": [
+        "No uses la W para farmear ni para pokear: es tu única salida y en lane tiene un cooldown que te deja muerto si el rival te la baitéa.",
+        "Guardá el Q potenciado para el trade, no para la wave: la curación es tu sustain y perderla en un minion es regalar el lane gratis.",
+        "Farmeá con Q y E desde lejos y no pelees antes del primer item: tu early es de los peores del juego y no hay outplay que lo arregle.",
+        "Empujá la wave antes de roamear: sin movilidad ni wave clear instantáneo, si te vas con la lane armada perdés el tempo y la torre.",
+        "Contra equipos con anti-heal adelantá el Zhonya's: si te cortan la curación necesitás sobrevivir el burst con la stasis, no con el sustain."
+      ],
+      "plan": {
+        "early": "Sobreviví y farmeá: Q y E desde rango, cero trades largos, la W solo para safar de ganks; el objetivo es llegar al primer item sin regalar muertes.",
+        "mid": "Empujá tu lane y rotateá a farmear las laterales, buscá picks con R + E sobre enemigos fuera de posición y peleá en choke points donde la R pegue a varios.",
+        "late": "Flanqueá antes de la pelea, tirá la R cuando el enemigo se agrupe, entrá con Zhonya's después del burst y quedate pegado al foco de tu equipo curándote con Q y E."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/vladimir/guide",
+      "https://mobalytics.gg/lol/champions/vladimir/counters",
+      "https://mobalytics.gg/lol/champions/vladimir/combos"
+    ]
+  }
+}

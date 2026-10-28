@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "maokai",
+    "ddragonId": "Maokai",
+    "name": "Maokai",
+    "titleEs": "el Treant Retorcido",
+    "cid": 57,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.82,
+    "pr": 1.74,
+    "br": 0.21,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 14.6,
+      "jungle": 17.9,
+      "middle": 0.6,
+      "bottom": 0.1,
+      "support": 66.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Maokai.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Maokai_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 58.57, "games": 350 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.4, "games": 287 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 55.16, "games": 252 },
+    { "cid": 555, "slug": "Pyke", "name": "Pyke", "vsWr": 54.93, "games": 679 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 54.74, "games": 464 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 54.73, "games": 349 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 54.35, "games": 230 },
+    { "cid": 117, "slug": "Lulu", "name": "Lulu", "vsWr": 53.79, "games": 805 }
+  ],
+  "weakAgainst": [
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 44.59, "games": 462 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 45.63, "games": 263 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 45.96, "games": 235 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 47.09, "games": 395 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 47.31, "games": 465 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 48.01, "games": 1233 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 48.29, "games": 731 },
+    { "cid": 43, "slug": "Karma", "name": "Karma", "vsWr": 49.32, "games": 444 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El W es un root point-and-click: si estás en rango de engage, te agarra sí o sí; no hay side-step posible, solo distancia.",
+      "La pasiva lo cura en peleas largas y acelera cuando le pegan con spells: los trades de desgaste prolongados los gana él sin volver a base.",
+      "La Q tiene hitbox de ambos lados: te empuja hacia su ADC o te aparta del tuyo, y en el engage el knockback encadena con el root del W.",
+      "La R avanza cubriendo toda una calle: en chokes y fights agrupadas es un engage de área que roota a varios a la vez.",
+      "Los saplings en arbustos pegan más, ralentizan y dan visión: controla los arbustos de bot sin gastar ward."
+    ],
+    "weaknesses": [
+      "El W lo lleva metido adentro del engage: cuando engancha, queda parado en rango de todo tu equipo; castigá con daño inmediato o se va gratis.",
+      "Sin W no tiene ninguna forma de llegar: su único gap closer es el root; esperá que lo gaste y movete un paso atrás durante el cooldown.",
+      "Depende del follow-up de su ADC: si engancha solo o su carry está lejos, el root se convierte en su sentencia.",
+      "Es lento y sin movilidad en roam: avisá con pings cuando desaparezca del mapa, no lo alcanza ni el bus.",
+      "Contra burst seca la pasiva de un golpe: la regeneración no salva de una combo que lo baja de golpe antes de que cure."
+    ],
+    "powerSpikes": [
+      "Level 2: W + Q con tu ADC pegado es un all-in que fuerza Flash o summon; no te pares a farmear cerca sin los escapes listos.",
+      "Level 6: la R agrega la pared de roots al engage; si caminás agrupado con tu support en un choke, la combo entera te entra.",
+      "Primer item de soporte resuelto: con Aftershock y el item activado, cada W que entra le regala resistencias gratis al encuentro.",
+      "Mid game con Flash en mano: Flash + W sobre tu carry define la pelea entera; cuidá la posición cuando está con summon disponible."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Zyra, Vel'Koz: pegale mientras camina hacia tu rango de W; su engage requiere acercarse y cada paso le cuesta vida.",
+        "Respetá los arbustos: los saplings ahí pegan más y ralentizan; no te pares adentro para farmear si no sabés dónde están.",
+        "Guardá tu escape para el W, no para el poke: el root es lo único que te mata; el desgaste lo podés curar o sostener."
+      ],
+      "tanks": [
+        "No entres a guerras de desgaste largo: su pasiva lo cura cada vez más seguido cuando le pegan con spells; ganá con burst o no pelee.",
+        "Si sos tanque engage (Leona, Nautilus), intercambien engages: el que engancha primero al carry gana, pero él roota point-and-click; posicionate detrás de minions no sirve, usá distancia.",
+        "Cuando él peelée con Q + W a tu diver, retirate: quedarte pegado a un carry protegido por dos roots es regalar la kill."
+      ],
+      "assassins": [
+        "El W point-and-click es el anti-asesino por excelencia: esperá que lo gaste en el engage antes de tirarte al carry, no antes.",
+        "Entrá en el ciclo de cooldown: W usado y fallado significa seis segundos de Maokai descalzo que no puede salvarte de nada.",
+        "Flanqueá desde donde no haya arbustos con sapling: la E te da visión y slow antes de llegar; usá rutas limpias."
+      ],
+      "crowdControl": [
+        "Morgana anula su engage completo: el Escudo Oscuro sobre el carry come el W point-and-click y deja a Maokai parado en medio de tu lane.",
+        "Braum le gana la línea: la E bloquea saplings y la pared de la R, y su pasiva castiga cada segundo que Maokai pasa pegado en melee.",
+        "Reservá tu CC para después de que use el W: si lo rootás o knockupeás mientras camina de vuelta, muere sin haber logrado nada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Tu E (Inquebrantable) se come los saplings y la pared de la R: levantala en la línea del engage y Maokai pierde el daño de la ulti y el poke de los arbustos.",
+          "Guardá el W para saltar al carry apenas veas el root de Maokai: deshacé su engage y tu pasiva de stun lo castiga por quedarse en melee.",
+          "Los trades largos son tuyos: cada auto tuyo carga el stun y Maokai vive pegado; si tu ADC sigue el stun, cada engage suyo termina en kill para vos."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Maokai tiene que caminar hasta rango de W: castigá cada paso con Q y W; su engage le va a salir más caro de vida de lo que gana con el root.",
+          "Guardá la E knockup para cuando se tire: interrumpilo entre el root del W y la Q, y queda parado sin combo ni escape.",
+          "Tu daño verdadero atraviesa su tanqueo: no le temas al trade largo; cada rotación completa tuya le saca más vida de la que su pasiva le cura."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Sembrá plantas en el camino del engage: un champ que tiene que caminar hacia vos pierde media vida antes de llegar a rango de W.",
+          "Tu E root supera el rango de su W: si avanza para enganchar, rootéalo primero y tu ADC lo borra antes de que la Q le entre.",
+          "No sigas el engage si usó el W: retrocedé un paso y dejalo solo en medio de tus plantas; su root sin follow-up es un suicide lento."
+        ]
+      },
+      {
+        "cid": 25,
+        "name": "Morgana",
+        "tips": [
+          "El Escudo Oscuro anula su W point-and-click: sin root, Maokai no tiene engage y queda parado en el medio de tu lane comiendo poke.",
+          "Guardá tu Q para cuando esté pegado a tu carry: un champ sin movilidad rooteado es un champ muerto, y él no tiene dash para escapar.",
+          "Usá el charco (W) sobre los arbustos que quiere controlar: le negás los saplings potenciados y el espacio donde su E pega más fuerte."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E al arbusto → W al target → AA al llegar → Q hacia tu sapling (el knockback lo empuja contra el slow) → AA",
+        "Engage con Flash: Flash + W instantáneo → E → Q al target → R encima → AAs mientras el root sostiene",
+        "All-in extendido: R primero → Flash para entrar en rango → W → E → Q hacia la pared de la R para maximizar la duración total del root",
+        "Peel de carry: Q al diver encima de tu ADC (el knockback lo aparta) → W point-and-click sobre él → AAs retrocediendo",
+        "Trade rápido de media distancia: W → Q apenas llegás → AA y caminá atrás con el root corriendo"
+      ],
+      "tips": [
+        "Mirá la posición de tu ADC antes de tirar el W: si no puede seguirte, tu engage es un suicidio con root incluido.",
+        "Usá la E en los arbustos: ahí los saplings pegan más, ralentizan y te dan visión gratis para roams y flancos.",
+        "La Q tiene hitbox detrás tuyo también: usala para empujar al carry enemigo hacia tu equipo o apartar al que busca a tu ADC.",
+        "Después de enganchar con la R, volvé atrás y peelé: tu trabajo post-engage es que el ADC sobreviva, no morir parado en el medio.",
+        "La pasiva cura más rápido cuando te pegan con spells: buscá los trades largos; si el rival juega a burst corto, la pasiva no te alcanza."
+      ],
+      "plan": {
+        "early": "Buscá el all-in de level 2 con W + Q pegado a tu ADC, sembrá saplings en los arbustos para poke y visión, y sostené trades largos cuando la pasiva esté lista.",
+        "mid": "Roameá con la E sembrando visión por el mapa, enganchá teamfights con la R por los chokes y usá Flash + W sobre el carry enemigo cuando esté mal posicionado.",
+        "late": "Tu trabajo es peel: W point-and-click al diver que toca tu carry, Q para apartar al resto y guardá la R para desengancharte o abrir peleas desde la niebla."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/maokai/build",
+      "https://mobalytics.gg/lol/champions/maokai/combos"
+    ]
+  }
+}

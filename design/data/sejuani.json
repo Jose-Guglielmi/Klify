@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "sejuani",
+    "ddragonId": "Sejuani",
+    "name": "Sejuani",
+    "titleEs": "la Furia del Norte",
+    "cid": 113,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.73,
+    "pr": 2.37,
+    "br": 0.3,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 9.3,
+      "jungle": 86.5,
+      "middle": 1.4,
+      "bottom": 0.1,
+      "support": 2.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Sejuani.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Sejuani_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 61.48, "games": 501 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 59.52, "games": 1129 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 57.78, "games": 379 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 57.69, "games": 234 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 57.54, "games": 782 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 56.6, "games": 841 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 55.75, "games": 1347 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 55.71, "games": 219 }
+  ],
+  "weakAgainst": [
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 45.4, "games": 315 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 47.06, "games": 204 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 47.26, "games": 1240 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 47.91, "games": 885 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 48.52, "games": 608 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 49.08, "games": 379 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 49.27, "games": 550 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 49.3, "games": 428 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El clear de jungla es AoE y sano: la armadura de escarcha de la pasiva tanquea los camps por vos y llegás entera al primer objetivo.",
+      "Lockdown por todos lados: jaula a distancia con la R, dash con Q y stun de la E; servís como engage o como follow-up según lo que pida el equipo.",
+      "La pasiva te convierte en frontline pesado: aguantás daño sin caer y el peel para tus carries es de lo mejor del rol.",
+      "Control de objetivos élite: el daño extra de la E contra monstruos y la R te ganan los Smite fights si la usás en el momento justo."
+    ],
+    "weaknesses": [
+      "Early game sos squishy con la pasiva baja: se pierde fácil en un camp o trade y sin ella te derritís antes de tiempo.",
+      "Sin la R, la combo W-E es kitable: cualquier dash o velocidad de movimiento se camina tu stun y quedás gastada en medio de la lane.",
+      "Pre-6 no tenés ganks confiables: la jungla agresiva temprano entra a tus camps y te deja fuera de tiempo antes de que escales.",
+      "Tu plan entero pasa por la R: sin jaula en mano sos un tanque sin amenaza y el rival grouppea sin miedo.",
+      "Daño propio escaso: si tu equipo no sigue el engage, no ganás la pelea por más perfecta que haya sido la entrada."
+    ],
+    "powerSpikes": [
+      "Level 6: Glacial Prison desbloquea los ganks reales; hasta ahí jugá alrededor de lanes con CC propio.",
+      "Primer item resuelto: la tanquez se dispara y el daño sostenido cerca de enemigos empieza a doler de verdad.",
+      "Mid game (15-25 min): picos de tanquez máximos; es tu ventana para picks sobre carries y para asegurar cada dragón.",
+      "Puntos extra en la R (11 y 16): el cooldown de la jaula baja tanto que la tenés disponible en casi cada pelea; asumí que hay CC en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Carries de rango como Ashe o Varus: no camines derecho hacia ellos; flankeá desde bush sin visión o esperá que tu equipo force el react.",
+        "La W a distancia y la Q cruzan el espacio entre vos y el tirador: entrá recién cuando gastó el dash o el guardian angel de movilidad.",
+        "Si te kitan la combo entera, guardá la R para peel del tuyo: usar la jaula para acercarte a un ADC móvil es regalarla."
+      ],
+      "tanks": [
+        "No duelées 1v1 a tanques que escalan: tu daño es de facilitadora, no de asesina; jugá alrededor de tu carry y dejá que ellos muerdan.",
+        "La pasiva castiga al que te pega encima: parate en medio del tanque enemigo y su frontline se derrite más lento que el tuyo.",
+        "En dragón y Barón, lanzá la E al monstruo: el daño extra de Permafrost contra objetivos épicos inclina el Smite fight a tu favor."
+      ],
+      "assassins": [
+        "Zed, Qiyana y Rengar caen antes tu CC que tu daño: quedate pegada al carry y el stun de la E los intercepta en el arranque.",
+        "Guardá la Q para seguir el dash del asesino, no para abrir: entrar primero contra un squishy móvil es perderla.",
+        "Tu R como counter-engage mata el all-in del asesino: apenas lo veás saltar, jaula sobre tu backline y la pelea se invierte."
+      ],
+      "crowdControl": [
+        "Entrá después del CC enemigo, no antes: si Amumu o Rammus gastaron la engage, tu jaula encuentra a todos parados en el mismo lugar.",
+        "Esperá los desengages clave (Gragas R, Camille E) antes de tirar la jaula: una R esquivada es cuarenta segundos de equipo sin plan.",
+        "Contra comps de CCchain, quedate de segunda línea: que el otro tanque coma el primer paquete y vos entrás con follow-up limpio."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 48,
+        "name": "Trundle",
+        "tips": [
+          "Invadila pre-6: sin R no tiene CC confiable ni duelo, y robarle camps temprano te gana el juego entero antes de que escale.",
+          "Pegale con la pillar cuando arranque la engage: cortarle el camino al carry mata su combo completa.",
+          "Tu R (Subjugate) la derrite: robale las resistencias en plena teamfight y el frontline se te rinde en segundos."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Guardá la niebla (W) para el arranque del engage: afuera de ella la jaula te agarra igual, así que abrila recién cuando la vea venir.",
+          "El true damage de tu Q atraviesa su tanquez de pasiva: pegale cuando la armadura de escarcha esté gastada o recién perdida.",
+          "Escalá por encima del trade temprano: Sejuani necesita jugar antes de que tu late sea imparable; farmeá tranquila y dejá que se desespere."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Kiteá la combo W-E sin piedad: si nunca la dejás cerrar distancia, cada engage de Sejuani termina en nada.",
+          "Tu E y la velocidad de movimiento rodean su engage lineal: movete en diagonal y su Q jamás te encuentra.",
+          "El sueño (pasiva) castiga al que entra primero: marcá sus stacks en la teamfight y dormí a la jauría entera cuando se tire."
+        ]
+      },
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "Ganás la carrera de clear: pasate sus camps de lado opuesto y obligá a responder en tu timing, no en el de ella.",
+          "Farmeá hacia tu dragon form: pre-transformación no duelées, pero con la R en mano su engage encontra un muro que escupe fuego.",
+          "En objetivos épicos entrá después de su E: dejar que gaste Permafrost en el dragón te deja el Smite fight servido."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage estándar: Q → AA → W → AA ×2 → E (stun con stacks) → AA → R → AA",
+        "Engage largo escondido: Q → R a mitad del dash → W apenas aterrizás (el rival no ve la animación de la jaula hasta que ya está encima)",
+        "Pick a máxima distancia: R → Flash → Q → W → AA (jaula desde fuera de visión y entrada instantánea sin ventana de reacción)",
+        "Stun con stacks ya puestos: E → Q instantáneo → AA → R → AA → W (cuando el objetivo ya tiene escarcha, el stun es inmediato)",
+        "Teamfight frontal: R al carry agrupado → W sobre el pack → Q de follow-up al que escape → quedáte pegando con la pasiva activa"
+      ],
+      "tips": [
+        "Cuidá la pasiva como oro: sin armadura de escarcha sos squishy y tu clear se vuelve lento; si la perdés, recuperalá antes de pelearte o de hacer un camp élite.",
+        "No gankees pre-6 sin CC del lane: tu único engage es la Q y cualquier dash la esquiva; farmeá rumbo a 6 en vez de forzar jugadas perdedoras.",
+        "La E la lanzás recién con stacks de escarcha en el objetivo: aplicá primero con AA, W o Q; el stun a secas no existe.",
+        "Jugá alrededor de la R: con jaula en mano buscá la pelea, sin ella demorala con pings; tu valor late entero depende de ese cooldown.",
+        "En dragón y Barón, tirale la E al monstruo: el daño extra de Permafrost contra objetivos épicos te gana los Smite fights casi solos."
+      ],
+      "plan": {
+        "early": "Farmeá tu clear completo y sano con la pasiva, llegá a 6 lo más rápido posible y con la R en mano buscá el primer gank o el primer dragón con tu equipo.",
+        "mid": "Asegurá cada dragón rumbo al alma, buscate picks con la R por flancos sin visión y seguí farmeando camps para no quedar atrás mientras tanqueás el frontline.",
+        "late": "Flankeá desde bush sin visión, entrá con R al backline y después del engage volvé a peel para tus carries; no pelees nunca con la jaula en cooldown."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/sejuani/build",
+      "https://mobalytics.gg/lol/champions/sejuani/guide",
+      "https://mobalytics.gg/lol/champions/sejuani/combos"
+    ]
+  }
+}

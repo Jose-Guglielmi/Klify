@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "syndra",
+    "ddragonId": "Syndra",
+    "name": "Syndra",
+    "titleEs": "la Soberana Oscura",
+    "cid": 134,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.17,
+    "pr": 7.33,
+    "br": 6.95,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.7,
+      "jungle": 0,
+      "middle": 87.3,
+      "bottom": 8.6,
+      "support": 2.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Syndra.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Syndra_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 62.89, "games": 256 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 62.81, "games": 320 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 59.75, "games": 1441 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 57.97, "games": 207 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 56.85, "games": 336 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.92, "games": 1452 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 55.46, "games": 1327 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 55.37, "games": 298 }
+  ],
+  "weakAgainst": [
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 45.05, "games": 202 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 45.58, "games": 3640 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 46.15, "games": 4052 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.57, "games": 3277 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 47.61, "games": 920 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 48.1, "games": 3455 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 48.1, "games": 3397 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 48.19, "games": 4044 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El stun de Dispersar a los Débiles no pide puntería: empujás la esfera con la E y el aturdimiento entra en área, así que puede iniciar desde fuera del alcance de casi cualquier mid.",
+      "El rango de la Esfera Oscura le deja farmear y castigar sin acercarse: controla la wave desde el borde de su rango, que es más largo que el de la mayoría de los magos.",
+      "Poder Desatado escala con la cantidad de esferas en el piso: con tres o cuatro armadas antes de la pelea, borra a cualquier squishy de un solo cast.",
+      "La Trascendencia le da ejecución real: los Fragmentos de Ira convierten a la R en un remate que antes no tenía, y los kills que se le escapaban a un tercio de vida ahora entran.",
+      "La E sirve para las dos cosas: con la mejora de la pasiva amplía el cono y ralentiza, así que peela igual de bien de lo que abre una teamfight."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, depende del Flash y de la E para zafar; si la E está en cooldown, un gank es kill casi garantizada.",
+      "La E es a la vez su stun, su peel y su herramienta de wave clear: si la gasta en los minions, queda descalza durante quince segundos y todo el mundo lo sabe.",
+      "Vida y resistencias bajísimas: cualquier burst de asesino la mata antes de que termine de armar la combo, no hay margen para un segundo intento.",
+      "Dependencia de maná temprano: el costo de la Q sube con cada rango y spamearla la deja sin pool justo cuando quiere pelear.",
+      "Necesita preparar esferas antes de pelear: una Syndra que llega a la teamfight sin esferas tiradas pega una fracción de lo que pega con tres armadas."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la primera Poder Desatado con dos o tres esferas ya mata a un mago a media vida; no te pares en rango de la E sin contar esferas.",
+      "Nivel 9 con la Q al máximo: la wave se borra con dos casts y empieza a moverse por el mapa sin perder farm.",
+      "Primer item de burst más penetración: la R deja de necesitar tres esferas para matar; asumí execute desde el 60% de vida.",
+      "Upgrade de la R por Fragmentos de Ira: la ejecución cambia los trades por completo, no le regales un all-in con la R en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz y Hwei le ganan por rango puro: pegale desde afuera del alcance de la Q y no dejes que la esfera te toque al farmear.",
+        "Movete en diagonal todo el tiempo: toda su combo depende de predecir dónde vas a estar, y un target que cambia de dirección no recibe el stun de la E.",
+        "Empujá la wave desde lejos: si la obligás a gastar Q en los minions, se queda sin maná y sin esferas para armarte la trampa."
+      ],
+      "tanks": [
+        "Comprá resistencia mágica temprano: todo su daño es mágico y sin penetración la R deja de ejecutar con comodidad.",
+        "Mercury's Treads o cualquier reducción de CC rinde el doble acá: el stun de la E es el que arranca la combo entera, si no entra no hay daño.",
+        "Caminá hacia ella cuando la E esté gastada: sin peel no tiene forma de mantenerte lejos y su DPS sostenido es flojo."
+      ],
+      "assassins": [
+        "Fizz, Katarina, Ekko y LeBlanc la castigan en el hueco: esperá a que tire la E para empujar la wave y entrá justo ahí, sin stun no tiene respuesta.",
+        "No entres en línea recta: la E te empuja y te stunea contra la esfera si venís de frente, así que flanqueá o entrá después del stun.",
+        "Forzá el all-in cuando la R ya se usó: su daño queda en Q y W y no alcanza para matar a nadie con vida completa."
+      ],
+      "crowdControl": [
+        "Encadená CC antes de que prepare las esferas: sin tres tiradas en el piso la R pega la mitad y la pelea cambia de dueño.",
+        "Interrumpí la animación de la R con cualquier stun o supresión: es un cast largo y la deja clavada en el lugar.",
+        "Guardá un slow o un root para cuando quiera kitearte: si no puede mantener la distancia, su rango no le sirve de nada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 92,
+        "name": "Riven",
+        "tips": [
+          "Con los tres Qs te llega encima antes de que puedas empujar la esfera: guardá la E para el tercer Q y stuneala en el aire.",
+          "No tradees mientras tenga el escudo: esperá a que gaste la E en la wave y recién ahí tirá Q + E.",
+          "Armá Zhonya's apenas puedas: su all-in con R te mata en un solo combo y la activa te devuelve la ventana para tu propia R."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "No la dejes pegarse: su daño depende de estar cerca y la E es tu único botón que la saca, guardala para el salto y nunca para farmear.",
+          "Pisá las dagas antes que ella cuando puedas: si le negás las dagas, su burst baja a la mitad y el trade se vuelve tuyo.",
+          "Cuando arranque la R, empujala con E o caminá afuera del círculo: sin la ulti completa pierde el all-in y queda parada en tu rango."
+        ]
+      },
+      {
+        "cid": 105,
+        "name": "Fizz",
+        "tips": [
+          "Su E lo hace intocable justo cuando querés stunear: esperá a que caiga del salto y ahí tirá Q + E, nunca antes.",
+          "No te pares sobre la wave: su Q lo lleva directo a través del minion y te llega sin gastar movilidad.",
+          "Desde el nivel 6 viví con Flash y Zhonya's disponibles: su R más combo te mata desde vida completa si te agarra parada."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Su escudo y su R le dan dos salidas: forzá el trade cuando el escudo esté en cooldown y no gastes la tuya antes de ver la ulti.",
+          "No pelees en pasillos: con la E te entra pegado y tu stun es mucho más difícil de conectar en espacio corto.",
+          "Empujá la wave y jugá desde tu torre: su roam es mejor que el tuyo y no querés que te matchee el movimiento por el mapa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: Q al piso → E sobre la esfera para aturdir → W sobre esa misma esfera para el slow y el daño extra mientras el rival sigue stuneado",
+        "All-in nivel 6: Q → E para el stun → R encima del objetivo → W sobre la esfera del piso → Q de nuevo si quedó vivo",
+        "Poke seguro: Q sobre el rival → W para levantar esa esfera y tirarla al mismo objetivo; la E se guarda y solo se usa si te contestan",
+        "Teamfight: dejá dos o tres Q tiradas antes del engage → W sobre la esfera más cercana al carry → E amplio cuando el equipo enemigo se agrupa",
+        "Peel de emergencia: E sobre una esfera que dejaste detrás tuyo para aturdir al que te persigue y salir caminando"
+      ],
+      "tips": [
+        "Nunca uses la E para farmear: es tu stun, tu peel y tu wave clear de emergencia, y esos quince segundos sin ella son una muerte gratis.",
+        "Guardá siempre una carga de Q en el bolsillo: la pasiva te da una extra y esa reserva es la que arma la combo de la teamfight.",
+        "Levantá con W una esfera que ya está tirada en vez de castear una nueva: pegás lo mismo y el maná te dura el doble.",
+        "Farmeá con Q desde el borde del rango y reservá la W para las esferas: si gastás las dos en la wave no te queda nada para tradear.",
+        "Con R en mano esperá a que el rival baje a farmear: la ejecución de la pasiva convierte el 40% de vida en kill sin necesidad de all-in."
+      ],
+      "plan": {
+        "early": "Farmeá con Q desde el borde del rango, guardá la E para el gank y buscá el trade recién al 6 con dos esferas tiradas antes de castear la R.",
+        "mid": "Borrá la wave con dos Q, armá tres esferas antes de cada pelea y movete a las lanes lateral con la E disponible para el pick.",
+        "late": "Jugá desde atrás del equipo con tres esferas armadas, stuneá con E al que se acerque y rematá con la R a los que bajen del 40%."
+      }
+    },
+    "sources": [
+      "https://www.leagueoflegends.com/en-us/champions/syndra/",
+      "https://op.gg/lol/champions/syndra/build",
+      "https://mobalytics.gg/lol/champions/syndra/guide"
+    ]
+  }
+}

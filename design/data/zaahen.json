@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "slug": "zaahen",
+    "ddragonId": "Zaahen",
+    "name": "Zaahen",
+    "titleEs": "El Incorrupto",
+    "cid": 904,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.03,
+    "pr": 2.56,
+    "br": 1.2,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 85.2,
+      "jungle": 11.9,
+      "middle": 1.7,
+      "bottom": 0.3,
+      "support": 0.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Zaahen.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zaahen_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zaahen_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 58.85, "games": 955 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 55.63, "games": 710 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 54.41, "games": 522 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 54.11, "games": 207 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 53.93, "games": 751 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 53.56, "games": 590 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 53.34, "games": 583 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 53.16, "games": 459 }
+  ],
+  "weakAgainst": [
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 42.68, "games": 246 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 45.57, "games": 305 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.04, "games": 454 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 46.04, "games": 632 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 46.44, "games": 1251 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 47.78, "games": 902 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 47.79, "games": 226 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 48.06, "games": 387 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Nivel 1 es de los más fuertes de la grieta: la Q (corte doble que además lo cura) le permite ganar cualquier trade corto antes de que el rival tenga su kit completo.",
+      "El all-in encadenado E → Q → Q recast → W es casi inescapable: el segundo cast de la Q lanza al aire y la W arrastra de vuelta al que intenta caminar afuera.",
+      "Su pasiva (Determinación) le da daño de ataque extra por acumulación y, llena, le permite revivir: cada pelea larga lo potencia en vez de desgastarlo.",
+      "Es un split pusher de primera: con Q y E empuja rápido, se cura solo y en el duelo 1v1 le gana a casi cualquier cosa que no sea un duelista puro.",
+      "La R lo cura por un porcentaje del daño infligido: en peleas de 2v2 o 3v3 puede entrar a media vida y salir entero."
+    ],
+    "weaknesses": [
+      "Le cuesta muchísimo cerrar la distancia contra campeones de rango largo con herramientas de disengage: si no puede entrar, no existe.",
+      "Las acumulaciones de la pasiva se drenan con el tiempo: si lo obligás a no pelear, pierde el daño extra y el revive antes de la siguiente pelea.",
+      "El revive no es garantizado: necesita la pasiva llena y condiciones de pelea; no lo juegues como si fuera una segunda vida asegurada.",
+      "Su escape es la misma E que usa para entrar: si la gasta en engage y el trade sale mal, queda parado en medio de la lane sin salida.",
+      "Depende de la Q recast para el control: si esquiva o bloquea el segundo cast, se queda sin la parte que lo hace peligroso."
+    ],
+    "powerSpikes": [
+      "Nivel 1: la Q con la pasiva temprana le da un trade que casi nadie iguala; no te pares cerca de la wave al arranque.",
+      "Nivel 6: la R suma daño, curación y una entrada desde fuera de rango; ahí empiezan los dives y los all-in reales.",
+      "Primer item completo: su presión de kill se dispara; si ya estás atrás, el lane se vuelve una cuenta regresiva.",
+      "Nivel 13: dos puntos en R y dos habilidades maxeadas a la vez; es probablemente su pico más fuerte de la partida.",
+      "Nivel 16 con la R al máximo: utilidad tope del ultimate, pero solo si consigue flanquear y llegar al backline."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Heimerdinger, Kennen, Vayne: pegale desde afuera del alcance de su E y cada vez que camine a last hitear cobrale medio pool; nunca lo dejes tradearte gratis.",
+        "Mantené la wave cerca de tu lado: el rango solo sirve si él tiene que caminar hacia vos para farmear, no si lo esperás en su torre.",
+        "Castigalo cuando gasta la Q en la wave: sin el corte doble ni el lanzamiento al aire, es un melee sin herramienta de trade por varios segundos."
+      ],
+      "tanks": [
+        "Malphite, Shen, Illaoi: armadura temprana antes de que parezca necesaria; su daño está calibrado contra el que no la tiene.",
+        "Trades cortos y salida limpia: en peleas largas él stackea Determinación y te gana por acumulación, no por burst.",
+        "No le regales el segundo cast de la Q: si ves el animation del primero, caminá atrás y obligalo a gastar el recast en el aire."
+      ],
+      "assassins": [
+        "Fiora, Wukong, Riven: no te enrosques en trades de más de dos autos, su sustain con Q y R premia la pelea larga.",
+        "Guardá tu dash o tu escape para después de su E, no para entrar: si entra y no tiene E de vuelta, ahí es cuando lo matás.",
+        "Punzalo cuando la pasiva está vacía: sin acumulaciones es un fighter común, sin daño extra ni revive."
+      ],
+      "crowdControl": [
+        "Encadená CC durante el arranque de su E: interrumpirle la entrada mata el all-in completo antes de que llegue la Q.",
+        "Kiteá con slows y stuns en lugar de pelear de frente: cada segundo que no lo deja pegar es un segundo que no stackea.",
+        "Reservá el CC duro para cuando tenga la pasiva llena: ahí es cuando quiere pelear, y negarle esa pelea es la mitad del trabajo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "Q y torretas entre vos y él: si tiene que caminar a través de ellas para tradearte, el all-in le sale carísimo.",
+          "Quedate a rango de tus torretas y farmeá desde ahí; su E no llega y su Q recast no tiene a quién tirar al aire.",
+          "Cuando gaste la E para entrar, kiteá hacia tus torretas: sin escape queda parado en medio de tu zona de daño."
+        ]
+      },
+      {
+        "cid": 85,
+        "name": "Kennen",
+        "tips": [
+          "Pokealo con Q desde fuera de su rango y no aceptes el melee: su kit entero depende de llegar a pegarte autos.",
+          "Guardá la E para cuando camine hacia vos: un stun en el arranque del engage le corta la Q recast y el all-in se cae solo.",
+          "Mantené la wave cerca de tu torre y empujá solo con visión: si lo encerrás, te va a buscar con R y no tiene escape."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "No lo persigas: su juego es que gastes la E y la Q recast corriendo detrás del humo, y ahí te da vuelta el trade.",
+          "Empujá y obligalo a farmear bajo torre: su early es débil contra presión constante de wave.",
+          "Cuando se acerque a flingear, kiteá hacia atrás y castigalo con Q a rango: su daño sostenido no le gana a tu rango."
+        ]
+      },
+      {
+        "cid": 420,
+        "name": "Illaoi",
+        "tips": [
+          "Esquivá la E: si te saca el alma, el trade lo gana ella por daño multiplicado, no por stats.",
+          "No pelees dentro de su R: caminá afuera del área y volvé cuando se le vaya; ahí queda sin amenaza real.",
+          "Armadura y trades cortos: su sustain premia la pelea larga exactamente igual que a vos, así que acortá el intercambio."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q (corte doble que cura) → auto → retrocedé; si te sigue, Q recast para lanzarlo al aire y cerrar el trade sin recibir daño",
+        "All-in completo: E encima del objetivo → Q → Q recast (aire) → W para arrastrarlo si intenta salir → R de remate que te cura por el daño",
+        "Engage de teamfight por flanco: R desde fuera de pantalla → W para juntar al grupo → Q + Q recast sobre el carry → E para reposicionarte",
+        "Escape o anti-gank: E hacia tu torre y Q recast al que te persigue para tirarlo al aire; no gastes la E primero si todavía no viste al jungla",
+        "Split push: Q en la wave para curarte y empujar rápido, guardando W y E para el duelo cuando alguien venga a contestar"
+      ],
+      "tips": [
+        "Stackeá Determinación antes de pelear: autos y habilidades sobre campeones la cargan, pero se drena con el tiempo, así que no la dejes enfriar entre peleas.",
+        "No pelees trades largos con la pasiva vacía: ahí sos un fighter común y perdés contra casi cualquier duelista.",
+        "No uses la W como poke: es tu única forma de traer de vuelta al que se escapa después del knock-up; guardala para eso.",
+        "Guardá la R para cuando ya estés pegado al objetivo: te cura por el daño infligido, así que abrir con ella desde lejos desperdicia la mitad de su valor.",
+        "Contra rango y disengage no gastes la E hasta que el rival queme su dash o su CC: si entrás primero, te kitean y morís sin tocar a nadie."
+      ],
+      "plan": {
+        "early": "Nivel 1 es tu ventana: stackeá la pasiva con autos y castigá cada last hit del rival, manteniendo la wave cerca de tu lado para poder correrlo sin regalar ganks.",
+        "mid": "Split pusheá con Q y E, duelá a cualquiera que venga a contestar y agrupá solo cuando no haya objetivo lateral disponible.",
+        "late": "Flankeá para caerle al backline con R, peleá 5v5 solo con R arriba y la pasiva llena, y buscá picks sobre inmoviles que wardeen solos."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/zaahen/guide",
+      "https://mobalytics.gg/lol/champions/zaahen/counters",
+      "https://mobalytics.gg/lol/champions/zaahen/combos",
+      "https://ddragon.leagueoflegends.com/cdn/16.21.1/data/es_AR/champion/Zaahen.json"
+    ]
+  }
+}

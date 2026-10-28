@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "mordekaiser",
+    "ddragonId": "Mordekaiser",
+    "name": "Mordekaiser",
+    "titleEs": "el Renacido de Hierro",
+    "cid": 82,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.98,
+    "pr": 6.22,
+    "br": 10.91,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 91.2,
+      "jungle": 5.5,
+      "middle": 2.4,
+      "bottom": 0.3,
+      "support": 0.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Mordekaiser.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Mordekaiser_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 59.18, "games": 245 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 57.75, "games": 213 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 57.62, "games": 1234 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 57.5, "games": 320 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 56.25, "games": 368 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 56.24, "games": 834 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 56.05, "games": 223 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 55.87, "games": 247 }
+  ],
+  "weakAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 45.72, "games": 444 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.74, "games": 629 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 47.16, "games": 897 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 47.53, "games": 465 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 48.23, "games": 620 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 48.57, "games": 2619 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 48.91, "games": 2709 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 49.23, "games": 1040 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W (Indestructible) escuda y después cura: en un trade largo pega, absorbe y se va con más vida de la que trajo, así que el duelo 1v1 top es su casa.",
+      "La pasiva (Destino de la Oscuridad) prende al tercer golpe y pega AoE constante: cuanto más larga la pelea, más daño acumula sin necesidad de apretar nada.",
+      "La R (Reino de la Muerte) saca a un objetivo del mapa siete segundos: elegís al carry enemigo, lo borrás de la teamfight y volvés con sus stats robados.",
+      "Con items armados es casi imposible de matar si no lo focusean entre todos: absorbe el daño de todo el equipo mientras camina hacia adelante.",
+      "La E (Agarre de la Muerte) junta a todo lo que tenga cerca: contra equipo agrupado es engage AoE gratis que desarma formaciones enteras."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni escape, el jungla que lo caza dos veces temprano lo saca del juego; si le ganás la lane, no la recupera nunca más.",
+      "Toda su amenaza cuelga de la E: si la falla, queda sin acercamiento y sin desplazamiento de enemigos, ventana perfecta para allinearle sin riesgo.",
+      "Herida Grave temprano arruina la cura de la W: un Executioner o Bramble empareja los duelos que de otra forma perdés siempre.",
+      "Es melee sin burst: contra rango que kites no llega a conectar y su pasiva nunca llega a prender.",
+      "La R puede jugarle en contra: si se lleva a un tanque al reino y pierde el duelo adentro, desapareció del mapa siete segundos sin lograr nada."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R lo convierte en el mejor duelista del mapa; no aceptes un 1v1 parejo justo cuando la desbloquea.",
+      "Nivel 9 con la Q maxeada: el daño por golpe y la cura escalan fuerte, ahí se termina tu periodo de castigo.",
+      "Primer item completo: con la pasiva prendida ya gana cualquier pelea larga contra quien se le pare de frente.",
+      "Mid game con puntos en R: potencial de pick enorme, acecha el mapa para llevarse squishies aislados al reino.",
+      "Late con tres o más items: tanque inmenso con AoE que duele, pero solo es intratable peleando con R en mano."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Kayle y compañía kitean de una forma que Mordekaiser no responde: castigalo antes del 6 y no le regales farm acercándote a last hittear.",
+        "El rango pega y retrocede antes de que la pasiva prenda: esquivale la E de costado y no intentes de nuevo, quedás flojo para el all-in.",
+        "Ojo con la R igual: si el carry rango se pasa de línea, el reino de la muerte mata el kiting adentro; jugá hasta que la vea gastada."
+      ],
+      "tanks": [
+        "Comprá resistencia mágica temprano (Kaenic, Fuerza de la Naturaleza): su daño es todo mágico y un tanque con MR apaga la pasiva por completo.",
+        "Usá tu CC para interrumpirlo apenas arranque la pasiva: cortarle el ritmo de golpes le mata el único daño sostenido que tiene.",
+        "Si sos vos el elegido para la R, jugá al límite: comprate vida y MR para sobrevivir los siete segundos; perder el duelo adentro lo deja sin nada."
+      ],
+      "assassins": [
+        "Esperá que gaste la W para entrar: escudo más cura es lo único que lo salva, y sin ella es papel con un martillo lento.",
+        "No allinees cuando tiene la pasiva ya prendida: esperá que se apague; entre golpes de pasiva es donde convierte trades ganados en derrotas.",
+        "Después de level 6, cuidá el posicionamiento: un pick de R sobre tu jungla o carry con poca vida es una kill escrita antes de empezar."
+      ],
+      "crowdControl": [
+        "Encadená CC cuando la pasiva se prenda: no tiene escape, cualquier cadena de stuns lo deja parado recibiendo todo el daño del equipo.",
+        "La E tiene hitbox angosta: un sidestep seco lo obliga a gastar Flash o a quedarse sin engage durante muchos segundos.",
+        "Si se lleva a tu carry al reino, peleá 4v4 lejos del punto donde va a volver: ganás la teamfight igual mientras dura el secuestro."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 67,
+        "name": "Vayne",
+        "tips": [
+          "Kiteá con Q en cada auto: Mordekaiser no tiene gap closer salvo la E, y si la esquivás de costado no te vuelve a alcanzar nunca.",
+          "Jugá agresivo antes del 6: sin R todavía es el periodo donde más sufre un rango que no se deja agarrar.",
+          "Condenalo a la pared apenas arranque la pasiva: cortarle un auto antes del tercer golpe le atrasa todo el daño.",
+          "Si te mete la R al reino, no entres en pánico: invisibilidad con W para esquivar la Q y la cura de su escudo no te alcanza a ganar el 1v1."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "Corré con la Q prendida alrededor suyo: necesita pegarte para vivir y no te alcanza; la pelea larga con veneno es tuya, no suya.",
+          "Fling recién cuando arranque la pasiva: el lanzamiento corta el ritmo de golpes y te regala los segundos para que las llamas se apaguen.",
+          "Empujá o proxieá la wave: sin movilidad, cada segundo que te persigue es un minion o un objetivo que pierde en el resto del mapa."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Divide y forzalo a defender el side: si no tiene R en mano, tu all-in con Rabia lo gana siempre; anotate su cooldown.",
+          "Usá el giro (E) para esquivar su agarre: si la E no te encuentra, no existe forma de que te pelee de cerca.",
+          "Con la ulti activa ignorá su daño: la cura de la W no compensa cinco segundos donde vos no morís y él sí está a un crítico de la tumba."
+        ]
+      },
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Entrá y salte con la E del corcel: Mordekaiser no persigue a nadie; pegale en ráfagas y retirate antes de que la pasiva prenda.",
+          "Cuando estés desmontado, alejate de inmediato: es el único momento en que sus trades largos te borran; remontá el coraje lejos de su rango.",
+          "Guardá el agarre de tu Q para cuando él tire la suya: cancelarle la entrada deja la pasiva fría y el duelo entero cae de tu lado."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage a máxima distancia: E → Q mientras el objetivo viaja hacia vos → AA (si tirás la Q al destino del desplazamiento, entra garantizada)",
+        "All-in nivel 6: E → R al instante → Q en el aire → AA + AA para prender la pasiva adentro del reino y salir con vida recuperada",
+        "Trade corto: AA → Q → AA intercalando autos entre hechizos para sumar golpes rumbo a la pasiva sin fundir el maná",
+        "Q + Flash: tirá la Q y Flasheá cerca del final de la animación para que el golpe sea imposible de esquivar",
+        "Escape desesperado: E al enemigo en tu dirección de escape → Flash para el otro lado (solo con la vida al mínimo)"
+      ],
+      "tips": [
+        "No gastes la E como poke de arranque: si falla, quedás sin acercamiento ni desplazamiento durante muchos segundos; tirála de cerca o desde la niebla.",
+        "Sumá la pasiva intercalando autos entre hechizos: tres golpes y las llamas AoE hacen el verdadero daño de tu lane, no la Q sola.",
+        "Activá la W apenas arranque el trade, no a mitad: el escudo absorbe el burst rival y la cura final te devuelve el trade completo.",
+        "Controlá la wave cerca de tu torre los primeros niveles: sin movilidad, regalarle una kill al jungla enemigo te deja fuera de juego toda la fase de lanes.",
+        "Con R lista, elegí antes de pelear a quién llevás al reino: un tanque adentro son siete segundos tirados, un carry adentro es kill y stats gratis."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta nivel 3-5 con la wave cerca de tu torre; de ahí en adelante buscá trades largos con Q + AA hasta prender la pasiva y cerrá con la cura de la W.",
+        "mid": "Split pushá el side lane y peleale a cualquiera que venga a frenarte; agrupate con tu equipo solo cuando no queden objetivos laterales por cobrar.",
+        "late": "No comitiese a ninguna pelea sin R en mano: usala para cazar al que se pase de línea o para borrar al carry enemigo, y mientras tanqueás pegale a todo lo que entre al radio de tu pasiva."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/mordekaiser/guide",
+      "https://mobalytics.gg/lol/champions/mordekaiser/combos"
+    ]
+  }
+}

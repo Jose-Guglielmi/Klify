@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "urgot",
+    "ddragonId": "Urgot",
+    "name": "Urgot",
+    "titleEs": "el Temerario",
+    "cid": 6,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.61,
+    "pr": 2.48,
+    "br": 1.02,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 95.6,
+      "jungle": 1.3,
+      "middle": 1.9,
+      "bottom": 0.4,
+      "support": 0.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Urgot.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Urgot_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 57.6, "games": 875 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 57.55, "games": 245 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 56.41, "games": 234 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 56.28, "games": 398 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 56.05, "games": 512 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 55.07, "games": 552 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 54.98, "games": 1015 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 53.92, "games": 688 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 45.17, "games": 943 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 46.15, "games": 507 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 46.21, "games": 831 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 46.51, "games": 688 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 47.83, "games": 669 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 48.22, "games": 786 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 48.98, "games": 639 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 49.17, "games": 600 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Las piernas de la pasiva disparan daño por vida máxima: cualquier trade largo con Urgot te saca un cuarto de barra aunque estés ganando el intercambio.",
+      "El nivel 1 es suyo y casi nadie lo respeta: con las escopetas cargadas te mata caminando en círculos, sin gastar una sola habilidad.",
+      "La W convierte cualquier Q o E acertada en una ráfaga que no se esquiva; si te marca, el daño entra seguro y la armadura solo lo retrasa.",
+      "La E es dash y stun al mismo tiempo: es su engage y su escape, y con Flash encima el alcance real es el doble de lo que se ve.",
+      "La R ejecuta por debajo del 25% de vida desde rango largo y el miedo que suelta al ejecutar desarma la teamfight entera."
+    ],
+    "weaknesses": [
+      "Sin Q ni E en mano no tiene forma de empezar una pelea: es un campeón de rango medio que camina lento y depende de esas dos habilidades para todo.",
+      "La W lo deja arrastrándose mientras dispara: si lográs salir de su rango, no puede perseguirte ni kitearte.",
+      "El late game le cae mal: cuando aparecen los items defensivos y el QSS, su daño se estanca y su R deja de ser una amenaza.",
+      "Sufre el poke de rango: Vayne, Jayce y Rumble son los que mejor le pegan desde afuera del alcance de la E, aunque el dato lo siga dando favorito.",
+      "Bajo el 25% de vida tu barra es una moneda al aire: un E, un auto y la R te sacan de la partida sin que puedas reaccionar."
+    ],
+    "powerSpikes": [
+      "Level 1 con las piernas cargadas: es su pico más letal y el más ignorado; no aceptes trade antes de que gaste la pasiva.",
+      "Level 6: la R ejecuta bajo el 25%, así que su kill pressure cambia de golpe; jugá la lane con la barra por encima de un cuarto.",
+      "Primer item grande (Black Cleaver): rompe armadura y le permite tradear en bucle sin perder el intercambio.",
+      "Nivel 9 con la Q maxeada: el poke pega el doble y limpia la wave sin acercarse a tu rango.",
+      "Mid game con 3 puntos en R: es su momento más fuerte, ejecuta en teamfight y separa la primera línea de la segunda."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Jayce, Vayne, Rumble: pegalé siempre desde afuera del alcance de la E y no aceptes nunca el cuerpo a cuerpo; el dato lo da favorito, así que el lane se gana con paciencia y poke, no con all-ins.",
+        "Cuando te tire la Q, salí del charco antes de que prenda la W: ese slow es lo único que convierte el poke en un engage.",
+        "Guardá tu dash o tu movilidad para la E: si la gasta y no te agarra, tenés ventana libre hasta que vuelva a estar lista."
+      ],
+      "tanks": [
+        "Comprá QSS antes de la teamfight: sin eso la R te ejecuta igual de bajo del 25%, aunque estés ganando el 1v1.",
+        "No lo dejes tradear dos veces seguidas: cada pierna que recarga le devuelve daño; entrá, pegá y salí antes de la segunda vuelta de escopetas.",
+        "Sion, Ornn e Illaoi le ganan el lane por sustain y daño porcentual propio: jugá la wave lenta y esperá tus items en vez de pelear el nivel 1."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para farmear o para entrar y recién ahí allinealo: sin E no tiene escape, solo la Flash.",
+        "Pegale por el flanco cuando esté en W: mientras dispara se mueve lentísimo y no puede girar a contestarte.",
+        "No lo encares de frente con la R cargada: si te ejecuta te borra de la pelea y encima asusta a todo tu equipo."
+      ],
+      "crowdControl": [
+        "Interrumpí la W con CC duro: si le cortás la ráfaga, su daño cae a autos sueltos y pierde el sustain del escudo.",
+        "Encadená el CC justo después de su E: es su única forma de entrar, y sin ella queda parado en medio de la wave.",
+        "En teamfight poné el cuerpo delante de tu carry si tenés vida: el drill entra al primero que encuentra, y comerse esa R salva la pelea."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Jugá la wave con la Q cargada desde fuera del alcance de su E y no aceptes el trade de piernas: tu sustain de la pasiva te deja ganar el lane por desgaste.",
+          "Cuando se acerque a la wave con la W activa, casteale la Q completa: mientras dispara se mueve lentísimo y no puede esquivar el knock-up.",
+          "Tu R es el antídoto a su E: si te entra el dash no huyas en línea recta, arrancá la carga y rompé el trade antes de que recargue las piernas."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Farmeá con Q y E entre niveles 1 y 5 sin pelear: toda su kill pressure está en el all-in de piernas y a rango no te lo puede armar.",
+          "Al 6 tu R te vuelve intocable: guardala para cuando entre con E + R y le cortás la ejecución en la cara.",
+          "Escalá sin regalar muertes tempranas: el dato dice que su late es flojo y el tuyo es el mejor; cada minion que no pierdas vale doble."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Tu W te da inmunidad a CC por un instante: usala para negar el stun de su E y contestar con la R encima.",
+          "No lo dejes tradear dos veces con las piernas: pegalé, salí y volvé cuando la pasiva esté en cooldown; tu sustain de forja gana el desgaste.",
+          "En teamfight ponete delante de tu carry cuando tenga la R cargada: el drill pega al primero que encuentra y se pierde en tu armadura."
+        ]
+      },
+      {
+        "cid": 420,
+        "name": "Illaoi",
+        "tips": [
+          "Peleá siempre entre tus tentáculos y con la E lista: si te tira la E cerca de su W, su ráfaga te mata antes de que puedas caminar afuera.",
+          "Cuando active la R, caminá fuera del área en vez de tradear: su daño depende de que te quedes adentro y su W te clava al piso.",
+          "Comprá QSS antes de la teamfight: sin eso su R te ejecuta igual aunque estés ganando el 1v1 por daño."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q sobre el rival (marca y ralentiza) → W para que la ráfaga priorice al marcado → caminar en círculos para disparar las piernas recargadas",
+        "Engage estándar: E (dash + stun) → Q encima del objetivo → W mientras está stuneado → R cuando cruza el 25%",
+        "Engage con buffer: E → Flash inmediato (el dash sale desde la posición nueva) → Q → W sobre el marcado",
+        "Burst de ejecución: E → auto → R apenas baja del umbral → reactivar R para el miedo y el daño de área",
+        "Teamfight: R sobre la primera línea para el slow → E al carry cuando se acerque → W encima del marcado y piernas alrededor del grupo"
+      ],
+      "tips": [
+        "Level 1 es tu ventana: caminá en círculos alrededor del rival para disparar piernas distintas; arrancá con autos, no con W.",
+        "No uses la E para farmear ni para llegar más rápido a la wave: es tu único escape y sin ella cualquier gank es muerte segura.",
+        "Marcá con Q antes de prender W: la ráfaga prioriza al objetivo marcado y así no se te va en minions.",
+        "Cortá la W con el segundo cast cuando el rival sale de rango o cuando estás bajo torre: te devuelve la velocidad de movimiento.",
+        "Guardá la R para el umbral del 25% salvo que necesites el slow para el pick o el miedo para zonear la teamfight."
+      ],
+      "plan": {
+        "early": "Farmeá con autos y piernas midiendo la wave, buscá trades cortos en nivel 1-2, marcá con Q antes de prender W y no cruces el río sin E ni visión.",
+        "mid": "Spliteá con Black Cleaver y rotá a la lane que pide pelea cuando tengas R; entrá por el flanco y ejecutá al primero que baje del 25%.",
+        "late": "Jugá de segunda línea pegado a tus carries, usá la E para despegar al que entre y la R para zonear o cerrar; sin QSS en el rival la ejecución sigue siendo la win condition."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/urgot/guide",
+      "https://mobalytics.gg/lol/champions/urgot/combos",
+      "https://mobalytics.gg/lol/champions/urgot/counters"
+    ]
+  }
+}

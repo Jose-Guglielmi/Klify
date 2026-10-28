@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "jayce",
+    "ddragonId": "Jayce",
+    "name": "Jayce",
+    "titleEs": "el Defensor del Mañana",
+    "cid": 126,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.43,
+    "pr": 4.83,
+    "br": 5.35,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 67.9,
+      "jungle": 21.2,
+      "middle": 9.5,
+      "bottom": 0.6,
+      "support": 0.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jayce.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jayce_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 53.99, "games": 991 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 53.58, "games": 321 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 53.1, "games": 226 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 53.01, "games": 449 },
+    { "cid": 150, "slug": "Gnar", "name": "Gnar", "vsWr": 52.9, "games": 811 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 52.66, "games": 828 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 52.25, "games": 511 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 51.79, "games": 251 }
+  ],
+  "weakAgainst": [
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 41.3, "games": 339 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 41.33, "games": 225 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 42.15, "games": 382 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 42.48, "games": 532 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 43.25, "games": 3061 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 43.38, "games": 853 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 43.41, "games": 698 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 43.94, "games": 1734 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Ventaja de rango en casi todo matchup: en cañón castigás cada last hit melee y el rival no puede comerciar sin cruzar antes tu poke.",
+      "El QE acelerado por el portón es de los pokes de mayor alcance del juego: desgastás al rival antes de que exista la pelea.",
+      "Seis habilidades desde el nivel 1: tenés respuesta de poke, engage, disengage y escape antes de que el rival siquiera tenga su R.",
+      "Utility doble para el equipo: el portón acelera a tus aliados y el martillo tiene knockback para separar al carry de su pelea.",
+      "La pasiva te da velocidad de movimiento en cada transformación: rotás entre lanes y esquivás ganks mejor de lo que parece."
+    ],
+    "weaknesses": [
+      "Devorador de maná: dos QE al vacío te dejan sin amenaza y el rival lo sabe, así que castiga cada poke perdido.",
+      "Techo mecánico altísimo: un portón mal puesto o una transformación desordenada deja la combo en nada; exige muchas partidas.",
+      "Si vas atrás no dañás: tu burst escala con items y un Jayce behind no empuja ni pelea, solo sobrevive.",
+      "Caída fuerte en late: mientras el rival desbloquea su R en 11 y 16, vos seguís con el mismo kit desde el minuto uno.",
+      "Sin sustain y frágil en melee: si el rival te pega cuerpo a cuerpo (Kled, Irelia, Zaahen), perdés el trade casi siempre."
+    ],
+    "powerSpikes": [
+      "Nivel 1-3: ya jugás con seis habilidades contra tres; esta es tu ventana para sacar la lead antes del primer recall del rival.",
+      "Primer componente de daño o Tear: con un poco de AD y maná resuelto, el QE pasa de molestar a castigar de verdad.",
+      "Nivel 9 con Q maxeada: un QE bien alineado se lleva media vida de cualquier squishy que camine sin cuidar la línea.",
+      "Mid game con Manamune y primer item completo: cualquier flanqueo desde la niebla borra a un carry antes de que arranque la teamfight."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Gnar, Kennen, Quinn: cuando el rango es parejo, ganá por maná; cada QE que esquiven es un gasto que vos no pudiste permitir.",
+        "No entres a duelos de poke: farmeá seguro, controlá la wave hacia tu lado y castigá solo el momento exacto del last hit.",
+        "Con un rival de rango, el jungla decide el lane: ward profundo y wave control te dejan comerciar sin mirar el río cada dos segundos."
+      ],
+      "tanks": [
+        "Malphite, Sion, Tahm Kench: castigalos antes del primer item de armadura; después de esa compra tu QE rebota en el pecho.",
+        "Serylda's Grudge temprano contra tanque: sin penetración no los sacás de la lane y cada minuto que pasa juega para ellos.",
+        "No te quedes melee pegándole a un tanque: usá el knockback de Thundering Blow para separar y volver a pokear, no para pelear diez segundos en su rango."
+      ],
+      "assassins": [
+        "Kled, Irelia: guardá To the Skies como escape, no como entrada; si lo gastás para pegar, el follow-up del rival te encuentra sin salida.",
+        "El knockback del martillo es tu vida contra divers: un salto enemigo encima tuyo se convierte en un empujón hacia tu torre.",
+        "No pokees sin visión contra gap closers: tu combo necesita un par de segundos de alineación y ellos cobran cada uno de esos segundos."
+      ],
+      "crowdControl": [
+        "Malphite y compañía: tu vida es corta y un CC limpio termina el lane; Edge of Night anula el engage y te deja mantener distancia.",
+        "El portón da velocidad de movimiento a todo tu equipo: usalo para esquivar el skillshot de engage en vez de comerlo parado.",
+        "En teamfight, esperá que gasten el CC principal antes de acercarte: tu combo interrumpida a mitad es maná y vida tirados a la basura."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Vos no tenés recurso y él sí: forzálo a gastar maná en cada poke; cada QE desperdiciado de Jayce es una amenaza que se apaga sola.",
+          "Jugá lateral a la wave para esquivar el Shock Blast: si el gancho de tu Q lo engancha, su martillo no alcanza para pelear cuerpo a cuerpo.",
+          "Cuando pierdas Skaarl, retirate unos segundos: es el único momento donde su poke te mata; volvé con la segunda barra y el all-in es tuyo."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Tenés más rango que su martillo y movilidad para esquivar el QE: el momento en que Jayce salta con To the Skies es exactamente donde ganás todos los trades.",
+          "Guardá Vault para cuando transforme y corra hacia vos: interrumpirle el acercamiento lo deja parado sin combo y sin escape.",
+          "Jayce escala mejor que vos con items: ganá el lane antes del primer item o tu ventaja de rango deja de importar."
+        ]
+      },
+      {
+        "cid": 223,
+        "name": "Tahm Kench",
+        "tips": [
+          "Tu sustain anula su poke: cada QE que le pega se lo comés con la pasiva; dejalo gastar maná y ganá el lane por economía.",
+          "El knockback de su martillo es su única defensa: esperá a que lo use y recién ahí pegá el all-in; sin esa E no te separa de tu pelea.",
+          "Comprate armadura temprano: su daño físico queda en nada y no tiene penetración temprana para responder."
+        ]
+      },
+      {
+        "cid": 904,
+        "name": "Zaahen",
+        "tips": [
+          "Tu Q te cura por porcentaje de vida máxima: el poke de Jayce termina financiando tu propia barra; quedate en lane y dejalo tirar maná.",
+          "Guardá el knock-up del recast de Q para cuando se acerque a last hit: interrumpirle el QE a mitad le cuesta media combo.",
+          "Los trades largos son tuyos por la pasiva: no aceptes solo un QE y te vayas; si gastó la E de escape, quedá y peleá."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: E (portón) → Q acelerado a través de la puerta → W (Hyper Charge) y los tres autos para cerrar el trade",
+        "Trade melee corto: Q (To the Skies) encima del objetivo → auto → E (Thundering Blow) para empujarlo y salir sin recibir de vuelta",
+        "Combo completa: en cañón E → Q → W con tres autos → R a martillo → Q encima → W (campo eléctrico) → auto → E para ejecutar o separar",
+        "All-in con Flash: en martillo Q al objetivo → auto → Flash detrás de él → E para lanzarlo hacia tu equipo",
+        "Trade rápido desde rango: auto → Q → R a martillo → Q encima del objetivo → auto → E"
+      ],
+      "tips": [
+        "Maná primero, daño después: bajado de media barra de maná, dejá de pokear; sin recursos tu combo es humo y el rival lo huele.",
+        "El portón no es solo para tu Q: colocalo para acelerar a tu jungla en el gank o para que tu equipo desenganche; decide peleas sin pegar.",
+        "No entres a melee con Q gastada: To the Skies es tu entrada y tu salida; usarla solo para pegar y quedarte adentro es la muerte clásica de Jayce.",
+        "Usá la niebla de guerra: un QE desde un flanco que el rival no mira borra a un squishy antes de que la teamfight arranque.",
+        "Transformate seguido: cada R de la pasiva te da velocidad de movimiento; caminar en la forma equivocada es regalarle distancia al rival."
+      ],
+      "plan": {
+        "early": "Pokeá con QE cada vez que el rival baje al last hit, controlá la wave hacia tu lado por el gank y al llegar a 6 jugá más atrás: tu 'ulti' ya la tenías desde el nivel 1.",
+        "mid": "Split push con tu dueling y presioná torres; uni a las peleas solo después de desgastar al equipo rival con poke desde la niebla.",
+        "late": "Pegate a tu equipo, pokeá antes de cada objetivo y flankeá con la combo completa; si vas atrás, pelea al lado de tu carry usando el knockback para separar al diver."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/jayce/build",
+      "https://mobalytics.gg/lol/champions/jayce/guide",
+      "https://mobalytics.gg/lol/champions/jayce/combos"
+    ]
+  }
+}

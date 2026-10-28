@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "bard",
+    "ddragonId": "Bard",
+    "name": "Bardo",
+    "titleEs": "el Guardián Trotamundos",
+    "cid": 432,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.76,
+    "pr": 3.69,
+    "br": 1.44,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 0.1,
+      "jungle": 0,
+      "middle": 0.1,
+      "bottom": 0.1,
+      "support": 99.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Bard.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Bard_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 54.97, "games": 342 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 54.26, "games": 223 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 52.84, "games": 545 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.78, "games": 612 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 52.04, "games": 1326 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 51.89, "games": 1006 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 51.4, "games": 714 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 51.32, "games": 606 }
+  ],
+  "weakAgainst": [
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 46.32, "games": 544 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 46.46, "games": 1371 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 47.09, "games": 1444 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 47.36, "games": 454 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 47.51, "games": 682 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 47.76, "games": 1719 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 47.77, "games": 988 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 47.91, "games": 430 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R (Tempered Fate) es el mejor setup de picks del juego: un carry enemigo en stasis 2,5 segundos es una piñata para todo tu equipo.",
+      "El túnel E atraviesa cualquier pared y lo puede usar el equipo entero: roams y flancos que ningún otro support iguala en velocidad.",
+      "Nunca deja de escalar: cada campana suma daño de meep, maná y velocidad, así que un Bard con el mapa recolectado pega de verdad.",
+      "La Q stunea al atravesar un minion o una pared: en pasillos y waves es CC a distancia que no necesita Flash para conectar."
+    ],
+    "weaknesses": [
+      "La Q sin nada detrás es solo un slow: en espacio abierto no tiene CC confiable y queda casi inerme en un all-in.",
+      "El heal de la W tarda en cargar: es sustain incremental que no salva a nadie en un trade explosivo, y el enemigo se puede comer los shrines verdes.",
+      "Es squishy y sin pared cerca no tiene escape: un engage fijo encima suyo es kill, y si huye con E te regala el túnel.",
+      "Juega ausente: ir por campanas lo saca del lane y deja al ADC 1v2; castigá esa ventana.",
+      "La R también congela a aliados y a sí mismo: una R mal tirada le salva la vida al carry rival o arruina el engage propio."
+    ],
+    "powerSpikes": [
+      "Nivel 1-3 con meeps: auto potenciado + Q entre paredes gana los trades cortos contra cualquier melee que baje a last hit.",
+      "Nivel 6: con Tempered Fate en mano, cualquier pick a media del mapa es kill si tu jungla está cerca.",
+      "Primer item completo y botas de velocidad: los roams se vuelven casi globales y cada campana del camino se paga sola.",
+      "Late con campanas acumuladas y R de cooldown bajo: cada pelea arranca con un stasis que el rival tiene que respetar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokealo cuando baja a buscar campanas: ese viaje fuera del lane es XP y vida regalada si lo interceptás en el camino.",
+        "Parate con espacio libre detrás: si la Q no tiene minion ni pared para atravesar, su único gancho se vuelve un slow.",
+        "Comete los shrines de W apenas los pone: se cura casi nada y le negás el sustain de todo el trade."
+      ],
+      "tanks": [
+        "Los engages fijos (Leona, Nautilus) le ganan el all-in: su heal es lento y no tiene CC para responder un commit completo.",
+        "All-ineá cuando los shrines estén recién puestos: sin carga, el sustain de Bard no existe en un trade largo.",
+        "No persigas a Bard por el túnel: castigá al ADC que queda solo mientras él va por campanas o roamea."
+      ],
+      "assassins": [
+        "Saltalo en sus roams: fuera de la R no tiene respuesta a un dive, y su movilidad depende de que haya pared para el E.",
+        "Esperá que gaste la R defensiva: si el stasis no aparece, su carry queda solo y tu combo entra limpia.",
+        "Cuidado al divear torre: una R de Bard sobre tu equipo te congela en plena ejecución y te convierte en objetivo estático."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para el pasillo del túnel E: sus roams son predecibles en posición y el stun en la boca del agujero es gratis.",
+        "Esperá que tire la R antes de committear la pelea: si tu engage entra cuando el stasis ya se gastó, Bard se queda sin plan B.",
+        "Encadená CC sobre él apenas se prenda el pick: es tan squishy que un solo hook bien dado termina la jugada entera."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "Pokeá con bombas y duplicá la XP de tu ADC: Bard no gana el lane por daño, ganalo por escala y negale el early.",
+          "En espacio abierto no tiene stun: pegale con la Q doble en el medio de la calle, donde su Cosmic Binding no encuentra nada que atravesar.",
+          "Guardá tu R para el pick de la R suya: si tu ADC revive después del Tempered Fate, Bard invirtió la ultimate y el kill en nada."
+        ]
+      },
+      {
+        "cid": 89,
+        "name": "Leona",
+        "tips": [
+          "All-ineá apenas ponga los shrines: sin carga su heal es una gota y tu combo gana cualquier trade que dure más de dos segundos.",
+          "Enganchá al ADC, no a Bard: el E y la R lo dejan escapar a él, pero tu combo fija igual al carry.",
+          "Entrá limpia de minions: si tu salto le deja un minion en el medio, le regalás el stun de la Q en la cara."
+        ]
+      },
+      {
+        "cid": 267,
+        "name": "Nami",
+        "tips": [
+          "Tu W pega y cura en el mismo cast: contra los shrines lentos de Bard, ganás el desgaste sin moverte de tu posición.",
+          "Tirá la burbuja sobre la boca del túnel E: agarrarlo entrando o saliendo es un kill porque no tiene Flash para responder.",
+          "Usá tu R para cortar sus roams: una marea por el río mata su plan de mapa, que es donde Bard gana las partidas."
+        ]
+      },
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Pokeá con power chord desde tu rango: Bard tiene que acercarse para que la Q encuentre ángulo, y cada paso adelante se lo cobrás.",
+          "Guardá tu E de velocidad para esquivar la Q por pared: si no te encuentra quieto, su único gancho es un slow inútil.",
+          "Después del 6 respetá el orden de ultimates: si Bard tira la R primero, tu R entra cuando todos salen del stasis y barre la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: AA → Q entre autoattacks (el meep potenciado pegá primero y la Q viaja justo detrás del minion para asegurar el stun)",
+        "Catch con stasis: R al objetivo → Q justo antes de que salga del stasis para que despierte stunneado y sin poder esquivar",
+        "Gank por la espalda: R al target → E hacia él → Q stun al salir del stasis y todo tu equipo entra por el túnel",
+        "Reposicionar la Q: cast Q y Flash al instante para doblar la trayectoria del proyectil y clavar el stun por un ángulo imposible",
+        "Roam: E a través de la pared → cruzá el túnel con velocidad de campanas → Q al objetivo del otro lado antes de que reaccione"
+      ],
+      "tips": [
+        "Recogé campanas solo cuando no haya minions por morir en el lane: cada una es XP y maná, pero perder farm de tu ADC cuesta más.",
+        "Poné los shrines de W levemente detrás tuyo y del ADC: a la vista del enemigo se los comen verdes y te quedás sin heal y sin maná.",
+        "Usá el auto potenciado contra el melee rival cada vez que camine a un last hit: es tu mejor trade y no gasta maná.",
+        "No tires la E al azar: el túnel también lo usa el enemigo, y abrise un camino hacia tu jungla puede serle una autopista al rival.",
+        "Con la R, pensá a quién congela: si tu R toca a tu ADC en plena pelea o salva al carry rival, hiciste el trabajo por el equipo enemigo."
+      ],
+      "plan": {
+        "early": "Ganá el lane con meep autos y Q por pared, sostené al ADC con shrines cargándose atrás, y salí a roamear por túnel apenas tu ADC esté seguro en la wave.",
+        "mid": "Viví en el mapa: campanas + E te permiten deep ward, pick con R + Q en cualquier lane y llegar a cada pelea de dragón por un ángulo que el rival no vigila.",
+        "late": "Tu R define el juego: buscá el Tempered Fate sobre el carry rival para iniciar, o guardalo como stasis defensivo para anular el engage enemigo mientras tu equipo pelea."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/bard/build",
+      "https://mobalytics.gg/lol/champions/bard/combos"
+    ]
+  }
+}

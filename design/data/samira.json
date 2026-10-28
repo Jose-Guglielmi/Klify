@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "samira",
+    "ddragonId": "Samira",
+    "name": "Samira",
+    "titleEs": "la Rosa del Desierto",
+    "cid": 360,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.14,
+    "pr": 4.22,
+    "br": 6.93,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 0.3,
+      "jungle": 0.1,
+      "middle": 0.6,
+      "bottom": 99,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Samira.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Samira_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 56.28, "games": 1528 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.27, "games": 3838 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 53.39, "games": 6988 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 53.24, "games": 2207 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 53.16, "games": 1204 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 53.03, "games": 4878 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 52.87, "games": 2888 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 52.82, "games": 2130 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 41.48, "games": 364 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 42.52, "games": 421 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 44.66, "games": 580 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 45.25, "games": 727 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 46.97, "games": 5022 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 46.97, "games": 264 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 47.62, "games": 2581 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 48.05, "games": 487 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su all-in es de los más fuertes del juego: si te extendés un paso de más en la lane, salta encima tuyo y rota el combo completo antes de que puedas reaccionar.",
+      "La W destruye proyectiles alrededor suyo: anula tu hook, tu stun y tu poke en el momento exacto, convirtiendo tu mejor skillshot en nada.",
+      "La R con rango S se cura con todo el robo de vida del build: si la dejás pelear agrupada con minions cerca, se sostiene sola y gana peleas imposibles.",
+      "La E se refresca con las bajas: en peleas caóticas con kills alrededor encadena dashes y no hay forma de sacarla de encima."
+    ],
+    "weaknesses": [
+      "Es un ADC cuerpo a cuerpo disfrazado: para dañar tiene que meterse al rango de todo tu equipo, y si entra sola muere primero.",
+      "Sin E y sin W está descalza: no puede bloquear tu CC ni escapar; castigá esa ventana de cooldowns con todo lo que tengas.",
+      "Su R necesita rango S y no la tiene en cada pelea: si forzás fight mientras está construyendo el combo, pega autos de un ADC normal y sin sustain.",
+      "Depende de items y del snowball: detrás en oro su combo no ejecuta a nadie y todo el riesgo de su estilo queda sin recompensa.",
+      "El Antiheal y el CC duro la borran: su curación de la R no compite contra heridas graves más un stun encadenado."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E completas: empieza a allinear de verdad; no le regales un trade antes de eso.",
+      "Nivel 6: con R disponible, cualquier overextend tuyo es kill garantizada; jugá atrás hasta ver el spin en pantalla.",
+      "Primer item resuelto: su velocidad de combo y su robo de vida se disparan; evitá el 1v1 contra ella en todo el mid game.",
+      "Niveles 11 y 16 con puntos en la R: el canal pega más y cura más, así que asumí que el spin está en mano en cada teamfight."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Varus, Ziggs: pegale desde tu rango máximo y nunca dentro del suyo; cada auto que le robes antes de que llegue es un combo que no completa.",
+        "Guardá tu CC o tu trap para el momento del E: es su único gap closer, y si lo quema para entrar sobre vos, el castigo es tuyo.",
+        "Mantené minions entre medio: su Q melee y su E necesitan línea limpia para llegar, y una wave empujada se la niega entera."
+      ],
+      "tanks": [
+        "Comprate Armadura temprano y quedate pegado a tu carry: Samira se alimenta de squishies aislados, un front que no se mueve la frena.",
+        "Guardá tu CC para después de que prenda la R: interrumpir el canal con un stun le mata la curación y el daño de un saque.",
+        "Usá Antiheal aunque seas tanque: el sustain de su R es la mitad de su tanqueo efectivo y Bramble se lo baja solo."
+      ],
+      "assassins": [
+        "Esperá que gaste la W bloqueando tu primer proyectil y saltala recién ahí: sin Blade Whirl no puede esquivar ni escapar de tu burst.",
+        "No allinees cuando tiene rango S y E en mano: con la R prendida y lifesteal, le gana el 1v1 a casi cualquier asesino; forzála a gastar el combo antes.",
+        "Cazala cuando farmee sola: su kit está hecho para pelear con aliados cerca, no para defender un flanco sin follow-up."
+      ],
+      "crowdControl": [
+        "Encadená tu CC después de que use la E: quedar sin dash la convierte en un target estático que camina hacia tu burst.",
+        "Malzahar, Veigar, Lux: cualquier root point-and-click la borra antes de completar el rango S; guardáselo a ella, no a su support.",
+        "Coordiná el CC con tu ADC de rango: tiene que acercarse para pegar, y cada paso hacia adelante es una ventana para tu stun."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Colocá la raíz (E) en el camino de su dash: si queda clampada al entrar, su combo muere antes de arrancar y te la comés gratis.",
+          "Comprate Antiheal temprano: su R se cura con todo; sin Grievous Wounds tu daño sostenido no le gana la pelea larga.",
+          "Aprovechá que tiene que acercarse a farmear: castigala con Q y autos en cada last hit, su sustain en lane es casi nulo."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Poné la jaula (E) entre ella y vos cuando jugás agresivo: su E para escapar la tira directo al stun si manejás la posición.",
+          "Pokeala con Q cada vez que camine al last hit: necesita llegar entera al combo y tu rango le niega exactamente eso.",
+          "Al 6 no apures la R primero: esperá que construya el rango S y castigá la ventana con burst cuando esté a mitad de combo."
+        ]
+      },
+      {
+        "cid": 112,
+        "name": "Viktor",
+        "tips": [
+          "Dejá el campo gravitacional (W) sobre tu propia posición: si quiere llegar a melee tiene que cruzarlo y ahí ganás el trade.",
+          "Pegale desde tu rango máximo con Q y autos: su Q melee requiere estar encima tuyo, y cada paso hacia adelante es daño que cobrás.",
+          "Guardá el láser (E) para el momento del dash: acertarle durante Wild Rush le arruina el engage y la deja sin escape."
+        ]
+      },
+      {
+        "cid": 895,
+        "name": "Nilah",
+        "tips": [
+          "Esperá que gaste la W primero: si entra con Blade Whirl en mano bloquea parte de tu combo; sin ella le pegás todo.",
+          "Espejale el all-in con tu escudo de niebla y tu E: en la pelea corta cuerpo a cuerpo, tu sustain y tu armadura de autos le ganan.",
+          "Controlá la wave: las dos son melee, pero tus curaciones por minion muerto escalan mejor; forzá trades largos cerca de tu wave."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Combo base de lane: auto → Q → auto → E al objetivo → auto → W → auto, alternando melee y rango para subir el estilo sin gastar nada",
+        "All-in completo: auto → Q (melee si está en rango) → W → E encima del objetivo → auto → R apenas prende el S → autos para terminar",
+        "Ejecución rápida: E al objetivo o minion → Q → W → R en el momento exacto del S: cuando el rival queda bajo, esta versión lo borra antes de que reaccione",
+        "Engage con Flash: Flash → E → Q → W → R, guardado para el carry enemigo o para cerrar un kill que la E sola no alcanza"
+      ],
+      "tips": [
+        "Alterná siempre un golpe distinto al anterior: repetir el mismo tipo de ataque no sube el medidor de estilo y te deja sin R cuando la necesitás.",
+        "Guardá la W para el proyectil que importa (hook, stun, poke pesado): bloquea todo alrededor tuyo, no la gastes en el primer auto que te tiren.",
+        "No allinees sin E en mano: es tu única forma de entrar y de salir; si la gastaste, jugá atrás hasta que vuelva.",
+        "Usá la Q melee (menos de 325 de rango) siempre que puedas: pega más fuerte y con crítico; el modo rango es solo para poke y farmeo seguro.",
+        "En teamfight pegale al objetivo más cercano y kiteá entre autos: entrar al fondo con la R es solo si tu equipo tiene engage de follow-up."
+      ],
+      "plan": {
+        "early": "Jugá seguro los primeros niveles, farmeá con Q de rango y buscá el primer all-in con tu support al tener Q, W y E; al 6, cualquier overextend del rival es kill si la R está en mano.",
+        "mid": "Rotá a mid tras caer la torre de bot, peleá siempre con tu support cerca y usá la E para picks por el flanco; con el primer item resuelto tu combo ejecuta a cualquier squishy.",
+        "late": "Pegale al más cercano con autos y Q de rango, prendé la R solo con rango S listo y tu equipo encima, y nunca camines sola por el mapa porque sos el primer target de cualquier pick."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/samira/guide",
+      "https://mobalytics.gg/lol/champions/samira/combos"
+    ]
+  }
+}

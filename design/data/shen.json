@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "shen",
+    "ddragonId": "Shen",
+    "name": "Shen",
+    "titleEs": "el Ojo del Crepúsculo",
+    "cid": 98,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.4,
+    "pr": 3.45,
+    "br": 0.72,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 72.4,
+      "jungle": 5.9,
+      "middle": 1.6,
+      "bottom": 1,
+      "support": 19.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Shen.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Shen_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 61.84, "games": 435 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 60, "games": 230 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 59.82, "games": 789 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 56.96, "games": 1020 },
+    { "cid": 85, "slug": "Kennen", "name": "Kennen", "vsWr": 55.56, "games": 414 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 55.29, "games": 208 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 55.29, "games": 1069 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 55.2, "games": 1308 }
+  ],
+  "weakAgainst": [
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 45.37, "games": 950 },
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 47.77, "games": 515 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 47.81, "games": 366 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 47.85, "games": 395 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 49.09, "games": 2151 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 49.1, "games": 782 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 49.38, "games": 1211 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 49.57, "games": 809 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W (Refugio del Crepúsculo) anula todos los ataques básicos que caigan dentro de la zona: contra carries de auto-attack les borra el kit entero por un par de segundos.",
+      "La E tiene taunt y atraviesa minions: enganchar a alguien fuera de posición es kill gratis y con Flash es engage casi garantizado.",
+      "La R es un escudo global que además teleporta: salvás al carry alimentado del otro lado del mapa y convertís una pelea perdida en ganada.",
+      "La pasiva te da escudo en cada cast de habilidad: en trades cortos con Grasp terminás la vida más arriba que el rival sin gastar recursos."
+    ],
+    "weaknesses": [
+      "Antes del nivel 6 sos melee sin amenaza: cualquier campeón de rango te farmea la vida y no tenés forma de castigarlo si juega bien.",
+      "La E es de rango corto y muy visible: si la tirás desde visión clara, el rival la esquiva caminando y quedás sin engage ni escape.",
+      "Usar la R te deja sin cover en la lane y perdés waves enteras: cada teleport es una decisión macro, no un botón.",
+      "W y Q malgastadas te dejan pelado: sin W los autos del rival entran limpios y sin Q atravesada tu daño de trade es casi nulo.",
+      "El escalado te pasa por arriba: Vayne, Kayle o Gwen te ganan el juego si se alarga; no dejes que el lane rival crezca gratis."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R te da presencia global; cada pelea del mapa se juega con vos aunque estés en la lane.",
+      "Nivel 9 con Q maxeada: tu trade pega un porcentaje real de vida y podés allinear a cualquiera que se pase de frenada.",
+      "Mid game con Titanic Hydra: el tanqueo llega al pico y sos frontline real; split push con R en mano es presión constante.",
+      "Late con la R con cooldown corto: dividís y teleportás a cada pelea; un E multi-taunt en equipo agrupado define la fight."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Kayle, Quinn: el lane va a doler; quedate en rango de XP, farmeá con Q y no regales kills por un minion.",
+        "Tirá la E solo desde el arbusto o la niebla: de visión clara es un dash pre-anunciado que cualquiera con reflejos esquiva.",
+        "Second Wind + Escudo de Doran te dejan aguantar el poke: escalá, pedí ganks y llegá a tu mid game de tanqueo."
+      ],
+      "tanks": [
+        "K'Sante, Nasus, Cho'Gath: ganale el trade corto con Grasp + autos mejoradas de Q y retirate antes de que la pelea se alargue.",
+        "La W les arruina el daño de autos: activá cuando ya commitieron al trade, no al arranque.",
+        "El taunt te deja llevar al rival bajo tu torre: busqueá la E cuando esté sobreextendido cerca de tu lado del mapa."
+      ],
+      "assassins": [
+        "Zed, Yasuo, Tryndamere: la W anula justo lo que usan para matar; guardala para su burst y la combo les queda en nada.",
+        "El taunt interrumpe y los deja parados en medio de tu equipo: si saltan a tu carry, E + taunt es muerte segura.",
+        "La R te deja responder a cualquier dive del mapa: si el jungla enemigo caza a tu carry, el escudo global les arruina el plan."
+      ],
+      "crowdControl": [
+        "Tu E es de los pocos engages que tiene un tanque top: iniciá sobre el que quedó lejos de su equipo, no sobre el frente.",
+        "Esperá el CC del rival antes de entrar vos: si te agarran en el dash morís siendo tanque; entrá cuando lo gastaron.",
+        "En peleas agrupadas, un E de dos o tres taunts vale más que cualquier combo: buscá flancos y pasillos para enganchar al equipo entero."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 420,
+        "name": "Illaoi",
+        "tips": [
+          "Esquivale la E (el espíritu): si te agarra el test, el spam de tentáculos te borra la vida; jugá detrás de minions hasta que la gaste.",
+          "Castigala cuando la E está en cooldown: sin ella no tiene daño real y podés comerciar con Q atravesada + autos.",
+          "La W corta sus autos pero no los tentáculos: no te quedes pegado creyendo que sos intocable; entrá y salí."
+        ]
+      },
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Las peleas largas las gana él: hacé un trade corto con Q mejorada y retirate antes de que él commita de verdad.",
+          "No pelees cuando está por remontar: el remount le devuelve vida y agresividad; contá su Courage y retirate a tiempo.",
+          "El taunt de tu E corta su persecución: si se tira con todo, lo dejás parado en el lugar y ganás la ventana para castigar o escapar."
+        ]
+      },
+      {
+        "cid": 67,
+        "name": "Vayne",
+        "tips": [
+          "No podés tanquearla: el daño verdadero de sus puas ignora toda tu resistencia; aceptá que este lane no se gana peleando 1v1.",
+          "Freezeá la wave cerca de tu torre y farmeá con Q: cuanto más lejos estés de su rango, mejor.",
+          "Pedí ganks temprano: antes del 6 es frágil; después de dos items te pasa por arriba y no hay vuelta atrás."
+        ]
+      },
+      {
+        "cid": 74,
+        "name": "Heimerdinger",
+        "tips": [
+          "No entres entre las torretas: abrite una entrada con Q o esperá el gank del jungla antes de allinear.",
+          "La granada (su E) te castiga el engage: esperá que la gaste antes de tirar tu dash.",
+          "Farmeá con Q desde atrás de las torretas y escalá a tu tanqueo: en teamfight tu valor es mucho más alto que el suyo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: Q a través del rival (la espada queda cerca y tus autos pegan % de vida) → 2-3 autos con Grasp → retirate con el escudo de la pasiva puesto",
+        "All-in completo: E taunt → W encima tuyo para cortar sus autos → Q a través del objetivo → autos mejoradas hasta fundirlo",
+        "Combo con Flash: Flash + E desde el arbusto o la niebla para un taunt imposible de esquivar → W → Q y encadená CC con tu jungla",
+        "R defensiva: canalizá la R sobre el carry diveado → teleport → E taunt al agresor apenas aterrizás para girar la pelea",
+        "Engage de teamfight: flanqueá por un lateral → E multi-taunt al equipo agrupado → W sobre tu carry y Q a través del foco"
+      ],
+      "tips": [
+        "Maxeá Q primero y hacela atravesar siempre al campeón: los autos mejoradas son tu único daño real; Q sin atravesar es maná tirado.",
+        "No uses la W al arranque del trade: el rival simplemente deja de pegar; esperá que commita los autos y activásela en la cara.",
+        "La E es tu único escape: no la gastes en poke; sin dash y sin Flash, un gank te cuesta la vida.",
+        "Antes de canalizar la R mirá la wave: si estás pushado contra tu torre, el teleport te cuesta placa y media lane.",
+        "Usá los arbustos de la lane: la E desde el arbusto no se puede reaccionar; de visión clara es un anuncio."
+      ],
+      "plan": {
+        "early": "Jugá atrás, farmeá con Q y buscá solo trades cortos con Grasp cuando el rival gaste una habilidad; mantené la wave de tu lado hasta escalar.",
+        "mid": "Split push con R siempre en mano: presioná la lane lateral y teleportate a cada pelea; buscá picks con E desde la niebla.",
+        "late": "Pegate al equipo y sé la frontline: peel con E + W para tu carry, usá la R en cada dive enemigo y no te separés nunca del grupo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/shen/build",
+      "https://mobalytics.gg/lol/champions/shen/guide"
+    ]
+  }
+}

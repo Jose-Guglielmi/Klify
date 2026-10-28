@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "slug": "corki",
+    "ddragonId": "Corki",
+    "name": "Corki",
+    "titleEs": "el Bombardero Osado",
+    "cid": 42,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 48.9,
+    "pr": 1.64,
+    "br": 0.33,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 17.3,
+      "jungle": 0.2,
+      "middle": 10.9,
+      "bottom": 71.3,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Corki.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Corki_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 54.42, "games": 825 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 53.67, "games": 898 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 52.17, "games": 368 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 52.06, "games": 315 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 50.74, "games": 270 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 50.41, "games": 613 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 50.32, "games": 316 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 50.06, "games": 901 }
+  ],
+  "weakAgainst": [
+    { "cid": 15, "slug": "Sivir", "name": "Sivir", "vsWr": 43.34, "games": 293 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 44.29, "games": 219 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 45.82, "games": 323 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 46.22, "games": 331 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 46.48, "games": 426 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 47.16, "games": 1811 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 47.46, "games": 453 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 48.16, "games": 1007 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El pokeo AOE con Q y R le permite desgastar al equipo rival antes de que la teamfight arranque: llegás a la pelea con el rival a media vida sin haberla empezado.",
+      "Daño mixto (físico en los autos, mágico en Q/E/R): itemizarte contra Corki es siempre un problema, no hay una sola resistencia que lo apague.",
+      "Nivel 6 sube su clear de wave de golpe: la R empuja la wave y pega al rival a la vez, lo que le da presión de placas y control de lane barato en maná.",
+      "Escala fuerte con items: con el primer item resuelto su pokeo y clear suben tanto que te encierra contra tu torre si no respondés."
+    ],
+    "weaknesses": [
+      "Maníaco del maná: si quema Q y R en spameo, se queda sin recursos y pasa a no ser ni amenaza ni escape, porque la W también come maná.",
+      "Es un papelito: contra burst o pokeo rival en lane, no tiene vida para aceptar errores; cualquier all-in que le pegue lo borra.",
+      "La W tiene cooldown larguísimo early: si la usa agresiva y el rival tiene CC en mano, Corki queda encerrado y muere por sobreextensión.",
+      "Niveles 1 a 4 es débil y tiene rango de auto corto: un ADC de más alcance con soporte melee lo pisa en cada last hit sin respuesta.",
+      "Si se atrasa en early, su late game fuerte se cancela: castigá sus primeros niveles y le sacás todo el plan de escalado."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R suma clear de wave y pokeo simultáneo; no te pares en línea recta detrás de tu wave porque cada misil te encuentra.",
+      "Primer item completo (Trinity Force o Essence Reaver): su clear y pokeo suben fuerte; esperá esa ventana antes de pelear por objetivos sin visión.",
+      "Nivel 9 con Q maxeada y nivel 11 con R2: empuja constante y te niega el roam; no dejes la wave empujada hacia vos en esos niveles.",
+      "Nivel 13 con E maxeada: empieza a triturar tanques en teamfights largas; no te infles de vida pensando que te aguanta.",
+      "Nivel 16 con R3: su pokeo pre-teamfight está en el máximo; agrupate con cuidado y peleá recién con vida llena o con engage seco."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Caitlyn, Sivir: pisale arriba en niveles 1 a 4, cuando es débil y su rango de auto es corto; después se te hace cuesta arriba.",
+        "Castigá su maná: si cada pokeo suyo lo acerca a quedarse seco, va a tener que elegir entre farmear o amenazar, nunca las dos cosas.",
+        "Esquivá en diagonal, no en línea: la Q y los misiles de R castigan mucho caminar recto detrás de la wave."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: la mayor parte de su daño de habilidad es mágico; un solo item te deja caminando su pokeo entero.",
+        "Peleale antes del nivel 13: su E recién al maxearla es la que pica tanques; forzá peleas cortas antes de ese spike.",
+        "No le des pelea larga gratis en late: si la pelea se estira con su E girando, termina desgastándote; entrá, rompé y salí."
+      ],
+      "assassins": [
+        "Es un papelito sin escape confiable: esperá que use la W (agresiva o defensiva) y saltala ahí; sin W en mano es un kill seco.",
+        "Interceptá su escala: si te dejás desgastar por Q y R antes de allinear, llegás justo a la muerte; cerrá la distancia en un solo movimiento.",
+        "En lane, castigá cada W agresiva que haga: con el cooldown largo early, quedarse sin W te regala la ventana de all-in completa."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para cuando avance con la W: su único gap closer es lento y predecible, si lo interrumpís en el aire muere donde cayó.",
+        "Encadená el CC después de su burst: Corki sin maná y sin W no tiene segunda tanda; un solo root bien puesto lo elimina del juego.",
+        "En teamfight, dejá que piquee y respondé con engage seco: cada segundo que pierde reposicionando es un segundo que su equipo peleó en desventaja."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 15,
+        "name": "Sivir",
+        "tips": [
+          "Usá el Escudo Hechizo para comer la Q o el primer misil de R: si le cancelás un pokeo gratis, se queda sin maná para sostener la lane.",
+          "Empujá la wave tan rápido como él: su ventaja es el clear, y si empatás el empuje, su presión de placas se esfuma.",
+          "Esquivá en zigzag el ciclo de Q y R: Corki castiga caminar en línea recta; lateral constante hace que la mitad de los misiles caigan al piso.",
+          "Escalá mejor que él con autos: en pelea larga tu DPS físico constante le gana a su ciclo de habilidades; no aceptes solo trades de pokeo."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El Muro de Viento se come los misiles de R y la Q entera: guardalo para su ciclo de pokeo y el lane se vuelve gratis.",
+          "Dash de minion en minion para esquivar la Q: cada bombo que falla es maná tirado y una ventana para pegarle vos.",
+          "Allineale en niveles 1 a 4: es su peor tramo y no tiene R; después de 6 el pokeo te castiga cada all-in apurado.",
+          "Cuando use la W agresiva, andá encima: el cooldown larguísimo lo deja sin escape y vos con la ventana de kill completa."
+        ]
+      },
+      {
+        "cid": 901,
+        "name": "Smolder",
+        "tips": [
+          "Pisale en early: cada minuto que Smolder farmea tranquilo suma stacks gratis; castigalo con pokeo y no lo dejés escalar barato.",
+          "Cortale el farm con presión de wave: si lo tenés bajo torre y perdiendo minions, su curva de R ejecución llega tarde a todas las peleas.",
+          "Esquivá la Q lateral: es su única skillshot de pokeo en lane; si la caminás bien, pierde presión sin gastar nada vos.",
+          "No pelees equipo contra equipo en late con su R girando: esperá que la gaste en pokeo o en un objetivo lejano antes de commit."
+        ]
+      },
+      {
+        "cid": 221,
+        "name": "Zeri",
+        "tips": [
+          "Tu movilidad le gana la reposición: esquivá Q y misiles moviéndote constante, Corki no tiene skill que te siga el ritmo.",
+          "Castigá cada W que use para acercarse: quedarse sin Valkyria lo deja parado en medio de la lane y vos con todo el mapa de pelea libre.",
+          "Peleá en espacios abiertos: su pokeo AOE castiga al equipo agrupado; separate y lo obligás a acertar tiros individuales.",
+          "Kiteá su all-in: si se tira con W y no te mata, no tiene segunda habilidad de escape; devolvéle el trade entero caminando hacia atrás pegándole."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de apertura: Q → E instantáneo encima del rival → AA mientras la Q explota (tu pan de cada día en lane)",
+        "Trade con E: E → AA → Q apenas termina el cañón → AA seguido (para cuando el rival ya está metido en tu rango)",
+        "Burst rápido: Q → R → AA una detrás de otra (lo mínimo y suficiente para castigar un last hit descuidado)",
+        "All-in nivel 6: W a rango → E al aterrizar → AA → R → AA → Q → AA → R → AA (meté un auto entre cada habilidad, no las apiles)",
+        "Con el package: W encima del objetivo → E → AA → Q → R → W → AA → R → AA (la secuencia completa cuando el package está en mano)"
+      ],
+      "tips": [
+        "Apuntá la Q y la R para que pegen al rival y la wave a la vez: es el uso más eficiente del maná y sostenés presión sin fundirte.",
+        "No uses la W agresiva si el rival tiene CC en mano: esperá que lo gaste; una W desperdiciada early es tu muerte por sobreextensión.",
+        "Estirás las teamfights todo lo que puedas: desgastá con Q y R antes de commit; el equipo que entra a media vida pierde contra tu pokeo.",
+        "Manejá el maná como un recurso de vida: sin maná no sos amenaza ni tenés escape; si estás seco, jugá atrás hasta recuperar.",
+        "En late pegate al equipo: si te agarran solo, te borran y el rival siegea objectives 4v5; tu valor está en el pokeo grupal, no en el sidelane arriesgado."
+      ],
+      "plan": {
+        "early": "Sos débil en 1-4: farmeá y piqueá en equilibrio, abusá del rango contra soportes melee, y al llegar a 6 empujá con R para pegarle al rival y placas a la vez.",
+        "mid": "Estirá las peleas con Q y R antes de commit, y cuando no haya pelea pushá sidelane y farmeá items; evitá morir solo porque regala siege y objetivos.",
+        "late": "Sos una fuerza si no fuiste behind: pegate al equipo, desgastá con el ciclo de R antes de cada pelea y usá la W solo con follow-up asegurado de tu equipo."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/corki/build",
+      "https://mobalytics.gg/lol/champions/corki/guide",
+      "https://mobalytics.gg/lol/champions/corki/combos"
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "naafiri",
+    "ddragonId": "Naafiri",
+    "name": "Naafiri",
+    "titleEs": "la Sabueso de las Cien Mordidas",
+    "cid": 950,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.0,
+    "pr": 2.68,
+    "br": 8.55,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 7.4,
+      "jungle": 69.4,
+      "middle": 21.1,
+      "bottom": 1.1,
+      "support": 1.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Naafiri.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Naafiri_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 58.09, "games": 2121 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 55.68, "games": 1311 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 55.53, "games": 1176 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 55.31, "games": 716 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 54.82, "games": 228 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 53.95, "games": 456 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.82, "games": 773 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 53.3, "games": 409 }
+  ],
+  "weakAgainst": [
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 41.97, "games": 274 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 44.8, "games": 625 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 45.03, "games": 453 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 45.52, "games": 1138 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 45.58, "games": 226 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 45.95, "games": 568 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 46.7, "games": 651 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 47.01, "games": 485 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Los sabuesos tanquean los camps por vos: tu clear es sano y rápido sin gastar casi vida, así que aparecés en lanes con maná y HP llenos.",
+      "La R es point-and-click: un latch imposible de esquivar que convierte cualquier carry desalineado en kill garantizada.",
+      "Skirmish de élite: con Conqueror cargado y el pack completo ganás casi todo 1v1 y 2v2 en la jungla temprana.",
+      "La W empodera a todo el pack en peleas agrupadas: daño sostenido que escala mejor de lo que parece en un asesino.",
+      "El pack te da sustain pasivo: volvés de cada gank con vida recuperada y sin depender de bases constantes."
+    ],
+    "weaknesses": [
+      "Pre-6 sos un gankero flojo: sin la R latch tu único gap closer es la E, y cualquier laner con un dash te ignora.",
+      "Los sabuesos se pueden matar: un AoE bien puesto te deja sin pasiva, sin daño y sin tanqueo en el medio de la pelea.",
+      "Cero escape una vez committed: la R te mete adentro de la pelea y no hay botón de vuelta; si el dive falla, morís ahí.",
+      "El pack te delata: los sabuesos se separan y se ven al borde de los arbustos y en el río, así que tus flanqueos avisan solos.",
+      "El CC encadenado te borra: sos melee sin tenacidad en el kit y dependés de pegar para curarte; si te lockea, no llegás a robar vida."
+    ],
+    "powerSpikes": [
+      "Level 6: la R latch convierte cada gank en casi un ejecutable; antes de eso juega farming y counter-picking de ruta.",
+      "Primer item (Voltaic o Eclipse): el slow y el burst te dejan cerrar el latch con AA en vez de quedarte corto.",
+      "Dos items con Black Cleaver: tu pelea larga empieza a doler y los skirmishes de objetivo pasan a ser tuyos.",
+      "Teamfights con W y pack completo: en refriega agrupada el daño del pack multiplicado por la W es de bruiser, no de asesino."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: pegales desde el fog con R apenas se desalineen; su rango no sirve si no ven venir el latch.",
+        "Pokeale el pack antes del fight: cada sabueso que matan con AoE es daño y tanqueo que no vas a tener después.",
+        "No camines en línea recta a ellos: tu pack se ve en los bordes de los arbustos, flanqueá por rutas que no estén wardas."
+      ],
+      "tanks": [
+        "Ornn, Sion, Cho'Gath: tu R pega % de vida actual pero tu pack muere al AoE; no abraces al tanque, buscá al carry de atrás.",
+        "Comprá Black Cleaver temprano: el shred de armadura es tu única forma de que la refriega larga no se convierta en tu tumba.",
+        "Si el tanque te espera con CC cargado, no seas vos la que inicia: dejá que gaste el peeling en otro y entrá después."
+      ],
+      "assassins": [
+        "Kha'Zix, Rengar, Qiyana: con pack completo y W en mano ganás el skirmish; forzalos a pelear en tus camps y no en los suyos.",
+        "Wardá tus entradas: tu peor escenario es comerte un burst en la cara mientras farmeás sin visión.",
+        "Después de que gasten su dash de escape, la R es ejecución: esperá ese segundo antes de latchear."
+      ],
+      "crowdControl": [
+        "Lissandra, Malzahar, Zyra: tu R te lleva adentro y no hay vuelta; si ves el CC listo, no seas la primera en entrar.",
+        "Esperá que gasten el CC principal en tu frontline y latchea recién ahí: el latch no se esquiva, así que tenés ese lujo.",
+        "Mercureal o Cleanse si el equipo enemigo es de CC encadenado: morir latcheada en el medio es la muerte más repetida de Naafiri."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Sembrá plantas en tu ruta de retreat: cada planta mata sabuesos gratis y Naafiri sin pack es media campeón.",
+          "Pegale de atrás de tu wave y del rango de la E: si el latch no encuentra target a media vida, el gank muere antes de nacer.",
+          "Guardá el knock-up de tu R para cuando la E la acerque: interrumpirla dentro del dive la deja parada sin escape."
+        ]
+      },
+      {
+        "cid": 120,
+        "name": "Hecarim",
+        "tips": [
+          "Tu movilidad le gana la carrera: roameá más rápido que ella y counter-gankea; Naafiri committed no puede seguirte.",
+          "Usá la E para empujarla apenas latchea a tu carry: el pack la sigue pero ella queda fuera de posición y sin escape.",
+          "Peleá en espacios abiertos: su E y su latch necesitan distancia corta; en campo abierto la nivelás de velocidad."
+        ]
+      },
+      {
+        "cid": 5,
+        "name": "Xin Zhao",
+        "tips": [
+          "Invadila temprano: pre-6 pierde el 1v1 contra tu combo y sus camps están tanqueados por los sabuesos, o sea kill + farm.",
+          "Counter-gankeá con la R para separarla de su pack: si el latch la mete sola y vos empujás al resto, el dive se invierte.",
+          "Pegale en tu ventana de niveles 3 a 5: después de 6 con R disponible, no le peles sin tu jungla detrás."
+        ]
+      },
+      {
+        "cid": 141,
+        "name": "Kayn",
+        "tips": [
+          "Jugá hasta forma: Rhaast tanquea el burst del latch y Shadow te deja escapar de cada gank suyo con las paredes.",
+          "Ignorá sus skirmishes con pack completo: peleá recién con transformación lista o cuando le hayan matado sabuesos con AoE.",
+          "Wardá cruzando paredes: tu ventaja es que no necesita línea recta; usá tu movilidad para aparecer donde ella no latchea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear de camp: Q primero con maxeo, dejá que los sabuesos tanqueen y usá la E para acortar el recorrido entre camps",
+        "Trade de skirmish: Q → W (empoderás al pack) → Q → E encima del objetivo → AA hasta ejecutar",
+        "Gank post-6: R al carry (latch garantizado) → Q → AA → E para seguirlo si gasta dash → Q con el pack encima",
+        "All-in con Flash: Q → W → Q → Flash → E → AA (el featured de Mobalytics: pega todo antes de que reaccione el rival)",
+        "Pelea larga de teamfight: R al carry aislado → Q → AA → E → Q → AA → W cuando tengas 3+ enemigos en rango del pack"
+      ],
+      "tips": [
+        "No entres a ninguna pelea con el pack incompleto: los sabuesos son tu daño, tu tanqueo y tu sustain; W los repone, así que contá antes de commit.",
+        "Guardá la W para la refriega, no para el poke: el buff dura poco y su valor real es cuando el pack está pegando a 3+ personas.",
+        "Usá la E del clear como mobility: cruzar la pared del muro de río con E te ahorra segundos y vida en cada rotation.",
+        "Ojo con el pack al borde de los arbustos: te delata en cada flanqueo; soltá vision control o entrá por ángulos donde el pack no asome.",
+        "La R no se esquiva pero el seguimiento sí: latcheá al que está solo o sin dash gastado; latchear al full equipo es un suicidio con estilo."
+      ],
+      "plan": {
+        "early": "Full clear sano con el pack tanqueando, scanear rutas del rival y recién al 6 buscá el primer gank real con R latch; invadí solo con pack completo y visión del jungla enemigo.",
+        "mid": "Buscá picks con la R sobre el carry desalineado, rotá a los objetivos con tu clear rápido y ganá cada 2v2 con W + Conqueror antes de que agrupen.",
+        "late": "No iniciés primera: esperá que el frontline comprometa, latcheá al carry aislado y soltá W dentro de la refriega; cuidá el AoE enemigo que puede borrar tu pack en un cast."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/naafiri/build",
+      "https://mobalytics.gg/lol/champions/naafiri/combos"
+    ]
+  }
+}

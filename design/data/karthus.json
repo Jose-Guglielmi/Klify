@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "karthus",
+    "ddragonId": "Karthus",
+    "name": "Karthus",
+    "titleEs": "el Canto de la Muerte",
+    "cid": 30,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.15,
+    "pr": 1.32,
+    "br": 0.74,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 5.7,
+      "jungle": 61.5,
+      "middle": 7.4,
+      "bottom": 23.3,
+      "support": 2.0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Karthus.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karthus_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 58.58, "games": 367 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 54.52, "games": 398 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 54.31, "games": 232 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 52.57, "games": 350 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 51.92, "games": 468 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 51.35, "games": 483 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 50.69, "games": 728 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 50.46, "games": 323 }
+  ],
+  "weakAgainst": [
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 45.19, "games": 385 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 45.85, "games": 205 },
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 46.37, "games": 358 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 46.38, "games": 276 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 46.5, "games": 357 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.16, "games": 352 },
+    { "cid": 254, "slug": "Vi", "name": "Vi", "vsWr": 48.47, "games": 262 },
+    { "cid": 234, "slug": "Viego", "name": "Viego", "vsWr": 49.09, "games": 495 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su clear de jungla es de los más rápidos del juego: llega a los picos de nivel y de ítems antes que el jungla rival, y cada camp que robás es oro que el rival no cobra.",
+      "Con la R en mano tiene presión global total: mientras el resto del mapa pelea, un enemigo a media pantalla de vida es una kill garantizada para él.",
+      "La pasiva lo mantiene peleando después de morir: matarlo en el medio de la teamfight no termina nada, sigue castigando Q y R durante varios segundos.",
+      "Control de objetivos brutal: la Q pega amplificada contra un solo target, así que dragón y Barón caen mucho más rápido de lo que el rival calcula."
+    ],
+    "weaknesses": [
+      "Depende del farm como pocos: si lo invaden early o pierde camps, no se recupera solo y llega tarde a cada pico de poder.",
+      "Cero movilidad y cero defensivas: un gank limpio lo mata siempre, y él lo sabe, por eso farmea lejos de cualquier pelea temprana.",
+      "Sus ganks tempranos son flojos: antes de 6 necesita una kill servida para justificar irse del farm, castigá cualquier lane que intente acompañarlo.",
+      "La R a vida llena no daña casi nada early: si ves el canal de Requiem y estás arriba de la mitad de vida, no la gastes en curarte ni en Zhonya.",
+      "Es un devorador de maná: mantener la E prendida lo funde; forzá trades largos y se queda sin nada para pelear ni para clear."
+    ],
+    "powerSpikes": [
+      "Level 6: desbloquea Requiem y arranca a acumular Dark Harvest; a partir de acá cualquier enemigo bajo de vida en el mapa es kill suya.",
+      "Nivel 9 con la Q en máximo: quien quede solo contra él come un daño desproporcionado; no te separés de tu equipo en este punto.",
+      "Primer ítem resuelto (Blackfire/Malignance): el maná deja de ser problema y el spam de Q+E cambia por completo el ritmo de sus peleas.",
+      "Nivel 11 con la R en 2 y después nivel 13 con 3 puntos: Requiem pasa a dejar a cualquier squishy a media vida; asumí que cada pelea larga la va a cobrar."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Esquivá la Q moviéndote lateral: tiene delay y si Karthus falla las primeras, su clear y su poke se caen a pedazos.",
+        "Invadilo temprano con tu jungla: sin movilidad ni daño de pelea 1v1, perder sus camps lo retrasa todo el juego.",
+        "Cuando use la W para frenarte, esa es su única defensiva: pegale justo después de que la pared se disipe."
+      ],
+      "tanks": [
+        "No te acumules con tu team en choke points: la E de Defile castiga al equipo agrupado y vos sos el que más tiempo pasa adentro.",
+        "Comprá Resistencia Mágica temprana: su daño es constante, no de burst, así que cada punto de MR se nota en pelea larga.",
+        "Esperá que gaste la R o muera antes de commit: mientras la pasiva esté viva, tanquear adentro es regalarle el doble de tiempo de daño."
+      ],
+      "assassins": [
+        "Divealo sin miedo: no tiene escape ni pelee propia, un salto limpio lo mata antes de que la Q te encuentre el rumbo.",
+        "Si lo matás en teamfight, salí del rango enseguida: la pasiva lo deja casteando y los asesinos son el primer plato de esa fase.",
+        "Cortá el canal de Requiem si podés: un stun a mitad del cast le cuesta la R completa y deja a su equipo sin seguro de kill."
+      ],
+      "crowdControl": [
+        "Encadenale el CC apenas se acerque: sin movilidad ni purga, una sola cadena de control lo borra antes de entrar en rango de Q.",
+        "Guardá un CC para después de su Zhonya: el hourglass es toda su plan de supervivencia, y al salir está parado donde mismo.",
+        "Su W frena y reduce la MR: abrí la pelea obligando la pared y recién ahí entrá con todo el engage."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 11,
+        "name": "Maestro Yi",
+        "tips": [
+          "Usá Alpha Strike justo cuando tire la Q: la inmunidad esquiva el daño entero y Karthus queda sin su principal herramienta contra vos.",
+          "Invadilo antes de 6: su clear recién arranca y no puede pelear 1v1; robale camps y retrasale el Requiem que es todo su juego.",
+          "En teamfight esperá que muera o use Zhonya y ahí entrá: mientras la pasiva esté activa, entrar primero es comerte Q y R de gratis."
+        ]
+      },
+      {
+        "cid": 19,
+        "name": "Warwick",
+        "tips": [
+          "Tu sustain supera su poke: aceptá el trade largo, la Q de Karthus no alcanza para ganar una pelea extendida contra tu curación.",
+          "Rastrealo con Sangre Cazador cuando quede bajo: después de cualquier invade o gank fallado, su poca vida es un imán para tu ultimate.",
+          "Abrí el gank con tu R sobre él: sin escape ni flash garantizado, el suplicio lo deja quieto el tiempo justo para borrarlo antes de la pasiva."
+        ]
+      },
+      {
+        "cid": 59,
+        "name": "Jarvan IV",
+        "tips": [
+          "EQ directo sobre él apenas lo veas: el knock-up lo interrumpe en pleno clear y su única respuesta es morir o gastar Flash.",
+          "Ganale el mapa temprano: gankiá mientras él farmea, Karthus no contragtankea nada antes de 6 y tu equipo va a ganar las lanes por eso.",
+          "Usá la R para encerrarlo en el terreno: sin movilidad, no puede salir del arena y la pasiva no sirve si lo matás pegado a la pared."
+        ]
+      },
+      {
+        "cid": 233,
+        "name": "Briar",
+        "tips": [
+          "Buscalo en su jungla antes de que escale: el early de Briar lo pisa y Karthus no tiene ni daño de pelea ni escape para responder.",
+          "Guardá tu W frenético para esquivar la W de él: la pared frena y corta, y sin ese slow te alcanza en dos saltos.",
+          "En teamfight tirale la R a distancia: mientras vuela, su Zhonya no alcanza y el lock entero lo ejecuta antes de que la pasiva arranque."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Engage all-in: Q → W → E prendida → Flash hacia adelante → Q sobre el objetivo mientras la pared lo frena",
+        "Trade a media distancia: Q → W instantáneos → E sobre el target → AA → dos Q intercaladas entre cada auto",
+        "Poke a larga distancia: W → Q → caminá hacia el objetivo → E recién al entrar en rango → seguí con Q",
+        "Modo pasiva: al morir Q → W → dos Q → R apenas puedas → un último Q cuando el canal de Requiem termina",
+        "Clear de jungla: prendé y apagá la E entre camps para el daño extra sin fundirte el maná, y Q amplificada al camp único para objetivos"
+      ],
+      "tips": [
+        "Mirá el minimapa todo el tiempo: la R global es kill garantizada sobre cualquier enemigo bajo de vida, y perderse una ejecución es regalar oro.",
+        "No uses R early contra enemigos a vida llena: el daño temprano de Requiem es flojo, guardala para ejecuciones claras o peleas donde ya bajaron gente.",
+        "Gankiá solo lo garantizado: tu potencial de gank es malo, powerfarmear hasta 6 vale más que un gank dudoso que te deja atrás en farm.",
+        "Toggle de la E como regla: prendida solo en pelea y en camp, apagada en el resto; el maná que ahorrás son las Q que vas a tener para el próximo fight.",
+        "Wardá las entradas de tu jungla desde el primer clear: sos el jungla más invadible del parche, y perder camps temprano te retrasa todos los picos."
+      ],
+      "plan": {
+        "early": "Powerfarmeá hasta 6 lo más rápido posible, jugá lejos del jungla rival con visión en las entradas y usá la R solo cuando una ejecución esté servida.",
+        "mid": "Seguí escalando con farm, robá dragones con Q+E antes de que el rival conteste y buscá picks con la W antes de que la R ejecute a quien escape.",
+        "late": "No te separés nunca del equipo, peleá con Requiem en mano, metete al medio del fight para que la pasiva castigue aunque caigas y corrid objetivos apenas spawnean."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/karthus/build",
+      "https://mobalytics.gg/lol/champions/karthus/guide",
+      "https://mobalytics.gg/lol/champions/karthus/combos"
+    ]
+  }
+}

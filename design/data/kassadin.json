@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "kassadin",
+    "ddragonId": "Kassadin",
+    "name": "Kassadin",
+    "titleEs": "el Caminante del Vacío",
+    "cid": 38,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.43,
+    "pr": 2.52,
+    "br": 1.94,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 5.3,
+      "jungle": 0.5,
+      "middle": 93.6,
+      "bottom": 0.4,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kassadin.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 59.19, "games": 223 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 56.91, "games": 311 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 56.12, "games": 237 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 55.97, "games": 511 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 55.35, "games": 374 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 55.24, "games": 248 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 55.16, "games": 339 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 54.89, "games": 818 }
+  ],
+  "weakAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 40.81, "games": 223 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 47.04, "games": 642 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 47.11, "games": 380 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 47.27, "games": 256 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 47.34, "games": 207 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 47.74, "games": 1284 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 48.4, "games": 374 },
+    { "cid": 103, "slug": "Ahri", "name": "Ahri", "vsWr": 48.87, "games": 1240 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R post-6 le da movilidad que ningún otro mago melee tiene: esquiva ganks, roamea y vuelve sin quemar Flash; si le sale el snowball es casi imposible pararlo.",
+      "Burst brutal sobre cualquier malposicionado: a partir del nivel 11 la R stackeada más W y E borra a un squishy de la pantalla en un segundo.",
+      "Su pasiva (Void Stone) mitiga daño mágico constante: los magos de su propia clase le pegan de vuelta a un precio con descuento.",
+      "Escalado de items y nivel: con RoA + Archangel resueltos, la R baja de cooldown tan rápido que pelea en modo permanente."
+    ],
+    "weaknesses": [
+      "Early game de los peores del juego: melee sin movilidad hasta nivel 6, cualquiera con rango o all-in lo castiga en cada last hit.",
+      "Es imán de ganks: si el jungla lo visita dos veces, pierde el item spike y queda afuera del juego hasta muy tarde.",
+      "Dependencia total de maná: sin Tear o RoA en progreso, una R gastada es una R que no vuelve; cada cast apila el costo.",
+      "Contra all-in con dash o blink es indefenso: su único escape es la R, y si la usó para entrar, no existe salida.",
+      "Sin Flash temprano está expuesto: la wave management en su contra (freeze cerca de su torre) lo saca del lane."
+    ],
+    "powerSpikes": [
+      "Nivel 6: desbloquea la R, su primer spike real; ya puede usarla para escapar ganks y empezar a allinear trades cuando la habilidad clave del rival está en cooldown.",
+      "Primer item completo (Rod of Ages): de repente tiene vida, maná y burst; es el momento en que empuja la wave y se va a roamear.",
+      "Nivel 11 con dos puntos en R: el cooldown cae lo suficiente para tenerla en cada pelea y el burst empieza a one-shottear.",
+      "Nivel 16: el pico máximo; R casi spameable, puede entrar, borrar un carry y salir con la segunda R en la misma teamfight."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Hwei, Anivia, Lux: pegale desde tu rango en cada CS y no aceptes trades de cerca; un Kassadin que no llega a nivel 16 sano no existe.",
+        "Zonéalo de la wave con áreas de daño: si cada last hit le cuesta media vida, su RoA llega cinco minutos tarde.",
+        "Después de que agarre la R, no le regales acercamientos: quedate detrás de minions porque un R + E + Q gratis sobre vos es el inicio de su snowball."
+      ],
+      "tanks": [
+        "Su burst es single-target y de corto alcance: un tanque con MR que pelea de cerca lo niega completo y le hace gastar la R en el peor target.",
+        "Forzalo a gastar la R sobre vos temprano en la pelea: sin la stackeada encima, su daño cae a poke mediocre.",
+        "Pegale la amenaza de engage constante: entre su maná caro y tu front line, no puede esperar el spike tranquilo en la wave."
+      ],
+      "assassins": [
+        "Zed, Talon, Qiyana: allinealo antes de nivel 11, cada vez que la R esté en cooldown; su único escape es la misma habilidad con la que pega.",
+        "Esperá que use la R para entrar y recién ahí tirá tu dash: un Kassadin sin R en mano es un melee lento a pie.",
+        "No le des el lane gratis pre-6: congelale la wave cerca de tu torre y sin Flash es kill garantizada en cada intento."
+      ],
+      "crowdControl": [
+        "Encadená el CC en el momento exacto en que aparece con la R: interrumpir su entrada mata la mitad de su combo.",
+        "Anivia y Lissandra son la pesadilla: pared o prisión sobre su Riftwalk y queda un melee sin escape atrapado entre cinco.",
+        "Guardá un CC de reserva para la salida: si su única R la gastó para entrar, ni la segunda R te alcanza para escapar del engage invertido."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 80,
+        "name": "Pantheon",
+        "tips": [
+          "Sos el peor matchup posible: castigá cada CS con Q desde el primer minuto, no le regales ni un minion sin cobrarle vida.",
+          "All-in constante pre-6 con E + W stun: mientras no tenga R ni item, no tiene cómo responder ni escapar.",
+          "No lo dejes farmear gratis a la espera del spike: si su Rod of Ages llega tarde, el resto del juego es tu reseña."
+        ]
+      },
+      {
+        "cid": 238,
+        "name": "Zed",
+        "tips": [
+          "Punish con Q y sombra en cada ventana de last hit: antes del nivel 6 el lane es tuyo por puro rango.",
+          "Contá su maná y su R: alineá solo cuando la Riftwalk esté gastada o recién usada para escapar un gank.",
+          "Jugá la wave: pusheale y freeze cerca de tu torre para negarle la farm; un Kassadin sin CS no llega vivo al spike de nivel 16."
+        ]
+      },
+      {
+        "cid": 910,
+        "name": "Hwei",
+        "tips": [
+          "Tu rango te deja zonéarlo completo: pintale la wave con áreas y que cada minion le cueste caminar hacia zona castigable.",
+          "Guardá el Fear para cuando camine hacia vos con R en mano: cortarle el acercamiento le mata la única forma de entrar.",
+          "Después de 6 no te pares pegado a la wave: un R + E + Q inmediato sobre vos es su combo de poke favorita."
+        ]
+      },
+      {
+        "cid": 34,
+        "name": "Anivia",
+        "tips": [
+          "Pegale desde tu rango en cada farm y zonéa con el pájaro: no tiene cómo responder de cerca antes del spike de item.",
+          "Guardá la pared (W) para su R de entrada o salida: cortarle el Riftwalk en el aire lo deja varado en medio de tu equipo.",
+          "Con la R + stun tuyo poste-6, cada intento de all-in suyo termina con él en el piso: no le tengas miedo al trade cuando lo ves avanzar."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de melee: E para entrar y ralentizar → AA con W activada (resetea y potencia el autoattack) → Q para rematar el trade",
+        "Poke post-6: R al borde máximo de tu rango → E → Q instantáneos y volvé antes de que el rival responda",
+        "Burst estándar: R encima del objetivo → AA → W → E → Q, y la R vuelve a estar lista para continuar la caza",
+        "Asesinato con Flash: Q → E inmediato → Flash al rango de melee → W potenciado → AA para ejecutar",
+        "All-in extremo: R → Flash a mitad de animación → W → AA mejorado → E → Q para borrar el target antes de que reaccione"
+      ],
+      "tips": [
+        "No uses la R como poke sin maná resuelto: cada cast apila el costo del próximo; pensala como recurso de pelea, no de farmeo.",
+        "Llevá la cuenta de tu stack: la R se encarece con cada uso seguido, así que guardá siempre una carga para escapar, no entres con la última.",
+        "Pegate al orden E → W → Q: la E se carga más rápido cerca de minions y con la wave controlada la tenés lista en cada trade.",
+        "Farmeá con Q desde lejos en los matchups que pegan: un minion vale más que la vida que te ahorras no bajando al melee.",
+        "Invertí en visión temprana: tu early es tan malo que un jungla que te visita dos veces te saca del juego entero."
+      ],
+      "plan": {
+        "early": "Jugá safe y farmeá minimizando trades hasta nivel 6; con la R usala primero para sobrevivir ganks y allineá solo cuando la habilidad clave del rival esté gastada.",
+        "mid": "Powerfarm: con RoA en camino buscá side waves y rotaciones, peleá solo cuando salga a tu favor y usá la R para picks que conviertan en objetivos.",
+        "late": "Nivel 16 es tu hora: flankeá con la R stackeada al carry, entrá con Zhonya o la segunda R como salida y capitalizá cada pick con número ventaja para cerrar el juego."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/kassadin/build",
+      "https://mobalytics.gg/lol/champions/kassadin/guide",
+      "https://mobalytics.gg/lol/champions/kassadin/combos"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "kogmaw",
+    "ddragonId": "KogMaw",
+    "name": "Kog'Maw",
+    "titleEs": "la Boca del Abismo",
+    "cid": 96,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.33,
+    "pr": 2.4,
+    "br": 0.78,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 5.1,
+      "jungle": 0.9,
+      "middle": 19.9,
+      "bottom": 72.5,
+      "support": 1.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/KogMaw.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/KogMaw_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 60.42, "games": 379 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 58.09, "games": 692 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 56.68, "games": 965 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 56.53, "games": 1111 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 55.5, "games": 2373 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 54.58, "games": 863 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 54.04, "games": 446 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 53.83, "games": 496 }
+  ],
+  "weakAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 46.21, "games": 277 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 48.44, "games": 514 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 48.89, "games": 718 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 50.38, "games": 1862 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 51.38, "games": 617 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 51.41, "games": 496 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 51.74, "games": 1063 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 52.1, "games": 1288 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W es % de vida máxima por auto: derrite tanques y squishies por igual mientras esté prendida; es el motor de todo el kit.",
+      "El rango extra de la W le permite pegarle al frontline parado detrás de todo su equipo, en una distancia que casi ningún ADC alcanza.",
+      "La R pega desde fuera de la pantalla: pokea antes de cada pelea, remata enemigos bajos que se retiran y revisa arbustos sin facecheckear.",
+      "La Q baja armadura y RM del objetivo: en peleas largas lo deja blando para el daño de todo el equipo, no solo el suyo.",
+      "Con peel de su equipo se queda con la teamfight entera: mientras nadie lo toque, su DPS sostenido no tiene rival."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni speed, cualquier engage lo encuentra y no tiene forma de zafar solo.",
+      "Con la W apagada es un ADC de rango base sin amenaza: esperá esa ventana y tirale encima sin miedo.",
+      "Frágil como pocos: un assassin o un solo CC bien puesto lo borra antes de que apriete dos autos.",
+      "La R encarece su costo con cada cast: si spamea artillería, se queda sin maná para la W y el slow.",
+      "Early débil hasta tener niveles e items: castigá el lane temprano, después se vuelve imposible de tocar."
+    ],
+    "powerSpikes": [
+      "Cada punto en W escala el % de vida: al nivel 9 con W maxeada, los trades largos se vuelven insoportables para el que se pare delante.",
+      "Nivel 6 con R: aparece pokeo y remate a distancia; si estás bajo media vida lejos de tu torre, estás en riesgo real.",
+      "Primer item completo: deja de ser una granja y pasa a pelear; ahí empezá a respetar los all-ins con W prendida.",
+      "Dos o tres items (late): es el hiper carry clásico; no dejes que la pelea se alargue con él vivo y posicionado atrás."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Contra otro ADC de rango largo, ganale el corto: mientras su W esté apagada, Kog'Maw no contesta nada desde su rango base.",
+        "No te quedes canjeando autos cuando prende la W: ese es su terreno; retirate y volvé cuando se apague.",
+        "Castigá su early sin items: cada trade corto antes de que escale es oro que después no podés recuperar."
+      ],
+      "tanks": [
+        "No confíes en aguantarlo de frente: la W con % de vida atraviesa cualquier build tanque en peleas largas.",
+        "Ganale la pelea por tiempo al revés de lo habitual: forzá el engage sobre él y su equipo antes de que el juego se alargue.",
+        "En teamfight, no le des al tanque la excusa de pelear: si tu frontline entra y él no tiene peel, el tanque puede ignorarlo unos segundos y saltarlo a él."
+      ],
+      "assassins": [
+        "Sos su peor pesadilla: no tiene escape, un dash bien puesto lo encuentra siempre; esperá la W en cooldown y all-in.",
+        "Cuidado con el slow de la E (Void Ooze): entrá desde un ángulo que la esquive o después de que la gaste.",
+        "En early lo podés picar una y otra vez: sin items ni niveles, ni la W activa le alcanza para responderte."
+      ],
+      "crowdControl": [
+        "Encadená CC y es polvo: sin tenacidad ni cleanse, una sola chain de stuns lo niega entero.",
+        "Guardá el engage para cuando se adelante por pokear con la R: su instinto de artillero lo deja fuera de posición.",
+        "Los engages sorpresa (Blitz, Nautilus, hooks) son la mejor answer: Kog'Maw agarra la W y pega, pero nunca llega a reaccionar a un pick."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El muro (W) se come la R y la Q: dejá que dispare y subilo a tiempo; su poke se anula entero.",
+          "Dash por la wave con tercer Q cargado: sin W prendida, Kog'Maw no gana ningún trade corto contra vos.",
+          "Castigá cada ventana sin W activa: son varios segundos de rango base donde tu movilidad lo supera de sobra."
+        ]
+      },
+      {
+        "cid": 901,
+        "name": "Smolder",
+        "tips": [
+          "Farmeá stacks de Q desde fuera de su rango base: mientras la W esté apagada, no puede contestarte.",
+          "No aceptes el trade largo con W activa: el % de vida le gana a tu poke sostenido; retirate y volvé cuando se apague.",
+          "Tu escala es más rápida que su lane: jugá a acumular y castigá cada auto que le cueste acercarse a la wave."
+        ]
+      },
+      {
+        "cid": 29,
+        "name": "Twitch",
+        "tips": [
+          "Flanqueá con la Q de sigilo y aparecé encima cuando la W esté en cooldown: es el único momento en que no llega a pegarte.",
+          "En lane canjeá un par de autos más E y retirate: no te quedes en la pelea larga, que es justo la que él busca.",
+          "Ojo con el slow de su E: si te frena la salida, el engage se te da vuelta; entrá desde un ángulo que la esquive."
+        ]
+      },
+      {
+        "cid": 222,
+        "name": "Jinx",
+        "tips": [
+          "Pokeá con rockets desde fuera de su rango: Kog'Maw sin W prendida no te llega ni con la R.",
+          "Tu all-in es cuando su W está en cooldown: con rango base corto es presa fácil de tus autos con minigun.",
+          "En teamfight mantené el rango de fishbones y dejá que tu frontline lo encuentre: un Kog'Maw alcanzado es un Kog'Maw muerto."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: W → AA → E → Q y salí (prendés el rango extra, frenás con el moco y bajás resistas antes de retirarte)",
+        "Trade largo, tu terreno: W → AA → E → Q → R y seguís autoatacando hasta que la R ejecute al objetivo bajo",
+        "Burst rápido: E → Q → R encadenados casi juntos para clavar slow, shred y remate sin dejar reaccionar",
+        "Escape con estilo: E hacia atrás → Flash → Q y seguís peleando con W prendida (el slow te cubre la salida)",
+        "Pokeo de siega: R a distancia cuando están agrupados o bajos, controlando el costo de maná creciente por cast"
+      ],
+      "tips": [
+        "Usá la R para revisar arbustos antes de caminar: tu vida no aguanta un facecheck con cero movilidad.",
+        "No spamees R a lo loco: cada cast encarece el siguiente; si te fundís el maná, te quedás sin W ni slow para la pelea real.",
+        "Buscá trades largos, no cortos: tu daño escala con los autos con W activa, el corto te deja peor que al rival.",
+        "Prendé W solo cuando vas a pegar: mantenerla activa sin objetivo es maná y cooldown tirados.",
+        "Quedate pegado a tu support y al grosor del equipo: solo no existís; un engage y te borran del mapa."
+      ],
+      "plan": {
+        "early": "Jugá seguro y farmeá: sos débil hasta tener niveles e items, aceptá solo trades con W prendida y tu support delante.",
+        "mid": "Quedate agrupado con tu equipo y tu support: empujá la torre de bot, rotá a mid, pero jamás camines solo con Baron vivo.",
+        "late": "Sos el centro de la pelea: posicionate atrás de todo, pokeá con R antes del engage y vaciá con W al primero que se acerque."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/kogmaw/build",
+      "https://mobalytics.gg/lol/champions/kogmaw/guide",
+      "https://mobalytics.gg/lol/champions/kogmaw/combos"
+    ]
+  }
+}

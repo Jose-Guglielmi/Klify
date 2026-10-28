@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "varus",
+    "ddragonId": "Varus",
+    "name": "Varus",
+    "titleEs": "la Flecha del Castigo",
+    "cid": 110,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.22,
+    "pr": 4.03,
+    "br": 1.26,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 14.7,
+      "jungle": 0,
+      "middle": 5.7,
+      "bottom": 78.8,
+      "support": 0.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Varus.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Varus_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 58.3, "games": 235 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 55.56, "games": 297 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 52.5, "games": 5116 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 52.37, "games": 2194 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 51.92, "games": 2629 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 51.82, "games": 1125 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 51.63, "games": 2603 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 51.39, "games": 251 }
+  ],
+  "weakAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 40.89, "games": 719 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 43.55, "games": 519 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 44.77, "games": 239 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 46.04, "games": 265 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 46.58, "games": 1829 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 47.25, "games": 218 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 47.92, "games": 530 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 47.93, "games": 338 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q cargada llega a 1595 de rango: te pokea y empuja la wave desde fuera de casi cualquier respuesta, y eso es lo que tapa su falta de movilidad.",
+      "La E trae slow en área y Grievous Wounds de fábrica: castiga healers y sups de engage sin gastar un item, algo que ningún otro ADC tiene en el kit.",
+      "La R es un root de 2 segundos que se propaga en cadena: un buen tendido sobre el equipo agrupado gana la pelea solo y le da picks a distancia de pantalla.",
+      "La W detona Blight por vida máxima del objetivo, así que escala contra tanques y no depende sólo del AD plano.",
+      "La pasiva le devuelve ataque y daño al matar: en una teamfight con kills encadenadas pega bastante más que su build en papel."
+    ],
+    "weaknesses": [
+      "Cero dash, cero escape: si el CC entra encima, se muere; cualquier sup de engage escondido en el arbusto lo saca de la wave de un solo combo.",
+      "Con la R en cooldown queda casi indefenso: ahí es cuando lo flanquean, lo divean y los asesinos lo borran si el equipo no lo peel-ea.",
+      "Usar la E como poke en la wave es el error clásico: se queda sin slow, sin Grievous y sin detonación de Blight justo para el all-in que viene.",
+      "Mientras canaliza la Q está sloweado un 20% y clavado en el lugar: es la ventana más limpia que vas a tener para tirarle todo encima.",
+      "575 de rango de auto con 330 de velocidad: los ADCs de más rango y los magos de poke le ganan el intercambio si no puede cargar la Q tranquilo."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R le da kill pressure real; con un sup que encadene CC sobre el root, el pick se convierte en muerte segura.",
+      "Primer item completado: la Q cargada al máximo más la detonación de Blight empieza a borrar carries inmóviles de un solo tiro.",
+      "Nivel 9 con la Q maxeada: el poke pega casi el doble y limpia la wave de una; desde ahí dicta el ritmo del lane.",
+      "Niveles 11 y 16 con puntos en la R: más daño y menos cooldown, así que puede usarla casi en cada pelea y abrir picks en las sidelanes."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Ziggs, Lux, Xerath: jugá fuera del alcance de su Q cargada y empujá para que tenga que elegir entre farmear y pokearte.",
+        "Cada Q que canalice es una ventana: mientras carga está sloweado y no puede mover, así que tirale todo justo ahí.",
+        "No te pares dentro de la wave: si te pegás a los minions, su Q te pega a vos y empuja la wave al mismo tiempo."
+      ],
+      "tanks": [
+        "Comprá armadura y Grievous propio antes de pelear largo: la W detona Blight por vida máxima, así que apilar vida sin resistencias le regala daño.",
+        "Forzá el all-in cuando tiene la R abajo: sin root no puede peelerse y su daño sostenido es mucho menor que su poke.",
+        "Pegate a rango de melee en la teamfight: ahí no puede cargar la Q y perdés menos que intercambiando autos a distancia."
+      ],
+      "assassins": [
+        "Yasuo, Katarina, Zed: entrá por el flanco o esperá que se ponga a canalizar la Q, que es cuando está clavado en el lugar.",
+        "Baitéale la R: es su único peel de verdad; con la R gastada es una kill gratis.",
+        "No lo dejes farmear la sideline solo: sin dash ni escape, cualquier rotación lo mata antes de que llegue a torre."
+      ],
+      "crowdControl": [
+        "Encadená CC apenas empieza a cargar la Q: durante la canalización está sloweado y no puede esquivar nada.",
+        "Guardá un stun para el arranque de la R: si la interrumpís, pierde el engage y el daño de la pelea entera.",
+        "Comprá Mercurial o Cleanse si tu carry depende de moverse: el root de 2 segundos más las cargas de Blight que aplica es la muerte asegurada."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "Tu W le bloquea la Q cargada y la E: negale el poke entero y el lane se vuelve tuyo, porque sin habilidades su daño es mínimo.",
+          "Dashá con la wave para entrar a rango de melee: pegado no puede cargar la Q sin regalarte el knock-up.",
+          "Guardá el dash para cuando gaste la R: el root de 2 segundos con la wave a mitad del dash es la forma más común de morir en este matchup."
+        ]
+      },
+      {
+        "cid": 115,
+        "name": "Ziggs",
+        "tips": [
+          "Empujá desde fuera de su rango con Q y E: si empujás más rápido que él, nunca puede cargar la Q tranquilo.",
+          "Guardá la W para cuando se ponga a canalizar: lo saca de posición y le cancela la carga entera.",
+          "No aceptes autos largos: con 575 de rango y sin dash, cada bomba que entra le cuesta la wave siguiente."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Castigalo con E cada vez que baje a last hitear: tu rango le gana el intercambio y lo obliga a jugar atrás de la wave.",
+          "Guardá la Q para la canalización: mientras carga la suya está sloweado y no puede esquivar el bind.",
+          "Si te engancha el root de la R, no te quedes a pelear: salí del área de la E y volvé cuando se le pase la ventana."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Esperá que suelte la Q cargada para saltar: durante la canalización está sloweado y sin forma de esquivar tu E.",
+          "Flankealo en la teamfight: sin dash no puede peelerse más que con el root de la R, y si la gastó tu ultimate entra entera.",
+          "Cambiá de dirección cuando veas el indicador de carga: su Q es lenta y sólo pega al que camina en línea recta."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke seguro: cargá la Q desde atrás de la wave y soltá justo cuando el rival vaya a last hitear; si no la vas a pegar, dejá que se cancele y recuperás 50% del maná",
+        "Trade corto: AA ×3 (stackeás Blight con la W pasiva) → E encima del objetivo → AA de salida; es el intercambio más rentable porque la E pega, slowea y detona",
+        "Burst con R: R (root + Blight al máximo) → AA → W activa → Q cargada al máximo, que consume el Blight con +70% de daño y suma el missing health de la W",
+        "Engage de teamfight: R al primero agrupado → Flash hacia delante si hace falta → AA mientras el root se propaga → E arriba de los agrupados para slow y Grievous → Q cargada al que quede",
+        "Peel propio: cuando te divean, R al asesino encima tuyo y kiteá con la E en el piso mientras los autos hacen el resto"
+      ],
+      "tips": [
+        "Si no vas a pegar la Q, no la sueltes: cancelar la carga te devuelve 50% del maná, y ese maná es tu sustain del lane.",
+        "No gastes la E en la wave: es tu slow, tu Grievous y tu detonación de Blight; sin ella no tenés peel ni kill pressure.",
+        "Cargá la Q desde fuera de la vista o detrás de la wave: mientras canalizás estás sloweado un 20% y sos el objetivo más fácil de la lane.",
+        "Jugá con la R siempre arriba: sin ella sos un carry sin escape y sin peel, así que si está en cooldown farmeá pegado a torre.",
+        "Empujá antes de rotar: la Q cargada limpia la wave de un tiro y te da la ventana para ir a mid o al dragón."
+      ],
+      "plan": {
+        "early": "Farmeá seguro los primeros niveles y pokeá con Q desde atrás de la wave; con el primer item y nivel 6 buscá el all-in sólo si tu sup puede encadenar CC sobre el root.",
+        "mid": "Empujá bot, rotá a mid a sacar la torre y quedate pegado a tu sup: sin dash ni escape, caminar solo por el mapa es una muerte anunciada.",
+        "late": "Kiteá desde atrás en las teamfights y guardá la R para el pick o para peelarte; no camines adelante a pegar autos, te van a focusear apenas te vean fuera de posición."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/varus/guide",
+      "https://mobalytics.gg/lol/champions/varus/combos",
+      "https://mobalytics.gg/lol/champions/varus/counters",
+      "https://wiki.leagueoflegends.com/en-us/Varus/LoL"
+    ]
+  }
+}

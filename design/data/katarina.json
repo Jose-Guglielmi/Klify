@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "katarina",
+    "ddragonId": "Katarina",
+    "name": "Katarina",
+    "titleEs": "la Daga Siniestra",
+    "cid": 55,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.36,
+    "pr": 6.52,
+    "br": 10.63,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 1.9,
+      "jungle": 0.2,
+      "middle": 85.2,
+      "bottom": 11.8,
+      "support": 0.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Katarina.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Katarina_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 57.59, "games": 415 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 56.05, "games": 2018 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 55.94, "games": 522 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 55.84, "games": 2088 },
+    { "cid": 61, "slug": "Orianna", "name": "Orianna", "vsWr": 55.18, "games": 937 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 54.94, "games": 557 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 54.79, "games": 219 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 54.77, "games": 608 }
+  ],
+  "weakAgainst": [
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 44.07, "games": 270 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 44.72, "games": 1458 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 46.78, "games": 776 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 46.91, "games": 1068 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 47.12, "games": 1702 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 47.13, "games": 1880 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 47.64, "games": 1952 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 47.81, "games": 502 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Cada kill o asistencia le resetea la E (Shunpo): encadenando resets limpia un teamfight entero en segundos, así que nunca la dejes minions débiles cerca para rebotar.",
+      "Con un solo item queda online: aunque venga atrás en CS, el primer spike de burst la convierte en ejecutora de cualquier squishy a media vida.",
+      "Roam letal: empuja la wave rapidísimo con Q + W y desaparece del mapa; si tu equipo no controla visión, cada ausencia suya de pantalla es un kill en bot.",
+      "Las dagas fuerzan decisiones constantes: cada una que cae es daño en área más un punto de teletransporte para su E; pisarlas mal es regalar el trade."
+    ],
+    "weaknesses": [
+      "Rango melee (125): para farmear tiene que caminar hacia vos, y cada last hit en tu rango es poke gratis si sos de larga distancia.",
+      "La R la arraiga en el lugar mientras canaliza: un stun o knock corta Death Lotus y queda parada sin daño, sin escape y lejos de su equipo.",
+      "Depende de la falta de visión para roamear: control de mapa decente anula su forma favorita de escalar.",
+      "Si entra con Shunpo y no mata, no tiene segunda salida: la E sin reset la deja descalza en medio del equipo enemigo.",
+      "Detrás en el marcador es casi inexistente: necesita kills para escalar; negale early y su mid game llega tarde y sin filo."
+    ],
+    "powerSpikes": [
+      "Primer componente de item de daño: sube tanto su burst que cualquier trade corto se vuelve all-in; no te quedes a media vida en su rango.",
+      "Level 6: Death Lotus dispara su kill pressure, sobre todo contra equipos sin CC; respetá el all-in apenas sube.",
+      "Level 9 con Q maxeada: poke y push de wave mucho más rápidos, y con la wave empujada sus roams se vuelven constantes.",
+      "Mid game con Zhonya: puede entrar con la R y comprar tiempo hasta que alguien pique; peleas agrupadas contra ella son terreno suyo.",
+      "Level 16 con R a nivel 3: con los resets activos limpia teamfights enteras; no agrupes con vida baja ni te amontones en pasillos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Lux: castigala en cada last hit; el lane donde ella pokea primero es el lane que ella pierde, porque tiene que acercarse a cobrar.",
+        "Alejate de las dagas apenas caen: sin daga cerca, su E no tiene trampolín y sus trades pierden la mitad del daño.",
+        "Empujale la wave cuando roamea: seguirla por el río sin visión es caer en la emboscada; la torre que empujás le cuesta más de lo que gana en kills."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: su burst está calibrado contra el que no la tiene; un item te deja caminando la combo entera.",
+        "Peleá en espacios abiertos y lejos de oleadas de minions: sus dagas y su R masifican, y cada minion débil cerca es un reset para ella.",
+        "Forzá peleas largas: sin ejecuciones no hay cura de Voracity ni resets, y su daño sostenido contra un tanque con MR es pobre."
+      ],
+      "assassins": [
+        "Fizz, Ekko, Zed: guardá tu escape para cuando meta la E hacia vos; si Shunpo no encuentra objetivo, es solo una melee sin salida.",
+        "Interruptí la R apenas arranque el channel: un stun bien gastado en Death Lotus borra la mayor parte de su daño de la pelea.",
+        "Contestá en la ventana de cooldown: después de usar Q + E para pokearte, la E está larga early; ese es tu all-in, no el suyo."
+      ],
+      "crowdControl": [
+        "Guardá el CC instantáneo para el arranque de la R: cortar Death Lotus es la forma más directa de ganar la teamfight contra ella.",
+        "Lissandra y Malzahar la convierten en piedra: el CC point-and-click no se esquiva con Shunpo, por rápido que sea el reset.",
+        "No gastes CC mientras esté lejos: esperá a que entre por la daga; CCarla en rango cero solo le regala el reposicionamiento.",
+        "Peleá separados medio paso: su AOE masifica equipos amontonados; la distancia entre ustedes corta la cadena de resets."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Tu Q (silencio) en el arranque del trade mata su combo: sin hechizos por un segundo, no le salen ni la R ni la segunda E.",
+          "Usá la regeneración pasiva como tu segunda vida: si no la ejecutás, alejate, curá de vuelta y peleá de nuevo; su burst no escala contra tanque con MR.",
+          "Guardá la R ejecutora para cuando baje a last hit: su rango corto la obliga a entrar en tu radio y ahí cae sin conseguir reset."
+        ]
+      },
+      {
+        "cid": 8,
+        "name": "Vladimir",
+        "tips": [
+          "El charco (W) en el momento del salto: cuando veas la E venir, bajate al pool y su burst entero cae en nada sin gastar vida.",
+          "Escalá farmeando seguro: ella necesita kills antes de que tu AP la pase por arriba; mientras no le des el snowball, el late es tuyo por goleada.",
+          "Con la E cargada castigala en cada last hit: su rango melee la mete en tu rango en cada wave, no hace falta que la persigas."
+        ]
+      },
+      {
+        "cid": 1,
+        "name": "Annie",
+        "tips": [
+          "El stun point-and-click no se esquiva con Shunpo: contá sus casts y no aceptes trades cuando la barrera esté cargada.",
+          "Pegale de rango cada vez que baje a cobrar: gana todos los trades solo dejando que ella camine hacia vos.",
+          "Al nivel 6 jugá atrás si tiene la pasiva lista: su Q + W + Tibbers + R te borra antes de que tu R responda; allineá recién cuando gaste el burst."
+        ]
+      },
+      {
+        "cid": 38,
+        "name": "Kassadin",
+        "tips": [
+          "Escalá: su ventana es early-mid; si no le das kills antes del minuto 14, tu R de gap closer la encuentra en cada teamfight.",
+          "Comprate MR temprano: su burst está balanceado contra quien no lleva resistencia, y un Null Magic Mantle ya te deja caminando la combo.",
+          "Usá la R para cortar el channel de su R: interrumpir Death Lotus le borra la mitad del daño del teamfight de una sola jugada."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q al rival → caminá hacia la daga que cayó → W bajo vos → E a la daga para reposicionarte y salir del trade sin haber entrado de verdad",
+        "All-in nivel 6: E al rival → Q + W encima del target → R entre las dagas y el rival; si baja de vida, ejecutá y la E se resetea sola para el siguiente",
+        "Trade extendido: Q → E a la daga detrás del target (le pegás al pasar) → auto + W → salí con la E hacia otro minion si ejecutaste algo",
+        "Teamfight: esperá el engage rival → flanqueá → E al carry más accesible → R + Zhonya cuando te apunten → Q y E con reset para limpiar lo que queda",
+        "Escape: E a un minion o ward en dirección contraria + W para la velocidad; nunca entrés con la E si no identificaste antes tu trampolín de vuelta"
+      ],
+      "tips": [
+        "La E no es solo para entrar: cada kill o asistencia la resetea; entrá siempre sabiendo qué minion o daga te sirve de salida.",
+        "Activá W antes del trade, no después: el bonus de daño alrededor de la daga es la mitad de tu combo y además te cura si pegás.",
+        "No canalices R sin Zhonya contra equipos con CC: un stun te la corta y quedás parada sin E; esperá que gasten el CC o entrá por flanco.",
+        "Empujá la wave con Q + W y roameá cuando tu rival esté bajo o sin TP: tus mejores kills no salen de mid, salen de bot con la wave pushada.",
+        "El daño de la R es creciente durante el channel: no la cortes antes de tiempo salvo que el target vaya a escapar; un segundo más cambia el número."
+      ],
+      "plan": {
+        "early": "Jugá seguro hasta el primer item: farmeá con Q, evitá trades largos contra magos de rango y al llegar a 6 buscá all-in solo con dagas colocadas y sin CC rival en pantalla.",
+        "mid": "Empujá mid y roameá hacia las lanes pushadas del rival con la E por los minions del río; cazá targets aislados, sumá resets y armá Zhonya para entrar con R en cada skirmish.",
+        "late": "No iniciés vos: esperá el engage enemigo, flanqueá desde la side lane, entrá al carry con E + R y Zhonya, y usá los resets para limpiar sin exponerte al CC."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/katarina/guide",
+      "https://mobalytics.gg/lol/champions/katarina/counters"
+    ]
+  }
+}

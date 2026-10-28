@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "poppy",
+    "ddragonId": "Poppy",
+    "name": "Poppy",
+    "titleEs": "la Guardiana del Martillo",
+    "cid": 78,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.87,
+    "pr": 1.63,
+    "br": 2.79,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 28.4,
+      "jungle": 13.3,
+      "middle": 1.0,
+      "bottom": 0.1,
+      "support": 57.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Poppy.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Poppy_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 59.29, "games": 226 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 56.82, "games": 403 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 54.44, "games": 439 },
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 54.22, "games": 557 },
+    { "cid": 43, "slug": "Karma", "name": "Karma", "vsWr": 53.87, "games": 336 },
+    { "cid": 555, "slug": "Pyke", "name": "Pyke", "vsWr": 53.4, "games": 706 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 53.02, "games": 315 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.93, "games": 529 }
+  ],
+  "weakAgainst": [
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 43.82, "games": 461 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 43.84, "games": 349 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 47.01, "games": 268 },
+    { "cid": 117, "slug": "Lulu", "name": "Lulu", "vsWr": 47.69, "games": 606 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 48.64, "games": 294 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 48.69, "games": 1103 },
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 49.28, "games": 207 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 49.63, "games": 401 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "All-in brutal con E: empujá al rival contra la pared y queda stuneado el tiempo suficiente para que tu ADC cobre el trade completo.",
+      "La W es la pesadilla de cualquier campeón con dash: se la tirás al piso en el aire y encima te da velocidad de movimiento para pegarte.",
+      "La R cargada puede convertir una 5v5 en 5v2: vuela al equipo enemigo entero lejos del pelea o lo usás como disengage infalible.",
+      "La pasiva te da escudo en cada trade: tus autos golpeados con el martillo te dejan aguantar cambios de golpes que otro support no sobrevive.",
+      "Tanque con engage y peel en el mismo kit: entrás vos con E o defendés al carry con W + R, el rival nunca sabe cuál de las dos viene."
+    ],
+    "weaknesses": [
+      "Te kitan los carries de rango sin necesidad de gastar el dash: llegar a un Ezreal o una Janna caminando es un milagro.",
+      "La Q tiene rango corto y sale lenta: si el objetivo no está stuneado o frenado, la esquiva caminando un paso al costado.",
+      "Si sobresextendés con la E quedás adentro del equipo enemigo sin escape: es tu única movilidad y sin ella sos un yordle caminando lento.",
+      "Mal uso de la R cuesta la pelea: una R cargada que vuela al tanque rival entrega a tu carry al engage enemigo.",
+      "Sin engage listo no generás nada: contra lanes pasivos de rango te quedás mirando la wave sin amenaza real."
+    ],
+    "powerSpikes": [
+      "Nivel 2 con E + Q: el primer stun contra pared con tu ADC cerca es kill o flash del rival; buscá ese trade apenas subís.",
+      "Primer item de vida + botas de velocidad: con Dead Man's y Swiftness llegás a cualquier carry que antes te kiteaba.",
+      "Nivel 6: la R te da un segundo engage o disengage según lo pida la pelea; con Flash en mano cada pick tuyo es definitorio.",
+      "Mid game agrupado: con W lista, cada dash del rival (Zed, Camille, Katarina) termina en el piso y su pelea se termina ahí."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Carries de rango: no camines en línea recta hacia ellos; esperá que gasten el dash, prendé W y recién ahí entrá con E.",
+        "Pegales cuando bajen a farmear o last hit: tu trade corto con pasiva gana si no los dejás kitar por la wave entera.",
+        "En teamfight no persigas al de rango: cubrí a tu ADC con W y dejá que el de rango venga a vos dentro de tu rango de E."
+      ],
+      "tanks": [
+        "Contra tanques no busques matarlos a ellos: stuneá con E, saltá al carry que está atrás y dejá el tanque para tu equipo.",
+        "La Q en zona frena el engage del tanque: tirala entre tu ADC y el Leona o Nautilus que quiere entrar.",
+        "La R cargada contra un tanque agrupado con su equipo los manda a todos de paseo: esperá que se armen fila antes de cargar."
+      ],
+      "assassins": [
+        "Zed, Katarina, Talon: guardá la W para el dash de entrada del asesino; sin dash, su combo empieza y termina en el piso.",
+        "Pegate al carry en teamfight: tu valor contra asesinos es anularles el gap closer, no hacer daño.",
+        "Si el asesino te elige a vos, sobrevivís con pasiva + escudo de items: comprale tiempo a tu equipo caminando hacia tu torre."
+      ],
+      "crowdControl": [
+        "Contra lanes con CC pesado (Leona, Nautilus) esperá su engage: tu W frena el dash de entrada y su combo queda a mitad de camino.",
+        "No entrés vos primero contra equipos con counter-CC encadenado: esperá que gasten el CC en tu ADC y ahí meté la E.",
+        "En peleas largas, la posición vale más que el engage: un E mal metido contra un equipo con CC te cuesta la pelea entera."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 267,
+        "name": "Nami",
+        "tips": [
+          "Su bucle de bola de agua te frena el charge: entrá con E cuando la burbuja esté en cooldown o desde un flanco que no pueda linearte.",
+          "Nami gana el lane pokeando: si tu ADC aguanta atrás y vos buscás solo trades de E a pared, el sustain suyo no alcanza para compensar.",
+          "No gastes la W al principio del trade: guardala para el dash de escape de Poppy; sin E lista, no llega a tocarte nunca."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Braum bloquea tus autos y tu Q con el escudo: enganchá con E al ADC, no al Braum, y tirá la Q de costado cuando el escudo esté abajo.",
+          "Su pasiva en tu ADC te castiga el trade largo: hacé trades cortos con stun y salí antes de que apile los golpes.",
+          "No todo-ins contra el muro del Braum: esperá que use el E del escudo para farmear y recién ahí buscá el engage."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "El tornado te corta el charge en el aire: entrá con E desde el flanco o cuando esté en cooldown; frontal contra Janna es tirar el stun a la nada.",
+          "Su R deshace tu all-in entero: coordiná con tu jungla para quemar el ultimate de curación antes de committed el trade.",
+          "Si la ves cargar tornado, eso es tu ventana: tiene 3 segundos sin nada más que hacer y ahí podés pegarle al ADC impune."
+        ]
+      },
+      {
+        "cid": 117,
+        "name": "Lulu",
+        "tips": [
+          "La W de Lulu convierte tu engage en nada: esperá que la gaste en tu ADC o en minions antes de meter la E contra pared.",
+          "El Polymorph te deja parada mirando mientras tu ADC muere: entrá solo cuando el carry de Lulu esté en rango de tu Q y no del suyo.",
+          "En late no persigas al carry pixeleado: matá primero a Lulu si se adelanta, sin ella el ADC queda desprotegido."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E contra la pared (stun garantizado) → Q debajo del objetivo → 2 autos con escudo de pasiva → caminá afuera antes de que respondan",
+        "All-in completo: E a pared → Q → autos de pasiva → W si el rival usa dash para escapar (se lo tirás al piso) → Ignite si hace falta",
+        "Anti-dash reactivo: esperá el dash del rival y activá W encima: su escape muere en el aire y ganás velocidad para correrlo",
+        "Disengage de teamfight: cargá la R al centro del equipo enemigo agrupado → los vuela al otro lado del mapa y peleás 5v2",
+        "Peel rápido: R sin cargar sobre el diver que entró a tu ADC → W debajo del carry → Q en zona para frenar al resto"
+      ],
+      "tips": [
+        "La E solo sirve completa contra pared: sin pared es un push débil que te deja adentro; buscá líneas con pared o torre antes de committed.",
+        "No abras la W por abrir: es tu carta anti-dash; si la gastás antes de tiempo, el Camille o el Zed entra gratis después.",
+        "La Q sale lenta y corta: apuntala sobre objetivos stuneados o frenados; tirarla a un rival caminando libre es regalar maná.",
+        "Contra lanes de rango no te desesperes por el engage: farmeá la pressure con la pasiva y esperá el error o el gank; tu momenta llega en teamfights.",
+        "Con la R cargada en mano, el equipo enemigo juega separado por miedo: aprovechá ese espacio para enganchar con E a cualquiera que se aleje del grupo."
+      ],
+      "plan": {
+        "early": "Buscá el nivel 2 con E a pared para el primer stun con tu ADC, ganá los trades cortos con el escudo de la pasiva y wardé el río: tu all-in es fuerte pero tu escape es nulo si te agarran sobresextendida.",
+        "mid": "Rotá con las botas de velocidad y Dead Man's para picks por el flanco: cada E a pared en el mid game es un hombre afuera; guardá la R cargada para cuando el equipo rival se agrupe sobre vos.",
+        "late": "Pegate a tu carry: W lista para el dash del diver, R cargada para el equipo agrupado y Q en zona para frenar; tu trabajo es que el de enfrente no llegue nunca a tocar a tu ADC."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/poppy/build",
+      "https://mobalytics.gg/lol/champions/poppy/guide"
+    ]
+  }
+}

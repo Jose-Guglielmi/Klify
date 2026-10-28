@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "garen",
+    "ddragonId": "Garen",
+    "name": "Garen",
+    "titleEs": "el Poder de Demacia",
+    "cid": 86,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.45,
+    "pr": 6.77,
+    "br": 5.24,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 91.1,
+      "jungle": 1.1,
+      "middle": 7.2,
+      "bottom": 0.3,
+      "support": 0.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Garen.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Garen_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 58.75, "games": 240 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 58.19, "games": 421 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 58.08, "games": 730 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 57.88, "games": 1009 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 57.38, "games": 3156 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 57.21, "games": 902 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 57.0, "games": 1093 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 55.38, "games": 325 }
+  ],
+  "weakAgainst": [
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 45.98, "games": 1157 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 48.42, "games": 1109 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 49.11, "games": 1407 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 49.41, "games": 512 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 49.6, "games": 1645 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 49.63, "games": 683 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 49.67, "games": 2601 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 49.78, "games": 3387 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva (Perseverancia) lo regenera a toda velocidad fuera de combate: puede quedar a media vida, alejarse tres metros y volver al trade completo; si no lo castigás mientras regenera, nunca se va de la lane.",
+      "Su E (Juicio) pega más contra un objetivo solitario: en el 1v1 de top rotación completa de Q + E supera en daño crudo a casi cualquier campeón de la posición.",
+      "No usa maná: spamea Q y E para empujar y comerciar sin preocuparse por recursos, así que su presión solo la frena tu vida, no su pool.",
+      "La W (Valor) le da escudo, tenacidad y reducción de daño: rompe cadenas de CC y sobrevive el burst que debería matarlo.",
+      "La R (Justicia de Demacia) es daño verdadero con bonus por vida faltante: remata sin importar armadura ni resistencias, así que nunca está 'afuera de la pelea' si tu carry quedó bajo."
+    ],
+    "weaknesses": [
+      "Cero CC duro y cero movilidad de rango: no tiene gap closer fuera de la velocidad de la Q, así que el kiting lo mata por aburrimiento.",
+      "Débil contra rango: si no puede acercarse, no existe; su game plan entero depende de llegar a rango de auto.",
+      "Depende del flanqueo y la niebla de guerra: con visión bien puesta y lanes agrupadas, no tiene forma limpia de entrar a pelea.",
+      "Si lo pusieron atrás, queda atrapado: sin escala de items no duela ni tanquea, y su equipo no tiene engage por él.",
+      "La pasiva se corta con cualquier daño: un poke cada tanto la niega; no le regales regeneración gratis pegándole cada pocos segundos."
+    ],
+    "powerSpikes": [
+      "Nivel 6: aparece el execute de la R; a partir de ahí cada trade corto suyo termina con la amenaza real de que te remate a mitad de vida.",
+      "Primer item resuelto (Stridebreaker en la build popular): el slow del item le da el enganche que le falta y sus duels se vuelven imposibles de perder de frente.",
+      "Nivel 9 con E maxeada: el giro escama duro y gana cualquier skirmish solitario en la sidelane.",
+      "Nivel 11 con dos puntos en R: el execute empieza a caer con más vida de la que parece; no confíes en 'me queda vida para escapar'.",
+      "Nivel 16 con R a punto máximo: execute disponible casi en cada pelea y suficiente tanqueo de items para entrar dos veces."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Vayne, Kayle, Teemo: kitéalo hasta el infinito; cada paso que da hacia vos es vida que no recupera si vos mantenés distancia.",
+        "Pegale cada vez que va a last hit: negarle la regeneración de la pasiva con poke sostenido lo saca de la lane sin necesidad de matarlo.",
+        "No te pares pegado a los arbustos de la lane: sus short trades salen de ahí con la velocidad de la Q, y si te agarra adentro pierdes el trade."
+      ],
+      "tanks": [
+        "No allinee de frente al arrancar: su E pega más contra un solo objetivo y podés perder el trade temprano aunque escales mejor después.",
+        "Recordá que su R es daño verdadero: mantené tu vida arriba con sustain o escudos, porque el execute te salta a mitad de vida sin importar tu armadura.",
+        "Con tu CC (K'Sante, Cho'Gath, Malphite) lockealo apenas entra: sin escape propio, cada stun tuyo se convierte en kill para tu equipo."
+      ],
+      "assassins": [
+        "No busques el 1v1 en la sidelane: su E maximizada contra un objetivo solitario gana casi cualquier duelo; llevá compañía o visión.",
+        "Esperá que gaste la W antes de commit: ese escudo con tenacidad arruina tu combo entera; sin W, muere rápido a tu burst.",
+        "Si lo viste usar W para salir de un gank o un trade, esa es tu ventana: diez segundos sin W es todo el tiempo que necesitás."
+      ],
+      "crowdControl": [
+        "Su W da tenacidad y reduce daño: no quemés tu CC clave (supresión, engage largo) mientras la tenga en mano; esperá el cast y encadená después.",
+        "Entre ventanas de W, kitéalo con slows: es grande, lento y sin Flash muere antes de llegar a tu backline.",
+        "Pokealo de forma constante en vez de un burst único: cortarle la pasiva con daño periódico lo fuerza a base sin pelear."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Perdé el early con dignidad: farmeá con Q a distancia y jugá atrás; a partir de niveles 7-9 con puntos en E y tu primera R, el 1v1 es tuyo y Garen lo sabe.",
+          "Usá tu Q (no solo daño, también slow y reduce armadura/MR) para kitarlo cuando abra con la velocidad de la Q: sin distancia cerrada, su E no te gira encima.",
+          "Guardá tu W (curación + velocidad) para cuando te baje la vida con R en mano: moverte rápido fuera de su rango de execute niega su única kill condition."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Predicć su approach con la Q: Garen es lineal, siempre entra caminando con la Q activada; el knock-up justo antes de llegar le corta todo el trade.",
+          "Pokealo con la E desde atrás de tus minions y negale la pasiva: un Garen a media vida permanente no puede allinear nunca.",
+          "Escalá vida con tu R y no te pares bajo a su rango: su R verdadero ejecuta, pero si mantenés vida alta y vos tenés R de Feast lista, el all-in termina con vos más gordo y él muerto."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Guardá el Spin (E) para reaccionar a su Q: si lo usás para entrar primero, Garen te pega la rotación entera; usalo para salir cuando él abra.",
+          "Activá tu W (reduce el daño de ataque) cuando te gire encima con la E: baja su daño de spin y su auto, y el trade corto suyo deja de matar.",
+          "Con tu R activa no puede ejecutarte: atravesá los cinco segundos peleando y rematalo después, cuando su burst se fue y su pasiva no alcanza a regenerar."
+        ]
+      },
+      {
+        "cid": 67,
+        "name": "Vayne",
+        "tips": [
+          "Tu rango es tu escudo: kitéalo con cada auto y condenate (E) apenas note que camina hacia vos con la Q prendida; sin velocidad encima, nunca llega.",
+          "No te pares sola contra él cerca de su wave: su E pega extra contra objetivo único y un trade de tres segundos te cuesta media vida gratis.",
+          "Con la R activa, usá la invisibilidad del tumble para romper su target: si pierde el contacto un segundo, su all-in entero se desarma."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: Q (velocidad + reset de auto) → auto potenciado → E encima → auto → R si quedó bajo",
+        "All-in con gap closer: Q → Flash a rango de auto → auto → E → R para ejecutar",
+        "Pelea a quemarropa: E primero → auto → Q → R: si ya estás encima, gastá la E y guardá la velocidad de la Q para perseguir",
+        "Ejecución limpia: cortá la E antes de que termine y rematá con auto → R; cada décima de giro perdida es la distancia que necesita el rival para escapar",
+        "Reubicación de execute: tirá la R y flasheá durante la animación para cambiar de objetivo o de ángulo"
+      ],
+      "tips": [
+        "Usá la Q como reset de auto: auto → Q → auto saca tu burst más rápido que tirar la Q de arranque seco.",
+        "Guardá la W para el CC o el burst del rival, no la gastes al primer trade: sin W, un gank del jungla te cuesta el Flash o la vida.",
+        "Si quedaste pokado, alejate de rango y esperá que la pasiva regenere: volver a base le regala al rival la wave y la presión del lane.",
+        "Tus trades ganadores salen de los arbustos: peleá a la vista solo cuando ya te alcanzaron, el resto del tiempo viví en la niebla.",
+        "La E pega más contra un objetivo solitario: en lane buscá el 1v1, en teamfight abrila sobre el carry en vez de repartirla entre tres tanques."
+      ],
+      "plan": {
+        "early": "Jugá seguro los primeros niveles, farmeá y buscá short trades con Q desde el arbusto; con R en mano ejecutá al rival bajo y recupera con la pasiva para repetir.",
+        "mid": "Splitpushá la sidelane y buscá picks con Q + R: ganás casi todo 1v1 y el enemigo tiene que mandar dos campeones a frenarte, abriendo el mapa para tu equipo.",
+        "late": "Flankeá desde los costados para caerle al carry con Q + Flash + E + R, o quedate peel con W si tu backline está siendo diveada por un asesino."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/garen/guide",
+      "https://mobalytics.gg/lol/champions/garen/build",
+      "https://mobalytics.gg/lol/champions/garen/combos"
+    ]
+  }
+}

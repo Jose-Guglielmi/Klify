@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "fiddlesticks",
+    "ddragonId": "Fiddlesticks",
+    "name": "Fiddlesticks",
+    "titleEs": "el Terror Ancestral",
+    "cid": 9,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.06,
+    "pr": 1.96,
+    "br": 1.02,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 10,
+      "jungle": 70.3,
+      "middle": 3.2,
+      "bottom": 0.3,
+      "support": 16.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Fiddlesticks.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Fiddlesticks_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 58.15, "games": 313 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 57.37, "games": 624 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 56.22, "games": 450 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 55.61, "games": 223 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.78, "games": 513 },
+    { "cid": 203, "slug": "Kindred", "name": "Kindred", "vsWr": 54.22, "games": 249 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 53.73, "games": 912 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 53.5, "games": 200 }
+  ],
+  "weakAgainst": [
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 47.06, "games": 289 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 48.06, "games": 335 },
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 48.23, "games": 537 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 48.33, "games": 269 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 48.61, "games": 216 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 48.79, "games": 455 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 48.79, "games": 496 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 49.02, "games": 563 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R cae desde la niebla sin avisar: si el equipo rival está agrupado peleando un objetivo, Crowstorm borra a tres o cuatro de una sola pasada.",
+      "La Q asusta y pega según la vida que te falte: cuanto más lastimado estés, más duele, y al ser point-and-click no hay side-step que lo salve.",
+      "La W drena y cura a todo lo que tiene alrededor: farmea la jungla sin volver a base y en espacios cerrados (pit, pasillos) sostiene daño absurdo.",
+      "Los effigies de la pasiva hacen todo a la vez: son wards, fake engages y la amenaza permanente de que Fiddle está parado al lado tuyo sin que lo veas.",
+      "La E trae silencio en área: contra enchanters y magos de combo, cortar hechizos por un segundo decide la pelea antes de que empiece."
+    ],
+    "weaknesses": [
+      "Es papel puro y sin movilidad: el que lo encuentra entre campamentos lo borra sin que tenga forma de responder.",
+      "La R canaliza 1.5 segundos a la vista de todos: verlo arrancar el Crowstorm te da tiempo de dispersarte, escapar o tirarle CC encima.",
+      "La W es un channel: cualquier knockback o desplazamiento la corta y queda sin daño y sin curación de golpe.",
+      "Un equipo que warda y barre con sweeper lo desconecta: sin niebla de guerra su R nunca llega limpia y deja de existir en teamfight.",
+      "Duelo temprano débil: antes de items pierde el 1v1 contra casi cualquier jungla peleadora, por eso los invades lo destruyen."
+    ],
+    "powerSpikes": [
+      "Nivel 6: aparece Crowstorm; antes de eso es powerfarm puro, así que invadí y castigá mientras no tiene ultimate.",
+      "Primer item completo: el daño por gank se dispara y cada R debería terminar en kill; evitá agruparte apenas aparece con el item nuevo.",
+      "Nivel 11: segundo punto en R con cooldown mucho más corto, pasa a buscar picks y jugadas cada vez que la tenga en mano.",
+      "Late con R + Zhonya disponibles: mientras tenga esas dos cosas cada teamfight agrupada es moneda cargada a su favor; no peleen si alguna está en cooldown."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pokealo antes de cada objetivo: sin vida para un R limpio tiene que entrar igual y muere al vuelo antes de aterrizar.",
+        "Mantené distancia extra: el fear de la Q es de corto alcance y el tiempo que camina asustado hacia vos es tiempo que no pega.",
+        "Barré los flancos con sweeper y jugá cerca de tu torre: sin ángulo de niebla su R nunca llega a rango."
+      ],
+      "tanks": [
+        "Comprate Resistencia Mágica temprano: su combo de R + W está calibrado contra el que no lleva MR, un solo item te deja caminando toda la pelea.",
+        "Interponete entre Fiddle y tus carries: interceptarlo al aterrizar el Crowstorm le tapa la W con tu cuerpo y tu CC.",
+        "Tocá torre u objetivo cuando se le pase la R: sin ultimate es un espantapájaros sin amenaza real de pelea."
+      ],
+      "assassins": [
+        "Cazalo entre campamentos: sin movilidad ni escape es de los junglas más fáciles de matar si lo encontrás solo.",
+        "Esperá que gaste la R o tirale CC en la canalización: un Crowstorm cortado es media build tirada a la basura.",
+        "Trackeá sus effigies: donde aparece un espantapájaros, Fiddle flanquea desde ese ángulo en menos de una pantalla."
+      ],
+      "crowdControl": [
+        "Guardá un hard CC para el arranque de la R: cortar la canalización le mata la única jugada de teamfight que tiene.",
+        "Los knockbacks y desplazamientos rompen la W: un solo empujón lo deja sin daño, sin curación y fuera de la pelea.",
+        "Reservá la supresión para cuando se revele: Malzahar o Skarner encima de él lo canalizan muerto antes de asustar a nadie."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 5,
+        "name": "Xin Zhao",
+        "tips": [
+          "Invadilo desde el primer clear: sin R pierde el duelo temprano y tu E de empujón le corta la W al toque.",
+          "Cada vez que canalice W sobre vos o sobre un campamento, metele el knock-up: queda sin curación y sin daño para seguir peleando.",
+          "Guardá la R defensiva para su combo: mientras esté activa no te borra y tu equipo limpia al espantapájaros en dos segundos."
+        ]
+      },
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Buscalo en su jungla antes de level 6: pierde cualquier 1v1 peleador temprano y vos escalás mucho mejor que él.",
+          "Guardá el dash para después de su Q: si el fear no te agarra, su combo nunca arranca y lo corrido de su propio campamento.",
+          "En teamfight entrá sobre él apenas aterriza la R: es papel y sin la W canalizada no se sostiene ni un segundo."
+        ]
+      },
+      {
+        "cid": 59,
+        "name": "Jarvan IV",
+        "tips": [
+          "Tu E + Q es CC instantáneo: tirá el knock-up apenas veas arrancar la canalización de R y le cortás la jugada del partido.",
+          "Invadí con tus lanes pushadas: su early débil más tu engage impositivo convierten su campamento en el tuyo.",
+          "Usá Cataclismo cuando intente flanquear: encerrarlo adentro del círculo con tu equipo lo convierte en el primer muerto de la pelea."
+        ]
+      },
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Tirale la banda elástica apenas arranque la R: cortarle el Crowstorm es ganar la teamfight entera antes de que empiece.",
+          "La Q atraviesa paredes: la niebla no lo salva de un stun a distancia que encuentra el punto exacto donde cree estar escondido.",
+          "Guardá tu R para cuando agrupe: una ultimate sobre Fiddle aterrizando (y lo que quede de su equipo al lado) gira la pelea completa."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank con todo: R canalizada desde la niebla → Flash al aterrizar encima del objetivo → Q → E → W para drenarlo mientras corre asustado",
+        "Pick sin R: Q desde fuera de su visión → Flash a su espalda → W canalizada → E al terminar el channel para rematar",
+        "Fake de effigy: caminá disfrazado de espantapájaros → E → R al instante → Q + W al aterrizar (el rival no distingue cuál de los dos sos vos)",
+        "Trade rápido: Q → E → W casi juntos, para cuando ya te vio y no existe ángulo de sorpresa",
+        "Burst completo: R → Q + W apenas aterrizar → E + autos cuando termina la W"
+      ],
+      "tips": [
+        "No canalices W a la vista de alguien con CC o knockback: un empujón te deja sin daño y sin curación; la W es para campamentos y peleas ya ganadas.",
+        "Sembrá effigies en cruces y bushes del río: funcionan de wards y de fake R para que el enemigo queme escapes en un muñeco de paja.",
+        "Arrancá la R siempre desde un ángulo no barrado: mirá quién lleva sweeper y entrá por el flanco opuesto.",
+        "Guardá la Q para después del Flash del rival: asustarlo cuando ya gastó el escape es kill directo; si asustás apenas llegás, camina libre de vuelta.",
+        "Antes de level 6 no aceptes invades ni duelos: powerfarmeá, wardá tus entradas y corré a Crowstorm lo antes posible."
+      ],
+      "plan": {
+        "early": "Powerfarm hasta 6 sin aceptar duelos, wardá las entradas contra invades y, con R en mano, buscá el primer gank que valga la ultimate.",
+        "mid": "Jugá alrededor de objetivos: colocá visión, esperá al equipo rival agrupado y entrá con R desde un ángulo sin sweeper; cada R debe terminar en kill u objetivo.",
+        "late": "Flankeá desde la niebla con R y Zhonya listos, no pelees si alguna de las dos está en cooldown y reservá picks con R sobre el que se adelante del grupo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/fiddlesticks/guide",
+      "https://mobalytics.gg/lol/champions/fiddlesticks/combos"
+    ]
+  }
+}

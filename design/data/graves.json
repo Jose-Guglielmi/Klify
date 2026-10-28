@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "graves",
+    "ddragonId": "Graves",
+    "name": "Graves",
+    "titleEs": "el Forajido",
+    "cid": 104,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.22,
+    "pr": 7.89,
+    "br": 8.64,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 1.4,
+      "jungle": 97.6,
+      "middle": 0.6,
+      "bottom": 0.3,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Graves.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Graves_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 55.83, "games": 206 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.78, "games": 2123 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 54.73, "games": 751 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 54.11, "games": 1203 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 53.95, "games": 354 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 53.0, "games": 283 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 52.66, "games": 564 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 52.64, "games": 397 }
+  ],
+  "weakAgainst": [
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 44.13, "games": 605 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 45.2, "games": 323 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 45.87, "games": 1175 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 45.88, "games": 776 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 46.09, "games": 703 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 46.61, "games": 236 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 46.79, "games": 468 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 47.04, "games": 793 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q rebota en pared y explota al instante: peleando cerca de muros su burst de dos autos + Q borra squishies en menos de dos segundos.",
+      "Cada auto recarga la escopeta y suma resistencias con True Grit: en duelos largos se vuelve más tanque cuanto más pega.",
+      "La E es dash, reset de autoattack y stack de resistencias a la vez: esquiva skillshots, cruza paredes y reubica sin dejar de disparar.",
+      "La W deja ciego y frena: en gank apaga al target y en teamfight le arruina la pantalla a todo el backline enemigo.",
+      "Clear de campamentos rapidísimo y fuerte en invasión temprana: casi ningún jungla le gana el 1v1 antes del nivel 6."
+    ],
+    "weaknesses": [
+      "Squishy real: un hard CC lo encuentra y lo borra; si gasta la E en ofensiva no tiene segunda vida.",
+      "Sus autos se bloquean con minions y estructuras: peleá detrás de una wave grande y su daño a distancia se corta a la mitad.",
+      "La E tiene cooldown largo cuando no puede autoatacar: cadenale CC y queda parado sin escape ni recarga.",
+      "Su daño es de bocajarro: escalá el juego a distancia con poke y waveclear desde afuera y nunca llega a entrar.",
+      "No tiene CC duro más allá de la lentitud de la W: depende de sus compañeros para cerrar kills sobre targets móviles."
+    ],
+    "powerSpikes": [
+      "Nivel 3: completa Q + W + E y su primer gank es real; wardá el río antes de que aparezca por el flanco.",
+      "Nivel 6: la R suma ejecutor a distancia y una salida extra; no pelees el río con menos de media vida.",
+      "Primer item de letalidad armado (Hubris, Youmuu o Collector): el burst de Q + autos ejecuta squishies completos; no camines solo por la jungla sin visión.",
+      "Niveles 11-13 con R en dos puntos y Q máxima: ejecuta cualquier objetivo bajo de vida en pantalla y gana todos los skirmishes 1v1."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Graves depende de acercarse: kitéalo con tu rango extra y cada paso que dé hacia vos le cuesta media vida antes de llegar.",
+        "Usá la wave como escudo: sus balas se bloquean con minions, así que peleá pegado a tus minions y su burst nunca te encuentra.",
+        "Guardá tu skillshot o tu escape para después de comerte el humo: la W te deja ciego dos segundos y ahí es cuando te agarra."
+      ],
+      "tanks": [
+        "Armáte armadura temprana (Plated Steelcaps, Bramble): sus autos a bocajarro escalan contra el que no compra resistencia, no contra el que sí.",
+        "Cadenale el CC apenas gaste la E: sin autoattacks no suma True Grit ni recarga, y queda como un adorno sin escape.",
+        "Forzalo a pegarte en tu wave grande: cada bala que va hacia vos pasa por seis minions y llega con la mitad del daño."
+      ],
+      "assassins": [
+        "Allineá cuando salte la E hacia vos: si el dash lo trae hasta tu cara, no le queda escape; esperá que la gaste en ofensiva.",
+        "Entrá desde el flanco opuesto a tu engage: la W ciega hacia adelante y si no te encuentra en el humo, su combo muere ahí.",
+        "No te parezcas contra muros ni pelees en la jungla angosta: su Q de pared explota al instante y te borra a media vida."
+      ],
+      "crowdControl": [
+        "Gastale el hard CC apenas entre en rango de auto: es squishy y sin la E disponible muere antes de recargar la segunda bala.",
+        "Guardá tu stun cargado para después del humo: la W niega visión pero no te saca el CC si ya venía en la mano.",
+        "Peelá al ADC con tu CC en teamfights: el plan de Graves es exactamente entrar ciego con W y ejecutar con R, no le des la ventana."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 9,
+        "name": "Fiddlesticks",
+        "tips": [
+          "Evitá el 1v1 temprano en el río: Graves invade y gana todo duelo antes del nivel 6; wardá tus entradas y escalá a salvo.",
+          "Guardá el miedo (Q) para cuando se tire la E ofensiva: sin autoattacks no suma True Grit y su burst queda en mitades.",
+          "R desde la niebla cuando esté haciendo dragón o peleando un campamento: la ejecución de su R no le sirve si lo agarra el cuervo antes."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "La ceguera (Q) apaga la escopeta: cada vez que se acerque a pegarte, comelo con un Q a la cara y sus balas vuelan por sobre tu cabeza.",
+          "No te parezcas contra paredes: la Q de Graves explota al instante en muro y te borra; peleá en callejones abiertos.",
+          "Hongos en tu ruta de farmeo y en el río: cada humo que pise le cuesta media vida antes de llegar a vos."
+        ]
+      },
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Esperá que gaste la E para saltarle: sin el dash no se pega la Q de pared ni escapa del salto de la manada.",
+          "W apenas entre en rango de auto: los duelos de Graves escalan con True Grit, así que cerrá la pelea antes de que sume stacks.",
+          "A nivel 6 buscá el all-in con la R: su ejecutor sirve a distancia, pero la manada encima lo encuentra antes de apretar el botón."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Tu E es imparable: atravesá el humo (W) de Graves con la ventajasca arriba; la ceguera no interrumpe tu daño canalizado.",
+          "Forzá las peleas por dragón: con stacks de Voidgrow tu duelo supera al suyo; peleá el objetivo en vez de cazarlo por la jungla.",
+          "Guardá la Q para esquivar la Q de pared: si su burst explota al aire, las dos balas restantes no te matan y quedás a rango de tentáculos."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Clear de campamento: Q contra la pared para que explote al instante y alternar autos; la Q de pared te ahorra media vida en cada campamento",
+        "Combo de burst: auto → Q al muro → auto → E (resetea el auto y suma resistencias) → auto → R para ejecutar",
+        "Gank nivel 3: entrá por el flanco → W encima del target (ceguera + lentitud) → Q a bocajarro → autos con E para seguir pegado",
+        "Duelo técnico: auto → E apenas sale el disparo (cancelás la animación y recargás más rápido) → auto de nuevo",
+        "Escape de emergencia: E sobre la pared → R apuntando para atrás por el mismo camino; el retroceso te reubica aunque pierdas el ejecutor"
+      ],
+      "tips": [
+        "Tirá un auto antes de apretar E: la E resetea el autoattack y te recarga; usarla con las dos balas llenas tira ese reset a la basura.",
+        "Tu pasiva se bloquea con minions y estructuras: movete de ángulo antes de gastar balas, tener al rival a cuerpo limpio vale más que un item temprano.",
+        "La W es herramienta, no daño: usala para cegar al backline enemigo o frenar al que te persigue; gastarla en poke te deja sin llave de escape.",
+        "Pegale a lo primero que tengas cerca para mantener True Grit: cada auto suma resistencias, incluso en campamentos o minions camino a la pelea.",
+        "Arrastrá los duelos hacia la jungla angosta: tu Q necesita pared para explotar rápido, peleá al costado de muros y no en el carril abierto."
+      ],
+      "plan": {
+        "early": "Sos el duelista 1v1 más fuerte del juego temprano: invadí, gankiá desde nivel 3 y asegurá dragones tempranos, pero balanceá pelea y farmeo porque un Graves atrás no vuelve.",
+        "mid": "Asegurá cada dragón y el Heraldo con tu control de objetivos, buscá skirmishes y picks con la letalidad armada, y agrupate para sieges antes de que spawnee el Barón.",
+        "late": "No te separe del equipo: peleá enfocando al enemigo más cercano, guardá la E para reubicarte cuando te busquen y ejecutá con R a los que queden bajo de vida."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/graves/guide",
+      "https://app.mobalytics.gg/lol/champions/graves/build"
+    ]
+  }
+}

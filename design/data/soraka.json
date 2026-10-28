@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "soraka",
+    "ddragonId": "Soraka",
+    "name": "Soraka",
+    "titleEs": "la Hija de las Estrellas",
+    "cid": 16,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.23,
+    "pr": 4.67,
+    "br": 2.28,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.8,
+      "jungle": 0.0,
+      "middle": 0.4,
+      "bottom": 0.2,
+      "support": 98.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Soraka.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 64.32, "games": 241 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 63.98, "games": 211 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 58.42, "games": 303 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 58.17, "games": 1236 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 57.54, "games": 464 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.04, "games": 398 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 56.59, "games": 311 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 55.01, "games": 1038 }
+  ],
+  "weakAgainst": [
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 48.59, "games": 601 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 49.08, "games": 1848 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 49.13, "games": 1146 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 49.55, "games": 220 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 49.63, "games": 270 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 49.83, "games": 4206 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 50.02, "games": 2795 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 50.35, "games": 2463 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q (Starcall) paga sola: pega, aplica slow y te devuelve vida con Rejuvenation, así que gana trades largos sin gastar nada más que maná.",
+      "Con Rejuvenation encima, la W cura una barbaridad y no le cuesta vida propia: si le dejás pegar la Q, cada heal sale gratis y la lane se vuelve imposible de ganar por daño.",
+      "La E (Equinox) es un silencio en área: apaga engages enteros, corta canales y obliga al rival a pelear sin habilidades durante varios segundos.",
+      "La R (Wish) es un heal global: puede revertir una pelea en top mientras ella está en bot, y eso le da impacto en skirmishes que ni siquiera juega.",
+      "Escala muy bien: con dos o tres items de heal el output por segundo es absurdo y ningún burst corto alcanza a matar lo que ella cura."
+    ],
+    "weaknesses": [
+      "Es de las campeonas más frágiles del juego: cualquier CC que le entre es prácticamente kill y su único escape real es el Flash.",
+      "El heal se apaga con Grievous Wounds: un Executioner's Calling temprano le corta el output a la mitad y la deja como un support común.",
+      "La W le cuesta vida propia: si la obligás a curar mucho sin dejarla pegar Q, se autodestruye y termina en un tercio de barra.",
+      "Si gasta la E en poke o en empujar wave se queda sin su única herramienta defensiva: castigá esa ventana con todo.",
+      "Sin dash ni peel duro: los asesinos y los engage con movilidad le entran directo a la cara y no tiene con qué sacárselos de encima."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primera R disponible; desde ahí impacta peleas en todo el mapa sin moverse de su lane.",
+      "Primer item de heal completo (AP + ability haste): la Q empieza a curar en serio y aguanta trades que antes perdía.",
+      "Nivel 11 con la R al segundo punto: el heal global se vuelve lo bastante grande como para sacar a alguien de un burst completo, así que asumí que siempre la tiene.",
+      "Tres items de heal: el output supera cualquier daño sostenido; el único contador real ahí es el Grievous Wounds, no el daño."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: pegale desde fuera del rango de la Q y no la dejes pegar Starcall; sin Rejuvenation sus heals cuestan vida y la lane se gana sola.",
+        "Empujá y pokeá al mismo tiempo: la obligás a elegir entre curar al ADC y responder la wave, y en eso pierde siempre.",
+        "No camines en línea recta hacia ella: la Q se esquiva de costado, y una Soraka que no pega Q es una que se mata curando."
+      ],
+      "tanks": [
+        "Enganchá y entrá con todo: no tiene peel duro, así que si el CC entra primero el all-in gana antes de que cure nada.",
+        "Comprá Grievous Wounds o pedile al carry que lo haga: sin reducción de heal no le ganás la carrera de daño contra heal.",
+        "Baitéa la E: caminá hacia ella para que la gaste defendiéndose y recién ahí engageá de verdad con el CC principal."
+      ],
+      "assassins": [
+        "Kha'Zix, Rengar, Zed: entrá después de que gaste la E; con el silencio en cooldown no tiene absolutamente nada para frenarte.",
+        "Flankeá, no entres de frente: está en la backline y de frente es imposible llegar, por el costado es un hit gratis.",
+        "Campeá sus wards: en el mid game va sola a wardeá y ahí es la kill más fácil del mapa."
+      ],
+      "crowdControl": [
+        "Cualquier stun largo o supresión la borra: si el CC entra, la pelea ya está ganada porque el heal nunca llega.",
+        "Blitzcrank, Nautilus, Leona: un hook o un stun sobre ella y su ADC se queda sin sostén en medio de la pelea.",
+        "Encadená el CC sobre el carry enemigo: si Soraka no puede acercarse a curar sin comerse el CC, elige entre morir o dejar morir a su carry."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 57,
+        "name": "Maokai",
+        "tips": [
+          "Tu Q y tu W la atrapan justo cuando se acerca a curar: pegalé el CC encima del cast de la W y el heal se corta.",
+          "Empujá con saplings en el arbusto del río: si la encerrás contra su torre no puede pelear la wave ni curar sin comerse daño.",
+          "Tirá la ulti sobre la pelea agrupada: para curar tiene que estar cerca de su carry, y ahí es donde la tuya la deja clavada."
+        ]
+      },
+      {
+        "cid": 40,
+        "name": "Janna",
+        "tips": [
+          "Tu escudo y tu ulti ganan la carrera de heals: si ella cura, vos curás más y encima tenés el disengage para cortar el all-in.",
+          "Guardá el tornado para cuando se acerque a pegar Q: interrumpirle la Starcall le corta el Rejuvenation y con eso el heal gratis.",
+          "Wardeá y roameá antes que ella: una Soraka sin visión en el río no puede sostener a su ADC cuando llega el gank."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Tu engage con la montura y la W la atrapan antes de que ponga la E: si el CC entra primero, el silencio nunca sale.",
+          "Baitéa la Equinox caminando hacia ella y volvé: con la E gastada, el all-in con ulti es regalado.",
+          "Pegate al carry enemigo: el heal de Soraka cuesta vida propia, así que si la obligás a curar bajo tu CC se queda sin barra."
+        ]
+      },
+      {
+        "cid": 267,
+        "name": "Nami",
+        "tips": [
+          "Tu Q y tu W te dan trades que ella pierde: pegale con la ola desde fuera de su Q y forzála a curar sin Rejuvenation.",
+          "Cuando intente pegar Q para tener el heal barato, casteale la burbuja encima: la dejás sin maná, sin vida y sin heal.",
+          "En teamfight tirá la R sobre el carry enemigo: separarlo de Soraka le corta el sustain y con eso cae la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar de lane: Q → AA → W sobre el ADC (la Q te da Rejuvenation, así que la W sale sin costo de vida y el trade es gratis)",
+        "Poke agresivo: E → Q → AA (silenciás para que no pueda responder y le pegás la Starcall gratis encima)",
+        "Salvataje de aliado: R → W sobre el que está bajo → Q al enemigo más cercano para recuperar Rejuvenation y volver a curar",
+        "Engage sorpresa: Flash → Q → E → AA (el slow de la Q asegura el silencio encima y con el equipo cerca es pick gratis)",
+        "Defensa en teamfight: E sobre el carry propio cuando entra el engage → W encima → Q al más cercano para el heal barato"
+      ],
+      "tips": [
+        "No gastes la E en poke ni en empujar la wave: es tu única herramienta defensiva y sin ella cualquier engage te mata.",
+        "Pegá la Q antes de cada W siempre que puedas: el Rejuvenation evita el costo de vida y duplica el valor del heal.",
+        "Cuidá tu barra: si curás sin Rejuvenation te matás de a poco, y una Soraka con poca vida no puede ni acercarse a la pelea.",
+        "Mirá el minimapa todo el tiempo por la R: guardala para el aliado que puede sobrevivir, no para el que ya está muerto.",
+        "No vayas sola a wardeá en el mid game: sos la kill más fácil del mapa y tu muerte deja al equipo jugando 4v5."
+      ],
+      "plan": {
+        "early": "Pokeá con Q cada vez que el enemigo baja a last hitear, curá con W solo con Rejuvenation encima y no gastes la E en poke.",
+        "mid": "Rotá a mid después de tirar la torre de bot, poné visión antes de cada objetivo y usá la R para revertir skirmishes en otras lanes.",
+        "late": "Quedate pegada al carry, silenciá con E cuando entre el engage y alterná Q → W sin parar; no wardeés sola ni de noche sin visión."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/soraka/guide",
+      "https://mobalytics.gg/lol/champions/soraka/combos",
+      "https://mobalytics.gg/lol/champions/soraka/counters"
+    ]
+  }
+}

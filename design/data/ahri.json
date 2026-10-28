@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "ahri",
+    "ddragonId": "Ahri",
+    "name": "Ahri",
+    "titleEs": "la Vastaya de Nueve Colas",
+    "cid": 103,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.15,
+    "pr": 9.73,
+    "br": 3.23,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 2.6,
+      "jungle": 0,
+      "middle": 95.3,
+      "bottom": 0.8,
+      "support": 1.3
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ahri.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 60.55, "games": 218 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 60.29, "games": 277 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 58.56, "games": 333 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 57.47, "games": 1432 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 55.67, "games": 476 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.15, "games": 1030 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 55.01, "games": 1416 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 54.82, "games": 363 }
+  ],
+  "weakAgainst": [
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 46.7, "games": 227 },
+    { "cid": 166, "slug": "Akshan", "name": "Akshan", "vsWr": 47.58, "games": 992 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 48.53, "games": 1125 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 49.11, "games": 224 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 49.12, "games": 1645 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 49.23, "games": 2206 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 49.29, "games": 1976 },
+    { "cid": 1, "slug": "Annie", "name": "Annie", "vsWr": 49.43, "games": 965 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva le da sustain real en lane: cada tanto recupera vida que en matchups gastados es la diferencia entre quedarse o volver a base.",
+      "El Charm (E) genera pick potential en todo momento del juego: un rival fuera de posición se convierte en kill y oro gratis.",
+      "Con Spirit Rush (R) puede flanquear desde el costado, borrar un squishy y salir antes de que le respondan: movilidad que casi ningún mago tiene.",
+      "Es una roamera top: empuja la wave con Q al nivel 6 y aparece en bot o en el río antes de que el mapa reaccione."
+    ],
+    "weaknesses": [
+      "Sin R está en pañales: no tiene escape ni burst, y juega notablemente más atrás mientras espera el cooldown; castigá esa ventana.",
+      "Todo su kit son skillshots y el Charm tiene hitbox chica: esquivar la E le mata el all-in completo y su combo queda en nada.",
+      "Antes del nivel 6 es lenta y predecible: sin Ultimate un gank la encuentra descalza y su trade temprano es fácil de contestar.",
+      "Comps con mucho CC la limitan: si le cargan control encima, tiene que esperar tu cooldown antes de atreverse a entrar con R.",
+      "En late los frontlines con MR aguantan su burst: si el equipo pelea agrupado detrás de un tanque, solo le quedan el soporte y el ADC como objetivos."
+    ],
+    "powerSpikes": [
+      "Nivel 2: con Q y E en mano ya busca el trade ganado si el Charm entra; no te pares en línea recta con la wave empujada.",
+      "Nivel 6: salta la kill pressure y el roam; de ahí en adelante asumí que cada wave pushada termina en una emboscada en tu jungla.",
+      "Lost Chapter / primer item: el waveclear con Q se vuelve instantáneo y empieza a encarcelarte contra tu torre.",
+      "Nivel 9 y 11: Q maxeada más dos puntos de R multiplican su push y su pick potential en mid game.",
+      "Nivel 16: tres puntos en R bajan el cooldown tanto que casi siempre la tiene cargada; no confiés en que 'no la tiene' para salir de posición."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Hwei, Ziggs: tu rango te deja pegarle cada vez que baja al last hit; ella necesita acercarse para que el Q pegue ida y vuelta completo.",
+        "Ponete siempre detrás de tu wave: el Charm se choca con minions y si no tiene línea recta, su única amenaza es el poke del Q.",
+        "Empujá constante pre-6: sin Ultimate no contesta ni el push ni un dive temprano, y le negás el roam que es donde más rinde."
+      ],
+      "tanks": [
+        "Comprate MR temprano: su burst está calibrado contra squishies y un solo item te deja caminando su combo entera sin dramas.",
+        "Forzala a gastar cargas de R para posicionarse: cada dash que usa para acercarse es uno menos para escapar de tu engage.",
+        "En peleas largas su daño cae a pique: no te asustes del burst inicial, sostene la pelea y tu equipo la come viva."
+      ],
+      "assassins": [
+        "Esperá que gaste el Charm para all-in: sin E entró, su combo depende del Flash y queda al alcance de tu burst por varios segundos.",
+        "Castigala pre-6: antes de Ultimate no tiene escape y tu kit la supera en trade; cada kill temprana le roba el mid game entero.",
+        "Post-6 no la sigas a ciegas cuando desaparece de la lane: su R le permite flanquear por la jungla y encontrarte sin visión es la kill que busca."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para el arranque de su R: si la interrumpís entre el primer y segundo dash, muere adentro de tu equipo sin haber pegado.",
+        "Malzahar, Lissandra o un supp con engage point-and-click la sacan del juego: su movilidad no sirve si no puede moverse.",
+        "Encadená el CC después de que use el Charm: gastada la E, no tiene forma de contestar tu engage ni de escapar del follow-up."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Pisá con W (Hallowed Mist) apenas veas el arranque de la combo: adentro de la neblina ni el Charm ni el Q te pueden tocar.",
+          "Pegale con los pokes de Q cuando vaya a last hit: ella tiene que acercarse a tu rango de autos y ahí ganás cada trade corto.",
+          "No quieras matarla early por gusto: escalás mejor; farmeá tranquila, aguantá sus roams y a los dos items tu R la supera en todas las peleas."
+        ]
+      },
+      {
+        "cid": 166,
+        "name": "Akshan",
+        "tips": [
+          "Usá la E del gancho para esquivar el Charm en vertical: si la E no entra, su all-in queda sin arranque y ella ya gastó maná.",
+          "Castigala con AA + Q cada vez que cruza el centro de la lane: tu pasiva de escudo te deja ganar los trades que ella no puede contestar.",
+          "Pusheá y roameá con ella en la mira: cuando se va a bot, seguila con visión por la jungla o empujá tu wave para cobrarle la torre."
+        ]
+      },
+      {
+        "cid": 893,
+        "name": "Aurora",
+        "tips": [
+          "Guardá tu dash de W para el Charm: esquivar su única habilidad de engage convierte su combo en poke solo y sin premio.",
+          "Pokeala con Q desde fuera de su rango de Q: tu alcance te deja castigarla en cada CS y su sustain pasiva no banca tu presión constante.",
+          "Usá la R para zonera en peleas: si el área te la dejás puesta sobre su entrada, no puede flanquear con R sin entrar quemada."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Farmeá con E desde fuera de su rango y no aceptes trades: tu plan es llegar a 6/11/16, cada minuto que pasa la partida es tuya.",
+          "Guardá la W para cuando tire el Charm: el boost de velocidad te saca de la línea del skillshot y la E gastada la deja abierta.",
+          "Jugá atrás de tu torre pre-6 y avisá tu jungla de sus roams: si no le regalás kills tempranas, tulate el mid game y ganás todos los all-ins de late."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico de lane: Q → W al instante + AA (el AA primero lockea la W sobre el objetivo que querés)",
+        "All-in nivel 3: E → Q apenas sale el Charm → W + AA juntos para cobrar todo el burst antes de que reaccione",
+        "All-in nivel 6: R para agarrar ángulo → E → Q → R + W en el aire → AA → última R para asegurar la kill o escapar",
+        "Charm escondido: E → R al instante (tapás la animación del Charm) → W en el aire → Q al aterrizar; el rival no ve venir el engage",
+        "Burst con Flash: E → Flash + Q → R → W en el aire → AA al aterrizar; para ejecutar a un squishy que se cree fuera de rango"
+      ],
+      "tips": [
+        "Nunca gastes las tres cargas de R para entrar: la última carga es tu escape; entrá con dos y salí con la tercera.",
+        "Usá el Q para pegar wave y campeón a la vez: atraviesa todo lo que encuentre, alinealo para que la vuelta pase por el rival.",
+        "La W pega a lo más cercano: tirá un AA antes de activarla para que lockee al campeón y no a un minion de la wave.",
+        "Sin R jugá diez metros atrás: sos un mago sin escape y todo el mapa lo sabe; esperá el cooldown antes de pararte adelantada.",
+        "El Charm necesita línea recta limpia: esperá que la wave se acomode o acomodate en diagonal para que no se choque en un minion."
+      ],
+      "plan": {
+        "early": "Farmeá hacia Lost Chapter usando el Q para wave y campeón a la vez, jugá atrás del lado contrario al jungla enemigo y al llegar a 6 empujá la wave y buscá el primer roam.",
+        "mid": "Con R en mano viví de los picks: swap a sidelane, flanqueá desde fuera de visión con el Sweeper y si el rival te sigue sin ward, esperalo escondida en la jungla.",
+        "late": "Seteá emboscadas en arbustos alrededor de objetivos, no quieras borrar frontlines tankeadas: buscá el flanco sobre el ADC o el soporte y guardá siempre una carga de R para salir."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ahri/guide",
+      "https://mobalytics.gg/lol/champions/ahri/combos",
+      "https://www.nerfplz.com/lol-counters/ahri/"
+    ]
+  }
+}

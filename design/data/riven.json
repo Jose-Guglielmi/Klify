@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "riven",
+    "ddragonId": "Riven",
+    "name": "Riven",
+    "titleEs": "la Desterrada",
+    "cid": 92,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.83,
+    "pr": 2.11,
+    "br": 1.07,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 79.5,
+      "jungle": 4.2,
+      "middle": 14.7,
+      "bottom": 1,
+      "support": 0.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Riven.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Riven_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 57.08, "games": 473 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 56.75, "games": 548 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 54.26, "games": 376 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 54.25, "games": 1484 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 54.04, "games": 892 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 52.59, "games": 734 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 52.53, "games": 1403 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 52.36, "games": 592 }
+  ],
+  "weakAgainst": [
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 42.81, "games": 285 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 44.28, "games": 1380 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 45.08, "games": 772 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 45.41, "games": 1526 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.49, "games": 370 },
+    { "cid": 6, "slug": "Urgot", "name": "Urgot", "vsWr": 46.53, "games": 518 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 46.92, "games": 503 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 46.93, "games": 505 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Movilidad brutal: tres cargas de Q más el escudo-dash de E le permiten meterse, pegar y salir; un carry sin escape no le escapa a una combo completa.",
+      "La R es un execute global de rango: en teamfight cualquier rival por debajo de la mitad de vida es eliminable, y ella lo sabe, así que juega con esa espada de Damocles sobre vos.",
+      "Tiene su propio CC: el stun de la W en área, encadenado tras sus dashes, puede pegarle a varios a la vez y abrir el all-in para todo su equipo.",
+      "Escudo en la E que escala con AD: absorbe poke en cada trade y le permite aguantar lanes que a otro luchador se le complicarían."
+    ],
+    "weaknesses": [
+      "Si la agarrás con control de masas está muerta: sin dashes no es nada, así que reservá tu CC para el momento en que entre y la borrás antes de que toque de nuevo.",
+      "Curva de aprendizaje altísima: una Riven que no cancela animaciones de autos hace la mitad del daño; castigá cualquier combo torpe o lenta.",
+      "Volver al juego cuando va atrás le cuesta el doble que a otros tops: si le ganás el early, queda inútil para el resto de la partida.",
+      "Pushea la wave por naturaleza de su kit: sin visión del jungla, cada wave adelantada es una invitación al gank; avisá a tu jungla y cobrala.",
+      "Con la W en cooldown no tiene forma de pelear: es la ventana perfecta para allinearla o bucearla bajo torre."
+    ],
+    "powerSpikes": [
+      "Primer componente de item: con Long Sword o similar en la mano, sus trades cortos con Q ya duelen más de lo que parece; no te quedes a intercambiar gratis.",
+      "Level 6: la R convierte cada trade largo en un all-in con execute; si no sabés si tiene ult, no te pares a media vida.",
+      "Mid game con core items: su daño pico llega con los dos primeros items; bucear al backline le sale gratis y puede ganar 1v2 si la dejás aislada.",
+      "Level 16: con la R en nivel 3 borra equipos enteros agrupados; en late no aceptes peleas si su R está en mano y tu equipo está junto."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Vayne, Heimer: viví en los arbustos del lane, salí solo para last hit y volvé; cada paso en línea recta le regala poke gratis.",
+        "Guardá la E para cerrar distancia cuando se pase de línea, no para escapar: un dash inesperado sobre un campeón de rango la deja fuera de posición y ahí ganás el trade entero.",
+        "No pushees sin visión: contra rango en top, la wave adelantada te convierte en presa del jungla y del poke a la vez."
+      ],
+      "tanks": [
+        "Comprá pen de armadura temprano: su daño físico puro se estanca contra un tanque que apila armor y ella necesita snowball para evitarlo.",
+        "Hacé trades cortos con Q y salí con E antes de que cargue su respuesta: no le ganes el juego del aguantar, ganáslo con ventaja de vida acumulada.",
+        "Si jugás tanque contra ella, guardá tu CC: su única forma de entrar es el dash de la E o la Q; interrumpirle el arranque la deja parada sin nada."
+      ],
+      "assassins": [
+        "Guardá tu escape para el inicio de su combo, no para farmear: si entra con todo y no te encuentra, quedó gastada en medio de la lane.",
+        "Comprate armadura temprano: su burst está calibrado contra squishies sin items; un solo componente defensivo te deja caminando su combo entera.",
+        "Después de que gaste Q x3 y E no tiene nada: ese es tu all-in, no antes."
+      ],
+      "crowdControl": [
+        "El CC es su kryptonita: encadená tu control apenas entre, porque un stun entre la E y la Q mata su combo y su vida junto.",
+        "Poppy y sus amigos anti-dash la humillan: esperá que gaste el dash de la E para tirar tu knockback o tu root, nunca antes.",
+        "Sin movilidad disponible se vuelve un melee de rango corto: forzála a gastar dashes para farmear y no va a tener nada para pelear cuando la busques."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "Tu W es la pesadilla de Riven: parala en la zona de sus dashes y cada E o Q suya queda cancelada en el aire; sin movilidad es un melee lento con espada.",
+          "Pegale con Q escudo cuando se acerque a last hit: ella necesita comerte el stun antes de pelear, y tu passive te deja ganar todos los trades cortos.",
+          "No la persigas por el lane: con Q x3 disponibles te corre mejor que vos; jugá cerca de tu wave y dejala que se acerque a vos."
+        ]
+      },
+      {
+        "cid": 58,
+        "name": "Renekton",
+        "tips": [
+          "Nivel 1 a 3 son tuyos: con furia llena tu Q + W la baja de media vida antes de que su escalado arranque; usá esa ventana o perdiste el lane.",
+          "Hacé trades cortos con furia y salí: ella quiere peleas largas para staquear Conqueror, no se la des; entrá, castigá y volvé a la wave.",
+          "Cuando tenga la R en mano no te pares a media vida: el execute te borra; comprá armadura temprano y peleala recién con tu ult lista."
+        ]
+      },
+      {
+        "cid": 80,
+        "name": "Pantheon",
+        "tips": [
+          "Tu Q point-and-click castiga cada acercamiento: pegale cada vez que camine hacia la wave y el lane se vuelve gratis.",
+          "Guardá tu E para el burst de su combo: bloquear su Q x3 o su R2 anula el pico de daño entero y ella queda gastada delante tuyo.",
+          "Al nivel 6 tu all-in con stun le gana la carrera: entrá con W + Q + E completa antes de que su R termine de cargar."
+        ]
+      },
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "Tu Q silencia antes de que toque: un Riven silenciada no puede dash ni stun; ganate el trade con Q + E y salí antes de que reaccione.",
+          "Jugá con la pasiva: entre oleadas de minions te curás de vuelta; forzála a gastar maná en poke y el lane se define solo.",
+          "Con tu W activada su burst no te mata: activá el tenacity cuando entre y peleala de frente; su execute de la R es lo único que debés respetar, el resto es tuyo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q → auto cancelado → W stun → auto cancelado → Q → auto → Q → E para salir (cancelá cada animación o perdés la mitad del daño)",
+        "All-in nivel 6: R1 (espada) → E hacia el objetivo → W stun → auto + Q x3 → R2 execute apenas baje de la mitad de vida",
+        "Fast combo de burst: E → W en el aterrizaje → R1 → Q x3 sobre el objetivo → R2; el escudo de la E absorbe la respuesta mientras tu combo entra",
+        "Engage de teamfight: flanqueá o entrá con Flash + W para el multi-stun → R1 → Q x3 al carry → R2 para ejecutarlo y reubicarte con la E",
+        "Escape: Q hacia el enemigo o el muro y E por encima para cruzar; guardá siempre una carga de Q si no sabés dónde está su jungla"
+      ],
+      "tips": [
+        "Cancelá las animaciones de auto entre cada Q (moverte o usar habilidad justo después del golpe): sin cancels tu combo es lenta y tu daño cae a la mitad.",
+        "La E es tu único escape real: no la gastes ofensivamente si no sabés dónde está el jungla rival; entrá con Q y dejá la E para salir o para el stun.",
+        "No guardes la W para 'después': su stun es el arranque de todo; si entrás con E y no stuneás al aterrizar, el rival ya caminó fuera de tu combo.",
+        "Mantené la wave cerca de tu lado en early: tus trades son mejores con espacio para correr al rival, y una wave adelantada te cuesta la vida al primer gank.",
+        "En late no aceptes peleas sin R: esperala en cooldown o flanqueá desde un arbusto sin ward; sin execute tu daño no termina a nadie."
+      ],
+      "plan": {
+        "early": "Bully con trades cortos de Q cancelado, mantené la wave pareja o hacia tu lado y al llegar a 6 buscá el kill con R1 → E → W → Q x3 → R2 cada vez que tu ult esté en mano.",
+        "mid": "Split push en la side lane y duela a cualquiera que venga solo; agrupá cuando no haya objetivos de lado y entrá con W multi-stun sobre el equipo agrupado.",
+        "late": "Flanqueá desde un flanco sin visión, esperá a que el equipo rival se agrupe para entrar con R1 + W al backline, ejecutá al carry con R2 y salí con E para reentrar cuando vuelvan los cooldowns."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/riven/build",
+      "https://mobalytics.gg/lol/champions/riven/guide"
+    ]
+  }
+}

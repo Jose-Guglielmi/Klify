@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "slug": "lulu",
+    "ddragonId": "Lulu",
+    "name": "Lulu",
+    "titleEs": "La Hechicera Hadística",
+    "cid": 117,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.59,
+    "pr": 10.81,
+    "br": 12.14,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 0.4,
+      "jungle": 0,
+      "middle": 0.2,
+      "bottom": 0.1,
+      "support": 99.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lulu.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lulu_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 65.22, "games": 276 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 59.56, "games": 225 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 59.06, "games": 425 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 57.47, "games": 395 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 56.67, "games": 300 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 56.26, "games": 862 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 56.14, "games": 668 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 56.03, "games": 514 }
+  ],
+  "weakAgainst": [
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 44.5, "games": 218 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 45.05, "games": 455 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 46.48, "games": 2526 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 47.1, "games": 1465 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 47.66, "games": 4293 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 48.06, "games": 1910 },
+    { "cid": 57, "slug": "Maokai", "name": "Maokai", "vsWr": 48.19, "games": 799 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 48.19, "games": 4154 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R (Crecimiento Salvaje) revierte tu burst: vida extra al instante más knock-up a todos los que están encima del objetivo; el kill que dabas por hecho se desarma en un frame.",
+      "Poke constante con Q + E: la lanza sale también desde Pix, así que castiga desde ángulos raros y te gana los 1v1 si te dejás golpear gratis.",
+      "El polimorfo de la W es point-and-click: el que salta al carry queda convertido sin poder castear ni pegar durante segundos.",
+      "Escala con el reloj: más escudos, más vida en la R y peel infinito en late; tu única ventana real es abrir la partida temprano."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni blink, cualquier CC la borra; wardá pensando en agarrarla sola yendo a poner visión.",
+      "Squishy total: no tiene stats defensivos propios; si la enfocás antes que al carry, muere en una rotación.",
+      "Depende del equipo: su daño propio es liviano; si su carry no puede pegar, Lulu no cierra ninguna pelea.",
+      "Todo su poder defensivo son dos hechizos: W y R. Si los fuerza con un engage falso, la segunda tanda de control no tiene respuesta."
+    ],
+    "powerSpikes": [
+      "Nivel 3: tiene el kit completo y puede allinear o defender a su ADC; no aceptes trades largos sin ventaja previa.",
+      "Nivel 6: la R niega intentos de asesinato; no tireás el burst sobre su carry si la ves con la ult en mano.",
+      "Primer item resuelto: los escudos se vuelven potentes y el all-in contra su equipo deja de entrar.",
+      "Nivel 11 y 16 con puntos en la R: el cooldown baja tanto que prácticamente siempre la tiene; asumí peel disponible y jugá de segunda tanda."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Hwei: sobrepasá el rango de su lanza y el lane se juega lejos de Pix; si no llega la Q, no llega el daño.",
+        "La lanza es lineal: parate lateral o usá al minion que ella marca con la E y el proyectil se pierde solo.",
+        "Pokeá cuando baje a last hit o a wardar: su única respuesta es el escudo, no tiene forma de devolverte daño a distancia."
+      ],
+      "tanks": [
+        "Los tanques con engage (Leona, Rell, Maokai) ganan por capas: forzá la W o la R con la primera entrada y volvé a entrar; la segunda no la para nadie.",
+        "Su poke es mágico pero liviano: resistencias tempranas y caminate el lane, no tiene burst para castigarte por comprarte MR.",
+        "Braum mete el muro y se come la lanza entera: ponete delante del carry y su único plan de lane desaparece."
+      ],
+      "assassins": [
+        "La R está calibrada contra vos: el kill que ves en pantalla se revierte con vida extra y knock-up; enganchá solo si la R está gastada o en cooldown.",
+        "Forzá la R sobre un objetivo secundario primero y volvé sobre el carry: solo salva una vez por pelea.",
+        "Cuidado con la W: el polimorfo te deja caminando en círculos; esperá que la gaste en el engage de tu equipo antes de ir vos."
+      ],
+      "crowdControl": [
+        "Encadená el CC sobre ella y no sobre el carry: es squishy y sin movilidad, cae primero y la pelea queda 4v5.",
+        "Engage doble: la R solo contesta una entrada; la segunda tanda de control define la teamfight entera.",
+        "Amumu y Jarvan desde la fog: su respuesta es reactiva; si entrás de donde no mira, el polimorfo llega tarde."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 59,
+        "name": "Jarvan IV",
+        "tips": [
+          "Entrá con E + Q desde donde no te vea: Lulu no tiene escape, la bandera te pone encima antes de que reaccione.",
+          "Usá la primera entrada para forzarle la R o la W sobre otro objetivo: tu segunda rotación de CC no tiene respuesta.",
+          "No pelees adentro del knock-up de su R: retirate tres segundos y volvé cuando la vida extra que dio se consuma."
+        ]
+      },
+      {
+        "cid": 32,
+        "name": "Amumu",
+        "tips": [
+          "Entrá por dos ángulos: zarpazo desde la fog y que tu equipo entre por flanco, el polimorfo solo congela a uno.",
+          "Su R interrumpe tu engage un instante, pero tu ult ya está corriendo: pegate al carry agrandado y esperá que la vida extra se agote.",
+          "Castigá el early: Lulu pokea gratis de lejos, pero cae entera si tu zarpazo la encuentra pegada a su ADC."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Parate delante del carry con el muro (E) levantado: la lanza entera se estrella contra el escudo y su poke deja de existir.",
+          "Stackeá la pasiva en cada trade corto: Lulu y su ADC son squishy y el stun te los castiga duro.",
+          "Allineá cuando su E esté gastada: sin escudo encima, su ADC come la pasiva completa."
+        ]
+      },
+      {
+        "cid": 37,
+        "name": "Sona",
+        "tips": [
+          "Sustentá el poke con la aura: Lulu solo tiene escudos puntuales, tu sustain gana cualquier lane largo.",
+          "Pegale con el acorde cargado cada vez que avance a tirar la lanza: es squishy y no tiene con qué responder el trade.",
+          "Escalá tranquila: en teamfight tu ult de área decide más que el peel puntual de ella si las dos siguen vivas."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: E sobre el minion más cercano al rival → Q por la posición de Pix para alargar la lanza sin acercarte",
+        "Trade agresivo: E al objetivo → Q instantáneo → AA → W polimorfo al rival → otro AA",
+        "Rescate de carry: R sobre el aliado enfocado (vida extra + knock-up) → E escudo encima → Q hacia los rivales cubriendo la retirada → W al diver",
+        "All-in propia: W sobre vos misma → Flash al rango → R propia → AA → E → AA → Q",
+        "Trade con aceleración: W sobre vos para entrar en rango → AA → E al rival → AA → Q apenas vuelve a estar disponible"
+      ],
+      "tips": [
+        "No gastes la W de polimorfo como poke: es tu única respuesta al que salta al carry; guardala para el diver.",
+        "La lanza sale también desde Pix: marcá con E un minion cerca del rival y tirá la Q desde ángulos que no se esquivan retrocediendo.",
+        "La E también funciona como escudo propio: si te enfocan, autoshield antes que pokear, vos morís primero.",
+        "La R no es solo para el moribundo: usala de counter-engage cuando el rival commitea y el knock-up agarra a todos los que están encima.",
+        "Nunca wardés sola: sos squishy y sin escape; coordiná la visión con tu equipo o wardá solo sabiendo dónde están los cinco."
+      ],
+      "plan": {
+        "early": "Pokeá con E + Q para ganar los trades y escudá a tu ADC en cada respuesta; cuando el rival quede bajo, allineá con la W de aceleración sobre tu carry.",
+        "mid": "Pegate al equipo siempre, wardá el próximo objetivo con escolta y después de la torre de bot rotá a mid para abrir el mapa y buscar picks.",
+        "late": "Peelá con W + R al carry en cada pelea: con la R en niveles altos el cooldown es tan bajo que casi siempre la tenés en mano."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/lulu/guide",
+      "https://mobalytics.gg/lol/champions/lulu/combos"
+    ]
+  }
+}

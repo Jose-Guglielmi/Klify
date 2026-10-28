@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "belveth",
+    "ddragonId": "Belveth",
+    "name": "Bel'Veth",
+    "titleEs": "la Emperatriz del Vacío",
+    "cid": 200,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.2,
+    "pr": 2.35,
+    "br": 3.16,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 0.8,
+      "jungle": 98,
+      "middle": 0.7,
+      "bottom": 0.1,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Belveth.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Belveth_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 57.93, "games": 454 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 57.76, "games": 232 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 56.86, "games": 598 },
+    { "cid": 20, "slug": "Nunu", "name": "Nunu", "vsWr": 55.93, "games": 236 },
+    { "cid": 113, "slug": "Sejuani", "name": "Sejuani", "vsWr": 55.47, "games": 247 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 55.47, "games": 512 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 55.41, "games": 776 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 55.4, "games": 556 }
+  ],
+  "weakAgainst": [
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 44.5, "games": 218 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 47.71, "games": 306 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 48.1, "games": 368 },
+    { "cid": 77, "slug": "Udyr", "name": "Udyr", "vsWr": 48.66, "games": 224 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 48.95, "games": 762 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 49.7, "games": 336 },
+    { "cid": 11, "slug": "MasterYi", "name": "Master Yi", "vsWr": 50.06, "games": 793 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 50.2, "games": 253 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La E es un canal con robo de vida, reducción de daño y daño por vida faltante: en peleas largas sobrevive de todo y le da vuelta el 1v1 al que se queda a pegar.",
+      "Knock-up en la W antes del nivel 6: tiene CC real para el gank sin depender de la R, y el daño escala contra el rival herido.",
+      "Escala brutal con velocidad de ataque: cada item le baja el cooldown de la Q, así que pega más rápido, se mueve más y limpia camps más rápido al mismo tiempo.",
+      "Clear de jungla y control de objetivos de primera: baja dragones y heraldos en segundos, y el Void Coral le regala la Forma Verdadera para castigar al que contesta.",
+      "Daño verdadero AoE al consumir corales: en teamfights apretadas revienta frontliners y carries por igual sin importar la resistencia."
+    ],
+    "weaknesses": [
+      "Necesita items de velocidad de ataque para existir: si le cortás el early invadiendo camps, tarda mucho en volver al juego.",
+      "Todo su daño sale de autos y la Q: cualquier hard CC o habilidad que esquive autos la deja en la mitad del daño.",
+      "La E es un canal interrumpible: un solo stun durante el canal le mata el robo de vida y la pelea entera.",
+      "Sin takedowns no hay Forma Verdadera: si entra a la teamfight y no ejecuta nada, queda siendo una peleadora mediocre.",
+      "Casi cero utilidad de equipo: no tiene engage a distancia ni shields; si su equipo pierde la pelea, ella sola no la da."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q, W y E: su combo de gank ya está completa; cuidado con las lanes de poca movilidad en esos minutos.",
+      "Primer item de velocidad de ataque: el cooldown de la Q baja de golpe y su 1v1 en la jungla pasa a ser serio.",
+      "Mid game con Q maxeada y puntos en R: un solo Void Coral de campeón u objetivo la convierte en Forma Verdadera y se hace insoportable.",
+      "Late con el core completo: shreddea frontliners igual que carries, y el coral empoderado de Barón o el Heraldo le suma voidlings para pushear lanes solas."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Graves, Kindred, Lillia: pegale desde fuera de su rango de autos y no le des peleas largas; su E no sirve si no te tiene al lado.",
+        "Caminá siempre con un escape en mano: su Q resetea en minions y objetivos, así que cada acercamiento suyo viene de un ángulo que no esperabas.",
+        "Niegle el all-in manteniéndote sano: su W pega fuerte contra vida faltante; si nunca bajás de media vida, no tiene castigo."
+      ],
+      "tanks": [
+        "Guardá el stun o la supresión para su E: cortarle el canal deja sin robo de vida y sin reducción de daño a la vez.",
+        "Stackeá armadura tranquilo: casi todo su daño es físico de autos y tu pasiva de daño de retorno le cobra cada golpe.",
+        "No la sigas cuando ella está baja: su W escala con tu vida faltante y la E se cura con cada auto; dejala para que la termine tu carry."
+      ],
+      "assassins": [
+        "Esperá a que gaste la Q de acercamiento o el canal de la E antes de entrar: con el robo de vida en mano, el trade lo pierde el asesino.",
+        "Tirá todo el combo antes de que toque su primer Void Coral: una vez en Forma Verdadera, la pelea se te da vuelta.",
+        "Zonéala de los objetivos: cada dragón o heraldo que ejecuta le da coral y forma gratis; no le regales resets."
+      ],
+      "crowdControl": [
+        "Una sola CC bien puesta decide la pelea: interrumpir la E corta la curación y la deja sin sosten en el medio del equipo.",
+        "Encadená la CC al arranque de su all-in: si la agarrás parada apenas entra con la Q, muere antes del segundo auto.",
+        "Guardá una CC de reserva para la Forma Verdadera: el burst de autos post-coral es lo que realmente te borra al equipo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 122,
+        "name": "Darius",
+        "tips": [
+          "Interrumpile el canal de la E con tu E o tu W: sin robo de vida, su all-in muere solo y vos seguís stackeando.",
+          "Guardá el gancho (E) para su Q: si le cortás el dash, queda parada dentro de tu rango sin movilidad para salir.",
+          "No la persigas a ciegas con poca vida: cada auto le resetea la Q; peleala al borde de tu Q exterior y terminá con el R apenas entra en rango de ejecución."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "Activá el W rodante y peleala de frente: todo su daño es físico de autos y tu armadura con pasiva se lo devuelve multiplicado.",
+          "El taunt corta su E en seco: dos segundos parada en medio de tu equipo son una muerte garantizada.",
+          "Gankeala temprano: antes del primer item de velocidad de ataque, su clear y su pelea son mediocres y ella no tiene forma de escapar el taunt."
+        ]
+      },
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Pegale en forma humana y no aceptes el melee: su daño necesita autos encadenados; si la mantenés a distancia, no llega a la E.",
+          "Guardá el capullo para su entrada con Q: un stun al arranque del all-in le arruina la combo entera antes del primer auto.",
+          "Contestale los objetivos con presencia: su clear rápido no sirve si le peleás el dragón con vos y tu equipo en el momento justo."
+        ]
+      },
+      {
+        "cid": 77,
+        "name": "Udyr",
+        "tips": [
+          "Invadila en los primeros clears: su escalamiento todavía no existe y tu ciclado de posturas le gana el 1v1 de patada.",
+          "Guardá el stun de oso (E) para su canal de E: cortarle el robo de vida decide el trade completo a tu favor.",
+          "Peleale los objetivos con Q y autos encadenados: mientras el dragón o el heraldo estén en disputa, su coral no le sirve de reset."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in de gank: W (knock-up) → R instantáneo → Q → auto → Q → auto → E encima del objetivo y autos hasta el kill",
+        "Trade corto: Q → auto → Q → auto → W → auto → Q → auto (intercalá autos entre Q para no quemar los resets)",
+        "Chase largo: Q → auto → Q → auto → Flash + Q → auto → Q → auto → E para cerrar el kill y seguir curándote",
+        "1v1 de jungla: E primero (reducción de daño y robo de vida) → W → Q → autos encadenados mientras el canal te mantiene con vida",
+        "Objetivo disputado: Q + W sobre dragón o heraldo y consumí el Void Coral para entrar en Forma Verdadera antes de que llegue el rival"
+      ],
+      "tips": [
+        "La Q se resetea con autos: nunca la tire dos veces seguidas, intercalá un auto o le quemás el dash gratis a tu movilidad.",
+        "No abras la pelea con la E a vida llena: es tu curación y tu reducción de daño; activála cuando estés bajo o cuando el rival se comprometa al all-in.",
+        "La W pega fuerte contra vida faltante: en el gank guardala para el medio o el final del trade, no la gastes de entrada.",
+        "Tocá cada objetivo del mapa: dragón, heraldo y Barón te dan coral (el de Barón te lo empodera); es tu power spike gratis y tu forma de pushear con voidlings.",
+        "Entrá a la teamfight como segundo engage: esperá que el rival gaste la CC grande, flanqueá y buscá el primer kill para abrir la Forma Verdadera."
+      ],
+      "plan": {
+        "early": "Clear rápido y full farm: ganká lanes con poca movilidad aprovechando el knock-up de W pre-6 y robá dragón o heraldo apenas lo ves desprotegido.",
+        "mid": "Snowbeá con los primeros items de velocidad de ataque, peleá objetivos (un solo coral te da la Forma Verdadera) y castigá con camps y estructuras del rival en los tiempos muertos.",
+        "late": "Sé el follow-up del engage de tu equipo, esquivá las CC grandes con los resets de Q y priorizá consumir corales (sobre todo el de Barón) para convertir cada pelea en un push de voidlings."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/belveth/guide",
+      "https://mobalytics.gg/lol/champions/belveth/combos"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "talon",
+    "ddragonId": "Talon",
+    "name": "Talon",
+    "titleEs": "la Sombra de la Navaja",
+    "cid": 91,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.6,
+    "pr": 4.88,
+    "br": 6.68,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 0.9,
+      "jungle": 74.4,
+      "middle": 24.4,
+      "bottom": 0.1,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Talon.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Talon_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 54.4, "games": 364 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 54.17, "games": 2158 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 54.09, "games": 3032 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 53.64, "games": 1210 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 53.55, "games": 1083 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 53.44, "games": 784 },
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 52.93, "games": 393 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 52.39, "games": 1340 }
+  ],
+  "weakAgainst": [
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 45.12, "games": 769 },
+    { "cid": 72, "slug": "Skarner", "name": "Skarner", "vsWr": 45.68, "games": 359 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 45.69, "games": 720 },
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 46.98, "games": 911 },
+    { "cid": 421, "slug": "RekSai", "name": "Rek'Sai", "vsWr": 47.1, "games": 482 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 47.46, "games": 1121 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 47.53, "games": 263 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 47.85, "games": 1444 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es de los campeones con más first bloods del juego: al nivel 3 ya está colgado de una lane y el rival todavía no puso visión en el muro correcto.",
+      "La E le deja saltar muros: entra por ángulos que ningún otro jungla puede, así que wardear la entrada de la lane no alcanza para verte venir.",
+      "El burst es front-loaded y no perdona: W → Q → R → AA cae en un segundo y medio, sin ventana real para reaccionar a media vida.",
+      "Niega el roam ajeno: con el muro de por medio llega antes que cualquier otro asesino a la pelea que se arma en el río.",
+      "La R sirve para entrar y para salir: el sigilo le permite entrar sin ward, pegar y salir caminando sin que el equipo enemigo pueda trabarlo."
+    ],
+    "weaknesses": [
+      "Si no está arriba en oro no mata: su daño es plano y de letalidad, así que contra armadura el one-shot simplemente no existe.",
+      "Se apaga en late: cuando el carry compra GA o Zhonya y el equipo se agrupa, ya no tiene a quién aislar ni cómo entrar sin morir.",
+      "Su único CC es el slow de la W: no puede trabar a nadie, así que depende de que el rival esté fuera de posición o solo.",
+      "Sin muro cerca es un asesino sin salida: la E es su entrada y su escape, y en campo abierto la usa para llegar y no para irse.",
+      "Es frágil al CC duro: un stun o un taunt encadenado en el arranque del combo lo deja parado sin segunda entrada ni escape."
+    ],
+    "powerSpikes": [
+      "Nivel 3: primer gank real con E por el muro + W + Q; es el momento en que más first bloods saca, no lo dejes pasar.",
+      "Nivel 6: la R le da sigilo y un segundo burst; con la ulti en mano puede entrar a matar y salir caminando sin ward.",
+      "Primera letalidad comprada (Serrated Dirk + ítem completado): ahí es donde el combo pasa de dejar al rival a 100 HP a matarlo de una.",
+      "Nivel 11 con segundo punto en R: el cooldown baja tanto que puede encadenar dos picks seguidos antes de que el equipo enemigo se reagrupe."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Kitealo y no le regales la wave: si no podés matarlo de lejos, empujá y jugá pegado a tu torre, porque cada paso al río es una E encima tuyo.",
+        "Guardá tu escape o tu escudo para el instante en que la R lo esconde: el daño entra en ese silencio, antes de que lo veas volver a aparecer.",
+        "Wardeá los muros laterales y no la entrada de la lane: Talon no llega caminando, llega saltando."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: su daño es de letalidad y plano; un solo ítem defensivo convierte el one-shot en un trade que perdés lento.",
+        "No lo persigas hacia el muro: pelealo pegado a tu equipo y con CC disponible, porque ahí su combo entero se cae.",
+        "Peleá los objetivos con tu equipo y no solo: si lo trabás con CC duro cuando entra, se queda sin salida y muere en el lugar."
+      ],
+      "assassins": [
+        "Los duelos de asesino los gana el que llega primero: si vas a pelear el scuttle, llegá con visión y con tu combo cargado.",
+        "Respetá la R: mientras está en sigilo no podés pegarle y te está marcando el corte final; movete hacia un muro propio en vez de correr en línea recta.",
+        "Si te saca ventaja temprano, no lo enfrentes en el río: farmeá lejos y esperá tu propio spike, porque en late se apaga solo."
+      ],
+      "crowdControl": [
+        "Un stun o un taunt encadenado en el arranque del combo lo anula: sin escape y con todas las habilidades gastadas es el target más fácil del mapa.",
+        "Rammus, Skarner y Sejuani lo apagan: el taunt y la supresión le comen la única entrada que tiene.",
+        "No gastes el CC en zonear: reservalo para cuando aparezca, porque si entra y no lo trabás se va por el muro con la E."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 9,
+        "name": "Fiddlesticks",
+        "tips": [
+          "Plantá efigies en los muros y en los arbustos de tu jungla: la pasiva te avisa que viene antes de que la E lo deje encima tuyo.",
+          "Cuando entra, tirale el miedo de la Q y arrancá la canalización de la W: un Talon que no te mata en dos segundos pierde el duelo largo.",
+          "No farmees el lado del mapa sin visión cercana: si estás solo y sin efigie, la R desde el muro es kill segura."
+        ]
+      },
+      {
+        "cid": 72,
+        "name": "Skarner",
+        "tips": [
+          "Sostené el duelo con los escudos y no lo persigas al muro: tu daño es constante, el suyo es una sola tanda.",
+          "Guardá la R para el instante en que aparece: si lo agarrás en el arranque del combo, se queda sin escape y sin segunda entrada.",
+          "Jugá la lane opuesta a la suya y no pelees objetivos solo: su control de dragón y heraldo temprano es flojo, ganáselo por tempo."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "Activá la W apenas lo ves entrar: la armadura le come el burst entero y la pasiva le devuelve daño mientras te pega.",
+          "Tauntealo con la E en el momento en que aparece, no antes: un Talon taunteado al lado tuyo es un Talon muerto.",
+          "Rotá pegado a tus carries: si no lo ves en el mapa, está esperando el muro de al lado."
+        ]
+      },
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "Peleá el río con ventaja de nivel y no de oro: tu daño sostenido le gana cualquier trade largo, el suyo es de una sola ráfaga.",
+          "Guardá la E para el arranque del combo: la reducción de daño y el robo de vida te dejan viva justo cuando él ya gastó todo.",
+          "Si te saca dos kills temprano, no lo enfrentes: farmeá tu jungla y esperá tus ítems, porque en late se apaga."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank estándar: E por el muro → W (Rake) → Q (Noxian Diplomacy) al objetivo → AA para activar la pasiva → R para el corte final",
+        "All-in con Flash: W → Flash instantáneo → Q → AA → R → AA (la W entra antes del Q y el slow hace que no pueda esquivar)",
+        "One-shot sin Flash: W → Q → R en el aire → AA (el R encadenado con el dash del Q deja el daño sin ventana de reacción)",
+        "Limpieza de jungla: AA → W → AA → AA → Q para cancelar animaciones y cerrar el sangrado de la pasiva en el campamento",
+        "Entrada y salida: R sobre el carry → AA para marcar el corte → E al muro más cercano para irte; la R te sirve para entrar y para escapar"
+      ],
+      "tips": [
+        "No gastes la E para llegar al campamento: es tu entrada de gank y tu escape; sin muro cerca sos un asesino sin salida.",
+        "Usá el Q a distancia para el dash y no de melee: el desplazamiento te ahorra caminar y encadena la W sin que el rival pueda retroceder.",
+        "Armá la primera base con 1000 de oro para el Serrated Dirk: ese spike de letalidad es lo que convierte los ganks en kills.",
+        "No abras las 5v5: flanqueá por el muro, esperá que gasten el CC y recién ahí caé sobre el carry.",
+        "Si vas atrás en oro, no forcees duelos contra tanques con armadura: farmeá y buscá picks en el río, ahí tu daño sí existe."
+      ],
+      "plan": {
+        "early": "Limpiá rápido hasta el nivel 3 y gankeá por el muro a la lane más squishy, bot o mid: si el rival está empujado, la E te deja encima sin tiempo a reaccionar.",
+        "mid": "Jugá por tempo: matá al jungla enemigo antes de cada objetivo, buscá picks en el río con la R y convertí cada kill en torre o dragón en vez de farmear pasivo.",
+        "late": "Flanqueá por los muros con visión propia, esperá que el equipo enemigo gaste el CC y entrá en sigilo sobre el carry; si no hay pick limpio, splitpusheá y usá la E para escapar de la rotación."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/talon/guide",
+      "https://mobalytics.gg/lol/champions/talon/counters",
+      "https://mobalytics.gg/lol/champions/talon/combos"
+    ]
+  }
+}

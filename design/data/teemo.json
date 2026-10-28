@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "teemo",
+    "ddragonId": "Teemo",
+    "name": "Teemo",
+    "titleEs": "el Explorador Veloz",
+    "cid": 17,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.63,
+    "pr": 5.01,
+    "br": 10.17,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 73.6,
+      "jungle": 11.6,
+      "middle": 2.9,
+      "bottom": 1.9,
+      "support": 9.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Teemo.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Teemo_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 63.79, "games": 591 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 60.94, "games": 1705 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 60.87, "games": 276 },
+    { "cid": 19, "slug": "Warwick", "name": "Warwick", "vsWr": 58.61, "games": 459 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 58.29, "games": 959 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 56.57, "games": 677 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 56.52, "games": 913 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 56.39, "games": 266 }
+  ],
+  "weakAgainst": [
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 45.33, "games": 214 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 46.93, "games": 2218 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 47.12, "games": 278 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 47.86, "games": 234 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 48.33, "games": 1171 },
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 49.04, "games": 261 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 49.14, "games": 291 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 49.29, "games": 4319 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Los hongos son visión y daño gratis a la vez: cada entrada de la jungle y cada salida de la lane quedan minadas y el enemigo paga la ruta con vida.",
+      "La Q anula los ataques básicos durante todo el trade: contra cualquier campeón que pegue con autos (Vayne, Warwick, Trundle) el intercambio se gana solo.",
+      "La pasiva lo deja invisible quieto en cualquier lado y caminando dentro de la maleza: puede llegar a un trade desde un ángulo que nadie cubre.",
+      "El veneno del E sigue pegando después de que él ya se fue: entrás, pegás y salís, y el rival sigue perdiendo vida mientras farmea.",
+      "Con hongos en las salidas es el mejor split-pusher del top: fuerza rotaciones todo el mid game sin gastar un solo recurso en visión."
+    ],
+    "weaknesses": [
+      "Cristal de papel: cualquier jungla con dash lo mata desde lejos y la W solo es velocidad, no un escape de verdad.",
+      "Los Control Wards y los trinkets anulan los hongos, y los junglas con salto los esquivan entrando por rutas raras.",
+      "Cae fuerte en late: fuera del split push aporta poco y en un 5v5 no tiene dónde pararse sin morir.",
+      "Early flojo: antes del nivel 6 pierde cualquier trade largo contra un bruiser que logre llegarle a rango cuerpo a cuerpo.",
+      "La Q es de un solo objetivo y la ceguera no frena habilidades: los magos y los que pegan con spells ni la sienten."
+    ],
+    "powerSpikes": [
+      "Nivel 6: primer hongo en la salida de la lane; desde ahí el jungla enemigo ya no puede gankear por el camino normal.",
+      "Primer ítem de AP completo: la Q y el veneno empiezan a matar de un solo trade y el split deja de ser defensivo.",
+      "Nivel 9 con la Q maxeada: la ceguera dura lo suficiente para ganar cualquier intercambio de autos contra melees.",
+      "Nivel 16 con la R maxeada: hongos con daño alto y cooldown bajo, el mapa entero se vuelve intransitable para el enemigo."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Varus, Vayne, Quinn: usá el rango extra para castigarlo cada vez que se acerque a last-hitear, que es lo único que lo obliga a caminar hacia la wave.",
+        "Cuando vaya a plantar un hongo, tirale una habilidad: el casteo lo deja parado medio segundo y ahí recibe todo.",
+        "Comprá sustain y empujá la wave: sin wave cerca de su torre no puede tradear ni retirarse caminando."
+      ],
+      "tanks": [
+        "Comprá Resistencia Mágica temprano y el veneno deja de doler: Teemo vive de acumular daño que un tanque con MR ignora casi entero.",
+        "Sion, Malphite, Shen: la ceguera no frena tus habilidades, así que caminá derecho y forzá el trade largo, que lo ganás por stats.",
+        "Limpiá la salida con el trinket antes de rotar y llevá un Control Ward en el bolsillo: los hongos te cortan la ruta, no el daño."
+      ],
+      "assassins": [
+        "Naafiri, Zed: entrá después de que gaste la Q, porque el blind solo afecta autos y tu combo entero pega con habilidades.",
+        "Buscá la maleza antes que él: si lo ves primero, no puede arrancar invisible y pierde el ataque sorpresa de la pasiva.",
+        "Seguilo cuando se esconde: el veneno del E deja rastro y un Teemo a media vida en la jungle es kill segura."
+      ],
+      "crowdControl": [
+        "Un stun justo cuando se queda quieto para plantar el hongo cancela el casteo y le come el maná.",
+        "Malzahar y Lissandra lo agarran en la side y lo borran: sin tenacidad ni cleanse, un solo CC encadenado es muerte.",
+        "Guardá el CC para después de su Q: si no llega a cegarte, el trade largo lo define el veneno a tu favor."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 950,
+        "name": "Naafiri",
+        "tips": [
+          "Tus sabuesos y tu Q pegan con habilidades, así que la ceguera no te frena nada: entrá derecho y matalo antes de que ponga hongos de retirada.",
+          "Gastá el dash de la W recién después de que tire la Q: sin ceguera sobre tus autos, el trade largo es tuyo.",
+          "Cortale el split cuando esté solo en la side y sin pasiva activa: es el objetivo más blando del mapa."
+        ]
+      },
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Comprá Visage y empujá la wave a muerte: el veneno no pasa un tanque con MR y él no te mata ni con diez hongos.",
+          "Cargá la Q desde la maleza en la que acaba de entrar: si lo stuneás, la R lo manda al piso y el split se termina ahí.",
+          "No lo persigas dentro de su campo minado: rompé la wave, limpiá los hongos con trinket y esperá que venga él."
+        ]
+      },
+      {
+        "cid": 238,
+        "name": "Zed",
+        "tips": [
+          "Matá desde las sombras: el blind solo afecta autos y todo tu combo pega con habilidades, así que ni lo siente.",
+          "No camines por la maleza sin una sombra lista: Teemo invisible te ve primero y te obliga a entrar sin ventaja.",
+          "Después del 6 esperalo en la side cuando no tenga Flash: R + W lo mata antes de que pueda plantar un hongo."
+        ]
+      },
+      {
+        "cid": 893,
+        "name": "Aurora",
+        "tips": [
+          "Pegale desde fuera de su rango: tu Q y el área de la E lo castigan mientras camina a last-hitear, y la ceguera no frena magia.",
+          "Guardá el dash para esquivar la Q: si la ceguera no entra, el trade largo lo ganás por daño sostenido.",
+          "Cuando split-pushee, entrá con la R abierta y el área puesta: no puede pelear 1v1 contra un mago con dash y CC."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: auto → Q → auto → salir con la W; el veneno del E ya quedó pegado y el rival no puede contestar con autos",
+        "Hostigamiento desde la maleza: entrar a la maleza → auto + Q → volver a la maleza para reiniciar la pasiva y desaparecer",
+        "All-in nivel 6: plantar el hongo detrás del rival → Q → autos hasta que pise la trampa → W para alcanzarlo si huye",
+        "Retirada: hongo en la ruta de persecución → Q al que viene primero → W para cortar; la trampa frena y la ceguera corta el daño",
+        "Preparación de objetivo: dos hongos en las entradas laterales y uno de rebote para la entrada lejana, nunca todos en el centro"
+      ],
+      "tips": [
+        "Guardá la Q para el trade y no para farmear: es tu única forma de ganar el intercambio contra melees y su cooldown early es largo.",
+        "Poné hongos en las salidas de la lane, no dentro del arbusto: cubren la ruta real del jungla y no se limpian con un Control Ward de paso.",
+        "En la side empujá con autos y habilidades, no con hongos: si los gastás empujando te quedás sin retirada.",
+        "No agrupes en late si estás fuerte en la side: forcejear 5v5 te deja sin lugar; aparecé recién cuando el enemigo commitee.",
+        "Usá la pasiva para reposicionar antes de cada pelea: cinco segundos invisible antes del objetivo te dan el ángulo y el ataque sorpresa."
+      ],
+      "plan": {
+        "early": "Farmeá pegado a tu lado de la wave, tradeá corto con auto + Q solo cuando el rival gaste una habilidad y llegá al 6 con la wave estable para empezar a minar las salidas.",
+        "mid": "Spliteá la side con la wave empujada y hongos en las dos entradas; con dos ítems de AP duelás a casi cualquier melee y forzás rotaciones que tu equipo cambia por objetivos.",
+        "late": "Quedate en la side hasta que el enemigo commitee y después aparecé al flanco para pegarle al carry desde la Q; si tu equipo pierde la pelea sin vos, agrupá y jugá de escolta con hongos en la retirada."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/teemo/guide",
+      "https://mobalytics.gg/lol/champions/teemo/build"
+    ]
+  }
+}

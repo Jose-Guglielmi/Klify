@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "ivern",
+    "ddragonId": "Ivern",
+    "name": "Ivern",
+    "titleEs": "el Árbol Padre",
+    "cid": 427,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.05,
+    "pr": 0.94,
+    "br": 0.28,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 8.1,
+      "jungle": 77.2,
+      "middle": 1.3,
+      "bottom": 0.5,
+      "support": 12.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ivern.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ivern_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 58.18, "games": 275 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 55.42, "games": 249 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 54.41, "games": 272 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 53.98, "games": 226 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 53.79, "games": 264 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 53.6, "games": 250 },
+    { "cid": 64, "slug": "LeeSin", "name": "Lee Sin", "vsWr": 53.51, "games": 441 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 52.98, "games": 285 }
+  ],
+  "weakAgainst": [
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 46.57, "games": 204 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 46.93, "games": 228 },
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 47.69, "games": 281 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 49.26, "games": 203 },
+    { "cid": 91, "slug": "Talon", "name": "Talon", "vsWr": 49.34, "games": 229 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 50.0, "games": 218 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 50.82, "games": 364 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 52.13, "games": 282 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Todo su kit es para el equipo: escudos de E, Q que deja a tus aliados dash-ear al objetivo y Daisy tanqueando; si su carry habilitado no pelea, Ivern no existe.",
+      "La pasiva le libera campamentos sin pelearlos: con W + Smite te roba buffs desde el arbusto sin exponerse a un 1v1 que igual perdería.",
+      "No necesita leash: sus lanes arrancan con prioridad desde el minuto uno y él puede invadir tu primer buff sin avisar.",
+      "Post 6 Daisy multiplica peleas: knock-up a demanda, dive a torre y zoning en dragón sin que Ivern se meta a la pileta."
+    ],
+    "weaknesses": [
+      "Daño propio casi nulo: en cualquier 1v1 de jungla pierde contra burst o escala; encontralo solo en su clear y es kill gratis.",
+      "Depende al cien por ciento del equipo: si sus lanes pierden, no tiene plan B ni carry potencial propio; forzá que el juego se le haga cuesta arriba.",
+      "Su única herramienta de engage real es la Q: si la esquiva o la gasta en la wave, no llega a nadie y queda caminando.",
+      "Las rutas de su clear son predecibles por la pasiva: sabé dónde va a estar y contemplalo antes de que aparezca en tu buff.",
+      "Sin R en mano es un cuerpo más en el dive: castigá cada ventana de Daisy en cooldown y tirale la torre encima."
+    ],
+    "powerSpikes": [
+      "Nivel 6: Daisy entra al mapa y de pronto pelea objetivos, divea y zonea; no contestes dragón sin contar con ella en pantalla.",
+      "Nivel 9 con E maxeada: escudos gordos cada pocos segundos sobre su carry; los trades largos contra su equipo se vuelven misión imposible.",
+      "Nivel 11 con dos puntos en R: Daisy aguanta mucho más y el dive a torre se convierte en su jugada favorita; no te pares debajo de tu propia torre creyendo que estás a salvo.",
+      "Full build de soporte (Moonstone/Redemption): en late su equipo camina casi inmortal en peleas largas; cerrá antes o buscá peleas cortas de burst."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Junglers de rango (Graves, Kindred): invadí su primera clear, no puede pelear 1v1 y la pasiva le dicta rutas fijas que podés leer.",
+        "Pegale en el momento de liberar un campamento: está quieto, canalizando y sin respuesta de daño; es su segundo más vulnerable.",
+        "De rango no le regales el root de la Q: mantené distancia de su línea y castigá con autos cuando avance a rango de E."
+      ],
+      "tanks": [
+        "Tanqueá el root con tu cuerpo y forzá a Daisy a gastar el knock-up en vos: tu equipo entra después limpio.",
+        "Ignorá a la piedra y matá al árbol: Daisy no gana peleas sola si vos no la dejás acumular golpes sobre el mismo target.",
+        "Comprá anti-cura si tu team es de peleas largas: Moonstone y escudos sostienen a su equipo solo mientras nadie se muera de verdad."
+      ],
+      "assassins": [
+        "El carry habilitado es tu objetivo, no Daisy: saltale al ADC o al mid de Ivern, que el árbol no puede proteger y hacer nada más al mismo tiempo.",
+        "Entrá después de que gaste la Q: sin root en mano no te engancha y sus escudos llegan tarde a tu combo.",
+        "Si Daisy lo peel-ea, esperá el knock-up y reenganchá: el escudo de E no compensa tu burst si volvés a entrar dos segundos después."
+      ],
+      "crowdControl": [
+        "Cadená tu CC sobre Ivern apenas aparezca en el engage: sin Q ni comandos de Daisy, su pelea arranca 4v5.",
+        "Guardá un hard CC para el arranque de Daisy en teamfight: interrumpir su acumulación de golpes mata el knock-up que sostiene su frontlane.",
+        "En dives a torre, el CC es tu torreta extra: Ivern divea porque confía en Daisy; si el knock-up lo agarrás con tu root, el dive se da vuelta solo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 233,
+        "name": "Briar",
+        "tips": [
+          "Tu burst 1v1 es exactamente lo que Ivern no tiene: invadí temprano y buscálo en su clear, no tiene forma de contestarte.",
+          "Usá tu E para el root de la Q: si se lo esquivás, Ivern queda sin engage y sin escape en medio de tu jungla.",
+          "No le temas a Daisy: con W activa seguí pegando al árbol, porque el escudo de E no compensa tu daño por segundo."
+        ]
+      },
+      {
+        "cid": 245,
+        "name": "Ekko",
+        "tips": [
+          "Tu R te deja robar objetivos en su cara: escudos y Daisy no importan si revertís la pelea con la vida llena de vuelta.",
+          "Esperá que gaste la Q para engancharte: es su única CC; con E y R en mano entrás y salís gratis.",
+          "Seguí sus dives con tu R: si Daisy va a la torre, revertí debajo y el dive de Ivern se convierte en doble kill para tu equipo."
+        ]
+      },
+      {
+        "cid": 59,
+        "name": "Jarvan IV",
+        "tips": [
+          "Tu combo EQ + R sobre el carry habilitado decide la pelea: buscá al que Ivern escuda, no al árbol.",
+          "Enganchá a Ivern con EQ apenas se asome a un lane: no tiene escape y tu R lo deja preso mientras Daisy camina de vuelta.",
+          "Peleá objetivos temprano: antes de 6 su daño de jungla es nulo; confirmá scuttle y dragón sin que pueda contestar nada."
+        ]
+      },
+      {
+        "cid": 35,
+        "name": "Shaco",
+        "tips": [
+          "Invadí con cajas sobre sus rutas: Ivern no pelea 1v1 y su pasiva le dicta rutas fijas; cada campamento robado es un buff menos para su equipo.",
+          "Tu invisibilidad anula su Q: desde la niebla no te encuentra para rootear y cada engage suyo arranca a ciegas.",
+          "Apuñalá a Ivern primero en las peleas: sin él, su equipo queda sin escudos, sin Redemption y sin peels."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de arbusto: W sobre vos o el camino → AA desde el arbusto con daño mágico y rango extendido → Q solo si se acerca para pegarte",
+        "Engage clásico: Q al objetivo → tus lanes clickean al rooted y dash-ean encima → R Daisy sobre el target → E en Daisy para el escudo que explota con slow",
+        "All-in seguro: R primero → E sobre Daisy apenas aparece → Q al target → AA al lado del objetivo (el attack move te evita dash-ear sin querer) mientras Daisy acumula el knock-up",
+        "Engage con E + Flash: E sobre vos → Flash + AA justo antes de que explote la semilla (slow) → Q al objetivo al ras",
+        "Peel de carry: E en tu ADC → W para tus autos de rango → Daisy en modo defensa pegándole al que se engancha hasta que meta el knock-up"
+      ],
+      "tips": [
+        "Robá campamentos rivales: tu pasiva libera monstruos sin pelear; con Smite en mano, el segundo buff del jungla rival es tuyo si wardaste su arranque.",
+        "Máxima E primero y Q después: E es tu curaza de escudos y tu engage con el slow; la Q se maxea por el rango de root, no por el daño.",
+        "Daisy es peeler, no ejecutora: mandala al que se mete con tu carry y usá E sobre ella para sumar el slow del estallido.",
+        "No camines la jungla rival sin Smite: sos el jungla más débil en 1v1; tu poder está en el mapa, no en la pelea.",
+        "Poné W en el pit de dragón o barón: tus autos en arbusto pegan más fuerte y Daisy adentro suma zoning mientras el equipo pelea."
+      ],
+      "plan": {
+        "early": "Liberá tus camps con la pasiva, robá un buff con W + Smite si sabés dónde arrancó el rival y gankéa con Q desde afuera: tu root le regala el dash a tus lanes.",
+        "mid": "Buscá picks con Q + Daisy, peleá objetivos con ella adentro del pit y pegale siempre al carry: sos el segundo soporte del equipo, no el jungla que carrea.",
+        "late": "Sticking total con tu team: peelá con E + Daisy, tirá Redemption desde lejos y cerrá la partida con un pick de Q sobre el que se despegue del grupo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/ivern/guide",
+      "https://app.mobalytics.gg/lol/champions/ivern/build",
+      "https://mobalytics.gg/lol/champions/ivern/combos"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "nilah",
+    "ddragonId": "Nilah",
+    "name": "Nilah",
+    "titleEs": "la Alegría Desatada",
+    "cid": 895,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.93,
+    "pr": 1.17,
+    "br": 1.98,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 0.6,
+      "jungle": 0.6,
+      "middle": 0.6,
+      "bottom": 98.1,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nilah.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nilah_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 61.76, "games": 204 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 58.69, "games": 351 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 58.01, "games": 381 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 57.7, "games": 565 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 57.64, "games": 1218 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 57.37, "games": 448 },
+    { "cid": 901, "slug": "Smolder", "name": "Smolder", "vsWr": 56.63, "games": 279 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 56.53, "games": 681 }
+  ],
+  "weakAgainst": [
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 44.93, "games": 345 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 50.45, "games": 448 },
+    { "cid": 222, "slug": "Jinx", "name": "Jinx", "vsWr": 50.49, "games": 810 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 50.61, "games": 326 },
+    { "cid": 221, "slug": "Zeri", "name": "Zeri", "vsWr": 51.46, "games": 274 },
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 51.81, "games": 249 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 52.24, "games": 624 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 53.28, "games": 488 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W (Jubilant Veil) bloquea autos y autos mejorados (incluida la W de Twisted Fate): una esquiva a demanda contra todo el que pelea con básicos.",
+      "La pasiva comparte XP con su aliado cercano y le da niveles de regalo: llega a sus picos de poder antes que la lane rival.",
+      "La E tiene dos cargas de dash: entra, pega y sale del skirmish antes de que el rival responda.",
+      "La Q cura al golpear campeones: sostiene trades repetidos sin volver a base ni quemar pociones.",
+      "La R arrastra al centro y pega en área: en peleas agrupadas around un engage suyo el pelea entera se inclina de golpe."
+    ],
+    "weaknesses": [
+      "Es melee en la lane de rango: cada last hit es terreno disputado y el poke constante la castiga antes de que llegue a pelear.",
+      "Sin la E en mano está descalza: no puede jugar agresiva y cualquier lock la mata por no tener escape.",
+      "Su R necesita que el equipo entre con ella: un solo engage sin follow-up la deja parada en medio del equipo rival.",
+      "Los primeros niveles son flojos: necesita XP y items antes de existir, castigá esa ventana.",
+      "Si va por detrás casi no tiene forma de remontar: sin oro ni niveles su melee no llega a pegar."
+    ],
+    "powerSpikes": [
+      "Level 3: accede a las tres habilidades básicas; recién ahí existe para comerciar.",
+      "Level 6: la R desbloquea el all-in con arrastre; no te quedes a media vida en su rango de E.",
+      "Level 9 con la Q maxeada: su daño y cura de trade suben de golpe justo cuando el poke ya no alcanza.",
+      "Primer item completo (The Collector en el meta): su skirmish 2v2 se vuelve ganador casi por defecto.",
+      "Level 11 y 16 con puntos en R: cooldown cada vez más corto, asumí que la R está disponible en cada pelea."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Lucian, Caitlyn, Ashe: pegale desde el primer minuto; mientras no tenga E cargada, cada acercamiento a la wave le cuesta vida.",
+        "Cuando prenda la W dejá de tirarle autos y habilidades dirigidas unos segundos: si no esquiva nada, se la fundiste al vacío.",
+        "Empujala contra su torre y pokeá la wave: su farmeo melee bajo torre es horrible y la XP de la pasiva no compensa minions perdidos."
+      ],
+      "tanks": [
+        "Bramble Vest o Executioner temprano cortan la cura de la Q: sus trades dejan de sostenerse solos.",
+        "Guardá tu CC puntual para cuando entre con la E: un melee sin dash en cooldown muere pegado a tu cuerpo.",
+        "No te apiles con el carry cuando su R está en mano: el arrastre del centro convierte el agrupamiento en Setup gratis para ella."
+      ],
+      "assassins": [
+        "Zed, Talon, Qiyana: huntela en sidelane, forzale la E de retreat y volvé antes de que recargue; sin dash es presa fácil.",
+        "Esperá que gaste la W esquivando tu auto de engage y entrá recién ahí: la ventana del veil es corta.",
+        "Si la agarrás sin E, no le des tiempo a pensar: es el único momento del juego donde no puede repositionarse."
+      ],
+      "crowdControl": [
+        "Malzahar, Lissandra, point-and-click en general: la W no esquiva CC apuntado, solo autos y proyectiles básicos; apuntale todo lo que no falle.",
+        "Encadená el CC sobre su entrada, no en el chase: interrumpirla entre la E y la R mata su única ventana de daño en área.",
+        "Guardá un CC de seguridad para cuando escuche la R: cortar el follow-up de su equipo la deja metida sin respaldo."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 498,
+        "name": "Xayah",
+        "tips": [
+          "Ganás el extended con plumas + root de E: comercia cuando su E esté gastada y no pueda salir del trade.",
+          "Guardá el root para su entrada: si la E de vos entra cuando ella ya está adentro, no tiene segunda carga para escapar.",
+          "Cubrí la wave con plumas: un melee no puede farmear en terreno que le cuesta vida pisarlo."
+        ]
+      },
+      {
+        "cid": 236,
+        "name": "Lucian",
+        "tips": [
+          "Pegale en cada last hit con Q + pasiva: tu burst de dos segundos gana todos los trades cortos antes del nivel 6.",
+          "No aceptes extended cuando tiene W prendida: esperá que el veil se gaste y entrá recién ahí.",
+          "Con tu E en mano sos más móvil que ella sin la suya: castigá cada cooldown que veas usar en la wave."
+        ]
+      },
+      {
+        "cid": 222,
+        "name": "Jinx",
+        "tips": [
+          "Pokeala con Q en fishbones desde fuera de su rango: no puede responder sin gastar la E para cerrar la distancia.",
+          "Dejá trampas (E) sobre los accesos a la wave: su entrada con dash cae adentro y ahí se corta el engage.",
+          "Si va arriba en niveles por la pasiva, jugá atrás y farmeá seguro: esperá a igualar experience antes de pelear 2v2."
+        ]
+      },
+      {
+        "cid": 22,
+        "name": "Ashe",
+        "tips": [
+          "El slow de tus autos la castiga doble: cada paso que camina hacia vos es tiempo que tu support usa para posicionar CC.",
+          "Guardá la flecha (R) para su entrada con E: un melee que arranca el dash ya no puede esquivar nada en el aire.",
+          "Pokeá con W y mantené la wave cerca de tu torre: sin targets para saltar, su E queda como puro cooldown de escape."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: W como respuesta al primer auto rival → E al target → Q encima → 2-3 autos → E de retreat a través de tu support",
+        "All-in nivel 6: E a través del rival → R para arrastrarlo → W → autos → Q → E recast para terminar o salir",
+        "Engage con Flash: Q + Flash instantáneo al target → autos → E + R → Q → autos → E final de salida",
+        "Entrada por aliado: W pegado a tu support → E a través de él para cerrar → R + Flash sobre el equipo agrupado rival",
+        "In-out de skirmish: E por el minion más cercano → Q → autos → E recast de retreat antes de que el rival responda"
+      ],
+      "tips": [
+        "Maxeá Q primero (E segunda, W último): es tu daño, tu cura y tu farmeo al mismo tiempo.",
+        "Usá la W como respuesta y no de entrada: si la abrís primero, el rival simplemente deja de tirarte autos y la fundís al vacío.",
+        "Pegate al support para cobrar la XP compartida de la pasiva: llegar a 6 antes que la lane rival es la ventaja real del champ.",
+        "No entres nunca sin E cargada: sin dash sos un melee sin escape y cualquier gank te encuentra parada.",
+        "Farmeá con Q cuando el poke no deje acercarse: la cura de la Q sostiene el lane sin gastar pociones ni volver."
+      ],
+      "plan": {
+        "early": "Jugá tranqui los primeros niveles, buscá trades cortos con autos y Q, y no aceptes extended salvo que la habilidad principal del rival esté gastada.",
+        "mid": "Con el primer item y la R en mano buscá skirmishes 2v2 pegada a tu equipo; tras tirar la torre de bot rotá a mid y no entres nunca sin follow-up.",
+        "late": "La R rota rápido: usala en cada pelea para chunkear, kiteá repositionándote siempre y no camines el mapa sola: pegate al support o morís gratis."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nilah/build",
+      "https://mobalytics.gg/lol/champions/nilah/combos",
+      "https://mobalytics.gg/lol/champions/nilah/guide"
+    ]
+  }
+}

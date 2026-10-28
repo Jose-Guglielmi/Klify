@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "smolder",
+    "ddragonId": "Smolder",
+    "name": "Smolder",
+    "titleEs": "el Dragoncito Flamante",
+    "cid": 901,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.82,
+    "pr": 4.71,
+    "br": 1.87,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 6.3,
+      "jungle": 0.0,
+      "middle": 10.8,
+      "bottom": 82.7,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Smolder.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Smolder_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 42, "slug": "Corki", "name": "Corki", "vsWr": 56.17, "games": 543 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 54.79, "games": 4448 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 54.75, "games": 316 },
+    { "cid": 235, "slug": "Senna", "name": "Senna", "vsWr": 54.51, "games": 233 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 54.13, "games": 641 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 54.1, "games": 2941 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 54.06, "games": 1563 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 53.98, "games": 1358 }
+  ],
+  "weakAgainst": [
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 43.09, "games": 246 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 44.13, "games": 213 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 45.19, "games": 208 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 47.39, "games": 306 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 48.66, "games": 1011 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 49.05, "games": 2530 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 49.19, "games": 307 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 49.33, "games": 2538 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Dragon Practice es una escalera de daño, no un adorno: cada stack sube el daño de las tres básicas y cada Q que mata minions o monstruos suma, así que el campeón se vuelve más fuerte por farmear que por tradear.",
+      "A 25 stacks el Q explota en área, a 125 dispara ráfagas de proyectiles y a 225 quema vida máxima y ejecuta: si el juego se estira, su Q deja de ser una habilidad y pasa a ser una sentencia.",
+      "La R pega desde 4250 de alcance, cura al dragón y ralentiza en el centro: puede aportar daño y sustain a una pelea de la que ni siquiera está cerca, sin exponerse a entrar.",
+      "La E ignora terreno durante 1.25 s y le da 75% de velocidad de movimiento mientras sigue tirando proyectiles al enemigo más herido: kitea a través de muros y sale de ganks por lugares donde el resto no puede pasar."
+    ],
+    "weaknesses": [
+      "Early es el ADC más flojo de la lista: sin stacks y sin items su Q pega poco, así que depende de que el support le aguante la lane entera.",
+      "La E es su única movilidad y su único escape, con 24 a 16 segundos de cooldown: cada vez que la usa para entrar, queda desnudo hasta que vuelva.",
+      "No tiene CC propio, solo los slows del W y del centro de la R: cualquier all-in con stun o suppress entra casi gratis si el support no lo cubre.",
+      "Si no consigue stacks temprano, el pico de 225 se le corre para muy tarde y llega a las peleas decisivas con el Q todavía a medio construir.",
+      "Su daño de teamfight es lineal y sostenido: si lo lockean primero, se muere antes de que el burn de 225% empiece a hacer trabajo."
+    ],
+    "powerSpikes": [
+      "Nivel 3 a 4: ya tiene las tres básicas y el segundo punto del Q; ahí su trade corto es más fuerte de lo que parece.",
+      "25 stacks de Dragon Practice: el Q empieza a explotar en área y cambia por completo el clear de wave y el daño en peleas de dos contra dos.",
+      "Nivel 6: la R le da curación y slow a distancia absurda; con ella sobrevive all-ins que antes lo mataban.",
+      "125 stacks: el Q dispara proyectiles en arco y su daño se multiplica en peleas agrupadas, el salto de poder más grande del campeón.",
+      "225 stacks más dos items: el burn de vida máxima y la ejecución convierten cada Q en un ejecutor de tanques; si el juego llega acá, el rival ya perdió la carrera."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vel'Koz, Lux y Aurelion Sol lo castigan desde fuera de su rango: pokealo con cada wave y dejalo farmeando bajo torre con la vida a media.",
+        "No le regales trades largos: su Q escala con stacks y con items, así que cada intercambio parejo es un regalo a su late; pegalo y salí.",
+        "Negale los stacks temprano: si no mata minions con Q ni te toca con habilidades, su escalado se atrasa varios minutos y su ventana se cierra."
+      ],
+      "tanks": [
+        "Necesitás cerrar el juego antes de que llegue a 225 stacks: pasado ese punto el burn quema vida máxima y ningún tanque del juego lo aguanta.",
+        "Encadená CC de área sobre él en la teamfight: sin movilidad disponible, un root o un stun bien puesto lo deja fuera de la pelea antes de que dispare.",
+        "Forzá las peleas en espacios abiertos y no en la jungla: la R cubre un carril entero y castiga a los equipos agrupados en pasillos."
+      ],
+      "assassins": [
+        "Katarina, Twitch y Yasuo le ganan el mapa si entran cuando la E está en cooldown: contá esos 16 a 24 segundos antes de comprometerte.",
+        "Salta apenas lo veas caminar hacia adelante para auto-atacar: el kiteo lo obliga a avanzar y ahí es donde queda más cerca de tu burst.",
+        "Si tiene R y está a media vida, matalo de un golpe: el heal de la R es enorme y una pelea larga es exactamente lo que busca."
+      ],
+      "crowdControl": [
+        "Cualquier immobilize corta la E en el aire: un stun, un root o un suppress lo devuelven al piso en el peor momento posible.",
+        "Reservá el CC para el arranque de la pelea y no para el final: si lo lockean antes de que use la R, ni se cura ni slowea.",
+        "Grounded es oro contra él: Cassiopeia o cualquier efecto de suelo le apaga la única herramienta de escape que tiene."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 136,
+        "name": "Aurelion Sol",
+        "tips": [
+          "Tu rango y tu clear te dejan empujar la wave desde el primer minuto: cada wave que le empujás bajo torre es un minion que no mata con Q y un stack menos para él.",
+          "Volá por encima de la wave cada vez que baje a farmear: sin movilidad instantánea, un E bien puesto sobre Smolder lo obliga a gastar la E o a comerse el trade entero.",
+          "No le aceptes el juego largo de stacks contra stacks: cerrá el mid game con presión de mapa antes de que su Q llegue a 225, porque en el late tu escalado pierde la carrera."
+        ]
+      },
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Castigalo con Q y W desde fuera de su rango de 550: no puede contestar ni acercarse sin comerse dos tercios de la vida.",
+          "Guardá el E (knock-up) para cuando arranque la E de vuelo: interrumpirlo en el aire lo deja en el piso, sin escape y con el cooldown quemado.",
+          "Cuando tenga stacks altos, no lo dejes llegar a la pelea: tu R borra su barra entera antes de que empiece a tirar Q si lo ves primero."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Zonéalo desde 1000 de rango: su Q llega a 550 y su W a 1500 con tiempo de vuelo, así que cada paso que da hacia la wave es vida que pierde.",
+          "Empujá la wave y rompé la torre temprano: sin farmeo seguro no junta stacks y su spike de 125 se le va para el minuto 25.",
+          "No te pares en línea recta con él cuando tenga Q cargado: el slow del W le permite encadenar E y Q, y ahí sí pierde el trade."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "Pokealo con E desde el borde de tu rango: si no puede farmear sin recibir daño, se queda sin stacks y sin items al mismo tiempo.",
+          "Guardá la Q (bind) para cuando vuele con la E: en el aire no puede esquivar y un root lo deja cayendo en medio del trade.",
+          "Su R cura y slowea, así que cuando la use no huyas en línea recta: rodeá el centro de la ola y volvé a entrar con el cooldown del Q ya listo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: AA → Q (la Q aplica on-hit y roba vida al 50%, así que pega más de lo que dice la tooltip) → W si camina hacia atrás para sumar el slow",
+        "All-in nivel 6: R en línea sobre el objetivo (cura y ralentiza en el centro) → W → Q → E para seguir pegando mientras te alejás",
+        "Kite por terreno: E sobre el muro → volar tirando proyectiles automáticos al más herido → Q al aterrizar para cerrar el kill",
+        "Farmeo rentable: Q sobre la wave buscando matar minions (cada minion muerto con Q es un stack) y melee los que queden con auto",
+        "Teamfight a 225: R desde atrás para curarte y slowear al grupo → Q sobre el frontline (el burn quema vida máxima) → E solo para reposicionar, nunca para entrar"
+      ],
+      "tips": [
+        "La E no es un engage: es tu único escape y tu única forma de pasar muros, con 16 a 24 segundos de cooldown; usala para salir y casi nunca para entrar.",
+        "Cada habilidad que le pega al campeón enemigo da un stack, así que tirá W y Q al rival en cada oportunidad: el poke no es solo daño, es economía de escalado.",
+        "Maxeá Q primero y W segundo, con E al final: el Q es tu daño y tu stack engine, y la E a nivel 1 alcanza para huir.",
+        "En early no pelees sin el support al lado: sos el ADC más débil del mapa hasta tener stacks e items, y una muerte antes del minuto 8 te corre todo el plan.",
+        "En late quedate atrás del frontline con el support: la R te cura desde lejos, pero durante su casteo no podés usar Flash, así que jamás la arranques con un asesino encima."
+      ],
+      "plan": {
+        "early": "Farmeá con Q matando minions para juntar stacks, pokeá con W desde 1500 cuando el rival se acerque a la wave y no aceptes all-ins hasta tener nivel 4 y el support cerca.",
+        "mid": "Agrupá con el equipo, rotá a la torre de mid después de romper la de bot y usá la R en cada pelea por el heal y el slow; con 125 stacks tu Q ya decide las peleas de dos contra dos.",
+        "late": "Quedate atrás pegando Q sobre el frontline para quemar vida máxima y ejecutar, reservá la E para reposicionar y tirá la R desde fuera de rango para curarte antes de que la pelea se arme."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/smolder/guide",
+      "https://mobalytics.gg/lol/champions/smolder/combos",
+      "https://mobalytics.gg/lol/champions/smolder/counters",
+      "https://wiki.leagueoflegends.com/en-us/Smolder/LoL"
+    ]
+  }
+}

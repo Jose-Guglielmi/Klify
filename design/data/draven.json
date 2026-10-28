@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "draven",
+    "ddragonId": "Draven",
+    "name": "Draven",
+    "titleEs": "el Glorioso Ejecutor",
+    "cid": 119,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.88,
+    "pr": 4.15,
+    "br": 12.53,
+    "analysed": 9213261,
+    "laneDist": {
+      "top": 2.7,
+      "jungle": 0.2,
+      "middle": 1.3,
+      "bottom": 95.7,
+      "support": 0.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Draven.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Draven_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 54.57, "games": 788 },
+    { "cid": 81, "slug": "Ezreal", "name": "Ezreal", "vsWr": 53.3, "games": 2330 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 53.26, "games": 1397 },
+    { "cid": 429, "slug": "Kalista", "name": "Kalista", "vsWr": 52.66, "games": 676 },
+    { "cid": 145, "slug": "Kaisa", "name": "Kai'Sa", "vsWr": 52.27, "games": 3509 },
+    { "cid": 523, "slug": "Aphelios", "name": "Aphelios", "vsWr": 51.84, "games": 1410 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 51.42, "games": 1659 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 51.19, "games": 1549 }
+  ],
+  "weakAgainst": [
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 41.5, "games": 200 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 43.45, "games": 504 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 44.4, "games": 250 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 45.5, "games": 200 },
+    { "cid": 498, "slug": "Xayah", "name": "Xayah", "vsWr": 47.06, "games": 1192 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 47.18, "games": 301 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 47.4, "games": 384 },
+    { "cid": 360, "slug": "Samira", "name": "Samira", "vsWr": 47.54, "games": 873 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El mejor 2v2 de early del juego: con dos hachas girando y W activa gana el trade contra casi cualquier botlaner; si tu support engancha, la kill es tuya.",
+      "La pasiva convierte cada kill en oro extra: un Draven que cobra stacks llega al spike de items un ciclo antes que el ADC rival, y esa ventaja no se recupera sola.",
+      "Duelista puro: la velocidad de ataque y movimiento de W más el doble daño de las hachas le ganan el 1v1 a la mayoría de los ADCs de la lista.",
+      "La R es global y ejecuta: rematá escapes de media pantalla o peleas de otras lanes sin moverte de tu wave."
+    ],
+    "weaknesses": [
+      "Las hachas caen donde apuntó el auto: su movimiento es 100% predecible; poné daño en el punto de caída y o las come o deja de pegar.",
+      "Cero escape: la W es su única velocidad y se gasta atacando; sin dash, un gank o un hook lo mata antes de llegar a torre.",
+      "Morir con stacks adentro es catastrófico: pierde todo el oro acumulado de la pasiva; castigá cada agresión suya con tu jungla cerca.",
+      "En teamfight tiene que kitar Y agarrar hachas: obligalo a elegir con zonas de daño; cada hacha que suelta es DPS que no existe.",
+      "Si no cobra early, queda siendo un ADC sin plan de escalado: estirá la partida y su ventaja se diluye contra hipercarries."
+    ],
+    "powerSpikes": [
+      "Niveles 1-3 con la primera doble hacha: out-tradea a todos; no aceptes el trade de hacha pegada a hacha.",
+      "Nivel 6: la R agrega ejecución al all-in; con una mínima ventaja committea, porque cada kill cobrada acelera su build.",
+      "Primer item + nivel 9 con la Q maxeada: el cooldown del hachazo baja y el daño por trade se dispara; dale espacio desde ahí.",
+      "Two items: con crítico y velocidad puede borrar un squishy en tres autos con hacha; no te pares en línea con tu carry."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Caitlyn, Ziggs: pegale desde afuera de su E y castigá cada paso adelante a agarrar hacha; su rango es corto para el daño que quiere hacer.",
+        "El hacha cae donde tiró el auto: pre-posicioná el skillshot en el punto de caída y cada catch le sale más caro que el auto mismo.",
+        "Empujalo contra torre: sin espacio para ir por las hachas, pierde minions, stacks y la agresión que define su lane."
+      ],
+      "tanks": [
+        "Comprá armadura temprano: todo su daño es físico y front-loaded; un item de armor te deja caminando su all-in entero.",
+        "Guardá tu CC para cuando vaya a agarrar un hacha: su camino es visible medio segundo antes; un root ahí es kill con tu ADC detrás.",
+        "Peleá pegado a tu equipo: la E empuja hacia el lado de Draven, así que si estás en el medio le negás el acceso a tu carry."
+      ],
+      "assassins": [
+        "Hacé que gaste la E primero: es su único self-peel; si la usa para engage, el dive es gratis.",
+        "Divealo con la W en cooldown: sin velocidad de escape ni curación activa, es el squishy más lento de la pantalla.",
+        "Esperá a que tenga stacks altos para cazarlo: morir con oro adentro lo atrasa más que cualquier item tuyo."
+      ],
+      "crowdControl": [
+        "Encadená el CC apenas arranca el trade: no tiene dash para escapar ni limpieza; una sola chain lo deja a un auto de morir.",
+        "Un hook o snare al punto de caída del hacha: va a ir sí o sí; es el movimiento más predecible del juego.",
+        "Guardá tu burst de CC para después de su Flash: sin gap closer propio, sin summoner depende por completo de que lo dejen agarrar hachas."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 134,
+        "name": "Syndra",
+        "tips": [
+          "Stunealo con la E poniendo la esfera detrás del punto de caída del hacha: va a caminar ahí sí o sí y el stun entra sin apuro.",
+          "Pokealo con Q cuando empuje con hachas: va a estar mirando las caídas, no tus proyectiles.",
+          "Después de 6 no necesitás mucho setup: Q + W + E lo borra, porque no lleva MR ni tiene escape para reposicionarse."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El windwall se come su E y su R: guardalo para el arranque del all-in y le dejás el combo en la mano.",
+          "Dashes a través de la wave para esquivar la línea del auto con hacha: su daño necesita alinear el doble golpe.",
+          "No dueliees 1v1 con las dos hachas girando en early: escalá, farmeá con Q y buscalo cuando esté sin W o sin Flash."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Poné la jaula sobre el punto de caída del hacha: para agarrarla tiene que cruzarla o perder el buff; las dos opciones te sirven.",
+          "Farmeá con Q desde tu rango máximo: su all-in necesita acercarse y tu escalado le gana la partida larga.",
+          "Esperá su E para tirar la jaula + R: si la usa para engage, la ejecución lo remata antes de que sus hachas giren dos veces."
+        ]
+      },
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Root con W a través de la wave cuando baje a agarrar hacha: el camino es fijo y el root entra limpio.",
+          "Agarrá el trade largo: tu sustain de pasiva y R gana cualquier pelea extendida donde su burst de dos autos no alcanza.",
+          "Con tu jungla cerca, E + root es kill segura: no tiene dash para salir de tu rango de agarre ni Cleanse que lo salve."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: E → Q → AA (la E empuja al objetivo hacia donde va a caer tu hacha y el auto buffeado pega el doble)",
+        "Trade sostenido: AA → W → Q → AA → AA → W → AA (refrescá W cada vez que agarrás hacha para no perder ni velocidad de ataque ni de movimiento)",
+        "All-in con ángulo: R → W → E → Flash al costado del objetivo → Q → AA → W → AA (las hachas de la R vuelven por un ángulo que el rival no está mirando)",
+        "Ejecución: Q → AA → AA → E → R → AA (si el objetivo escapa, la R lo persigue y el daño de vuelta lo remata)",
+        "Ocultar el buff: AA → Q inmediato (enmascarás la animación de la hacha giratoria y el rival no ve el doble daño venir)"
+      ],
+      "tips": [
+        "Mirá dónde va a caer el hacha ANTES de tirar el auto: nunca apuntes a un catch bajo torre, dentro del rango del support rival o sin espacio para kitar.",
+        "Peleá siempre con dos hachas girando: una sola Q es un auto fuerte; dos encadenadas con W refrescada son tu daño real.",
+        "No forces jugadas con los stacks de la pasiva altos sin visión: morir con oro adentro es la única forma de atrasar tu build de verdad.",
+        "Usá la E para dos cosas: enganchar el trade empujando al rival hacia tus hachas y como self-peel cuando te divean; no la gastes en la wave.",
+        "Pedí gank con stacks altos: tu daño 2v2 temprano convierte cualquier engage del jungla en kill cobrada."
+      ],
+      "plan": {
+        "early": "Jugá agresivo con doble hacha desde el nivel 1, ganá el 2v2 y cobrá la pasiva en cada kill; con stacks altos, pedí gank para forzar el cash-out.",
+        "mid": "Caída la primera torre, rotá a sitiar mid pegado a tu support; dejá que tu equipo inicie y entrá después a agarrar hachas sobre el equipo ya comprometido.",
+        "late": "No camines nunca solo: kiteá desde atrás del support, guardá la E como anti-engage y usá la R global para rematar escapes antes de que lleguen a su base."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/draven/guide",
+      "https://mobalytics.gg/lol/champions/draven/combos"
+    ]
+  }
+}

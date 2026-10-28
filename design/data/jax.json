@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "jax",
+    "ddragonId": "Jax",
+    "name": "Jax",
+    "titleEs": "el Maestro de Armas",
+    "cid": 24,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.51,
+    "pr": 5.99,
+    "br": 8.96,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 81.5,
+      "jungle": 15.4,
+      "middle": 1.4,
+      "bottom": 0.2,
+      "support": 1.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Jax.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Jax_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 59.36, "games": 1902 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 57.29, "games": 686 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 55.97, "games": 1508 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.68, "games": 1171 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 55.5, "games": 218 },
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 55.4, "games": 213 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 53.76, "games": 3428 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 53.66, "games": 1530 }
+  ],
+  "weakAgainst": [
+    { "cid": 78, "slug": "Poppy", "name": "Poppy", "vsWr": 43.27, "games": 312 },
+    { "cid": 133, "slug": "Quinn", "name": "Quinn", "vsWr": 43.95, "games": 223 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 44.12, "games": 587 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 44.81, "games": 1667 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 45.0, "games": 3051 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 45.94, "games": 812 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 46.44, "games": 842 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 46.74, "games": 858 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Es el duelista escalador por excelencia: la pasiva stackea velocidad de ataque en peleas largas y cada nivel que pasás lo hace más peligroso que el anterior.",
+      "La E bloquea autos y reduce daño de AoE: en teamfight es un escudo disfrazado de habilidad y el stun de cierre es engage gratuito para tu equipo.",
+      "La Q es doble uso, gap closer y escape: saltás por pared, entrás al carry y salís del collapse sin pedir permiso.",
+      "La R lo vuelve híbrido real: daño mágico extra cada tercer auto más resists crecientes, o sea que itemizar contra una sola de sus dos fuentes de daño no alcanza."
+    ],
+    "weaknesses": [
+      "Early game flojo y dependiente de items: sin componentes no gana trades largos y cualquier lane agresivo lo deja farmeando bajo torre.",
+      "Melee sin sustain: los campeones de rango lo pican gratis y quema pociones antes del minuto cinco si no respeta el wave state.",
+      "El CC single target es su pesadilla: encadenado en teamfight muere antes de stackear la pasiva, y la E no esquiva stuns.",
+      "Si se le va la Q en engage, quedó sin escape: castigá esa ventana de nueve segundos donde no tiene cómo salir.",
+      "Su plan de split push se puede ignorar: mandá a alguien a mantenerlo ocupado y forzá pelea 4v4; Jax no puede estar en los dos lados."
+    ],
+    "powerSpikes": [
+      "Primer componente de daño: puede pegar y perseguir en trades extendidos usando los arbustos; ahí empieza a ganar los all-in.",
+      "Nivel 6: la R suma resists y daño en cada tercer auto, cualquier rival que acepte pelea larga pierde.",
+      "Nivel 9 con la W maxeada: cooldown bajísimo y el trade corto Q + W se vuelve casi imposible de contestar.",
+      "Dos items + dos puntos de R: la pasiva stackeada con resists activos lo convierte en front-line que también mata; ahí ya no lo duelés solo.",
+      "Full build (nivel 13 con la Q maxeada): puede ganar 1v5 por side lane; si lo ves farmear solo, o mandás dos o no mandás nadie."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Gnar, Vayne top: no le regales trades que él no pidió; pickealo de rango y andate antes de que la pasiva arranque.",
+        "Castigá cada Q que use para farmear: sin salto ni para escapar ni para llegar, un gank lo mata siempre.",
+        "En teamfight no te agrupes a rango de salto: si la Q no tiene target para llegar al carry, Jax se queda caminando."
+      ],
+      "tanks": [
+        "No aceptes el trade largo temprano: stackeó pasiva sobre vos y con la E encendida tus autos no existen; pegale recién cuando la E esté en cooldown.",
+        "Malphite y Sion compran armor para gastarte: ignorá al front en teamfight y buscá al carry; un tanque solo no puede matarte, pero tampoco dejás de escalar si no peleás.",
+        "Antes de all-in a un tanque mirá la wave: stackear la pasiva en minions primero te da el punto de velocidad de ataque que decide la pelea."
+      ],
+      "assassins": [
+        "Zed, Talon, Rengar: si saltan cuando tu E está encendida, se stanno golpeando contra un bloqueo de autos y comen el stun entero.",
+        "Guardá la Q para reaccionar, no para abrir: un asesino que te engancha sin tu Q gastada no te puede matar dentro del stun de la E.",
+        "Después del nivel 6 no duelés por ego: activá R y aceptá la pelea larga; la pasiva los supera a los quince segundos."
+      ],
+      "crowdControl": [
+        "Entras segundo, siempre: esperá que el equipo enemigo gaste el CC principal y recién ahí saltá con la Q.",
+        "Si te ven esperando el engage, comprate Mercurio: morir chain-CCeado con full build es la única forma real de desperdiciar este campeón.",
+        "Los stuns instantáneos (Lissandra, Malzahar) anulan la E: contra esos, flanqueá por fuera de visión o no entrás."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 78,
+        "name": "Poppy",
+        "tips": [
+          "Tu W (Parada Política) cancela la Q de Jax en el aire: si salta hacia vos o para escapar, lo tirás al piso sin acceso a su escape.",
+          "Pegale de corto y caminate atrás: su daño llega en peleas largas, así que ganás el lane si nunca le das quince segundos seguidos.",
+          "Cuando cargue la E entre los arbustos, no le des autos: caminá un paso atrás y el stun no encuentra nada; su cooldown es enorme, castigalo recién ahí."
+        ]
+      },
+      {
+        "cid": 133,
+        "name": "Quinn",
+        "tips": [
+          "Picode desde fuera de cualquier salto: no intentes comerciar en el lane, farmeá lo que se pueda y llamá al jungla, Quinn sin flash muere al primer gank.",
+          "Guardá el E (Vault) para su Q: cada vez que intente pegarte, el retroceso lo deja sin nada mientras vos seguís disparando.",
+          "No lo persignas cuando se va: Quinn gana cualquier persecución; que venga a vos, y castigá su all-in sabiendo que no tiene segunda Q para escapar."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "Nunca lo persigas: el trail de veneno justo para tu pasiva de autos, y el Flip te mete en su equipo; aceptá que este lane se gana escalando, no peleando.",
+          "Farmeá seguro con Q de rango cuando la wave esté cerca de su torre: cualquier intento de all-in es exactamente la pelea que él quiere.",
+          "En teamfight no le pegues a él: pasá de largo, es un tanque de CC que solo quiere que lo mires; tu daño pertenece al carry de atrás."
+        ]
+      },
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Tu E (Terremoto) le baja la velocidad de ataque: es directo contra su pasiva, activá la tuya apenas stackee y el trade queda en nada.",
+          "Stackeá armor temprano (Bruma Mortal o Randuin): su daño mágico de la R crece, pero los autos son la mayoría; con armor encendido no te mata.",
+          "Esperá que gaste la Q para farmear y pickealo ahí: sin salto ni para acercarse ni para irse, tu Q lenta lo encuentra gratis."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto de lane: activá la E dentro del arbusto → Q encima del objetivo → auto + W de reset → soltás la E al final para el stun y caminás atrás",
+        "All-in nivel 6: R activada ANTES de saltar → Q al objetivo → autos con W + pasiva stackeada → la E completa se resuelve en stun y seguís pegando con resists activos",
+        "Engage de teamfight: esperá el arranque rival → E cargada al centro del equipo agrupado (stun múltiple) → R → Q al carry más accesible",
+        "Split push con pasiva: stackeá velocidad de ataque en la wave antes de que llegue el que viene a contestarte y peleá con la R ya encendida",
+        "Escape: guardá la Q para saltar por pared o hacia tu jungla; nunca la gastes en engage si el rival tiene flash o CC listo"
+      ],
+      "tips": [
+        "La E es tu seguro de vida, no tu daño: usala para bloquear el burst del rival y que el stun sea el bonus, no al revés.",
+        "Nunca saltes con Q sin E en mano: sin bloqueo entrás a una pelea que no podés controlar y quedás sin escape por nueve segundos.",
+        "La W es tu reset de auto y tu daño real: si arrancás un trade sin W disponible, estás regalando la mitad del trade.",
+        "En matchups de rango, farmeá con Q desde lejos y no respondas al pickeo: tu trabajo temprano es llegar a los items sin regalar platas.",
+        "Stackeá la pasiva en minions antes de cualquier pelea decidida: esos stacks son la diferencia entre ganar y perder el 1v1 por side lane."
+      ],
+      "plan": {
+        "early": "Farmeá y escalá: trades cortos solo con E lista o pasiva stackeada, mantené la wave cerca en matchups difíciles y no arriesgues platas antes del primer item.",
+        "mid": "Split push en side lane con TP en mano: peleale a quien venga a contestarte, rotá con la Q por pared si tu equipo forcea pelea y buscá el stun múltiple en objetivos.",
+        "late": "Sos el mejor duelista de la grieta: agarrá picks en los arbustos del río, flanqueá el backline con Q por los flancos o entrá segundo en teamfight después de que gaste el CC."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/jax/guide",
+      "https://mobalytics.gg/lol/champions/jax/counters"
+    ]
+  }
+}

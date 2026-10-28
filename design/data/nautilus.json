@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "nautilus",
+    "ddragonId": "Nautilus",
+    "name": "Nautilus",
+    "titleEs": "el Titán de las Profundidades",
+    "cid": 111,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.71,
+    "pr": 10.08,
+    "br": 15.17,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 0.7,
+      "jungle": 1.1,
+      "middle": 0.3,
+      "bottom": 0.1,
+      "support": 97.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Nautilus.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Nautilus_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 62.5, "games": 304 },
+    { "cid": 29, "slug": "Twitch", "name": "Twitch", "vsWr": 59.56, "games": 225 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.84, "games": 453 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 57.83, "games": 683 },
+    { "cid": 21, "slug": "MissFortune", "name": "Miss Fortune", "vsWr": 57.66, "games": 274 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 56.81, "games": 382 },
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 56.56, "games": 244 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 56.02, "games": 1785 }
+  ],
+  "weakAgainst": [
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 42.98, "games": 819 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 44.44, "games": 3958 },
+    { "cid": 526, "slug": "Rell", "name": "Rell", "vsWr": 45.32, "games": 2224 },
+    { "cid": 412, "slug": "Thresh", "name": "Thresh", "vsWr": 47.7, "games": 7931 },
+    { "cid": 89, "slug": "Leona", "name": "Leona", "vsWr": 47.78, "games": 4751 },
+    { "cid": 12, "slug": "Alistar", "name": "Alistar", "vsWr": 47.88, "games": 2801 },
+    { "cid": 518, "slug": "Neeko", "name": "Neeko", "vsWr": 47.9, "games": 714 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 48.29, "games": 410 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva Golpe Aturdidor le da un root point-and-click en cada autoattack con cooldown interno: aunque falle la Q, cada trade cuerpo a cuerpo incluye control gratis.",
+      "Su level 2 es de los all-ins más fuertes del juego: Q + root de pasiva + E cae todo junto y sale del engage habiendo ganado vida o summoners.",
+      "La R es imparable y point-and-click: no se esquiva, aturde al target y derriba a todo el que cruce el camino, así que cada pick con R en mano es casi kill asegurada.",
+      "Tres capas de CC encadenadas (root de Q, slow de E, knock-up de R) convierten cualquier engage suyo en una sentencia si tu equipo no responde al instante.",
+      "Con botas de movilidad roamea como un segundo jungla: empuja la presión del mapa mucho antes de que el rival espere ayuda."
+    ],
+    "weaknesses": [
+      "Los apoyos a rango lo desgastan todo el early: sin vida no hay engage, así que cada poke que comé le retrasa la única jugada que tiene.",
+      "Se compromete del todo: si entró con Q, no tiene escape real, y un engage sin follow-up del ADC es un suicide caro; castigá ese overextend.",
+      "Su daño propio es mínimo: si tu carry no muere en la ventana de CC, Nautilus queda parado en medio de la lane pegando con autoattacks.",
+      "Depende de cooldowns largos: una Q fallida o gastada en un minion lo deja inútil por varios segundos; esa es tu ventana para tradeear.",
+      "Si su propio ADC empuja la wave sin parar, pierde el freeze que necesita para allinear: sin wave controlada, su level 2 no existe."
+    ],
+    "powerSpikes": [
+      "Level 2: primera ventana de all-in real; no te pares en rango de ancla con la wave por emparejar, porque el spike llega antes de lo que pensás.",
+      "Level 6: la R point-and-click lo convierte en amenaza de pick en toda la lane; si te acercás sin ver su R, el knock-up te encuentra igual.",
+      "Primeras botas: el roam se vuelve constante; avisá los miss y cubrí las lanes laterales antes de que aparezca por detrás con Q desde el arbusto.",
+      "Q al máximo (~nivel 9): la baja de cooldown le permite buscar engages casi cada wave y hacer viable la táctica del arbusto mortal para todo su equipo.",
+      "Late con items de tanque completos: tanquea torre y foco enemigo a la vez; en teamfight asume que el primero que se despegue se la come con R."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Desgastalo cada vez que camine al last hit: su plan es llegar sano al all-in, y un Nautilus a media vida no puede entrar aunque la Q le entre.",
+        "Respetá el arbusto: la Q desde la niebla es su engage favorito; wardalo temprano y no te pares pegado a la pared sin visión.",
+        "Contá la Q: si la gastó o la falló, ese es tu trade; tiene varios segundos de cooldown donde no hay ni root ni escape."
+      ],
+      "tanks": [
+        "Ganale el mirror con engagement selectivo: intercambiá engages solo cuando la Q de él esté en cooldown o haya fallado, y ganás el trade por stats.",
+        "Comprá resistencia temprana y quedate delante de tu carry: su combo entero no mata a un tanque con armadura, y después de tirar el CC queda expuesto.",
+        "En level 6 buscá el all-in vos primero: su R necesita un target desprotegido; si entrás vos con tu equipo listo, él responde tarde y sin vida."
+      ],
+      "assassins": [
+        "No te claves detrás del target que marcó la R: la onda derriba a todo el que cruce el camino; abrite lateral apenas la vea salir.",
+        "Esperá que gaste la Q para entrar: es su único gap closer y su único escape fantasma; sin ancla en mano, llegar hasta tu presa le cuesta Flash.",
+        "Después de su engage él no puede volver: entrá por su carry o por él mismo mientras el root ya se gastó en otro."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para el commit, no para el acercamiento: interrumpirlo apenas entra mata el engage entero y lo deja overextended sin escape.",
+        "Encadená control sobre él después de que use la R: el knock-up es imparable, pero el Nautilus que queda adentro de tu team es un kill gratis.",
+        "Counter-engagement es la clave: esperá que tire Q + R a tu delantero y entrá con todo sobre su backline desprotegida."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Guardá tu E (Deslumbrar) para el momento en que la Q de Nautilus te enganche: el stun en respuesta corta su combo y le deja el trade entero servido.",
+          "Sanate a través de su burst con la Q y quedá pegado a tu ADC: su all-in necesita matar rápido, y un Taric que cura y stunnea convierte el engage en pérdida neta.",
+          "Buscá el all-in vos cuando su Q esté en cooldown: sin ancla, él no puede ni entrar ni salir y tu pasiva lo castiga en cada intercambio."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Levantá el Muro Indestructible (E) contra la Q: la ancla se clava en el muro y el engage entero muere antes de nacer.",
+          "Parate entre el ancla y tu ADC: su combo apunta al primero que encuentre, y un Braum adelantado acumula el stun de pasiva sobre el que entra.",
+          "Castigá cada all-in con las stacks de tu pasiva: después de tirar el CC, Nautilus queda sin nada que responder a tus 4 golpes."
+        ]
+      },
+      {
+        "cid": 526,
+        "name": "Rell",
+        "tips": [
+          "Ganale la carrera de engages: entrá vos primero con la W y montá al carry antes de que su ancla encuentre ángulo; él responde tarde y desordenado.",
+          "Guardá la R para después de su R: cuando se metió adentro, tu knock-up agrupado lo pega a él y a su equipo en la misma olla.",
+          "Intercambiá cuando su Q esté gastada: el windows de cooldown de la ancla es el único momento donde su compromiso se vuelve overextend puro."
+        ]
+      },
+      {
+        "cid": 412,
+        "name": "Thresh",
+        "tips": [
+          "Guardá la E (Latigazo) para interrumpir su Q en pleno vuelo: cortarle el dash a mitad del vuelo lo deja plantado lejos y con todo el cooldown puesto.",
+          "Poné la Caja detrás de tu ADC: la Q de Nautilus se clava en la caja igual que en un campeón, y le quemás el engage desde la niebla.",
+          "Cuando se comprometa con la R, flanqueá con el gancho a su backline: su combo no tiene segunda etapa y tu equipo cobra la pelea al revés."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in pre-6: Q al objetivo → AA (root de pasiva) → W → E → AA para rematar el trade con la tercera capa de CC",
+        "All-in nivel 6: R al carry → esperá el knock-up → Q encima del target → AA → W → E → AA",
+        "Engage desde la niebla: Flash → Q al instante → AA → R → AA → W → E (la R después del auto para que no escapen al knock-up)",
+        "En rango cuerpo a cuerpo: AA → E al toque → Q justo cuando el root de la E está por terminar → AA → W",
+        "R redirigida: R al target principal → Flash inmediato para que la onda atraviese al resto → Q durante el knock-up → AA → E → W"
+      ],
+      "tips": [
+        "La Q se clava en el primer objetivo que toca, incluidos minions: tirála desde el arbusto o en ángulo, nunca a través de la wave.",
+        "Pegá level 2 antes que el rival y allineá en el momento: es el spike más fuerte de tu kit y el rival aún no tiene la R para responder.",
+        "Activá la W apenas entrás, no después del trade: el escudo que aguantó daño es vida real, el escudo que llegó tarde es nada.",
+        "Después del engage volvé al lado de tu ADC: tu segunda tarea es peel, y quedarte pegando en medio de la lane es regalar el counter-engage.",
+        "Jugá y negá arbustos: la Q desde la niebla es la diferencia entre un engage y un suicide; wardá el arbusto rival y castigá al que se para en el tuyo."
+      ],
+      "plan": {
+        "early": "Pegá level 2 primero y buscá el all-in con Q + pasiva, mantenete sano porque sin vida no hay engage, y con las primeras botas empezá a roamear mid cuando tu ADC quede seguro.",
+        "mid": "Agrupate con tu equipo, wardá sabiendo dónde está el rival y buscá picks con R desde la niebla para forzar dragón o torre; después de cada engage, volvé a peel para tu carry.",
+        "late": "No te despegues del ADC ni un paso: entrá solo con la R asegurada desde fuera de visión y en el resto de las peleas tanqueá torre y foco mientras tu equipo sigue tu engage."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/nautilus/build",
+      "https://mobalytics.gg/lol/champions/nautilus/guide",
+      "https://mobalytics.gg/lol/champions/nautilus/combos"
+    ]
+  }
+}

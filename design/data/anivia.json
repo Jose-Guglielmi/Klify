@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "anivia",
+    "ddragonId": "Anivia",
+    "name": "Anivia",
+    "titleEs": "la Criofénix",
+    "cid": 34,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.39,
+    "pr": 2.03,
+    "br": 1.92,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 18.8,
+      "jungle": 0.1,
+      "middle": 64.4,
+      "bottom": 2.3,
+      "support": 14.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Anivia.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Anivia_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 56.22, "games": 217 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 56.07, "games": 239 },
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 56.07, "games": 214 },
+    { "cid": 127, "slug": "Lissandra", "name": "Lissandra", "vsWr": 54.97, "games": 433 },
+    { "cid": 3, "slug": "Galio", "name": "Galio", "vsWr": 53.74, "games": 281 },
+    { "cid": 8, "slug": "Vladimir", "name": "Vladimir", "vsWr": 53.64, "games": 371 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 53.59, "games": 905 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 53.21, "games": 669 }
+  ],
+  "weakAgainst": [
+    { "cid": 711, "slug": "Vex", "name": "Vex", "vsWr": 44.3, "games": 237 },
+    { "cid": 893, "slug": "Aurora", "name": "Aurora", "vsWr": 45.37, "games": 227 },
+    { "cid": 4, "slug": "TwistedFate", "name": "Twisted Fate", "vsWr": 46.31, "games": 434 },
+    { "cid": 45, "slug": "Veigar", "name": "Veigar", "vsWr": 46.45, "games": 366 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 48.23, "games": 678 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 49.01, "games": 604 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 49.02, "games": 459 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 49.47, "games": 281 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Rebirth es una segunda vida gratis: puede pelear agresivo con la pasiva en mano y sobrevivir all-ins que matarían a cualquier otro mago.",
+      "La E hace doble daño sobre enemigos chillados (por Q, R o pasiva de algún rival): si conectás cualquier hielo primero, el burst del trade casi se duplica.",
+      "El muro de la W es utilidad sin techo: corta flancos, bloquea retiradas, separa tanques de carries y convierte ganks en nada.",
+      "Con la R prendida empuja y sitia como pocos: cualquier torre cae bajo su tormenta y el rival no puede rotar sin regalar la wave."
+    ],
+    "weaknesses": [
+      "Pre-6 no amenaza nada: sin R no tiene ni waveclear ni burst, así que el early lane es puro farmeo y aguantar.",
+      "Sin movilidad ni escape: cada gank del jungla es kill potencial, sobre todo con la W en cooldown.",
+      "Come maná como nadie: sin Tear y sin azul, la R se apaga en segundos y Anivia pasa a ser un minion con rango.",
+      "La Q viaja lenta y es esquivable: si el rival la camina, el stun no entra y la combo entera queda a medias.",
+      "Con la Rebirth abajo es de lo más frágil del juego: contá los segundos del huevo y jugá agresivo en esa ventana."
+    ],
+    "powerSpikes": [
+      "Level 6: llega la R y con ella el push constante, el burst real y la pelea por el lane; antes de eso solo existe el farming.",
+      "Primer item resuelto + Tear stackeado: con el maná resuelto, la tormenta queda prendida siempre y el waveclear se vuelve automático.",
+      "Nivel 11: dos puntos en R disparan el daño por segundo y convierten cualquier pelea agrupada en suya.",
+      "Late game: con cooldowns bajos busca picks con Q + E cada pocos segundos y en 5v5 agrupados su AOE decide peleas enteras."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Vex, Twisted Fate: pegale desde fuera de su Q; Anivia es lenta y su único juego temprano es farmear, así que cada poke es gratis.",
+        "Cuando la Rebirth se rompa, contá los segundos: sin pasiva es más frágil de lo que parece y su presencia cae a cero.",
+        "Forzá el gasto de R: mientras tenga la tormenta sobre la wave está quemando maná; si la obligás a apagarla, pierde presión y recursos."
+      ],
+      "tanks": [
+        "Comprate MR temprano: su daño es constante y no de burst; un item te deja caminar la tormenta entera sin irte al suelo.",
+        "Anivia se alimenta de equipos agrupados: peleá en espacio abierto y forzá a que su R cubra cada vez menos gente.",
+        "Al romper la Rebirth, terminála: mientras reviva es un huevo sin escape y un solo punto de CC extra la borra del mapa."
+      ],
+      "assassins": [
+        "Esperá que gaste la Q para farmear y saltala recién ahí: sin stun en mano no contesta un all-in y no tiene escape.",
+        "Si viste romperse el huevo, ese es tu all-in de manual: es el campeón más castigable del juego sin Rebirth.",
+        "Cuidá la W al entrar: si te corta la retirada con el muro, esperá que se apague y reenganchá recién ahí."
+      ],
+      "crowdControl": [
+        "Encadená CC cuando se pare a canalizar la R: interrumpirle la tormenta le quita la mitad del daño y un pedazo enorme de maná.",
+        "Guardá un CC para después de la Rebirth: el huevo revive sin recursos de escape y es el kill más fácil de la teamfight.",
+        "Malzahar y Lissandra la apagan del todo: suprimirla o dorarla mata su único plan, que es pegar desde atrás de su muro."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 711,
+        "name": "Vex",
+        "tips": [
+          "Pegale con la E desde fuera de su rango de Q: sin stun en mano Anivia no contesta poke y vos ganás cada trade a distancia.",
+          "Guardá la W para el viaje de su Q: si le bloqueás el hielo, el stun queda en nada y ella pierde la mitad de su combo.",
+          "Cuando tire el muro para pelear, avisá al jungla: con la W en cooldown no tiene forma de frenar un gank por flanco."
+        ]
+      },
+      {
+        "cid": 893,
+        "name": "Aurora",
+        "tips": [
+          "Usá el espíritu para pegarle desde ángulos imposibles: Anivia es lenta y predecible, no esquiva lo que no ve venir.",
+          "La E con espíritu pega más desde lejos: castigala cada vez que se pare a farmear, que es donde más vulnerable está.",
+          "Contá su pasiva: si ya se rompió el huevo, ese es tu all-in; sin Rebirth es de los campeones más lentos del juego.",
+          "En teamfights usá la R para mover a la gente fuera de su tormenta: sin gente adentro, su daño se cae a la mitad."
+        ]
+      },
+      {
+        "cid": 4,
+        "name": "Twisted Fate",
+        "tips": [
+          "Pegale con cartas desde fuera de su rango pre-6: Anivia no tiene amenaza temprana y vos castigás cada farm que intenta cobrar.",
+          "Cuando lance la Q, caminala lateral: el hielo viaja lento y sin stun no hay trade que tema.",
+          "Usá tu R cuando la veas pushada bajo torre: empuja constante y sin escape, el blanco fácil perfecto para un gank global.",
+          "Carta dorada para cortar la Q en el viaje o la E en el cast: interrumpirle el arranque la deja inofensiva tres segundos largos."
+        ]
+      },
+      {
+        "cid": 45,
+        "name": "Veigar",
+        "tips": [
+          "Farmeá con Q desde fuera de su rango y no aceptes trades cortos: ganás escalando; Anivia necesita jugar con su jungla antes de que tu AP la pase por arriba.",
+          "Guardá la jaula (E) para cuando se acerque con la E de burst lista: si la encerrás, su única salida es gastar el muro en defensa.",
+          "Esquivá la Q lateralmente en cada wave: cada dodge es un trade gratis a tu favor y su maná no alcanza para errar así.",
+          "Al 6 no te pares contra la wave con poca vida: un stun + R + E te borra antes de que tu R termine de crecer."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: Q → E apenas pegue el hielo (la E hace doble daño sobre chillados) → reactivá la Q para el stun si quiere pelear",
+        "Trade post-6: Q → R debajo del objetivo → AA → reactivá la Q (stun) → E → AA y apagá la R para no fundirte el maná",
+        "All-in con muro: R debajo del objetivo → W a sus espaldas para cortar la retirada → Q + AA → Q (stun) → E → AA",
+        "Engage de teamfight: Flash + R al centro del grupo → W para separar al rival → Q → E sobre el chillado",
+        "Escape de melee: Q → Q (stun) → E → R debajo de él y W entre vos y el objetivo para salir caminando"
+      ],
+      "tips": [
+        "Guardá la E para después de conectar Q o R: tirarla sola es tirar la mitad del daño; el doble impacto contra chillados es todo tu burst.",
+        "Reactivá la Q recién cuando pase al lado del objetivo: el stun sale en la explosión, no en el viaje, y abrirla temprano lo desperdicia.",
+        "No dejes la R prendida por inercia: apagala cuando termine su trabajo; cada segundo encendida es maná que no tenés para el próximo trade.",
+        "Usá la W para cortar rutas de gank y flancos, no para hacer daño: un muro bien puesto a los 20 minutos vale más que cualquier stun.",
+        "Volvé a base al tener la Tear en la bolsa: el maná es tu recurso más limitado y perder el stack temprano te cuesta todo el mid game."
+      ],
+      "plan": {
+        "early": "Farmeá y aguantá hasta 6 sin regalar trades; comprá Tear apenas puedas y con la R prendida empujá la wave a la torre rival sin quemarte el maná.",
+        "mid": "Empujá con R y rotá a objetivos con tu jungla: tu tormenta seca dragones y Heraldos rapidísimo; mantené los flancos wardados porque el push constante te deja expuesta.",
+        "late": "Pegale al equipo agrupado: R + Q multi-hit definen la pelea, guardá la W para cortar engages y nunca camines sin la Rebirth disponible."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/anivia/guide",
+      "https://mobalytics.gg/lol/champions/anivia/combos"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "heimerdinger",
+    "ddragonId": "Heimerdinger",
+    "name": "Heimerdinger",
+    "titleEs": "el Venerable Inventor",
+    "cid": 74,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.71,
+    "pr": 1.46,
+    "br": 3.0,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 69.2,
+      "jungle": 1.1,
+      "middle": 15.2,
+      "bottom": 5.6,
+      "support": 8.9
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Heimerdinger.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Heimerdinger_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 61.07, "games": 280 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 58.5, "games": 359 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 57.3, "games": 274 },
+    { "cid": 266, "slug": "Aatrox", "name": "Aatrox", "vsWr": 56.97, "games": 409 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 55.45, "games": 220 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 54.38, "games": 331 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 54.3, "games": 221 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 53.87, "games": 271 }
+  ],
+  "weakAgainst": [
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 43.62, "games": 282 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 44.31, "games": 422 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 44.58, "games": 332 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 45.67, "games": 381 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 48.17, "games": 218 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 48.24, "games": 369 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 48.54, "games": 309 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 48.96, "games": 433 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Sus torretas (Q) controlan el territorio: si peleás adentro de su rango, el daño extra de las torres más la W te desgastan sin que puedas contestar.",
+      "El waveclear y el poke de la W son impecables: empuja la wave solo y te obliga a farmear bajo torre o comer rockets.",
+      "Anti-gank natural: 3 torretas + la E convierten cualquier dive del jungla en un all-in que él gana; el gank que falla es oro para él.",
+      "La R le da cuatro herramientas distintas: torreta gigante paraobjetivos, misiles mejorados para ejecutar, y la granada mejorada con stun en área para abrir peleas."
+    ],
+    "weaknesses": [
+      "Es tan fuerte como sus torretas: si las destruyés antes del all-in, queda parado en medio de la lane sin daño ni escape.",
+      "Fallar o gastar la E lo deja expuesto: sin granada no tiene CC, y si está pushado ese error lo mata.",
+      "Cero movilidad: un dash o gap closer encima de él cuando las torretas están en cooldown es kill casi garantizada.",
+      "Fuera de espacios cerrados (jungla, fosos) pierde valor: en open lane su área de control es esquivable.",
+      "Todo su poke viaja o se puede bloquear: proyectiles de la W cortados por windwall/spell shield y torretas borradas a rango lo desarman."
+    ],
+    "powerSpikes": [
+      "Nivel 1-2: si dejás que arme torretas antes de que arranque la wave, te come el push y las primeras placas.",
+      "Nivel 6: puede cebar all-ins con la R (torreta mejorada o granada en área); no aceptes peleas cerca de sus torres a partir de acá.",
+      "Primer item completado: el burst y el poke escalan de golpe y puede borrar squishies dentro del nido de torretas.",
+      "Late con items completos: roba objetivos con la R+Q y un stun en área de la R+E agrupado define la teamfight entera."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Quinn, Jayce, Vayne: limpiale torretas a rango antes de pelear; sin nido, Heimer es un mago lento y sin escape.",
+        "No peleés dentro de su rango de torres por inercia: pegale desde afuera y hacé que cada torreta le cueste maná y vida.",
+        "Castigá cada E que falle: es su única herramienta de CC y sin ella no puede seguirte el ritmo."
+      ],
+      "tanks": [
+        "Sion, Nasus, Dr. Mundo: no camines sobre el nido a pelear cuerpo a cuerpo; limpiá torretas con AoE y después enganchá.",
+        "Heimer escala con daño sostenido sobre vos: comprá MR temprano o su poke te deja en rango de ejecución antes del all-in.",
+        "Cuidá peleas largas en la jungla: es exactamente el terreno donde sus torretas y su área brillan."
+      ],
+      "assassins": [
+        "Akali, Yasuo: esperá que tire la E o que tenga pocas torretas y saltalo recién ahí; con el nido armado es el que gana el all-in.",
+        "Borrále una torreta antes de entrar: el daño cae en picado y su ventana de respuesta se achica.",
+        "Guardá tu escape para después del stun de la E, no para farmear: si te agarra dentro de las torres, el burst te borra."
+      ],
+      "crowdControl": [
+        "Encadená tu CC apenas use o falle la E: es el único segundo en que está desprotegido dentro de su propio nido.",
+        "Gank con CC confiable y desde el flanco: si la granada no te encuentra a vos, la torre no te salva.",
+        "No te agrupes cerca de sus torretas ni en fosos: cada CC extra que acumulás adentro de su área es una pelea que le regalás."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 14,
+        "name": "Sion",
+        "tips": [
+          "Farmeá con la Q desde atrás de tus torretas y usá el cuerpo de tanque para borrarle una torre por cada push: sin nido no hay lane para él.",
+          "Guardá tu R para cuando tire la E: si el stun no te encuentra, podés caminarlo encima de las torretas y limpiarlas de un golpe.",
+          "Cuando lo ejecutés, alejate: la pasiva de Sion puede rematar tus torretas y a vos si se pelean encima del cadáver."
+        ]
+      },
+      {
+        "cid": 86,
+        "name": "Garen",
+        "tips": [
+          "El silencio de tu Q corta su combo entero: entrá con Q activa cuando esté cerca de sus torres y él no puede responder con E ni W.",
+          "No te quedes a rango de torretas con poca vida: su W + torres te ejecutan; limpiá el nido primero y peleás después.",
+          "La regeneración de tu pasiva gana cualquier trade corto: entrá, comé el poke, salte y volvé con la vida recuperada."
+        ]
+      },
+      {
+        "cid": 41,
+        "name": "Gangplank",
+        "tips": [
+          "Tu Q a rango le rompe torretas sin entrar en su rango de E: mantené esa distancia y el nido nunca se arma completo.",
+          "El naranja (W) borra el stun de su granada: podés seguir avanzando aunque te pegue la E.",
+          "Poné barriles detrás de las torretas para limpiarlas en cadena y peleá recién cuando el área quede limpia."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "El windwall bloquea toda su W y sus rockets: esperá que lo use para farmear y pegale recién ahí.",
+          "Dash de minion en minion para esquivar la E: si el stun no te agarra, tus torretas quedan solas contra tu Q y E.",
+          "Armá flow de peleas cortas: entrá, comé una torreta, salte; Heimer gana las peleas largas dentro de su área, no los picos."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Setup pre-wave: plantá Q en los arbustos o en el cruce antes de que llegue la wave, así llegás al push con 3 torretas sin fundir el maná",
+        "Trade de lane: E justo detrás del rival (no a su posición actual) → W entero sobre el objetivo → dejá que las torretas terminen el trabajo peleando siempre dentro de su rango",
+        "All-in con torreta mejorada: R+Q en tu propio nido → E → W: la torreta grande + el stun te dan burst y control para ejecutar",
+        "Ejecución a distancia: R+W (misiles mejorados) sobre el objetivo bajo de vida o para robar un objetivo neutro con ayuda de la torreta",
+        "Engage de teamfight: R+E (granada mejorada) al equipo agrupado para el stun multiobjetivo y que tu equipo siga el CC"
+      ],
+      "tips": [
+        "Peleá siempre dentro del rango de tus torretas: afuera perdés el daño extra y te quedás sin identidad; si el rival no entra, armá el nido más adelante.",
+        "Tirá la E medio paso detrás del rival y no a donde está parado: el stun entra mucho más seguido y sin stun no hay all-in.",
+        "Mantené 3 torretas vivas antes de cualquier pelea o push: con menos de tres sos vulnerable a ganks y perdés el trade por daño.",
+        "No gastes la R solo porque está en cooldown: guardala para robar objetivos con R+Q, ejecutar con R+W o abrir peleas con R+E según lo que el juego pida.",
+        "Usá la W para empujar y pokear pero contando el maná: sin Lost Chapter temprano, cada ráfaga vacía te deja sin recursos para el siguiente all-in."
+      ],
+      "plan": {
+        "early": "Farmeá y dejá que las torretas empujen sola la wave mirando el mapa: con menos de 3 torres arriba jugá atrás y si el rival roamea, cobrá placas en vez de seguirlo.",
+        "mid": "Splitpush con el nido armado para jalar aggro o agrupate para abrir peleas con R+E: en ambas buscá terrenos cerrados donde tus torretas valgan el doble.",
+        "late": "Robá objetivos con R+Q cuando tu equipo pelee por visión, tirá la R+E multi-stun para definir teamfights y peleá siempre pegado a tu área, nunca en open field."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/heimerdinger/build",
+      "https://mobalytics.gg/lol/champions/heimerdinger/guide"
+    ]
+  }
+}

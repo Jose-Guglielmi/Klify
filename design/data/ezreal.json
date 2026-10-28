@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "ezreal",
+    "ddragonId": "Ezreal",
+    "name": "Ezreal",
+    "titleEs": "el Explorador Pródigo",
+    "cid": 81,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "bottom",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 47.59,
+    "pr": 11.58,
+    "br": 3.82,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 0.7,
+      "jungle": 0.2,
+      "middle": 3.3,
+      "bottom": 93.7,
+      "support": 2.1
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Ezreal.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ezreal_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 110, "slug": "Varus", "name": "Varus", "vsWr": 51.26, "games": 2177 },
+    { "cid": 51, "slug": "Caitlyn", "name": "Caitlyn", "vsWr": 50.9, "games": 10587 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 50.49, "games": 204 },
+    { "cid": 804, "slug": "Yunara", "name": "Yunara", "vsWr": 49.11, "games": 3808 },
+    { "cid": 112, "slug": "Viktor", "name": "Viktor", "vsWr": 49.03, "games": 983 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 48.84, "games": 907 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 48.73, "games": 3550 },
+    { "cid": 119, "slug": "Draven", "name": "Draven", "vsWr": 48.63, "games": 2373 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 40.99, "games": 344 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 41.1, "games": 438 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 42.86, "games": 434 },
+    { "cid": 63, "slug": "Brand", "name": "Brand", "vsWr": 43.1, "games": 239 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 43.47, "games": 444 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 44.22, "games": 1307 },
+    { "cid": 30, "slug": "Karthus", "name": "Karthus", "vsWr": 44.75, "games": 257 },
+    { "cid": 895, "slug": "Nilah", "name": "Nilah", "vsWr": 44.78, "games": 556 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Poke constante con Q desde fuera de tu rango de respuesta: si no te cubrís bien con la wave, te baja la vida sin exponerse nunca.",
+      "La E es un blink instantáneo que lo convierte en uno de los ADC más seguros del juego: ganks que matarían a otro carry le quedan cortos.",
+      "Su R viaja todo el mapa con cooldown corto: limpia waves, roba dragones y snipea escapes sin arriesgar un dedo.",
+      "Todo su kit escala con items de maná y habilidad: mientras más dura la partida, más cooldowns tiene y más poke mete antes de cada pelea."
+    ],
+    "weaknesses": [
+      "Es de los ADC más squishy: con la E gastada cae más rápido que cualquiera; esperá ese cooldown para pelear de verdad.",
+      "Todo su daño es skillshot: parate detrás de minions y la Q deja de doler; cada Q fallada es una ventana de trade gratis para vos.",
+      "Escala lento por cómo se arma: antes de completar Trinity Force y Manamune su daño es tibio; castigá el early con aggro constante.",
+      "Su E tarda muchísimo en volver: el jungla puede campearlo porque sin dash no tiene literalmente nada para salvarse.",
+      "El CC de rango le sigue pegando después del blink: si tu equipo tiene engage largo, la E no le alcanza para escapar del follow-up."
+    ],
+    "powerSpikes": [
+      "Level 6: desbloquea la R y con eso puede allinear, limpiar la wave entera o robar un objetivo desde cualquier ángulo del mapa.",
+      "Primer item completo (Trinity Force): su daño se multiplica y empieza a allinear con W-Q-AA; no aceptes trades largos en esa ventana.",
+      "Nivel 9 con Q maximizada + Manamune: el poke duele de verdad y tiene maná para spamear sin parar de volver a base.",
+      "Full build con cooldowns al mínimo: la E casi siempre está en mano y mete poke infinito antes de que empiecen las teamfights."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Caitlyn, Varus, Xerath: superalo en rango y no te pares en línea recta; la Q viaja en línea, un paso lateral la anula entera.",
+        "Pegale cuando tenga la E en cooldown: es el único ADC que se salva con un botón, contá sus dashes antes de comprometer el all-in.",
+        "No te pares detrás de un solo minion: la Q lo traspasa; usá la wave entera de escudo o caminá fuera de su ángulo."
+      ],
+      "tanks": [
+        "Comprate armadura temprano: sin penetración sus Q te rozan y le cuesta muchísimo matar tanques incluso con build completa.",
+        "Ignoralo en teamfight y matá al front: su burst contra un tanque con resistencias es pobre, buscálo recién cuando quede solo.",
+        "Zonéalo de los objetivos: sin daño sostenido contra tanques, pelear dragón o barón depende para él pura y exclusivamente de su R."
+      ],
+      "assassins": [
+        "Esperá que gaste la E para farmear o pokear: ese es tu all-in, sin dash queda caminando hacia vos sin opciones.",
+        "Guardá tu gap closer y entrá apenas se lo recargue: si saltás con todo en mano, la quema en moverse y ya no tiene escape.",
+        "Castigalo antes de nivel 6 y antes del primer item: el early de Ezreal es su punto más flojo y ahí la pelea corta es tuya."
+      ],
+      "crowdControl": [
+        "Enganchá con CC de rango: la E puede buferar un stun, pero si tenés un segundo CC listo, el bufeo no le sirve de nada.",
+        "Ashe, Malzahar, Lissandra: el CC largo lo mata incluso con E en mano porque después del blink sigue parado en tu rango.",
+        "Coordiná el engage para cuando tire la R: la animación de Trueshot Barrage lo deja quieto un momento y es la mejor ventana del juego."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Zonéalo con tu alcance: tu rango le compite la Q y cada tiro suyo que esquives es vida y maná regalados para vos.",
+          "Guardá tu CC para cuando se pare en línea recta: la Q es su daño y su farm, fallarla lo deja sin presencia en el lane.",
+          "Allinealo con la E gastada: si acaba de blinker o de tirar la R, muere sin opciones antes de que su poke te baje."
+        ]
+      },
+      {
+        "cid": 55,
+        "name": "Katarina",
+        "tips": [
+          "Esquivá su Q con movimiento lateral y saltale cuando su E esté en cooldown: en la pelea corta tu burst le gana limpio.",
+          "Usá tu movilidad para anular su poke: cada blink tuyo esquivando la Q es un trade ganado sin llegar a pelear.",
+          "Al nivel 6 no te pares bajo media vida: su R + Q te ejecuta; entrá con todo justo cuando gaste la R en la wave y es tuya."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Tu rango supera al suyo: castigalo desde afuera de su stun y el lane se convierte en una granja a tu favor.",
+          "Movete en diagonal para esquivar sus tiros: cada fallo le cuesta maná y stacks de Tear, lo que retrasa todo su escalado.",
+          "Ganale el early sin piedad: tu spike inicial es mucho más fuerte, no le des tiempo a completar items y a escalar."
+        ]
+      },
+      {
+        "cid": 63,
+        "name": "Brand",
+        "tips": [
+          "Esperá que se pare para farmear y descargale el stun completo: todo tu combo entra limpio contra un blanco quieto.",
+          "Parate detrás de la wave: su daño viaja igual que la Q de Ezreal y una wave bien posicionada te cubre de los dos.",
+          "Si le ganás el trade de poke, allineá antes de 6: su burst con la pasiva encendida es lo único que te puede revertir la pelea."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: W → E hacia adelante → Q → AA (la W marca el objetivo y tu Q o el AA la detonan)",
+        "All-in tras una Q acertada: Q → E hacia el objetivo → AA → W en medio del AA → AA para detonarla → R si queda vivo",
+        "Poke seguro desde rango: Q desde el ángulo → W a rango máximo → AA, siempre con la E guardada para escapar",
+        "Burst con Flash: E → Flash → AA → Q → W → AA (para cerrar distancias que ni la E alcanza en el all-in)",
+        "Snipe o escape: R → Flash durante la animación → Q al aterrizar (el Flash te saca de la vulnerabilidad del cast de la R)"
+      ],
+      "tips": [
+        "Spameá la Q contra la wave y el rival: cada cast stackea la Tear y te apura el Manamune; un Ezreal con la Tear atrasada es un ADC a medio hacer.",
+        "No uses la E como gap closer por gusto: es tu única vida; jugala agresiva solo si sabés dónde está el jungla y las amenazas están en cooldown.",
+        "La W le pega a estructuras: usala + AA para derribar placas de torre rápido cuando ganás el lane.",
+        "Bufeá la E recién cuando el CC ya te agarró o está a punto: tirarla antes solo la desperdicia; bufeada te saca del follow-up.",
+        "Usá la R para farmear desde base o robar objetivos sin riesgo: tiene cooldown corto, no la guardes para un snipe perfecto que quizá nunca llega."
+      ],
+      "plan": {
+        "early": "Stackeá la Tear spameando Q al farm y al rival, meté poke constante para ganar el trade de vida y volvé a base apenas juntás oro para Tear y componentes de Trinity.",
+        "mid": "Con Trinity + Manamune empujá bot, rotá a mid para tomar la torre y usá la R para limpiar waves o robar dragón; pegate a tu support mientras escalás.",
+        "late": "Pokeá antes de cada teamfight para forzar ventaja numérica, guardá la E para reposicionarte y jamás entres primero: tu trabajo es pegar desde atrás y cerrar con R."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/ezreal/build",
+      "https://mobalytics.gg/lol/champions/ezreal/guide",
+      "https://mobalytics.gg/lol/champions/ezreal/combos"
+    ]
+  }
+}

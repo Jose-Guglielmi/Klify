@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "neeko",
+    "ddragonId": "Neeko",
+    "name": "Neeko",
+    "titleEs": "la Camaleón Curiosa",
+    "cid": 518,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 49.84,
+    "pr": 1.6,
+    "br": 0.71,
+    "analysed": 9407744,
+    "laneDist": {
+      "top": 3.9,
+      "jungle": 3.4,
+      "middle": 15.4,
+      "bottom": 0.8,
+      "support": 76.5
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Neeko.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Neeko_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 497, "slug": "Rakan", "name": "Rakan", "vsWr": 53.76, "games": 266 },
+    { "cid": 111, "slug": "Nautilus", "name": "Nautilus", "vsWr": 53.58, "games": 726 },
+    { "cid": 25, "slug": "Morgana", "name": "Morgana", "vsWr": 52.48, "games": 423 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 52.38, "games": 273 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 52.21, "games": 226 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 51.85, "games": 731 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 51.71, "games": 526 },
+    { "cid": 350, "slug": "Yuumi", "name": "Yuumi", "vsWr": 51.3, "games": 423 }
+  ],
+  "weakAgainst": [
+    { "cid": 16, "slug": "Soraka", "name": "Soraka", "vsWr": 45.15, "games": 330 },
+    { "cid": 902, "slug": "Milio", "name": "Milio", "vsWr": 46.33, "games": 477 },
+    { "cid": 201, "slug": "Braum", "name": "Braum", "vsWr": 46.49, "games": 342 },
+    { "cid": 117, "slug": "Lulu", "name": "Lulu", "vsWr": 46.54, "games": 853 },
+    { "cid": 40, "slug": "Janna", "name": "Janna", "vsWr": 46.93, "games": 309 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 46.95, "games": 262 },
+    { "cid": 432, "slug": "Bard", "name": "Bardo", "vsWr": 47.08, "games": 342 },
+    { "cid": 267, "slug": "Nami", "name": "Nami", "vsWr": 47.67, "games": 579 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R (Pop Blossom) es utilidad de sobra en teamfight: escudo, velocidad de movimiento y un stun en área que deja a todo su equipo jugando alrededor de ella.",
+      "Poke de lane brutal con Q y E: desde el arbusto, con la pasiva escondida, te baja la vida sin que veas venir los hechizos.",
+      "Después del nivel 6 consigue kills de sorpresa: si le entra la E, la R cae encima y el ADC rival muere antes de alcanzar la torre.",
+      "El clone de W y la disfraz de la pasiva le dan picks gratis: patrulla el mapa sin que la visión rival sepa dónde está parada de verdad."
+    ],
+    "weaknesses": [
+      "Es squishy a más no poder: si la lockean en un engage, la borran del mapa antes de que el canal de la R termine.",
+      "Su poke con Q empuja la wave sin querer: le roba farm al ADC y la deja expuesta contra junglas que castigan el push.",
+      "Si el rival tiene visión sobre los arbustos y ve el cambio de forma, su E deja de entrar y queda casi inútil en lane.",
+      "Toda su amenaza de pelea pasa por la R: con la ultimate en cooldown, daño y control caen a casi nada; castigá esa ventana.",
+      "La E es un skillshot lento y predecible: parate detrás de tus minions o esquivála lateral y el lane se le complica entero."
+    ],
+    "powerSpikes": [
+      "Level 6: acceso a Pop Blossom; con la E landed aparece kill real en lane y las teamfights se vuelven su terreno.",
+      "Primer item resuelto: con maná para spamear, el poke con Q ya no se raciona y el lane se vuelve insoportable para el rival.",
+      "Misión de wards completada: controla la visión del mapa y la W le permite caminar arbustos sin miedo a emboscadas.",
+      "Segundo y tercer punto en la R: más daño y menos cooldown; empieza a buscar flancos para tumbar al equipo entero con un solo cast.",
+      "Late con la R maxeada: una combo E + Q deja a cualquier squishy a media vida y el stun en área define peleas completas."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vel'Koz, Nami, Janna: usá tu rango superior para pegarle en cada last hit; ella necesita acercarse al arbusto y ahí la castigás.",
+        "Wardá los arbustos de lane temprano: si podés verla cargar la E, su único mecanismo de engage queda anulado.",
+        "No te pares pegado a tus minions cuando busca el root largo: la E que atraviesa creeps te arrastra al stun completo."
+      ],
+      "tanks": [
+        "Comé la E parado adelante: un tanque aguanta el root y abre el all-in mientras ella quedó adelantada y desprotegida.",
+        "Peleá después de que tire la R: sin ultimate en mano, su daño contra tu MR acumulado es inofensivo y tu backline queda libre.",
+        "Braum la contra absoluta: la pared de la E se come todo su poke de Q y el lane entero se le vuelve imposible."
+      ],
+      "assassins": [
+        "Es un blanco perfecto para dive: un solo lockeo la mata antes de que el canal de la R termine; esperá que roame sola y saltala.",
+        "Guardá tu gap closer para cuando se disfraza o entre al arbusto: su engage vive de la sorpresa, visto de antemano no llega a entrar.",
+        "Si ya gastó W y E para el roam, ese es tu all-in: queda sin escape y sin CC durante varios segundos."
+      ],
+      "crowdControl": [
+        "Interrumpí el canal de la R con cualquier CC: el windup es largo y visible, cortarlo ahí le borra escudo, stun y daño de una.",
+        "Encadená tu lockeo encima de su engage: si la E no le entra limpia, el combo entero muere antes de nacer.",
+        "Lulu y Soraka la embotellan: polymorph o silencio sobre el arranque la dejan parada en medio de la lane sin nada que apretar."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 16,
+        "name": "Soraka",
+        "tips": [
+          "Sostené el poke con la W: cada Q de Neeko que curás es maná y presión tirado a la basura; el lane largo lo ganás vos por sustain.",
+          "Guardá tu silencio (E) para el canal de la R: cortarlo en el arranque le borra el escudo, el stun y toda la pelea de un golpe.",
+          "Parate siempre detrás de tus minions contra su E: el root solo te agarra corto y sin el root no hay all-in posible."
+        ]
+      },
+      {
+        "cid": 902,
+        "name": "Milio",
+        "tips": [
+          "Usá tu rango extra para pegarle de afuera: Neeko tiene que acercarse al arbusto para cargar la E y ahí le ganás todos los trades.",
+          "Guardá la ultimate para su engage: limpiar el stun de la R sobre tu carry convierte su mejor jugada en un regalo.",
+          "Cuando vea el cambio de forma o se meta al arbusto, avisá y jugá atrás: ese es el momento exacto donde busca el all-in."
+        ]
+      },
+      {
+        "cid": 201,
+        "name": "Braum",
+        "tips": [
+          "Levantá la pared (E) contra su Q: te comes gratis todo el poke de lane y su maná se drena sin resultado.",
+          "Parate entre ella y tu ADC: si la E no encuentra blanco blando, el root muere en tu pecho y su combo queda a medias.",
+          "Después de que tire la R, ese es tu all-in: quedó adelantada, sin ultimate y con tu pasiva lista para lockearla entera."
+        ]
+      },
+      {
+        "cid": 117,
+        "name": "Lulu",
+        "tips": [
+          "Polymorpheala (W) apenas arranque el engage: convertirla en chiquita durante su ventana de daño mata la combo completa.",
+          "Pegale con Q + E en cada intento de poke: tu rango y escudo te dejan ganar el trade de desgaste sin acercarte a la E.",
+          "Usá la R para peel cuando entre con Flash + R: lanzarla arriba en tu carry anula el stun y la deja metida en medio de tu equipo."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: W adelante → AA → E → Q y un par de AAs (el clone de W pega y te da el speed boost para entrar y salir)",
+        "All-in nivel 6: E → Q instantáneo → W + R juntos → AA cuando termina la ultimate",
+        "Engage por sorpresa: W + R instantáneo desde lo disfrazado → al caer el stun, E → Q → AA",
+        "Engage largo: E → Flash a mitad de la animación → Q + R al aterrizar → AA y W de cierre",
+        "Teamfight desde afuera: R → Flash justo antes de levantarte del canal → al aterrizar Q → E → AA → W"
+      ],
+      "tips": [
+        "Pokeá desde el arbusto siempre que puedas: la pasiva te esconde, la W pega más fuerte y el rival no ve salir los hechizos; pero cuidá de no empujar la wave y robarle farm a tu ADC.",
+        "Mandá la E a través de minions cuando puedas: el root pasa de corto a completo y el all-in se vuelve gratis; calculá bien la línea porque una E errada te deja sin presión y con la wave mal parada.",
+        "Usá el clone de W para revisar arbustos y fingir roams: es tu herramienta de visión y de engaño, no un hechizo de daño.",
+        "No pelee teamfight sin R en mano: sin Pop Blossom no tenés escudo, stun ni daño relevante; esperá el cooldown o quedá en peel con E y Q.",
+        "Asumí que sos squishy: jugá un paso atrás del carry rival de pantalla, entrá solo con la E segura o con Flash y nunca camines adelante de tu ADC en fase de objetivos."
+      ],
+      "plan": {
+        "early": "Pokeá con Q y E desde los arbustos sin empujar la wave, y al llegar a 6 buscá el kill real: E landed → R encima y el rival baja a base o muere.",
+        "mid": "Roameá con la W y la pasiva para picks en lanes pushadas del rival; jugá sincronizado con tu jungla y guardá la R como arrancadora o contraataque de cada teamfight.",
+        "late": "Solo pelee con R disponible: flanqueá para tumbar al equipo agrupado o quedá peel con E y Q; con la R maxeada el cooldown bajo te deja definir casi cada pelea del mapa."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/neeko/guide",
+      "https://mobalytics.gg/lol/champions/neeko/combos"
+    ]
+  }
+}

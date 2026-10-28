@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "viego",
+    "ddragonId": "Viego",
+    "name": "Viego",
+    "titleEs": "El Rey Arruinado",
+    "cid": 234,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.93,
+    "pr": 8.42,
+    "br": 7.43,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 1.2,
+      "jungle": 96.3,
+      "middle": 1.6,
+      "bottom": 0.5,
+      "support": 0.4
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Viego.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Viego_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 805, "slug": "Locke", "name": "Locke", "vsWr": 59.07, "games": 540 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 56.03, "games": 232 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 55.42, "games": 563 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 55.07, "games": 592 },
+    { "cid": 2, "slug": "Olaf", "name": "Olaf", "vsWr": 54.69, "games": 245 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 54.49, "games": 857 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 54.29, "games": 945 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 54.08, "games": 3001 }
+  ],
+  "weakAgainst": [
+    { "cid": 200, "slug": "Belveth", "name": "Bel'Veth", "vsWr": 45.57, "games": 1773 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 45.61, "games": 1162 },
+    { "cid": 33, "slug": "Rammus", "name": "Rammus", "vsWr": 45.68, "games": 1690 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 45.99, "games": 2122 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 47.19, "games": 4423 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 47.49, "games": 419 },
+    { "cid": 32, "slug": "Amumu", "name": "Amumu", "vsWr": 47.52, "games": 1795 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 47.62, "games": 1972 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La pasiva (Dominación Soberana) le deja tomar el cuerpo del rival que mata: se cura, gana habilidades nuevas y, como queda intargeteable en la transición, sirve para esquivar el burst final de una pelea.",
+      "La Q pega daño porcentual de vida actual en cada autoataque y su segundo golpe lo convierte en uno de los mejores duelistas del juego: contra tanques y bruisers no se queda corto.",
+      "La E le da camuflaje, velocidad y attack speed en un solo botón: es engage, es escape y es la mejor herramienta de flankeo del jungla.",
+      "La R remata con daño de vida faltante, lo saca de encima del foco y hasta cruza paredes: puede entrar a pelear, ejecutar y salir por el mismo hechizo."
+    ],
+    "weaknesses": [
+      "Depende de matar para existir: si no cierra una kill no toma cuerpo y pierde la mitad de su kit, así que obligarlo a pelear sin remate lo deja en un bruiser común.",
+      "La W es lenta y visible y se frena con la primera unidad que toca: sin objetivos aislados, su stun se come un minion, una planta o un monstruo.",
+      "Cero daño a distancia real y cero movilidad por fuera de E y R: si lo kitean antes de llegar al cuerpo a cuerpo, se queda caminando hacia nada.",
+      "Es extremadamente vulnerable al CC en cadena: todo su daño viene de autoataques sostenidos y una sola inmovilización le corta el ritmo y la curación.",
+      "La posesión es una trampa: tomar un cuerpo flojo o hacerlo con CC encima lo deja en una forma peor que la propia, sin escapes y sin daño."
+    ],
+    "powerSpikes": [
+      "Nivel 3 con Q-W-E: primer gank serio; la W cargada desde la niebla y la E encima son casi un kill asegurado en una lane pusheada.",
+      "Nivel 6: la R le da un execute con dash que además cruza paredes; desde acá puede entrar a peleas que no debería ganar y salir vivo.",
+      "Primer item de duelo completo: con BotRK y algo de vida se vuelve el mejor 1v1 del mapa; en ese punto pelearle el río es regalarle la partida.",
+      "Segundo y tercer punto de R (niveles 11 y 16): el daño de vida faltante escala tan fuerte que cualquier squishy por debajo de la mitad es ejecutable de un salto."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Zyra, Karthus y cualquier mago de rango largo: pegalé desde afuera de la E y no lo dejes llegar al cuerpo a cuerpo, donde gana todas las peleas.",
+        "Poné unidades entre ustedes: la W se frena con lo primero que toca, así que las plantas, los minions y los monstruos son un escudo gratis contra su stun.",
+        "Wardeá los objetivos grandes: su control de objetivos es de los mejores del juego y un dragón sin visión es medio dragón regalado."
+      ],
+      "tanks": [
+        "Armadura y Espinas antes que daño: casi todo lo que hace es físico y sostenido, así que cada punto de armadura le baja el DPS de verdad.",
+        "Rammus y Amumu lo apagan: taunt o doble stun encadenado le cortan el ritmo de autoataques, que es de donde sale toda su curación.",
+        "Cortale la curación con un item de antiheal: sin sustain sus peleas largas contra un tanque se vuelven una cuenta que pierde."
+      ],
+      "assassins": [
+        "Evelynn, Fizz y Elise le ganan por burst y por tempo: entrá, hacé todo el daño en un segundo y salí antes de que empiece a autoataquear.",
+        "No le pelees el 1v1 extendido nunca: si el trade pasa los tres segundos, la Q porcentual y el sustain lo dan vuelta aunque arranques arriba.",
+        "Guardá tu escape para su R: si la usa para entrar, quedate el dash para salir del rango del execute y dejalo sin remate."
+      ],
+      "crowdControl": [
+        "Encadená el CC ni bien entra: una inmovilización larga sobre el arranque de su combo lo mata antes de que tome un cuerpo.",
+        "Guardá el CC duro para después de la R: si lo dejás libre después del salto, remata y se cura con el daño de la propia R.",
+        "Si mata a alguien, el cuerpo lo deja intargeteable un instante: no gastes hechizos en la transición, esperá a que la forma nueva aparezca."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 200,
+        "name": "Bel'Veth",
+        "tips": [
+          "No le pelees el primer 1v1 del río: tu forma verdadera y los stacks son tu win condition, y Viego gana cualquier duelo antes de que los tengas.",
+          "Guardá la E para cuando te baje la vida: la reducción de daño te salva justo del execute de la R y muchas veces lo deja a él sin remate.",
+          "Farmeá tus campamentos con prioridad y contestá objetivos con ventaja numérica: si lo dejás sin kills tempranas, su pasiva nunca arranca."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Poné las plantas entre vos y él: la W se frena con la primera unidad que toca, así que tus plantas le comen el stun sin que gastes nada.",
+          "Guardá la E (raíz) para cuando ya esté encima: frenarlo en medio de la E le corta el camuflaje y el attack speed de un solo golpe.",
+          "Zonéalo con el área de la R cuando entre a pelear: no puede quedarse autoataqueando si cada segundo parado adentro le cuesta media vida."
+        ]
+      },
+      {
+        "cid": 33,
+        "name": "Rammus",
+        "tips": [
+          "Activá la W ni bien empiece a pegarte: su daño es casi todo autoataque físico y se lo devolvés multiplicado con la armadura puesta.",
+          "Tauntealo cuando entre con la E: sin poder moverse ni elegir objetivo, su combo se desarma y queda parado comiendo daño.",
+          "Armá Espinas temprano: le corta el sustain y castiga cada golpe, y contra un campeón que pelea diez segundos seguidos eso es la pelea entera."
+        ]
+      },
+      {
+        "cid": 60,
+        "name": "Elise",
+        "tips": [
+          "Cocoonéalo mientras carga la W: la animación lo deja clavado en el lugar y ese stun es gratis si lo ves venir.",
+          "Ganale el tempo del early: bajá a la araña para reposicionarte y pegar de rango corto sin que él pueda engancharte la Q.",
+          "No te quedes en forma humana cuando le baje la vida: su R ejecuta y se cura; guardate el cambio de forma para salir del rango del salto."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Burst corto: W (cargada) → E encima mientras canalizás → AA → Q → R → AA (la E cancela la lentitud de la W y te deja entrar camuflado)",
+        "Trade de rango medio: W → E mientras cargás → AA → Q → AA; el segundo golpe de la Q entra solo después de cada hechizo",
+        "Trade cuerpo a cuerpo: E → Q inmediato (la Q resetea el autoataque) → AA → W → AA, con la W corta para asegurar el stun",
+        "All-in completo: Q → E → AA → W → AA → R → AA; guardá la R para el remate, no para abrir",
+        "Gank de niebla: cargá W fuera de visión → Flash durante la carga → stun asegurado → Q + AA, y dejá la E para el escape"
+      ],
+      "tips": [
+        "Intercalá un autoataque entre cada hechizo: la pasiva de la Q hace que el golpe posterior a una habilidad pegue dos veces, y ahí está la mitad de tu daño.",
+        "No tires la W como poke: es tu único CC y se frena con cualquier unidad; usala cuando el objetivo esté aislado o con W → Flash.",
+        "Reservá la E para el flankeo y no para moverte por el mapa: el camuflaje y el attack speed son lo que te deja entrar a la pelea sin ser visto.",
+        "Tomá cuerpo del más alimentado del rival, no del primero que caiga: una posesión sobre un tanque sin daño te deja peor que tu forma base.",
+        "No entres primero a la teamfight: esperá el primer CC o la primera kill, entrá con E por el flanco, rematá con R y recién ahí tomá el cuerpo."
+      ],
+      "plan": {
+        "early": "Limpiá campamentos rápido y buscá ganks a lanes pusheadas con W cargada desde la niebla; con nivel 6 y la R ya podés pelear 2v2 y pelear el primer dragón.",
+        "mid": "Jugá por visión y flanqueos con la E, pelea cada objetivo y busca picks aislados: cada kill te da un cuerpo y cada cuerpo te da una pelea más.",
+        "late": "Entrá segundo por el flanco al backline, ejecutá con R a los squishies y tomá el cuerpo más fuerte del rival; si te toca pelear sin remate, esperá el CC del equipo antes de saltar."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/viego/guide",
+      "https://mobalytics.gg/lol/champions/viego/counters",
+      "https://mobalytics.gg/lol/champions/viego/combos"
+    ]
+  }
+}

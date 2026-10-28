@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "velkoz",
+    "ddragonId": "Velkoz",
+    "name": "Vel'Koz",
+    "titleEs": "el Ojo del Vacío",
+    "cid": 161,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "support",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.41,
+    "pr": 3.51,
+    "br": 2.11,
+    "analysed": 15962014,
+    "laneDist": {
+      "top": 2.3,
+      "jungle": 0,
+      "middle": 21.1,
+      "bottom": 11.5,
+      "support": 65
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Velkoz.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Velkoz_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 61.01, "games": 218 },
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 59.45, "games": 979 },
+    { "cid": 22, "slug": "Ashe", "name": "Ashe", "vsWr": 57.41, "games": 324 },
+    { "cid": 517, "slug": "Sylas", "name": "Sylas", "vsWr": 57.19, "games": 320 },
+    { "cid": 164, "slug": "Camille", "name": "Camille", "vsWr": 55.87, "games": 247 },
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 55.32, "games": 235 },
+    { "cid": 147, "slug": "Seraphine", "name": "Seraphine", "vsWr": 54.8, "games": 2436 },
+    { "cid": 888, "slug": "Renata", "name": "Renata Glasc", "vsWr": 54.67, "games": 428 }
+  ],
+  "weakAgainst": [
+    { "cid": 44, "slug": "Taric", "name": "Taric", "vsWr": 46.31, "games": 298 },
+    { "cid": 53, "slug": "Blitzcrank", "name": "Blitzcrank", "vsWr": 48.21, "games": 2352 },
+    { "cid": 26, "slug": "Zilean", "name": "Zilean", "vsWr": 48.9, "games": 775 },
+    { "cid": 7, "slug": "Leblanc", "name": "LeBlanc", "vsWr": 49.0, "games": 251 },
+    { "cid": 432, "slug": "Bard", "name": "Bardo", "vsWr": 49.07, "games": 1025 },
+    { "cid": 37, "slug": "Sona", "name": "Sona", "vsWr": 49.49, "games": 691 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 49.57, "games": 1285 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 49.58, "games": 359 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Poke de rango absurdo: la Q y la W llegan más lejos que casi cualquier respuesta del juego, así que te empuja la wave y te pega sin que puedas contestar.",
+      "Wave clear con dos cargas de W: limpia la wave en segundos, se queda con la prioridad de lane y rota a objetivos antes que vos.",
+      "La pasiva (Deconstrucción Orgánica) es daño verdadero: con tres stacks no le importa tu armadura ni tu MR, te come igual.",
+      "En peleas de pasillo o cerca del pozo es el peor rival posible: si el equipo se apila, la R y la pasiva stackean a varios a la vez.",
+      "La E es un knock-up en área y su único peel: bien guardada, le corta el all-in a cualquier melee que se le acerque."
+    ],
+    "weaknesses": [
+      "Cero movilidad: no tiene dash ni blink, así que si le cortás el ángulo y te le pegás a la wave, está muerto.",
+      "La R lo deja clavado en el lugar: cualquier stun, supresión o gancho la interrumpe y le regala la pelea entera.",
+      "La E es su única defensa: cuando la gasta para empujar la wave o para un knock-up fallido, tenés una ventana larga para el all-in.",
+      "Squishy y sin escape: si el jungla lo encuentra empujado lejos de torre, no hay Flash que lo salve.",
+      "Depende de acertar skillshots: si le esquivas la Q y la E, su daño se cae a la mitad y el maná se le va en el aire."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R completa los stacks de pasiva y ejecuta desde fuera de tu rango; no te quedes a media vida en línea recta.",
+      "Primer item de poke: con penetración y maná te saca de lane con dos combos; comprá MR o botas antes de que lo termine.",
+      "Nivel 9 con la Q maxeada: el poke duele el doble y el slow de la Q le deja encadenar la E sin riesgo.",
+      "Niveles 11 y 16 con puntos en la R: en peleas de pasillo asumí que te parte al equipo si no lo enfocás primero."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Ziggs: devolvele el poke desde fuera del alcance de su Q y obligalo a elegir entre farmear o comer daño.",
+        "Pegate a la wave para que su Q no tenga línea limpia: sin el slow de la Q no encadena la E y su combo se cae solo.",
+        "Empujá y pedile gank: sin movilidad ni escape, cada vez que se adelanta a pokear es una kill gratis para tu jungla."
+      ],
+      "tanks": [
+        "Compra Resistencia Mágica y botas antes de lo que creés necesario: la pasiva es daño verdadero, así que el HP y los escudos valen más que el MR puro.",
+        "Caminá hacia él en línea recta: su única forma de frenarte es la E, y en cuanto la gasta no tiene nada para el resto del all-in.",
+        "Un escudo o una ulti de Salvación como la de Taric le borran la R completa: guardala para cuando se clave a canalizar."
+      ],
+      "assassins": [
+        "Zed, Talon, LeBlanc: esperá que gaste la E para empujar y entrá recién ahí; sin knock-up está descalzo.",
+        "No le des línea recta: su Q pega en línea y su E cubre área, así que entrá por el costado o desde atrás de la wave.",
+        "Esperá el momento en que se clave con la R: si te acercás mientras canaliza, la interrumpís y lo matás en el mismo gesto."
+      ],
+      "crowdControl": [
+        "Cualquier stun, supresión o gancho le corta la R: guardá el CC para el canal, no para el arranque del trade.",
+        "Encadená CC sobre el knock-up de su E: si le comés el peel, el resto del equipo entra gratis.",
+        "Blitzcrank, Nautilus y Leona lo castigan siempre: sin movilidad, el primer CC que entra es una kill segura."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 44,
+        "name": "Taric",
+        "tips": [
+          "Guardá la R (Radiance) para el canal de la suya: si la tirás encima del rayo, todo su daño se va en invulnerabilidad y él queda clavado en el lugar.",
+          "Su poke es de un solo ángulo: avanzá pegado al carry y con el escudo listo; si esquiva tu Q, la E lo tiene quieto para el all-in.",
+          "No lo dejes pokear gratis: cuando gaste la E para empujar, caminá con el stun listo; sin E no tiene peel y no llega a la R."
+        ]
+      },
+      {
+        "cid": 53,
+        "name": "Blitzcrank",
+        "tips": [
+          "Su inmovilidad es tu gancho: apenas se asome a pokear, tirá Q; sin movilidad y con la R canalizada, el gancho es kill casi seguro.",
+          "Corré hacia él con W activa y amenazá el E: si gasta la E (knock-up) para frenarte, el siguiente gancho entra limpio.",
+          "Baitéalo con el escudo: si su Q te pega de lejos no pasa nada, y tu R de área le cierra el pasillo justo cuando quiere canalizar."
+        ]
+      },
+      {
+        "cid": 26,
+        "name": "Zilean",
+        "tips": [
+          "La velocidad de la E te deja esquivar su Q y su E con margen; sin esos dos hechizos no tiene cómo frenarte el acercamiento.",
+          "Guardá la R para cuando su equipo commitea el all-in: revivís al carry y su combo entero se va en nada.",
+          "Pokealo cuando gaste las bombas en la wave: sin bombas no tiene amenaza y su rango es más corto que el de tu Q."
+        ]
+      },
+      {
+        "cid": 7,
+        "name": "LeBlanc",
+        "tips": [
+          "Tu movilidad le gana el mapa: entrá con W (Distorsión) apenas intente castear la Q y el trade queda a tu favor.",
+          "Esperá que gaste la E para empujar y saltale recién ahí: sin cadena ni escape, su Q + R no alcanza para matarte.",
+          "Comprá MR temprano y no te pares en línea recta: su daño es de un solo burst y si no te mata en la primera vuelta, la pelea es tuya."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "All-in completo: Q → W → AA → E → W → R (abrís con Q + W desde rango, metés el auto y recién ahí la E para asegurar el knock-up antes de canalizar)",
+        "All-in desde la E: E → W → Q → R → W → AA (si la E entra, la W y la Q caen gratis durante el knock-up y la R cierra el canal)",
+        "Execute: Q → R sobre el objetivo a baja vida (la Q lenta y stackea la pasiva, la R remata desde fuera de su rango)",
+        "Trade pre-6: E → W → Q → AA → W → AA (el knock-up garantiza el resto del combo antes de tener la R)",
+        "Doble proc de pasiva: Q → W rápido → E → W (dos procs de Deconstrucción Orgánica en un solo trade, ideal para el piso de daño sorpresa)"
+      ],
+      "tips": [
+        "Guardá la E como peel, no como poke: es tu única herramienta defensiva y sin ella cualquier melee te mata en dos segundos.",
+        "No canalices la R con CC enemigo disponible: esperá a que gasten el stun o entrá desde el fog of war con la E como seguro.",
+        "Pokeá desde fuera del alcance de su respuesta y con la wave empujada: el objetivo es que no pueda farmear sin comerse dos Q por wave.",
+        "Usá el rebote de la Q para pegarle al que se esconde detrás de los minions: es la única forma de poke que atraviesa la wave desde lejos.",
+        "Antes del 6 jugá atrás de tu torre: sin R el combo mata poco y tu cuerpo no aguanta un all-in, así que ganá con poke y no con trades largos."
+      ],
+      "plan": {
+        "early": "Pokeá con Q y W desde máximo rango usando la wave como escudo, empujá solo con el jungla ubicado y buscá el 6 con el carry sano para el primer kill.",
+        "mid": "Empujá bot, rotá a mid a sacar la torre con la W y la Q, y peleá objetivos desde el pasillo del pozo donde la R y la pasiva pegan a varios a la vez.",
+        "late": "Quedate pegado al equipo detrás de la línea, pokeá desde el fog of war y canalizá la R recién cuando el CC enemigo esté gastado o el carry esté fuera de línea."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/velkoz/guide",
+      "https://mobalytics.gg/lol/champions/velkoz/guide/mid",
+      "https://mobalytics.gg/lol/champions/velkoz/combos"
+    ]
+  }
+}

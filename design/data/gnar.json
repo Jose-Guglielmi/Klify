@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "gnar",
+    "ddragonId": "Gnar",
+    "name": "Gnar",
+    "titleEs": "el Eslabón Perdido",
+    "cid": 150,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 50.1,
+    "pr": 3.12,
+    "br": 1.04,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 98.6,
+      "jungle": 0.3,
+      "middle": 0.7,
+      "bottom": 0.2,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gnar.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gnar_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 56.57, "games": 594 },
+    { "cid": 80, "slug": "Pantheon", "name": "Pantheon", "vsWr": 54.38, "games": 594 },
+    { "cid": 875, "slug": "Sett", "name": "Sett", "vsWr": 54.08, "games": 1224 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 53.53, "games": 665 },
+    { "cid": 92, "slug": "Riven", "name": "Riven", "vsWr": 53.41, "games": 279 },
+    { "cid": 777, "slug": "Yone", "name": "Yone", "vsWr": 53.39, "games": 1180 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 52.81, "games": 320 },
+    { "cid": 79, "slug": "Gragas", "name": "Gragas", "vsWr": 52.72, "games": 349 }
+  ],
+  "weakAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 44.77, "games": 1521 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 45.43, "games": 317 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 45.54, "games": 549 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 45.9, "games": 268 },
+    { "cid": 36, "slug": "DrMundo", "name": "Dr. Mundo", "vsWr": 47.33, "games": 431 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 47.35, "games": 452 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 47.48, "games": 733 },
+    { "cid": 75, "slug": "Nasus", "name": "Nasus", "vsWr": 47.66, "games": 577 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Lane bully por naturaleza: contra melee de top, el rango de Mini más la Q le permite castigar cada last hit hasta forzar el recall.",
+      "La E cumple doble función (escape y engage): con ella en mano es de los tops más difíciles de ganquear del juego.",
+      "La R de Mega Gnar cambia teamfights enteras: encadenada con E stunea y arrincona al equipo rival completo contra una pared.",
+      "El boomerang pega ida y vuelta: poke sostenido que no gasta casi nada y te permite ganar el lane sin gastar recursos."
+    ],
+    "weaknesses": [
+      "La barra de furia no se apaga: te transformás cuando ella quiere, y un Mega Gnar sorpresivo a mitad de trade suele perder el all-in.",
+      "Sin la E disponible quedás desprotegido: si el rival te la baita, cualquier gank o all-in se convierte en tu muerte.",
+      "La R depende de enemigos agrupados o de una pared cerca: contra equipo espaciado en campo abierto, la ultimate casi no hace nada.",
+      "Mega Gnar es lento y sin escape real (el Crunch es corto): la forma que debería ser tu fuerza te deja quieto si entraste mal.",
+      "El rival puede jugar a desengancharse cuando te transformás: sin amenaza de R a la vista, peleá con libertad y Gnar vuelve a ser un poco molesto nomás."
+    ],
+    "powerSpikes": [
+      "Level 6: aparece la R y con ella el burst sorpresa del all-in; antes de ese punto sos molesto pero no asesino.",
+      "Nivel 9 con la Q maxeada: el poke se vuelve implacable y forzás recalls constantes del rival top.",
+      "Nivel 11 con la R en rango 2: mid game de peleas agrupadas es donde un bien E + R define la partida.",
+      "Nivel 13 con Q y W en máximo más dos-tres items: sos front-line con CC y daño, y elegís entre castigar o pelear por tu carry según la forma."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Teemo, Quinn, Kennen: ellos también te pegan de lejos, así que usá los arbustos para cerrar distancia y Q solo cuando tengas ángulo seguro.",
+        "No intentes ganar el poke: farmeá lo seguro, mantené la furia alta y esperá tu nivel 6 para all-in con transformación cerca de ellos.",
+        "Pedí gank temprano: los ranged tops son fuertes en 1v1 pero mueren solos si el jungla aparece antes de que escalen."
+      ],
+      "tanks": [
+        "Ornn, Sion, Mundo: castigá antes de que escalen, porque tu early poke les duele y después de dos items te aguantan entero.",
+        "La W de Mini pega % de vida máxima: computá el tercer stack en cada trade corto, es tu mejor herramienta anti-tanque.",
+        "Nunca all-ines sin transformación lista: contra un tanque con sustain, un trade largo te juega en contra aunque estés adelante."
+      ],
+      "assassins": [
+        "Riven, Yone, Akali: guardá la E para cuando salten, no para pegar; si tu salto está abajo cuando ellos engagean, no hay segunda chance.",
+        "Si te agarran cerca de transformar, dejalo pasar: Mega Gnar parando el burst con stun de Wallop gana la mayoría de los all-ins.",
+        "Jugá con el rango: los asesinos top necesitan cerrar distancia para pegar, y cada paso que dan hacia vos es poke gratis para vos."
+      ],
+      "crowdControl": [
+        "Malphite y Singed te castigan la transformación: no te conviertas cerca de su R o fling, porque Mega sin escape es un blanco quieto.",
+        "El hop de Mini es predecible: no uses la E en línea recta ante campeones con skillshot de agarre, esperá el cooldown de ellos o saltá desde el arbusto.",
+        "Tenacidad temprana te compra margen: cada medio segundo menos de CC es un auto más de Hyper computado en el trade."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 54,
+        "name": "Malphite",
+        "tips": [
+          "Dejá que el escudo pasivo absorba el poke de la Q entre trades: se recarga fuera de combate y el lane de Gnar deja de doler.",
+          "La Q lo frena en seco cada vez que Mini quiera kitar: pegale, caminate y repetí cuando vuelva acercarse al farm.",
+          "Guardá la R para cuando se transforme en Mega: sin doble salto disponible, Mega Gnar queda parado en medio de tu ultimate y es el primero en morir."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "Flitealo apenas salte: interceptar el hop en el aire le quita el único escape y deja a Gnar vendido ante tu jungla.",
+          "Jugale de costado con el veneno detrás: su poke necesita línea recta y tu rastro le niega los autos de Mini sobre la wave.",
+          "Empujá y corré: Mega Gnar no te alcanza sin su R, así que forzalo a gastar la transformación persiguiéndote y peleá recién cuando se le pase."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Tu pasiva te cura fuera de combate: alterná trades con pausas y el poke de Mini nunca va a convertir su ventaja en kill.",
+          "Brittle (W) castiga cada auto que pegue: usalo justo cuando quiera computar el tercer stack de Hyper y ganás el trade entero de una.",
+          "Guardá la R para romper el engage de Mega: un knock-up a tiempo sobre el transformado le cancela la combo de E + R que define sus peleas."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Aguantá el early fuera del rango de su Q y farmeá con tu propia Q a distancia: el bully de Gnar tiene fecha de vencimiento.",
+          "Usá la velocidad de W para esquivar o pisar el boomerang: sin el doble hit de la Q, su poke se corta a la mitad.",
+          "Con dos o tres items invitá al split 1v1: vos ganás la pelea alargada y Mega Gnar no puede seguirte el ritmo si no tiene R en mano."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Poke de lane: Q al frente del rival para que el boomerang lo pegue ida y vuelta, y recogelo siempre que puedas porque te baja el cooldown a la mitad",
+        "Trade corto de Mini: dos autos + Q para computar el tercer stack de Hyper (W) con su % de vida máxima, y salí caminando antes de que el rival responda",
+        "All-in de Mega: E (Crunch) sobre el objetivo → auto + Q (Boulder) para el stun de Wallop → R hacia la pared si hay más de uno cerca",
+        "Engage de teamfight: E de Mini sobre un minion delante del equipo rival, transformás en el aire y R de Mega al centro del grupo (Flash + R si el rival no se junta solo)",
+        "Escape limpio: E de Mini cruzando la pared hacia atrás; en Mega el Crunch también cruza pero es más corto, así que reubicáte antes de transformarte"
+      ],
+      "tips": [
+        "Mirá la barra de furia antes de cada trade: entrá con furia baja si querés kitar o alta si buscás all-in; la transformación la tiene que elegir tu plan, no la barra.",
+        "Recogé el boomerang siempre que sea gratis: la Q devuelta reduce el cooldown y te regala el segundo golpe del poke.",
+        "En Mini sos poke y distancia, en Mega sos CC y front-line: no aceptes peleas largas jugando en la forma equivocada.",
+        "Guardá la E para cuando el jungla aparezca: si la gastaste para pegar, sos minion de gank; mirá el minimapa antes de hoppear agresivo.",
+        "Si el rival juega espaciado no fuerces la R: flanqueá desde la niebla de guerra o esperá a que se agrupen alrededor de un objetivo."
+      ],
+      "plan": {
+        "early": "Castigá al melee en cada last hit con Q y autos, controlá la furia para transformarte cuando a vos te convenga y al 6 buscá el all-in con R o setup para tu jungla.",
+        "mid": "Agrupá con la barra de furia llena para entrar con E + R de Mega en cada pelea, y entre peleas presioná side lane con tu buen split push.",
+        "late": "Jugá alrededor de tu R: flanqueá desde la niebla para el knock-up múltiple y, si no estás cerca de transformar, demorá la pelea hasta que la barra esté lista."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/gnar/build",
+      "https://mobalytics.gg/lol/champions/gnar/guide"
+    ]
+  }
+}

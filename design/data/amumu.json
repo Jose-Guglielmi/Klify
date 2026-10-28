@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "amumu",
+    "ddragonId": "Amumu",
+    "name": "Amumu",
+    "titleEs": "la Momia Triste",
+    "cid": 32,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 53.25,
+    "pr": 2.51,
+    "br": 1.34,
+    "analysed": 8405940,
+    "laneDist": {
+      "top": 0.5,
+      "jungle": 75.7,
+      "middle": 0.1,
+      "bottom": 0.1,
+      "support": 23.7
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Amumu.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Amumu_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 246, "slug": "Qiyana", "name": "Qiyana", "vsWr": 58.2, "games": 555 },
+    { "cid": 56, "slug": "Nocturne", "name": "Nocturne", "vsWr": 57.84, "games": 472 },
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 57.51, "games": 273 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 56.66, "games": 353 },
+    { "cid": 9, "slug": "Fiddlesticks", "name": "Fiddlesticks", "vsWr": 56.09, "games": 230 },
+    { "cid": 104, "slug": "Graves", "name": "Graves", "vsWr": 56.01, "games": 732 },
+    { "cid": 107, "slug": "Rengar", "name": "Rengar", "vsWr": 55.69, "games": 343 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 55.51, "games": 490 }
+  ],
+  "weakAgainst": [
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 46.8, "games": 532 },
+    { "cid": 154, "slug": "Zac", "name": "Zac", "vsWr": 47.44, "games": 293 },
+    { "cid": 102, "slug": "Shyvana", "name": "Shyvana", "vsWr": 49.13, "games": 515 },
+    { "cid": 876, "slug": "Lillia", "name": "Lillia", "vsWr": 49.18, "games": 671 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 49.72, "games": 527 },
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 49.87, "games": 393 },
+    { "cid": 141, "slug": "Kayn", "name": "Kayn", "vsWr": 50.79, "games": 1073 },
+    { "cid": 245, "slug": "Ekko", "name": "Ekko", "vsWr": 51.49, "games": 538 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Su R es un stun en área que agarra a todo el equipo agrupado: si connetea Flash + R al centro, la pelea está decidida antes de que reaccionen.",
+      "La Q lo arrastra hasta vos con stun: cualquier paso en falso a su rango se convierte en gank cobrado sin que puedas escapar.",
+      "La W pega por porcentaje de vida y la pasiva corta resistencia mágica: los tanques que se apoyan solo en MR se derriten adentro de su aura.",
+      "Clear de jungle rapidísimo con W + E: llega a nivel 6 antes que la mayoría de los junglas y cada R disponible es una amenaza de gank real.",
+      "Build flexible: puede salir tanque o full AP según lo que pida el equipo, así que adaptarse a tu composición no le cuesta nada."
+    ],
+    "weaknesses": [
+      "Early game inexistente: sin R es un jungla lento, sin duelo 1v1 y con maná que se funde en dos camps; invadilo antes del 6.",
+      "Toda su amenaza cuelga del cooldown de la R: si la gastó o está por entrar, no tiene burst ni engage y puede jugarlo libre.",
+      "La Q es skillshot con dos cargas: esquivar la primera lo deja a pie, sin forma de llegar ni de escapar de tu all-in.",
+      "Es vulnerable a poke y disengage: un equipo que no se agrupa y lo castiga a distancia lo niega por completo.",
+      "El toggle de la W se come el maná: si lo fuerza a spamear clear o wave, aparece sin recursos para el próximo fight."
+    ],
+    "powerSpikes": [
+      "Level 6: se destapa la R; a partir de acá cada gank con ultimate en mano es potencial kill, no te relajes aunque estés bajo torre.",
+      "Primer item resuelto (Liandry o Sunfire): pasa de mucamo a pesadilla; mientras tanto castigá su clear y robale camps.",
+      "Nivel 11 y 16 con puntos en R: el cooldown baja tanto que la tiene disponible casi en cada pelea; asumí que hay stun masivo en mano.",
+      "Mid game con los equipos agrupados: su mejor ventana del partido; no te amontones con tu equipo alrededor de objetivos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pegale desde fuera del rango de la Q: si no encuentra bandage, camina de vuelta a su camp perdiendo tiempo y maná.",
+        "Pokealo antes del 6 en cada pasada por la river: su early no tiene respuesta y cada-% de vida que le sacás demora su R.",
+        "No te agrupes con los minions cuando farmeás: la Q vía minion es su forma favorita de arrancar un gank limpio."
+      ],
+      "tanks": [
+        "Su W escala con tu vida y su pasiva corta MR: no te compres solo resistencia mágica y esperes tanquearlo, jugá con distancia.",
+        "Peel para tus carries: matar a Amumu es secundario; si su R no encuentra a dos o tres agrupados, perdió su trabajo.",
+        "Guardá tu disengage para su engage: un empujón o root cuando vuela la Q lo deja parado en medio de tu equipo sin escape."
+      ],
+      "assassins": [
+        "Antes del 6 es presa: invadeá su jungle, robale camps y forzá duelos; sin R no gana un 1v1 contra nadie.",
+        "Esperá que tire la R en teamfight y entrá después: con el stun gastado es un muñeco lento sin burst para responder.",
+        "Flankealo a él: suele ser el que abre, pero su reacción sin Flash es nula y tu dive lo borra antes del segundo Q."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para su entrada: interrumpir la Q o el Flash + R mata su única ventana de impacto y lo deja descalzo.",
+        "Parate separado del equipo: la R de Amumu vale por la cantidad de gente que agarra; de dos metros apartado, le arruinás la ultimate.",
+        "QSS o limpiar el stun del bandage te devuelve el duelo: su daño sostenido sin CC encadenado es bastante mediocre."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 233,
+        "name": "Briar",
+        "tips": [
+          "Saltale en la jungle antes del 6: Amumu sin R no tiene duelo, y tu skirmish temprano le arruina el clear y el tempo.",
+          "Contá su Q: si la tira y no te encuentra, queda sin engage ni escape; metete encima en ese segundo.",
+          "En teamfight esperá que gaste la R y entrá recién ahí: el stun masivo te congela en pleno frenzy y te regala la pelea."
+        ]
+      },
+      {
+        "cid": 154,
+        "name": "Zac",
+        "tips": [
+          "Usá tu E por paredes para contragankear: si llegás cuando él ya se tiró, su gank se convierte en tu doble kill.",
+          "Amumu vive del R: con tu pool de vida tanqueás el stun, peleás adentro de su W y ganás el trade largo.",
+          "Invadí su red temprano: su clear quema maná; robale camps antes del 6 mientras él todavía no existe."
+        ]
+      },
+      {
+        "cid": 102,
+        "name": "Shyvana",
+        "tips": [
+          "Ganale el tempo con tu clear más rápido: invadí y meté presión en los lados antes de que llegue a nivel 6.",
+          "Peleá los dragones con tu pasiva cargada: cada drag que le negás le rompe el plan de escalado y de ganks con R.",
+          "Trackeá su R: si la gastó en un gank fallido, ese es tu all-in o tu dragón gratis; no le des tiempo de volver a cargarla."
+        ]
+      },
+      {
+        "cid": 876,
+        "name": "Lillia",
+        "tips": [
+          "Kitéalo con la velocidad de tu pasiva: su única forma de alcanzarte es la Q, y si la falla queda a pie comiendo tu daño.",
+          "Dormilo con la E a distancia cuando venga de gank: cortarle el engage antes de que llegue mata el gank entero.",
+          "No te pares adentro de su W: el daño por porcentaje de vida te come; peleá de costado y abandoná el centro del área."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Gank básico: Q al target → W en pleno vuelo → AA → E → AA apenas aterrizás",
+        "Engage de teamfight: Q al primero → R a mitad del vuelo → W + E al caer para agarrar también a los que estaban atrás",
+        "Largo rango con Flash: Q → Flash en medio de la animación → W + R al aterrizar → AA → E → AA",
+        "R extendida: R primero → Flash durante la animación para alargar el alcance → W → Q → E → AA",
+        "Distancia corta: W + E juntos → Flash + Q instantáneo → AA para pegarte y no perder el objetivo"
+      ],
+      "tips": [
+        "El toggle de la W es tu maná: no lo dejes prendido a vida llena entre camps, apagalo y prendelo por tandas o volvés a base en el minuto 5.",
+        "Tu early no existe: powerfarm a 6 sin forzar nada; llegás a la R antes que la mayoría y ahí arranca tu partido.",
+        "Cada R disponible es un gank: usala apenas entra en cooldown, en este campeón la ultimate guardada es un recurso desperdiciado.",
+        "Abrí con W nivel 1 y maxeá E → Q → W: la E limpia camps sola y la Q después para el engage de los ganks.",
+        "Después de tirar la R decidí rápido: si tu backline pelea, volvé a peel; si el enemigo quedó tocado, quedate adentro y terminá."
+      ],
+      "plan": {
+        "early": "Powerfarm hasta 6 sin forzar jugadas, gankeá solo con R en mano y si cerrás un gank en bot, cobrá el dragón enseguida.",
+        "mid": "Jugá alrededor del cooldown de tu R para gankear y agruparte con el equipo, cobrá Baron después de cada pelea ganada y seguí farmeando camps para no quedarte atrás en oro.",
+        "late": "Buscá picks con la Q, esperá a que el rival se agrupe alrededor de un objetivo para la R multi-target y después de tirarla elegí entre quedarte en el backline rival o volver por tus carries."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/amumu/build",
+      "https://mobalytics.gg/lol/champions/amumu/guide",
+      "https://mobalytics.gg/lol/champions/amumu/combos"
+    ]
+  }
+}

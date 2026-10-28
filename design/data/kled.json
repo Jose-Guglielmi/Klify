@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "kled",
+    "ddragonId": "Kled",
+    "name": "Kled",
+    "titleEs": "el Jinete Cascarrabias",
+    "cid": 240,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.96,
+    "pr": 1.54,
+    "br": 0.96,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 89.9,
+      "jungle": 0.5,
+      "middle": 6.1,
+      "bottom": 0.7,
+      "support": 2.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Kled.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kled_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 98, "slug": "Shen", "name": "Shen", "vsWr": 61.45, "games": 275 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 61.16, "games": 242 },
+    { "cid": 126, "slug": "Jayce", "name": "Jayce", "vsWr": 59.28, "games": 334 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 58.82, "games": 204 },
+    { "cid": 83, "slug": "Yorick", "name": "Yorick", "vsWr": 56.9, "games": 239 },
+    { "cid": 799, "slug": "Ambessa", "name": "Ambessa", "vsWr": 55.86, "games": 222 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 55.53, "games": 488 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 55.48, "games": 447 }
+  ],
+  "weakAgainst": [
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.0, "games": 200 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 47.6, "games": 229 },
+    { "cid": 114, "slug": "Fiora", "name": "Fiora", "vsWr": 48.11, "games": 370 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 48.39, "games": 217 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 49.15, "games": 236 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 49.75, "games": 402 },
+    { "cid": 904, "slug": "Zaahen", "name": "Zaahen", "vsWr": 50.36, "games": 278 },
+    { "cid": 86, "slug": "Garen", "name": "Garen", "vsWr": 50.42, "games": 474 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "El all-in con E + Q es de lo más letal de top: enganchás, reventás la W de % vida y el rival no tiene ventana de respuesta; de paso te regala ganks fáciles para tu jungla.",
+      "La pasiva de Skaarl es una segunda vida: tanqueás tiros de torre, aguantás dives y en skirmish largos casi siempre terminás remontando.",
+      "La R es un engage de teamfight facilísimo con velocidad de movimiento para todo el equipo, y también sirve para cazar picks en campeones sin escape.",
+      "La W pega % de la vida actual en el cuarto golpe: hasta los tanques sufren los trades extendidos contra vos."
+    ],
+    "weaknesses": [
+      "Desmontado sos otro campeón: si el rival desengancha, recuperar a Skaarl cuesta caro y hasta farmear se vuelve un riesgo.",
+      "Con matchups de rango no podés ni acercar la wave cuando estás a pie: te kitean todo el lane.",
+      "Errar la E te deja sin escape y sin all-in: cualquier carry te corre por el mapa.",
+      "Allinear con la W en cooldown es regalar la pelea: gran parte de tu daño vive en ese cuarto golpe.",
+      "La R sin follow-up es un suicidio elegante: si el equipo te corta del resto, cargás solo y perdés tu frontline."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R suma kill pressure y te abre roams a bot con engage garantizado.",
+      "Nivel 9 con la Q maxeada: el daño del enganche sube tanto que los trades cortos se vuelven ejecuciones.",
+      "Dos puntos en R (nivel 11): arrancás a correr gente junto al equipo y cualquier pick aislado es casi kill fija.",
+      "Mid-late con la build encaminada: tanqueás de más con Skaarl y pegás como carry; el que se aisle, muere."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne, Quinn y compañía: jugá pegado a tu wave, farmeá desmontado con la Q y no aceptes trades que no arrancás vos.",
+        "La E es todo tu juego contra rango: entrá solo con ángulo limpio o desde el arbusto; si la errás, el lane se te hace eterno.",
+        "Pedí ganks temprano: los ranged tops son comida de la R antes de que armen su ventaja de rango."
+      ],
+      "tanks": [
+        "La W pega % de vida actual: los tanques no ganan los trades extendidos contra vos, alinealos con el cuarto golpe listo.",
+        "All-in recién con Skaarl arriba: un tanque que te desmonta con CC te encierra contra tu propia torre.",
+        "No entres a peleas largas sin la W: castigá en tandas cortas, reseteá y volvé a entrar con los cooldowns."
+      ],
+      "assassins": [
+        "Contra asesinos mantené Skaarl a toda costa: desmontado sos el objetivo principal del juego.",
+        "Usá la Q a minions para remontar rápido mientras te corretean: el enganche te devuelve la ventana de pelea.",
+        "En teamfight esperá que gaste el burst: entrá con R cuando ya se comprometió y te lo comés con la W."
+      ],
+      "crowdControl": [
+        "La R es tu carta contra el CC: la carga no se corta, así que usala para atravesar las composiciones de control en vez de caminar hacia ellas.",
+        "Desmontado, un solo stun te mata: jugá detrás de tu frontline hasta que el engage enemigo esté gastado.",
+        "Remontá con Q o E a un minion apenas puedas: cada segundo a pie cerca de un equipo con CC es un segundo de más."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "No lo persigas por su trail: tus trades cortos con Q + W ganan, pero el chase largo por el veneno te desmonta gratis.",
+          "Allineá solo con la W lista y despegate antes del flip: si te tira por encima con la E estando desmontado, no volvés a la pelea.",
+          "Usá la R con tu jungla antes de que escale con items de tanque: Singed lejos de su trail y sin ult es débil a los picks."
+        ]
+      },
+      {
+        "cid": 516,
+        "name": "Ornn",
+        "tips": [
+          "Pegale en tandas cortas antes del mid game: cuando arranca a upgradear items, la pelea larga es toda suya.",
+          "Esperá su Q (la onda con brittle) antes de tirar tu E: si te agarra marcado, te desmonta con el combo entero.",
+          "Alejá el trade de su muralla: unos metros de distancia y Ornn pierde la mitad de su burst y su escape."
+        ]
+      },
+      {
+        "cid": 114,
+        "name": "Fiora",
+        "tips": [
+          "Guardá el segundo cast de la E para cuando prenda la riposte (W): esquivarla o esperarla define el trade entero.",
+          "Castigala cuando use la Q para farmear: sin dash para entrar ni salir, tu proc de W le cuesta media vida.",
+          "No todo-in con tus vital points marcados en Skaarl: desmontado contra Fiora es kill gratis para ella; remontá primero."
+        ]
+      },
+      {
+        "cid": 157,
+        "name": "Yasuo",
+        "tips": [
+          "Esperá el Windwall antes de tirar la Q-pull: es tu enganche principal y el muro la seca gratis.",
+          "Usá el segundo cast de la E sobre un minion para pegarle por el costado: frontal, ganan su escudo pasivo y el tornado.",
+          "Después de que gaste el Q3, all-in completo: sin knock-up no te desmonta y tu W le gana el trade extendido."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane: Q (enganchar con el pull) → E al objetivo → AAs hasta reventar la W en el cuarto golpe → E de nuevo para despegarte",
+        "All-in: E → Q encima → AA ×4 para el proc de W → E de nuevo si se corre → R solo si intenta escapar con vida",
+        "Engage de teamfight: R al carry enemigo → E → Q → AAs; la velocidad de movimiento de la R te trae el follow-up del equipo",
+        "Persecución: R al que huye → Q → E primer cast para cerrar → AAs → E segundo cast cuando use su escape",
+        "Desmontado: Q a un minion o campeón → E al mismo objetivo para remontar rápido y volver a la pelea"
+      ],
+      "tips": [
+        "No entres a un all-in sin la W lista: es tu burst de % vida; sin el cuarto golpe peleás con la mitad del kit.",
+        "Guardá el segundo cast de la E: sirve para seguir la huida o volver a remontar; gastarlo de entrada te deja sin salida.",
+        "Desmontado, no hagas héroes: farmeá con la Q a distancia, tirate al arbusto y esperá la recarga de Skaarl antes de pelear.",
+        "La Q engancha y jala: abrí el trade desde arbusto o desde la wave para que el rival no tenga tiempo de reaccionar.",
+        "Usá la R para crear ventaja numérica, no para pedirle al equipo que te siga a una pelea perdida: mirá el mapa antes de cargar."
+      ],
+      "plan": {
+        "early": "Primeros niveles tranquilo; con nivel 3 y W en mano buscá trades extendidos, y a nivel 6 usá la R para allinear al laner o saltarle a bot.",
+        "mid": "Splitpushá dibujando presión, flanqueá las teamfights con la R y cazá los campeones sin movilidad que caminen solos por el mapa.",
+        "late": "Agrupate: flanqueá para borrar al squishy con R + E, aprovechá que Skaarl tanquea todo e iniciá dives sin miedo a morir."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/kled/guide",
+      "https://mobalytics.gg/lol/champions/kled/combos"
+    ]
+  }
+}

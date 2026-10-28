@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "lissandra",
+    "ddragonId": "Lissandra",
+    "name": "Lissandra",
+    "titleEs": "la Bruja de Hielo",
+    "cid": 127,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.18,
+    "pr": 5.21,
+    "br": 4.19,
+    "analysed": 9345004,
+    "laneDist": {
+      "top": 8.1,
+      "jungle": 0.1,
+      "middle": 87.1,
+      "bottom": 0.7,
+      "support": 4.0
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Lissandra.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lissandra_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 56.77, "games": 539 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.6, "games": 2318 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.77, "games": 3561 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 55.59, "games": 752 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 55.19, "games": 540 },
+    { "cid": 950, "slug": "Naafiri", "name": "Naafiri", "vsWr": 54.81, "games": 208 },
+    { "cid": 55, "slug": "Katarina", "name": "Katarina", "vsWr": 54.74, "games": 1931 },
+    { "cid": 163, "slug": "Taliyah", "name": "Taliyah", "vsWr": 54.72, "games": 318 }
+  ],
+  "weakAgainst": [
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 45.91, "games": 257 },
+    { "cid": 99, "slug": "Lux", "name": "Lux", "vsWr": 47.08, "games": 1028 },
+    { "cid": 34, "slug": "Anivia", "name": "Anivia", "vsWr": 47.08, "games": 480 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 47.13, "games": 1150 },
+    { "cid": 69, "slug": "Cassiopeia", "name": "Cassiopeia", "vsWr": 48.58, "games": 282 },
+    { "cid": 38, "slug": "Kassadin", "name": "Kassadin", "vsWr": 48.68, "games": 532 },
+    { "cid": 910, "slug": "Hwei", "name": "Hwei", "vsWr": 49.02, "games": 765 },
+    { "cid": 142, "slug": "Zoe", "name": "Zoe", "vsWr": 49.3, "games": 570 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La R tiene dos usos y ninguno es castigable: stun al que entra o invulnerabilidad para ella; mientras la tenga en mano no existe ventana clara de all-in.",
+      "La W enraíza a todo lo que esté a rango melee a su alrededor: castigarla de cerca con dashes o cuerpo a cuerpo es regalarla.",
+      "La E es engage, escape y roam en una sola habilidad: puede aparecer telegrafiada en tu cara sin avisar y salir del lane sin que lo veas.",
+      "Encadena CC de gratis: slow de Q, root de W, stun de R; si te agarra a rango de W, la combo entera entra sin que puedas responder.",
+      "Cuando un aliado o ella mata a alguien sloweado o enraizado por su hielo, el cuerpo se levanta como esclavo de hielo que sigue peleando: sus teamfights tienen refuerzos que no se pueden ignorar."
+    ],
+    "weaknesses": [
+      "Rango de mago corto: fuera de la Q y la W no amenaza a nadie, así que si te quedás fuera de su E + Flash, farmea atrás y se te frustra el daño.",
+      "Todo su engage viaja por la E, que es lenta y visible: tenés todo el viaje del claw para reubicarte antes de que aterrice.",
+      "Sin la R su burst es flojo y sus cooldowns early son caros: castigá cada Q gastada en la wave y forzá trades largos donde su daño no alcanza.",
+      "La lectura de su R es predecible: si la gasta en sí misma, tu equipo gana el engage; si la gasta en tu carry, ella queda sin escape y morís comiéndola.",
+      "El maná le alcanza para muy pocos ciclos early: spameale la wave y se queda sin amenaza ni para limpiar."
+    ],
+    "powerSpikes": [
+      "Level 6: primer all-in completo con E + W + R; no te pares a rango de W con la R en su mano sin saber si tenés escape.",
+      "Primer item resuelto: con AP y ability haste, cada R que baja es un pick o un stun de teamfight; asumí que la tiene disponible.",
+      "Zhonya en la bolsa: R sobre sí misma + Zhonya la vuelve intocable por varios segundos mientras su equipo sigue; no quieras pelear dentro de ese hielo.",
+      "Late game con cooldowns bajos: pick tras pick con E; caminar el mapa sin visión del jungla es suicida contra ella."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Lux, Vel'Koz, Hwei: tu rango supera al suyo por completo, pokeala cada vez que baje al farm y el lane es tuyo sin pelear.",
+        "No te pares detrás de tu wave cuando farmea: la Q atraviesa el primer minion y estalla justo ahí donde te escondés.",
+        "Ves la claw de la E volando hacia vos: das un paso atrás y su teletransporte la deja fuera de rango, sola y sin nada en la mano."
+      ],
+      "tanks": [
+        "No confíes en tu bulk para pararte a rango de W: el root no le importa tu armadura y ahí te espera el resto de su equipo.",
+        "Comprá Resistencia Mágica antes de que parezca necesario: su burst está calibrado contra el que no la tiene y un solo item te deja caminando su combo.",
+        "Cuando su R esté en tu carry, es tu trabajo pelear el espacio: la tumba dura poco y sin follow-up su equipo no gana nada."
+      ],
+      "assassins": [
+        "Akali, Katarina, Fizz, Naafiri: tu dash entra y la W te enraíza en el aire, así que esperá que la gaste antes de saltar o entrá desde un flanco que no vea.",
+        "Si te tira la R encima al saltar, está perdida: esa R era su escape y vos la consumiste con una habilidad gastada.",
+        "Después del level 6 nunca allinees con la R en su mano y sin tu escape: un Flash + W + R te borra antes de que tu combo arranque."
+      ],
+      "crowdControl": [
+        "Guardá tu CC para el viaje de la E: si la agarra mientras vuela el claw, aterriza en medio de tu equipo sin W ni R y muere parada.",
+        "Si ya se teletransportó encima de vos, enraizala igual: cortarle el W después del engage le mata la ventana de daño entera.",
+        "QSS o Tenacity contra el root de W: sin root no hay combo, porque todo su daño necesita que estés quieto un segundo más."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 161,
+        "name": "Vel'Koz",
+        "tips": [
+          "Tu rango le pasa por arriba de todo: pokeala con Q y W cada vez que se acerque al farm, porque su única forma de llegar es la claw de la E y se ve venir.",
+          "Guardá el knock-up de la E para cuando aterrice el teletransporte: si la interrumpís apenas aparece, quedó parada sin W ni R en medio de tu rango.",
+          "Si se tira la R en sí misma, no le gastes daño al hielo: caminá fuera del área de explosión y retomá el poke cuando salga."
+        ]
+      },
+      {
+        "cid": 99,
+        "name": "Lux",
+        "tips": [
+          "El root de tu Q la castiga en cada intento de engage: si la enraizás apenas aterriza la E, su W queda a rango de melee tuyo y no de ella.",
+          "Farmeá con la E desde fuera de su rango: ella no tiene forma de responder poke si no quema la claw viajera, que es su carta de supervivencia.",
+          "Al level 6, tirale la R de lejos apenas se prenda su combo: tu daño completo entra mientras su R está gastada en el stun y no en defenderse."
+        ]
+      },
+      {
+        "cid": 34,
+        "name": "Anivia",
+        "tips": [
+          "La pared corta el único camino que tiene hacia vos: cuando veas la claw volando, cortale la retirada o el aterrizaje y su engage muere solo.",
+          "Tu rango con la Q te deja castigarla cada vez que last-hittee: no aceptes trades cortos donde su W te enraíce, mantené distancia de mage.",
+          "Cuando muera tu egg y vuelva, ella va a buscar ese momento para all-in: contá la R de ella y jugá hasta tenerla en mano antes de exponerte."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Pegale desde tu rango máximo en cada respawn de la Q: su alcance no llega ni con la E, así que el lane es un rango de tiro para vos.",
+          "Guardá tu stun para el teletransporte: si lo encajás al aterrizar, su combo entera se corta antes del primer hechizo.",
+          "Nunca te pares detrás de la wave a farmear pasivo: la Q le estalla encima y te encuentra aunque te escondas detrás de tus minions."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade corto: W a rango melee → AA → Q → AA (si el rival está en tu cara, el root te regala el trade entero)",
+        "Poke de lane: Q atravesando un minion para que la explosión le pegue al campeón que se esconde detrás de la wave",
+        "All-in a distancia: E → E reactivada al llegar a rango de R → R sobre el objetivo → Q → AA → W cuando el stun expire",
+        "Engage de teamfight: E a rango máximo → reactivar → Flash → W al grupo → R sobre vos misma → Q al salir del hielo",
+        "Anti-dive: W al que te salta → E → Q → AA → R sobre el diver cuando el root termina"
+      ],
+      "tips": [
+        "Reactivá la E solo con visión: teletransportarte a un arbusto con el jungla esperando adentro es el error clásico de esta campeón.",
+        "Elegí el target de la R antes de entrar: R al asesino si te están tirando encima, R al carry si sos vos la que engancha; gastarla de poke es tirar tu identidad.",
+        "Lineá siempre la Q para atravesar la wave: el shard estalla detrás del primer golpe y ahí es donde vive el rival que se cubre con minions.",
+        "La W es tu única defensa a rango melee: no la gastes de poke a vida llena, guardala como garantía de sobrevivir el dive o cerrar el root del all-in.",
+        "Aprovechá la pasiva: todo lo que muera sloweado o enraizado por tu hielo se levanta y sigue peleando; peleá teamfights alrededor de tu propio CC."
+      ],
+      "plan": {
+        "early": "Farmeá con Q lineada a la wave, pokeá al que se pare detrás de sus minions y al llegar a 6 buscá el all-in con E + W + R o castigá con el root si juega atrás.",
+        "mid": "Roameá con la E (viaja más rápido que caminar), armá Malignance y Zhonya, y buscá picks con la R sobre el carry enemigo cada vez que su jungla no tenga visión de vos.",
+        "late": "No entres primera: esperá el engage rival o flankeá con E, usá la R para anular al diver o al carry y encadená Zhonya para extender tu invulnerabilidad mientras tu equipo termina la pelea."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/lissandra/build",
+      "https://mobalytics.gg/lol/champions/lissandra/combos"
+    ]
+  }
+}

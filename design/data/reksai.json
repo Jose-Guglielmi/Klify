@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "slug": "reksai",
+    "ddragonId": "RekSai",
+    "name": "Rek'Sai",
+    "titleEs": "la Excavadora del Vacío",
+    "cid": 421,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "jungle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.9,
+    "pr": 1.13,
+    "br": 0.49,
+    "analysed": 15738603,
+    "laneDist": {
+      "top": 6.6,
+      "jungle": 90.6,
+      "middle": 0.9,
+      "bottom": 0.1,
+      "support": 1.8
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/RekSai.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/RekSai_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 238, "slug": "Zed", "name": "Zed", "vsWr": 58.37, "games": 209 },
+    { "cid": 5, "slug": "XinZhao", "name": "Xin Zhao", "vsWr": 56.87, "games": 371 },
+    { "cid": 76, "slug": "Nidalee", "name": "Nidalee", "vsWr": 55.4, "games": 287 },
+    { "cid": 233, "slug": "Briar", "name": "Briar", "vsWr": 55.18, "games": 386 },
+    { "cid": 121, "slug": "Khazix", "name": "Kha'Zix", "vsWr": 55.14, "games": 584 },
+    { "cid": 28, "slug": "Evelynn", "name": "Evelynn", "vsWr": 55.0, "games": 280 },
+    { "cid": 11, "slug": "MasterYi", "name": "Maestro Yi", "vsWr": 54.49, "games": 602 },
+    { "cid": 60, "slug": "Elise", "name": "Elise", "vsWr": 54.38, "games": 331 }
+  ],
+  "weakAgainst": [
+    { "cid": 131, "slug": "Diana", "name": "Diana", "vsWr": 45.55, "games": 292 },
+    { "cid": 143, "slug": "Zyra", "name": "Zyra", "vsWr": 46.5, "games": 200 },
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 47.31, "games": 484 },
+    { "cid": 203, "slug": "Kindred", "name": "Kindred", "vsWr": 48.98, "games": 294 },
+    { "cid": 59, "slug": "JarvanIV", "name": "Jarvan IV", "vsWr": 49.66, "games": 594 },
+    { "cid": 35, "slug": "Shaco", "name": "Shaco", "vsWr": 49.67, "games": 453 },
+    { "cid": 120, "slug": "Hecarim", "name": "Hecarim", "vsWr": 50.2, "games": 498 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 50.51, "games": 590 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La W al desenterrarte es un knock-up en área que no se esquiva si entrás con túnel: gank tras gank garantiza al menos el Flash rival.",
+      "El tremor sense del estado enterrada te muestra todo lo que se mueve cerca sin ward: countergankear y evitar muertes es gratis.",
+      "La red de túneles da movilidad de mapa que ninguna otra jungla tiene: cruzás media grieta por debajo para un pick o un objetivo.",
+      "La furia te cura al desenterrarte: clear de jungla sano y duelos largos que casi siempre ganás contra junglas de burst."
+    ],
+    "weaknesses": [
+      "Sin los túneles ya cavados sos una jungla común: tu movilidad depende de inversión previa y los rivales ven la red en el minimapa.",
+      "El knock-up de la W tiene rango cortísimo y cooldown largo: fallarlo te deja descalza en medio del gank.",
+      "Tu daño cae en late contra frentes armados: sos jungla de tempo early-mid, si la partida se estira dependés del equipo.",
+      "Enterrada perdés la visión normal: entrás a la espalda del rival sin verlo y un CC de cara te revienta el engage.",
+      "La R requiere haber lastimado al objetivo primero: no sirve para abrir peleas contra gente intocada."
+    ],
+    "powerSpikes": [
+      "Level 3 con Q, W y E completas: primer gank con knock-up garantizado; cualquier lane sin Flash es presa.",
+      "Level 6: la R te da una ejecución de % de vida faltante y cruza el mapa para convertir un trade en kill.",
+      "Primer item resuelto (Stridebreaker o Hidra Titánica): el clear se vuelve instantáneo y tu presencia en skirmishes duplica.",
+      "Ventana early-mid en general: si jugás el tempo de túneles y objetivos, la partida suele quedar encaminada antes de los 30 minutos."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Cerrá la distancia por abajo: túnel + W es un gap closer que no depende de esquivar skillshots.",
+        "La Q enterrada pega de lejos y revela: usala para lastimar antes del engage y dejar el objetivo en rango de R.",
+        "Mientras estás enterrada te movés más rápido: los magos de rango no encuentran tu entrada si no ven de dónde sale el túnel."
+      ],
+      "tanks": [
+        "Tu daño de pelea larga cae contra tanques escalados: buscá siempre al carry del fondo, no al frente.",
+        "La E con furia llena ejecuta con daño real si mata: guardala para el remate, no la gastes al arranque del trade.",
+        "Si el tanque se para sobre tus túneles, no entres por ahí: elegí otro ángulo o dejá que tu equipo lo comprometa primero."
+      ],
+      "assassins": [
+        "El tremor sense te avisa cuando se mueven por tu zona: enterrate y countergankeá antes de que lleguen.",
+        "El knock-up de la W interrumpe dashes de entrada: si el Zed o el Kha'Zix saltan a tu carry, desenterrate encima.",
+        "Tus duelos contra asesinos los ganás por sustain: la furia te cura mientras ellos ya gastaron la combo."
+      ],
+      "crowdControl": [
+        "Entrá segundo a las peleas: tu W pega pegado y si te reciben con CC perdés la única ventana de engage.",
+        "La R te vuelve intocable durante la carga: usala para cruzar el front de CC y caer sobre el backline.",
+        "Los counters reales (Diana, Zyra, Cho'Gath) te ganan con CC de área: esperá que lo gasten antes de desenterrarte."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 131,
+        "name": "Diana",
+        "tips": [
+          "Usá tu escudo (W) para absorber su burst de Q y la mordida: tu escudo gana los trades cortos de jungla temprano.",
+          "Guardá el dash para después del knock-up de su W: si te levanta en el aire, perdiste la pelea antes de empezar.",
+          "Al 6 invitala a pelear con tu pasiva cargada: tu burst con R la borra antes de que su sustain haga diferencia."
+        ]
+      },
+      {
+        "cid": 143,
+        "name": "Zyra",
+        "tips": [
+          "Guardá la raíz (E) para cuando se desentierre a hacer knock-up: entrando de frente, la clavás antes de que llegue al carry.",
+          "Pisá siempre con plantas sembradas: el tremor sense no le muestra objetivos quietos y sus túneles llegan directo a tu área minada.",
+          "Si se enterra para escapar, tirá la R sobre su posición: los túneles son fijos y su escape predecible come el burst completo."
+        ]
+      },
+      {
+        "cid": 31,
+        "name": "Cho'Gath",
+        "tips": [
+          "Tu Q la agarra saliendo del túnel: las salidas son fijas y predecibles, cubrilas y el knock-up es gratis.",
+          "El silencio (W) le corta la entrada: sin knock-up, su gank es solo una jungla corriendo hacia tu carry.",
+          "Comprá vida temprano: su mordida de daño real solo ejecuta si mata, y un Cho con stacks no muere a la primera mordida."
+        ]
+      },
+      {
+        "cid": 203,
+        "name": "Kindred",
+        "tips": [
+          "Kiteala con el salto (Q): sin túnel cerca, su única forma de pegarte es caminar y el knock-up nunca llega.",
+          "Guardá tu R para cuando muerda con furia llena: la ejecución de su E queda en nada si nadie cruza ese umbral.",
+          "Invadí por el lado opuesto a su red de túneles: su movilidad es real solo donde ya cavó, el resto del mapa es jungla común."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico: AA → Q → AA → AA → E con furia acumulada para rematar (si la mordida mata, es daño real)",
+        "Entrada con túnel: E (túnel) → Flash → W al desenterrarte (knock-up) → AA → Q → AA → E → AA",
+        "Combo completa: Q enterrada → W al salir → AA → Q → AA → AA → E → R para ejecutar",
+        "Caza a distancia: Q enterrada para golpear y revelar → R sobre el objetivo lastimado → AA → Q → AA → E → AA",
+        "Clear de campamento: Q en la cara del campamento para acumular furia y E final con la rabia llena"
+      ],
+      "tips": [
+        "Invertí en la red de túneles entre clears: sin túneles puestos tu movilidad es la de cualquier jungla y tus ganks pierden el ángulo.",
+        "El knock-up de la W sale pegado: entrá con túnel o Flash, desenterrarte a dos pasos de distancia es regalar el gank.",
+        "Mordé con la furia llena: la E escala con la rabia y ejecuta con daño real si mata; esperá los golpes de Q antes de morder.",
+        "Aprovechá el tremor sense: mientras estás enterrada ves todo lo que se mueve cerca; es tu ward gratis para invadir y countergankear.",
+        "Usá la R como ejecución sobre objetivos que ya lastimaste: abrirla contra alguien intocado es tirar tu mejor hechizo."
+      ],
+      "plan": {
+        "early": "Hacé el clear sano con la Q en la cara del campamento, poné los primeros túneles y al 3 buscá gank con knock-up: las junglas de burst no te ganan el duelo.",
+        "mid": "Controlá objetivos con la red de túneles, cruzá el mapa con R para convertir picks en kills y forzá skirmishes donde tu sustain decide.",
+        "late": "Tu daño cae contra frentes armados: jugá de flanco, esperá que el CC se gaste y usá la R sobre el carry, nunca como engage de frente."
+      }
+    },
+    "sources": [
+      "https://app.mobalytics.gg/lol/champions/reksai/build",
+      "https://mobalytics.gg/lol/champions/reksai/combos"
+    ]
+  }
+}

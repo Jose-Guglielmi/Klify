@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "slug": "illaoi",
+    "ddragonId": "Illaoi",
+    "name": "Illaoi",
+    "titleEs": "la Sacerdotisa del Kraken",
+    "cid": 420,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 52.07,
+    "pr": 2.8,
+    "br": 6.78,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 96.7,
+      "jungle": 0.1,
+      "middle": 2.5,
+      "bottom": 0.1,
+      "support": 0.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Illaoi.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Illaoi_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 31, "slug": "Chogath", "name": "Cho'Gath", "vsWr": 57.76, "games": 419 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 57.73, "games": 951 },
+    { "cid": 24, "slug": "Jax", "name": "Jax", "vsWr": 57.31, "games": 876 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 57.29, "games": 480 },
+    { "cid": 223, "slug": "TahmKench", "name": "Tahm Kench", "vsWr": 56.9, "games": 355 },
+    { "cid": 897, "slug": "KSante", "name": "K'Sante", "vsWr": 56.75, "games": 467 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.69, "games": 344 },
+    { "cid": 106, "slug": "Volibear", "name": "Volibear", "vsWr": 56.65, "games": 812 }
+  ],
+  "weakAgainst": [
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 44.79, "games": 1143 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 46.36, "games": 220 },
+    { "cid": 17, "slug": "Teemo", "name": "Teemo", "vsWr": 46.62, "games": 607 },
+    { "cid": 887, "slug": "Gwen", "name": "Gwen", "vsWr": 46.82, "games": 346 },
+    { "cid": 41, "slug": "Gangplank", "name": "Gangplank", "vsWr": 46.99, "games": 515 },
+    { "cid": 48, "slug": "Trundle", "name": "Trundle", "vsWr": 47.71, "games": 262 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 47.76, "games": 490 },
+    { "cid": 122, "slug": "Darius", "name": "Darius", "vsWr": 48.85, "games": 1126 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "Devora matchups melee: contra top laners cuerpo a cuerpo, W + tentáculos ganan cada trade largo; si jugás melee sin plan, te estaquea la lane entera.",
+      "La E (Prueba del espíritu) castiga cualquier error de posicionamiento: si te conecta, los tentáculos machaquean tu espíritu y perdés el trade parado en el lugar.",
+      "Level 6 con tentáculos pre-armados es casi un muro: la R genera un tentáculo por campeón golpeado y cada slam la cura, así que pelearla en su zona es regalar la teamfight.",
+      "Sustain enorme en peleas largas: cada Q que pega en campeones la cura; sin Grievous Wounds es prácticamente imposible de tirar abajo en un 1v1.",
+      "Splitpush temible: necesita más de un enemigo para ser desalojada de una lane lateral; mandar a uno solo es mandarlo a morir."
+    ],
+    "weaknesses": [
+      "Cero movilidad: sin dash ni velocidad, un gank del jungla o un kiter con escape la destruye; castigá cada paso que da lejos de su torre.",
+      "La E es su único skillshot y el cooldown es largo: esquivarla una vez te regala varios segundos de trades gratis.",
+      "La R necesita enemigos cerca y tentáculos pre-armados: peleala en campo abierto, lejos de paredes, y su ultimate cae a media máquina.",
+      "Es débil contra rango en early: un campeón a distancia la pega fuera del alcance de su W todo el lane y ella no tiene forma de cobrarlo.",
+      "Antes de pelear tiene que armar el terreno: atacala donde la pasiva todavía no generó tentáculos; cada tentáculo que matás es menos daño y menos cura."
+    ],
+    "powerSpikes": [
+      "Level 3: tiene las tres habilidades y arranca el poke con E + Q desde los arbustos; desde ahí ningún trade es gratis para vos.",
+      "Level 6: all-in real con R; si te ve bajo de vida cerca de sus tentáculos y no tenés escape, la lane se te termina ahí.",
+      "Primer item resuelto (Fractura Negra típica): si lo completa antes del minuto 11, ejecuta casters de un Q y el push queda imparable.",
+      "Level 9 con E maxeada: el trade del espíritu pega muchísimo al side lane; avisale a quien la matchee antes de que intente hacerlo solo.",
+      "Level 16 con R maxeada: los slams caen más seguido y más fuerte; evité peleas en la jungla densa donde su terreno siempre está armado."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Pegale desde fuera de su W y no tiene respuesta: solo la E te alcanza; parate detrás de un minion y el skillshot se frena en la wave.",
+        "Sin espíritu conectado no hay trade ni tentáculos activados: un solo dodge por intercambio te deja ganando el lane entero.",
+        "No te pares dentro de la wave: su Q empuja minions y te pega a la vez; un paso lateral te ahorra el poke sin dejar de farmear."
+      ],
+      "tanks": [
+        "Su W pega % de tu vida máxima y la E machaquea tu espíritu: armá armadura temprana y no aceptes trades largos cerca de sus tentáculos.",
+        "Grievous Wounds temprano (Bramble, Ignite): su sustain decide las peleas largas; cortarle la cura vale más que cualquier daño extra.",
+        "Controlá el terreno pero no mates todos los tentáculos: mientras quede uno parado, no spawnea otro; dejalo lejos de tu farm y la zona queda limpia para vos."
+      ],
+      "assassins": [
+        "No divés encima de tentáculos armados: esperá que gaste la R o la E antes de entrar; su daño real viene del terreno, no de ella.",
+        "Esquivá la E con tu dash y entrá recién ahí: sin espíritu no hay R con daño, y la W sola no te borra.",
+        "Si te come el all-in, salí del radio y volvé cuando expiren los tentáculos de la R: sin targets cerca, su ultimate no genera nada."
+      ],
+      "crowdControl": [
+        "Desplazala o polimorfala en el cast de la R: la ultimate falla si la mueven en el momento del slam y la pelea entera cambia de mano.",
+        "Encadená el CC antes de que arme el terreno: peleala en el medio del río, lejos de paredes, y su kit queda reducido a golpes de W.",
+        "Kiteala con lentificaciones: sin dash, cada root conectado es un trade gratis para vos; no la dejes acercarse sin pagar peaje."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 82,
+        "name": "Mordekaiser",
+        "tips": [
+          "Tu R es su peor pesadilla: en el reino de la muerte no hay tentáculos ni paredes donde spawneen, así que la bajás a pelear a media máquina.",
+          "Kiteala con Q y E: no tiene dash, así que si le negás el cuerpo a cuerpo, su W sola no justifica ningún trade.",
+          "Guardá tu R para después de la suya: encerrarla sin ultimate dentro de tu reino es un 1v1 resuelto a tu favor."
+        ]
+      },
+      {
+        "cid": 27,
+        "name": "Singed",
+        "tips": [
+          "Corré en círculos alrededor de ella: sin movilidad no te agarra nunca, y los slams de tentáculo no persiguen.",
+          "Usá la Fling cuando se pegue para W: el desplazamiento corta su trade y, si está casteando la R, se la arruinas de un empujón.",
+          "Ganá por presión: cada segundo que te persigue es oro que no farma ni terreno que no arma; el lane se te regala escalando."
+        ]
+      },
+      {
+        "cid": 17,
+        "name": "Teemo",
+        "tips": [
+          "La ceguera (Q) anula su W: sin ese golpe de % de vida no activa tentáculos ni tradea; cegala apenas camine hacia vos.",
+          "Pegale desde fuera de su rango detrás de los minions: la E se frena en la wave y sin espíritu no le queda ninguna otra amenaza.",
+          "Poisoná en cada pasada: su cura no alcanza contra daño continuo y, forzada a gastar maná, se queda sin presión en la lane."
+        ]
+      },
+      {
+        "cid": 887,
+        "name": "Gwen",
+        "tips": [
+          "Guardá la niebla (W) para la Prueba del espíritu: la E no te conecta y los tentáculos de afuera no te pegan adentro; ahí ganás el trade entero.",
+          "Usá el dash solo para esquivar la E: sin espíritu, su combo se reduce a golpes de W que tu tijera castiga de vuelta.",
+          "Escalá con paciencia: perdonale los primeros niveles si hace falta, pero con dos items tu daño sostenido le pasa por arriba mientras no puede alcanzarte."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade estándar: E conectada al espíritu → W al rival (activa el swing de los tentáculos cercanos sobre el espíritu) → Q para rematar y curarte",
+        "Poke barato: esperá la pasiva en la pared cercana → W al rival para que el tentáculo haga swing → retirate sin recibir castigo",
+        "All-in nivel 6: E conectada → R encima del objetivo con tentáculos cerca → W spameado (el cooldown baja con R activa) mientras cada slam te cura",
+        "Setup de gank: E al espíritu para zonear y marcar → tu jungla entra sobre un rival encerrado en el radio del espíritu",
+        "Push con doble uso: Q alineada con los casters → W al melee pegado a un tentáculo para empujar wave y castigar al mismo tiempo"
+      ],
+      "tips": [
+        "Jugá pegada a las paredes: la pasiva spawnea tentáculos ahí y cada W que conecta los activa; el terreno que armás es la mitad de tu daño.",
+        "No tires la E a lo loco: es tu único skillshot y el cooldown es largo; si la esquiva, quedás desarmada varios segundos.",
+        "No abras la R sin espíritu conectado ni tentáculos armados: la ultimate potencia el terreno que ya está en el piso, no pelea sola.",
+        "Usá la Q como sustain y empuje: cada slam que pega en campeones te cura; en el lane eso son menos bases y más presión.",
+        "Antes de un all-in, recorré la zona: si no hay tentáculos cerca, esperá la pasiva o reubicá la pelea; pelear en campo limpio es pelear sin kit."
+      ],
+      "plan": {
+        "early": "Farmeá con Q y armá tentáculos en las paredes cercanas; desde nivel 3 buscá el trade con E + W y al llegar a 6, con el rival bajo de vida, el all-in con R es kill casi seguro.",
+        "mid": "Splitpusha la side y obligá al rival a mandar dos o más a frenarte; prepará arbustos con tentáculos antes de cada pelea y usá la niebla de guerra para armar trampas de slams.",
+        "late": "Pegate a tu equipo y dejá que el rival engaje: una R al centro del grupo genera un tentáculo por campeón y te vuelve intocable; buscá picks con E sobre el que se mueva separado."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/illaoi/guide",
+      "https://mobalytics.gg/lol/champions/illaoi/counters"
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "slug": "twistedfate",
+    "ddragonId": "TwistedFate",
+    "name": "Twisted Fate",
+    "titleEs": "el Maestro de las Cartas",
+    "cid": 4,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "middle",
+    "fetchedAt": "2026-10-25",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.94,
+    "pr": 4.63,
+    "br": 1.18,
+    "analysed": 15848639,
+    "laneDist": {
+      "top": 4.7,
+      "jungle": 0.4,
+      "middle": 86.8,
+      "bottom": 3.4,
+      "support": 4.6
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/TwistedFate.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/TwistedFate_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 54, "slug": "Malphite", "name": "Malphite", "vsWr": 60.19, "games": 206 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 59.36, "games": 219 },
+    { "cid": 84, "slug": "Akali", "name": "Akali", "vsWr": 56.99, "games": 3441 },
+    { "cid": 13, "slug": "Ryze", "name": "Ryze", "vsWr": 56.34, "games": 1152 },
+    { "cid": 268, "slug": "Azir", "name": "Azir", "vsWr": 56.27, "games": 782 },
+    { "cid": 18, "slug": "Tristana", "name": "Tristana", "vsWr": 55.96, "games": 302 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 55.75, "games": 226 },
+    { "cid": 800, "slug": "Mel", "name": "Mel", "vsWr": 55.64, "games": 1143 }
+  ],
+  "weakAgainst": [
+    { "cid": 50, "slug": "Swain", "name": "Swain", "vsWr": 45.74, "games": 387 },
+    { "cid": 136, "slug": "AurelionSol", "name": "Aurelion Sol", "vsWr": 46.06, "games": 686 },
+    { "cid": 115, "slug": "Ziggs", "name": "Ziggs", "vsWr": 46.85, "games": 254 },
+    { "cid": 101, "slug": "Xerath", "name": "Xerath", "vsWr": 47.52, "games": 1772 },
+    { "cid": 105, "slug": "Fizz", "name": "Fizz", "vsWr": 48.15, "games": 2002 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 49.03, "games": 2986 },
+    { "cid": 161, "slug": "Velkoz", "name": "Vel'Koz", "vsWr": 49.47, "games": 380 },
+    { "cid": 134, "slug": "Syndra", "name": "Syndra", "vsWr": 49.47, "games": 2931 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q es poke y waveclear en el mismo botón: empuja la wave y te pega desde 1450 de rango sin gastar dos habilidades distintas.",
+      "La W es tres campeones en una: Blue Card te devuelve maná para no volver a base, Red Card limpia la wave y Gold Card stunea para armar kills para todo el equipo.",
+      "La R es la mejor herramienta de macro del juego: revela a todos los enemigos y te deja aparecer en cualquier pelea del mapa, incluso desde la otra punta.",
+      "La pasiva te da oro extra por cada minion y monstruo, así que llegás a los items antes que el rival con la misma cantidad de farm.",
+      "La E le da velocidad de ataque y daño mágico on-hit: no es un mago de burst puro, también sostiene trades largos con autoataques."
+    ],
+    "weaknesses": [
+      "Es de papel y sin movilidad: antes del nivel 6 cualquier gank bien ejecutado es flash o muerte, y te obliga a jugar pegado a la torre.",
+      "Con la W en cooldown no sos nadie: sin carta no tenés stun, ni maná, ni forma de escapar; los junglas rivales esperan exactamente ese momento.",
+      "Tu kill pressure en lane es bajo y no sube con la R: a 6 ganás presencia de mapa, no daño, así que no podés forzar el 1v1 contra nadie.",
+      "La R es de doble filo: el gate tiene 1.5s de channel y si la tirás mal te metés solo en el medio de cinco enemigos y regalás la partida.",
+      "Los magos de rango largo te sacan del juego: si no podés caminar a tirar la carta, tu waveclear es lo único que te queda."
+    ],
+    "powerSpikes": [
+      "Nivel 6: no te da más daño, te da el mapa entero; desde acá cualquier lane con el rival pasado de línea es un pick gratis con Gold Card.",
+      "Primer componente de item (capítulo/maná): podés spamear Q + Red Card y empujar sin quedarte seco, que es cuando el lane se vuelve cómodo.",
+      "Nivel 9 con Q maxeada: limpiás la wave de un combo y podés rotar a objectives o a la side lane sin perder farm.",
+      "Nivel 11 y 16: el cooldown de Destiny baja mucho, así que tenés presión global casi en cada pelea y en cada wave que empujás."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Xerath, Ziggs, Vel'Koz y Aurelion Sol: te pegan desde fuera de tu Q, así que no camines a tirar cartas; farmeá con Q desde el borde de tu rango y esperá el error.",
+        "No te pares sobre la wave: si estás pegado a los minions, te empuja y te pokea con la misma habilidad; jugá al costado.",
+        "Empujá más rápido de lo que él puede limpiar: si lo encerrás en su torre, el mago de rango pierde el roam y el control de la river."
+      ],
+      "tanks": [
+        "Malphite, Sion y compañía: no los vas a matar, así que no gastes maná en trades largos; empujá y usá la R para pelear donde ellos no están.",
+        "Comprá botas con resistencia o un item defensivo temprano: contra tanques tu daño se estira mucho y necesitás sobrevivir al engage.",
+        "El stun de Gold Card es tu única salida del engage: guardala para cuando el tanque se tire encima y no para iniciar vos."
+      ],
+      "assassins": [
+        "Fizz, Diana, Kassadin y Yasuo: atacalos sólo cuando ya gastaron su movilidad, porque tu única defensa es la Gold Card y ellos la esquivan con dash.",
+        "Guardá la W para el momento en que entran, no para farmear: un stun de 2 segundos bajo torre es la diferencia entre morir y matarlo.",
+        "Si el asesino desaparece del mapa, avisá y no empujes sin visión: te caminean la wave justo cuando gastaste la carta en un minion."
+      ],
+      "crowdControl": [
+        "Cualquier stun, root o silencio durante el channel del gate cancela la R y te deja parado en el peor lugar: no la tires con CC enemigo disponible.",
+        "El grounded te bloquea el recast de Destiny: si ves la zona en el piso, olvidate de escapar por la R y usá Flash.",
+        "Telegrafiás todo: la carta se ve en tu cabeza y el gate se ve en el piso, así que el CC enemigo siempre llega antes que tu combo; entrá segundo, no primero."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 50,
+        "name": "Swain",
+        "tips": [
+          "Tu sustain con R y el root de la E le ganan el desgaste: TF pokea mucho pero no tiene burst para matarte, así que aguantá los trades largos y curate.",
+          "Casteale la E cuando camina hacia adelante para tirar la Gold Card: enganchado no puede ni llegar al rango de la carta ni escapar del Q.",
+          "No te dejes pushear gratis: si te encierra en la torre, perdés el farm y el R; matcheale la wave con Q y E sobre los minions."
+        ]
+      },
+      {
+        "cid": 136,
+        "name": "Aurelion Sol",
+        "tips": [
+          "Tu escalado infinito le gana la partida si el lane se estira: no fuerces kills, farmeá y dejá que su daño quede chico contra tu vida creciente.",
+          "Zonéalo con la E y el Q desde fuera de su rango de carta: si no puede caminar a stunearte, su único recurso es empujar y esperar.",
+          "Cuando tire la R para rotar, respondé empujando la wave y sacá placas: el gate le cuesta la lane entera si no consigue el pick."
+        ]
+      },
+      {
+        "cid": 115,
+        "name": "Ziggs",
+        "tips": [
+          "Tenés más rango y mejor waveclear: empujalo sin parar y nunca le des la chance de caminar a tirar la Gold Card.",
+          "Guardá la W (bomba) para cuando intente el gate agresivo: lo sacás de la zona y le arruinás la entrada al fight.",
+          "Casteale la Q sobre la wave cuando se acerque a last hitear: con tu rango le cobrás cada minion que quiera agarrar."
+        ]
+      },
+      {
+        "cid": 101,
+        "name": "Xerath",
+        "tips": [
+          "Jugá a 1000 de distancia: su Q llega a 1450 pero su carta necesita autoataque, así que si no te acercás no te puede stunear nunca.",
+          "Cuando gaste la W en la wave, ese es tu momento de trade libre: sin carta ni maná, es el campeón más frágil del mid.",
+          "Pingeá cada vez que desaparezca: su R le permite aparecer en cualquier pelea y sin aviso te convierte un 5v4 en un 5v5 perdido."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade básico: W → esperá la Gold Card → AA (stun) → Q encima → AA mientras está stuneado",
+        "Pick con R: R (revelar) → R2 gate a la side lane → W Gold Card mientras caés → AA → Q → AA para cerrar",
+        "Sustain de lane: AA al minion → W → lockeá Blue Card → AA (el daño más alto y te devuelve maná)",
+        "Limpieza de wave: W → Red Card → AA al minion del medio → Q en el mismo instante para matar los tres caster",
+        "Escape anti-flanqueo: W → R → W2 Gold Card → AA al que te corre → R2 gate fuera de la pelea"
+      ],
+      "tips": [
+        "Las cartas ciclan siempre en el mismo orden (Blue → Red → Gold, 0.5s cada una): empezá a castear la W antes de que el rival entre en rango para lockear la Gold Card justo cuando llegás.",
+        "Nunca tires la W sin propósito: con la carta en cooldown sos el campeón más gankeable del juego; guardala para el stun, para el maná o para limpiar la wave, nunca para 'ver qué pasa'.",
+        "No uses la R sólo para volver a lane: la visión y el gate son tu presión de mapa; si la gastás viajando, el rival sabe que tiene 100+ segundos de libertad.",
+        "Farmeá con Blue Card en los minions grandes: el maná que devuelve es tu único sustain y te permite seguir empujando sin volver a base.",
+        "Q + Red Card empuja la wave al instante: usalo para rotar primero a la river o a la side lane, no para quedarte farmeando bajo tu torre."
+      ],
+      "plan": {
+        "early": "Pokeá con Q desde el borde del rango y farmeá con Blue Card, jugá detrás de la wave porque antes de 6 sos gankeable, y al llegar a 6 mirá el mapa en vez de buscar el kill en lane.",
+        "mid": "Empujá con Q + Red Card y rotá a la side lane o al objective, buscá picks con R + Gold Card sobre objetivos aislados y convertí esa presión en placas y torres.",
+        "late": "Quedate con el equipo y no splitpushees sin visión, usá la R para revelar antes de la pelea y entrá segundo para stunear al carry con la Gold Card en vez de iniciar."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/twistedfate/guide",
+      "https://mobalytics.gg/lol/champions/twistedfate/combos",
+      "https://mobalytics.gg/lol/champions/twistedfate/counters",
+      "https://wiki.leagueoflegends.com/en-us/Twisted_Fate/LoL"
+    ]
+  }
+}

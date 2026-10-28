@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "slug": "gangplank",
+    "ddragonId": "Gangplank",
+    "name": "Gangplank",
+    "titleEs": "el Azote de los Mares",
+    "cid": 41,
+    "patch": "16.21",
+    "tier": "platinum_plus",
+    "lane": "top",
+    "fetchedAt": "2026-10-23",
+    "warnings": []
+  },
+  "stats": {
+    "wr": 51.32,
+    "pr": 4.85,
+    "br": 8.08,
+    "analysed": 9282522,
+    "laneDist": {
+      "top": 91.6,
+      "jungle": 0.1,
+      "middle": 7.9,
+      "bottom": 0.2,
+      "support": 0.2
+    }
+  },
+  "assets": {
+    "icon": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/champion/Gangplank.png",
+    "splash": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
+    "loading": "https://ddragon.leagueoflegends.com/cdn/img/champion/loading/Gangplank_0.jpg"
+  },
+  "strongAgainst": [
+    { "cid": 67, "slug": "Vayne", "name": "Vayne", "vsWr": 57.71, "games": 201 },
+    { "cid": 74, "slug": "Heimerdinger", "name": "Heimerdinger", "vsWr": 57.31, "games": 342 },
+    { "cid": 68, "slug": "Rumble", "name": "Rumble", "vsWr": 57.01, "games": 328 },
+    { "cid": 236, "slug": "Lucian", "name": "Lucian", "vsWr": 56.31, "games": 222 },
+    { "cid": 420, "slug": "Illaoi", "name": "Illaoi", "vsWr": 55.39, "games": 529 },
+    { "cid": 58, "slug": "Renekton", "name": "Renekton", "vsWr": 55.16, "games": 1066 },
+    { "cid": 27, "slug": "Singed", "name": "Singed", "vsWr": 55.09, "games": 501 },
+    { "cid": 157, "slug": "Yasuo", "name": "Yasuo", "vsWr": 55.07, "games": 897 }
+  ],
+  "weakAgainst": [
+    { "cid": 240, "slug": "Kled", "name": "Kled", "vsWr": 44.8, "games": 471 },
+    { "cid": 10, "slug": "Kayle", "name": "Kayle", "vsWr": 45.83, "games": 624 },
+    { "cid": 82, "slug": "Mordekaiser", "name": "Mordekaiser", "vsWr": 46.26, "games": 1284 },
+    { "cid": 23, "slug": "Tryndamere", "name": "Tryndamere", "vsWr": 46.29, "games": 1050 },
+    { "cid": 62, "slug": "MonkeyKing", "name": "Wukong", "vsWr": 46.57, "games": 277 },
+    { "cid": 516, "slug": "Ornn", "name": "Ornn", "vsWr": 47.2, "games": 786 },
+    { "cid": 14, "slug": "Sion", "name": "Sion", "vsWr": 47.58, "games": 992 },
+    { "cid": 39, "slug": "Irelia", "name": "Irelia", "vsWr": 47.83, "games": 1407 }
+  ],
+  "qualitative": {
+    "strengths": [
+      "La Q (Parrrley) le paga oro extra por cada ejecución: escalado de oro pasivo que lo hace más fuerte cada minuto que pasa el juego.",
+      "Su R es global: impacta cualquier lane al instante y convierte cada pelea del mapa en una donde su equipo pelea con ventaja de daño y slow.",
+      "La pasiva prendida gana trades cortos contra casi cualquiera: un AA con Trial by Fire duele más de lo que el rival espera a nivel 1.",
+      "Los barriles se ponen en ángulos imposibles y dentro del bush: el rival no ve el E venir y se come chunks de vida enteros.",
+      "Es de los pocos tops que sigue siendo amenaza real sin estar presente: una R bien tirada desde top puede ganar la bot lane."
+    ],
+    "weaknesses": [
+      "Early game débil: sin items no hay daño y muchos matchups lo obligan a solo farmear y aguantar hasta su primer item.",
+      "Sin W en mano es gank-food: Remove Scurvy es su única escape y purga, y mientras está en cooldown no tiene cómo salvarse.",
+      "Los barriles se pueden destruir: si el rival los rompe a un AA, pierde la mayor parte de su daño en lane y queda en autoattack modo farm.",
+      "Pelea en espacios abiertos le resta todo: sin paredes ni pasillos, los barriles no encadenan y la R se esquiva caminando.",
+      "Antes del nivel 6 no tiene all-in real: sin R en mano cualquier pelea fuerte la pierde por daño puro."
+    ],
+    "powerSpikes": [
+      "Nivel 6: la R global lo convierte en amenaza de mapa completo y le da el chase que le faltaba para cerrar al rival pokeado.",
+      "Primer item core resuelto: su dueling potencia de golpe y puede borrase squishies con un solo chunk de barriles bien encadenados.",
+      "Nivel 9-13 con la Q o la E maximizada y primer upgrade de R: el daño de barril se multiplica y el cooldown de R baja para pelear seguido.",
+      "Late con tres puntos en R y items completos: los barriles one-shottean carries y pierde el miedo a cualquier 1v1 del juego."
+    ],
+    "vsArchetypes": {
+      "range": [
+        "Vayne y Kayle top: no aceptes el trade largo, pokeá con Q desde el límite de tu rango y guardá el E encadenado para cuando bajen al last hit.",
+        "Escondé barriles en el bush: el poke ranged no puede castigar lo que no ve, y un chunk inesperado les roba la agresividad del lane.",
+        "Pastilleá bajo torre con Q ejecutando minions: tu escalado de oro compensa la farm perdida; no regales kills por orgullo."
+      ],
+      "tanks": [
+        "Ornn, Sion, Mordekaiser: no necesitas matarlos, necesitás escalar mejor; farmeá con Q y dejá que tu items pasen por encima de su tankeo.",
+        "Castigá cada vez que caminen hacia la wave: un barril + Q + AA con pasiva les cuesta un cuarto de vida y no pueden responder sin engage.",
+        "Cuidado con el all-in pre-6: sin R ni items, un tanque con kombinación completa te gana el trade largo; jugá corto hasta tu spike."
+      ],
+      "assassins": [
+        "Wukong, Irelia, Tryndamere: guardá W para el burst, no para curarte de poke; la purga de CC en el momento justo anula su combo entera.",
+        "Dejalos gastar el engage primero: si saltan y vos tenés barril bajo tus pies + W en mano, el trade que iniciaron ellos lo terminás ganando vos.",
+        "Jugá contra la pared o cerca de tu torre: en espacio abierto sus dashes te alcanzan y tus barriles no tienen ángulos para encadenar."
+      ],
+      "crowdControl": [
+        "W se come el CC y te cura: no lo tires preventivo; esperá el stun o el snare en el aire y anulás el engage completo del rival.",
+        "Mercury's Treads si el equipo tiene doble AP o CC encadenado: reducir la duración del control es reducir su ventana para comerte.",
+        "Jugá el flanco, no el frente: el CC se tira al que entra primero; un GP que flanquea con barriles recibe mucho menos control que uno que se muestra."
+      ]
+    },
+    "counterTips": [
+      {
+        "cid": 240,
+        "name": "Kled",
+        "tips": [
+          "Castigalo antes del nivel 6: sin R ni items su early es puro farmeo; cada trade corto con tu pasiva de Courage es tuyo.",
+          "Rompele el barril apenas aparece: un solo AA lo destruye y sin E su daño en lane cae a la mitad; buscá pelear justo después de gastárselo.",
+          "Cuando use W (Remove Scurvy) para curarse del poke, ese es tu all-in: queda sin purga ni cura y tu engage con E + R no tiene respuesta."
+        ]
+      },
+      {
+        "cid": 10,
+        "name": "Kayle",
+        "tips": [
+          "Farmeá con Q desde rango y no le des nunca un trade gratis: tu escalado llega más rápido y tu ventana de dominio es el mid game; sostenelo.",
+          "Jugá pegada a tu torre los primeros niveles: un GP con pasiva prendida + barril te borra el early si te agarras fuera de posición.",
+          "Al nivel 11 con tu R lista no le temas al 1v1, pero mirá el mapa: su R global puede convertir tu ventaja local en una derrota 4v4 en otro lane."
+        ]
+      },
+      {
+        "cid": 82,
+        "name": "Mordekaiser",
+        "tips": [
+          "No te dejes pokear con Q a cambio de nada: respondé cada Parrrley con tu Q + pasiva; su maná no es infinito y tu sustain con W sí.",
+          "Guardá tu R para después de que gaste W: si lo metés al Death Realm sin su purga, los barriles le sirven de poco y el 1v1 es tuyo.",
+          "Adentro del Death Realm peleá cerca de las paredes: en espacio abierto sus barriles encadenados encuentran el ángulo y te chunkuean de media vida."
+        ]
+      },
+      {
+        "cid": 23,
+        "name": "Tryndamere",
+        "tips": [
+          "Usá el Spin para esquivar el chunk del barril, no para entrar: el daño del E + Q es lo que te mata; el resto de su kit lo podés tanquear.",
+          "Forzá el all-in antes del nivel 6: sin R global ni items, GP no tiene cómo responderte un all-in con fury cargada.",
+          "Cuidado con el late: con items completos un barril encadenado te borra a pesar de tu R; en teamfight no entres primero, esperá que los barriles se gasten."
+        ]
+      }
+    ],
+    "playstyle": {
+      "combos": [
+        "Trade de lane básico: E → Q al barril → AA al objetivo (pasiva prendida) → segunda E si el rival sigue en rango",
+        "Doble barril encadenado: E → E encadenados → esperá el tick → Q al primero (el segundo explota en cadena y estira tu rango de daño)",
+        "Trade corto con pasiva: E → AA → AA → Q al barril → AA final (la más fácil y la que más vas a usar en lane)",
+        "All-in con R: R encima del objetivo → E → AA → AA → Q al barril → AA (para cuando el rival queda a menos de media vida)",
+        "Flash + triple barril (severo): E → E → Q al primero → Flash → E final sobre el target agrupado; practicá el timing en Herramientas de Práctica antes de llevarlo a ranked"
+      ],
+      "tips": [
+        "Usá Q sobre minions que estén por morir: el oro extra de Parrrley es tu escalado pasivo y suma más de lo que parece en 20 minutos.",
+        "No gastes W como anti-poke a vida llena: es tu purga de CC y tu cura de emergencia; sin W en mano no te metas ni un paso adelante.",
+        "Escondé barriles en el bush del lane: los ángulos que el rival no ve son los que generan los chunks de media vida.",
+        "Desde el nivel 6 mirá el mapa cada vez que R esté en mano: una Cannon Barrage bien tirada en bot paga tu lane entera aunque estés perdiendo arriba.",
+        "Practicá el tick de los barriles en Herramientas de Práctica: el timing del Q al barril a punto de explotar es la diferencia entre un GP funcional y uno que one-shottea."
+      ],
+      "plan": {
+        "early": "Farmeá y acumulá oro con Q, evitá peleas fuertes sin items y desde el 6 usá la R global para asistir a tus lanes en cada pelea lejana.",
+        "mid": "Splitpush para llamar la atención del mapa mientras tu equipo juega el otro lado, seguís farmeando para el upgrade de R y tirás Cannon Barrage en cada skirmish cerca de objetivo.",
+        "late": "Agrupate con tu equipo, pokeá con barriles antes de que empiece la pelea, no cometas sin R en mano y buscá el triple barril encadenado sobre el carry enemigo."
+      }
+    },
+    "sources": [
+      "https://mobalytics.gg/lol/champions/gangplank/guide",
+      "https://mobalytics.gg/lol/champions/gangplank/combos"
+    ]
+  }
+}
